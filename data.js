@@ -1971,21 +1971,26 @@ window.RODOKMEN = {
       name: "Johann Strusch",
       line: "struz",
       cert: "M",
-      b: {"date":"před 1832 (odhad)","year":1830,"approx":true,"place":"Chuchelná (?)"},
-      d: {"date":"1893–1909","year":1900,"approx":true,"place":"Chuchelná"},
-      occ: "domkář (Häusler) v Chuchelné",
+      b: {"date":"6. 6. 1832","year":1832,"place":"Chuchelná"},
+      d: {"date":"2. 11. 1901","year":1901,"place":"Chuchelná"},
+      father: "heinrichS",
+      mother: "mariannaWo",
+      occ: "domkář (Häusler), na stáří výměnkář v Chuchelné",
       marriage: "19. 1. 1858 (Krzanowice) – s Marií Kussin",
       notes: [
-        "V roce 1893 žil (sňatek syna Karla); v roce 1909 byla Marie vdovou.",
-        "Děti: Pauline *1858, Marianna *1861, Karl *1866, Anna *1875.",
-        "Otec podle dřívějšího indexu Heinrich Strusch (K, neověřeno); Heinrich × Marianna roz. Wolf měli děti 1834–1841.",
-        "Dcera Pauline (*1858) provd. Duda, Häuslerfrau v Chuchelné (1897). Úmrtí Johanna není v Chuchelné Z 1894–1899."
+        "Narozen 6. 6. 1832 ve 22 h v Chuchelné, pokřtěn 7. 6. (farnost Krzanowice): syn zahradníka Heinricha Strusche a Marianny roz. Wolf (dcery Valentina Wolfa); kmotři Martin Saiczek a Francisca Saiczek.",
+        "Zemřel 2. 11. 1901 v 8:30 v Chuchelné, 69 let, jako domkář-výměnkář; úmrtí ohlásila manželka Marie roz. Kussin.",
+        "Děti: Pauline *1858 (provd. Duda), Marianna *1861, Karl *1866, Anna *1875.",
+        "Sňatek s Marií Kussin 19. 1. 1858 jen podle indexu (FS film zamčen)."
       ],
       sources: [
-        "sňatek syna Karla 1893 (ST VIII 47)",
-        "index FamilySearch – křty dětí Krzanowice"
+        "Standesamt Kuchelna Z 1901 Nr. 29 (ST VIII 112), sken 17",
+        "Silius Radicum – duplikát Krzanowice 1832 Nr. 74 (složka 365, snímek 0026)",
+        "sňatek syna Karla 1893 (ST VIII 47)"
       ],
       scans: [
+        {"f":"img/1832_krest_johann_strusch.jpg","t":"Křest 7. 6. 1832 (Krzanowice 1832 Nr. 74)"},
+        {"f":"img/1901_umrti_johann_strusch.jpg","t":"Úmrtí 2. 11. 1901 (Z 1901 Nr. 29)"},
         {"f":"img/1893_snatek_strusch_komarek_a.jpg","t":"Sňatek 5. 6. 1893, Chuchelná (O 1893 Nr. 3) – snoubenci a rodiče"}
       ]
     },
@@ -1995,19 +2000,103 @@ window.RODOKMEN = {
       maiden: "Kussin",
       line: "struz",
       cert: "M",
-      b: {"date":"cca 1836 (?)","year":1836,"approx":true,"place":"Chuchelná"},
+      b: {"date":"1. 4. 1837","year":1837,"place":"Chuchelná"},
       d: {"date":"22. 11. 1909","year":1909,"place":"Chuchelná"},
+      father: "carlKu",
+      mother: "rosaliaLa",
       notes: [
-        "Úmrtí 22. 11. 1909 ve 14:30, 73 let, vdova; dcera † zahradníka Karla Kussina; úmrtí ohlásil syn Karl, zámecký zahradník.",
-        "Kandidát na křest (K): Marianna *1. 4. 1837, dcera Carla Kussina a Rosalie roz. Lassak (dcery Mathea) – index FamilySearch; věk o rok nesedí."
+        "Narozena 1. 4. 1837 ve 23 h v Chuchelné, pokřtěna 2. 4. (Krzanowice) jako Marianna – dcera zesnulého zahradníka Carla Kussina a Rosalie roz. Lassak; otec zemřel půl roku před jejím narozením. Ztotožnění s Marií Strusch: otec zahradník Karl Kussin souhlasí, věk v úmrtí 1909 (73) je o rok vyšší.",
+        "Zemřela 22. 11. 1909 ve 14:30 jako vdova; úmrtí ohlásil syn Karl, zámecký zahradník."
       ],
       sources: [
+        "Silius Radicum – duplikát Krzanowice 1837 Nr. 58 (složka 370, snímek 0021)",
         "Standesamt Kuchelna Z 1909 Nr. 24 (ST VIII 120)",
         "sňatek syna 1893 (ST VIII 47)"
       ],
       scans: [
+        {"f":"img/1837_krest_marianna_kussin.jpg","t":"Křest 2. 4. 1837 (Krzanowice 1837 Nr. 58)"},
         {"f":"img/1909_umrti_marie_strusch_kussin.jpg","t":"Úmrtí 22. 11. 1909"},
         {"f":"img/1893_snatek_strusch_komarek_a.jpg","t":"Sňatek 5. 6. 1893, Chuchelná (O 1893 Nr. 3) – snoubenci a rodiče"}
+      ]
+    },
+    {
+      id: "heinrichS",
+      name: "Heinrich Strusch",
+      line: "struz",
+      cert: "M",
+      b: {"date":"cca 1805","year":1805,"approx":true,"place":"Chuchelná"},
+      d: {"date":"před 1901","year":1880,"approx":true},
+      occ: "zahradník (Gärtner) v Chuchelné",
+      marriage: "31. 1. 1826, Krzanowice – s Mariannou Wolf (on 21, ona 20); svědci Jacob Saiczek a mlynář Franz Sperling z Chuchelné",
+      notes: [
+        "Při sňatku 1826 svobodný, 21 let, syn zahradníka z Chuchelné.",
+        "Děti (index FS): Joseph 1834, Josepha 1836, Anna 1841; Johann 1832 (M).",
+        "Kandidát na příbuzného (K): zahradník Andres Strusch, kmotr v Chuchelné 1832."
+      ],
+      sources: [
+        "Silius Radicum – Krzanowice sňatky 1826 Nr. 12 (složka 409, snímek 0004)"
+      ],
+      scans: [
+        {"f":"img/1826_snatek_strusch_wolf.jpg","t":"Sňatek 31. 1. 1826 (Krzanowice 1826 Nr. 12)"},
+        {"f":"img/1832_krest_johann_strusch.jpg","t":"Křest 7. 6. 1832 (Krzanowice 1832 Nr. 74)"}
+      ]
+    },
+    {
+      id: "mariannaWo",
+      name: "Marianna Strusch",
+      maiden: "Wolf (Wolff)",
+      line: "struz",
+      cert: "M",
+      b: {"date":"cca 1806","year":1806,"approx":true},
+      d: {"date":"před 1901","year":1880,"approx":true},
+      notes: [
+        "Dcera Valentina Wolfa, panského šafáře (herrschaftlicher Schaffer); při sňatku 1826 20 let."
+      ],
+      sources: [
+        "Krzanowice sňatky 1826 Nr. 12"
+      ],
+      scans: [
+        {"f":"img/1826_snatek_strusch_wolf.jpg","t":"Sňatek 31. 1. 1826 (Krzanowice 1826 Nr. 12)"},
+        {"f":"img/1832_krest_johann_strusch.jpg","t":"Křest 7. 6. 1832 (Krzanowice 1832 Nr. 74)"}
+      ]
+    },
+    {
+      id: "carlKu",
+      name: "Carl Kussin",
+      line: "struz",
+      cert: "M",
+      b: {"date":"cca 1809","year":1809,"approx":true,"place":"Chuchelná"},
+      d: {"date":"26. 9. 1836","year":1836,"place":"Chuchelná"},
+      cause: "mrtvice (am Schlag)",
+      occ: "zahradník (Gärtner) v Chuchelné",
+      notes: [
+        "Zemřel 26. 9. 1836 ve 27 letech, pohřben 29. 9.; dcera Marianna se narodila až po jeho smrti.",
+        "Kandidát na otce nebo příbuzného (K): zahradník Sebastian Kussin z Chuchelné († před 1837).",
+        "Sňatek s Rosalií Lassak není v Krzanowicích 1824–1836 (1830–32 k dočtení)."
+      ],
+      sources: [
+        "Silius Radicum – Krzanowice úmrtí 1836 Nr. 92 (složka 468, snímek 0013)"
+      ],
+      scans: [
+        {"f":"img/1836_umrti_carl_kussin.jpg","t":"Úmrtí 26. 9. 1836 (Krzanowice 1836 Nr. 92)"},
+        {"f":"img/1837_krest_marianna_kussin.jpg","t":"Křest 2. 4. 1837 (Krzanowice 1837 Nr. 58)"}
+      ]
+    },
+    {
+      id: "rosaliaLa",
+      name: "Rosalie Kussin",
+      maiden: "Lassak",
+      line: "struz",
+      cert: "M",
+      b: {"date":"?","year":1812,"approx":true},
+      notes: [
+        "Dcera Matthäuse Lassaka."
+      ],
+      sources: [
+        "křest dcery Marianny 1837 (Krzanowice Nr. 58)"
+      ],
+      scans: [
+        {"f":"img/1837_krest_marianna_kussin.jpg","t":"Křest 2. 4. 1837 (Krzanowice 1837 Nr. 58)"}
       ]
     },
     {
