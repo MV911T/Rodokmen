@@ -2,7 +2,7 @@
 # Builds rodokmen.html (Claude artifact) and index.html (GitHub Pages) by inlining data.js into template.html
 cd "$(dirname "$0")"
 python3 -I - <<'PY'
-t=open('template.html',encoding='utf8').read(); d=open('data.js',encoding='utf8').read()
+t=open('template.html',encoding='utf8').read(); d=open('geo.js',encoding='utf8').read()+open('data.js',encoding='utf8').read()
 page=t.replace('/*DATA*/',d)
 open('rodokmen.html','w',encoding='utf8').write(page)
 head='''<!doctype html>
