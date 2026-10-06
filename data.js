@@ -296,6 +296,9 @@ window.RODOKMEN.places = [
   { name: "Ostrava", lat: 49.835, lon: 18.29, hub: true, note: "Místo, kde se větve setkaly" },
   { name: "Kežmarok", dy: 6, lat: 49.135, lon: 20.43, line: "vesely", note: "Narození Svatoně Veselého 1933" },
   { name: "Věrovany", anchor: "start", dy: 4, lat: 49.46, lon: 17.29, line: "vesely", note: "Rod Plachý (Anna *1907)" },
+  { name: "Wieliczka", anchor: "end", dy: 16, lat: 49.987, lon: 20.065, line: "woron", note: "sňatek Woroňových 1896", small: true },
+  { name: "Opava", anchor: "end", dy: 4, lat: 49.94, lon: 17.90, line: "struz", note: "Stružovi kolem 1937", small: true },
+  { name: "Uherský Brod", dy: 4, lat: 49.025, lon: 17.65, line: "vesely", note: "Veselí 1940 (?)", small: true },
   { name: "Lednica Dolna", dy: -22, lat: 49.985, lon: 20.03, line: "woron", note: "Rod Woroń, Ondřej *1869 (?)" },
   { name: "Rajbrot", dy: 6, lat: 49.80, lon: 20.42, line: "woron", note: "Rod Włudyka od 1764 (?)" },
   { name: "Zagórzany (Gdów)", dy: 6, lat: 49.93, lon: 20.21, line: "chmielek", note: "Rod Chmielek (Stanislav)" },
@@ -351,4 +354,37 @@ window.RODOKMEN.timeline = [
   { y: 1957, t: "Svatba Svatoně Veselého a Marty Woroňové ve Slezské Ostravě" },
   { y: 1985, t: "Svatba Radima Veselého a Jany Pacíkové" },
   { y: 1986, t: "Narozen Matěj Veselý" }
+];
+
+// Documented migrations, drawn along period railway lines where the exact route is unknown.
+// kind: "doc" = move documented in records, "rail" = probable route by train, "hyp" = hypothesis
+window.RODOKMEN.moves = [
+  { line: "matusu", kind: "doc", who: "Anna Matůšů", when: "1916", note: "sňatkem z Nedašova do Nedašovy Lhoty č. 5",
+    path: [[49.105, 18.06], [49.135, 18.09]] },
+  { line: "pacik", kind: "doc", who: "Rudolf Pacík (*1936)", when: "cca 1960", note: "z Nedašovy Lhoty za prací do Ostravy",
+    path: [[49.135, 18.09], [49.22, 18.0], [49.455, 17.95], [49.60, 18.14], [49.835, 18.29]], railVia: "Vlára – Vsetín – Valašské Meziříčí" },
+  { line: "jirik", kind: "doc", who: "Rudolf Irzik", when: "1910", note: "sňatkem z Bolatic do Chuchelné",
+    path: [[49.95, 18.08], [50.00, 18.03]] },
+  { line: "struz", kind: "doc", who: "Arnošt a Marie Stružovi", when: "1937", note: "dcera Margareta se narodila pravděpodobně v Opavě",
+    path: [[50.00, 18.03], [49.94, 17.90]] },
+  { line: "struz", kind: "doc", who: "Margareta Stružová", when: "cca 1960", note: "z Opavy do Ostravy, sňatek s Rudolfem Pacíkem",
+    path: [[49.94, 17.90], [49.90, 18.10], [49.835, 18.29]] },
+  { line: "woron", kind: "doc", who: "Markéta Włudyka", when: "1896", note: "z Rajbrotu do Wieliczky, sňatek s Ondřejem Woroněm 24. 8. 1896",
+    path: [[49.80, 20.42], [49.97, 20.43], [49.987, 20.065]] },
+  { line: "woron", kind: "doc", who: "Ondřej Woroń", when: "1896", note: "z Lednice Dolní (předměstí Wieliczky)",
+    path: [[49.985, 20.03], [49.987, 20.065]] },
+  { line: "woron", kind: "rail", who: "Ondřej a Markéta Woroňovi", when: "1896–1903", note: "z Wieliczky do Polské Ostravy; trasa vlakem Kraków – Oświęcim – Bohumín je pravděpodobná, nedoložená",
+    path: [[49.987, 20.065], [50.06, 19.94], [50.04, 19.22], [49.95, 18.75], [49.90, 18.36], [49.835, 18.29]] },
+  { line: "chmielek", kind: "rail", who: "Stanislav Chmielek", when: "před 1903", note: "ze Zagórzan do Polské Ostravy; trasa přes Kraków pravděpodobná",
+    path: [[49.93, 20.21], [50.06, 19.94], [50.04, 19.22], [49.95, 18.75], [49.90, 18.36], [49.835, 18.29]] },
+  { line: "chmielek", kind: "hyp", who: "Helena Dydowicz", when: "před 1903", note: "z Rudna u Tarnova do Polské Ostravy; kudy a kdy šla, zatím nevíme",
+    path: [[50.01, 20.99], [50.06, 19.94]] },
+  { line: "vesely", kind: "doc", who: "Karel Veselý", when: "1922", note: "z Plzně (narozen 1904 u Českých Budějovic) do Kežmarku; vlakem přes Přerov – Žilinu – Poprad",
+    path: [[49.40, 16.95], [49.455, 17.45], [49.60, 18.14], [49.22, 18.74], [49.06, 20.30], [49.135, 20.43]], fromOffMap: "z Plzně" },
+  { line: "vesely", kind: "doc", who: "Anna Plachá", when: "1930", note: "z Věrovan za sestrou Terezií Krejsovou do Kežmarku",
+    path: [[49.46, 17.29], [49.455, 17.45], [49.60, 18.14], [49.22, 18.74], [49.06, 20.30], [49.135, 20.43]] },
+  { line: "vesely", kind: "hyp", who: "Veselí se Svatoněm", when: "1939–1940 (?)", note: "po vzniku Slovenského státu odchod do Protektorátu; rodinná poznámka zmiňuje Uherský Brod 1940",
+    path: [[49.135, 20.43], [49.06, 20.30], [49.22, 18.74], [49.025, 17.65]] },
+  { line: "vesely", kind: "hyp", who: "Svatoň Veselý", when: "před 1957", note: "do Ostravy; sňatek s Martou Woroňovou 1957 ve Slezské Ostravě",
+    path: [[49.025, 17.65], [49.455, 17.45], [49.60, 18.14], [49.835, 18.29]] }
 ];

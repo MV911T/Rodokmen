@@ -118,7 +118,15 @@ dl.facts dd{margin:0;min-width:0}
 #map .cityl.r1{font-size:13px;font-weight:600}
 #map .cityl.r3{font-size:10px;font-style:italic}
 #map .glabel{fill:var(--muted);font-size:10px;font-family:var(--f-data)}
-#map .route{fill:none;stroke-width:2.2;stroke-dasharray:6 4;opacity:.85}
+#map .route{fill:none;stroke-width:2.2;opacity:.9;stroke-linecap:round}
+#map .route.k-hyp{opacity:.75}
+#map .route:hover{stroke-width:4}
+.mlegend{display:flex;flex-wrap:wrap;gap:6px 16px;font-size:.75rem;color:var(--muted);margin:6px 2px 0}
+.mlegend svg{vertical-align:middle;margin-right:4px}
+.moves{margin:12px 2px 0;padding:0;list-style:none;display:flex;flex-direction:column;gap:5px;font-size:.82rem;line-height:1.4}
+.moves li{border-left:3px solid var(--c);padding-left:8px}
+.moves b{font-weight:600}
+.moves .k{color:var(--muted);font-size:.72rem;text-transform:uppercase;letter-spacing:.05em;margin-left:4px}
 #map .pt{stroke:var(--surface);stroke-width:2}
 #map .lbl{font-family:var(--f-data);font-size:12px;fill:var(--ink);paint-order:stroke;stroke:var(--surface);stroke-width:3px}
 #map .sub{font-size:10px;fill:var(--muted)}
@@ -160,7 +168,7 @@ dl.facts dd{margin:0;min-width:0}
     <span class="cert"><span class="dot K"></span>kandidát</span>
   </div>
 </div>
-<section id="mapView" hidden><div class="mapwrap"><div class="mapfig"><svg id="map" role="img" aria-label="Mapa původu rodových větví"></svg><p class="cap">Hranice podle dnešních států (Natural Earth). Čárkované oblouky ukazují cesty předků do Ostravy.</p></div><div id="story" class="story"></div></div><div class="tl"><h3>Časová osa</h3><ol id="tl"></ol></div></section>
+<section id="mapView" hidden><div class="mapwrap"><div class="mapfig"><svg id="map" role="img" aria-label="Mapa původu rodových větví"></svg><div class="mlegend"><span><svg width="28" height="6"><line x1="0" y1="3" x2="28" y2="3" stroke="var(--muted)" stroke-width="2.2"/></svg>doložený přesun</span><span><svg width="28" height="6"><line x1="0" y1="3" x2="28" y2="3" stroke="var(--muted)" stroke-width="2.2" stroke-dasharray="7 5"/></svg>pravděpodobná trasa (vlakem)</span><span><svg width="28" height="6"><line x1="0" y1="3" x2="28" y2="3" stroke="var(--muted)" stroke-width="2.2" stroke-dasharray="2 5" stroke-linecap="round"/></svg>domněnka</span></div><p class="cap">Hranice podle dnešních států (Natural Earth). Čáry vedou po tehdejších železničních tratích, kde přesná cesta není známa. Po najetí myší se ukáže, kdo a kdy.</p><ol class="moves" id="moves"></ol></div><div id="story" class="story"></div></div><div class="tl"><h3>Časová osa</h3><ol id="tl"></ol></div></section>
 <div id="scroller">
   <div id="inner">
     <div id="canvas"><svg class="links" id="links"></svg></div>
@@ -330,18 +338,24 @@ requestAnimationFrame(()=>{ const c=document.querySelector(`.card[data-id="${D.r
   for(let o=Math.ceil(lon0*2)/2;o<=lon1;o+=.5) g+=`<line class="grat" y1="0" y2="${H}" x1="${X(o)}" x2="${X(o)}"/>`;
   G.labels.forEach(l=>{ g+=`<text class="country" x="${X(l.lon)}" y="${Y(l.lat)}">${l.t}</text>`; });
   G.cities.filter(c=>c.r>0).forEach(c=>{ const r=[0,4,3,2.5][c.r]; const e=c.anchor==='end'; g+=`<circle class="city" cx="${X(c.lon)}" cy="${Y(c.lat)}" r="${r}"/><text class="cityl r${c.r}" text-anchor="${e?'end':'start'}" x="${X(c.lon)+(e?-(r+3):r+3)}" y="${Y(c.lat)+3.5}">${c.n}</text>`; });
-  const hub=D.places.find(p=>p.hub);
-  D.places.filter(p=>!p.hub).forEach(p=>{
-    const x1=X(p.lon),y1=Y(p.lat),x2=X(hub.lon),y2=Y(hub.lat), mx=(x1+x2)/2, my=(y1+y2)/2-Math.abs(x1-x2)*.12-20;
-    g+=`<path class="route" stroke="var(--l-${p.line})" d="M${x1},${y1} Q${mx},${my} ${x2},${y2}"/>`;
+  const DASH={doc:'', rail:'7 5', hyp:'2 5'};
+  g+=`<defs>${[...new Set(D.moves.map(m=>m.line))].map(l=>`<marker id="ar-${l}" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="var(--l-${l})"/></marker>`).join('')}</defs>`;
+  D.moves.forEach(m=>{
+    const pts=m.path.map(([la,lo])=>[X(lo),Y(la)]);
+    let d=`M${pts[0][0].toFixed(1)},${pts[0][1].toFixed(1)}`;
+    for(let i=1;i<pts.length;i++){ const [x0,y0]=pts[i-1],[x1,y1]=pts[i]; d+=` Q${((x0+x1)/2+(y1-y0)*.08).toFixed(1)},${((y0+y1)/2-(x1-x0)*.08).toFixed(1)} ${x1.toFixed(1)},${y1.toFixed(1)}`; }
+    g+=`<path class="route k-${m.kind}" stroke="var(--l-${m.line})" stroke-dasharray="${DASH[m.kind]}" marker-end="url(#ar-${m.line})" d="${d}"><title>${m.who}, ${m.when}: ${m.note}</title></path>`;
+    if(m.fromOffMap) g+=`<text class="lbl sub" x="${pts[0][0]+4}" y="${pts[0][1]-6}">← ${m.fromOffMap}</text>`;
   });
   D.places.forEach(p=>{
     const x=X(p.lon),y=Y(p.lat), right = p.lon<19 ? (p.name==='Nedašov'||p.name==='Bolatice') : false;
     const anchor = p.anchor || ((p.lon<18.2 && !p.hub) ? 'end' : 'start'), dx = anchor==='end'?-10:10, dy=p.dy||0;
-    g+=`<circle class="pt ${p.hub?'hub':''}" cx="${x}" cy="${y}" r="${p.hub?9:6}" fill="${p.hub?'var(--accent)':'var(--l-'+p.line+')'}"><title>${p.name} – ${p.note}</title></circle>`;
+    g+=`<circle class="pt ${p.hub?'hub':''}" cx="${x}" cy="${y}" r="${p.hub?9:(p.small?4.5:6)}" fill="${p.hub?'var(--accent)':'var(--l-'+p.line+')'}"><title>${p.name} – ${p.note}</title></circle>`;
     g+=`<text class="lbl" x="${x+dx}" y="${y+4+dy}" text-anchor="${anchor}">${p.name}</text><text class="lbl sub" x="${x+dx}" y="${y+17+dy}" text-anchor="${anchor}">${p.note}</text>`;
   });
   svg.innerHTML=g;
+  const KIND={doc:'doloženo',rail:'trasa pravděpodobná',hyp:'domněnka'};
+  document.getElementById('moves').innerHTML=D.moves.map(m=>`<li style="--c:var(--l-${m.line})"><b>${m.when}</b> – ${m.who}: ${m.note}<span class="k">${KIND[m.kind]}</span></li>`).join('');
   document.getElementById('story').innerHTML=D.story.map(s=>`<article style="--c:var(--l-${s.line})"><h2>${s.title}</h2>${s.text.map(t=>`<p>${t}</p>`).join('')}</article>`).join('');
   document.getElementById('tl').innerHTML=D.timeline.map(e=>`<li><b>${e.y}</b>${e.t}</li>`).join('');
   const tT=document.getElementById('tabTree'), tM=document.getElementById('tabMap'), MV=document.getElementById('mapView'), SC=document.getElementById('scroller'), LG=document.querySelector('.legend'), TL=document.querySelector('.tools');
