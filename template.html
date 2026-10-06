@@ -85,6 +85,18 @@ dl.facts dd{margin:0;min-width:0}
 .dlg ul{margin:0;padding-left:18px;font-size:.9rem;line-height:1.45}
 .dlg li+li{margin-top:4px}
 .src{font-size:.82rem;color:var(--muted)}
+.scans{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:10px}
+.scan{border:1px solid var(--rule);border-radius:6px;overflow:hidden;background:var(--bg);cursor:zoom-in;padding:0;font:inherit;color:inherit;text-align:left}
+.scan img{display:block;width:100%;height:110px;object-fit:cover;object-position:top;filter:contrast(1.05)}
+.scan span{display:block;font-size:.72rem;padding:5px 7px;color:var(--muted)}
+#viewer{position:fixed;inset:0;background:rgba(8,12,15,.92);display:flex;flex-direction:column;z-index:20}
+#viewer[hidden]{display:none}
+#viewer .bar{display:flex;justify-content:space-between;align-items:center;gap:12px;color:#e6ecef;padding:10px 16px;font-size:.85rem}
+#viewer .bar button{background:transparent;color:#e6ecef;border:1px solid #5a6b74;border-radius:6px;padding:4px 10px;cursor:pointer;font:inherit}
+#viewer .pane{flex:1;overflow:auto;cursor:zoom-in}
+#viewer .pane img{display:block;width:100%;height:auto;max-width:none}
+#viewer .pane.fit img{width:auto;max-width:100%;max-height:100%;margin:auto}
+#viewer .pane.fit{display:flex;cursor:zoom-in}
 @media (max-width:520px){ header h1{font-size:1.25rem} .certs{margin-left:0} dl.facts{grid-template-columns:1fr} }
 @media (prefers-reduced-motion:reduce){ *{transition:none!important;scroll-behavior:auto!important} }
 </style>
@@ -117,6 +129,7 @@ dl.facts dd{margin:0;min-width:0}
   </div>
 </div>
 
+<div id="viewer" hidden><div class="bar"><span id="vt"></span><span><button type="button" id="vz">Přiblížit</button> <button type="button" id="vx">Zavřít</button></span></div><div class="pane fit" id="vp"><img id="vi" alt=""></div></div>
 <dialog id="dlg"><div class="dlg" id="dlgBody"></div></dialog>
 
 <script>
@@ -230,13 +243,21 @@ function open(id){
     <span class="badge"><span class="dot ${p.cert}"></span>${CERT[p.cert]}</span>
     <dl class="facts">${rows.map(([k,v])=>`<dt>${k}</dt><dd>${v}</dd>`).join('')}</dl>
     ${p.notes&&p.notes.length?`<h3>Poznámky</h3><ul>${p.notes.map(n=>`<li>${n}</li>`).join('')}</ul>`:''}
+    ${p.scans&&p.scans.length?`<h3>Zápisy v matrice</h3><div class="scans">${p.scans.map(s=>`<button type="button" class="scan" data-src="${s.f}" data-t="${s.t}"><img src="${s.f}" alt="${s.t}" loading="lazy"><span>${s.t}</span></button>`).join('')}</div>`:''}
     ${p.sources&&p.sources.length?`<h3>Prameny</h3><ul class="src">${p.sources.map(n=>`<li>${n}</li>`).join('')}</ul>`:''}`;
   body.querySelector('.x').addEventListener('click',()=>dlg.close());
+  body.querySelectorAll('.scan').forEach(b=>b.addEventListener('click',()=>showScan(b.dataset.src,b.dataset.t)));
   body.querySelectorAll('[data-go]').forEach(b=>b.addEventListener('click',()=>{ focusCard(b.dataset.go); open(b.dataset.go); }));
   document.querySelectorAll('svg.links path').forEach(pa=>pa.classList.toggle('hl', pa.dataset.c===id||pa.dataset.p===id));
   if(!dlg.open) dlg.showModal();
 }
 dlg.addEventListener('click',e=>{ if(e.target===dlg) dlg.close(); });
+const V=document.getElementById('viewer'), VP=document.getElementById('vp');
+function showScan(src,t){ document.getElementById('vi').src=src; document.getElementById('vt').textContent=t; VP.classList.add('fit'); document.getElementById('vz').textContent='Přiblížit'; if(dlg.open) dlg.close(); V.hidden=false; }
+function zoomScan(){ const f=VP.classList.toggle('fit'); document.getElementById('vz').textContent=f?'Přiblížit':'Oddálit'; }
+document.getElementById('vz').addEventListener('click',zoomScan); VP.addEventListener('click',zoomScan);
+document.getElementById('vx').addEventListener('click',()=>{ V.hidden=true; });
+document.addEventListener('keydown',e=>{ if(e.key==='Escape' && !V.hidden) V.hidden=true; });
 
 const sc = document.getElementById('scroller');
 function focusCard(id){
