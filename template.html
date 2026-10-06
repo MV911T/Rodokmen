@@ -63,7 +63,7 @@ svg.links path.hl{stroke:var(--accent);stroke-width:2}
 .card .sw{margin-top:5px;flex:none}
 .card .nm{font-family:var(--f-name);font-weight:600;font-size:.86rem;line-height:1.15;overflow:hidden;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical}
 .card .mn{font-size:.7rem;color:var(--muted);margin-top:1px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
-.card .yr{display:flex;justify-content:space-between;align-items:center;margin-top:3px;font-size:.74rem;font-variant-numeric:tabular-nums}
+.card .yr{display:flex;justify-content:space-between;align-items:flex-end;gap:4px;margin-top:3px;font-size:.7rem;line-height:1.25;font-variant-numeric:tabular-nums}
 .card .yr .dot{width:7px;height:7px;border-width:1.3px}
 .card.root{border-color:var(--accent);border-width:2px}
 .card.dim{opacity:.22}
@@ -146,10 +146,11 @@ D.people.forEach(p=>{ if(col[p.id]===undefined) col[p.id]=leaf++; });
 const years = D.people.map(p=>p.b.year);
 const y0 = Math.floor((Math.min(...years)-6)/10)*10, y1 = 2000;
 const age = (p)=>{ const a=p.b.year, b=(p.d&&p.d.year)||(p.alive?2026:null); return (a&&b&&!p.b.approx&&!(p.d&&p.d.approx))? (b-a) : null; };
-const span = p => { const b=(p.b.approx?'~':'')+(p.b.year||'?'); const d=p.d?((p.d.approx?'~':'')+p.d.year):(p.alive?'žije':''); return d? `${b} – ${d}` : `*${b}`; };
+const full = (e) => { if(!e) return ''; const m=(e.date||'').match(/^\s*(\d{1,2}\.\s*\d{1,2}\.\s*\d{4})/); return m? m[1].replace(/\s+/g,' ') : (e.approx?'~':'')+(e.year||'?'); };
+const span = p => { const b=full(p.b); const d=p.d?full(p.d):(p.alive?'žije':''); return d? `${b} – ${d}` : `* ${b}`; };
 
 function render(){
-  const cw = Math.round(170*Math.min(zoom,1.25)), gap = Math.round(26*zoom), ppy = 7.2*zoom;
+  const cw = Math.round(178*Math.min(zoom,1.25)), gap = Math.round(26*zoom), ppy = 7.2*zoom;
   const W = leaf*(cw+gap)+gap, H = (y1-y0)*ppy + 90;
   const cv = document.getElementById('canvas'), ru = document.getElementById('ruler');
   cv.style.width=W+'px'; cv.style.height=H+'px'; ru.style.height=H+'px'; cv.style.setProperty('--cw',cw+'px');
