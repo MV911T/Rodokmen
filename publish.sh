@@ -1,5 +1,5 @@
 #!/bin/bash
-# Rebuilds the pages from data.js and pushes to GitHub Pages. Usage: ./publish.sh "popis změny"
+# Rebuilds the pages from data.js and pushes to GitHub Pages. Usage: ./publish.sh "change description"
 set -e
 cd "$(dirname "$0")"
 ./build.sh

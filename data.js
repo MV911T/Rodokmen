@@ -1,5 +1,5 @@
-// Rodokmen Matěje Veselého – data (generated from RODOKMEN_stav_vyzkumu.md, update with every research iteration)
-// cert: M = přečteno v matrice, D = jiný doklad, R = rodinná tradice, K = kandidát / neověřeno
+// Family tree of Matěj Veselý – data (derived from RODOKMEN_stav_vyzkumu.md; update with every research iteration)
+// cert: M = read in a parish/civil register, D = other document, R = family tradition, K = candidate / unverified
 window.RODOKMEN = {
   updated: "6. 10. 2026",
   root: "matej",
@@ -35,12 +35,17 @@ window.RODOKMEN = {
       father: "karelV", mother: "annaP",
       marriage: "28. 9. 1957, Slezská Ostrava (kostel sv. Josefa) – s Martou Woroňovou",
       notes: ["Rodinný hrob v Hodoňovicích.", "Sourozenci: Karel, Růženka.", "V poznámkách se objevuje Uherský Brod 1940 – význam neověřen.", "Odpis rodného listu vyžádán z Matričného úradu Kežmarok (6. 10. 2026)."] },
-    { id: "karelV", name: "Karel Veselý", line: "vesely", cert: "R",
-      b: { date: "cca 1903", year: 1903, approx: true },
-      notes: ["Rodiče a původ zatím neznámé.", "Kandidát: Karel Veselý, předseda ONV Uherský Brod 1945 (neověřeno)."] },
-    { id: "annaP", name: "Anna Veselá", maiden: "Plachá", line: "vesely", cert: "R",
-      b: { date: "?", year: 1908, approx: true },
-      notes: ["Údaje neznámé – čeká se na rodný zápis Svatoně z Kežmarku."] },
+    { id: "karelV", scans: [{"f": "img/1930_scitani_karel_vesely.jpg", "t": "Sčítání 1930, Kežmarok, Hlavná ul. 7 (ř. 8)"}], name: "Karel (Karol) Veselý", line: "vesely", cert: "D",
+      b: { date: "4. 10. 1904", year: 1904, place: "Plavnice / Planá (?), okr. České Budějovice, Čechy" },
+      occ: "úředník (Offizial) Nemocenské pojišťovny v Kežmarku; 1934–37 městský zastupitel za Čsl. sociálně demokratickou stranu",
+      marriage: "mezi 12/1930 a 9/1933 – s Annou Plachou (v roce 1930 oba svobodní)",
+      notes: ["Sčítání 2. 12. 1930: podnájemník v domě Elsy Hegenbart, Hauptgasse (Hlavná ul.) č. 7; svobodný; národnost česká; bez vyznání; do Kežmarku přišel 19. 11. 1922 z Plzně; domovská obec „Todňany“ (?), okr. Č. Budějovice – čtení nejisté.", "Karpathen-Post: 27. 10. 1934 náhradník kandidátky ČSSD („Karol Vesely, Beamter“), 16. 2. 1935 složil slib jako městský zastupitel, člen finanční komise; 1936 bydliště Kežmarok, Sihoť (Insel) 15; 1937 jednatel místní skupiny KČST (Klub čs. turistů).", "Dřívější odhad narození „cca 1903“ opraven podle sčítání.", "Kandidát: Karel Veselý, předseda ONV Uherský Brod 1945 (neověřeno)."],
+      sources: ["Sčítání lidu 1930, Kežmarok, arch 321/56 (Slovakiana, objekt cair-ko11kbp)", "Karpathen-Post 27. 10. 1934, 8. 12. 1934, 26. 1. 1935, 16. 2. 1935, 5. 12. 1936, 27. 11. 1937 (difmoe.eu)"] },
+    { id: "annaP", scans: [{"f": "img/1930_scitani_anna_placha.jpg", "t": "Sčítání 1930, Kežmarok, Trímostová ul. 57 (ř. 5)"}], name: "Anna Veselá", maiden: "Plachá", line: "vesely", cert: "D",
+      b: { date: "5. 12. 1907", year: 1907, place: "Věrovany, okr. Tovačov, Morava" },
+      occ: "pokladní (1930, v řeznictví švagra Methoda Krejsy)",
+      notes: ["Sčítání 1930: žila v domácnosti sestry Terezie (*2. 1. 1902 Věrovany) a jejího muže Methoda Krejsy, řezníka a uzenáře (*1895 Citov), Kežmarok, Trímostová ul. 57; do Kežmarku přišla 1930 z Věrovan; svobodná; římskokatolická; národnost česká.", "Bratr František Plachý *17. 8. 1906 Věrovany, řeznický pomocník v Kežmarku od 1925.", "Rodiče zatím neznámé → matrika Věrovany (ZA Opava, pobočka Olomouc)."],
+      sources: ["Sčítání lidu 1930, Kežmarok, arch 321/242 (Slovakiana, objekt cair-ko1515u)"] },
 
     // ── Woroň / Chmielek ───────────────────────────────
     { id: "marta", name: "Marta Veselá", maiden: "Woroňová", line: "woron", cert: "D",
@@ -286,7 +291,7 @@ window.RODOKMEN = {
   ]
 };
 
-// ── Mapa původu a historické souvislosti ─────────────────────────────
+// ── Origin map and historical context ─────────────────────────────
 window.RODOKMEN.places = [
   { name: "Ostrava", lat: 49.835, lon: 18.29, hub: true, note: "Místo, kde se větve setkaly" },
   { name: "Kežmarok", dy: 6, lat: 49.135, lon: 20.43, line: "vesely", note: "Narození Svatoně Veselého 1933" },
