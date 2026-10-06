@@ -103,6 +103,33 @@ dl.facts dd{margin:0;min-width:0}
 #viewer .pane img{display:block;width:100%;height:auto;max-width:none}
 #viewer .pane.fit img{width:auto;max-width:100%;max-height:100%;margin:auto}
 #viewer .pane.fit{display:flex;cursor:zoom-in}
+
+.tabs{display:flex;gap:4px}
+.tabs button{font:inherit;font-size:.85rem;padding:6px 12px;border:1px solid var(--rule);border-radius:6px;background:var(--surface);color:var(--muted);cursor:pointer}
+.tabs button[aria-selected="true"]{color:var(--ink);border-color:var(--ink);font-weight:600}
+#mapView{flex:1;overflow:auto;padding:16px;box-sizing:border-box}
+.mapwrap{display:grid;grid-template-columns:minmax(0,1.3fr) minmax(0,1fr);gap:24px;max-width:1300px;margin:0 auto}
+@media (max-width:900px){.mapwrap{grid-template-columns:1fr}}
+.mapfig{min-width:0}
+#map{width:100%;height:auto;display:block;background:var(--surface);border:1px solid var(--rule);border-radius:8px}
+#map .grat{stroke:var(--grid);stroke-width:1;fill:none}
+#map .glabel{fill:var(--muted);font-size:10px;font-family:var(--f-data)}
+#map .route{fill:none;stroke-width:2.2;stroke-dasharray:6 4;opacity:.85}
+#map .pt{stroke:var(--surface);stroke-width:2}
+#map .lbl{font-family:var(--f-data);font-size:12px;fill:var(--ink);paint-order:stroke;stroke:var(--surface);stroke-width:3px}
+#map .sub{font-size:10px;fill:var(--muted)}
+#map .country{font-family:var(--f-name);font-style:italic;font-size:15px;fill:var(--muted);opacity:.7;letter-spacing:.1em}
+#map .hub{fill:var(--accent)}
+.cap{font-size:.75rem;color:var(--muted);margin:6px 2px 0}
+.story{display:flex;flex-direction:column;gap:18px;min-width:0}
+.story article{border-left:3px solid var(--c);padding:2px 0 2px 14px}
+.story h2{font-family:var(--f-name);font-size:1.1rem;margin:0 0 6px;font-weight:600;text-wrap:balance}
+.story p{margin:0 0 8px;line-height:1.5;font-size:.92rem;max-width:65ch}
+.tl{max-width:1300px;margin:24px auto 0}
+.tl h3{font-size:.72rem;color:var(--muted);text-transform:uppercase;letter-spacing:.06em;margin:0 0 8px}
+.tl ol{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:8px}
+.tl li{background:var(--surface);border:1px solid var(--rule);border-radius:6px;padding:8px 10px;font-size:.85rem;line-height:1.35}
+.tl b{font-variant-numeric:tabular-nums;display:block;font-family:var(--f-name);font-size:1rem}
 @media (max-width:520px){ header h1{font-size:1.25rem} .certs{margin-left:0} dl.facts{grid-template-columns:1fr} }
 @media (prefers-reduced-motion:reduce){ *{transition:none!important;scroll-behavior:auto!important} }
 </style>
@@ -115,6 +142,7 @@ dl.facts dd{margin:0;min-width:0}
     <h1>Rodokmen Veselých</h1>
     <div class="meta" id="meta"></div>
   </div>
+  <nav class="tabs" role="tablist"><button type="button" role="tab" id="tabTree" aria-selected="true">Rodokmen</button><button type="button" role="tab" id="tabMap" aria-selected="false">Odkud jsme</button></nav>
   <div class="tools">
     <input id="q" type="search" placeholder="Najít osobu…" aria-label="Najít osobu">
     <button id="zout" type="button" aria-label="Oddálit">−</button>
@@ -131,6 +159,7 @@ dl.facts dd{margin:0;min-width:0}
     <span class="cert"><span class="dot K"></span>kandidát</span>
   </div>
 </div>
+<section id="mapView" hidden><div class="mapwrap"><div class="mapfig"><svg id="map" role="img" aria-label="Mapa původu rodových větví"></svg><p class="cap">Schematická mapa (zeměpisná síť po 0,5°). Šipky ukazují cesty předků do Ostravy.</p></div><div id="story" class="story"></div></div><div class="tl"><h3>Časová osa</h3><ol id="tl"></ol></div></section>
 <div id="scroller">
   <div id="inner">
     <div id="canvas"><svg class="links" id="links"></svg></div>
@@ -405,6 +434,61 @@ window.RODOKMEN = {
   ]
 };
 
+// ── Mapa původu a historické souvislosti ─────────────────────────────
+window.RODOKMEN.places = [
+  { name: "Ostrava", lat: 49.835, lon: 18.29, hub: true, note: "Místo, kde se větve setkaly" },
+  { name: "Kežmarok", lat: 49.135, lon: 20.43, line: "vesely", note: "Narození Svatoně Veselého 1933" },
+  { name: "Lednica Dolna", lat: 49.985, lon: 20.03, line: "woron", note: "Rod Woroń, Ondřej *1869 (?)" },
+  { name: "Rajbrot", lat: 49.80, lon: 20.42, line: "woron", note: "Rod Włudyka (Markéta)" },
+  { name: "Zagórzany (Gdów)", lat: 49.93, lon: 20.21, line: "chmielek", note: "Rod Chmielek (Stanislav)" },
+  { name: "Tarnów", lat: 50.01, lon: 20.99, line: "chmielek", note: "Rod Dydowicz (Helena)" },
+  { name: "Nedašova Lhota", lat: 49.135, lon: 18.09, line: "pacik", note: "Rod Pacík / Fojtík od 1712" },
+  { name: "Nedašov", lat: 49.105, lon: 18.06, line: "matusu", note: "Rod Matůšů, Novák, Holba" },
+  { name: "Chuchelná", lat: 50.00, lon: 18.03, line: "struz", note: "Rody Strusch, Opolony, Jiřík" },
+  { name: "Bolatice", lat: 49.95, lon: 18.08, line: "jirik", note: "Rudolf Irzik *1882" }
+];
+window.RODOKMEN.story = [
+  { line: "pacik", title: "Valašsko pod Bílými Karpaty – Pacíci a Matůšů",
+    text: [
+      "Nedašov a Nedašova Lhota leží na moravsko-slovenském pomezí pod Bílými Karpaty a patřily k panství Brumov. Nejstarší doložený předek, mlynář Tobiáš Pacík (*cca 1712, †1779), žil v domě č. 5, kde rod přebýval přes 150 let.",
+      "V matrikách 18. století se stejná rodina psala jednou „Pacík“, jindy „Fojtík“ – příjmení se v té době teprve ustalovala. Zápisy jsou latinsky, v 19. století německy a od 70. let česky.",
+      "Předkové byli domkáři, podsedníci a tkalci – drobní venkované bez větší půdy. Dědeček Rudolf (*1936) odešel jako mnoho Valachů za prací do průmyslové Ostravy."
+    ] },
+  { line: "struz", title: "Hlučínsko – Struž, Jiřík a Opoloný",
+    text: [
+      "Chuchelná a Bolatice leží na Hlučínsku. Po slezských válkách v roce 1742 připadlo Prusku, takže zdejší lidé byli 178 let pruskými (později německými) občany, i když mluvili moravským nářečím „po našymu“.",
+      "Proto jsou jejich matriky od roku 1874 německé civilní (Standesamt Kuchelna) a jména se psala německy: Ernst Strusch, Rudolf Irzik, Marie Opolony.",
+      "V roce 1920 bylo Hlučínsko připojeno k Československu, v roce 1938 k Německu a v roce 1945 znovu k ČSR. Muži jako Arnošt Struž proto za 2. světové války sloužili v německé armádě a po válce byli souzeni lidovými soudy."
+    ] },
+  { line: "woron", title: "Halič – Woroň, Włudyka, Chmielek a Dydowicz",
+    text: [
+      "Halič (polsky Galicja) byla v letech 1772–1918 korunní zemí Rakouska-Uherska – zhruba dnešní jižní Polsko a západní Ukrajina. Na přelomu 19. a 20. století patřila k nejchudším oblastem Evropy („galicyjska bieda“).",
+      "Tisíce lidí proto odcházely za prací do ostravských dolů – byly ve stejné monarchii, takže se dalo volně stěhovat. Přesně tak přišli Ondřej Woroń z Lednice u Wieliczky, Markéta Włudyka z Rajbrotu, Stanislav Chmielek ze Zagórzan a Helena Dydowicz od Tarnova.",
+      "Usadili se v hornické Polské Ostravě (od roku 1919 Slezská Ostrava), kde se jim v roce 1903 narodili Ludvík a Honorata – rodiče babičky Marty."
+    ] },
+  { line: "vesely", title: "Spiš – Veselí",
+    text: [
+      "Svatoň Veselý se narodil v roce 1933 v Kežmarku na Spiši. V letech 1918–1938 pracovaly na Slovensku tisíce Čechů ve státní službě (úředníci, železničáři, četníci, učitelé).",
+      "Po vzniku Slovenského státu v roce 1939 museli většinou odejít do českých zemí. Poznámka „Uherský Brod 1940“ v rodinných papírech tomu odpovídá – zatím jde ale o hypotézu, kterou ověří rodný zápis z Kežmarku."
+    ] }
+];
+window.RODOKMEN.timeline = [
+  { y: 1712, t: "Narozen Tobiáš Pacík (Fojtík), nejstarší doložený předek" },
+  { y: 1742, t: "Hlučínsko připadá Prusku" },
+  { y: 1772, t: "Vzniká Halič jako součást habsburské monarchie" },
+  { y: 1874, t: "V Prusku začínají civilní matriky (Standesamt)" },
+  { y: 1896, t: "Woroňové a Chmielkové odcházejí z Haliče na Ostravsko (cca)" },
+  { y: 1903, t: "V Polské Ostravě se rodí Ludvík Woroň a Honorata Chmielková" },
+  { y: 1918, t: "Vzniká Československo, konec Haliče" },
+  { y: 1920, t: "Hlučínsko připojeno k ČSR" },
+  { y: 1933, t: "Svatoň Veselý se rodí v Kežmarku" },
+  { y: 1938, t: "Hlučínsko připojeno k Německu" },
+  { y: 1945, t: "Konec války, Hlučínsko znovu v ČSR" },
+  { y: 1957, t: "Svatba Svatoně Veselého a Marty Woroňové ve Slezské Ostravě" },
+  { y: 1985, t: "Svatba Radima Veselého a Jany Pacíkové" },
+  { y: 1986, t: "Narozen Matěj Veselý" }
+];
+
 </script>
 <script>
 (function(){
@@ -548,6 +632,38 @@ document.getElementById('home').addEventListener('click',()=>focusCard(D.root));
 
 render();
 requestAnimationFrame(()=>{ const c=document.querySelector(`.card[data-id="${D.root}"]`); if(c) sc.scrollTo({left:c.offsetLeft-sc.clientWidth/2+c.offsetWidth/2, top:Math.max(0,c.offsetTop-60)}); });
+})();
+
+// ── map & story view ──
+(function(){
+  const D=window.RODOKMEN, svg=document.getElementById('map');
+  const lat0=48.8, lat1=50.35, lon0=17.4, lon1=21.4, W=900, k=Math.cos(49.6*Math.PI/180);
+  const H=Math.round(W*(lat1-lat0)/((lon1-lon0)*k));
+  svg.setAttribute('viewBox',`0 0 ${W} ${H}`);
+  const X=lon=>(lon-lon0)/(lon1-lon0)*W, Y=lat=>(lat1-lat)/(lat1-lat0)*H;
+  let g='';
+  for(let a=Math.ceil(lat0*2)/2;a<=lat1;a+=.5) g+=`<line class="grat" x1="0" x2="${W}" y1="${Y(a)}" y2="${Y(a)}"/><text class="glabel" x="4" y="${Y(a)-3}">${a}° s. š.</text>`;
+  for(let o=Math.ceil(lon0*2)/2;o<=lon1;o+=.5) g+=`<line class="grat" y1="0" y2="${H}" x1="${X(o)}" x2="${X(o)}"/><text class="glabel" x="${X(o)+3}" y="${H-4}">${o}° v. d.</text>`;
+  g+=`<text class="country" x="${X(17.55)}" y="${Y(49.55)}">ČESKO</text><text class="country" x="${X(19.2)}" y="${Y(50.25)}">POLSKO</text><text class="country" x="${X(19.2)}" y="${Y(48.9)}">SLOVENSKO</text>`;
+  const hub=D.places.find(p=>p.hub);
+  D.places.filter(p=>!p.hub).forEach(p=>{
+    const x1=X(p.lon),y1=Y(p.lat),x2=X(hub.lon),y2=Y(hub.lat), mx=(x1+x2)/2, my=(y1+y2)/2-Math.abs(x1-x2)*.12-20;
+    g+=`<path class="route" stroke="var(--l-${p.line})" d="M${x1},${y1} Q${mx},${my} ${x2},${y2}"/>`;
+  });
+  D.places.forEach(p=>{
+    const x=X(p.lon),y=Y(p.lat), right = p.lon<19 ? (p.name==='Nedašov'||p.name==='Bolatice') : false;
+    const anchor = (p.lon<18.2 && !p.hub) ? 'end' : 'start', dx = anchor==='end'?-10:10;
+    g+=`<circle class="pt ${p.hub?'hub':''}" cx="${x}" cy="${y}" r="${p.hub?9:6}" fill="${p.hub?'var(--accent)':'var(--l-'+p.line+')'}"><title>${p.name} – ${p.note}</title></circle>`;
+    g+=`<text class="lbl" x="${x+dx}" y="${y+4}" text-anchor="${anchor}">${p.name}</text><text class="lbl sub" x="${x+dx}" y="${y+17}" text-anchor="${anchor}">${p.note}</text>`;
+  });
+  svg.innerHTML=g;
+  document.getElementById('story').innerHTML=D.story.map(s=>`<article style="--c:var(--l-${s.line})"><h2>${s.title}</h2>${s.text.map(t=>`<p>${t}</p>`).join('')}</article>`).join('');
+  document.getElementById('tl').innerHTML=D.timeline.map(e=>`<li><b>${e.y}</b>${e.t}</li>`).join('');
+  const tT=document.getElementById('tabTree'), tM=document.getElementById('tabMap'), MV=document.getElementById('mapView'), SC=document.getElementById('scroller'), LG=document.querySelector('.legend'), TL=document.querySelector('.tools');
+  function show(map){ MV.hidden=!map; SC.hidden=map; LG.hidden=map; TL.hidden=map; tT.setAttribute('aria-selected',!map); tM.setAttribute('aria-selected',map); try{localStorage.setItem('rv-tab',map?'map':'tree')}catch(e){} }
+  tT.addEventListener('click',()=>show(false)); tM.addEventListener('click',()=>show(true));
+  try{ if(localStorage.getItem('rv-tab')==='map') show(true); }catch(e){}
+  if(location.hash==='#mapa') show(true);
 })();
 </script>
 

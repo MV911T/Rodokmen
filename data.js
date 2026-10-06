@@ -260,3 +260,58 @@ window.RODOKMEN = {
       b: { date: "?", year: 1855, approx: true }, notes: ["Rodné příjmení čteno nejistě („Czeikowsky“ / „Czilakowsky“)."] }
   ]
 };
+
+// ── Mapa původu a historické souvislosti ─────────────────────────────
+window.RODOKMEN.places = [
+  { name: "Ostrava", lat: 49.835, lon: 18.29, hub: true, note: "Místo, kde se větve setkaly" },
+  { name: "Kežmarok", lat: 49.135, lon: 20.43, line: "vesely", note: "Narození Svatoně Veselého 1933" },
+  { name: "Lednica Dolna", lat: 49.985, lon: 20.03, line: "woron", note: "Rod Woroń, Ondřej *1869 (?)" },
+  { name: "Rajbrot", lat: 49.80, lon: 20.42, line: "woron", note: "Rod Włudyka (Markéta)" },
+  { name: "Zagórzany (Gdów)", lat: 49.93, lon: 20.21, line: "chmielek", note: "Rod Chmielek (Stanislav)" },
+  { name: "Tarnów", lat: 50.01, lon: 20.99, line: "chmielek", note: "Rod Dydowicz (Helena)" },
+  { name: "Nedašova Lhota", lat: 49.135, lon: 18.09, line: "pacik", note: "Rod Pacík / Fojtík od 1712" },
+  { name: "Nedašov", lat: 49.105, lon: 18.06, line: "matusu", note: "Rod Matůšů, Novák, Holba" },
+  { name: "Chuchelná", lat: 50.00, lon: 18.03, line: "struz", note: "Rody Strusch, Opolony, Jiřík" },
+  { name: "Bolatice", lat: 49.95, lon: 18.08, line: "jirik", note: "Rudolf Irzik *1882" }
+];
+window.RODOKMEN.story = [
+  { line: "pacik", title: "Valašsko pod Bílými Karpaty – Pacíci a Matůšů",
+    text: [
+      "Nedašov a Nedašova Lhota leží na moravsko-slovenském pomezí pod Bílými Karpaty a patřily k panství Brumov. Nejstarší doložený předek, mlynář Tobiáš Pacík (*cca 1712, †1779), žil v domě č. 5, kde rod přebýval přes 150 let.",
+      "V matrikách 18. století se stejná rodina psala jednou „Pacík“, jindy „Fojtík“ – příjmení se v té době teprve ustalovala. Zápisy jsou latinsky, v 19. století německy a od 70. let česky.",
+      "Předkové byli domkáři, podsedníci a tkalci – drobní venkované bez větší půdy. Dědeček Rudolf (*1936) odešel jako mnoho Valachů za prací do průmyslové Ostravy."
+    ] },
+  { line: "struz", title: "Hlučínsko – Struž, Jiřík a Opoloný",
+    text: [
+      "Chuchelná a Bolatice leží na Hlučínsku. Po slezských válkách v roce 1742 připadlo Prusku, takže zdejší lidé byli 178 let pruskými (později německými) občany, i když mluvili moravským nářečím „po našymu“.",
+      "Proto jsou jejich matriky od roku 1874 německé civilní (Standesamt Kuchelna) a jména se psala německy: Ernst Strusch, Rudolf Irzik, Marie Opolony.",
+      "V roce 1920 bylo Hlučínsko připojeno k Československu, v roce 1938 k Německu a v roce 1945 znovu k ČSR. Muži jako Arnošt Struž proto za 2. světové války sloužili v německé armádě a po válce byli souzeni lidovými soudy."
+    ] },
+  { line: "woron", title: "Halič – Woroň, Włudyka, Chmielek a Dydowicz",
+    text: [
+      "Halič (polsky Galicja) byla v letech 1772–1918 korunní zemí Rakouska-Uherska – zhruba dnešní jižní Polsko a západní Ukrajina. Na přelomu 19. a 20. století patřila k nejchudším oblastem Evropy („galicyjska bieda“).",
+      "Tisíce lidí proto odcházely za prací do ostravských dolů – byly ve stejné monarchii, takže se dalo volně stěhovat. Přesně tak přišli Ondřej Woroń z Lednice u Wieliczky, Markéta Włudyka z Rajbrotu, Stanislav Chmielek ze Zagórzan a Helena Dydowicz od Tarnova.",
+      "Usadili se v hornické Polské Ostravě (od roku 1919 Slezská Ostrava), kde se jim v roce 1903 narodili Ludvík a Honorata – rodiče babičky Marty."
+    ] },
+  { line: "vesely", title: "Spiš – Veselí",
+    text: [
+      "Svatoň Veselý se narodil v roce 1933 v Kežmarku na Spiši. V letech 1918–1938 pracovaly na Slovensku tisíce Čechů ve státní službě (úředníci, železničáři, četníci, učitelé).",
+      "Po vzniku Slovenského státu v roce 1939 museli většinou odejít do českých zemí. Poznámka „Uherský Brod 1940“ v rodinných papírech tomu odpovídá – zatím jde ale o hypotézu, kterou ověří rodný zápis z Kežmarku."
+    ] }
+];
+window.RODOKMEN.timeline = [
+  { y: 1712, t: "Narozen Tobiáš Pacík (Fojtík), nejstarší doložený předek" },
+  { y: 1742, t: "Hlučínsko připadá Prusku" },
+  { y: 1772, t: "Vzniká Halič jako součást habsburské monarchie" },
+  { y: 1874, t: "V Prusku začínají civilní matriky (Standesamt)" },
+  { y: 1896, t: "Woroňové a Chmielkové odcházejí z Haliče na Ostravsko (cca)" },
+  { y: 1903, t: "V Polské Ostravě se rodí Ludvík Woroň a Honorata Chmielková" },
+  { y: 1918, t: "Vzniká Československo, konec Haliče" },
+  { y: 1920, t: "Hlučínsko připojeno k ČSR" },
+  { y: 1933, t: "Svatoň Veselý se rodí v Kežmarku" },
+  { y: 1938, t: "Hlučínsko připojeno k Německu" },
+  { y: 1945, t: "Konec války, Hlučínsko znovu v ČSR" },
+  { y: 1957, t: "Svatba Svatoně Veselého a Marty Woroňové ve Slezské Ostravě" },
+  { y: 1985, t: "Svatba Radima Veselého a Jany Pacíkové" },
+  { y: 1986, t: "Narozen Matěj Veselý" }
+];
