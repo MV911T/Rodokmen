@@ -160,7 +160,7 @@ window.RODOKMEN = {
       b: { date: "23. 6. 1962", year: 1962, place: "Ostrava" },
       father: "rudolf1936", mother: "margareta",
       notes: ["Sourozenci: Rudolf Pacík (*29. 3. 1961 Ostrava, †3. 8. 2018 Ostrava, pohřben v Chuchelné), Tomáš Pacík."] },
-    { id: "svaton", name: "Svatoň Veselý", line: "vesely", cert: "D",
+    { id: "svaton", cause: "zánět plic", name: "Svatoň Veselý", line: "vesely", cert: "D",
       b: { date: "17. 9. 1933", year: 1933, place: "Kežmarok (Slovensko)" },
       d: { date: "19. 9. 2007", year: 2007, place: "FN Ostrava-Poruba" },
       father: "karelV", mother: "annaP",
@@ -220,7 +220,7 @@ window.RODOKMEN = {
       occ: "domkář (Gärtler)" },
 
     // ── Pacík ──────────────────────────────────────────
-    { id: "rudolf1936", name: "Rudolf Pacík", line: "pacik", cert: "D",
+    { id: "rudolf1936", cause: "nezhoubný nádor krku", name: "Rudolf Pacík", line: "pacik", cert: "D",
       b: { date: "5. 6. 1936", year: 1936, place: "Nedašova Lhota" },
       d: { date: "3. 5. 2013", year: 2013, place: "Ostrava" },
       father: "frantisek1892", mother: "annaM",
@@ -240,14 +240,14 @@ window.RODOKMEN = {
       father: "josefM", mother: "mariannaN",
       notes: ["Úmrtí 1968 jen podle stromu na Geni (neověřeno)."],
       sources: ["MZA Brno, N 4475 str. 126"] },
-    { id: "jan1861", name: "Jan Pacík", line: "pacik", cert: "M",
+    { id: "jan1861", cause: "zánět plic", name: "Jan Pacík", line: "pacik", cert: "M",
       b: { date: "30. 12. 1861", year: 1861, place: "Nedašova Lhota č. 5" },
       d: { date: "1. 5. 1912", year: 1912, place: "Nedašova Lhota č. 5" },
       father: "matej1832", mother: "mariannaK", occ: "domkář",
       marriage: "11. 7. 1887 – s Františkou Tomečkovou; 2. sňatek 1901 s Annou Valentovou z Poteče (*16. 4. 1872, †4. 1. 1935)",
       notes: ["Zemřel na zánět plic.", "Děti z 1. manželství: Jan 1888, Maria 1890, Ludvík 1891, František 1892, Alois 1894, Jan 1897, Františka 1899."],
       sources: ["MZA N 4481; O 4489; Z 4496"] },
-    { id: "frantiskaT", name: "Františka Pacíková", maiden: "Tomečková", line: "pacik", cert: "M",
+    { id: "frantiskaT", cause: "otrava krve (gangréna ruky)", name: "Františka Pacíková", maiden: "Tomečková", line: "pacik", cert: "M",
       b: { date: "12. 9. 1862", year: 1862, place: "Nedašova Lhota" },
       d: { date: "12. 7. 1899", year: 1899, place: "Nedašova Lhota č. 5" },
       father: "frantisekT1819", mother: "annaB",
@@ -314,7 +314,7 @@ window.RODOKMEN = {
       b: { date: "?", year: 1720, approx: true } },
 
     // ── Matůšů ─────────────────────────────────────────
-    { id: "josefM", name: "Josef Matůšů", line: "matusu", cert: "M",
+    { id: "josefM", cause: "rakovina žaludku", name: "Josef Matůšů", line: "matusu", cert: "M",
       b: { date: "17. 3. 1851", year: 1851, place: "Nedašov č. 69" },
       d: { date: "25. 8. 1900", year: 1900, place: "Nedašov č. 64" },
       father: "jiri1813", mother: "annaH", occ: "sedlák / domkář",
@@ -344,7 +344,7 @@ window.RODOKMEN = {
       notes: ["Dcera Mikuláše Šaurka(?), sedláka v Bylnici."] },
 
     // ── Struž ──────────────────────────────────────────
-    { id: "margareta", name: "Margareta Pacíková", maiden: "Stružová", line: "struz", cert: "D",
+    { id: "margareta", cause: "mrtvice", name: "Margareta Pacíková", maiden: "Stružová", line: "struz", cert: "D",
       b: { date: "20. 12. 1937", year: 1937, place: "pravděpodobně Opava" },
       d: { date: "28. 11. 2016", year: 2016, place: "Ostrava" },
       father: "arnost", mother: "marieJ",
@@ -362,7 +362,7 @@ window.RODOKMEN = {
       b: { date: "?", year: 1882, approx: true }, notes: ["Možní rodiče: Komárkové oddaní v Chuchelné 1880 (Franz, Anton) – neověřeno."] },
 
     // ── Jiřík / Opoloný ────────────────────────────────
-    { id: "marieJ", name: "Marie Stružová", maiden: "Jiříková (Irzik)", line: "jirik", cert: "M",
+    { id: "marieJ", cause: "leukémie", name: "Marie Stružová", maiden: "Jiříková (Irzik)", line: "jirik", cert: "M",
       b: { date: "9. 9. 1914", year: 1914, place: "Chuchelná" },
       d: { date: "cca 1978", year: 1978, approx: true, place: "Opava" },
       father: "rudolfI", mother: "marieO",
@@ -487,6 +487,7 @@ function open(id){
   rows.push(['Narození', `${p.b.date||'?'}${p.b.place?', '+p.b.place:''}`]);
   if(p.d) rows.push(['Úmrtí', `${p.d.date}${p.d.place?', '+p.d.place:''}${a?` (${a} let)`:''}`]);
   else if(p.alive) rows.push(['Úmrtí', `žije${a?` (${a} let)`:''}`]);
+  if(p.cause) rows.push(['Příčina úmrtí', p.cause]);
   if(p.occ) rows.push(['Povolání', p.occ]);
   if(p.marriage) rows.push(['Sňatek', p.marriage]);
   if(sp.length) rows.push(['Partner', sp.map(q=>link(q.id)).join('<br>')]);
