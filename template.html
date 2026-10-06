@@ -322,9 +322,9 @@ requestAnimationFrame(()=>{ const c=document.querySelector(`.card[data-id="${D.r
 (function(){
   const D=window.RODOKMEN, svg=document.getElementById('map');
   const G=window.RODOKMEN_GEO, lat0=G.lat0, lat1=G.lat1, lon0=G.lon0, lon1=G.lon1, W=G.W, H=G.H;
-  svg.setAttribute('viewBox',`0 0 ${W} ${H}`);
+  const PAD=28; svg.setAttribute('viewBox',`${-PAD} ${-PAD} ${W+2*PAD} ${H+2*PAD}`);
   const X=lon=>(lon-lon0)/(lon1-lon0)*W, Y=lat=>(lat1-lat)/(lat1-lat0)*H;
-  let g=`<rect width="${W}" height="${H}" class="sea"/>`;
+  let g=`<defs><clipPath id="mapclip"><rect x="${-PAD}" y="${-PAD}" width="${W+2*PAD}" height="${H+2*PAD}" rx="8"/></clipPath></defs><rect x="${-PAD}" y="${-PAD}" width="${W+2*PAD}" height="${H+2*PAD}" class="sea"/>`;
   G.countries.forEach(c=>{ g+=`<path class="land ${c.id}" d="${c.d}"><title>${c.name}</title></path>`; });
   for(let a=Math.ceil(lat0*2)/2;a<=lat1;a+=.5) g+=`<line class="grat" x1="0" x2="${W}" y1="${Y(a)}" y2="${Y(a)}"/>`;
   for(let o=Math.ceil(lon0*2)/2;o<=lon1;o+=.5) g+=`<line class="grat" y1="0" y2="${H}" x1="${X(o)}" x2="${X(o)}"/>`;
