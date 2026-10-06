@@ -264,15 +264,15 @@ window.RODOKMEN = {
 // ── Mapa původu a historické souvislosti ─────────────────────────────
 window.RODOKMEN.places = [
   { name: "Ostrava", lat: 49.835, lon: 18.29, hub: true, note: "Místo, kde se větve setkaly" },
-  { name: "Kežmarok", lat: 49.135, lon: 20.43, line: "vesely", note: "Narození Svatoně Veselého 1933" },
-  { name: "Lednica Dolna", lat: 49.985, lon: 20.03, line: "woron", note: "Rod Woroń, Ondřej *1869 (?)" },
-  { name: "Rajbrot", lat: 49.80, lon: 20.42, line: "woron", note: "Rod Włudyka (Markéta)" },
-  { name: "Zagórzany (Gdów)", lat: 49.93, lon: 20.21, line: "chmielek", note: "Rod Chmielek (Stanislav)" },
-  { name: "Tarnów", lat: 50.01, lon: 20.99, line: "chmielek", note: "Rod Dydowicz (Helena)" },
-  { name: "Nedašova Lhota", lat: 49.135, lon: 18.09, line: "pacik", note: "Rod Pacík / Fojtík od 1712" },
-  { name: "Nedašov", lat: 49.105, lon: 18.06, line: "matusu", note: "Rod Matůšů, Novák, Holba" },
-  { name: "Chuchelná", lat: 50.00, lon: 18.03, line: "struz", note: "Rody Strusch, Opolony, Jiřík" },
-  { name: "Bolatice", lat: 49.95, lon: 18.08, line: "jirik", note: "Rudolf Irzik *1882" }
+  { name: "Kežmarok", dy: 6, lat: 49.135, lon: 20.43, line: "vesely", note: "Narození Svatoně Veselého 1933" },
+  { name: "Lednica Dolna", dy: -22, lat: 49.985, lon: 20.03, line: "woron", note: "Rod Woroń, Ondřej *1869 (?)" },
+  { name: "Rajbrot", dy: 6, lat: 49.80, lon: 20.42, line: "woron", note: "Rod Włudyka (Markéta)" },
+  { name: "Zagórzany (Gdów)", dy: 6, lat: 49.93, lon: 20.21, line: "chmielek", note: "Rod Chmielek (Stanislav)" },
+  { name: "Tarnów", anchor: "end", dy: -22, lat: 50.01, lon: 20.99, line: "chmielek", note: "Rod Dydowicz (Helena)" },
+  { name: "Nedašova Lhota", dy: -22, lat: 49.135, lon: 18.09, line: "pacik", note: "Rod Pacík / Fojtík od 1712" },
+  { name: "Nedašov", dy: 8, lat: 49.105, lon: 18.06, line: "matusu", note: "Rod Matůšů, Novák, Holba" },
+  { name: "Chuchelná", dy: -24, lat: 50.00, lon: 18.03, line: "struz", note: "Rody Strusch, Opolony, Jiřík" },
+  { name: "Bolatice", dy: 8, lat: 49.95, lon: 18.08, line: "jirik", note: "Rudolf Irzik *1882" }
 ];
 window.RODOKMEN.story = [
   { line: "pacik", title: "Valašsko pod Bílými Karpaty – Pacíci a Matůšů",

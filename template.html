@@ -311,7 +311,7 @@ requestAnimationFrame(()=>{ const c=document.querySelector(`.card[data-id="${D.r
 // ── map & story view ──
 (function(){
   const D=window.RODOKMEN, svg=document.getElementById('map');
-  const lat0=48.8, lat1=50.35, lon0=17.4, lon1=21.4, W=900, k=Math.cos(49.6*Math.PI/180);
+  const lat0=48.8, lat1=50.35, lon0=17.4, lon1=21.5, W=900, k=Math.cos(49.6*Math.PI/180);
   const H=Math.round(W*(lat1-lat0)/((lon1-lon0)*k));
   svg.setAttribute('viewBox',`0 0 ${W} ${H}`);
   const X=lon=>(lon-lon0)/(lon1-lon0)*W, Y=lat=>(lat1-lat)/(lat1-lat0)*H;
@@ -326,9 +326,9 @@ requestAnimationFrame(()=>{ const c=document.querySelector(`.card[data-id="${D.r
   });
   D.places.forEach(p=>{
     const x=X(p.lon),y=Y(p.lat), right = p.lon<19 ? (p.name==='Nedašov'||p.name==='Bolatice') : false;
-    const anchor = (p.lon<18.2 && !p.hub) ? 'end' : 'start', dx = anchor==='end'?-10:10;
+    const anchor = p.anchor || ((p.lon<18.2 && !p.hub) ? 'end' : 'start'), dx = anchor==='end'?-10:10, dy=p.dy||0;
     g+=`<circle class="pt ${p.hub?'hub':''}" cx="${x}" cy="${y}" r="${p.hub?9:6}" fill="${p.hub?'var(--accent)':'var(--l-'+p.line+')'}"><title>${p.name} – ${p.note}</title></circle>`;
-    g+=`<text class="lbl" x="${x+dx}" y="${y+4}" text-anchor="${anchor}">${p.name}</text><text class="lbl sub" x="${x+dx}" y="${y+17}" text-anchor="${anchor}">${p.note}</text>`;
+    g+=`<text class="lbl" x="${x+dx}" y="${y+4+dy}" text-anchor="${anchor}">${p.name}</text><text class="lbl sub" x="${x+dx}" y="${y+17+dy}" text-anchor="${anchor}">${p.note}</text>`;
   });
   svg.innerHTML=g;
   document.getElementById('story').innerHTML=D.story.map(s=>`<article style="--c:var(--l-${s.line})"><h2>${s.title}</h2>${s.text.map(t=>`<p>${t}</p>`).join('')}</article>`).join('');
