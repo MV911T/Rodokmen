@@ -61,14 +61,13 @@ header .meta{color:var(--muted);font-size:.8rem;letter-spacing:.02em}
 #ruler{position:sticky;right:var(--evw);flex:none;width:58px;background:var(--bg);border-left:1px solid var(--rule);z-index:3}
 :root{--evw:176px}
 #events{position:sticky;right:0;flex:none;width:var(--evw);background:var(--surface);border-left:1px solid var(--rule);z-index:3;overflow:hidden}
-.ev{position:absolute;left:0;right:0;padding-left:16px;font-size:.7rem;line-height:1.2;color:var(--ink);transform:translateY(-50%)}
-.ev::before{content:"";position:absolute;left:5px;top:50%;width:7px;height:7px;border-radius:50%;background:var(--muted);transform:translateY(-50%)}
-.ev.major{font-weight:600}
-.ev.major::before{background:var(--accent)}
+.evdot{position:absolute;left:5px;width:7px;height:7px;border-radius:50%;background:var(--muted);transform:translateY(-50%)}
+.evdot.major{background:var(--accent)}
+.evl{position:absolute;left:16px;right:4px;font-size:.7rem;line-height:1.2;color:var(--ink)}
+.evl.major{font-weight:600}
 .evband{position:absolute;left:0;right:0;background:color-mix(in srgb,var(--accent) 16%,transparent);border-top:1px solid color-mix(in srgb,var(--accent) 55%,transparent);border-bottom:1px solid color-mix(in srgb,var(--accent) 55%,transparent)}
-.evband span{position:absolute;left:16px;right:4px;top:50%;transform:translateY(-50%);font-size:.7rem;font-weight:600;line-height:1.2;color:var(--ink)}
-.ev .s,.evband .s{display:none}
-@media (max-width:520px){ :root{--evw:92px} .ev .l,.evband .l{display:none} .ev .s,.evband .s{display:inline} }
+.evl .s{display:none}
+@media (max-width:520px){ :root{--evw:92px} .evl .l{display:none} .evl .s{display:inline} }
 .tick{position:absolute;right:8px;font-size:.72rem;color:var(--muted);font-variant-numeric:tabular-nums;transform:translateY(-50%)}
 .tick.century{color:var(--ink);font-weight:600}
 .gridline{position:absolute;left:0;right:0;height:1px;background:var(--grid)}
@@ -263,11 +262,16 @@ function render(){
   }
   const ev = document.getElementById('events'); ev.innerHTML=''; ev.style.height=H+'px';
   (D.events||[]).filter(e=>e.y>=y0&&e.y<=y1).forEach(e=>{
-    const el=document.createElement('div');
-    if(e.y2){ el.className='evband'; el.dataset.top=(y1-e.y2)*ppy; el.dataset.h=(e.y2-e.y)*ppy; el.innerHTML=`<span><span class="l">${e.y}–${e.y2} ${e.t}</span><span class="s">${e.s||e.t}</span></span>`; }
-    else { el.className='ev'+(e.major?' major':''); el.dataset.top=(y1-e.y)*ppy; el.innerHTML=`<span class="l">${e.y} ${e.t}</span><span class="s">${e.y} ${e.s||e.t}</span>`; }
-    el.dataset.major=e.major?1:''; el.title=`${e.y}${e.y2?'–'+e.y2:''}: ${e.t}`;
-    ev.appendChild(el);
+    // mark (dot or band) sits exactly at the year; the label is laid out separately so labels never overlap
+    const mk=document.createElement('div');
+    if(e.y2){ mk.className='evband'; mk.dataset.top=(y1-e.y2)*ppy; mk.dataset.h=(e.y2-e.y)*ppy; }
+    else { mk.className='evdot'+(e.major?' major':''); mk.dataset.top=(y1-e.y)*ppy; }
+    mk.title=`${e.y}${e.y2?'–'+e.y2:''}: ${e.t}`; ev.appendChild(mk);
+    const lb=document.createElement('div');
+    lb.className='evl'+(e.major?' major':''); lb.title=mk.title;
+    lb.dataset.anchor = e.y2 ? (y1-(e.y+e.y2)/2)*ppy : (y1-e.y)*ppy; lb.dataset.major=e.major?1:'';
+    lb.innerHTML=`<span class="l">${e.y2?e.y+'–'+e.y2:e.y} ${e.t}</span><span class="s">${e.y2?e.y+'–'+e.y2:e.y} ${e.s||e.t}</span>`;
+    ev.appendChild(lb);
   });
   const pos = {};
   D.people.forEach(p=>{
@@ -385,10 +389,18 @@ function applyScale(s, ax, ay){
   rul.style.height = (H0*vs)+'px';
   rul.querySelectorAll('.tick').forEach(t=>{ t.style.top = (+t.dataset.y*vs)+'px'; t.hidden = vs < 0.35 && +t.textContent % 50 !== 0; });
   const evc = document.getElementById('events'); evc.style.height = (H0*vs)+'px';
-  evc.querySelectorAll('.ev,.evband').forEach(el=>{
+  evc.querySelectorAll('.evdot,.evband').forEach(el=>{
     el.style.top = (+el.dataset.top*vs)+'px';
     if(el.classList.contains('evband')) el.style.height = Math.max(2,+el.dataset.h*vs)+'px';
-    else el.hidden = vs < 0.45 && !el.dataset.major;
+  });
+  // labels: keep order by year, push down to avoid overlap; minor ones hidden when zoomed far out
+  const labels=[...evc.querySelectorAll('.evl')].sort((a,b)=>a.dataset.anchor-b.dataset.anchor);
+  let bottom=-1e9;
+  labels.forEach(lb=>{
+    lb.hidden = vs < 0.3 && !lb.dataset.major;
+    if(lb.hidden) return;
+    const h=lb.offsetHeight||16, want=+lb.dataset.anchor*vs - h/2, top=Math.max(want, bottom+3);
+    lb.style.top=top+'px'; bottom=top+h;
   });
   sc.scrollLeft = cx*vs - ax; sc.scrollTop = cy*vs - ay;
   const pct = Math.round(vs*100); zr.value = pct; zp.textContent = pct+' %';
