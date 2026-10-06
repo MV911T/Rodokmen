@@ -432,13 +432,14 @@ window.RODOKMEN = {
         "Datum narození i sňatku přečteno v křestním zápisu syna Ludvíka (SO VII 36, fol. 171): „19/10 69 | Wielicska 24/8 96“.",
         "Křest 1869 není online (venkovské křty farnosti Wieliczka po 1840 nejsou v CAAK) – nutná žádost na faru sv. Klemense ve Wieliczce.",
         "Rod Woroń je v Lednici Dolní doložen už kolem roku 1780 (strom FamilySearch).",
-        "Kandidáti na rodiče (K): Kasper (Gaspar) Woroń × Katarzyna Szarek, Lednica Dolna č. 107 (děti Zofia *1857, Jan, Franciszek – sňatek 1892 s Mariannou Borowiec); jejich sňatek není v oddacích Lednice 1835–1858 ani města Wieliczky 1850–1857. Méně pravděpodobně Jakub Woroń (*1825) – s 1. ženou Małgorzatou Dębskou měl syna Franciszka *15. 8. 1857 (sňatek 1892 s Kateřinou Kowalskou), Małgorzata zemřela před 1865 a 2. žena Marianna Gabryś by v roce 1869 měla 48 let."
+        "Kandidáti na rodiče (K): Kasper (Gaspar) Woroń × Katarzyna Szarek z Lednice Dolní – jako manželé doloženi (M): jejich syn Franciszek *14. 9. 1847, dělník solivaru, se 1892 oženil (2. sňatek) s vdovou Mariannou Borowcovou („f. Gaspari Woron et Catharinae Szarek e Lednica“, Skanoteka id1894, jedn. 4500, sk. 01). Další děti: Zofia *1857, Jan. Jejich sňatek byl tedy před 1847 – není v Lednici 1835–58 ani ve Wieliczce 1850–57. Že je Ondřej (*1869) jejich syn, zatím doloženo není. Méně pravděpodobně Jakub Woroń (*1825; s 1. ženou Małgorzatou Dębskou syn Franciszek *15. 8. 1857)."
       ],
       sources: [
         "SO VII 36, fol. 171"
       ],
       scans: [
-        {"f":"img/1903_krest_ludvik_woron.jpg","t":"Křest syna Ludvíka 1903"}
+        {"f":"img/1903_krest_ludvik_woron.jpg","t":"Křest syna Ludvíka 1903"},
+        {"f":"img/1892_snatek_franciszek_woron_kasper.jpg","t":"Sňatek Franciszka Woronia 1892 – „f. Gaspari Woron et Catharinae Szarek“ (kandidátská rodina)"}
       ]
     },
     {
@@ -621,7 +622,8 @@ window.RODOKMEN = {
       marriage: "18. 9. 1903 (?) – s Helenou Dydowicz",
       notes: [
         "Datum a místo přečteny v křestním zápisu dcery Honoraty (SO VII 36): „Bergmann aus Zagórzany … 7/1 76 Wieliczka“. Křty farnosti Gdów 1870–1876 nejsou online.",
-        "Kandidát (K, Geneteka): Stanisław Chmielek *1872, farnost Gdów, syn Marcina Chmielka a Marianny Grzyb – rok nesedí, neověřeno."
+        "Kandidát (K, Geneteka): Stanisław Chmielek *1872, farnost Gdów, syn Marcina Chmielka a Marianny Grzyb – rok nesedí, neověřeno.",
+        "Úmrtí Zagórzany 1890–1935: Marcin Chmielek ani Marianna Grzyb tam nezemřeli; žádný zápis zatím nespojuje Stanisława s touto rodinou. Sňatky Gdów 1890–97 bez Chmielka."
       ],
       sources: [
         "ř.-k. fara Slezská Ostrava, N 1902–1905 (SO VII 36), sken 101 – ZA Opava"
@@ -641,7 +643,8 @@ window.RODOKMEN = {
       notes: [
         "Dcera Tomáše Dydowicze, domkáře (Gärtler) v Rudně, okr. Tarnów – přečteno v křestním zápisu dcery Honoraty (SO VII 36).",
         "Toto je „Helena Chmielková“ z rodinných poznámek – matka Honoraty.",
-        "Ve křtech Szczucinu 1884–1886 není; rod Dydowicz je doložen v okolí Szczucina a Mędrzechówa (okr. Dąbrowa Tarnowska) – přesné Rudno neověřeno."
+        "Ve křtech Szczucinu 1884–1886 není; rod Dydowicz je doložen v okolí Szczucina a Mędrzechówa (okr. Dąbrowa Tarnowska) – přesné Rudno neověřeno.",
+        "Ani v Rudce (Wierzchosławice) 1884; „Rudno“ v okrese Tarnów (1867) neexistuje – zřejmě zkomolený název (Rudka, Ruda, Wał-Ruda)."
       ],
       sources: [
         "SO VII 36, sken 101 – ZA Opava"
