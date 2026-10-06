@@ -1924,3 +1924,23 @@ window.RODOKMEN.moves = [
   {"line":"vesely","kind":"hyp","who":"Svatoň Veselý","when":"před 1957","note":"do Ostravy; sňatek s Martou Woroňovou 1957 ve Slezské Ostravě","path":[[49.025,17.65],[49.455,17.45],[49.6,18.14],[49.835,18.29]]},
   {"line":"opolony","kind":"doc","who":"Anton a Rosalie Opolonyovi","when":"1867–1878","note":"z Ehrenfeldu a Schonowitz (farnost Grzędzin u Ratiboře) do Chuchelné; sňatek 18. 6. 1867, syn Adolph se narodil 1878 už v Chuchelné","path":[[50.17,18.16],[50.13,18.11],[50,18.03]]}
 ];
+
+// Historical events for the context column right of the year ruler; y2 = end year of a period (drawn as a band), major = shown even when zoomed out
+window.RODOKMEN.events = [
+  {"y":1742,"t":"Hlučínsko připadá Prusku","s":"Hlučínsko Prusku","major":true},
+  {"y":1772,"t":"První dělení Polska – vzniká Halič","s":"Vznik Haliče"},
+  {"y":1781,"t":"Zrušení nevolnictví (Josef II.)","s":"Konec nevolnictví","major":true},
+  {"y":1805,"t":"Bitva u Slavkova","s":"Slavkov"},
+  {"y":1848,"t":"Revoluce, zrušení roboty","s":"Konec roboty","major":true},
+  {"y":1866,"t":"Prusko-rakouská válka","s":"Válka 1866"},
+  {"y":1867,"t":"Vzniká Rakousko-Uhersko","s":"Rak.-Uhersko"},
+  {"y":1914,"y2":1918,"t":"1. světová válka","s":"1. sv. válka","major":true},
+  {"y":1918,"t":"Vznik Československa (28. 10.)","s":"Vznik ČSR","major":true},
+  {"y":1920,"t":"Hlučínsko připojeno k ČSR","s":"Hlučínsko k ČSR"},
+  {"y":1938,"t":"Mnichovská dohoda","s":"Mnichov"},
+  {"y":1939,"y2":1945,"t":"2. světová válka, Protektorát","s":"2. sv. válka","major":true},
+  {"y":1948,"t":"Únorový převrat – komunismus","s":"Únor 1948","major":true},
+  {"y":1968,"t":"Pražské jaro a okupace","s":"Okupace 1968"},
+  {"y":1989,"t":"Sametová revoluce","s":"Listopad 1989","major":true},
+  {"y":1993,"t":"Vzniká Česká republika","s":"Vznik ČR"}
+];
