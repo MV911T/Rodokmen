@@ -295,7 +295,7 @@ window.RODOKMEN = {
 window.RODOKMEN.places = [
   { name: "Ostrava", lat: 49.835, lon: 18.29, hub: true, note: "Místo, kde se větve setkaly" },
   { name: "Kežmarok", dy: 6, lat: 49.135, lon: 20.43, line: "vesely", note: "Narození Svatoně Veselého 1933" },
-  { name: "Věrovany", dy: 4, lat: 49.46, lon: 17.29, line: "vesely", note: "Rod Plachý (Anna *1907)" },
+  { name: "Věrovany", anchor: "start", dy: 4, lat: 49.46, lon: 17.29, line: "vesely", note: "Rod Plachý (Anna *1907)" },
   { name: "Lednica Dolna", dy: -22, lat: 49.985, lon: 20.03, line: "woron", note: "Rod Woroń, Ondřej *1869 (?)" },
   { name: "Rajbrot", dy: 6, lat: 49.80, lon: 20.42, line: "woron", note: "Rod Włudyka od 1764 (?)" },
   { name: "Zagórzany (Gdów)", dy: 6, lat: 49.93, lon: 20.21, line: "chmielek", note: "Rod Chmielek (Stanislav)" },
