@@ -1570,7 +1570,8 @@ window.RODOKMEN = {
       notes: [
         "Narozena 13. 5. 1874 v Chuchelné (před zavedením civilní matriky – křest jen ve farnosti Krzanowice), dcera domkáře Carla Komarka a Heleny roz. Mitrenga – podle oddacího zápisu 1893.",
         "Matka Paula (*17. 7. 1894) a Arnošta (*3. 12. 1907); ještě žila v květnu 1916.",
-        "Svědek při sňatku Adolph Komarek (44 let, zahradník) – zřejmě strýc."
+        "Svědek při sňatku Adolph Komarek (*16. 6. 1848) byl její strýc – bratr otce.",
+        "Úmrtí není v Chuchelné Z 1907–1932 (1933–1937 nejsou digitalizované)."
       ],
       sources: [
         "Standesamt Kuchelna O 1893 Nr. 3 (ST VIII 47)",
@@ -1631,16 +1632,22 @@ window.RODOKMEN = {
       name: "Carl (Karel) Komarek",
       line: "struz",
       cert: "M",
-      b: {"date":"?","year":1845,"approx":true},
+      b: {"date":"17. 11. 1841","year":1841,"place":"Chuchelná"},
+      father: "josefKo",
+      mother: "johannaJu",
       occ: "domkář (Häusler / Inlieger) v Chuchelné",
       notes: [
-        "Děti s Helenou Mitrenga: Antonie *13. 5. 1874, Paul *6. 9. 1876, Anton *21. 2. 1878, syn *21. 10. 1879 (civilní N Chuchelná)."
+        "Narozen a pokřtěn 17. 11. 1841 v Chuchelné (ve 3 hodiny odpoledne), syn zahradníka Josefa Komarka a Johanny roz. Jureczka; kmotři Josef Kestel, měšťan z Krzanowic, a Beata Nahlik.",
+        "Děti s Helenou Mitrenga: Antonie *13. 5. 1874, Paul *6. 9. 1876, Anton *21. 2. 1878, syn *21. 10. 1879 (civilní N Chuchelná).",
+        "Sourozenci (index FS): Innocenz 1840, Franzisca 1843, Johannes 1846, Adolf *16. 6. 1848 (svědek na svatbě Antonie 1893), Franz 1850, Anton 1853, Magdalena 1856, Josef *22. 1. 1861 (†12. 2. 1932 Chuchelná č. 57, domkář a zedník)."
       ],
       sources: [
+        "Silius Radicum – duplikát ASC Krzanowice 1841 Nr. 160 (složka 18_13_0_9_374, snímek 0041); FS index DNP6-12T2",
         "sňatek dcery Antonie 1893 (ST VIII 47)",
         "Standesamt Kuchelna N 1876–1879"
       ],
       scans: [
+        {"f":"img/1841_krest_carl_komarek.jpg","t":"Křest 17. 11. 1841 (Krzanowice 1841 Nr. 160)"},
         {"f":"img/1893_snatek_strusch_komarek_a.jpg","t":"Sňatek 5. 6. 1893, Chuchelná (O 1893 Nr. 3) – snoubenci a rodiče"}
       ]
     },
@@ -1650,12 +1657,90 @@ window.RODOKMEN = {
       maiden: "Mitrenga",
       line: "struz",
       cert: "M",
-      b: {"date":"?","year":1850,"approx":true},
+      b: {"date":"23. 5. 1842","year":1842,"place":"Chuchelná"},
+      father: "janMi",
+      mother: "josefaZa",
+      notes: [
+        "Narozena a pokřtěna 23. 5. 1842 v Chuchelné, dcera zahradníka Johanna Mitrengy a Josefy roz. Zaiczek (dcery Jakuba); sestra Clara *1840. Rod Zaiczek (Zajiczek) je zřejmě týž jako u Barbory Zajiczek, ženy Mikuláše Strusche."
+      ],
       sources: [
+        "Silius Radicum – duplikát ASC Krzanowice 1842 Nr. 71 (složka 375, snímek 0019); FS index DNP6-946Z",
         "sňatek dcery Antonie 1893 (ST VIII 47)"
       ],
       scans: [
+        {"f":"img/1842_krest_helena_mitrenga.jpg","t":"Křest 23. 5. 1842 (Krzanowice 1842 Nr. 71)"},
         {"f":"img/1893_snatek_strusch_komarek_a.jpg","t":"Sňatek 5. 6. 1893, Chuchelná (O 1893 Nr. 3) – snoubenci a rodiče"}
+      ]
+    },
+    {
+      id: "josefKo",
+      name: "Josef Komarek",
+      line: "struz",
+      cert: "M",
+      b: {"date":"cca 1812","year":1812,"approx":true,"place":"Strahovice (Strandorf)"},
+      occ: "zahradník (Gärtner) v Chuchelné",
+      marriage: "29. 1. 1839, Krzanowice – s Johannou Jureczka (oba 26 let); svědci Blasius Stoppa (?) a Carl Jureczka",
+      notes: [
+        "Při sňatku 1839 svobodný, 26 let, syn zahradníka ze Strahovic."
+      ],
+      sources: [
+        "Silius Radicum – ASC Krzanowice sňatky 1839 Nr. 6 (složka 422, snímek 0003)"
+      ],
+      scans: [
+        {"f":"img/1839_snatek_komarek_jureczka.jpg","t":"Sňatek 29. 1. 1839, Krzanowice"},
+        {"f":"img/1841_krest_carl_komarek.jpg","t":"Křest 17. 11. 1841 (Krzanowice 1841 Nr. 160)"}
+      ]
+    },
+    {
+      id: "johannaJu",
+      name: "Johanna Komarek",
+      maiden: "Jureczka",
+      line: "struz",
+      cert: "M",
+      b: {"date":"cca 1812","year":1812,"approx":true,"place":"Krzanowice"},
+      notes: [
+        "Dcera Johanna Jureczky, měšťana v Krzanowicích; při sňatku 1839 26 let."
+      ],
+      sources: [
+        "ASC Krzanowice sňatky 1839 Nr. 6"
+      ],
+      scans: [
+        {"f":"img/1839_snatek_komarek_jureczka.jpg","t":"Sňatek 29. 1. 1839, Krzanowice"},
+        {"f":"img/1841_krest_carl_komarek.jpg","t":"Křest 17. 11. 1841 (Krzanowice 1841 Nr. 160)"}
+      ]
+    },
+    {
+      id: "janMi",
+      name: "Johann Mitrenga",
+      line: "struz",
+      cert: "M",
+      b: {"date":"?","year":1810,"approx":true},
+      occ: "zahradník (Gärtner) v Chuchelné",
+      notes: [
+        "Sňatek s Josefou Zaiczek není v duplikátech Krzanowic 1837–1840."
+      ],
+      sources: [
+        "křest dcery Heleny 1842 (Krzanowice Nr. 71)"
+      ],
+      scans: [
+        {"f":"img/1842_krest_helena_mitrenga.jpg","t":"Křest 23. 5. 1842 (Krzanowice 1842 Nr. 71)"}
+      ]
+    },
+    {
+      id: "josefaZa",
+      name: "Josefa Mitrenga",
+      maiden: "Zaiczek (Zajiczek)",
+      line: "struz",
+      cert: "M",
+      b: {"date":"?","year":1815,"approx":true},
+      notes: [
+        "Dcera Jakuba Zaiczka."
+      ],
+      sources: [
+        "křest dcery Heleny 1842 (Krzanowice Nr. 71)"
+      ],
+      scans: [
+        {"f":"img/1842_krest_helena_mitrenga.jpg","t":"Křest 23. 5. 1842 (Krzanowice 1842 Nr. 71)"}
       ]
     },
     {
