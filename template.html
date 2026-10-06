@@ -48,7 +48,16 @@ header .meta{color:var(--muted);font-size:.8rem;letter-spacing:.02em}
 
 #scroller{flex:1;overflow:auto;position:relative;min-height:0}
 #inner{display:flex;width:max-content;min-width:100%}
-#canvas{position:relative;flex:none}
+#stage{position:relative;flex:none;overflow:hidden}
+#canvas{position:absolute;left:0;top:0;transform-origin:0 0}
+#scroller{touch-action:pan-x pan-y}
+#zoombar{display:flex;align-items:center;gap:8px;padding:8px 16px calc(8px + env(safe-area-inset-bottom,0px));border-top:1px solid var(--rule);background:var(--surface);font-size:.85rem}
+#zoombar button{font:inherit;font-size:.85rem;padding:5px 10px;border:1px solid var(--rule);border-radius:6px;background:var(--bg);color:var(--ink);cursor:pointer;min-width:34px}
+#zoombar button:focus-visible,#zoombar input:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+#zoombar input[type=range]{flex:1;max-width:340px;min-width:80px;accent-color:var(--accent)}
+#zoombar output{min-width:3.6em;text-align:right;font-variant-numeric:tabular-nums;color:var(--muted)}
+#zoombar[hidden]{display:none}
+@media (max-width:520px){ #zoombar{gap:6px;padding-inline:10px} #z100{display:none} }
 #ruler{position:sticky;right:0;flex:none;width:58px;background:var(--bg);border-left:1px solid var(--rule);z-index:3}
 .tick{position:absolute;right:8px;font-size:.72rem;color:var(--muted);font-variant-numeric:tabular-nums;transform:translateY(-50%)}
 .tick.century{color:var(--ink);font-weight:600}
@@ -154,8 +163,6 @@ dl.facts dd{margin:0;min-width:0}
   <nav class="tabs" role="tablist"><button type="button" role="tab" id="tabTree" aria-selected="true">Rodokmen</button><button type="button" role="tab" id="tabMap" aria-selected="false">Odkud jsme</button></nav>
   <div class="tools">
     <input id="q" type="search" placeholder="Najít osobu…" aria-label="Najít osobu">
-    <button id="zout" type="button" aria-label="Oddálit">−</button>
-    <button id="zin" type="button" aria-label="Přiblížit">+</button>
     <button id="home" type="button">Na Matěje</button>
   </div>
 </header>
@@ -171,11 +178,19 @@ dl.facts dd{margin:0;min-width:0}
 <section id="mapView" hidden><div class="mapwrap"><div class="mapfig"><svg id="map" role="img" aria-label="Mapa původu rodových větví"></svg><div class="mlegend"><span><svg width="28" height="6"><line x1="0" y1="3" x2="28" y2="3" stroke="var(--muted)" stroke-width="2.2"/></svg>doložený přesun</span><span><svg width="28" height="6"><line x1="0" y1="3" x2="28" y2="3" stroke="var(--muted)" stroke-width="2.2" stroke-dasharray="7 5"/></svg>pravděpodobná trasa (vlakem)</span><span><svg width="28" height="6"><line x1="0" y1="3" x2="28" y2="3" stroke="var(--muted)" stroke-width="2.2" stroke-dasharray="2 5" stroke-linecap="round"/></svg>domněnka</span></div><p class="cap">Hranice podle dnešních států (Natural Earth). Čáry vedou po tehdejších železničních tratích, kde přesná cesta není známa. Po najetí myší se ukáže, kdo a kdy.</p><ol class="moves" id="moves"></ol></div><div id="story" class="story"></div></div><div class="tl"><h3>Časová osa</h3><ol id="tl"></ol></div></section>
 <div id="scroller">
   <div id="inner">
-    <div id="canvas"><svg class="links" id="links"></svg></div>
+    <div id="stage"><div id="canvas"><svg class="links" id="links"></svg></div></div>
     <div id="ruler" aria-hidden="true"></div>
   </div>
 </div>
 
+<div id="zoombar" role="toolbar" aria-label="Přiblížení">
+  <button id="zout" type="button" aria-label="Oddálit">−</button>
+  <input id="zr" type="range" min="10" max="250" step="5" value="100" aria-label="Přiblížení v procentech">
+  <button id="zin" type="button" aria-label="Přiblížit">+</button>
+  <output id="zp" for="zr">100 %</output>
+  <button id="zfit" type="button">Celý strom</button>
+  <button id="z100" type="button">100 %</button>
+</div>
 <div id="viewer" hidden><div class="bar"><span id="vt"></span><span><button type="button" id="vz">Přiblížit</button> <button type="button" id="vx">Zavřít</button></span></div><div class="pane fit" id="vp"><img id="vi" alt=""></div></div>
 <dialog id="dlg"><div class="dlg" id="dlgBody"></div></dialog>
 
@@ -187,8 +202,11 @@ dl.facts dd{margin:0;min-width:0}
 const D = window.RODOKMEN, P = {}; D.people.forEach(p=>P[p.id]=p);
 const CERT = {M:"Přečteno v matrice",D:"Jiný doklad (parte, rodný list, paměti)",R:"Rodinná tradice",K:"Kandidát – neověřeno"};
 const lineVar = l => `var(--l-${l})`;
-let zoom = 1, active = null;
-try{ const z = parseFloat(localStorage.getItem('rv-zoom')); if(z>0.4&&z<2.6) zoom=z; }catch(e){}
+const zoom = 1; let active = null;
+// view scale (whole tree incl. cards and text), 0.1–2.5; layout itself is computed at scale 1
+let vs = 1; const VS_MIN = 0.1, VS_MAX = 2.5;
+try{ const z = parseFloat(localStorage.getItem('rv-scale')); if(z>=VS_MIN&&z<=VS_MAX) vs=z; }catch(e){}
+let W0 = 0, H0 = 0;
 
 // children index
 const kids = {}; D.people.forEach(p=>[p.father,p.mother].forEach(x=>{ if(x&&P[x]) (kids[x]=kids[x]||[]).push(p.id); }));
@@ -213,11 +231,12 @@ function render(){
   const cw = Math.round(178*Math.min(zoom,1.25)), gap = Math.round(26*zoom), ppy = 7.2*zoom;
   const W = leaf*(cw+gap)+gap, H = (y1-y0)*ppy + 90;
   const cv = document.getElementById('canvas'), ru = document.getElementById('ruler');
-  cv.style.width=W+'px'; cv.style.height=H+'px'; ru.style.height=H+'px'; cv.style.setProperty('--cw',cw+'px');
+  W0 = W; H0 = H;
+  cv.style.width=W+'px'; cv.style.height=H+'px'; cv.style.setProperty('--cw',cw+'px');
   cv.querySelectorAll('.card,.gridline').forEach(e=>e.remove()); ru.innerHTML='';
   for(let y=Math.ceil(y0/10)*10;y<=y1;y+=10){
     const g=document.createElement('div'); g.className='gridline'+(y%100===0?' century':''); g.style.top=((y1-y)*ppy)+'px'; cv.prepend(g);
-    const t=document.createElement('div'); t.className='tick'+(y%100===0?' century':''); t.style.top=((y1-y)*ppy)+'px'; t.textContent=y; ru.appendChild(t);
+    const t=document.createElement('div'); t.className='tick'+(y%100===0?' century':''); t.dataset.y=(y1-y)*ppy; t.textContent=y; ru.appendChild(t);
   }
   const pos = {};
   D.people.forEach(p=>{
@@ -310,20 +329,57 @@ const sc = document.getElementById('scroller');
 function focusCard(id){
   const c = document.querySelector(`.card[data-id="${id}"]`); if(!c) return;
   document.querySelectorAll('.card.hit').forEach(x=>x.classList.remove('hit')); c.classList.add('hit');
-  sc.scrollTo({left: c.offsetLeft - sc.clientWidth/2 + c.offsetWidth/2, top: c.offsetTop - sc.clientHeight/2 + 30, behavior:'smooth'});
+  sc.scrollTo({left: (c.offsetLeft + c.offsetWidth/2)*vs - sc.clientWidth/2, top: c.offsetTop*vs - sc.clientHeight/2 + 30, behavior:'smooth'});
 }
 document.getElementById('q').addEventListener('input',e=>{
   const v = e.target.value.trim().toLowerCase(); if(v.length<2) return;
   const norm = s=>s.normalize('NFD').replace(/[̀-ͯ]/g,'').toLowerCase();
   const hit = D.people.find(p=>norm(p.name+' '+(p.maiden||'')).includes(norm(v))); if(hit) focusCard(hit.id);
 });
-function setZoom(z){ zoom=Math.max(.5,Math.min(2.4,z)); try{localStorage.setItem('rv-zoom',zoom)}catch(e){} render(); focusCard(D.root); }
-document.getElementById('zin').addEventListener('click',()=>setZoom(zoom*1.2));
-document.getElementById('zout').addEventListener('click',()=>setZoom(zoom/1.2));
+// ── view scale: bottom bar, Ctrl/⌘ + wheel, trackpad and touch pinch ──
+const stage = document.getElementById('stage'), cvs = document.getElementById('canvas'), rul = document.getElementById('ruler');
+const zr = document.getElementById('zr'), zp = document.getElementById('zp');
+function applyScale(s, ax, ay){
+  s = Math.max(VS_MIN, Math.min(VS_MAX, s));
+  if(ax===undefined){ ax = sc.clientWidth/2; ay = sc.clientHeight/2; }
+  const cx = (sc.scrollLeft + ax)/vs, cy = (sc.scrollTop + ay)/vs;   // content point under the anchor
+  vs = s;
+  cvs.style.transform = `scale(${vs})`;
+  stage.style.width = (W0*vs)+'px'; stage.style.height = (H0*vs)+'px';
+  rul.style.height = (H0*vs)+'px';
+  rul.querySelectorAll('.tick').forEach(t=>{ t.style.top = (+t.dataset.y*vs)+'px'; t.hidden = vs < 0.35 && +t.textContent % 50 !== 0; });
+  sc.scrollLeft = cx*vs - ax; sc.scrollTop = cy*vs - ay;
+  const pct = Math.round(vs*100); zr.value = pct; zp.textContent = pct+' %';
+  try{ localStorage.setItem('rv-scale', vs); }catch(e){}
+}
+const fitScale = () => Math.min((sc.clientWidth - rul.offsetWidth - 8)/W0, (sc.clientHeight - 8)/H0);
+document.getElementById('zin').addEventListener('click',()=>applyScale(vs*1.25));
+document.getElementById('zout').addEventListener('click',()=>applyScale(vs/1.25));
+zr.addEventListener('input',()=>applyScale(zr.value/100));
+document.getElementById('zfit').addEventListener('click',()=>{ applyScale(fitScale()); sc.scrollTo({left:0,top:0}); });
+document.getElementById('z100').addEventListener('click',()=>{ applyScale(1); focusCard(D.root); });
+sc.addEventListener('wheel',e=>{
+  if(!(e.ctrlKey||e.metaKey)) return;            // trackpad pinch arrives as ctrl+wheel
+  e.preventDefault();
+  const r = sc.getBoundingClientRect();
+  applyScale(vs*Math.exp(-e.deltaY*0.01), e.clientX-r.left, e.clientY-r.top);
+},{passive:false});
+const pts = new Map(); let pinch = null;
+sc.addEventListener('pointerdown',e=>{ if(e.pointerType==='touch') pts.set(e.pointerId,{x:e.clientX,y:e.clientY}); });
+sc.addEventListener('pointermove',e=>{
+  if(!pts.has(e.pointerId)) return; pts.set(e.pointerId,{x:e.clientX,y:e.clientY});
+  if(pts.size!==2) return;
+  const [a,b] = [...pts.values()], dist = Math.hypot(a.x-b.x,a.y-b.y), r = sc.getBoundingClientRect();
+  const mx=(a.x+b.x)/2-r.left, my=(a.y+b.y)/2-r.top;
+  if(!pinch) pinch = {dist, vs}; else applyScale(pinch.vs*dist/pinch.dist, mx, my);
+});
+const endPt = e=>{ pts.delete(e.pointerId); if(pts.size<2) pinch=null; };
+['pointerup','pointercancel','pointerleave'].forEach(t=>sc.addEventListener(t,endPt));
 document.getElementById('home').addEventListener('click',()=>focusCard(D.root));
 
 render();
-requestAnimationFrame(()=>{ const c=document.querySelector(`.card[data-id="${D.root}"]`); if(c) sc.scrollTo({left:c.offsetLeft-sc.clientWidth/2+c.offsetWidth/2, top:Math.max(0,c.offsetTop-60)}); });
+applyScale(vs, 0, 0);
+requestAnimationFrame(()=>{ const c=document.querySelector(`.card[data-id="${D.root}"]`); if(c) sc.scrollTo({left:(c.offsetLeft+c.offsetWidth/2)*vs-sc.clientWidth/2, top:Math.max(0,c.offsetTop*vs-60)}); });
 })();
 
 // ── map & story view ──
@@ -358,8 +414,8 @@ requestAnimationFrame(()=>{ const c=document.querySelector(`.card[data-id="${D.r
   document.getElementById('moves').innerHTML=D.moves.map(m=>`<li style="--c:var(--l-${m.line})"><b>${m.when}</b> – ${m.who}: ${m.note}<span class="k">${KIND[m.kind]}</span></li>`).join('');
   document.getElementById('story').innerHTML=D.story.map(s=>`<article style="--c:var(--l-${s.line})"><h2>${s.title}</h2>${s.text.map(t=>`<p>${t}</p>`).join('')}</article>`).join('');
   document.getElementById('tl').innerHTML=D.timeline.map(e=>`<li><b>${e.y}</b>${e.t}</li>`).join('');
-  const tT=document.getElementById('tabTree'), tM=document.getElementById('tabMap'), MV=document.getElementById('mapView'), SC=document.getElementById('scroller'), LG=document.querySelector('.legend'), TL=document.querySelector('.tools');
-  function show(map){ MV.hidden=!map; SC.hidden=map; LG.hidden=map; TL.hidden=map; tT.setAttribute('aria-selected',!map); tM.setAttribute('aria-selected',map); try{localStorage.setItem('rv-tab',map?'map':'tree')}catch(e){} }
+  const tT=document.getElementById('tabTree'), tM=document.getElementById('tabMap'), MV=document.getElementById('mapView'), SC=document.getElementById('scroller'), LG=document.querySelector('.legend'), TL=document.querySelector('.tools'), ZB=document.getElementById('zoombar');
+  function show(map){ MV.hidden=!map; SC.hidden=map; LG.hidden=map; TL.hidden=map; ZB.hidden=map; tT.setAttribute('aria-selected',!map); tM.setAttribute('aria-selected',map); try{localStorage.setItem('rv-tab',map?'map':'tree')}catch(e){} }
   tT.addEventListener('click',()=>show(false)); tM.addEventListener('click',()=>show(true));
   try{ if(localStorage.getItem('rv-tab')==='map') show(true); }catch(e){}
   if(location.hash==='#mapa') show(true);
