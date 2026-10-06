@@ -174,7 +174,8 @@ window.RODOKMEN = {
       mother: "josefaOp",
       occ: "půlláník ve Věrovanech",
       notes: [
-        "Syn Jana Plachého, výměnkáře ve Věrovanech, a Josefy roz. Opluštilové z Dubu."
+        "Syn Jana Plachého, výměnkáře ve Věrovanech, a Josefy roz. Opluštilové z Dubu.",
+        "Sňatek s Františkou Kočířovou (*1828) zatím nenalezen: není v Kralicích 1825–1874 (rejstřík), ve Věrovanech 1850–51 ani 1861–64 – zbývá Věrovany 1852–1860."
       ],
       sources: [
         "křest syna Jana 1864 (D XII 19, sken 75)"
@@ -189,16 +190,20 @@ window.RODOKMEN = {
       maiden: "Kočířová",
       line: "vesely",
       cert: "M",
-      b: {"date":"?","year":1838,"approx":true,"place":"Kralice (na Hané)"},
+      b: {"date":"6. 9. 1828","year":1828,"place":"Kralice na Hané č. 65"},
       father: "janKo",
       mother: "mariannaNa",
       notes: [
-        "Dcera Jana Kočíře, výměnkáře z Kralic, a Marianny roz. Navrátilové z Kralic."
+        "Pokřtěna v září 1828 (den „6.“ čten s malou nejistotou): dcera Johanna Kočíře, sedláka v Kralicích, a Maryi, dcery výměnkáře Fabiána Navrátila.",
+        "Sestra Mariana (*cca 1837) se 11. 2. 1861 provdala za Johanna Wysloužila z Držovic."
       ],
       sources: [
+        "MZA Brno, Kralice N/O/Z 1825–1874 (sign. 9181, Acta Publica id 5779), sken 75",
         "křest syna Jana 1864 (D XII 19, sken 75)"
       ],
       scans: [
+        {"f":"img/1828_krest_frantiska_kocirova.jpg","t":"Křest 6. 9. 1828, Kralice č. 65 (MZA 9181)"},
+        {"f":"img/1861_snatek_kocirova_sestra.jpg","t":"Sňatek sestry Mariany 1861 – rodiče Jan Kočíř a Mariana roz. Navrátilová"},
         {"f":"img/1864_narozeni_jan_plachy.jpg","t":"Křest syna Jana 1864"}
       ]
     },
@@ -207,17 +212,20 @@ window.RODOKMEN = {
       name: "Josef Vincour",
       line: "vesely",
       cert: "M",
-      b: {"date":"?","year":1840,"approx":true},
+      b: {"date":"cca 1837","year":1837,"approx":true,"place":"„N…“ (Nemilany ?)"},
       father: "josefVi2",
       mother: "katerinaVi",
       occ: "půlláník v Řepčíně",
+      marriage: "24. 6. 1861, Řepčín – s Terezií Dosoudilovou (on 24, ona 21)",
       notes: [
-        "Syn Josefa Vincoura, půlláníka v Nemilanech (?)."
+        "Sňatek 24. 6. 1861 v Řepčíně: Josef Vincour (Wincor), půlláník, 24 let, syn Josefa Vincoura, půlláníka v „N…“ (Nemilany ?), a Kateřiny roz. „Du…“ (?)."
       ],
       sources: [
+        "ZA Opava, O Řepčín 1855–1883 (Ch V 13), sken 192",
         "křest dcery Marianny 1869 (Ch V 8, sken 271)"
       ],
       scans: [
+        {"f":"img/1861_snatek_vincour_dosoudilova.jpg","t":"Sňatek 24. 6. 1861, Řepčín (Ch V 13, pag. 198)"},
         {"f":"img/1869_narozeni_marianna_vincourova.jpg","t":"Křest dcery Marianny 1869"}
       ]
     },
@@ -227,17 +235,19 @@ window.RODOKMEN = {
       maiden: "Dosoudilová",
       line: "vesely",
       cert: "M",
-      b: {"date":"?","year":1845,"approx":true,"place":"Řepčín"},
+      b: {"date":"cca 1840","year":1840,"approx":true,"place":"Řepčín č. 29"},
       father: "franzDo",
       mother: "franziskaPi",
       notes: [
-        "Dcera Františka Dosoudila, chalupníka (domkáře?) v Řepčíně č. 29."
+        "Při sňatku 1861 svobodná, 21 let; dcera Františka Dosoudila, chalupníka v Řepčíně č. 29, a Františky roz. Pikl; otec podepsal souhlas se sňatkem nezletilé."
       ],
       sources: [
+        "Ch V 13, sken 192 (sňatek 1861)",
         "křest dcery Marianny 1869 (Ch V 8, sken 271)",
         "sňatek dcery 1887 (Ch V 18)"
       ],
       scans: [
+        {"f":"img/1861_snatek_vincour_dosoudilova.jpg","t":"Sňatek 24. 6. 1861, Řepčín (Ch V 13, pag. 198)"},
         {"f":"img/1869_narozeni_marianna_vincourova.jpg","t":"Křest dcery Marianny 1869"}
       ]
     },
@@ -278,11 +288,14 @@ window.RODOKMEN = {
       line: "vesely",
       cert: "M",
       b: {"date":"?","year":1805,"approx":true,"place":"Kralice"},
-      occ: "výměnkář v Kralicích",
+      occ: "sedlák v Kralicích č. 65, 1861 výměnkář",
       sources: [
-        "křest vnuka Jana 1864 (D XII 19)"
+        "křest vnuka Jana 1864 (D XII 19)",
+        "MZA 9181 sken 75 (křest dcery 1828), sken 28 (sňatek dcery 1861)"
       ],
       scans: [
+        {"f":"img/1828_krest_frantiska_kocirova.jpg","t":"Křest 6. 9. 1828, Kralice č. 65 (MZA 9181)"},
+        {"f":"img/1861_snatek_kocirova_sestra.jpg","t":"Sňatek sestry Mariany 1861 – rodiče Jan Kočíř a Mariana roz. Navrátilová"},
         {"f":"img/1864_narozeni_jan_plachy.jpg","t":"Křest vnuka Jana 1864"}
       ]
     },
@@ -293,11 +306,33 @@ window.RODOKMEN = {
       line: "vesely",
       cert: "M",
       b: {"date":"?","year":1810,"approx":true,"place":"Kralice"},
+      father: "fabianNa",
+      notes: [
+        "Dcera Fabiána Navrátila, výměnkáře / čtvrtláníka v Kralicích."
+      ],
       sources: [
         "křest vnuka Jana 1864 (D XII 19)"
       ],
       scans: [
+        {"f":"img/1828_krest_frantiska_kocirova.jpg","t":"Křest 6. 9. 1828, Kralice č. 65 (MZA 9181)"},
+        {"f":"img/1861_snatek_kocirova_sestra.jpg","t":"Sňatek sestry Mariany 1861 – rodiče Jan Kočíř a Mariana roz. Navrátilová"},
         {"f":"img/1864_narozeni_jan_plachy.jpg","t":"Křest vnuka Jana 1864"}
+      ]
+    },
+    {
+      id: "fabianNa",
+      name: "Fabián Navrátil",
+      line: "vesely",
+      cert: "M",
+      b: {"date":"?","year":1775,"approx":true,"place":"Kralice na Hané"},
+      occ: "čtvrtláník, později výměnkář v Kralicích",
+      sources: [
+        "křest vnučky Františky 1828 (MZA 9181 sken 75)",
+        "sňatek vnučky Mariany 1861 (sken 28)"
+      ],
+      scans: [
+        {"f":"img/1828_krest_frantiska_kocirova.jpg","t":"Křest 6. 9. 1828, Kralice č. 65 (MZA 9181)"},
+        {"f":"img/1861_snatek_kocirova_sestra.jpg","t":"Sňatek sestry Mariany 1861 – rodiče Jan Kočíř a Mariana roz. Navrátilová"}
       ]
     },
     {
@@ -308,26 +343,31 @@ window.RODOKMEN = {
       b: {"date":"?","year":1810,"approx":true},
       occ: "půlláník v Nemilanech (?)",
       notes: [
-        "Čtení místa nejisté (kurent)."
+        "Půlláník v „N…“ (Nemilany ?) – podle křtu vnučky 1869 a sňatku syna 1861."
       ],
       sources: [
         "křest vnučky Marianny 1869 (Ch V 8, sken 271)"
       ],
       scans: [
+        {"f":"img/1861_snatek_vincour_dosoudilova.jpg","t":"Sňatek 24. 6. 1861, Řepčín (Ch V 13, pag. 198)"},
         {"f":"img/1869_narozeni_marianna_vincourova.jpg","t":"Křest vnučky Marianny 1869"}
       ]
     },
     {
       id: "katerinaVi",
       name: "Kateřina Vincourová",
-      maiden: "? (nečitelné, snad Nedopil)",
+      maiden: "„Du…“ (?) – nečitelné",
       line: "vesely",
       cert: "M",
       b: {"date":"?","year":1815,"approx":true},
+      notes: [
+        "Rodné příjmení nejisté: v oddacím zápisu syna 1861 krátké jméno začínající „Du-“ (?); dřívější čtení „Nedopil“ nepotvrzeno."
+      ],
       sources: [
         "křest vnučky Marianny 1869 (Ch V 8, sken 271)"
       ],
       scans: [
+        {"f":"img/1861_snatek_vincour_dosoudilova.jpg","t":"Sňatek 24. 6. 1861, Řepčín (Ch V 13, pag. 198)"},
         {"f":"img/1869_narozeni_marianna_vincourova.jpg","t":"Křest vnučky Marianny 1869"}
       ]
     },
@@ -343,23 +383,25 @@ window.RODOKMEN = {
         "sňatek vnučky 1887 (Ch V 18)"
       ],
       scans: [
+        {"f":"img/1861_snatek_vincour_dosoudilova.jpg","t":"Sňatek 24. 6. 1861, Řepčín (Ch V 13, pag. 198)"},
         {"f":"img/1869_narozeni_marianna_vincourova.jpg","t":"Křest vnučky Marianny 1869"}
       ]
     },
     {
       id: "franziskaPi",
       name: "Františka Dosoudilová",
-      maiden: "Pikl (?)",
+      maiden: "Pikl",
       line: "vesely",
       cert: "M",
       b: {"date":"?","year":1818,"approx":true,"place":"Řepčín"},
       notes: [
-        "Rodné příjmení čteno nejistě."
+        "Rodné příjmení „Pikl“ potvrzeno v oddacím zápisu dcery 1861."
       ],
       sources: [
         "křest vnučky Marianny 1869 (Ch V 8, sken 271)"
       ],
       scans: [
+        {"f":"img/1861_snatek_vincour_dosoudilova.jpg","t":"Sňatek 24. 6. 1861, Řepčín (Ch V 13, pag. 198)"},
         {"f":"img/1869_narozeni_marianna_vincourova.jpg","t":"Křest vnučky Marianny 1869"}
       ]
     },
