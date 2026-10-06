@@ -34,7 +34,7 @@ window.RODOKMEN = {
       d: { date: "19. 9. 2007", year: 2007, place: "FN Ostrava-Poruba" },
       father: "karelV", mother: "annaP",
       marriage: "28. 9. 1957, Slezská Ostrava (kostel sv. Josefa) – s Martou Woroňovou",
-      notes: ["Rodinný hrob v Hodoňovicích.", "Sourozenci: Karel, Růženka.", "V poznámkách se objevuje Uherský Brod 1940 – význam neověřen.", "Odpis rodného listu vyžádán z Matričného úradu Kežmarok (6. 10. 2026)."] },
+      notes: ["Kolem roku 1940 se s rodiči přestěhoval z Kežmarku do Uherského Brodu (vyprávění babičky Marty, opakovaně).", "Rodinný hrob v Hodoňovicích.", "Sourozenci: Karel, Růženka.", "V poznámkách se objevuje Uherský Brod 1940 – význam neověřen.", "Odpis rodného listu vyžádán z Matričného úradu Kežmarok (6. 10. 2026)."] },
     { id: "karelV", scans: [{"f": "img/1930_scitani_karel_vesely.jpg", "t": "Sčítání 1930, Kežmarok, Hlavná ul. 7 (ř. 8)"}], name: "Karel (Karol) Veselý", line: "vesely", cert: "D",
       b: { date: "4. 10. 1904", year: 1904, place: "Plavnice / Planá (?), okr. České Budějovice, Čechy" },
       occ: "úředník (Offizial) Nemocenské pojišťovny v Kežmarku; 1934–37 městský zastupitel za Čsl. sociálně demokratickou stranu",
@@ -310,7 +310,7 @@ window.RODOKMEN.places = [
   { name: "Věrovany", anchor: "start", dy: 4, lat: 49.46, lon: 17.29, line: "vesely", note: "Rod Plachý (Anna *1907)" },
   { name: "Wieliczka", anchor: "end", dy: 16, lat: 49.987, lon: 20.065, line: "woron", note: "sňatek Woroňových 1896", small: true },
   { name: "Opava", anchor: "end", dy: 4, lat: 49.94, lon: 17.90, line: "struz", note: "Stružovi kolem 1937", small: true },
-  { name: "Uherský Brod", dy: 4, lat: 49.025, lon: 17.65, line: "vesely", note: "Veselí 1940 (?)", small: true },
+  { name: "Uherský Brod", dy: 4, lat: 49.025, lon: 17.65, line: "vesely", note: "Veselí kolem 1940", small: true },
   { name: "Lednica Dolna", dy: -22, lat: 49.985, lon: 20.03, line: "woron", note: "Rod Woroń, Ondřej *1869 (?)" },
   { name: "Rajbrot", dy: 6, lat: 49.80, lon: 20.42, line: "woron", note: "Rod Włudyka od 1730. let" },
   { name: "Zagórzany (Gdów)", dy: 6, lat: 49.93, lon: 20.21, line: "chmielek", note: "Rod Chmielek (Stanislav)" },
@@ -344,7 +344,7 @@ window.RODOKMEN.story = [
       "Po vzniku Československa v roce 1918 odcházely na Slovensko tisíce Čechů – úředníci, železničáři, četníci, učitelé i řemeslníci. Mezi nimi Karel Veselý (*1904 u Českých Budějovic), který v listopadu 1922 přišel z Plzně do Kežmarku a pracoval jako úředník tamní nemocenské pojišťovny.",
       "Kežmarok byl tehdy převážně německé a maďarské město – sčítací arch z roku 1930 je vyplněný německy. Karel bydlel v podnájmu na Hlavní ulici, v letech 1935–1937 seděl v městském zastupitelstvu za sociální demokraty a dělal jednatele Klubu československých turistů.",
       "Anna Plachá (*1907) pocházela z Věrovan na Hané. Do Kežmarku ji přivedla starší sestra Terezie, provdaná za řezníka Methoda Krejsu, kterému Anna dělala pokladní. S Karlem se vzali mezi lety 1931 a 1933 a v září 1933 se jim narodil Svatoň.",
-      "Po vzniku Slovenského státu v roce 1939 museli Češi ve státní službě většinou odejít do českých zemí – tomu odpovídá zmínka o Uherském Brodě 1940."
+      "Po vzniku Slovenského státu v roce 1939 museli Češi ve státní službě většinou odejít do českých zemí – rodina Veselých se tak přestěhovala do Uherského Brodu, jak babička Marta mnohokrát vyprávěla."
     ] }
 ];
 window.RODOKMEN.timeline = [
@@ -363,6 +363,7 @@ window.RODOKMEN.timeline = [
   { y: 1933, t: "Svatoň Veselý se rodí v Kežmarku" },
   { y: 1935, t: "Karel Veselý městským zastupitelem v Kežmarku" },
   { y: 1938, t: "Hlučínsko připojeno k Německu" },
+  { y: 1940, t: "Veselí odcházejí z Kežmarku do Uherského Brodu" },
   { y: 1945, t: "Konec války, Hlučínsko znovu v ČSR" },
   { y: 1957, t: "Svatba Svatoně Veselého a Marty Woroňové ve Slezské Ostravě" },
   { y: 1985, t: "Svatba Radima Veselého a Jany Pacíkové" },
@@ -396,7 +397,7 @@ window.RODOKMEN.moves = [
     path: [[49.40, 16.95], [49.455, 17.45], [49.60, 18.14], [49.22, 18.74], [49.06, 20.30], [49.135, 20.43]], fromOffMap: "z Plzně" },
   { line: "vesely", kind: "doc", who: "Anna Plachá", when: "1930", note: "z Věrovan za sestrou Terezií Krejsovou do Kežmarku",
     path: [[49.46, 17.29], [49.455, 17.45], [49.60, 18.14], [49.22, 18.74], [49.06, 20.30], [49.135, 20.43]] },
-  { line: "vesely", kind: "hyp", who: "Veselí se Svatoněm", when: "1939–1940 (?)", note: "po vzniku Slovenského státu odchod do Protektorátu; rodinná poznámka zmiňuje Uherský Brod 1940",
+  { line: "vesely", kind: "doc", who: "Veselí se Svatoněm", when: "cca 1939–1940", note: "po vzniku Slovenského státu odchod do Uherského Brodu – potvrzeno vyprávěním babičky Marty (opakovaně)",
     path: [[49.135, 20.43], [49.06, 20.30], [49.22, 18.74], [49.025, 17.65]] },
   { line: "vesely", kind: "hyp", who: "Svatoň Veselý", when: "před 1957", note: "do Ostravy; sňatek s Martou Woroňovou 1957 ve Slezské Ostravě",
     path: [[49.025, 17.65], [49.455, 17.45], [49.60, 18.14], [49.835, 18.29]] }
