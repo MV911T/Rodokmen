@@ -268,7 +268,7 @@ window.RODOKMEN.places = [
   { name: "Lednica Dolna", dy: -22, lat: 49.985, lon: 20.03, line: "woron", note: "Rod Woroń, Ondřej *1869 (?)" },
   { name: "Rajbrot", dy: 6, lat: 49.80, lon: 20.42, line: "woron", note: "Rod Włudyka (Markéta)" },
   { name: "Zagórzany (Gdów)", dy: 6, lat: 49.93, lon: 20.21, line: "chmielek", note: "Rod Chmielek (Stanislav)" },
-  { name: "Tarnów", anchor: "end", dy: 14, lat: 50.01, lon: 20.99, line: "chmielek", note: "Rod Dydowicz (Helena)" },
+  { name: "Tarnów", anchor: "end", dy: -24, lat: 50.01, lon: 20.99, line: "chmielek", note: "Rod Dydowicz (Helena)" },
   { name: "Nedašova Lhota", dy: -22, lat: 49.135, lon: 18.09, line: "pacik", note: "Rod Pacík / Fojtík od 1712" },
   { name: "Nedašov", dy: 8, lat: 49.105, lon: 18.06, line: "matusu", note: "Rod Matůšů, Novák, Holba" },
   { name: "Chuchelná", dy: -24, lat: 50.00, lon: 18.03, line: "struz", note: "Rody Strusch, Opolony, Jiřík" },

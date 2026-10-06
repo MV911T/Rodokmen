@@ -11,7 +11,7 @@
   --l-vesely:#3f6e8c; --l-woron:#7a5c99; --l-chmielek:#a0577a; --l-pacik:#3d7d5c;
   --l-matusu:#8a7a2e; --l-struz:#a3612d; --l-jirik:#2f7a80; --l-opolony:#6b6f2f;
   --shadow:0 1px 2px rgba(24,38,46,.08),0 4px 14px rgba(24,38,46,.06);
-  --land:#f4f1ea; --land-cz:#fbfaf6; --border:#9aa8af;
+  --land:#eceae4; --land-cz:#fbfaf6; --land-pl:#f6f0ee; --land-sk:#eef3f1; --border:#9aa8af;
   --f-name:"Spectral",Georgia,"Times New Roman",serif;
   --f-data:"IBM Plex Sans Condensed","Arial Narrow",system-ui,sans-serif;
 }
@@ -20,13 +20,13 @@
   --accent:#e2735f; --link:#8cc0dd;
   --l-vesely:#7fb0d0; --l-woron:#b49ad4; --l-chmielek:#d68fb0; --l-pacik:#7fc29d;
   --l-matusu:#cdbb66; --l-struz:#e0a06a; --l-jirik:#6fc0c6; --l-opolony:#b3b86a;
-  --shadow:0 1px 2px rgba(0,0,0,.4),0 4px 14px rgba(0,0,0,.3); --land:#1d262c; --land-cz:#232e35; --border:#566770; color-scheme:dark }}
+  --shadow:0 1px 2px rgba(0,0,0,.4),0 4px 14px rgba(0,0,0,.3); --land:#1a2228; --land-cz:#25313a; --land-pl:#2a2c33; --land-sk:#22302d; --border:#566770; color-scheme:dark }}
 :root[data-theme="dark"]{
   --bg:#11171b; --surface:#1a232a; --ink:#e3eaed; --muted:#93a3ab; --rule:#2f3c44; --grid:#1f2a31;
   --accent:#e2735f; --link:#8cc0dd;
   --l-vesely:#7fb0d0; --l-woron:#b49ad4; --l-chmielek:#d68fb0; --l-pacik:#7fc29d;
   --l-matusu:#cdbb66; --l-struz:#e0a06a; --l-jirik:#6fc0c6; --l-opolony:#b3b86a;
-  --shadow:0 1px 2px rgba(0,0,0,.4),0 4px 14px rgba(0,0,0,.3); --land:#1d262c; --land-cz:#232e35; --border:#566770; color-scheme:dark }
+  --shadow:0 1px 2px rgba(0,0,0,.4),0 4px 14px rgba(0,0,0,.3); --land:#1a2228; --land-cz:#25313a; --land-pl:#2a2c33; --land-sk:#22302d; --border:#566770; color-scheme:dark }
 
 html,body{height:100%}
 body{background:var(--bg);color:var(--ink);font-family:var(--f-data);margin:0;display:flex;flex-direction:column}
@@ -110,6 +110,8 @@ dl.facts dd{margin:0;min-width:0}
 #map .sea{fill:var(--bg)}
 #map .land{fill:var(--land);stroke:var(--border);stroke-width:1.4;stroke-linejoin:round}
 #map .land.czechia{fill:var(--land-cz)}
+#map .land.poland{fill:var(--land-pl)}
+#map .land.slovakia{fill:var(--land-sk)}
 #map .grat{stroke:var(--border);stroke-width:.5;fill:none;opacity:.25}
 #map .city{fill:var(--muted)}
 #map .cityl{font-family:var(--f-data);fill:var(--muted);font-size:11px;paint-order:stroke;stroke:var(--land);stroke-width:3px}
@@ -327,7 +329,7 @@ requestAnimationFrame(()=>{ const c=document.querySelector(`.card[data-id="${D.r
   for(let a=Math.ceil(lat0*2)/2;a<=lat1;a+=.5) g+=`<line class="grat" x1="0" x2="${W}" y1="${Y(a)}" y2="${Y(a)}"/>`;
   for(let o=Math.ceil(lon0*2)/2;o<=lon1;o+=.5) g+=`<line class="grat" y1="0" y2="${H}" x1="${X(o)}" x2="${X(o)}"/>`;
   G.labels.forEach(l=>{ g+=`<text class="country" x="${X(l.lon)}" y="${Y(l.lat)}">${l.t}</text>`; });
-  G.cities.filter(c=>c.r>0).forEach(c=>{ const r=[0,4,3,2.5][c.r]; g+=`<circle class="city" cx="${X(c.lon)}" cy="${Y(c.lat)}" r="${r}"/><text class="cityl r${c.r}" x="${X(c.lon)+r+3}" y="${Y(c.lat)+3.5}">${c.n}</text>`; });
+  G.cities.filter(c=>c.r>0).forEach(c=>{ const r=[0,4,3,2.5][c.r]; const e=c.anchor==='end'; g+=`<circle class="city" cx="${X(c.lon)}" cy="${Y(c.lat)}" r="${r}"/><text class="cityl r${c.r}" text-anchor="${e?'end':'start'}" x="${X(c.lon)+(e?-(r+3):r+3)}" y="${Y(c.lat)+3.5}">${c.n}</text>`; });
   const hub=D.places.find(p=>p.hub);
   D.places.filter(p=>!p.hub).forEach(p=>{
     const x1=X(p.lon),y1=Y(p.lat),x2=X(hub.lon),y2=Y(hub.lat), mx=(x1+x2)/2, my=(y1+y2)/2-Math.abs(x1-x2)*.12-20;
