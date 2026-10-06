@@ -915,7 +915,8 @@ window.RODOKMEN = {
       b: {"date":"17. 9. 1794","year":1794,"place":"Nedašova Lhota č. 9"},
       notes: [
         "Nemanželská dcera Kateřiny Měřičkové (Mirzičkin) z Lhoty; kmotři Johann Dorniak (?) a Marina Kolínková.",
-        "Kandidát na příbuzného matky: Bartoš Měřička, zahradník v Lhotě č. 30 (1797–1802)."
+        "Kandidát na příbuzného matky: Bartoš Měřička, zahradník v Lhotě č. 30 (1797–1802).",
+        "Kandidáti na prarodiče (K): Bartoloměj Měřička, syn Jana, × Dorota (dcera † Josefa Podešvíka(?) ze Študlova), sňatek 19. 6. 1768, Lhota – souvisí s „Bartošem Měřičkou“, zahradníkem v Lhotě č. 30."
       ],
       sources: [
         "N 4473, img 135"
@@ -953,7 +954,8 @@ window.RODOKMEN = {
       cert: "M",
       b: {"date":"cca 1765","year":1765,"approx":true},
       notes: [
-        "Dcera † Martina Adamka z Lhoty (při sňatku 1787 22 let). Martin Adamek se jinde objevuje jako „caupo“ – krčmář (z Nedašova)."
+        "Dcera † Martina Adamka z Lhoty (při sňatku 1787 22 let). Martin Adamek se jinde objevuje jako „caupo“ – krčmář (z Nedašova).",
+        "Kandidáti na rodiče (K): Martin Adamek z Lhoty × Anna (dcera Kateřina 1767; Martin se 1773 znovu oženil s vdovou Marinou Bartošákovou); křest Mariny 10. 4. 1767 dcery Martina Adamka a Kateřiny je ale z Návojné."
       ],
       scans: [
         {"f":"img/1787_snatek_kolinek_adamkova.jpg","t":"Sňatek 16. 9. 1787"}
@@ -981,14 +983,20 @@ window.RODOKMEN = {
       name: "Josef Tomeček",
       line: "pacik",
       cert: "M",
-      b: {"date":"?","year":1745,"approx":true},
+      b: {"date":"cca 1740–1745","year":1742,"approx":true,"place":"Nedašova Lhota"},
+      father: "josefT0",
       occ: "sedlák v Nedašově Lhotě",
+      marriage: "7. 9. 1766 – s Kateřinou Michalíkovou; svědci Ondřej Hlabiňák (Lhota) a Jan Novák (Nedašov)",
       notes: [
-        "Manželka Kateřina (u dětí 1773 a 1776); Veronika, žena Josefa Tomečka v roce 1761, byla buď jeho dřívější manželkou, nebo jde o jiného Josefa.",
-        "Otec Mariny Vaňkové (*30. 3. 1773) i Jana Tomečka (*8. 12. 1776) – rodokmen se tu dvakrát sbíhá; to vysvětluje dispens pro příbuzenství 3. stupně při sňatku Františka Tomečka a Anny Bartošákové 1851."
+        "Sňatek 7. 9. 1766 jako svobodný (adolescens): „Josephus filius Josephi Tomeček Chota, cum honesta Virg: Catharina filia Joannis Michalík“ – syn Josefa Tomečka staršího.",
+        "Otec Mariny Vaňkové (*30. 3. 1773) i Jana Tomečka (*8. 12. 1776) – rodokmen se tu dvakrát sbíhá; to vysvětluje dispens pro příbuzenství 3. stupně při sňatku Františka Tomečka a Anny Bartošákové 1851.",
+        "Veronika, žena „Josefa Tomečka“ v letech 1761–64, byla manželkou jeho otce."
       ],
       sources: [
-        "Brumov 4012 img 82 a 102 (křty dětí)"
+        "Brumov 4012 img 169 (sňatek 1766), 82, 102"
+      ],
+      scans: [
+        {"f":"img/1766_snatek_tomecek_michalikova.jpg","t":"Sňatek 7. 9. 1766 (4012 img 169)"}
       ]
     },
     {
@@ -1085,37 +1093,117 @@ window.RODOKMEN = {
       name: "Mikuláš Vaněk",
       line: "pacik",
       cert: "M",
-      b: {"date":"?","year":1745,"approx":true},
+      b: {"date":"cca 1735–1740","year":1738,"approx":true,"place":"Návojná"},
+      father: "janVaN",
       occ: "sedlák v Nedašově Lhotě",
+      marriage: "25. 1. 1762 – s Marinou Machulčíkovou z Lhoty; svědci Jiří Vašíčka a Mikuláš Holík z Návojné",
+      notes: [
+        "Sňatek: „hon: ado: Nicolaum filium post def: Joannem Wanick navog: cum hon: Virg: Marina filia post def: Georgium Machulčík Lho:“ – syn † Jana Vaňka z Návojné.",
+        "Děti: Jakub *25. 7. 1765, Jan *16. 6. 1768, Pavel *22. 6. 1772, Anna 1782."
+      ],
+      sources: [
+        "Brumov 4012 img 160 (1762), 31, 44, 79"
+      ],
       scans: [
+        {"f":"img/1762_snatek_vanek_machulcikova.jpg","t":"Sňatek 25. 1. 1762 (4012 img 160, pravá strana)"},
         {"f":"img/1772_krest_pavel_vanek.jpg","t":"Křest syna Pavla 1772"}
       ]
     },
     {
       id: "marinaVa",
       name: "Marina Vaňková",
+      maiden: "Machulčíková",
       line: "pacik",
       cert: "M",
-      b: {"date":"?","year":1748,"approx":true},
+      b: {"date":"cca 1740","year":1740,"approx":true,"place":"Nedašova Lhota"},
+      father: "jiriMa",
       notes: [
-        "Rodné příjmení neznámé."
+        "Dcera † Jiřího Machulčíka z Lhoty (sňatek 1762)."
+      ],
+      sources: [
+        "Brumov 4012 img 160"
       ],
       scans: [
+        {"f":"img/1762_snatek_vanek_machulcikova.jpg","t":"Sňatek 25. 1. 1762 (4012 img 160, pravá strana)"},
         {"f":"img/1772_krest_pavel_vanek.jpg","t":"Křest syna Pavla 1772"}
       ]
     },
     {
       id: "katerinaTo",
       name: "Kateřina Tomečková",
+      maiden: "Michalíková",
       line: "pacik",
       cert: "M",
       b: {"date":"?","year":1748,"approx":true},
+      father: "janMic",
       notes: [
-        "Rodné příjmení neznámé; sňatek s Josefem Tomečkem (cca 1770–72) zatím nečten."
+        "Dcera Jana Michalíka (místo čteno „gastřabio“ – nejisté)."
+      ],
+      sources: [
+        "Brumov 4012 img 169"
       ],
       scans: [
+        {"f":"img/1766_snatek_tomecek_michalikova.jpg","t":"Sňatek 7. 9. 1766 (4012 img 169)"},
         {"f":"img/1773_krest_marina_tomeckova.jpg","t":"Křest dcery Mariny 1773"},
         {"f":"img/1776_krest_jan_tomecek.jpg","t":"Křest syna Jana 1776"}
+      ]
+    },
+    {
+      id: "janVaN",
+      name: "Jan Vaněk",
+      line: "pacik",
+      cert: "M",
+      b: {"date":"?","year":1710,"approx":true,"place":"Návojná"},
+      d: {"date":"před 1762","year":1761,"approx":true},
+      sources: [
+        "sňatek syna Mikuláše 1762 (4012 img 160)"
+      ],
+      scans: [
+        {"f":"img/1762_snatek_vanek_machulcikova.jpg","t":"Sňatek 25. 1. 1762 (4012 img 160, pravá strana)"}
+      ]
+    },
+    {
+      id: "jiriMa",
+      name: "Jiří Machulčík",
+      line: "pacik",
+      cert: "M",
+      b: {"date":"?","year":1710,"approx":true,"place":"Nedašova Lhota"},
+      d: {"date":"před 1762","year":1761,"approx":true},
+      sources: [
+        "sňatek dcery Mariny 1762 (4012 img 160)"
+      ],
+      scans: [
+        {"f":"img/1762_snatek_vanek_machulcikova.jpg","t":"Sňatek 25. 1. 1762 (4012 img 160, pravá strana)"}
+      ]
+    },
+    {
+      id: "josefT0",
+      name: "Josef Tomeček st.",
+      line: "pacik",
+      cert: "M",
+      b: {"date":"?","year":1715,"approx":true,"place":"Nedašova Lhota"},
+      notes: [
+        "Svědek při sňatcích 1760–61; manželka Veronika (doložena 1761–1768 jako kmotra)."
+      ],
+      sources: [
+        "sňatek syna Josefa 1766 (4012 img 169)",
+        "4012 img 158"
+      ],
+      scans: [
+        {"f":"img/1766_snatek_tomecek_michalikova.jpg","t":"Sňatek 7. 9. 1766 (4012 img 169)"}
+      ]
+    },
+    {
+      id: "janMic",
+      name: "Jan Michalík",
+      line: "pacik",
+      cert: "M",
+      b: {"date":"?","year":1715,"approx":true},
+      sources: [
+        "sňatek dcery Kateřiny 1766 (4012 img 169)"
+      ],
+      scans: [
+        {"f":"img/1766_snatek_tomecek_michalikova.jpg","t":"Sňatek 7. 9. 1766 (4012 img 169)"}
       ]
     },
     {
@@ -1127,7 +1215,8 @@ window.RODOKMEN = {
       occ: "sedlák v Nedašově Lhotě",
       marriage: "23. 1. 1774, Lhota č. 39 – s Rosinou Fojtíkovou",
       notes: [
-        "Syn Jiřího Fojtíka. Sňatek: „Hon. adol. Martinus filius Georgii Fojtík cum hon. virgine Rosina filia † Bartholomei Fojtík, ambo Chota“; svědci Václav Lukšík (?) a Jura Birlog (?)."
+        "Syn Jiřího Fojtíka. Sňatek: „Hon. adol. Martinus filius Georgii Fojtík cum hon. virgine Rosina filia † Bartholomei Fojtík, ambo Chota“; svědci Václav Lukšík (?) a Jura Birlog (?).",
+        "Fojtíkové v Lhotě 1760–68 (K): Jiří syn Jiřího × Marina dcera Jiřího Fojtíka (1760, dispens 4. stupně); Jiří syn Jiřího × Anna Tomečková (1760); Tomáš syn † Bartoloměje × Anna Dořáková (1761); Bartoloměj Fojtík byl mrtev už 1761."
       ],
       sources: [
         "Brumov 4012 img 185"
