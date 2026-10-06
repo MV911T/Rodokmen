@@ -1602,6 +1602,7 @@ window.RODOKMEN = {
       line: "matusu",
       cert: "M",
       b: {"date":"cca 1782","year":1782,"approx":true,"place":"Bylnice"},
+      father: "mikulasSa",
       notes: [
         "Dcera Mikuláše Šaurka, sedláka v Bylnici (sňatek 1802: 20 let). Kandidát na křest: 17. 9. 1779 Bylnice, Barbara dcera Mikuláše Š(a)urka a Kateřiny (4012 img 116) – věk o 2 roky nesedí."
       ],
@@ -1653,16 +1654,21 @@ window.RODOKMEN = {
       name: "Josef Holba",
       line: "matusu",
       cert: "M",
-      b: {"date":"cca 1769","year":1769,"approx":true,"place":"Nedašov"},
+      b: {"date":"31. 12. 1767","year":1767,"place":"Nedašov"},
+      father: "matejHo",
+      mother: "katerinaHo",
       occ: "kovář, později sedlák, Nedašov č. 64",
       marriage: "26. 1. 1794, Nedašov č. 64 – s Marinou Fojtíkovou (on 25, ona 18); svědci Johann Holba a Mathis Jakubík",
       notes: [
-        "Syn Matěje (Mathes) Holby, kováře v Nedašově."
+        "Pokřtěn 31. 12. 1767 farářem: „Josephus – Mattheus Holba et Catharina, Nedaschov“; kmotři Jan Švach a Alžběta Nováková.",
+        "Syn Matěje Holby, kováře v Nedašově č. 64 (stejný dům, kde se 1812 narodila dcera Anna)."
       ],
       sources: [
-        "O 4023 img 104"
+        "Brumov 4012 img 46",
+        "O 4023 img 104 (sňatek 1794)"
       ],
       scans: [
+        {"f":"img/1767_krest_josef_holba.jpg","t":"Křest 31. 12. 1767, Nedašov"},
         {"f":"img/1794_snatek_holba_fojtikova.jpg","t":"Sňatek 26. 1. 1794"}
       ]
     },
@@ -1673,8 +1679,9 @@ window.RODOKMEN = {
       line: "matusu",
       cert: "M",
       b: {"date":"cca 1776","year":1776,"approx":true,"place":"Nedašov"},
+      father: "jiriFo",
       notes: [
-        "Dcera Jiřího Fojtíka, sedláka v Nedašově."
+        "Dcera Jiřího Fojtíka, sedláka v Nedašově (sňatek 1794: 18 let, tedy *cca 1775–76). Matka pravděpodobně Veronika (Jiří Fojtík × Veronika, Nedašov č. 17, syn Josef 1776) – K. Křest Mariny v letech 1774–IX/1776 není."
       ],
       sources: [
         "O 4023 img 104"
@@ -1688,12 +1695,19 @@ window.RODOKMEN = {
       name: "Martin Novák",
       line: "matusu",
       cert: "M",
-      b: {"date":"?","year":1785,"approx":true},
+      b: {"date":"cca 1780","year":1780,"approx":true,"place":"Nedašov"},
+      father: "josefNo",
       occ: "sedlák (čtvrtláník), Nedašov č. 45",
+      marriage: "25. 1. 1802, Nedašov č. 45 – s Annou Birlog (on 22, ona 20); svědci Jiří Šuran, rychtář, a Jan Holba",
       notes: [
-        "Sňatek s Annou Birlogovou zatím nenalezen (není v 4023 v letech 1805–1817)."
+        "Syn Josefa Nováka, sedláka v Nedašově (sňatek 1802)."
+      ],
+      sources: [
+        "O 4023 img 106 (sňatek 1802)",
+        "N 4473 img 102 (křest syna Václava 1818)"
       ],
       scans: [
+        {"f":"img/1802_snatek_novak_birlog.jpg","t":"Sňatek 25. 1. 1802, Nedašov č. 45"},
         {"f":"img/1818_krest_vaclav_novak.jpg","t":"Křest syna Václava 1818"}
       ]
     },
@@ -1703,12 +1717,115 @@ window.RODOKMEN = {
       maiden: "Birlog (Bírlogová)",
       line: "matusu",
       cert: "M",
-      b: {"date":"?","year":1790,"approx":true},
+      b: {"date":"cca 1782","year":1782,"approx":true,"place":"Nedašov"},
+      father: "jiriBi",
       notes: [
-        "Dcera † Jiřího Birloga, domkáře v Nedašově."
+        "Dcera Jiřího Birloga, zahradníka (Gartler) v Nedašově (sňatek 1802: 20 let).",
+        "Kandidát na křest (K): Anna 12. 6. 1782, rodiče „Jura Birlog et Marina hortulanus“, Nedašov č. 74 – v Nedašově ale žilo víc Jiřích Birlogů (s Marinou, Annou, Veronikou), matka proto nejistá."
+      ],
+      sources: [
+        "O 4023 img 106 (sňatek 1802)",
+        "N 4473 img 102"
       ],
       scans: [
+        {"f":"img/1802_snatek_novak_birlog.jpg","t":"Sňatek 25. 1. 1802, Nedašov č. 45"},
+        {"f":"img/1782_krest_anna_birlog_K.jpg","t":"Kandidát: křest 12. 6. 1782"},
         {"f":"img/1818_krest_vaclav_novak.jpg","t":"Křest syna Václava 1818"}
+      ]
+    },
+    {
+      id: "matejHo",
+      name: "Matěj (Mattheus) Holba",
+      line: "matusu",
+      cert: "M",
+      b: {"date":"?","year":1740,"approx":true},
+      occ: "kovář, sedlák v Nedašově č. 64",
+      notes: [
+        "Manželka Kateřina; děti Josef 1767, Jan 1774. Pozor: v Nedašově žil současně Matiáš Holba × Marina (č. 60 a 100) – jiná rodina."
+      ],
+      sources: [
+        "Brumov 4012 img 46, 90"
+      ],
+      scans: [
+        {"f":"img/1767_krest_josef_holba.jpg","t":"Křest 31. 12. 1767, Nedašov"}
+      ]
+    },
+    {
+      id: "katerinaHo",
+      name: "Kateřina Holbová",
+      line: "matusu",
+      cert: "M",
+      b: {"date":"?","year":1745,"approx":true},
+      notes: [
+        "Rodné příjmení neznámé."
+      ],
+      sources: [
+        "Brumov 4012 img 46"
+      ],
+      scans: [
+        {"f":"img/1767_krest_josef_holba.jpg","t":"Křest 31. 12. 1767, Nedašov"}
+      ]
+    },
+    {
+      id: "jiriFo",
+      name: "Jiří Fojtík",
+      line: "matusu",
+      cert: "M",
+      b: {"date":"?","year":1745,"approx":true},
+      occ: "sedlák v Nedašově (č. 17?)",
+      notes: [
+        "Otec Mariny (sňatek 1794 – v roce 1794 ještě žil). Manželka pravděpodobně Veronika (K)."
+      ],
+      sources: [
+        "O 4023 img 104 (sňatek dcery 1794)",
+        "Brumov 4012 img 97"
+      ]
+    },
+    {
+      id: "josefNo",
+      name: "Josef Novák",
+      line: "matusu",
+      cert: "M",
+      b: {"date":"?","year":1750,"approx":true},
+      occ: "sedlák v Nedašově",
+      sources: [
+        "O 4023 img 106 (sňatek syna Martina 1802)"
+      ],
+      scans: [
+        {"f":"img/1802_snatek_novak_birlog.jpg","t":"Sňatek 25. 1. 1802, Nedašov č. 45"}
+      ]
+    },
+    {
+      id: "jiriBi",
+      name: "Jiří Birlog",
+      line: "matusu",
+      cert: "M",
+      b: {"date":"?","year":1750,"approx":true},
+      d: {"date":"před 1818","year":1817,"approx":true},
+      occ: "zahradník (Gartler) v Nedašově",
+      notes: [
+        "V roce 1818 uváděn jako zemřelý („† Georg Birlog, Häusler“)."
+      ],
+      sources: [
+        "O 4023 img 106 (sňatek dcery 1802)",
+        "N 4473 img 102"
+      ],
+      scans: [
+        {"f":"img/1802_snatek_novak_birlog.jpg","t":"Sňatek 25. 1. 1802, Nedašov č. 45"}
+      ]
+    },
+    {
+      id: "mikulasSa",
+      name: "Mikuláš Šaurek",
+      line: "matusu",
+      cert: "M",
+      b: {"date":"?","year":1750,"approx":true},
+      occ: "sedlák v Bylnici",
+      notes: [
+        "Otec Barbory (sňatek 1802). Kandidát: manželka Kateřina (křest Barbory 17. 9. 1779 – věk nesedí přesně)."
+      ],
+      sources: [
+        "O 4023 img 106 (sňatek dcery 1802)"
       ]
     },
     {
