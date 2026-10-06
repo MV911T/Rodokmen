@@ -1758,6 +1758,7 @@ window.RODOKMEN = {
       marriage: "5. 6. 1893, Chuchelná – s Antonií Komarek (svědci Adolph Komarek, zahradník, a hostinský Ignatz Foitzik)",
       notes: [
         "Narozen 29. 9. 1866 v Chuchelné, pokřtěn 30. 9. 1866 (farnost Krzanowice; v indexu FamilySearch zkomoleně „Carl Stzusch“) – syn domkáře Johanna Strusche a Marie roz. Kussin; potvrzeno oddacím zápisem 1893.",
+        "Další dítě: Anna, †4. 10. 1895 ve věku 1 měsíce (Z 1895 Nr. 15).",
         "Otec Arnošta (*1907) a Paula (*17. 7. 1894, padl 21. 3. 1916 u Verdunu).",
         "Zemřel před 20. 5. 1916 – nejspíš v lednu–září 1915 (zápisy Z 1915 Nr. 1–25 nejsou digitalizované).",
         "Dřívější kandidáti na otce Anton a Jakob Strusch (synové Mikuláše a Barbory Saitzek) se nepotvrdili."
@@ -1814,7 +1815,8 @@ window.RODOKMEN = {
       notes: [
         "V roce 1893 žil (sňatek syna Karla); v roce 1909 byla Marie vdovou.",
         "Děti: Pauline *1858, Marianna *1861, Karl *1866, Anna *1875.",
-        "Otec podle dřívějšího indexu Heinrich Strusch (K, neověřeno); Heinrich × Marianna roz. Wolf měli děti 1834–1841."
+        "Otec podle dřívějšího indexu Heinrich Strusch (K, neověřeno); Heinrich × Marianna roz. Wolf měli děti 1834–1841.",
+        "Dcera Pauline (*1858) provd. Duda, Häuslerfrau v Chuchelné (1897). Úmrtí Johanna není v Chuchelné Z 1894–1899."
       ],
       sources: [
         "sňatek syna Karla 1893 (ST VIII 47)",
@@ -1851,22 +1853,26 @@ window.RODOKMEN = {
       line: "struz",
       cert: "M",
       b: {"date":"17. 11. 1841","year":1841,"place":"Chuchelná"},
+      d: {"date":"11. 11. 1896","year":1896,"place":"Chuchelná"},
       father: "josefKo",
       mother: "johannaJu",
       occ: "domkář (Häusler / Inlieger) v Chuchelné",
       notes: [
         "Narozen a pokřtěn 17. 11. 1841 v Chuchelné (ve 3 hodiny odpoledne), syn zahradníka Josefa Komarka a Johanny roz. Jureczka; kmotři Josef Kestel, měšťan z Krzanowic, a Beata Nahlik.",
+        "Zemřel 11. 11. 1896 v 5 hodin ráno v Chuchelné jako domkář, „56 let“ (podle křtu 55), syn † zahradníka Josefa Komarka a † Johanny roz. Jurczyk – úmrtí hlásila vdova Helena roz. Mitrenga (Z 1896 Nr. 33).",
         "Děti s Helenou Mitrenga: Antonie *13. 5. 1874, Paul *6. 9. 1876, Anton *21. 2. 1878, syn *21. 10. 1879 (civilní N Chuchelná).",
         "Sourozenci (index FS): Innocenz 1840, Franzisca 1843, Johannes 1846, Adolf *16. 6. 1848 (svědek na svatbě Antonie 1893), Franz 1850, Anton 1853, Magdalena 1856, Josef *22. 1. 1861 (†12. 2. 1932 Chuchelná č. 57, domkář a zedník)."
       ],
       sources: [
         "Silius Radicum – duplikát ASC Krzanowice 1841 Nr. 160 (složka 18_13_0_9_374, snímek 0041); FS index DNP6-12T2",
         "sňatek dcery Antonie 1893 (ST VIII 47)",
-        "Standesamt Kuchelna N 1876–1879"
+        "Standesamt Kuchelna N 1876–1879",
+        "Standesamt Kuchelna Z 1896 Nr. 33 (ST VIII 77)"
       ],
       scans: [
         {"f":"img/1841_krest_carl_komarek.jpg","t":"Křest 17. 11. 1841 (Krzanowice 1841 Nr. 160)"},
-        {"f":"img/1893_snatek_strusch_komarek_a.jpg","t":"Sňatek 5. 6. 1893, Chuchelná (O 1893 Nr. 3) – snoubenci a rodiče"}
+        {"f":"img/1893_snatek_strusch_komarek_a.jpg","t":"Sňatek 5. 6. 1893, Chuchelná (O 1893 Nr. 3) – snoubenci a rodiče"},
+        {"f":"img/1896_umrti_carl_komarek.jpg","t":"Úmrtí 11. 11. 1896 (Z 1896 Nr. 33)"}
       ]
     },
     {
@@ -1879,7 +1885,8 @@ window.RODOKMEN = {
       father: "janMi",
       mother: "josefaZa",
       notes: [
-        "Narozena a pokřtěna 23. 5. 1842 v Chuchelné, dcera zahradníka Johanna Mitrengy a Josefy roz. Zaiczek (dcery Jakuba); sestra Clara *1840. Rod Zaiczek (Zajiczek) je zřejmě týž jako u Barbory Zajiczek, ženy Mikuláše Strusche."
+        "Narozena a pokřtěna 23. 5. 1842 v Chuchelné, dcera zahradníka Johanna Mitrengy a Josefy roz. Zaiczek (dcery Jakuba); sestra Clara *1840. Rod Zaiczek (Zajiczek) je zřejmě týž jako u Barbory Zajiczek, ženy Mikuláše Strusche.",
+        "V listopadu 1896 ovdověla (úmrtí manžela Carla)."
       ],
       sources: [
         "Silius Radicum – duplikát ASC Krzanowice 1842 Nr. 71 (složka 375, snímek 0019); FS index DNP6-946Z",
