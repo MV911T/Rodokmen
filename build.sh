@@ -1,6 +1,8 @@
 #!/bin/bash
 # Builds rodokmen.html (Claude artifact) and index.html (GitHub Pages) by inlining data.js into template.html
 cd "$(dirname "$0")"
+# Consistency gate: stale or contradictory data must never reach the web (errors AND warnings block).
+node validate.js --strict || { echo "build.sh: validate.js failed – fix data.js (via datatool.js) first"; exit 1; }
 python3 -I - <<'PY'
 t=open('template.html',encoding='utf8').read(); d=open('geo.js',encoding='utf8').read()+open('data.js',encoding='utf8').read()
 page=t.replace('/*DATA*/',d)
