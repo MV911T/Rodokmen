@@ -3081,22 +3081,27 @@ window.RODOKMEN = {
       name: "Franz Irzik",
       line: "jirik",
       cert: "M",
-      b: {"date":"cca 1841","year":1841,"approx":true,"place":"Bolatice (?)"},
+      b: {"date":"27. 10. 1841","year":1841,"place":"Bolatice"},
       d: {"date":"1. 11. 1923","year":1923,"place":"Bolatice"},
       father: "cyrillI",
       mother: "johannaT",
       occ: "domkář, 1910 řeznický mistr v Bolaticích",
-      marriage: "cca 1869–1870 – s Marií Herudek (Bolatice, oddací kniha H III 8 – zatím nečtena)",
+      marriage: "30. 8. 1870, Bolatice – s Marií Herudkovou (on 27, ona 22); svědci sedlák Jacob Kupka a domkář Valentin Ballarin",
       notes: [
+        "Narozen 27. 10. 1841 v Bolaticích, pokřtěn 29. 10. jako Franz Simeon: syn domkáře Cyrilla Irzika a Johanny roz. Tomanek; kmotr sedlák Joseph Adamik z Dolního Benešova.",
+        "Sňatek 1870: „Franz Irzik Junggesell, ehel. Sohn des Häuslers und Fleischers Cyrill Irzik mit der Jungfrau Maria, ehel. Tochter nach dem verstorb. Bauer Joseph Herudek, beide aus Bolatitz“.",
         "Úmrtí 1. 11. 1923 v Bolaticích, pohřben 5. 11. 1923, 82 let; rodiče Cyril Irzik a Johanna roz. Thomanek – podle indexu FamilySearch (farní pohřby Bolatice s. 64, DNFH-2M2M); sken zamčen, v matrice zatím neověřeno.",
         "Děti s Marií Herudek 1871–1896 (viz Rudolf); nejstarší Anna *1871 → sňatek kolem 1869–1870. Sňatek není v civilních matrikách Bolatic 1874–1881 (uzavřen dříve, církevně).",
         "Pozor na záměnu: v Bolaticích současně žil jiný Franz Irzik × Marie Kriebel (děti 1875–1886). Dřívější kandidát „Franz Irzik × Carolina Scholtis, syn Valentina“ (1844) se týká jiného Franze – vyřazen."
       ],
       sources: [
+        "ZA Opava, NAD 165 Sbírka matrik, Bolatice N 1811–1870 (H III 3) sken 144; O 1841–1954 (H III 8) sken 44",
         "narození syna Rudolfa 1882 (ST II 9 Nr. 29)",
         "index FamilySearch – farní pohřby Bolatice 1923"
       ],
       scans: [
+        {"f":"img/1841_krest_franz_irzik.jpg","t":"Křest 29. 10. 1841 (H III 3 sken 144, č. 46)"},
+        {"f":"img/1870_snatek_irzik_herudek.jpg","t":"Sňatek 30. 8. 1870 (H III 8 sken 44, č. 15)"},
         {"f":"img/1882_narozeni_rudolf_irzik.jpg","t":"Narození syna Rudolfa 1882"}
       ]
     },
@@ -3106,18 +3111,23 @@ window.RODOKMEN = {
       maiden: "Herudek",
       line: "jirik",
       cert: "M",
-      b: {"date":"cca 1845–1851 (odhad)","year":1849,"approx":true},
+      b: {"date":"11. 8. 1848","year":1848,"place":"Bolatice"},
       d: {"date":"před 1910","year":1910,"approx":true},
       father: "josefHe",
+      mother: "victoriaTh",
       notes: [
+        "Narozena 11. 8. 1848 v Bolaticích, pokřtěna 12. 8.: dcera sedláka Josepha Herudka (syna † sedláka Valentina Herudka) a Victorie, dcery sedláka Wendelina Theuera a Marianny.",
         "V indexu farních křtů dětí zapsána jako „Marie Joseph Herudek“ – tedy dcera Josepha Herudka. Narození a matka zatím neznámé.",
         "Děti 1871–1896 (viz Rudolf)."
       ],
       sources: [
+        "ZA Opava, NAD 165 Sbírka matrik, Bolatice H III 3 sken 171",
         "narození syna Rudolfa 1882 (ST II 9 Nr. 29)",
         "index FamilySearch – křty dětí, Bolatice"
       ],
       scans: [
+        {"f":"img/1848_krest_maria_herudek.jpg","t":"Křest 12. 8. 1848 (H III 3 sken 171)"},
+        {"f":"img/1870_snatek_irzik_herudek.jpg","t":"Sňatek 30. 8. 1870 (H III 8 sken 44, č. 15)"},
         {"f":"img/1882_narozeni_rudolf_irzik.jpg","t":"Narození syna Rudolfa 1882"}
       ]
     },
@@ -3125,41 +3135,120 @@ window.RODOKMEN = {
       id: "cyrillI",
       name: "Cyril (Cyrill) Irzik",
       line: "jirik",
-      cert: "D",
-      b: {"date":"cca 1812","year":1812,"approx":true,"place":"Bolatice (?)"},
+      cert: "M",
+      b: {"date":"3. 3. 1796","year":1796,"place":"Bolatice"},
+      father: "josefIr",
+      mother: "johannaDu",
+      occ: "domkář a řezník v Bolaticích",
       notes: [
-        "Otec Franze Irzika podle indexu FamilySearch (pohřeb syna 1923) – v matrice zatím neověřeno.",
-        "Kandidát na křest (K): Cÿrill Irzik pokř. 26. 2. 1812, syn Franze Irzika a Mariany (index FS 62PF-XVYB, pravděpodobně Bolatice H III 3). Index zná i „Cyrill Irzik × Johanna Kostelny“ – možná druhé manželství nebo jiný Cyril."
+        "Pokřtěn 3. 3. 1796 v Bolaticích: „Cyrillus – Joseph Irzik Häußler von Bolatitz, und die Mutter Johanna gebohrne Dudin“; kmotři domkář Carl Bartonetz a Elisabetha Ballarin.",
+        "Totožnost potvrzena křtem syna Johanna 1848: „Cyrill Irzik Häusler, Sohn des verstorb. Häuslers Josef Irzik und dessen Eheweib Johanna“.",
+        "Manželky: 1) Johanna Tomanek († 1846; děti mj. Josepha 1827, Joseph 1836, Marianna 1839, Franz 1841, Monica 1844 – podle indexu); 2) Johanna Kostelny (dcera † domkáře Johanna Kostelného; děti Johann 1848, Jacob 1849, Sylvester 1860, Paulus 1861, Maria 1864).",
+        "Dřívější kandidát z FamilySearch (Cyrill *26. 2. 1812, syn Franze a Mariany) vyřazen – jiná osoba.",
+        "Hypotéza (K): svobodný domek Jiříků – František Jiřík ho koupil od vrchnosti 1753, † 1781; vdova Barbora ho 30. 3. 1797 prodala synovi Josefu Jiříkovi (V. Štěpán, Bolatice od pravěku…, 2009). Pokud je to Cyrillův otec, byl František jeho děd."
       ],
       sources: [
-        "index FamilySearch – farní pohřby Bolatice 1923 (DNFH-2M2M)"
+        "ZA Opava, NAD 165 Sbírka matrik, Bolatice N 1765–1810 (H III 2) fol. 107; index H III 11"
+      ],
+      scans: [
+        {"f":"img/1796_krest_cyrill_irzik.jpg","t":"Křest 3. 3. 1796 (H III 2 fol. 107)"}
+      ]
+    },
+    {
+      id: "josefIr",
+      name: "Joseph Irzik (Jiřík)",
+      line: "jirik",
+      cert: "M",
+      b: {"date":"cca 1770","year":1770,"approx":true},
+      d: {"date":"před 1848","year":1840,"approx":true},
+      occ: "domkář v Bolaticích",
+      notes: [
+        "Otec Cyrilla (*1796); manželka Johanna roz. Duda.",
+        "Hypotéza (K): totožný s Josefem Jiříkem, který 1797 koupil od matky Barbory, vdovy po Františkovi Jiříkovi († 1781), svobodný domek; nebo s domkářem Josefem Jiříkem, který zemřel 13. 9. 1832 na choleru – v Bolaticích žilo víc Josefů."
+      ],
+      sources: [
+        "ZA Opava, NAD 165 Sbírka matrik, Bolatice H III 2 fol. 107"
+      ],
+      scans: [
+        {"f":"img/1796_krest_cyrill_irzik.jpg","t":"Křest 3. 3. 1796 (H III 2 fol. 107)"}
+      ]
+    },
+    {
+      id: "johannaDu",
+      name: "Johanna Irzik",
+      maiden: "Duda",
+      line: "jirik",
+      cert: "M",
+      b: {"date":"cca 1770","year":1770,"approx":true},
+      notes: [
+        "Matka Cyrilla (*1796): „Johanna gebohrne Dudin“."
+      ],
+      sources: [
+        "ZA Opava, NAD 165 Sbírka matrik, Bolatice H III 2 fol. 107"
+      ],
+      scans: [
+        {"f":"img/1796_krest_cyrill_irzik.jpg","t":"Křest 3. 3. 1796 (H III 2 fol. 107)"}
       ]
     },
     {
       id: "johannaT",
       name: "Johanna Irzik",
-      maiden: "Thomanek",
+      maiden: "Tomanek",
       line: "jirik",
-      cert: "D",
-      b: {"date":"?","year":1815,"approx":true},
+      cert: "M",
+      b: {"date":"cca 1807","year":1807,"approx":true},
+      d: {"date":"22. 3. 1846","year":1846,"place":"Bolatice"},
+      cause: "tyfus (Nervenfieber)",
       notes: [
-        "Matka Franze Irzika podle indexu FamilySearch (pohřeb syna 1923) – v matrice zatím neověřeno."
+        "Zemřela 22. 3. 1846 v Bolaticích, 39 let: „Johanna Irzik, Eheweib des Häuslers und Fleischhauers Cyrill Irzik und Tochter des Bauers Johann Tomanek“.",
+        "Dcera sedláka Johanna Tomanka – v Bolaticích rod Tomanek nebyl; sňatek s Cyrillem (cca 1820–27) nejspíš ve farnosti nevěsty, snad Dolní Benešov (kmotr Adamik odtud)."
       ],
       sources: [
-        "index FamilySearch – farní pohřby Bolatice 1923"
+        "ZA Opava, NAD 165 Sbírka matrik, Bolatice Z 1841–1915 (H III 9) sken 9, č. 67"
+      ],
+      scans: [
+        {"f":"img/1846_umrti_johanna_irzik.jpg","t":"Úmrtí 22. 3. 1846, 39 let (H III 9 sken 9, č. 67)"},
+        {"f":"img/1841_krest_franz_irzik.jpg","t":"Křest 29. 10. 1841 (H III 3 sken 144, č. 46)"}
       ]
     },
     {
       id: "josefHe",
       name: "Joseph Herudek",
       line: "jirik",
-      cert: "D",
-      b: {"date":"?","year":1820,"approx":true},
+      cert: "M",
+      b: {"date":"10. 10. 1821 (podle indexu)","year":1821,"place":"Bolatice"},
+      d: {"date":"před 30. 8. 1870","year":1869,"approx":true},
+      occ: "sedlák v Bolaticích",
+      marriage: "15. 8. 1843, Bolatice – jako vdovec (22 let) s Victorií Theuer (19); svědci sedláci Jacob Snehotta a Franz Theuer",
       notes: [
-        "Otec Marie Herudek podle indexu FamilySearch (zápis „Marie Joseph Herudek“ u křtů vnoučat) – neověřeno v matrice."
+        "Syn † sedláka Valentina Herudka; matka podle indexu a sňatku bratra 1845 Maria roz. Pawlowsky, v křtu vnučky 1848 „Anna“ – rozpor neuzavřen.",
+        "Narozen podle indexu 10. 10. 1821 (H III 3 fol. 48); při sňatku 1843 už vdovec – první manželka nejspíš Veronika Kollarczik (dcera Monica *1841, K).",
+        "Zemřel před 30. 8. 1870."
       ],
       sources: [
-        "index FamilySearch – křty, Bolatice"
+        "ZA Opava, NAD 165 Sbírka matrik, Bolatice O (H III 8) sken 6, č. 9; index N H III 11"
+      ],
+      scans: [
+        {"f":"img/1843_snatek_herudek_theuer.jpg","t":"Sňatek 15. 8. 1843 (H III 8 sken 6, č. 9)"},
+        {"f":"img/1848_krest_maria_herudek.jpg","t":"Křest 12. 8. 1848 (H III 3 sken 171)"}
+      ]
+    },
+    {
+      id: "victoriaTh",
+      name: "Victoria Herudek",
+      maiden: "Theuer",
+      line: "jirik",
+      cert: "M",
+      b: {"date":"cca 1824","year":1824,"approx":true,"place":"Bolatice"},
+      notes: [
+        "Dcera sedláka Wendelina Theuera a Marianny (sňatek 1843, křest dcery 1848)."
+      ],
+      sources: [
+        "ZA Opava, NAD 165 Sbírka matrik, Bolatice H III 8 sken 6; H III 3 sken 171"
+      ],
+      scans: [
+        {"f":"img/1843_snatek_herudek_theuer.jpg","t":"Sňatek 15. 8. 1843 (H III 8 sken 6, č. 9)"},
+        {"f":"img/1848_krest_maria_herudek.jpg","t":"Křest 12. 8. 1848 (H III 3 sken 171)"}
       ]
     },
     {
