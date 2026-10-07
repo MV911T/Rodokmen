@@ -1879,14 +1879,17 @@ window.RODOKMEN = {
       maiden: "Šuranová",
       line: "matusu",
       cert: "M",
-      b: {"date":"cca 1752","year":1752,"approx":true,"place":"Nedašov č. 79"},
+      b: {"date":"cca 1756","year":1756,"approx":true,"place":"Nedašov č. 79"},
+      d: {"date":"15. 12. 1826","year":1826,"place":"Nedašov č. 67"},
       notes: [
-        "Dcera Josefa Šurana z Nedašova č. 79."
+        "Dcera Josefa Šurana z Nedašova č. 79 (sňatek 1773, asi 17 let); otec žil ještě 1779.",
+        "Zemřela 15. 12. 1826 jako vdova po sedlákovi Jiřím Matůšů, 70 let (Z 4491 img 9)."
       ],
       sources: [
         "Brumov 4012 img 183"
       ],
       scans: [
+        {"f":"img/1826_umrti_marina_matusu.jpg","t":"Úmrtí 15. 12. 1826, Nedašov č. 67 (Z 4491 img 9)"},
         {"f":"img/1773_snatek_matusu_suranova.jpg","t":"Sňatek 31. 1. 1773"}
       ]
     },
@@ -1987,11 +1990,14 @@ window.RODOKMEN = {
       line: "matusu",
       cert: "M",
       b: {"date":"cca 1740","year":1740,"approx":true,"place":"Nedašov"},
+      father: "mikulasHo",
+      mother: "annaHo2",
       occ: "kovář, sedlák v Nedašově č. 64",
       marriage: "13. 11. 1763 – s Kateřinou Miřičkovou; svědci Josef … a Josef Holba z Nedašova",
       notes: [
         "Sňatek 13. 11. 1763: „Mathaeum filium Nicolai Holba cum … Catharina filia Nicolai Mirička ambo Nedasch.“ – syn Mikuláše Holby.",
-        "Manželka Kateřina; děti Josef 1767, Jan 1774. Pozor: v Nedašově žil současně Matiáš Holba × Marina (č. 60 a 100) – jiná rodina."
+        "Manželka Kateřina; děti Josef 1767, Jan 1774. Pozor: v Nedašově žil současně Matiáš Holba × Marina (č. 60 a 100) – jiná rodina.",
+        "Bratři (synové Mikuláše): Jan (sňatek 1765 s Terezií Jakubů), Matiáš (sňatek 1770); s Kateřinou bydlel v č. 64 už 1771."
       ],
       sources: [
         "Brumov 4012 img 46, 90",
@@ -2003,14 +2009,54 @@ window.RODOKMEN = {
       ]
     },
     {
+      id: "mikulasHo",
+      name: "Mikuláš Holba",
+      line: "matusu",
+      cert: "M",
+      b: {"date":"cca 1713","year":1713,"approx":true},
+      d: {"date":"22. 9. 1777","year":1777,"place":"Nedašov č. 39"},
+      notes: [
+        "Zemřel 22. 9. 1777 v Nedašově č. 39 jako vdovec, 64 let: „Nicolaus Holba viduus – Nedasch. 39 – 64 an.“",
+        "Otec Matěje (sňatek 1763), Jana (1765) a Matiáše (1770).",
+        "Křest není v Brumově 1712–1714 (opis7); sňatek spadá do mezery matrik 1727–1754 – pokračovat přes gruntovní knihy (usedlost č. 39 / 32)."
+      ],
+      sources: [
+        "Brumov 4012 img 260 (úmrtí 1777)",
+        "4012 img 163 (sňatek syna 1763)"
+      ],
+      scans: [
+        {"f":"img/1777_umrti_mikulas_holba.jpg","t":"Úmrtí 22. 9. 1777, Nedašov č. 39 (4012 img 260)"}
+      ]
+    },
+    {
+      id: "annaHo2",
+      name: "Anna Holbová",
+      line: "matusu",
+      cert: "D",
+      b: {"date":"cca 1708","year":1708,"approx":true},
+      d: {"date":"6. 1. 1773","year":1773,"place":"Nedašov č. 32"},
+      notes: [
+        "Zemřela 6. 1. 1773 v Nedašově č. 32, 65 let: „Anna uxor Nicolai Holba“. Jiná manželka Mikuláše Holby doložena není, proto pravděpodobně matka Matěje (D)."
+      ],
+      sources: [
+        "Brumov 4012 img 250"
+      ],
+      scans: [
+        {"f":"img/1773_umrti_anna_holbova.jpg","t":"Úmrtí 6. 1. 1773, Nedašov č. 32 (4012 img 250)"}
+      ]
+    },
+    {
       id: "katerinaHo",
       name: "Kateřina Holbová",
       maiden: "Miřičková",
       line: "matusu",
       cert: "M",
-      b: {"date":"?","year":1745,"approx":true},
+      b: {"date":"cca 1743","year":1743,"approx":true,"place":"Nedašov"},
+      father: "mikulasMi",
       notes: [
-        "Dcera Mikuláše Miřičky z Nedašova (sňatek 1763)."
+        "Dcera Mikuláše Miřičky z Nedašova č. 62 (sňatek 1763).",
+        "Sourozenci: Josef *1763 († 1763), Martin (sňatek 1777), Anna (1778), Barbora (1780).",
+        "Matka nejspíš Anna (*cca 1724, † 14. 1. 1777, Nedašov č. 62) – jako matka Kateřiny jen hypotéza (K), mohla to být i druhá žena."
       ],
       sources: [
         "Brumov 4012 img 46"
@@ -2021,16 +2067,36 @@ window.RODOKMEN = {
       ]
     },
     {
+      id: "mikulasMi",
+      name: "Mikuláš Miřička",
+      line: "matusu",
+      cert: "M",
+      b: {"date":"cca 1716","year":1716,"approx":true},
+      d: {"date":"24. 3. 1781","year":1781,"place":"Nedašov č. 62"},
+      notes: [
+        "Zemřel 24. 3. 1781 v Nedašově č. 62 jako vdovec, 65 let: „Nicolaus mirzička viduus – Nedaš. 62 – 65 an.“",
+        "Manželka Anna († 14. 1. 1777, 53 let, č. 62)."
+      ],
+      sources: [
+        "Brumov 4012 img 266 (úmrtí 1781), 259 (úmrtí manželky 1777)"
+      ],
+      scans: [
+        {"f":"img/1781_umrti_mikulas_miricka.jpg","t":"Úmrtí 24. 3. 1781, Nedašov č. 62 (4012 img 266)"}
+      ]
+    },
+    {
       id: "jiriFo",
       name: "Jiří Fojtík",
       line: "matusu",
       cert: "M",
-      b: {"date":"?","year":1745,"approx":true},
+      b: {"date":"cca 1745","year":1745,"approx":true,"place":"Nedašov"},
+      father: "janFoN",
       mother: undefined,
-      occ: "sedlák v Nedašově (č. 17?)",
+      occ: "sedlák v Nedašově č. 17",
       marriage: "15. 1. 1769 – s Veronikou Paculovou (?) z Popova; svědci Martin Novák a Josef Václavík (?)",
       notes: [
-        "Sňatek 15. 1. 1769: „Georgius filius Joannis Fogtik Nedaschovio cum … Veronica filia Thomae Paculsk(?) popovio“ – syn Jana Fojtíka z Nedašova.",
+        "Sňatek 15. 1. 1769: „Georgius filius Joannis Fogtik Nedaschovio cum … Veronica filia Thomae Pawlušík popovio“ – syn Jana Fojtíka z Nedašova.",
+        "Bydlel v č. 17 (děti Jan † 1774, Jan † 1779); bratr Matouš (sňatek 1775, č. 17), sestra Marina (sňatek s Jiřím Birlogem týž den 15. 1. 1769).",
         "V roce 1794 ještě žil (sňatek dcery Mariny)."
       ],
       sources: [
@@ -2038,18 +2104,40 @@ window.RODOKMEN = {
         "Brumov 4012 img 97"
       ],
       scans: [
-        {"f":"img/1769_snatek_jiri_fojtik.jpg","t":"Sňatek 15. 1. 1769 (4012 img 173)"}
+        {"f":"img/1769_snatky_15_1_fojtik_birlog.jpg","t":"Sňatky 15. 1. 1769: Birlog × Fojtíková a Fojtík × Pavlušíková (4012 img 173)"}
+      ]
+    },
+    {
+      id: "janFoN",
+      name: "Jan Fojtík",
+      line: "matusu",
+      cert: "D",
+      b: {"date":"cca 1685","year":1685,"approx":true},
+      d: {"date":"21. 3. 1771","year":1771,"place":"Nedašov"},
+      occ: "sedlák v Nedašově (č. 17)",
+      notes: [
+        "Zemřel 21. 3. 1771, 86 let: „Joannes Fogtik maritus Marinae rusticus SS. provisus Nedaschovo – 86 Anno“.",
+        "Pravděpodobně otec Jiřího (D): mladší Jan Fojtík (syn † Josefa, sňatek 1761) nepřichází v úvahu; v č. 17 žili Jiří, jeho bratr Matouš i vdova Marina († 1778, 50 let).",
+        "Marina byla jeho druhá žena (sňatek 7. 2. 1763, vdova po Ondřeji Adamkovi) – matka Jiřího tedy zemřela před 1763.",
+        "Nejstarší doložený předek této větve; křest v matrikách není (Brumov začíná 1688) – další krok: gruntovní knihy, usedlost č. 17."
+      ],
+      sources: [
+        "Brumov 4012 img 242 (úmrtí 1771), 162 (sňatek 1763)"
+      ],
+      scans: [
+        {"f":"img/1771_umrti_jan_fojtik.jpg","t":"Úmrtí 21. 3. 1771, 86 let (4012 img 242)"}
       ]
     },
     {
       id: "veronikaPa",
       name: "Veronika Fojtíková",
-      maiden: "Paculová (?)",
+      maiden: "Pavlušíková (Pawlušík)",
       line: "matusu",
       cert: "M",
       b: {"date":"cca 1748","year":1748,"approx":true,"place":"Popov"},
+      father: "tomasPa",
       notes: [
-        "Dcera Tomáše Paculy (?) z Popova (sňatek 1769) – čtení příjmení nejisté."
+        "Dcera Tomáše Pavlušíka z Popova (sňatek 1769: „Veronica filia Thomae Pawlušík popovio“; dřívější čtení „Pacula“ bylo chybné)."
       ],
       sources: [
         "4012 img 173"
@@ -2059,12 +2147,31 @@ window.RODOKMEN = {
       ]
     },
     {
+      id: "tomasPa",
+      name: "Tomáš Pavlušík",
+      line: "matusu",
+      cert: "M",
+      b: {"date":"cca 1709","year":1709,"approx":true},
+      d: {"date":"15. 1. 1783","year":1783,"place":"Popov č. 16"},
+      notes: [
+        "Zemřel 15. 1. 1783 v Popově č. 16, 74 let: „Thomas Pawlušík maritus Marinae – popo. 16 – 74 an.“",
+        "Manželka Marina. V Popově žila i Kateřina, vdova po † Josefu Pavlušíkovi (zemřela 1772) – možná příbuzní."
+      ],
+      sources: [
+        "Brumov 4012 img 270"
+      ],
+      scans: [
+        {"f":"img/1783_umrti_tomas_pavlusik.jpg","t":"Úmrtí 15. 1. 1783, Popov č. 16 (4012 img 270)"}
+      ]
+    },
+    {
       id: "katerinaKoN",
       name: "Kateřina Nováková",
       maiden: "Kolínková",
       line: "matusu",
       cert: "M",
       b: {"date":"cca 1758","year":1758,"approx":true,"place":"Nedašov"},
+      father: "josefKolN",
       notes: [
         "Dcera † Josefa Kolínka (sňatek 1779)."
       ],
@@ -2077,16 +2184,43 @@ window.RODOKMEN = {
       ]
     },
     {
+      id: "josefKolN",
+      name: "Josef Kolínek",
+      line: "matusu",
+      cert: "M",
+      b: {"date":"cca 1726","year":1726,"approx":true},
+      d: {"date":"17. 5. 1774","year":1774,"place":"Nedašov č. 8"},
+      cause: "náhlá smrt na poli (in agro repente mortuus)",
+      occ: "zahradník, čtvrtláník v Nedašově č. 8",
+      notes: [
+        "Zemřel náhle na poli 17. 5. 1774, 48 let: „Josephus Kolinek maritus Annae hortulanus – Nedasch. 8 – 48 an.“",
+        "Manželka Anna; děti mj. Kateřina (sňatek 1779), Martin (sňatek 1779 s Annou Bilnicovou), Marina, Josef a Ondřej († 1773)."
+      ],
+      sources: [
+        "Brumov 4012 img 254 (úmrtí 1774), 251"
+      ],
+      scans: [
+        {"f":"img/1774_umrti_josef_kolinek.jpg","t":"Úmrtí 17. 5. 1774, Nedašov č. 8 (4012 img 254)"}
+      ]
+    },
+    {
       id: "marinaBi",
       name: "Marina Birlogová",
       line: "matusu",
       cert: "D",
-      b: {"date":"?","year":1755,"approx":true},
+      b: {"date":"?","year":1756,"approx":true},
+      d: {"date":"6. 2. 1786","year":1786,"place":"Nedašov č. 74"},
       notes: [
-        "Matka Anny podle kandidátního křtu 1782 (D)."
+        "Marina, žena Jiřího Birloga, Nedašov č. 74 – matka Anny (*1782) podle křtu (D).",
+        "Zemřela 6. 2. 1786 (Nedašov č. 74, uveden věk 30 let, 4012 img 277).",
+        "Hypotéza (K): Marina roz. Fojtíková, dcera Jana Fojtíka, provdaná za Jiřího Birloga (syna † Štěpána) 15. 1. 1769 – věk 30 v roce 1786 tomu ale neodpovídá (buď chyba v matrice, nebo druhá žena)."
       ],
       sources: [
-        "4012 img 131"
+        "4012 img 131 (křest dcery 1782)",
+        "4012 img 277 (úmrtí 1786)"
+      ],
+      scans: [
+        {"f":"img/1769_snatky_15_1_fojtik_birlog.jpg","t":"Sňatky 15. 1. 1769: Birlog × Fojtíková a Fojtík × Pavlušíková (4012 img 173)"}
       ]
     },
     {
@@ -2098,7 +2232,8 @@ window.RODOKMEN = {
       occ: "sedlák v Nedašově",
       marriage: "31. 1. 1779, Nedašov č. 45 – s Kateřinou Kolínkovou; svědci Josef Tomeček a Ondra Pindiak (?)",
       notes: [
-        "Sňatek 1779: „Josephus filius Martini Nowak cum … Catharina filia † Josephi Kolinek“ – syn Martina Nováka."
+        "Sňatek 1779: „Josephus filius Martini Nowak cum … Catharina filia † Josephi Kolinek“ – syn Martina Nováka.",
+        "Matka nejspíš Alžběta, žena Martina Nováka st. († 16. 11. 1771, 60 let, Nedašov č. 45, 4012 img 245) – K."
       ],
       sources: [
         "O 4023 img 106 (sňatek syna Martina 1802)"
@@ -2117,6 +2252,7 @@ window.RODOKMEN = {
       d: {"date":"před 1818","year":1817,"approx":true},
       occ: "zahradník (Gartler) v Nedašově",
       notes: [
+        "Syn † Štěpána Birloga; sňatek 15. 1. 1769 s Marinou Fojtíkovou (4012 img 173) – pokud jde o téhož Jiřího (D).",
         "V roce 1818 uváděn jako zemřelý („† Georg Birlog, Häusler“)."
       ],
       sources: [
@@ -2135,7 +2271,8 @@ window.RODOKMEN = {
       b: {"date":"?","year":1750,"approx":true},
       occ: "sedlák v Bylnici",
       notes: [
-        "Otec Barbory (sňatek 1802). Kandidát: manželka Kateřina (křest Barbory 17. 9. 1779 – věk nesedí přesně)."
+        "Otec Barbory (sňatek 1802). Kandidát: manželka Kateřina (křest Barbory 17. 9. 1779 – věk nesedí přesně).",
+        "Hypotéza (K): otec Barbory je spíš Mikuláš Šaurek ml., syn Mikuláše, oddaný 28. 1. 1776 s Marinou Gajdošíkovou (4012 img 189); Mikuláš st. měl manželku Kateřinu (sňatek před 1761)."
       ],
       sources: [
         "O 4023 img 106 (sňatek dcery 1802)"
