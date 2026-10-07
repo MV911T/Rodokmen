@@ -1019,7 +1019,7 @@ window.RODOKMEN = {
       marriage: "18. 9. 1903 (?) – s Helenou Dydowicz",
       notes: [
         "Datum a místo přečteny v křestním zápisu dcery Honoraty (SO VII 36): „Bergmann aus Zagórzany … 7/1 76 Wieliczka“. Křty farnosti Gdów 1870–1876 nejsou online.",
-        "Kandidát (K, Geneteka): Stanisław Chmielek *1872, farnost Gdów, syn Marcina Chmielka a Marianny Grzyb – rok nesedí, neověřeno.",
+        "Kandidát z Geneteky (Stanisław *11. 3. 1872, Gdów č. 145, syn Marcina × Marianny Grzyb) je nepravděpodobný. Křty Zagórzan 1867–1883 nejsou online (jen na faře Gdów). Hypotéza (K): rodiče z rodů Jan Chmielek × Helena Jakóbczyk (Zagórzany 24) nebo Piotr Chmielek × Józefa Zygmunt (sňatek 1876).",
         "Úmrtí Zagórzany 1890–1935: Marcin Chmielek ani Marianna Grzyb tam nezemřeli; žádný zápis zatím nespojuje Stanisława s touto rodinou. Sňatky Gdów 1890–97 bez Chmielka."
       ],
       sources: [
@@ -1035,19 +1035,20 @@ window.RODOKMEN = {
       maiden: "Dydowicz",
       line: "chmielek",
       cert: "M",
-      b: {"date":"1. 9. 1884","year":1884,"place":"Rudno, okr. Tarnów (Halič)"},
+      b: {"date":"12. 9. 1884","year":1884,"place":"Rudno č. 28 (obec Ilkowice), farnost Łęg Tarnowski"},
       father: "tomasD",
+      mother: "ludwikaPi",
       notes: [
-        "Dcera Tomáše Dydowicze, domkáře (Gärtler) v Rudně, okr. Tarnów – přečteno v křestním zápisu dcery Honoraty (SO VII 36).",
-        "Toto je „Helena Chmielková“ z rodinných poznámek – matka Honoraty.",
-        "Ve křtech Szczucinu 1884–1886 není; rod Dydowicz je doložen v okolí Szczucina a Mędrzechówa (okr. Dąbrowa Tarnowska) – přesné Rudno neověřeno.",
-        "Ani v Rudce (Wierzchosławice) 1884; „Rudno“ v okrese Tarnów (1867) neexistuje – zřejmě zkomolený název (Rudka, Ruda, Wał-Ruda)."
+        "Narozena 12. 9. 1884, pokřtěna 14. 9. v Rudně č. 28 (farnost Łęg Tarnowski): „Thomas Dydowicz fil. Josephi et Mariae Chmiela | Ludovica Pikul filia Josephi et Mariae Drąg“; kmotři Józef Pikul a Teresa Golec.",
+        "Toto je „Helena Chmielková“ z rodinných poznámek – matka Honoraty. Dřívější čtení data „1. 9.“ z ostravského zápisu opraveno; rod Dydowicz ze Szczucina je jiná rodina.",
+        "Sourozenci (rejstřík): Kateřina 1863 (†1926), Jakub 1866, Jan 1869, Józef 1873, Marianna 1876, Julia 1879, Karolina 1882, Feliks 1888, Wiktorie 1891."
       ],
       sources: [
-        "SO VII 36, sken 101 – ZA Opava"
+        "Skanoteka PTG – AD Tarnów, Łęg Tarnowski (id4305): U 1856–1886 „Ilkow. Rudno Sanok“ (sy3565) sken 070 – https://skanoteka.genealodzy.pl/id4305-sy3565-kt1",
+        "SO VII 36 sken 101 (křest dcery Honoraty)"
       ],
       scans: [
-        {"f":"img/1903_krest_honorata.jpg","t":"Křest dcery Honoraty 1903"}
+        {"f":"img/1884_krest_helena_dydowicz.jpg","t":"Křest Heleny 14. 9. 1884, Rudno č. 28 (Łęg Tarnowski U 1856–1886 s. 136 č. 27)"}
       ]
     },
     {
@@ -1055,10 +1056,173 @@ window.RODOKMEN = {
       name: "Tomáš Dydowicz",
       line: "chmielek",
       cert: "M",
-      b: {"date":"?","year":1855,"approx":true,"place":"Rudno, okr. Tarnów"},
-      occ: "domkář (Gärtler)",
+      b: {"date":"27. 2. 1836","year":1836,"place":"Wierzchosławice č. 129"},
+      father: "josefDy",
+      mother: "mariannaCh",
+      occ: "šafář sýpky (1862), podruh, domkář (hortulanus) v Rudně",
+      marriage: "20. 10. 1862, Łęg Tarnowski – s Ludwikou Pikul (on 26, ona 17, s otcovým souhlasem); svědci Jakub a Valentin Pikul",
+      notes: [
+        "Narozen 27. 2. 1836 ve Wierzchosławicích, syn ovčáka Józefa Dydowicze a Marianny roz. Chmil.",
+        "Sňatek 1862: „Thomas Dydowicz granarius Josephi et Mariannae natae Chmil opilionis filius ex Wierszchosławice natus“ × „Ludovica Josephi Pikul et Mariae natae Drąg cmetonum filia ex Rudno nata“."
+      ],
       sources: [
-        "křest vnučky Honoraty 1903 (SO VII 36, sken 101)"
+        "Skanoteka – AD Tarnów, Wierzchosławice U 1824–1845 (id3741, sy1824e) sken 046",
+        "Skanoteka PTG – AD Tarnów, Łęg Tarnowski (id4305): M 1855–1901 (sy4545) sken 008"
+      ],
+      scans: [
+        {"f":"img/1836_krest_tomasz_dydowicz.jpg","t":"Křest Tomasze 28. 2. 1836, Wierzchosławice (U 1824–1845 s. 405)"},
+        {"f":"img/1862_snatek_dydowicz_pikul.jpg","t":"Sňatek 20. 10. 1862 (Łęg Tarnowski M 1855–1901 s. 14)"}
+      ]
+    },
+    {
+      id: "josefDy",
+      name: "Józef Dydowicz",
+      line: "chmielek",
+      cert: "M",
+      b: {"date":"cca 1805","year":1805,"approx":true},
+      father: "wojciechDy",
+      mother: "gertrudaDy",
+      occ: "ovčák (opilio) ve Wierzchosławicích",
+      notes: [
+        "Otec Tomasze (*1836): „Josephus Dydowicz opilio Adalberti et Gertrudis“ – syn Wojciecha Dydowicze a Gertrudy.",
+        "Sňatek s Marianou Chmil nejspíš 1830–35 (Wierzchosławice, nečteno)."
+      ],
+      sources: [
+        "Skanoteka – Wierzchosławice U 1824–1845 sken 046"
+      ],
+      scans: [
+        {"f":"img/1836_krest_tomasz_dydowicz.jpg","t":"Křest Tomasze 28. 2. 1836, Wierzchosławice (U 1824–1845 s. 405)"}
+      ]
+    },
+    {
+      id: "wojciechDy",
+      name: "Wojciech (Adalbertus) Dydowicz",
+      line: "chmielek",
+      cert: "M",
+      b: {"date":"cca 1775","year":1775,"approx":true},
+      notes: [
+        "Otec Józefa (křest vnuka Tomasze 1836); manželka Gertruda."
+      ],
+      sources: [
+        "Skanoteka – Wierzchosławice U 1824–1845 sken 046"
+      ],
+      scans: [
+        {"f":"img/1836_krest_tomasz_dydowicz.jpg","t":"Křest Tomasze 28. 2. 1836, Wierzchosławice (U 1824–1845 s. 405)"}
+      ]
+    },
+    {
+      id: "gertrudaDy",
+      name: "Gertruda Dydowicz",
+      line: "chmielek",
+      cert: "M",
+      b: {"date":"cca 1780","year":1780,"approx":true},
+      notes: [
+        "Matka Józefa (křest vnuka 1836)."
+      ],
+      sources: [
+        "Skanoteka – Wierzchosławice U 1824–1845 sken 046"
+      ]
+    },
+    {
+      id: "mariannaCh",
+      name: "Marianna Dydowicz",
+      maiden: "Chmil",
+      line: "chmielek",
+      cert: "M",
+      b: {"date":"cca 1810","year":1810,"approx":true},
+      father: "wojciechCh",
+      mother: "katarzynaCh",
+      notes: [
+        "Matka Tomasze: „Marianna Adalberti Chmil et Catharinae“ – dcera Wojciecha Chmila a Kateřiny (rod ovčáků)."
+      ],
+      sources: [
+        "Skanoteka – Wierzchosławice U 1824–1845 sken 046"
+      ],
+      scans: [
+        {"f":"img/1836_krest_tomasz_dydowicz.jpg","t":"Křest Tomasze 28. 2. 1836, Wierzchosławice (U 1824–1845 s. 405)"}
+      ]
+    },
+    {
+      id: "wojciechCh",
+      name: "Wojciech (Adalbertus) Chmil",
+      line: "chmielek",
+      cert: "M",
+      b: {"date":"cca 1780","year":1780,"approx":true},
+      notes: [
+        "Otec Marianny (křest vnuka Tomasze 1836); manželka Kateřina (příjmení nečitelné)."
+      ],
+      sources: [
+        "Skanoteka – Wierzchosławice U 1824–1845 sken 046"
+      ],
+      scans: [
+        {"f":"img/1836_krest_tomasz_dydowicz.jpg","t":"Křest Tomasze 28. 2. 1836, Wierzchosławice (U 1824–1845 s. 405)"}
+      ]
+    },
+    {
+      id: "katarzynaCh",
+      name: "Kateřina Chmil",
+      line: "chmielek",
+      cert: "M",
+      b: {"date":"cca 1785","year":1785,"approx":true},
+      notes: [
+        "Matka Marianny (křest vnuka 1836: „Catharinae de […]“)."
+      ],
+      sources: [
+        "Skanoteka – Wierzchosławice U 1824–1845 sken 046"
+      ]
+    },
+    {
+      id: "ludwikaPi",
+      name: "Ludwika Dydowicz",
+      maiden: "Pikul",
+      line: "chmielek",
+      cert: "M",
+      b: {"date":"cca 1845","year":1845,"approx":true,"place":"Rudno"},
+      father: "josefPik",
+      mother: "mariaDrag",
+      notes: [
+        "Dcera sedláků Józefa Pikula a Marie roz. Drąg z Rudna; při sňatku 1862 17 let (nezletilá – souhlas otce podepsán křížkem)."
+      ],
+      sources: [
+        "Skanoteka PTG – AD Tarnów, Łęg Tarnowski (id4305): M 1855–1901 sken 008"
+      ],
+      scans: [
+        {"f":"img/1862_snatek_dydowicz_pikul.jpg","t":"Sňatek 20. 10. 1862 (Łęg Tarnowski M 1855–1901 s. 14)"},
+        {"f":"img/1884_krest_helena_dydowicz.jpg","t":"Křest Heleny 14. 9. 1884, Rudno č. 28 (Łęg Tarnowski U 1856–1886 s. 136 č. 27)"}
+      ]
+    },
+    {
+      id: "josefPik",
+      name: "Józef Pikul",
+      line: "chmielek",
+      cert: "M",
+      b: {"date":"cca 1815","year":1815,"approx":true},
+      occ: "sedlák (cmeto) v Rudně",
+      notes: [
+        "Otec Ludwiky (sňatek 1862, křest vnučky 1884)."
+      ],
+      sources: [
+        "Skanoteka PTG – AD Tarnów, Łęg Tarnowski (id4305): M 1855–1901 sken 008"
+      ],
+      scans: [
+        {"f":"img/1862_snatek_dydowicz_pikul.jpg","t":"Sňatek 20. 10. 1862 (Łęg Tarnowski M 1855–1901 s. 14)"}
+      ]
+    },
+    {
+      id: "mariaDrag",
+      name: "Maria Pikul",
+      maiden: "Drąg",
+      line: "chmielek",
+      cert: "M",
+      b: {"date":"cca 1820","year":1820,"approx":true},
+      notes: [
+        "Matka Ludwiky (sňatek 1862)."
+      ],
+      sources: [
+        "Skanoteka PTG – AD Tarnów, Łęg Tarnowski (id4305): M 1855–1901 sken 008"
+      ],
+      scans: [
+        {"f":"img/1862_snatek_dydowicz_pikul.jpg","t":"Sňatek 20. 10. 1862 (Łęg Tarnowski M 1855–1901 s. 14)"}
       ]
     },
     {

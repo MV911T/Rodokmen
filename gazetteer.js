@@ -36,6 +36,8 @@ window.RODOKMEN_GAZ = [
   { n: 'Lednica Dolna', a: ['Lednica Dolna'], lat: 49.985, lon: 20.03 },
   { n: 'Lednica Górna', a: ['Lednica Górna', 'Lednica (Wieliczka)'], lat: 49.97, lon: 20.05 },
   { n: 'Wieliczka', a: ['Wieliczka'], lat: 49.987, lon: 20.065 },
+  { n: 'Rudno (Ilkowice)', a: ['Rudno', 'Ilkowice'], lat: 50.13, lon: 20.85 },
+  { n: 'Wierzchosławice', a: ['Wierzchosławice'], lat: 50.03, lon: 20.84 },
   { n: 'Rajbrot', a: ['Rajbrot'], lat: 49.8, lon: 20.42 },
   { n: 'Zagórzany', a: ['Zagórzany'], lat: 49.93, lon: 20.21 },
   // outside the map frame (Bohemia) – listed so they are not reported as missing
