@@ -131,19 +131,34 @@ dl.facts dd{margin:0;min-width:0}
 .mapfig{min-width:0}
 #map{width:100%;height:auto;display:block;background:var(--surface);border:1px solid var(--rule);border-radius:8px}
 #map .sea{fill:var(--bg)}
-#map .land{fill:var(--land);stroke:var(--border);stroke-width:1.4;stroke-linejoin:round}
+#map .land{fill:var(--land);stroke:var(--border);stroke-width:1.4;stroke-linejoin:round;vector-effect:non-scaling-stroke}
+.mapbox{position:relative}
+#map{touch-action:pan-y;cursor:grab;user-select:none;-webkit-user-select:none}
+#map.drag{cursor:grabbing}
+.mapzoom{position:absolute;top:8px;right:8px;display:flex;gap:4px}
+.mapzoom button{font:inherit;font-size:.85rem;min-width:30px;height:30px;padding:0 8px;border:1px solid var(--rule);border-radius:6px;background:var(--surface);color:var(--ink);cursor:pointer;box-shadow:var(--shadow)}
+.mapzoom button:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+/* text, points and lines keep (roughly) their screen size when the map is zoomed: --k = zoom^-0.7 */
+#map .lbl{font-size:calc(12px*var(--k,1));stroke-width:calc(3px*var(--k,1))}
+#map .lbl.sub{font-size:calc(10px*var(--k,1))}
+#map .lbl.auto{font-size:calc(9.5px*var(--k,1))}
+#map .cityl{font-size:calc(11px*var(--k,1))!important;stroke-width:calc(3px*var(--k,1))}
+#map .cityl.r1{font-size:calc(13px*var(--k,1))!important}
+#map .cityl.r3{font-size:calc(10px*var(--k,1))!important}
+#map .country{font-size:calc(15px*var(--k,1))!important}
+#map circle[style*="--r"]{r:calc(var(--r)*1px*var(--k,1))}
 #map .land.czechia{fill:var(--land-cz)}
 #map .land.poland{fill:var(--land-pl)}
 #map .land.slovakia{fill:var(--land-sk)}
-#map .grat{stroke:var(--border);stroke-width:.5;fill:none;opacity:.25}
+#map .grat{stroke:var(--border);stroke-width:.5;fill:none;opacity:.25;vector-effect:non-scaling-stroke}
 #map .city{fill:var(--muted)}
 #map .cityl{font-family:var(--f-data);fill:var(--muted);font-size:11px;paint-order:stroke;stroke:var(--land);stroke-width:3px}
 #map .cityl.r1{font-size:13px;font-weight:600}
 #map .cityl.r3{font-size:10px;font-style:italic}
 #map .glabel{fill:var(--muted);font-size:10px;font-family:var(--f-data)}
-#map .route{fill:none;stroke-width:2.2;opacity:.9;stroke-linecap:round}
+#map .route{fill:none;stroke-width:calc(2.2px*var(--k,1));opacity:.9;stroke-linecap:round}
 #map .route.k-hyp{opacity:.75}
-#map .route:hover{stroke-width:4}
+#map .route:hover{stroke-width:calc(4px*var(--k,1))}
 .mlegend{display:flex;flex-wrap:wrap;gap:6px 16px;font-size:.75rem;color:var(--muted);margin:6px 2px 0}
 .mlegend svg{vertical-align:middle;margin-right:4px}
 .moves{margin:12px 2px 0;padding:0;list-style:none;display:flex;flex-direction:column;gap:5px;font-size:.82rem;line-height:1.4}
@@ -197,7 +212,7 @@ dl.facts dd{margin:0;min-width:0}
     <span class="lin"><i style="background:var(--pat)"></i>otcovská linie</span>
   </div>
 </div>
-<section id="mapView" hidden><div class="mapwrap"><div class="mapfig"><svg id="map" role="img" aria-label="Mapa původu rodových větví"></svg><div class="mlegend"><span><svg width="28" height="6"><line x1="0" y1="3" x2="28" y2="3" stroke="var(--muted)" stroke-width="2.2"/></svg>doložený přesun</span><span><svg width="28" height="6"><line x1="0" y1="3" x2="28" y2="3" stroke="var(--muted)" stroke-width="2.2" stroke-dasharray="7 5"/></svg>pravděpodobná trasa (vlakem)</span><span><svg width="28" height="6"><line x1="0" y1="3" x2="28" y2="3" stroke="var(--muted)" stroke-width="2.2" stroke-dasharray="2 5" stroke-linecap="round"/></svg>domněnka</span></div><p class="cap">Hranice podle dnešních států (Natural Earth). Čáry vedou po tehdejších železničních tratích, kde přesná cesta není známa. Po najetí myší se ukáže, kdo a kdy.</p><ol class="moves" id="moves"></ol></div><div id="story" class="story"></div></div><div class="tl"><h3>Časová osa</h3><ol id="tl"></ol></div></section>
+<section id="mapView" hidden><div class="mapwrap"><div class="mapfig"><div class="mapbox"><svg id="map" role="img" aria-label="Mapa původu rodových větví"></svg><div class="mapzoom" role="toolbar" aria-label="Přiblížení mapy"><button type="button" id="mzin" aria-label="Přiblížit mapu">+</button><button type="button" id="mzout" aria-label="Oddálit mapu">−</button><button type="button" id="mzreset">Celá mapa</button></div></div><div class="mlegend"><span><svg width="28" height="6"><line x1="0" y1="3" x2="28" y2="3" stroke="var(--muted)" stroke-width="2.2"/></svg>doložený přesun</span><span><svg width="28" height="6"><line x1="0" y1="3" x2="28" y2="3" stroke="var(--muted)" stroke-width="2.2" stroke-dasharray="7 5"/></svg>pravděpodobná trasa (vlakem)</span><span><svg width="28" height="6"><line x1="0" y1="3" x2="28" y2="3" stroke="var(--muted)" stroke-width="2.2" stroke-dasharray="2 5" stroke-linecap="round"/></svg>domněnka</span></div><p class="cap">Hranice podle dnešních států (Natural Earth). Čáry vedou po tehdejších železničních tratích, kde přesná cesta není známa. Po najetí myší se ukáže, kdo a kdy. Přiblížení: tlačítka, dvojklik, Ctrl/⌘ + kolečko nebo sevření prstů; posun tažením.</p><ol class="moves" id="moves"></ol></div><div id="story" class="story"></div></div><div class="tl"><h3>Časová osa</h3><ol id="tl"></ol></div></section>
 <div id="scroller">
   <div id="inner">
     <div id="stage"><div id="canvas"><svg class="links" id="links"></svg></div></div>
@@ -459,7 +474,7 @@ requestAnimationFrame(()=>{ const c=document.querySelector(`.card[data-id="${D.r
   for(let a=Math.ceil(lat0*2)/2;a<=lat1;a+=.5) g+=`<line class="grat" x1="0" x2="${W}" y1="${Y(a)}" y2="${Y(a)}"/>`;
   for(let o=Math.ceil(lon0*2)/2;o<=lon1;o+=.5) g+=`<line class="grat" y1="0" y2="${H}" x1="${X(o)}" x2="${X(o)}"/>`;
   G.labels.forEach(l=>{ g+=`<text class="country" x="${X(l.lon)}" y="${Y(l.lat)}">${l.t}</text>`; });
-  G.cities.filter(c=>c.r>0).forEach(c=>{ const r=[0,4,3,2.5][c.r]; const e=c.anchor==='end'; g+=`<circle class="city" cx="${X(c.lon)}" cy="${Y(c.lat)}" r="${r}"/><text class="cityl r${c.r}" text-anchor="${e?'end':'start'}" x="${X(c.lon)+(e?-(r+3):r+3)}" y="${Y(c.lat)+3.5}">${c.n}</text>`; });
+  G.cities.filter(c=>c.r>0).forEach(c=>{ const r=[0,4,3,2.5][c.r]; const e=c.anchor==='end'; g+=`<circle class="city" style="--r:${r}" cx="${X(c.lon)}" cy="${Y(c.lat)}" r="${r}"/><text class="cityl r${c.r}" text-anchor="${e?'end':'start'}" x="${X(c.lon)+(e?-(r+3):r+3)}" y="${Y(c.lat)+3.5}">${c.n}</text>`; });
   const DASH={doc:'', rail:'7 5', hyp:'2 5'};
   g+=`<defs>${[...new Set(D.moves.map(m=>m.line))].map(l=>`<marker id="ar-${l}" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="var(--l-${l})"/></marker>`).join('')}</defs>`;
   D.moves.forEach(m=>{
@@ -478,14 +493,46 @@ requestAnimationFrame(()=>{ const c=document.querySelector(`.card[data-id="${D.r
   D.places.forEach(p=>{ const z=gzOf(p.name); if(z){ curatedZ.add(z.n); const u=gzUse.get(z.n); if(u) p._auto=`${u.ids.size} ${u.ids.size===1?'osoba':u.ids.size<5?'osoby':'osob'} · od ${u.from}`; } });
   gzUse.forEach(u=>{ if(curatedZ.has(u.z.n)) return;
     const line=Object.entries(u.lines).sort((a,b)=>b[1]-a[1])[0][0], x=X(u.z.lon), y=Y(u.z.lat);
-    g+=`<circle class="pt auto" cx="${x}" cy="${y}" r="3.5" fill="var(--l-${line})"><title>${u.z.n} – ${u.ids.size} osob v rodokmenu, doloženo od ${u.from}</title></circle><text class="lbl auto" x="${x+6}" y="${y+3}">${u.z.n}</text>`; });
+    g+=`<circle class="pt auto" style="--r:3.5" cx="${x}" cy="${y}" r="3.5" fill="var(--l-${line})"><title>${u.z.n} – ${u.ids.size} osob v rodokmenu, doloženo od ${u.from}</title></circle><text class="lbl auto" x="${x+6}" y="${y+3}">${u.z.n}</text>`; });
   D.places.forEach(p=>{
     const x=X(p.lon),y=Y(p.lat);
     const anchor = p.anchor || ((p.lon<18.2 && !p.hub) ? 'end' : 'start'), dx = anchor==='end'?-10:10, dy=p.dy||0;
-    g+=`<circle class="pt ${p.hub?'hub':''}" cx="${x}" cy="${y}" r="${p.hub?9:(p.small?4.5:6)}" fill="${p.hub?'var(--accent)':'var(--l-'+p.line+')'}"><title>${p.name} – ${p.note}</title></circle>`;
+    g+=`<circle class="pt ${p.hub?'hub':''}" style="--r:${p.hub?9:(p.small?4.5:6)}" cx="${x}" cy="${y}" r="${p.hub?9:(p.small?4.5:6)}" fill="${p.hub?'var(--accent)':'var(--l-'+p.line+')'}"><title>${p.name} – ${p.note}</title></circle>`;
     g+=`<text class="lbl" x="${x+dx}" y="${y+4+dy}" text-anchor="${anchor}">${p.name}</text><text class="lbl sub" x="${x+dx}" y="${y+17+dy}" text-anchor="${anchor}">${p.note}${p._auto?' · '+p._auto:''}</text>`;
   });
   svg.innerHTML=g;
+  // ── zoom & pan (viewBox): buttons, double click, Ctrl/⌘ + wheel or trackpad pinch, touch pinch, drag ──
+  const base={x:-PAD,y:-PAD,w:W+2*PAD,h:H+2*PAD}, vb={...base}, ZMAX=12;
+  function setVB(){
+    vb.w=Math.min(base.w,Math.max(base.w/ZMAX,vb.w)); vb.h=vb.w*base.h/base.w;
+    vb.x=Math.min(base.x+base.w-vb.w,Math.max(base.x,vb.x)); vb.y=Math.min(base.y+base.h-vb.h,Math.max(base.y,vb.y));
+    svg.setAttribute('viewBox',`${vb.x} ${vb.y} ${vb.w} ${vb.h}`);
+    svg.style.setProperty('--k',Math.pow(base.w/vb.w,-0.7).toFixed(3));
+  }
+  function zoomAt(f,cx,cy){
+    const r=svg.getBoundingClientRect(); if(cx===undefined){cx=r.left+r.width/2;cy=r.top+r.height/2;}
+    const fx=(cx-r.left)/r.width, fy=(cy-r.top)/r.height, ux=vb.x+fx*vb.w, uy=vb.y+fy*vb.h;
+    vb.w=vb.w/f; vb.w=Math.min(base.w,Math.max(base.w/ZMAX,vb.w)); vb.h=vb.w*base.h/base.w; vb.x=ux-fx*vb.w; vb.y=uy-fy*vb.h; setVB();
+  }
+  document.getElementById('mzin').addEventListener('click',()=>zoomAt(1.6));
+  document.getElementById('mzout').addEventListener('click',()=>zoomAt(1/1.6));
+  document.getElementById('mzreset').addEventListener('click',()=>{ Object.assign(vb,base); setVB(); });
+  svg.addEventListener('dblclick',e=>{ e.preventDefault(); zoomAt(e.shiftKey?1/2:2,e.clientX,e.clientY); });
+  svg.addEventListener('wheel',e=>{ if(!(e.ctrlKey||e.metaKey)) return; e.preventDefault(); zoomAt(Math.exp(-e.deltaY*0.01),e.clientX,e.clientY); },{passive:false});
+  const mp=new Map(); let mpinch=null, mdrag=null;
+  svg.addEventListener('pointerdown',e=>{ mp.set(e.pointerId,{x:e.clientX,y:e.clientY}); if(mp.size===1){ mdrag={x:e.clientX,y:e.clientY,vx:vb.x,vy:vb.y}; } });
+  svg.addEventListener('pointermove',e=>{
+    if(!mp.has(e.pointerId)) return; mp.set(e.pointerId,{x:e.clientX,y:e.clientY});
+    const r=svg.getBoundingClientRect();
+    if(mp.size===2){ const [a,b]=[...mp.values()], d=Math.hypot(a.x-b.x,a.y-b.y), mx=(a.x+b.x)/2, my=(a.y+b.y)/2;
+      if(!mpinch) mpinch=d; else { zoomAt(d/mpinch,mx,my); mpinch=d; } mdrag=null; return; }
+    if(mdrag && vb.w<base.w){ const dx=e.clientX-mdrag.x, dy=e.clientY-mdrag.y;
+      if(Math.abs(dx)+Math.abs(dy)>3){ svg.classList.add('drag'); if(e.pointerType!=='mouse'||true) svg.setPointerCapture&&svg.setPointerCapture(e.pointerId); }
+      vb.x=mdrag.vx-dx/r.width*vb.w; vb.y=mdrag.vy-dy/r.height*vb.h; setVB(); }
+  });
+  const mend=e=>{ mp.delete(e.pointerId); if(mp.size<2) mpinch=null; if(!mp.size){ mdrag=null; svg.classList.remove('drag'); } };
+  ['pointerup','pointercancel','pointerleave'].forEach(t=>svg.addEventListener(t,mend));
+  setVB();
   const KIND={doc:'doloženo',rail:'trasa pravděpodobná',hyp:'domněnka'};
   document.getElementById('moves').innerHTML=D.moves.map(m=>`<li style="--c:var(--l-${m.line})"><b>${m.when}</b> – ${m.who}: ${m.note}<span class="k">${KIND[m.kind]}</span></li>`).join('');
   const doc=p=>p.cert==='M'||p.cert==='D', place=e=>(e&&e.place||'').replace(/\s*č\.\s*\d+.*$/,'').replace(/,.*$/,'');
