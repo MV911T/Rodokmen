@@ -442,6 +442,9 @@ document.getElementById('home').addEventListener('click',()=>focusCard(D.root));
 
 render();
 applyScale(vs, 0, 0);
+// label heights change once the web fonts arrive (wrapping) – lay the event labels out again
+if(document.fonts&&document.fonts.ready) document.fonts.ready.then(()=>applyScale(vs));
+addEventListener('resize',()=>applyScale(vs));
 requestAnimationFrame(()=>{ const c=document.querySelector(`.card[data-id="${D.root}"]`); if(c) sc.scrollTo({left:(c.offsetLeft+c.offsetWidth/2)*vs-sc.clientWidth/2, top:Math.max(0,c.offsetTop*vs-60)}); });
 })();
 
