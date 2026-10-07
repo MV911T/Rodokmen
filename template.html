@@ -464,7 +464,10 @@ sc.addEventListener('pointerdown',e=>{
   drag={x:e.clientX,y:e.clientY,l:sc.scrollLeft,t:sc.scrollTop,id:e.pointerId}; dragMoved=false;
 });
 sc.addEventListener('pointermove',e=>{
+  // fallback: start from the first move with the left button held (some environments skip pointerdown)
+  if(!drag && e.pointerType==='mouse' && (e.buttons&1)){ drag={x:e.clientX,y:e.clientY,l:sc.scrollLeft,t:sc.scrollTop,id:e.pointerId}; dragMoved=false; return; }
   if(!drag||e.pointerId!==drag.id) return;
+  if(!(e.buttons&1)){ drag=null; sc.classList.remove('panning'); return; }
   const dx=e.clientX-drag.x, dy=e.clientY-drag.y;
   if(!dragMoved && Math.abs(dx)+Math.abs(dy)<5) return;
   if(!dragMoved){ dragMoved=true; sc.classList.add('panning'); try{sc.setPointerCapture(e.pointerId)}catch(_){} }
