@@ -3094,7 +3094,8 @@ window.RODOKMEN = {
         "Zemřela 12. 11. 1848 v Ehrenfeldu, pohřbena 15. 11., 37 let, jako žena svobodného zahradníka (Freigärtnerin): „Marianna Opolony geb. Hafel“ (rodiče neuvedeni).",
         "Při sňatku 1836 svobodná, 24 let; rodiče neuvedeni.",
         "Sestra pravděpodobně Johanna Hawel (*cca 1813, Ehrenfeld), která se 14. 11. 1842 jako panna (29 let) provdala za vdovce Franze Wojtka (Grzędzin 4/1 sken 494–495 Nr 46) – PRAVDĚPODOBNÉ.",
-        "Kandidátky na křest (K): Marianna *26. 2. 1811 Kolonie Ehrenfeld, dcera Josepha Hawela a Marianny roz. Czerny (4/7 sk. 27–28) – ta se ale možná 1834 vdala za Mathese Schiwana; Marianna Hemel *1811 Dolendzin (nemanželská, matka Margaretha) – vysvětlovala by chybějící rodiče u sňatku 1836; Marianna Hemel *19. 10. 1813 Dolendzin (otec Wenzel). Úmrtní zápis rodiče neuvádí; věk (*cca 1811) a bydliště Ehrenfeld ukazují nejspíš na první kandidátku (PRAVDĚPODOBNÉ), je ale třeba vyloučit, že to byla nevěsta Schiwanova."
+        "Kandidátka na křest (PRAVDĚPODOBNÉ, D): Marianna *26. 2. 1811 Kolonie Ehrenfeld, dcera Josepha Hawela a Marianny roz. Czerny (4/7 sk. 27–28). Nevěsta Mathese Schiwana z roku 1834 byla jiná dcera Josepha Hawela – Monica (křest jejího dítěte 14. 7. 1836, 4/1 sk. 264). Méně pravděpodobné kandidátky: Marianna Hemel *1811 a *1813 z Dolendzinu.",
+        "Pravděpodobný otec (HYPOTÉZA, K): Joseph Hawel, domkář v Ehrenfeldu, zemřel 24. 1. 1836 ve věku 77 let (*cca 1759) sešlostí věkem (4/1 sk. 274–275 Nr 5) – při sňatku Mariany v září 1836 už otec nebyl uveden."
       ],
       sources: [
         "Grzędzin – AP Opole 45/3251 j. 4/3, sken 325 Nr 206 (úmrtí 1848)",
@@ -3148,7 +3149,8 @@ window.RODOKMEN = {
         "S Lucií byl ženatý už 28. 5. 1841 (kmotři „Joh. Czenschkowsky u. sein Weib Lucia“). V Schonowitz žili dva Johannové Czienskowští: Johann, podruh, 27 let, který se 8. 10. 1840 oženil s Marianou Schramowsky, je jiná osoba (do května 1841 jeho žena nezemřela a nový sňatek není).",
         "Sňatek s Lucií není v Grzędzinu 1835–1843 – tedy před 1835 nebo jinde.",
         "Kandidátní křty (HYPOTÉZA, K): Johann *13. 5. 1812 Schonowitz, syn robotního zahradníka Josepha Czenskowského a Johanny (Grzędzin 4/7 sken 140–141 Nr 57), nebo Johann *2. 3. 1814, syn domkáře Simona Czienskowského (4/7 sken 320) – nelze rozhodnout, který Johann je který.",
-        "Zemřel před 1913."
+        "Zemřel před 1913.",
+        "Sňatek s Lucií není v Grzędzinu ani 1829–1834 (prošlo celé 1829–1843) – tedy jinde. Kolem 1840 žili 3–4 Johannové Czienskowští (Schonowitz, Ponientzütz); ve Schonowitz i starší Johann, zahradník (dcera Johanna *cca 1807), a Joseph, zahradník, *cca 1779 (vdovec, 2. sňatek 31. 1. 1831 s Theresií Swobodou) – možní příbuzní."
       ],
       sources: [
         "křest dcery Rosalie 1846 (AP Opole 45/3251/0/4/3, sken 209)",
