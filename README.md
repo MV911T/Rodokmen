@@ -33,4 +33,6 @@ Po každém nálezu zrevidovat celou kartu osoby i jejích rodičů, partnera a 
 
 Samotná kontrola: `node validate.js`.
 
+**Automaticky odvozené (nepsat ručně):** datum aktualizace (razítko sestavení v `build.sh`), nejstarší doložený předek (hlavička, příběhy větví, časová osa), počty osob, body na mapě z `gazetteer.js` s rokem prvního doložení. Validátor hlídá: neznámé větve a barvy, natvrdo psaná fakta v příbězích a popiscích míst, mezery v historických událostech (≥ 1 událost na 50 let) a obce chybějící v `gazetteer.js` (INFO). `publish.sh` po odeslání ověří, že web na GitHub Pages je aktuální.
+
 Prameny: matriky Moravského zemského archivu v Brně (Acta Publica), Zemského archivu v Opavě (Digitální badatelna), SOA Třeboň, polských archivů (szukajwarchiwach.gov.pl, Skanoteka, CAAK), sčítání lidu 1930 (Slovakiana), rodinné doklady a paměti.
