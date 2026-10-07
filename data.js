@@ -498,7 +498,8 @@ window.RODOKMEN = {
       notes: [
         "KANDIDÁT na otce Ondřeje – vazba neověřena.",
         "Sňatek (M): „Casparus Pauli Woroń et Reginae Witarowski L. S. in Ant.“ – syn Pawła Woronia a Reginy Witarowské.",
-        "Děti (M): Franciszek *14. 9. 1847 (sňatek 1892), Zofia *2. 4. 1857; Jan (sňatek 1890). V roce 1875 žil („Kasper Woroń ojciec“)."
+        "Děti (M): Franciszek *14. 9. 1847 (sňatek 1892), Zofia *2. 4. 1857; Jan (sňatek 1890). V roce 1875 žil („Kasper Woroń ojciec“).",
+        "Matka Regina Witarowská pochází nejspíš z rodiny Wojciecha Witarowského × Zofie Wilk z Lednice Górné (syn Klemens *cca 1787) – neověřeno (K). „In Antiquis“ je část města Wieliczky – Kasprův křest a sňatek rodičů hledat v městských knihách (KM-10-25, KM-10-75)."
       ],
       sources: [
         "CAAK KM-10-78 (sňatky Wieliczka – Lednica Górna 1785–1846), snímek 0045_r",
@@ -517,15 +518,56 @@ window.RODOKMEN = {
       line: "woron",
       cert: "K",
       b: {"date":"cca 1825","year":1825,"approx":true,"place":"Lednica (Wieliczka)"},
+      father: "maciejSz",
+      mother: "teresaDe",
       notes: [
         "KANDIDÁTKA na matku Ondřeje – vazba neověřena.",
-        "Sňatek 1844 (M): „Catharina Mathiae Szarek et Teresiae Dębowska“, 19 let, nezletilá (souhlas magistrátu). Sourozenci Simon (sňatek 1840) a Augustin (sňatek 1844)."
+        "Sňatek 1844 (M): „Catharina Mathiae Szarek et Teresiae Dębowska“, 19 let, nezletilá (souhlas magistrátu). Sourozenci Simon (sňatek 1840) a Augustin (sňatek 1844).",
+        "Rodiče Maciej Szarek a Teresa Dębowska se nejspíš brali 1. 6. 1813 (CAAK KM-10-78) – jména sedí přesně, sourozenec Simon *cca 1815."
       ],
       sources: [
         "CAAK KM-10-78, snímek 0045_r"
       ],
       scans: [
         {"f":"img/1844_snatek_kasper_woron_szarek.jpg","t":"Sňatek 6. 2. 1844, Lednica Górna (CAAK KM-10-78)"}
+      ]
+    },
+    {
+      id: "maciejSz",
+      name: "Maciej (Mathias) Szarek",
+      line: "woron",
+      cert: "D",
+      b: {"date":"cca 1785","year":1785,"approx":true,"place":"Lednica (Wieliczka)"},
+      occ: "vesničan (villanus), dům č. 103",
+      marriage: "1. 6. 1813 – s Teresou Dębowskou (on 28, ona 18); svědci Kasper Dziewoński a Dominik Ziarko",
+      notes: [
+        "Sňatek 1813: „Mathias Sarek … 28 … Theresia Dębowczyka … 18“ (dům 103) – obec jen pravděpodobně Lednica Górna (hlavička na stránce chybí).",
+        "Děti (M): Simon (sňatek 1840), Katarzyna *cca 1825 (sňatek 1844), Augustin (sňatek 1844).",
+        "Kandidát na otce (K): Ondřej Szarek, 57 let, vdovec, ze stejného domu 103, který se 26. 6. 1815 znovu oženil. Pravděpodobný příbuzný (K): Józef Szarek, syn Michała Szarka a Kateřiny Kościołkové (sňatek 1819)."
+      ],
+      sources: [
+        "CAAK KM-10-78 (sňatky Wieliczka – vsi 1785–1846), snímek #0030_v, s. 14",
+        "CAAK KM-10-78 #0031_r (Ondřej Szarek 1815)"
+      ],
+      scans: [
+        {"f":"img/1813_snatek_szarek_debowska.jpg","t":"Sňatek 1. 6. 1813, dům 103 (CAAK KM-10-78, #0030_v)"}
+      ]
+    },
+    {
+      id: "teresaDe",
+      name: "Teresa Szarek",
+      maiden: "Dębowska",
+      line: "woron",
+      cert: "D",
+      b: {"date":"cca 1795","year":1795,"approx":true,"place":"Lednica (Wieliczka)"},
+      notes: [
+        "Při sňatku 1813 18 let („Theresia Dębowczyka“). V Lednici žili Dębowští – Michał Dębowski × Kateřina Kaśmiecka (dcera Rozálie, sňatek 1819) a Mariana Dębowská (sňatek s Klemensem Witarowským 1817)."
+      ],
+      sources: [
+        "CAAK KM-10-78, snímek #0030_v"
+      ],
+      scans: [
+        {"f":"img/1813_snatek_szarek_debowska.jpg","t":"Sňatek 1. 6. 1813, dům 103 (CAAK KM-10-78, #0030_v)"}
       ]
     },
     {
