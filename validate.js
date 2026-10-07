@@ -80,7 +80,7 @@ for (const p of P) {
   // 5b. children mentioned only in notes (e.g. "otec Paula (*17. 7. 1894)") vs. own birth estimate
   if (by(p.b)) notes.forEach(n => {
     if (!/\b(syn|synové|dcera|dcery|děti|dítě|otec|matka|Děti)\b/i.test(n) || /\b(sestra|bratr|sourozen|Sourozen)/i.test(n)) return;
-    if (/na (vlastní )?křest|Kandidát na křest|Narozen[a]? \d|pokřtěn[a]? \d/i.test(n)) return;   // note about the person's OWN birth/baptism
+    if (/na (vlastní )?křest|Kandidát na křest|^Křest|Narozen[a]? \d|pokřtěn[a]? \d/i.test(n)) return;   // note about the person's OWN birth/baptism
     if (/^(Kandidát|RODIČE|Rodiče)/.test(n)) return;   // notes about the person's (candidate) parents mention siblings, not children
     for (const m of n.matchAll(/\*\s*(?:\d{1,2}\.\s*\d{1,2}\.\s*)?(\d{4})/g)) {
       const cy = +m[1], age = cy - by(p.b);

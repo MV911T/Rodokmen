@@ -3166,7 +3166,8 @@ window.RODOKMEN = {
         "Sňatek 1836 jako svobodný, 26 let, z Ehrenfeldu; rodiče duplikát neuvádí.",
         "Ovdověl 12. 11. 1848; 14. 2. 1849 se jako vdovec (40 let) znovu oženil s Margarethou Lindner (22) z Mosurau – svědek „Opolony aus Rachowitz“ (stopa k rodu).",
         "Děti s Marianou: Anton 1841, další dítě 1845.",
-        "Křest není v Grzędzinu 1809–1811 (prošlo) – nejspíš jiná farnost – stopa „Opolony aus Rachowitz“ (Rachowice u Gliwic? farní matriky shořely 1945, zbývají státní duplikáty – HYPOTÉZA) nebo jiný tvar jména (Opolon, Opollony)."
+        "Křest není v Grzędzinu 1809–1811 (prošlo) – nejspíš jiná farnost – stopa „Opolony aus Rachowitz“ (Rachowice u Gliwic? farní matriky shořely 1945, zbývají státní duplikáty – HYPOTÉZA) nebo jiný tvar jména (Opolon, Opollony).",
+        "Úmrtí není v Grzędzinu 1849–1861; 1857 zemřel jeho syn Nikolaus z 2. manželství (otec tehdy domkář)."
       ],
       sources: [
         "AP Opole 45/3251/0/4/1, sken 286–287, 1836 Nr 29",
@@ -3188,12 +3189,13 @@ window.RODOKMEN = {
       b: {"date":"cca 1811","year":1811,"approx":true,"place":"Ehrenfeld (?)"},
       d: {"date":"12. 11. 1848","year":1848,"place":"Ehrenfeld"},
       cause: "kolika",
+      father: "josefHaw",
+      mother: "mariannaCz",
       notes: [
         "Zemřela 12. 11. 1848 v Ehrenfeldu, pohřbena 15. 11., 37 let, jako žena svobodného zahradníka (Freigärtnerin): „Marianna Opolony geb. Hafel“ (rodiče neuvedeni).",
         "Při sňatku 1836 svobodná, 24 let; rodiče neuvedeni.",
         "Sestra pravděpodobně Johanna Hawel (*cca 1813, Ehrenfeld), která se 14. 11. 1842 jako panna (29 let) provdala za vdovce Franze Wojtka (Grzędzin 4/1 sken 494–495 Nr 46) – PRAVDĚPODOBNÉ.",
-        "Kandidátka na křest (PRAVDĚPODOBNÉ, D): Marianna *26. 2. 1811 Kolonie Ehrenfeld, dcera Josepha Hawela a Marianny roz. Czerny (4/7 sk. 27–28). Nevěsta Mathese Schiwana z roku 1834 byla jiná dcera Josepha Hawela – Monica (křest jejího dítěte 14. 7. 1836, 4/1 sk. 264). Méně pravděpodobné kandidátky: Marianna Hemel *1811 a *1813 z Dolendzinu.",
-        "Pravděpodobný otec (HYPOTÉZA, K): Joseph Hawel, domkář v Ehrenfeldu, zemřel 24. 1. 1836 ve věku 77 let (*cca 1759) sešlostí věkem (4/1 sk. 274–275 Nr 5) – při sňatku Mariany v září 1836 už otec nebyl uveden."
+        "Křest (PRAVDĚPODOBNĚ ona – věk 37 v roce 1848 i bydliště sedí): Marianna *26. 2. 1811 Kolonie Ehrenfeld, dcera Josepha Hawela a Marianny roz. Czerny (Grzędzin 4/7 sk. 27–28 Nr 19). Nevěsta Mathese Schiwana (1834) byla jiná Josephova dcera, Monica."
       ],
       sources: [
         "Grzędzin – AP Opole 45/3251 j. 4/3, sken 325 Nr 206 (úmrtí 1848)",
@@ -3201,9 +3203,48 @@ window.RODOKMEN = {
         "křest syna Antona 1841 (AP Opole 45/3251/0/4/1, sken 422)"
       ],
       scans: [
+        {"f":"img/1811_krest_marianna_hawel.jpg","t":"Křest 26. 2. 1811, Kolonie Ehrenfeld – otec Joseph Hawel, matka Marianna roz. Czerny (Grzędzin 4/7 sk. 27)"},
         {"f":"img/1848_umrti_mariana_opolony.jpg","t":"Úmrtí 12. 11. 1848, Ehrenfeld (Grzędzin 4/3 sken 325 Nr 206)"},
         {"f":"img/1836_snatek_opolony_hawel.jpg","t":"Sňatek 20. 9. 1836 (Grzędzin 1836 Nr 29)"},
         {"f":"img/1841_krest_anton_opolony.jpg","t":"Křest syna Antona 1841"}
+      ]
+    },
+    {
+      id: "josefHaw",
+      name: "Joseph Hawel",
+      line: "opolony",
+      cert: "D",
+      b: {"date":"cca 1759","year":1759,"approx":true},
+      d: {"date":"24. 1. 1836","year":1836,"place":"Ehrenfeld"},
+      cause: "sešlost věkem",
+      occ: "svobodný zahradník / domkář v Ehrenfeldu",
+      notes: [
+        "Otec Marianny (*1811) a Moniky (provd. 1834 Schiwan); zemřel 24. 1. 1836 jako domkář v Ehrenfeldu, 77 let.",
+        "Jako otec Mariany Opolony PRAVDĚPODOBNÝ (D). Křty dalších dětí v Grzędzinu 1809–1814 nejsou – rodina se snad přistěhovala kolem 1810."
+      ],
+      sources: [
+        "AP Opole 45/3251 Grzędzin 4/7 sk. 27–28 Nr 19 (1811); 4/1 sk. 274–275 Nr 5 (úmrtí 1836)"
+      ],
+      scans: [
+        {"f":"img/1811_krest_marianna_hawel.jpg","t":"Křest 26. 2. 1811, Kolonie Ehrenfeld – otec Joseph Hawel, matka Marianna roz. Czerny (Grzędzin 4/7 sk. 27)"},
+        {"f":"img/1836_umrti_joseph_hawel.jpg","t":"Úmrtí Josepha Hawela 24. 1. 1836, 77 let (4/1 sk. 274–275)"}
+      ]
+    },
+    {
+      id: "mariannaCz",
+      name: "Marianna Hawel",
+      maiden: "Czerny",
+      line: "opolony",
+      cert: "D",
+      b: {"date":"cca 1775","year":1775,"approx":true},
+      notes: [
+        "Matka Marianny (*1811)."
+      ],
+      sources: [
+        "Grzędzin 4/7 sk. 27–28 Nr 19"
+      ],
+      scans: [
+        {"f":"img/1811_krest_marianna_hawel.jpg","t":"Křest 26. 2. 1811, Kolonie Ehrenfeld – otec Joseph Hawel, matka Marianna roz. Czerny (Grzędzin 4/7 sk. 27)"}
       ]
     },
     {
@@ -3248,7 +3289,8 @@ window.RODOKMEN = {
         "Sňatek s Lucií není v Grzędzinu 1835–1843 – tedy před 1835 nebo jinde.",
         "Kandidátní křty (HYPOTÉZA, K): Johann *13. 5. 1812 Schonowitz, syn robotního zahradníka Josepha Czenskowského a Johanny (Grzędzin 4/7 sken 140–141 Nr 57), nebo Johann *2. 3. 1814, syn domkáře Simona Czienskowského (4/7 sken 320) – nelze rozhodnout, který Johann je který.",
         "Zemřel před 1913.",
-        "Sňatek s Lucií není v Grzędzinu ani 1829–1834 (prošlo celé 1829–1843) – tedy jinde. Kolem 1840 žili 3–4 Johannové Czienskowští (Schonowitz, Ponientzütz); ve Schonowitz i starší Johann, zahradník (dcera Johanna *cca 1807), a Joseph, zahradník, *cca 1779 (vdovec, 2. sňatek 31. 1. 1831 s Theresií Swobodou) – možní příbuzní."
+        "Sňatek s Lucií není v Grzędzinu ani 1829–1834 (prošlo celé 1829–1843) – tedy jinde. Kolem 1840 žili 3–4 Johannové Czienskowští (Schonowitz, Ponientzütz); ve Schonowitz i starší Johann, zahradník (dcera Johanna *cca 1807), a Joseph, zahradník, *cca 1779 (vdovec, 2. sňatek 31. 1. 1831 s Theresií Swobodou) – možní příbuzní.",
+        "Johann × Mariana Schramowsky žil 1854 v Dollendzinu (Mariana † 13. 9. 1854) – tedy jiná osoba. Úmrtí našeho Johanna ani Lucie není v Grzędzinu 1849–1861. Josef Czienskowsky, podruh ve Schonowitz, zemřel 14. 6. 1853 v 70 letech (4/5 sk. 253) – pravděpodobně Joseph, otec kandidáta Johanna *1812."
       ],
       sources: [
         "křest dcery Rosalie 1846 (AP Opole 45/3251/0/4/3, sken 209)",
