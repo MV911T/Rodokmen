@@ -1573,6 +1573,9 @@ window.RODOKMEN = {
       cert: "M",
       b: {"date":"?","year":1710,"approx":true,"place":"Návojná"},
       d: {"date":"před 1762","year":1761,"approx":true},
+      notes: [
+        "Hypotéza (K): Jan Vaněk × Anna z Návojné, děti Martin 1721 a Josef 1724 (opis7 img 221, 249) – možná táž rodina."
+      ],
       sources: [
         "sňatek syna Mikuláše 1762 (4012 img 160)"
       ],
@@ -1606,7 +1609,8 @@ window.RODOKMEN = {
       b: {"date":"?","year":1715,"approx":true,"place":"Nedašova Lhota"},
       notes: [
         "Svědek při sňatcích 1760–61; manželka Veronika (doložena 1761–1768 jako kmotra).",
-        "Dcera Marina pokřtěna 23. 9. 1760 (opis7 img 304), další dítě 12. 5. 1763 (4012 img 19). Pozor: v Nedašově žil jmenovec Josef Tomeček × Kateřina (děti 1767–1783)."
+        "Dcera Marina pokřtěna 23. 9. 1760 (opis7 img 304), další dítě 12. 5. 1763 (4012 img 19). Pozor: v Nedašově žil jmenovec Josef Tomeček × Kateřina (děti 1767–1783).",
+        "Kandidátní křest (HYPOTÉZA, silný kandidát): Josef, syn Martina Tomečka a Anny, Lhota, pokřtěn 8. 3. 1723 (Brumov opis7 (https://www.mza.cz/actapublica/matrika/detail/10376) img 235) – jediný Josef Tomeček 1706–1726; o 8 let mladší než odhad. Starší Tomečkové: Martin, syn † Mikuláše, × Rozina Kolínková (1697); vdova Markéta Tomečková † 1714 ve věku 70."
       ],
       sources: [
         "sňatek syna Josefa 1766 (4012 img 169)",
@@ -1982,7 +1986,8 @@ window.RODOKMEN = {
       notes: [
         "Otec Jiřího (sňatek 1773: „georgius filius † Wenceslai Matussuj“) – zemřel před 1773.",
         "V tereziánském katastru 1752 drží v Nedašově zahradu s polem Cat. 24 „Waczlaw Matůšků“, tužkou dům č. 79 (6 měřic) – PRAVDĚPODOBNĚ on. Zajímavé: z domu č. 79 pocházela i Jiřího nevěsta Marina Šuranová (1773).",
-        "V Lhotě 1752 drží čtvrtlán Jiřa Matůšků; v lánovém rejstříku 1670 jsou v Nedašově Martin a Mikuláš Matůšů – možní předkové (K)."
+        "V Lhotě 1752 drží čtvrtlán Jiřa Matůšků; v lánovém rejstříku 1670 jsou v Nedašově Martin a Mikuláš Matůšů – možní předkové (K).",
+        "Kandidáti na původ (HYPOTÉZA): Václav ml., syn Václava Matušů z Lhoty, oženil se 28. 10. 1721 s Annou; nebo syn nedašovského páru Václav Matušů × Kateřina (děti 1711, 1716) – křest v opisu chybí (mezery 1699–1705, 1711, 1719)."
       ],
       sources: [
         "Brumov 4012 (sňatek syna 1773)",
@@ -2002,7 +2007,8 @@ window.RODOKMEN = {
       d: {"date":"15. 12. 1826","year":1826,"place":"Nedašov č. 67"},
       notes: [
         "Dcera Josefa Šurana z Nedašova č. 79 (sňatek 1773, asi 17 let); otec žil ještě 1779.",
-        "Zemřela 15. 12. 1826 jako vdova po sedlákovi Jiřím Matůšů, 70 let (Z 4491 img 9)."
+        "Zemřela 15. 12. 1826 jako vdova po sedlákovi Jiřím Matůšů, 70 let (Z 4491 img 9).",
+        "Hypotéza (K): otec Josef Šuran mohl pocházet z Jestřabí – Josef, syn Jana Šurana a Rosiny, pokřtěn 12. 12. 1724 v Jestřabí (opis7 img 253)."
       ],
       sources: [
         "Brumov 4012 img 183"
@@ -2285,7 +2291,7 @@ window.RODOKMEN = {
       b: {"date":"cca 1690","year":1690,"approx":true},
       occ: "Nedašova Lhota",
       notes: [
-        "Otec Mikuláše (křest 13. 9. 1715); další děti Martin (10. 10. 1718) a Jan (1719) – manželka Zuzana.",
+        "Otec Mikuláše (křest 13. 9. 1715); další děti Martin (10. 10. 1718) a Jan (1720 – opis img 212 je rok 1720, ne 1719) – manželka Zuzana.",
         "Hypotéza (K): v lánovém rejstříku 1670 je v Nedašově dvakrát Mikuláš Miřička (čtvrtláník a zahradník) – možný předek (MZA D 1/312, img 40–41).",
         "Katastr 1752, Lhota: zahradu č. 15 drží „Hann Mierzicžek“ (Jan Miřička) – rod Miřičků v Lhotě (img 148)."
       ],
