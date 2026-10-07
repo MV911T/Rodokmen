@@ -2031,16 +2031,18 @@ window.RODOKMEN = {
       name: "Jan Vaněk",
       line: "pacik",
       cert: "M",
-      b: {"date":"?","year":1710,"approx":true,"place":"Návojná"},
-      d: {"date":"před 1762","year":1761,"approx":true},
+      b: {"date":"cca 1684","year":1684,"approx":true,"place":"Návojná"},
+      d: {"date":"12. 1. 1760","year":1760,"place":"Návojná"},
       notes: [
-        "Hypotéza (K): Jan Vaněk × Anna z Návojné, děti Martin 1721 a Josef 1724 (opis7 img 221, 249) – možná táž rodina."
+        "Zemřel 12. 1. 1760 v Návojné, 76 let, jako ženatý (4012 img 212; opis7 img 308).",
+        "PRAVDĚPODOBNĚ manžel Anny (děti v Návojné Martin 1721, Josef 1724)."
       ],
       sources: [
         "sňatek syna Mikuláše 1762 (4012 img 160)"
       ],
       scans: [
-        {"f":"img/1762_snatek_vanek_machulcikova.jpg","t":"Sňatek 25. 1. 1762 (4012 img 160, pravá strana)"}
+        {"f":"img/1762_snatek_vanek_machulcikova.jpg","t":"Sňatek 25. 1. 1762 (4012 img 160, pravá strana)"},
+        {"f":"img/1760_umrti_jan_vanek.jpg","t":"Úmrtí Jana Vaňka 12. 1. 1760, Návojná, 76 let (4012 img 212)"}
       ]
     },
     {
@@ -2066,18 +2068,60 @@ window.RODOKMEN = {
       name: "Josef Tomeček st.",
       line: "pacik",
       cert: "M",
-      b: {"date":"?","year":1715,"approx":true,"place":"Nedašova Lhota"},
+      b: {"date":"8. 3. 1723 (PRAVDĚPODOBNĚ, křest)","year":1723,"place":"Nedašova Lhota"},
+      d: {"date":"31. 3. 1799","year":1799,"place":"Nedašova Lhota č. 1"},
+      cause: "sešlost věkem",
+      father: "martinTo",
+      mother: "annaTo",
       notes: [
+        "Zemřel 31. 3. 1799 jako vdovec a sedlák v Lhotě, 75 let (Z 4034 img 318) → *cca 1724; manželka Veronika † 24. 11. 1788 v Lhotě č. 14 (věk 66?).",
+        "Křest PRAVDĚPODOBNĚ 8. 3. 1723 – syn Martina Tomečka a Anny z Lhoty č. 14 (rodová usedlost; jediný Josef Tomeček 1706–1726). Bratr Martin (*1721, † 1769 Nedašov, 48 let).",
+        "Děti s Veronikou: Josef ml. (sňatek 1766), Anna (*cca 1755 † 1771), Marina († 1764).",
         "Svědek při sňatcích 1760–61; manželka Veronika (doložena 1761–1768 jako kmotra).",
-        "Dcera Marina pokřtěna 23. 9. 1760 (opis7 img 304), další dítě 12. 5. 1763 (4012 img 19). Pozor: v Nedašově žil jmenovec Josef Tomeček × Kateřina (děti 1767–1783).",
-        "Kandidátní křest (HYPOTÉZA, silný kandidát): Josef, syn Martina Tomečka a Anny, Lhota, pokřtěn 8. 3. 1723 (Brumov opis7 (https://www.mza.cz/actapublica/matrika/detail/10376) img 235) – jediný Josef Tomeček 1706–1726; o 8 let mladší než odhad. Starší Tomečkové: Martin, syn † Mikuláše, × Rozina Kolínková (1697); vdova Markéta Tomečková † 1714 ve věku 70."
+        "Dcera Marina pokřtěna 23. 9. 1760 (opis7 img 304), další dítě 12. 5. 1763 (4012 img 19). Pozor: v Nedašově žil jmenovec Josef Tomeček × Kateřina (děti 1767–1783)."
       ],
       sources: [
         "sňatek syna Josefa 1766 (4012 img 169)",
-        "4012 img 158"
+        "4012 img 158",
+        "Brumov Z 4034 img 318; 4012 img 222, 242, 248; opis7 img 235"
       ],
       scans: [
+        {"f":"img/1799_umrti_josef_tomecek.jpg","t":"Úmrtí Josefa Tomečka 31. 3. 1799, Lhota, 75 let (Z 4034 img 318)"},
         {"f":"img/1766_snatek_tomecek_michalikova.jpg","t":"Sňatek 7. 9. 1766 (4012 img 169)"}
+      ]
+    },
+    {
+      id: "martinTo",
+      name: "Martin Tomeček",
+      line: "pacik",
+      cert: "D",
+      b: {"date":"cca 1690","year":1690,"approx":true},
+      d: {"date":"8. 5. 1772","year":1772,"place":"Nedašova Lhota č. 14"},
+      occ: "sedlák v Nedašově Lhotě č. 14",
+      notes: [
+        "Zemřel 8. 5. 1772 jako vdovec v Lhotě č. 14, 82 let (odkázal 30 zl. špitálu) – 4012 img 248.",
+        "Otec Josefa (křest 1723) a Martina (1721), Mariany (1724), Kateřiny (1726) s Annou – PRAVDĚPODOBNĚ otec našeho Josefa.",
+        "Rychtář Martin Tomeček (*cca 1682 † 1757, × Rosina Kolínková 1697) je jiný muž – snad jeho bratr nebo otec."
+      ],
+      sources: [
+        "Brumov 4012 img 248, 222; opis7 img 220, 235, 252, 274"
+      ],
+      scans: [
+        {"f":"img/1772_umrti_martin_tomecek.jpg","t":"Úmrtí Martina Tomečka 8. 5. 1772, Lhota č. 14, 82 let (4012 img 248)"}
+      ]
+    },
+    {
+      id: "annaTo",
+      name: "Anna Tomečková",
+      line: "pacik",
+      cert: "D",
+      b: {"date":"cca 1698","year":1698,"approx":true},
+      d: {"date":"17. 1. 1764","year":1764,"place":"Nedašova Lhota"},
+      notes: [
+        "Zemřela 17. 1. 1764 jako manželka Martina Tomečka, 66 let (4012 img 222)."
+      ],
+      sources: [
+        "Brumov 4012 img 222"
       ]
     },
     {
@@ -2447,7 +2491,8 @@ window.RODOKMEN = {
         "Otec Jiřího (sňatek 1773: „georgius filius † Wenceslai Matussuj“) – zemřel před 1773.",
         "V tereziánském katastru 1752 drží v Nedašově zahradu s polem Cat. 24 „Waczlaw Matůšků“, tužkou dům č. 79 (6 měřic) – PRAVDĚPODOBNĚ on. Zajímavé: z domu č. 79 pocházela i Jiřího nevěsta Marina Šuranová (1773).",
         "V Lhotě 1752 drží čtvrtlán Jiřa Matůšků; v lánovém rejstříku 1670 jsou v Nedašově Martin a Mikuláš Matůšů – možní předkové (K).",
-        "Kandidáti na původ (HYPOTÉZA): Václav ml., syn Václava Matušů z Lhoty, oženil se 28. 10. 1721 s Annou; nebo syn nedašovského páru Václav Matušů × Kateřina (děti 1711, 1716) – křest v opisu chybí (mezery 1699–1705, 1711, 1719)."
+        "Kandidáti na původ (HYPOTÉZA): Václav ml., syn Václava Matušů z Lhoty, oženil se 28. 10. 1721 s Annou; nebo syn nedašovského páru Václav Matušů × Kateřina (děti 1711, 1716) – křest v opisu chybí (mezery 1699–1705, 1711, 1719).",
+        "Žil ještě 1. 5. 1760 (zemřela mu manželka Rosina, 40 let, 4012 img 213); jeho úmrtí není v Brumově 1760–1773."
       ],
       sources: [
         "Brumov 4012 (sňatek syna 1773)",
@@ -2606,7 +2651,7 @@ window.RODOKMEN = {
         "Pokřtěn 1. 11. 1714 v Nedašově (PRAVDĚPODOBNĚ on – jiný Mikuláš Holba v Nedašově 1709–1726 není; věk 64 při úmrtí sedí): „Nicolaus | Georgius Holbů, Mater Anna … ex Nedašow“.",
         "Zemřel 22. 9. 1777 v Nedašově č. 39 jako vdovec, 64 let: „Nicolaus Holba viduus – Nedasch. 39 – 64 an.“",
         "Otec Matěje (sňatek 1763), Jana (1765) a Matiáše (1770).",
-        "Jiří a Anna měli dva syny Mikuláše (19. 10. 1709 a 1. 11. 1714); věk 64 při úmrtí 1777 odpovídá Mikuláši z roku 1714 – ten z 1709 zřejmě zemřel (úmrtí 1709–14 neověřeno).",
+        "Jiří a Anna měli dva syny Mikuláše (19. 10. 1709 a 1. 11. 1714); ten z 1709 zemřel 1. 10. 1710 (opis7 img 155) – náš Mikuláš je tedy ten z roku 1714 (POTVRZENO vyloučením).",
         "Gruntovní kniha Nedašov I: v katastru 1752 drží Cat. 28 „Bartoš Holbů“; 1782 ho kupují bratři Bartoloměj a Jan Holba (dům 40/105), jejich synové převzali 1816/1822 (11951 img 119–121) – Bartoš 1752 je nejspíš Mikulášův bratr nebo příbuzný (HYPOTÉZA). Dům č. 39 z úmrtí 1777 je staré číslování (před 1782).",
         "Tereziánský katastr 1752, Nedašov: čtvrtlán Cat. 14 drží „Mikula Holbů“ (tužkou dům 54-53; img 160) – PRAVDĚPODOBNĚ on (tehdy 38 let); zahradu Cat. 28 (dům 40/105) drží Bartoš Holbů."
       ],
@@ -4751,7 +4796,7 @@ window.RODOKMEN.events = [
   {"y":1993,"t":"Vzniká Česká republika","s":"Vznik ČR"}
 ];
 
-window.RODOKMEN_BUILD='7. 10. 2026 11:02';
+window.RODOKMEN_BUILD='7. 10. 2026 11:14';
 
 </script>
 <script>
