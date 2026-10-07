@@ -2411,7 +2411,8 @@ window.RODOKMEN = {
         "Bratr Paul Strusch *17. 7. 1894 Chuchelná, mušketýr, padl 21. 3. 1916 v Bois de Malancourt (Verdun).",
         "V soupisu majitelů domů 1950 vlastník Chuchelné č. 105.",
         "Za okupace člen Freikorpsu a SA; 1940 povolán do wehrmachtu, v únoru 1941 propuštěn a zaměstnán v rafinérii v Heydebrecku (Horní Slezsko). Po válce odsouzen Mimořádným lidovým soudem v Opavě k 1 roku vězení, majetek z velké části zkonfiskován (Hultschiner Soldaten).",
-        "Sňatek 25. 1. 1937 v kostele v Chuchelné (oddával P. Jan Valerian): zámečník v čs. továrně na tabák v Chuchelné, bytem Chuchelná č. 46; svědci Viktor Komárek (domkář č. 115) a Metoděj Mikler (domkář č. 27)."
+        "Sňatek 25. 1. 1937 v kostele v Chuchelné (oddával P. Jan Valerian): zámečník v čs. továrně na tabák v Chuchelné, bytem Chuchelná č. 46; svědci Viktor Komárek (domkář č. 115) a Metoděj Mikler (domkář č. 27).",
+        "Trestní spis Mimořádného lidového soudu Opava: ZA Opava, signatura Ls 1307/46 (potvrzeno archivem 7. 10. 2026); studium jen v badatelně – vyžádány digitální kopie."
       ],
       sources: [
         "Standesamt Kuchelna N 1907 Nr. 56 – ZA Opava"
