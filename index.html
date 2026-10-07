@@ -3682,21 +3682,87 @@ window.RODOKMEN = {
       ]
     },
     {
+      id: "franzIr",
+      name: "Franz (František) Jirzik",
+      line: "jirik",
+      cert: "M",
+      b: {"date":"cca 1735","year":1735,"approx":true,"place":"Bolatice"},
+      d: {"date":"23. 3. 1781","year":1781,"place":"Bolatice"},
+      cause: "horečka (hitziges Fieber)",
+      father: "simonIr",
+      occ: "svobodný domkář v Bolaticích",
+      marriage: "9. 7. 1759, Bolatice – s Barbarou, dcerou Simona Solicha; svědci Ignatius Kozina a Josephus Kramarzik",
+      notes: [
+        "Sňatek 1759: „Franciscus Jirzik filius Simonis Jirzik & Barbara filia Simonis Solich“.",
+        "Zemřel 23. 3. 1781 jako svobodný domkář; v zápisu „39 let“ – zjevně podhodnoceno (oženil se už 1759).",
+        "Svobodný domek koupil od vrchnosti 1753 (Štěpán). Děti: Matthaeus 1762, Francisca 1764, Clara 1766, Joseph (*cca 1765), Marianna 1769, Theresia 1771, Florentina 1773, Veronica 1778.",
+        "Jeho bratr Jan se 1760 oženil s Esther, sestrou Barbory Solichové."
+      ],
+      sources: [
+        "ZA Opava, NAD 165 Sbírka matrik, Bolatice H III 1 (N/O/Z 1683–1766) sken 53, 34; H III 5 sken 18"
+      ],
+      scans: [
+        {"f":"img/1759_snatek_jirzik_solich.jpg","t":"Sňatek 9. 7. 1759 (H III 1 sken 53)"},
+        {"f":"img/1781_umrti_franz_jirzik.jpg","t":"Úmrtí Franze Jrzika 23. 3. 1781 (H III 5 sken 18)"}
+      ]
+    },
+    {
+      id: "simonIr",
+      name: "Simon Jirzik",
+      line: "jirik",
+      cert: "M",
+      b: {"date":"cca 1705","year":1705,"approx":true},
+      occ: "Bolatice",
+      notes: [
+        "Otec Franze (sňatek 1759) a Jana (sňatek 1760); 1759–60 žil. Podle V. Štěpána člen růžencového bratrstva 1734, svědek 1737.",
+        "Nejstarší doložený Jiřík; dcera Theresia (*cca 1742, H III 1 sken 10)."
+      ],
+      sources: [
+        "ZA Opava, NAD 165 Sbírka matrik, Bolatice H III 1 sken 53"
+      ],
+      scans: [
+        {"f":"img/1759_snatek_jirzik_solich.jpg","t":"Sňatek 9. 7. 1759 (H III 1 sken 53)"}
+      ]
+    },
+    {
+      id: "barbaraSo",
+      name: "Barbara Jirzik",
+      maiden: "Solich",
+      line: "jirik",
+      cert: "M",
+      b: {"date":"cca 1738","year":1738,"approx":true,"place":"Bolatice"},
+      notes: [
+        "Dcera Simona Solicha (sňatek 1759); jako vdova prodala 1797 domek synovi Josefovi."
+      ],
+      sources: [
+        "ZA Opava, NAD 165 Sbírka matrik, Bolatice H III 1 sken 53"
+      ],
+      scans: [
+        {"f":"img/1759_snatek_jirzik_solich.jpg","t":"Sňatek 9. 7. 1759 (H III 1 sken 53)"}
+      ]
+    },
+    {
       id: "josefIr",
       name: "Joseph Irzik (Jiřík)",
       line: "jirik",
       cert: "M",
-      b: {"date":"cca 1770","year":1770,"approx":true},
+      b: {"date":"cca 1765","year":1765,"approx":true,"place":"Bolatice"},
       d: {"date":"před 1848","year":1840,"approx":true},
+      father: "franzIr",
+      mother: "barbaraSo",
       occ: "domkář v Bolaticích",
+      marriage: "12. 11. 1793, Bolatice – s Johannou, dcerou Stanislause Dudy (on 26/28, ona 21); svědci domkář Anton Duda a sedlák Mathias Michalik",
       notes: [
-        "Otec Cyrilla (*1796); manželka Johanna roz. Duda.",
-        "Hypotéza (K): totožný s Josefem Jiříkem, který 1797 koupil od matky Barbory, vdovy po Františkovi Jiříkovi († 1781), svobodný domek; nebo s domkářem Josefem Jiříkem, který zemřel 13. 9. 1832 na choleru – v Bolaticích žilo víc Josefů."
+        "Sňatek 1793: „Junggesell Joseph hinterlassener Sohn des verst. Franz Jrzik, mit der Jungfer Johanna ehel. Tochter des Stanislaus Duda“ – syn † Franze Jirzika.",
+        "30. 3. 1797 koupil od matky Barbory, vdovy po Františkovi, svobodný domek Jiříků (V. Štěpán, Bolatice od pravěku…) – řetězec Simon → Franz → Joseph → Cyrill doložen.",
+        "Hypotéza (K): po smrti Johanny se oženil s Marinou Krajan (děti 1816–1823) a zemřel s ní na choleru 13. 9. 1832."
       ],
       sources: [
+        "ZA Opava, NAD 165 Sbírka matrik, Bolatice H III 4 (O 1770–1840) sken 25",
         "ZA Opava, NAD 165 Sbírka matrik, Bolatice H III 2 fol. 107"
       ],
       scans: [
+        {"f":"img/1793_snatek_irzik_duda.jpg","t":"Sňatek 12. 11. 1793 (H III 4 sken 25, č. 6)"},
         {"f":"img/1796_krest_cyrill_irzik.jpg","t":"Křest 3. 3. 1796 (H III 2 fol. 107)"}
       ]
     },
@@ -3706,15 +3772,38 @@ window.RODOKMEN = {
       maiden: "Duda",
       line: "jirik",
       cert: "M",
-      b: {"date":"cca 1770","year":1770,"approx":true},
+      b: {"date":"cca 1772","year":1772,"approx":true,"place":"Bolatice"},
+      father: "stanislausDu",
       notes: [
-        "Matka Cyrilla (*1796): „Johanna gebohrne Dudin“."
+        "Matka Cyrilla (*1796): „Johanna gebohrne Dudin“.",
+        "Sňatek 1793 (21 let): „Johanna ehel. Tochter des Stanislaus Duda“; matka nejspíš Catharina Hrziwnatzky (sňatek 1762) – PRAVDĚPODOBNÉ.",
+        "Poslední dítě Anton *17. 1. 1807 (index)."
       ],
       sources: [
         "ZA Opava, NAD 165 Sbírka matrik, Bolatice H III 2 fol. 107"
       ],
       scans: [
+        {"f":"img/1793_snatek_irzik_duda.jpg","t":"Sňatek 12. 11. 1793 (H III 4 sken 25, č. 6)"},
         {"f":"img/1796_krest_cyrill_irzik.jpg","t":"Křest 3. 3. 1796 (H III 2 fol. 107)"}
+      ]
+    },
+    {
+      id: "stanislausDu",
+      name: "Stanislaus Duda",
+      line: "jirik",
+      cert: "M",
+      b: {"date":"cca 1740","year":1740,"approx":true},
+      occ: "krčmář (Kretschmer) v Bolaticích",
+      marriage: "8. 2. 1762, Bolatice – s Catharinou, dcerou Johanna Hrziwnatzkého",
+      notes: [
+        "Otec Johanny (sňatek 1793). Sňatek 1762: „Stanislaus Duda & Catharina filia Joannis Hrziwnatzky“ (H III 1 sken 54); syn Franz *1765, pozdější krčmář.",
+        "Jeho manželka Jana († 1789, 33 let) byla zřejmě druhá žena."
+      ],
+      sources: [
+        "ZA Opava, NAD 165 Sbírka matrik, Bolatice H III 4 sken 25; H III 1 sken 54"
+      ],
+      scans: [
+        {"f":"img/1793_snatek_irzik_duda.jpg","t":"Sňatek 12. 11. 1793 (H III 4 sken 25, č. 6)"}
       ]
     },
     {
@@ -3745,10 +3834,12 @@ window.RODOKMEN = {
       cert: "M",
       b: {"date":"10. 10. 1821 (podle indexu)","year":1821,"place":"Bolatice"},
       d: {"date":"před 30. 8. 1870","year":1869,"approx":true},
+      father: "valentinHe",
+      mother: "annaMariaPa",
       occ: "sedlák v Bolaticích",
       marriage: "15. 8. 1843, Bolatice – jako vdovec (22 let) s Victorií Theuer (19); svědci sedláci Jacob Snehotta a Franz Theuer",
       notes: [
-        "Syn † sedláka Valentina Herudka; matka podle indexu a sňatku bratra 1845 Maria roz. Pawlowsky, v křtu vnučky 1848 „Anna“ – rozpor neuzavřen.",
+        "Syn † sedláka Valentina Herudka a Marie roz. Pawlowsky (index N; matka v křtu vnučky 1848 chybně „Anna“). Rodiče se vzali 20. 6. 1815.",
         "Narozen podle indexu 10. 10. 1821 (H III 3 fol. 48); při sňatku 1843 už vdovec – první manželka nejspíš Veronika Kollarczik (dcera Monica *1841, K).",
         "Zemřel před 30. 8. 1870."
       ],
@@ -3758,6 +3849,44 @@ window.RODOKMEN = {
       scans: [
         {"f":"img/1843_snatek_herudek_theuer.jpg","t":"Sňatek 15. 8. 1843 (H III 8 sken 6, č. 9)"},
         {"f":"img/1848_krest_maria_herudek.jpg","t":"Křest 12. 8. 1848 (H III 3 sken 171)"}
+      ]
+    },
+    {
+      id: "valentinHe",
+      name: "Valentin Herudek",
+      line: "jirik",
+      cert: "D",
+      b: {"date":"8. 2. 1791 (podle indexu)","year":1791,"place":"Bolatice"},
+      d: {"date":"před 1843","year":1842,"approx":true},
+      occ: "sedlák v Bolaticích",
+      marriage: "20. 6. 1815, Bolatice – s Annou Marií Pawlowsky (oba 24)",
+      notes: [
+        "Sňatek 1815: „Juvenis Valentinus filius defuncti Martini Herudek coloni cum virgine Anna Maria filia Francisci Pawlosky casarii“.",
+        "Otec Josefa (*10. 10. 1821, podle indexu H III 11 – D), Johanna 1819, Veroniky 1824.",
+        "Rodiče: † sedlák Martin Herudek × Ludmilla (index: „Halenta/Walenta?“)."
+      ],
+      sources: [
+        "ZA Opava, NAD 165 Sbírka matrik, Bolatice H III 4 sken 63; index H III 11"
+      ],
+      scans: [
+        {"f":"img/1815_snatek_herudek_pawlowsky.jpg","t":"Sňatek 20. 6. 1815 (H III 4 sken 63)"}
+      ]
+    },
+    {
+      id: "annaMariaPa",
+      name: "Anna Maria Herudek",
+      maiden: "Pawlowsky",
+      line: "jirik",
+      cert: "D",
+      b: {"date":"cca 1791","year":1791,"approx":true},
+      notes: [
+        "Dcera domkáře Franze Pawlowského (sňatek 1815)."
+      ],
+      sources: [
+        "ZA Opava, NAD 165 Sbírka matrik, Bolatice H III 4 sken 63"
+      ],
+      scans: [
+        {"f":"img/1815_snatek_herudek_pawlowsky.jpg","t":"Sňatek 20. 6. 1815 (H III 4 sken 63)"}
       ]
     },
     {
@@ -4228,7 +4357,7 @@ window.RODOKMEN.events = [
   {"y":1993,"t":"Vzniká Česká republika","s":"Vznik ČR"}
 ];
 
-window.RODOKMEN_BUILD='7. 10. 2026 9:28';
+window.RODOKMEN_BUILD='7. 10. 2026 9:32';
 
 </script>
 <script>
