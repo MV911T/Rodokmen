@@ -23,7 +23,10 @@ window.RODOKMEN_GAZ = [
   // Hlučínsko a Ratibořsko
   { n: 'Chuchelná', a: ['Chuchelná', 'Kuchelna'], lat: 50.0, lon: 18.03 },
   { n: 'Krzanowice', a: ['Krzanowice'], lat: 50.01, lon: 18.12 },
-  { n: 'Rohov (Strandorf)', a: ['Strandorf', 'Rohov'], lat: 49.98, lon: 18.08 },
+  { n: 'Strahovice (Strandorf)', a: ['Strahovice', 'Strandorf'], lat: 50.005, lon: 18.075 },
+  { n: 'Rohov', a: ['Rohov'], lat: 49.99, lon: 18.05 },
+  { n: 'Borucin (Borutín)', a: ['Borutín', 'Borucin', 'Borutin'], lat: 50.0, lon: 18.16 },
+  { n: 'Dobroslavice', a: ['Dobroslavice'], lat: 49.875, lon: 18.135 },
   { n: 'Bolatice', a: ['Bolatice'], lat: 49.95, lon: 18.08 },
   { n: 'Ehrenfeld (Sławienko)', a: ['Ehrenfeld', 'Sławienko'], lat: 50.17, lon: 18.16 },
   { n: 'Schonowitz (Szonowice)', a: ['Schonowitz', 'Szonowice'], lat: 50.13, lon: 18.11 },

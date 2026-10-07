@@ -2359,17 +2359,18 @@ window.RODOKMEN = {
       line: "struz",
       cert: "M",
       b: {"date":"7. 10. 1805","year":1805,"place":"Chuchelná"},
-      d: {"date":"před 1901","year":1880,"approx":true},
+      d: {"date":"5. 12. 1842","year":1842,"place":"Chuchelná"},
       father: "valentinS",
       mother: "catharinaKr",
       occ: "zahradník (Gärtner) v Chuchelné",
       marriage: "31. 1. 1826, Krzanowice – s Mariannou Wolf (on 21, ona 20); svědci Jacob Saiczek a mlynář Franz Sperling z Chuchelné",
       notes: [
-        "Narozen 7. 10. 1805 v 18 h v Chuchelné, pokřtěn 8. 10.: syn zahradníka Valentina Strusche a Cathariny roz. Kremer; kmotři zahradník Lorenz Hawrlim (?) a Veronica, vdova po zahradníkovi Valentinu Nahlikovi.",
+        "Narozen 7. 10. 1805 v 18 h v Chuchelné, pokřtěn 8. 10.: syn zahradníka Valentina Strusche a Cathariny roz. Holeczek (v tomto zápisu chybně „Kremer“); kmotři zahradník Lorenz Hawrlim (?) a Veronica, vdova po zahradníkovi Valentinu Nahlikovi.",
+        "Zemřel 5. 12. 1842 v Chuchelné jako zahradník, 36 let.",
         "Při sňatku 1826 svobodný, 21 let, syn zahradníka z Chuchelné.",
         "Děti: Johann *6. 6. 1832, Joseph *19. 11. 1834, Josepha *31. 3. 1836, Anna 1841 (index FS).",
-        "Sestra (D): Cäcilia, provd. za zahradníka Mathaea Morawetze (syn Mathaeus *21. 9. 1835).",
-        "Kandidáti na příbuzné (K): zahradník a později výměnkář Andres Strusch (kmotr 1832, dcera Ulianna provd. 1831); domkář Nicolaus Strusch × Barbara (děti 1833, 1836)."
+        "Sestra: Cäcilia *20. 9. 1801, provd. 21. 1. 1823 za zahradnického syna Mathese Morawetze.",
+        "Bratr (PRAVDĚPODOBNĚ): domkář Nicolaus Strusch (*1798, sňatek 3. 8. 1819 s Barbarou, dcerou Jacoba Saiczka). Kandidát na příbuzného (K): zahradník Andres Strusch (kmotr 1832)."
       ],
       sources: [
         "Silius Radicum – Krzanowice křty 1805 Nr 123 (složka 338, snímek 0042)",
@@ -2378,7 +2379,8 @@ window.RODOKMEN = {
       scans: [
         {"f":"img/1805_krest_heinrich_strusch.jpg","t":"Křest 8. 10. 1805, Chuchelná (Krzanowice 1805 Nr 123)"},
         {"f":"img/1826_snatek_strusch_wolf.jpg","t":"Sňatek 31. 1. 1826 (Krzanowice 1826 Nr. 12)"},
-        {"f":"img/1832_krest_johann_strusch.jpg","t":"Křest 7. 6. 1832 (Krzanowice 1832 Nr. 74)"}
+        {"f":"img/1832_krest_johann_strusch.jpg","t":"Křest 7. 6. 1832 (Krzanowice 1832 Nr. 74)"},
+        {"f":"img/1842_umrti_heinrich_strusch.jpg","t":"Úmrtí 5. 12. 1842, 36 let (474/0017)"}
       ]
     },
     {
@@ -2386,36 +2388,94 @@ window.RODOKMEN = {
       name: "Valentin Strusch",
       line: "struz",
       cert: "M",
-      b: {"date":"cca 1775","year":1775,"approx":true},
-      occ: "zahradník (Gärtner) v Chuchelné",
+      b: {"date":"cca 1770–1776","year":1773,"approx":true,"place":"Rohov (?)"},
+      d: {"date":"25. 7. 1830","year":1830,"place":"Chuchelná"},
+      cause: "zápal plic",
+      father: "mathiasS",
+      mother: "rosinaGa",
+      occ: "zahradník (Gärtner) v Chuchelné, na stáří výměnkář",
+      marriage: "20. 1. 1795, Krzanowice – s Catharinou Holeczek (podle rodopisu OFB, D)",
       notes: [
-        "Otec Heinricha (*1805) a Cäcilie (provd. Morawetz); manželka Catharina roz. Kremer.",
-        "Nejstarší doložený Strusch. Křty Krzanowic jsou na Silius Radicum až od roku 1800 – starší originály v diecézním archivu; dál pozemkové prameny velkostatku Chuchelná (ZA Opava) – zahradnická usedlost."
+        "Zemřel 25. 7. 1830 v Chuchelné jako výměnkář, 54 let, na zápal plic: „Valentin Strusch Auszügler aus Kuchelna … 54 Jahr alt an Lungenentzündung“.",
+        "Děti: Catharina 1796 († 1801), Nicolaus 1798 (sňatek 1819 s Barbarou Saiczek), Cäcilia *20. 9. 1801 (sňatek 1823 s Mathesem Morawetzem), Heinrich *7. 10. 1805.",
+        "Podle rodopisu Krzanowic (OFB, index – D): narozen 21. 2. 1770 v Rohově, syn Mathiase Strusche a Rosiny Gadacz (pramen OFB: křty Sudice H XVI 2); věk 54 při úmrtí ukazuje spíš na 1776 – ověřit v originále."
       ],
       sources: [
-        "Silius Radicum – Krzanowice křty 1805 Nr 123",
-        "Krzanowice křty 1835 (složka 368, snímek 0047)"
+        "Silius Radicum – duplikáty Krzanowice křty 1805 Nr 123, 1801 Nr 95; úmrtí 1830 Nr 76 (462/0012)",
+        "OFB Kranowitz https://ofb.genealogy.net/kranowitz (I25411)"
       ],
       scans: [
+        {"f":"img/1830_umrti_valentin_strusch.jpg","t":"Úmrtí 25. 7. 1830, 54 let (462/0012)"},
+        {"f":"img/1801_krest_caecilia_strusch.jpg","t":"Křest sestry Cäcilie 20. 9. 1801 – matka „Catharina geb. Joseph Holeczek“ (334/0033)"},
         {"f":"img/1805_krest_heinrich_strusch.jpg","t":"Křest 8. 10. 1805, Chuchelná (Krzanowice 1805 Nr 123)"},
         {"f":"img/1835_krest_morawetz_caecilia_strusch.jpg","t":"Křest synovce 1835 – matka Cäcilia roz. Strusch, dcera Valentina"}
       ]
     },
     {
-      id: "catharinaKr",
-      name: "Catharina Strusch",
-      maiden: "Kremer",
+      id: "mathiasS",
+      name: "Mathias Strusch",
       line: "struz",
-      cert: "M",
-      b: {"date":"cca 1780","year":1780,"approx":true},
+      cert: "D",
+      b: {"date":"cca 1740","year":1740,"approx":true},
+      d: {"date":"před 1795","year":1794,"approx":true},
       notes: [
-        "Manželka Valentina Strusche, matka Heinricha (*1805)."
+        "Podle rodopisu Krzanowic (OFB, index – D) otec Valentina (*1770 Rohov); zemřel před lednem 1795. Ověřit v matrikách Sudice (H XVI 2) a Krzanowice (ZA Opava)."
       ],
       sources: [
-        "Silius Radicum – Krzanowice křty 1805 Nr 123"
+        "OFB Kranowitz (I25411)"
+      ]
+    },
+    {
+      id: "rosinaGa",
+      name: "Rosina Strusch",
+      maiden: "Gadacz",
+      line: "struz",
+      cert: "D",
+      b: {"date":"cca 1745","year":1745,"approx":true},
+      notes: [
+        "Podle rodopisu OFB matka Valentina Strusche (D)."
+      ],
+      sources: [
+        "OFB Kranowitz"
+      ]
+    },
+    {
+      id: "catharinaKr",
+      name: "Catharina Strusch",
+      maiden: "Holeczek",
+      line: "struz",
+      cert: "M",
+      b: {"date":"cca 1772","year":1772,"approx":true},
+      d: {"date":"9. 1. 1829","year":1829,"place":"Chuchelná"},
+      cause: "souchotiny (Hektik)",
+      father: "josefHol",
+      notes: [
+        "Dcera Josepha Holeczka: „Catharina geborene Joseph Holeczek“ (křest dcery Cäcilie 1801). V křtu Heinricha 1805 je zapsána „geb. Kremer“ – titíž kmotři, tedy týž pár; nejspíš chyba duplikátu.",
+        "Zemřela 9. 1. 1829 v Chuchelné, 56 let, na souchotiny."
+      ],
+      sources: [
+        "Silius Radicum – duplikáty Krzanowice křty 1801 Nr 95, 1805 Nr 123; úmrtí 1829 Nr 7 (461/0002)"
       ],
       scans: [
+        {"f":"img/1801_krest_caecilia_strusch.jpg","t":"Křest sestry Cäcilie 20. 9. 1801 – matka „Catharina geb. Joseph Holeczek“ (334/0033)"},
+        {"f":"img/1829_umrti_catharina_strusch.jpg","t":"Úmrtí 9. 1. 1829, 56 let (461/0002)"},
         {"f":"img/1805_krest_heinrich_strusch.jpg","t":"Křest 8. 10. 1805, Chuchelná (Krzanowice 1805 Nr 123)"}
+      ]
+    },
+    {
+      id: "josefHol",
+      name: "Joseph Holeczek",
+      line: "struz",
+      cert: "M",
+      b: {"date":"cca 1745","year":1745,"approx":true},
+      notes: [
+        "Otec Cathariny Strusch (křest vnučky Cäcilie 1801: „Catharina geborene Joseph Holeczek“)."
+      ],
+      sources: [
+        "Silius Radicum – duplikáty Krzanowice křty 1801 Nr 95"
+      ],
+      scans: [
+        {"f":"img/1801_krest_caecilia_strusch.jpg","t":"Křest sestry Cäcilie 20. 9. 1801 – matka „Catharina geb. Joseph Holeczek“ (334/0033)"}
       ]
     },
     {
@@ -2426,9 +2486,10 @@ window.RODOKMEN = {
       cert: "M",
       b: {"date":"cca 1806","year":1806,"approx":true},
       d: {"date":"před 1901","year":1880,"approx":true},
+      father: "valentinWo",
       notes: [
         "Dcera Valentina Wolfa, panského šafáře (herrschaftlicher Schaffer); při sňatku 1826 20 let.",
-        "Otec Valentin Wolf zemřel před květnem 1834; Franz Wolf (kmotr 1834) byl nejspíš její bratr (K). Křest není v Krzanowicích 1805–1806."
+        "Rodina žila kolem 1813 v Borutíně (sestra Barbara kmotrou), proto křest není v Krzanowicích 1801–1814."
       ],
       sources: [
         "Krzanowice sňatky 1826 Nr. 12"
@@ -2439,11 +2500,31 @@ window.RODOKMEN = {
       ]
     },
     {
+      id: "valentinWo",
+      name: "Valentin Wolf (Wolff)",
+      line: "struz",
+      cert: "M",
+      b: {"date":"cca 1758","year":1758,"approx":true},
+      d: {"date":"17. 12. 1830","year":1830,"place":"Chuchelná"},
+      cause: "vodnatelnost",
+      occ: "panský šafář (herrschaftlicher Schaffer), Borutín, pak Chuchelná",
+      notes: [
+        "Zemřel 17. 12. 1830 v Chuchelné, 72 let, na vodnatelnost: „Valentin Wolff herrschaftlicher Schaffer aus Kuchelna“.",
+        "Děti: Marianna (sňatek 1826), Barbara (kmotra v Borutíně 1813), Franz (kmotr 1834)."
+      ],
+      sources: [
+        "Silius Radicum – duplikáty Krzanowice úmrtí 1830 Nr 180 (462/0027); sňatky 1826 Nr 12"
+      ],
+      scans: [
+        {"f":"img/1830_umrti_valentin_wolff.jpg","t":"Úmrtí 17. 12. 1830, 72 let (462/0027)"}
+      ]
+    },
+    {
       id: "carlKu",
       name: "Carl Kussin",
       line: "struz",
       cert: "M",
-      b: {"date":"cca 1809","year":1809,"approx":true,"place":"Chuchelná"},
+      b: {"date":"8. 10. 1808","year":1808,"place":"Chuchelná"},
       d: {"date":"26. 9. 1836","year":1836,"place":"Chuchelná"},
       cause: "mrtvice (am Schlag)",
       father: "sebastianKu",
@@ -2452,14 +2533,15 @@ window.RODOKMEN = {
       notes: [
         "Zemřel 26. 9. 1836 ve 27 letech, pohřben 29. 9.; dcera Marianna se narodila až po jeho smrti.",
         "Děti s Rosalií: Marianna *28. 6. 1833 (zemřela před 1837), Alexander *8. 10. 1834, Marianna *1. 4. 1837.",
-        "Rodiče pravděpodobně (D) zahradník Sebastian Kussin a Theresia roz. Stasik (?) – rodiče jeho sestry Johanny (*14. 4. 1806); sestra Catharina (provd. 1835 Kratzner) je výslovně „geb. Sebastian Kussin“. Jeho vlastní křest v Krzanowicích 1809 není.",
-        "Sňatek s Rosalií není v Krzanowicích 1824–1842 – nejspíš jinde nebo před 1824."
+        "Narozen 8. 10. 1808 ve 22 h v Chuchelné, pokřtěn 9. 10.: syn domkáře Sebastiana Kussina a Theresie roz. Stasik, dcery Josepha Stasika. Sourozenci Johanna 1806, Catharina 1811, Marianna 1814 († 1837) a další.",
+        "Sňatek s Rosalií není v duplikátech Krzanowic 1813–1842 – hledat v originálních matrikách Krzanowic (ZA Opava, 1688–1850)."
       ],
       sources: [
         "Silius Radicum – Krzanowice úmrtí 1836 Nr. 92 (složka 468, snímek 0013)",
         "Krzanowice křty 1833 Nr 94 (366/0032), 1834 Nr 153 (367/0051), 1806 (339/0017)"
       ],
       scans: [
+        {"f":"img/1808_krest_carl_kussin.jpg","t":"Křest 9. 10. 1808 (341/0045 Nr 135)"},
         {"f":"img/1836_umrti_carl_kussin.jpg","t":"Úmrtí 26. 9. 1836 (Krzanowice 1836 Nr. 92)"},
         {"f":"img/1837_krest_marianna_kussin.jpg","t":"Křest 2. 4. 1837 (Krzanowice 1837 Nr. 58)"}
       ]
@@ -2468,30 +2550,44 @@ window.RODOKMEN = {
       id: "sebastianKu",
       name: "Sebastian Kussin",
       line: "struz",
-      cert: "D",
-      b: {"date":"cca 1775","year":1775,"approx":true},
-      d: {"date":"před 4/1837","year":1836,"approx":true},
-      occ: "zahradník v Chuchelné",
+      cert: "M",
+      b: {"date":"cca 1776","year":1776,"approx":true,"place":"Dobroslavice (?)"},
+      d: {"date":"25. 12. 1823","year":1823,"place":"Chuchelná"},
+      cause: "souchotiny (Hektik)",
+      occ: "domkář (Häusler) v Chuchelné; podle OFB sedlák z Dobroslavic",
+      marriage: "29. 1. 1805, Krzanowice – s Theresií Stasik (podle OFB, D)",
       notes: [
-        "Pravděpodobný otec Carla (D); doložen jako otec Johanny (*14. 4. 1806), Cathariny (provd. 1835) a Marianny; manželka Theresia roz. Stasik (?).",
-        "Zemřel před dubnem 1837 („nach dem verstorbenen Gärtner Sebastian Kussin“)."
+        "Otec Carla (křest 1808: „Häusler Sebastian Kussin × Theresia geb. Joseph Stasik“), Johanny (1806), Cathariny (1811), Marianny (1814).",
+        "Zemřel 25. 12. 1823 v Chuchelné, 47 let („Sebastian Gusin Häusler“).",
+        "Podle rodopisu OFB (D): „Bauer aus Dobroslawitz“; další děti Josef 1816, Jakob 1818, Peter 1819, Veronika 1823."
       ],
       sources: [
-        "Silius Radicum – Krzanowice křty 1806 (339/0017), 1835 (368/0043), 1837 (370/0021)"
+        "Silius Radicum – duplikáty Krzanowice křty 1808 Nr 135 (341/0045); úmrtí 1823 Nr 154 (455/0022)",
+        "OFB Kranowitz (I11930)"
+      ],
+      scans: [
+        {"f":"img/1808_krest_carl_kussin.jpg","t":"Křest 9. 10. 1808 (341/0045 Nr 135)"},
+        {"f":"img/1823_umrti_sebastian_kussin.jpg","t":"Úmrtí 25. 12. 1823, 47 let (455/0022)"}
       ]
     },
     {
       id: "theresiaSt",
       name: "Theresia Kussin",
-      maiden: "Stasik (?)",
+      maiden: "Stasik",
       line: "struz",
-      cert: "D",
-      b: {"date":"?","year":1780,"approx":true},
+      cert: "M",
+      b: {"date":"1. 8. 1782 (podle OFB)","year":1782,"place":"Chuchelná"},
+      d: {"date":"28. 3. 1838","year":1838,"place":"Chuchelná"},
       notes: [
-        "Manželka Sebastiana Kussina, matka Johanny (*1806); čtení příjmení nejisté."
+        "Dcera Josepha Stasika (křest syna Carla 1808).",
+        "Zemřela 28. 3. 1838 jako vdova po výměnkáři Sebastianu Kussinovi, 60 let; narození 1. 8. 1782 podle rodopisu OFB (D)."
       ],
       sources: [
-        "Silius Radicum – Krzanowice křty 1806 (339/0017)"
+        "Silius Radicum – duplikáty Krzanowice křty 1808 Nr 135; úmrtí 1838 Nr 44 (470/0007)"
+      ],
+      scans: [
+        {"f":"img/1808_krest_carl_kussin.jpg","t":"Křest 9. 10. 1808 (341/0045 Nr 135)"},
+        {"f":"img/1838_umrti_theresia_kussin.jpg","t":"Úmrtí 28. 3. 1838, 60 let (470/0007)"}
       ]
     },
     {
@@ -2504,7 +2600,8 @@ window.RODOKMEN = {
       notes: [
         "Dcera Matthäuse Lassaka.",
         "Jako vdova (32 let) se 4. 7. 1837 znovu vdala za Josepha Latku (24), syna zahradníka z Chuchelné.",
-        "Křest není v Krzanowicích 1804–1806 – Lassakové žili v Borutíně a Strandorfu."
+        "Křest není v Krzanowicích 1804–1806 – Lassakové žili v Borutíně a Strandorfu.",
+        "Hypotéza (K): otec Mathias Lasak, výměnkář, zemřel 18. 12. 1823 ve věku 65 (455/0022; „aus Borutin“?, OFB uvádí Strandorf); OFB uvádí rodiče Mathias Lassak × Susanna Socha – neověřeno."
       ],
       sources: [
         "křest dcery Marianny 1837 (Krzanowice Nr. 58)"
@@ -2571,20 +2668,62 @@ window.RODOKMEN = {
       name: "Josef Komarek",
       line: "struz",
       cert: "M",
-      b: {"date":"cca 1813","year":1813,"approx":true,"place":"Strandorf (Rohov)"},
+      b: {"date":"19. 3. 1813","year":1813,"place":"Strahovice (Strandorf)"},
+      father: "thomasKo",
+      mother: "magdalenaKr",
       occ: "zahradník v Chuchelné",
       marriage: "29. 1. 1839, Krzanowice – s Johannou Jureczkovou (oba 26); svědci šafář Blasius Stoppa (?) a měšťan Carl Jureczka z Krzanowic",
       notes: [
-        "Při sňatku 1839 svobodný, 26 let, syn zahradníka, narozen ve Strandorfu – křest tedy v tamní farnosti."
+        "Narozen a pokřtěn 19. 3. 1813 ve Strandorfu (Strahovice): syn domkáře Thomase Komarka a Magdaleny roz. Krautwurst, dcery Johanna Krautwursta.",
+        "Při sňatku 1839 svobodný, 26 let, syn zahradníka."
       ],
       sources: [
         "Silius Radicum – ASC Krzanowice sňatky 1839 Nr. 6 (složka 422, snímek 0003)"
       ],
       scans: [
+        {"f":"img/1813_krest_joseph_komarek.jpg","t":"Křest 19. 3. 1813, Strandorf (346/0011 Nr 28)"},
         {"f":"img/1839_snatek_komarek_jureczka.jpg","t":"Sňatek 29. 1. 1839 (Krzanowice 1839 Nr 6)"},
         {"f":"img/1841_krest_carl_komarek.jpg","t":"Křest 17. 11. 1841 (Krzanowice 1841 Nr 160)"},
         {"f":"img/1839_snatek_komarek_jureczka.jpg","t":"Sňatek 29. 1. 1839, Krzanowice"},
         {"f":"img/1841_krest_carl_komarek.jpg","t":"Křest 17. 11. 1841 (Krzanowice 1841 Nr. 160)"}
+      ]
+    },
+    {
+      id: "thomasKo",
+      name: "Thomas Komarek",
+      line: "struz",
+      cert: "M",
+      b: {"date":"cca 1783","year":1783,"approx":true},
+      d: {"date":"1871 (podle OFB)","year":1871,"place":"Strahovice"},
+      occ: "domkář ve Strandorfu (Strahovice)",
+      marriage: "9. 11. 1808 – s Magdalenou Krautwurst (podle OFB, D)",
+      notes: [
+        "Otec Josefa (křest 1813).",
+        "Podle OFB (D): syn Paula Komarka, zemřel 1871 ve Strandorfu."
+      ],
+      sources: [
+        "Silius Radicum – duplikáty Krzanowice křty 1813 Nr 28 (346/0011)",
+        "OFB Kranowitz"
+      ],
+      scans: [
+        {"f":"img/1813_krest_joseph_komarek.jpg","t":"Křest 19. 3. 1813, Strandorf (346/0011 Nr 28)"}
+      ]
+    },
+    {
+      id: "magdalenaKr",
+      name: "Magdalena Komarek",
+      maiden: "Krautwurst",
+      line: "struz",
+      cert: "M",
+      b: {"date":"23. 5. 1787 (podle OFB)","year":1787},
+      notes: [
+        "Dcera Johanna Krautwursta (křest syna Josefa 1813)."
+      ],
+      sources: [
+        "Silius Radicum – duplikáty Krzanowice křty 1813 Nr 28"
+      ],
+      scans: [
+        {"f":"img/1813_krest_joseph_komarek.jpg","t":"Křest 19. 3. 1813, Strandorf (346/0011 Nr 28)"}
       ]
     },
     {
@@ -2593,15 +2732,18 @@ window.RODOKMEN = {
       maiden: "Jureczka",
       line: "struz",
       cert: "M",
-      b: {"date":"cca 1813","year":1813,"approx":true,"place":"Krzanowice"},
+      b: {"date":"8. 4. 1813","year":1813,"place":"Krzanowice"},
       father: "janJu",
+      mother: "catharinaRe",
       notes: [
-        "Dcera měšťana Johanna Jureczky z Krzanowic; při sňatku 1839 26 let."
+        "Narozena a pokřtěna 8. 4. 1813 v Krzanowicích: dcera domkáře a vojáka na dovolené Johanna Jureczky a Cathariny roz. Restel, dcery Sebastiana Restela.",
+        "Při sňatku 1839 26 let; otec tehdy měšťan."
       ],
       sources: [
         "ASC Krzanowice sňatky 1839 Nr. 6"
       ],
       scans: [
+        {"f":"img/1813_krest_johanna_jureczka.jpg","t":"Křest 8. 4. 1813, Krzanowice (346/0013 Nr 36)"},
         {"f":"img/1839_snatek_komarek_jureczka.jpg","t":"Sňatek 29. 1. 1839 (Krzanowice 1839 Nr 6)"},
         {"f":"img/1841_krest_carl_komarek.jpg","t":"Křest 17. 11. 1841 (Krzanowice 1841 Nr 160)"},
         {"f":"img/1839_snatek_komarek_jureczka.jpg","t":"Sňatek 29. 1. 1839, Krzanowice"},
@@ -2614,7 +2756,7 @@ window.RODOKMEN = {
       line: "struz",
       cert: "M",
       b: {"date":"cca 1785","year":1785,"approx":true},
-      occ: "měšťan v Krzanowicích",
+      occ: "domkář a voják na dovolené (1813), později měšťan v Krzanowicích",
       notes: [
         "Otec Johanny (sňatek 1839); svědkem byl měšťan Carl Jureczka (příbuzný)."
       ],
@@ -2622,7 +2764,25 @@ window.RODOKMEN = {
         "Silius Radicum – Krzanowice sňatky 1839 Nr 6 (422/0003)"
       ],
       scans: [
+        {"f":"img/1813_krest_johanna_jureczka.jpg","t":"Křest 8. 4. 1813, Krzanowice (346/0013 Nr 36)"},
         {"f":"img/1839_snatek_komarek_jureczka.jpg","t":"Sňatek 29. 1. 1839 (Krzanowice 1839 Nr 6)"}
+      ]
+    },
+    {
+      id: "catharinaRe",
+      name: "Catharina Jureczka",
+      maiden: "Restel",
+      line: "struz",
+      cert: "M",
+      b: {"date":"cca 1790","year":1790,"approx":true},
+      notes: [
+        "Dcera Sebastiana Restela; matka Johanny (*1813)."
+      ],
+      sources: [
+        "Silius Radicum – duplikáty Krzanowice křty 1813 Nr 36 (346/0013)"
+      ],
+      scans: [
+        {"f":"img/1813_krest_johanna_jureczka.jpg","t":"Křest 8. 4. 1813, Krzanowice (346/0013 Nr 36)"}
       ]
     },
     {
@@ -2630,16 +2790,19 @@ window.RODOKMEN = {
       name: "Johann Mitrenga",
       line: "struz",
       cert: "M",
-      b: {"date":"?","year":1810,"approx":true},
+      b: {"date":"cca 1802","year":1802,"approx":true,"place":"„Elgoth in Oesterreich“ (rakouské Slezsko)"},
       occ: "zahradník (Gärtner) v Chuchelné",
+      marriage: "11. 11. 1828, Krzanowice – s Josefou Zaiczek",
       notes: [
-        "Sňatek s Josefou Zaiczek není v duplikátech Krzanowic 1837–1840.",
-        "Zahradník v Chuchelné (1842), 1833 podruh; sňatek s Josefou Zaiczek není v Krzanowicích 1830–1842."
+        "Při sňatku 1828 svobodný, 26 let, čeledín (Dienstknecht), narozen v „Elgoth in Oesterreich“ (tj. v rakouské části Slezska; obec neurčena).",
+        "Zahradník v Chuchelné (1842), 1833 podruh.",
+        "Podle OFB (D): rodiče Johann Mitrenga a Thekla Zidek."
       ],
       sources: [
         "křest dcery Heleny 1842 (Krzanowice Nr. 71)"
       ],
       scans: [
+        {"f":"img/1828_snatek_mitrenga_zaiczek.jpg","t":"Sňatek 11. 11. 1828 (411/0011 Nr 43)"},
         {"f":"img/1842_krest_helena_mitrenga.jpg","t":"Křest 23. 5. 1842 (Krzanowice 1842 Nr. 71)"}
       ]
     },
@@ -2649,15 +2812,20 @@ window.RODOKMEN = {
       maiden: "Zaiczek (Zajiczek)",
       line: "struz",
       cert: "M",
-      b: {"date":"?","year":1815,"approx":true},
+      b: {"date":"21. 2. 1803","year":1803,"place":"Chuchelná"},
       father: "jacobZa",
+      mother: "veronikaKa",
+      marriage: "11. 11. 1828, Krzanowice – s Johannem Mitrengou (on 26, ona 25); svědci Joseph Thileczek a Joseph Morawetz z Chuchelné",
       notes: [
-        "Dcera Jacoba Zaiczka (křest dcery Heleny 1842)."
+        "Narozena 21. 2. 1803 v Chuchelné, pokřtěna 22. 2.: dcera domkáře Jacoba Zaiczka a Veroniky (rodné příjmení v zápisu nečitelné; podle OFB Katzmarczik).",
+        "Sestra Barbara se 1819 vdala za Nicolause Strusche – bratra Heinricha (rodiny se tu dvakrát prolínají)."
       ],
       sources: [
         "křest dcery Heleny 1842 (Krzanowice Nr. 71)"
       ],
       scans: [
+        {"f":"img/1803_krest_josepha_zaiczek.jpg","t":"Křest 22. 2. 1803 (336/0007 Nr 17)"},
+        {"f":"img/1828_snatek_mitrenga_zaiczek.jpg","t":"Sňatek 11. 11. 1828 (411/0011 Nr 43)"},
         {"f":"img/1842_krest_helena_mitrenga.jpg","t":"Křest 23. 5. 1842 (Krzanowice 1842 Nr 71)"},
         {"f":"img/1842_krest_helena_mitrenga.jpg","t":"Křest 23. 5. 1842 (Krzanowice 1842 Nr. 71)"}
       ]
@@ -2667,15 +2835,40 @@ window.RODOKMEN = {
       name: "Jacob Zaiczek",
       line: "struz",
       cert: "M",
-      b: {"date":"cca 1780","year":1780,"approx":true},
+      b: {"date":"cca 1760 (OFB: 2. 7. 1762, Krzanowice)","year":1760,"approx":true,"place":"Krzanowice"},
+      d: {"date":"28. 12. 1831","year":1831,"place":"Chuchelná"},
+      occ: "domkář, později výměnkář v Chuchelné",
+      marriage: "17. 10. 1787 – s Veronikou Katzmarczik (podle OFB, D)",
       notes: [
-        "Otec Josefy Mitrenga (křest vnučky Heleny 23. 5. 1842: „Josefa geb. Jacob Zaiczek“)."
+        "Otec Josefy (křest 1803) a Barbary (sňatek 1819).",
+        "Zemřel 28. 12. 1831 jako výměnkář, 72 let.",
+        "Podle OFB (D): narozen 2. 7. 1762 v Krzanowicích, syn Thomase Zaiczka († 1785) a Mariny Klicha."
       ],
       sources: [
         "Silius Radicum – Krzanowice křty 1842 Nr 71 (375/0019)"
       ],
       scans: [
-        {"f":"img/1842_krest_helena_mitrenga.jpg","t":"Křest 23. 5. 1842 (Krzanowice 1842 Nr 71)"}
+        {"f":"img/1803_krest_josepha_zaiczek.jpg","t":"Křest 22. 2. 1803 (336/0007 Nr 17)"},
+        {"f":"img/1831_umrti_jacob_zaiczek.jpg","t":"Úmrtí 28. 12. 1831, 72 let (463/0024)"}
+      ]
+    },
+    {
+      id: "veronikaKa",
+      name: "Veronika Zaiczek",
+      maiden: "Katzmarczik (?)",
+      line: "struz",
+      cert: "M",
+      b: {"date":"cca 1757","year":1757,"approx":true},
+      d: {"date":"2. 1. 1837","year":1837,"place":"Chuchelná"},
+      notes: [
+        "Manželka Jacoba Zaiczka, matka Josefy (1803); rodné příjmení podle OFB, v křtu nečitelné.",
+        "Zemřela 2. 1. 1837 v 80 letech (469/0002)."
+      ],
+      sources: [
+        "Silius Radicum – duplikáty Krzanowice křty 1803 Nr 17; úmrtí 1837 (469/0002)"
+      ],
+      scans: [
+        {"f":"img/1803_krest_josepha_zaiczek.jpg","t":"Křest 22. 2. 1803 (336/0007 Nr 17)"}
       ]
     },
     {
