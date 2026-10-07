@@ -3653,18 +3653,21 @@ window.RODOKMEN = {
       father: "thomasCz",
       mother: "franziskaKow",
       occ: "zahradník (Gärtner) ve Schonowitz",
-      marriage: "14. 7. 1840, Rudnik – s Lucií Blania (on 23, ona 20; podle OFB Rudnik a Geneteky – D); 2. sňatek 1. 10. 1867 v Mosurau s Barbarou Strzodulla (31)",
+      marriage: "14. 7. 1840, Rudnik – s Lucií Blana (on 23, ona 20); svědci Anton Ceda ze Stöblau a Simon Czekalla ze Schonowitz; 2. sňatek 1. 10. 1867 v Mosurau s Barbarou Strzodulla (31)",
       notes: [
         "Pokřtěn 9. 3. 1817 ve Schonowitz: „Johann | Thomas Czenskowski Gärtner“, matka Franziska roz. Kowaczek (Grzędzin 4/7 sken 600–601 Nr 36) – že je to náš Johann, je PRAVDĚPODOBNÉ: rodopis OFB Grzendzin ho spojuje s Lucií i dětmi, věk při sňatku 1840 sedí (při 2. sňatku 1867 uvedeno 52).",
+        "Sňatek 1840 (sken): „Johann Cienschkowsky Junggesell | Schonowitz | Robothg. | 23 – Lucia Blana Jungfer | Thomas Blana Robothg. von Silberkopf | 20 Jahr“ (rodiče ženicha formulář neuvádí).",
         "Děti s Lucií mj. Josepha 1844, Rosalia *6. 6. 1846, Vincent (†1870, 12 let), Valentin (†1862), Veronika (†1865). Úmrtí syna Vincenta 1870: „Vincent Sohn des Gtr. Johann Czienskowsky [u.] Lucya Blana“.",
         "Zemřel 11. 6. 1876 ve Schonowitz (OFB podle civilní matriky Schonowitz 1876 C 4 – D).",
         "Dřívější kandidáti na křest (13. 5. 1812, 2. 3. 1814) vyvráceni: Johann *1812 je ženich Mariany Schramowsky (†1882 Silberkopf)."
       ],
       sources: [
         "AP Opole 45/3251 Grzędzin 4/7 sken 600–601 (1817); 4/8 sken 491–492 (1867), 663–664 (1870) – https://www.szukajwarchiwach.gov.pl/jednostka/-/jednostka/5184278",
-        "OFB Grzendzin https://www.online-ofb.de/grzendzin (I15025); OFB Rudnik I8801/I8802"
+        "OFB Grzendzin https://www.online-ofb.de/grzendzin (I15025); OFB Rudnik I8801/I8802",
+        "AP Katowice, oddz. Racibórz, 18/13/0/19 (Rudnik, duplikáty; Silius Radicum), sygn. 1766, sken 0120"
       ],
       scans: [
+        {"f":"img/1840_snatek_czenskowski_blana.jpg","t":"Sňatek 14. 7. 1840, Rudnik Nr 9 (sygn. 1766, sken 0120)"},
         {"f":"img/1817_krest_johann_czenskowski.jpg","t":"Křest 9. 3. 1817, Schonowitz – otec Thomas Czenskowski, zahradník (4/7 sken 600 Nr 36)"},
         {"f":"img/1870_umrti_vincent_czienskowsky.jpg","t":"Úmrtí syna Vincenta 1. 8. 1870 – rodiče Johann a Lucya Blana (4/8 sken 663–664)"},
         {"f":"img/1867_snatek_johann_czenskowski_vdovec.jpg","t":"Druhý sňatek 1. 10. 1867 jako vdovec (4/8 sken 491)"},
@@ -3682,9 +3685,10 @@ window.RODOKMEN = {
       b: {"date":"cca 1795","year":1795,"approx":true,"place":"Schonowitz (?)"},
       d: {"date":"8. 4. 1860","year":1860,"place":"Schonowitz"},
       occ: "zahradník, na stáří výměnkář ve Schonowitz",
-      marriage: "21. 1. 1816, Slawikau – s Franziskou Kowaczek (podle OFB, D)",
+      marriage: "21. 1. 1816, Czerwentzitz (farnost Sławików) – s Franziskou Kowaczek (on 21, ona 26); svědci Urban Klabrom (?) a Johann Glowalla",
       notes: [
         "Otec Johanna (křest 1817: „Thomas Czenskowski Gärtner“).",
+        "Sňatek 1816 (sken): „Thomas Cienskowski Junggeselle | 21 – Franciska Kowaczek Jungfer | 26“ – rodiče neuvedeni (AP Racibórz 18/13/0/21 sygn. 1815, sken 0002).",
         "Zemřel 8. 4. 1860 ve Schonowitz jako výměnkář, 65 let (4/8 sken 57 Nr 44).",
         "Hypotéza (K): pokřtěn 21. 12. 1794 ve Schonowitz jako syn Lorenze Czienskowského († 1823) a Apollonie Ryczek (OFB I15044) – OFB to nespojuje."
       ],
@@ -3694,7 +3698,8 @@ window.RODOKMEN = {
       ],
       scans: [
         {"f":"img/1860_umrti_thomas_czienskowski.jpg","t":"Úmrtí Thomase 8. 4. 1860, 65 let (4/8 sken 57 Nr 44)"},
-        {"f":"img/1817_krest_johann_czenskowski.jpg","t":"Křest 9. 3. 1817, Schonowitz – otec Thomas Czenskowski, zahradník (4/7 sken 600 Nr 36)"}
+        {"f":"img/1817_krest_johann_czenskowski.jpg","t":"Křest 9. 3. 1817, Schonowitz – otec Thomas Czenskowski, zahradník (4/7 sken 600 Nr 36)"},
+        {"f":"img/1816_snatek_cienskowski_kowaczek.jpg","t":"Sňatek 21. 1. 1816, Czerwentzitz (Sławików sygn. 1815, sken 0002)"}
       ]
     },
     {
@@ -3728,8 +3733,8 @@ window.RODOKMEN = {
       mother: "rosaliaKal",
       notes: [
         "Zemřela 10. 1. 1866 ve Schonowitz, 45 let (*cca 1820/21): „Lucya geb. Blania Eheweib des Gärtners Johann Czienskowski“.",
-        "Rodné příjmení „Blania“ (1844, 1866) / „Blana“ (1846, 1870). Sňatek 14. 7. 1840 v Rudniku (OFB, Geneteka – D).",
-        "Rodiče (PRAVDĚPODOBNĚ, rodopis OFB Rudnik): Thomas Elias Blania, zahradník v Silberkopfu (1817 hlídač v Czienskowitz), a Rosalia Josepha Kaluza; křest Lucie v OFB není – nejspíš Polská Cerekev (Czienskowitz) cca 1820.",
+        "Rodné příjmení „Blania“ (1844, 1866) / „Blana“ (1840, 1846, 1870). Sňatek 14. 7. 1840 v Rudniku (sken): otec „Thomas Blana Robothg. von Silberkopf“, věk 20.",
+        "Otec doložen sňatkem 1840: Thomas Blana, robotní zahradník v Silberkopfu. Matka podle rodopisu OFB Rudnik Rosalia Josepha Kaluza (D); křest Lucie není v Polnisch Neukirch VII/1819–VII/1820 ani v Rudniku 1820–21.",
         "Kmotra dětí z rodu Herzog = dcera Franze Ignatze Herzoga, větrného mlynáře v Silberkopfu (sousedé).",
         "Další děti (PRAVDĚPODOBNĚ její): Valentin († 21. 6. 1862, 21 dní), Veronika (*cca 1864, † 24. 12. 1865).",
         "Kmotry dětí byli opakovaně Herzogové, mlynáři ze Silberkopf (farnost Grzędzin) – možná Luciina rodina nebo sousedé (K)."
@@ -3739,6 +3744,7 @@ window.RODOKMEN = {
         "křest dcery Rosalie 1846"
       ],
       scans: [
+        {"f":"img/1840_snatek_czenskowski_blana.jpg","t":"Sňatek 14. 7. 1840, Rudnik Nr 9 (sygn. 1766, sken 0120)"},
         {"f":"img/1866_umrti_lucia_czienskowski.jpg","t":"Úmrtí 10. 1. 1866, Schonowitz, 45 let (Grzędzin 4/8 sk. 431–432 Nr 4)"},
         {"f":"img/1841_kmotri_johann_a_lucia.jpg","t":"28. 5. 1841 kmotři „Joh. Czenschkowsky u. sein Weib Lucia“ (Grzędzin 4/1 sken 429 Nr 89)"},
         {"f":"img/1844_krest_josepha_czienskowsky.jpg","t":"Křest dcery Josephy 9. 2. 1844 – matka Lucia Blania (4/3 sken 86 Nr 28)"},
@@ -3750,17 +3756,43 @@ window.RODOKMEN = {
       id: "thomasBl",
       name: "Thomas Elias Blania",
       line: "opolony",
-      cert: "D",
+      cert: "M",
       b: {"date":"4. 7. 1782 (podle OFB)","year":1782,"place":"Rudnik"},
       d: {"date":"30. 9. 1859 (podle OFB)","year":1859},
-      occ: "zahradník v Silberkopfu, 1817 hlídač v Czienskowitz",
+      father: "johannesBl",
+      occ: "čeledín (1806), robotní zahradník v Silberkopfu",
       marriage: "13. 7. 1806, Silberkopf (kaple) – s Rosalií Josephou Kaluza (OFB)",
       notes: [
-        "Podle rodopisu OFB Rudnik (I4243) otec Lucie – D. Další děti: Catharina 1807, Jacob 1810, Anton 1813, Michael 1814, Marianna 1817.",
-        "Rodiče podle OFB: Johannes Blania (*cca 1755 Slawikau, †1814) × Magdalena Banas (1756–1821)."
+        "Otec Lucie (sňatek 1840: „Thomas Blana Robothg. von Silberkopf“).",
+        "Sňatek 13. 7. 1806 v Rudniku (sken): „Thomas Blania Junggesell | Silberkopf | 23 – Rosalia Kaluza Jungfer | Johannes Blania Inlieger in Silberkopf und Andreas Kaluza Freigärtner | 22“; svědci robotní zahradníci Lucas Kraykala, Mathias Wyglenda, Andreas Sobola a Anton Kaluza, všichni ze Silberkopfu.",
+        "Podle OFB (D): pokřtěn 4. 7. 1782 v Rudniku, 1817 hlídač v Czienskowitz, zemřel 30. 9. 1859; děti Catharina 1807, Jacob 1810, Anton 1813, Michael 1814, Marianna 1817."
       ],
       sources: [
-        "OFB Rudnik und Silberkopf (christoph-www.de) I4243"
+        "AP Katowice, oddz. Racibórz, 18/13/0/19 (Rudnik, duplikáty; Silius Radicum), sygn. 1730 sken 0005 (1806); sygn. 1766 sken 0120 (1840)",
+        "OFB Rudnik I4243"
+      ],
+      scans: [
+        {"f":"img/1806_snatek_blania_kaluza.jpg","t":"Sňatek 13. 7. 1806, Rudnik Nr 10 (sygn. 1730, sken 0005)"},
+        {"f":"img/1840_snatek_czenskowski_blana.jpg","t":"Sňatek 14. 7. 1840, Rudnik Nr 9 (sygn. 1766, sken 0120)"}
+      ]
+    },
+    {
+      id: "johannesBl",
+      name: "Johannes Blania",
+      line: "opolony",
+      cert: "M",
+      b: {"date":"cca 1755 (podle OFB, Sławików)","year":1755,"approx":true},
+      d: {"date":"18. 5. 1814 (podle OFB)","year":1814},
+      occ: "podruh (Inlieger) v Silberkopfu",
+      notes: [
+        "Otec Thomase (sňatek 1806: „Johannes Blania Inlieger in Silberkopf“).",
+        "Podle OFB (D): manželka Magdalena Banas (1756–1821)."
+      ],
+      sources: [
+        "AP Katowice, oddz. Racibórz, 18/13/0/19 (Rudnik, duplikáty; Silius Radicum), sygn. 1730 sken 0005"
+      ],
+      scans: [
+        {"f":"img/1806_snatek_blania_kaluza.jpg","t":"Sňatek 13. 7. 1806, Rudnik Nr 10 (sygn. 1730, sken 0005)"}
       ]
     },
     {
@@ -3771,11 +3803,35 @@ window.RODOKMEN = {
       cert: "D",
       b: {"date":"2. 9. 1787 (podle OFB)","year":1787,"place":"Rudnik"},
       d: {"date":"před 1827","year":1826,"approx":true},
+      father: "andreasKal",
       notes: [
-        "Podle OFB Rudnik (I4245) matka Lucie – D. Rodiče: Andreas Kaluza (*cca 1737, †1805) × Johanna Nepomucena Zima (1749–1806)."
+        "Sňatek 1806 (sken): dcera Andrease Kaluzy, svobodného zahradníka (Freigärtner); věk 22 (OFB: pokřtěna 2. 9. 1787 – rozpor).",
+        "Jako matka Lucie jen podle OFB (D); zemřela před 1827."
       ],
       sources: [
         "OFB Rudnik I4245"
+      ],
+      scans: [
+        {"f":"img/1806_snatek_blania_kaluza.jpg","t":"Sňatek 13. 7. 1806, Rudnik Nr 10 (sygn. 1730, sken 0005)"}
+      ]
+    },
+    {
+      id: "andreasKal",
+      name: "Andreas Kaluza",
+      line: "opolony",
+      cert: "M",
+      b: {"date":"cca 1737 (podle OFB)","year":1737,"approx":true},
+      d: {"date":"1805 (podle OFB)","year":1805},
+      occ: "svobodný zahradník (Freigärtner) v Silberkopfu",
+      notes: [
+        "Otec Rosalie (sňatek 1806).",
+        "Podle OFB (D): manželka Johanna Nepomucena Zima (1749–1806)."
+      ],
+      sources: [
+        "AP Katowice, oddz. Racibórz, 18/13/0/19 (Rudnik, duplikáty; Silius Radicum), sygn. 1730 sken 0005"
+      ],
+      scans: [
+        {"f":"img/1806_snatek_blania_kaluza.jpg","t":"Sňatek 13. 7. 1806, Rudnik Nr 10 (sygn. 1730, sken 0005)"}
       ]
     }
   ]
