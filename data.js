@@ -1386,6 +1386,9 @@ window.RODOKMEN = {
       cert: "M",
       b: {"date":"?","year":1710,"approx":true,"place":"Nedašova Lhota"},
       d: {"date":"před 1762","year":1761,"approx":true},
+      notes: [
+        "Hypotéza (K): v lánovém rejstříku 1670 je v Lhotě čtvrtláník Jan Machulčík (MZA D 1/312)."
+      ],
       sources: [
         "sňatek dcery Mariny 1762 (4012 img 160)"
       ],
@@ -1522,7 +1525,8 @@ window.RODOKMEN = {
         "Další dcera Kateřina pokř. 12. 11. 1757 („Dobias Pazik Molitor, Catharina uxor Nedašovio“); v roce 1757 tedy rodina žila v Nedašově. Tobiáš byl 1. 9. 1757 i kmotrem.",
         "Rodiče zatím nelze zjistit: brumovské matriky let 1706–1722 a 1727–1754 se nedochovaly (jen opisy vybraných let). V letech 1713–1757 je v Nedašově Lhotě („Zhota“) a Nedašově početný rod Fojtíků (Fogtík) – hypotéza: Tobiáš pochází od nich a „Pacík“ je jméno mlýna či usedlosti. Opisy 1688–1726 Pacíka vůbec neuvádějí, Fojtíků z Lhoty je mnoho – žádného nelze bez dalšího dokladu určit za otce.",
         "Další doložené děti s Kateřinou: Anna (pokř. 2. 8. 1763, otec zapsán „Fojtik seu Pacik“ – tj. Fojtík neboli Pacík) a Tobiáš ml. (pokř. 19. 11. 1766).",
-        "V matrikách psán Pazik / Pačík i Fojtík – rod Pacíků se v 18. století psal Fojtík."
+        "V matrikách psán Pazik / Pačík i Fojtík – rod Pacíků se v 18. století psal Fojtík.",
+        "Hypotéza (K): v lánovém rejstříku panství Brumov 1670 je v Lhotě čtvrtláník Jan Fojtík (dříve Václav Machač) – možný předek (MZA D 1/312, img 33–35)."
       ],
       sources: [
         "MZA Brumov sign. 4012, img 262"
@@ -1707,17 +1711,21 @@ window.RODOKMEN = {
       marriage: "31. 1. 1773, Nedašov – s Marinou Šuranovou",
       notes: [
         "Syn † Václava Matůšů (zemřel před 1773). Sňatek: „honestus adol. georgius filius † Wenceslai Matussuj, cum honesta Virg. Marina filia Josephi Ssuran Num. 79. ambo Nedascho.“ Svědci Martin Kolínek, Bartoš Birlog (?).",
-        "Úmrtí 25. 3. 1803, 63 let (tedy *cca 1740 – v mezeře matrik 1727–1754)."
+        "Úmrtí 25. 3. 1803, 63 let (tedy *cca 1740 – v mezeře matrik 1727–1754).",
+        "10. 3. 1785 koupil s Josefem Matůšů dvě čtvrtiny gruntu č. 18 lánového katastru (dům č. 67, předtím Josef Šuran – otec jeho manželky) – gruntovní kniha Nedašov II, fol. 65 (MZA C 17/11952, https://www.mza.cz/aron/apu/b299b13f-50e4-42eb-8dcc-993c43822945).",
+        "Hypotéza (K): v lánovém rejstříku 1670 jsou v Nedašově čtvrtláníci Martin a Mikuláš Matůšů – možní předkové (MZA D 1/312)."
       ],
       sources: [
         "Brumov 4012 img 183",
         "O 4023 img 110",
-        "Z 4034 img 272"
+        "Z 4034 img 272",
+        "MZA C 17/11952 fol. 65"
       ],
       scans: [
         {"f":"img/1773_snatek_matusu_suranova.jpg","t":"Sňatek 31. 1. 1773"},
         {"f":"img/1810_snatek_martin_matusu.jpg","t":"Sňatek syna Martina 1810 – otec už zemřelý"},
-        {"f":"img/1803_umrti_jiri_matusu.jpg","t":"Úmrtí 25. 3. 1803, Nedašov č. 67 (Z 4034 img 272)"}
+        {"f":"img/1803_umrti_jiri_matusu.jpg","t":"Úmrtí 25. 3. 1803, Nedašov č. 67 (Z 4034 img 272)"},
+        {"f":"img/1785_gruntovni_kniha_matusu.jpg","t":"Gruntovní kniha Nedašov II, fol. 65: grunt č. 67 prodán Josefu a Jiřímu Matůšů (1785)"}
       ]
     },
     {
@@ -1888,7 +1896,8 @@ window.RODOKMEN = {
       occ: "Nedašov",
       notes: [
         "Otec Mikuláše (křest 1. 11. 1714) – opis brumovské matriky; manželka Anna.",
-        "Sňatek nejspíš 1705–1713 (opis7 img 115–140, nečteno). V Nedašově žili i Ondřej Holba × Marina a Bartoloměj Holba × Anna (děti 1722–1725) – možná bratři."
+        "Sňatek nejspíš 1705–1713 (opis7 img 115–140, nečteno). V Nedašově žili i Ondřej Holba × Marina a Bartoloměj Holba × Anna (děti 1722–1725) – možná bratři.",
+        "Hypotéza (K): v lánovém rejstříku 1670 je v Nedašově „Kateřina, vdova po Matyáši Holbovi“, zahradnice (MZA D 1/312, img 41)."
       ],
       sources: [
         "Brumov opis7 img 171"
@@ -1982,7 +1991,8 @@ window.RODOKMEN = {
       b: {"date":"cca 1690","year":1690,"approx":true},
       occ: "Nedašova Lhota",
       notes: [
-        "Otec Mikuláše (křest 13. 9. 1715); další děti Martin (10. 10. 1718) a Jan (1719) – manželka Zuzana."
+        "Otec Mikuláše (křest 13. 9. 1715); další děti Martin (10. 10. 1718) a Jan (1719) – manželka Zuzana.",
+        "Hypotéza (K): v lánovém rejstříku 1670 je v Nedašově dvakrát Mikuláš Miřička (čtvrtláník a zahradník) – možný předek (MZA D 1/312, img 40–41)."
       ],
       sources: [
         "Brumov opis7 img 180, 203, 212"
@@ -2152,11 +2162,11 @@ window.RODOKMEN = {
       line: "matusu",
       cert: "M",
       b: {"date":"cca 1755","year":1755,"approx":true,"place":"Nedašov"},
+      father: "martinNo0",
       occ: "sedlák v Nedašově",
       marriage: "31. 1. 1779, Nedašov č. 45 – s Kateřinou Kolínkovou; svědci Josef Tomeček a Ondra Pindiak (?)",
       notes: [
-        "Sňatek 1779: „Josephus filius Martini Nowak cum … Catharina filia † Josephi Kolinek“ – syn Martina Nováka.",
-        "Matka nejspíš Alžběta, žena Martina Nováka st. († 16. 11. 1771, 60 let, Nedašov č. 45, 4012 img 245) – K."
+        "Sňatek 1779: „Josephus filius Martini Nowak cum … Catharina filia † Josephi Kolinek“ – syn Martina Nováka."
       ],
       sources: [
         "O 4023 img 106 (sňatek syna Martina 1802)"
@@ -2164,6 +2174,26 @@ window.RODOKMEN = {
       scans: [
         {"f":"img/1779_snatek_novak_kolinkova.jpg","t":"Sňatek 31. 1. 1779, Nedašov č. 45 (4012 img 192)"},
         {"f":"img/1802_snatek_novak_birlog.jpg","t":"Sňatek 25. 1. 1802, Nedašov č. 45"}
+      ]
+    },
+    {
+      id: "martinNo0",
+      name: "Martin Novák st.",
+      line: "matusu",
+      cert: "M",
+      b: {"date":"cca 1720","year":1720,"approx":true},
+      occ: "čtvrtláník v Nedašově č. 45",
+      notes: [
+        "Otec Josefa (sňatek 1779: „Josephus filius Martini Nowak“).",
+        "3. 12. 1782 mu vrchnost (hrabě Jan Křtitel Illésházy) zapsala čtvrtlánický grunt č. 45 do dědičného vlastnictví; po něm grunt držel Jan Novák († před 1821) a pak Bartoloměj Novák (gruntovní kniha Nedašov I, fol. 129).",
+        "Manželka nejspíš Alžběta († 16. 11. 1771, 60 let, Nedašov č. 45, 4012 img 245) – K."
+      ],
+      sources: [
+        "Brumov 4012 img 192 (sňatek syna 1779)",
+        "MZA, C 17 Pozemkové knihy, ukl. č. 11951 Gruntovní kniha Nedašov I (1726–1847), fol. 129, sken 132 – https://www.mza.cz/aron/apu/d42b4a10-4afa-40d6-bf0e-0e700d96be2a"
+      ],
+      scans: [
+        {"f":"img/1782_gruntovni_kniha_martin_novak.jpg","t":"Gruntovní kniha Nedašov I, fol. 129: Martin Novák kupuje čtvrtlánický grunt č. 45 (1782)"}
       ]
     },
     {
