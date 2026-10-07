@@ -401,7 +401,8 @@ window.RODOKMEN = {
       occ: "půlláník ve Věrovanech",
       notes: [
         "Syn Jana Plachého, výměnkáře ve Věrovanech, a Josefy roz. Opluštilové z Dubu.",
-        "Sňatek s Františkou Kočířovou (*1828) zatím nenalezen: není v Kralicích 1825–1874 (rejstřík), ve Věrovanech 1850–51 ani 1861–64 – zbývá Věrovany 1852–1860."
+        "Sňatek s Františkou Kočířovou (*1828) zatím nenalezen: není v Kralicích 1825–1874 (rejstřík), ve Věrovanech 1850–51 ani 1861–64 – zbývá Věrovany 1852–1860.",
+        "Rejstřík N Věrovany (D XII 18) uvádí „Plachy Joseph – s. 209“ – narození nejspíš cca 1833 (K). Sňatek s Františkou není ve Věrovanech 1850–51 ani 1855–60."
       ],
       sources: [
         "křest syna Jana 1864 (D XII 19, sken 75)"
@@ -444,7 +445,7 @@ window.RODOKMEN = {
       occ: "půlláník v Řepčíně",
       marriage: "24. 6. 1861, Řepčín – s Terezií Dosoudilovou (on 24, ona 21)",
       notes: [
-        "Sňatek 24. 6. 1861 v Řepčíně: Josef Vincour (Wincor), půlláník, 24 let, syn Josefa Vincoura, půlláníka v „N…“ (Nemilany ?), a Kateřiny roz. „Du…“ (?)."
+        "Sňatek 24. 6. 1861 v Řepčíně: Josef Vincour (Wincor), půlláník, 24 let, syn Josefa Vincoura, půlláníka v Neředíně, a Kateřiny roz. „Du…“ (?)."
       ],
       sources: [
         "ZA Opava, O Řepčín 1855–1883 (Ch V 13), sken 192",
@@ -513,16 +514,59 @@ window.RODOKMEN = {
       name: "Jan Kočíř",
       line: "vesely",
       cert: "M",
-      b: {"date":"?","year":1805,"approx":true,"place":"Kralice"},
-      occ: "sedlák v Kralicích č. 65, 1861 výměnkář",
+      b: {"date":"12. 12. 1801 (křest)","year":1801,"place":"Kralice na Hané č. 65"},
+      father: "jakubKo",
+      mother: "terezieSch",
+      occ: "sedlák v Kralicích č. 65",
+      marriage: "27. 1. 1824, Kralice – s Marianou Navrátilovou (on 21, ona 18), s otcovým svolením",
+      notes: [
+        "Pokřtěn 12. 12. 1801 v Kralicích č. 65: syn sedláka Jakoba Kočíře a Theresie roz. Schindlerové.",
+        "Sňatek 1824: „Johann Sohn des Jakob Kočíř Bauers alda … Mariana Tochter des Fabian Nawratil Bauers alda“; souhlas otce ženicha podepsán křížky."
+      ],
       sources: [
-        "křest vnuka Jana 1864 (D XII 19)",
-        "MZA 9181 sken 75 (křest dcery 1828), sken 28 (sňatek dcery 1861)"
+        "MZA, Kralice N 1784–1824 (sign. 9178, Acta Publica id 5776), sken 26",
+        "MZA, Kralice O 1784–1824 (sign. 9179, id 5777), sken 23"
       ],
       scans: [
-        {"f":"img/1828_krest_frantiska_kocirova.jpg","t":"Křest 6. 9. 1828, Kralice č. 65 (MZA 9181)"},
-        {"f":"img/1861_snatek_kocirova_sestra.jpg","t":"Sňatek sestry Mariany 1861 – rodiče Jan Kočíř a Mariana roz. Navrátilová"},
-        {"f":"img/1864_narozeni_jan_plachy.jpg","t":"Křest vnuka Jana 1864"}
+        {"f":"img/1801_krest_jan_kocir.jpg","t":"Křest 12. 12. 1801, Kralice č. 65 (MZA 9178 sken 26)"},
+        {"f":"img/1824_snatek_kocir_navratilova.jpg","t":"Sňatek 27. 1. 1824, Kralice č. 65 (MZA 9179 sken 23)"}
+      ]
+    },
+    {
+      id: "jakubKo",
+      name: "Jakub (Jakob) Kočíř",
+      line: "plachy",
+      cert: "M",
+      b: {"date":"cca 1770","year":1770,"approx":true},
+      occ: "sedlák v Kralicích č. 65",
+      notes: [
+        "Otec Jana (*1801); žil ještě 1824 (souhlas se sňatkem syna).",
+        "Sňatek není v Kralicích 1784–1824 – nejspíš před 1784 nebo jinde."
+      ],
+      sources: [
+        "MZA 9178 sken 26",
+        "MZA 9179 sken 23"
+      ],
+      scans: [
+        {"f":"img/1801_krest_jan_kocir.jpg","t":"Křest 12. 12. 1801, Kralice č. 65 (MZA 9178 sken 26)"},
+        {"f":"img/1824_snatek_kocir_navratilova.jpg","t":"Sňatek 27. 1. 1824, Kralice č. 65 (MZA 9179 sken 23)"}
+      ]
+    },
+    {
+      id: "terezieSch",
+      name: "Terezie Kočířová",
+      maiden: "Schindlerová",
+      line: "plachy",
+      cert: "M",
+      b: {"date":"cca 1775","year":1775,"approx":true},
+      notes: [
+        "Matka Jana (*1801): „Theresia Schindlerin“."
+      ],
+      sources: [
+        "MZA 9178 sken 26"
+      ],
+      scans: [
+        {"f":"img/1801_krest_jan_kocir.jpg","t":"Křest 12. 12. 1801, Kralice č. 65 (MZA 9178 sken 26)"}
       ]
     },
     {
@@ -531,18 +575,20 @@ window.RODOKMEN = {
       maiden: "Navrátilová",
       line: "vesely",
       cert: "M",
-      b: {"date":"?","year":1810,"approx":true,"place":"Kralice"},
+      b: {"date":"17. 12. 1805 (křest)","year":1805,"place":"Kralice na Hané č. 27"},
       father: "fabianNa",
+      mother: "katerinaNa",
       notes: [
-        "Dcera Fabiána Navrátila, výměnkáře / čtvrtláníka v Kralicích."
+        "Pokřtěna 17. 12. 1805 v Kralicích č. 27: dcera sedláka Fabiána Navrátila a Kateřiny roz. „Hr…“ (čtení nejisté).",
+        "Při sňatku 27. 1. 1824 18 let; později otec uváděn jako výměnkář / čtvrtláník."
       ],
       sources: [
-        "křest vnuka Jana 1864 (D XII 19)"
+        "MZA 9178 sken 31",
+        "MZA 9179 sken 23"
       ],
       scans: [
-        {"f":"img/1828_krest_frantiska_kocirova.jpg","t":"Křest 6. 9. 1828, Kralice č. 65 (MZA 9181)"},
-        {"f":"img/1861_snatek_kocirova_sestra.jpg","t":"Sňatek sestry Mariany 1861 – rodiče Jan Kočíř a Mariana roz. Navrátilová"},
-        {"f":"img/1864_narozeni_jan_plachy.jpg","t":"Křest vnuka Jana 1864"}
+        {"f":"img/1805_krest_mariana_navratilova.jpg","t":"Křest 17. 12. 1805, Kralice č. 27 (MZA 9178 sken 31)"},
+        {"f":"img/1824_snatek_kocir_navratilova.jpg","t":"Sňatek 27. 1. 1824, Kralice č. 65 (MZA 9179 sken 23)"}
       ]
     },
     {
@@ -550,15 +596,35 @@ window.RODOKMEN = {
       name: "Fabián Navrátil",
       line: "vesely",
       cert: "M",
-      b: {"date":"?","year":1775,"approx":true,"place":"Kralice na Hané"},
-      occ: "čtvrtláník, později výměnkář v Kralicích",
+      b: {"date":"cca 1775","year":1775,"approx":true},
+      occ: "sedlák v Kralicích č. 27, později výměnkář",
+      notes: [
+        "Otec Mariany (*1805); manželka Kateřina.",
+        "Sňatek není v Kralicích 1784–1824 – nejspíš před 1784. Fabián Navrátil, vdovec, 53 let, oddaný 1858 ve Věrovanech, je jiná osoba (*cca 1805)."
+      ],
       sources: [
-        "křest vnučky Františky 1828 (MZA 9181 sken 75)",
-        "sňatek vnučky Mariany 1861 (sken 28)"
+        "MZA 9178 sken 31"
       ],
       scans: [
-        {"f":"img/1828_krest_frantiska_kocirova.jpg","t":"Křest 6. 9. 1828, Kralice č. 65 (MZA 9181)"},
-        {"f":"img/1861_snatek_kocirova_sestra.jpg","t":"Sňatek sestry Mariany 1861 – rodiče Jan Kočíř a Mariana roz. Navrátilová"}
+        {"f":"img/1805_krest_mariana_navratilova.jpg","t":"Křest 17. 12. 1805, Kralice č. 27 (MZA 9178 sken 31)"},
+        {"f":"img/1824_snatek_kocir_navratilova.jpg","t":"Sňatek 27. 1. 1824, Kralice č. 65 (MZA 9179 sken 23)"}
+      ]
+    },
+    {
+      id: "katerinaNa",
+      name: "Kateřina Navrátilová",
+      maiden: "„Hr…“ (?)",
+      line: "plachy",
+      cert: "M",
+      b: {"date":"cca 1780","year":1780,"approx":true},
+      notes: [
+        "Matka Mariany (*1805); rodné příjmení čteno nejistě („Hrzisin“?)."
+      ],
+      sources: [
+        "MZA 9178 sken 31"
+      ],
+      scans: [
+        {"f":"img/1805_krest_mariana_navratilova.jpg","t":"Křest 17. 12. 1805, Kralice č. 27 (MZA 9178 sken 31)"}
       ]
     },
     {
@@ -569,7 +635,7 @@ window.RODOKMEN = {
       b: {"date":"?","year":1810,"approx":true},
       occ: "půlláník v Nemilanech (?)",
       notes: [
-        "Půlláník v „N…“ (Nemilany ?) – podle křtu vnučky 1869 a sňatku syna 1861."
+        "Půlláník v Neředíně (u Olomouce): „Sohn des Joseph Wincor Halblähners in Neretein u. der Katharina geb. Du[t/k]schl (?) in Neretein“ (sňatek syna 1861, Ch V 13 sken 192)."
       ],
       sources: [
         "křest vnučky Marianny 1869 (Ch V 8, sken 271)"
@@ -587,7 +653,7 @@ window.RODOKMEN = {
       cert: "M",
       b: {"date":"?","year":1815,"approx":true},
       notes: [
-        "Rodné příjmení nejisté: v oddacím zápisu syna 1861 krátké jméno začínající „Du-“ (?); dřívější čtení „Nedopil“ nepotvrzeno."
+        "Rodné příjmení nejisté: „Dutschl / Dukschl“ (?) z Neředína (sňatek syna 1861); dřívější čtení „Nedopil“ nepotvrzeno."
       ],
       sources: [
         "křest vnučky Marianny 1869 (Ch V 8, sken 271)"
