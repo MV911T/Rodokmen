@@ -57,6 +57,9 @@ header .meta{color:var(--muted);font-size:.8rem;letter-spacing:.02em}
 #stage{position:relative;flex:none;overflow:hidden}
 #canvas{position:absolute;left:0;top:0;transform-origin:0 0}
 #scroller{touch-action:pan-x pan-y}
+#scroller{cursor:grab}
+#scroller.panning{cursor:grabbing;user-select:none;-webkit-user-select:none}
+#scroller.panning .card{cursor:grabbing}
 #zoombar{display:flex;align-items:center;gap:8px;padding:8px 16px calc(8px + env(safe-area-inset-bottom,0px));border-top:1px solid var(--rule);background:var(--surface);font-size:.85rem}
 #zoombar button{font:inherit;font-size:.85rem;padding:5px 10px;border:1px solid var(--rule);border-radius:6px;background:var(--bg);color:var(--ink);cursor:pointer;min-width:34px}
 #zoombar button:focus-visible,#zoombar input:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
@@ -4377,7 +4380,7 @@ window.RODOKMEN.events = [
   {"y":1993,"t":"Vzniká Česká republika","s":"Vznik ČR"}
 ];
 
-window.RODOKMEN_BUILD='7. 10. 2026 9:49';
+window.RODOKMEN_BUILD='7. 10. 2026 9:51';
 
 </script>
 <script>
@@ -4599,6 +4602,23 @@ sc.addEventListener('pointermove',e=>{
 const endPt = e=>{ pts.delete(e.pointerId); if(pts.size<2) pinch=null; };
 ['pointerup','pointercancel','pointerleave'].forEach(t=>sc.addEventListener(t,endPt));
 document.getElementById('home').addEventListener('click',()=>focusCard(D.root));
+// ── drag to pan with the mouse (grab hand); a click without movement still opens a card ──
+let drag=null, dragMoved=false;
+sc.addEventListener('pointerdown',e=>{
+  if(e.pointerType!=='mouse'||e.button!==0) return;
+  drag={x:e.clientX,y:e.clientY,l:sc.scrollLeft,t:sc.scrollTop,id:e.pointerId}; dragMoved=false;
+});
+sc.addEventListener('pointermove',e=>{
+  if(!drag||e.pointerId!==drag.id) return;
+  const dx=e.clientX-drag.x, dy=e.clientY-drag.y;
+  if(!dragMoved && Math.abs(dx)+Math.abs(dy)<5) return;
+  if(!dragMoved){ dragMoved=true; sc.classList.add('panning'); try{sc.setPointerCapture(e.pointerId)}catch(_){} }
+  sc.scrollLeft=drag.l-dx; sc.scrollTop=drag.t-dy; e.preventDefault();
+});
+const endDrag=e=>{ if(!drag) return; drag=null; sc.classList.remove('panning'); };
+['pointerup','pointercancel'].forEach(t=>sc.addEventListener(t,endDrag));
+// swallow the click that follows a drag so dragging over a card does not open it
+sc.addEventListener('click',e=>{ if(dragMoved){ e.stopPropagation(); e.preventDefault(); dragMoved=false; } },true);
 
 render();
 applyScale(vs, 0, 0);
