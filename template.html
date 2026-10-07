@@ -445,6 +445,18 @@ sc.addEventListener('wheel',e=>{
   const r = sc.getBoundingClientRect();
   applyScale(vs*Math.exp(-e.deltaY*0.01), e.clientX-r.left, e.clientY-r.top);
 },{passive:false});
+// Safari (macOS) delivers trackpad pinch as non-standard gesture events instead of ctrl+wheel;
+// unhandled, Safari magnifies the whole page and the left part of the tree becomes unreachable
+let gest = null;
+sc.addEventListener('gesturestart',e=>{ e.preventDefault(); gest = vs; },{passive:false});
+sc.addEventListener('gesturechange',e=>{
+  e.preventDefault(); if(gest===null) return;
+  const r = sc.getBoundingClientRect();
+  applyScale(gest*e.scale, e.clientX-r.left, e.clientY-r.top);
+},{passive:false});
+sc.addEventListener('gestureend',e=>{ e.preventDefault(); gest = null; },{passive:false});
+// never let Safari magnify the whole page (header, legend and zoom bar would be cut off)
+document.addEventListener('gesturestart',e=>e.preventDefault(),{passive:false});
 const pts = new Map(); let pinch = null;
 sc.addEventListener('pointerdown',e=>{ if(e.pointerType==='touch') pts.set(e.pointerId,{x:e.clientX,y:e.clientY}); });
 sc.addEventListener('pointermove',e=>{
