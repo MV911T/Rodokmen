@@ -2575,37 +2575,79 @@ window.RODOKMEN = {
       name: "Mathias (Matthäus) Strusch",
       line: "struz",
       cert: "M",
-      b: {"date":"cca 1740","year":1740,"approx":true},
+      b: {"date":"cca 1735","year":1735,"approx":true,"place":"Rohov"},
       d: {"date":"před 1795","year":1794,"approx":true},
+      father: "andreasS",
       occ: "sedlák / zahradník (colonus, hortulanus) v Rohově",
+      marriage: "8. 7. 1759, Sudice – s Rosinou, dcerou Petra Gadacze; svědci Franz Strusch, sedlák, a Andreas Strusch, chalupník, oba z Rohova",
       notes: [
-        "Otec Valentina (křest 1770: „Mathias Struss Colon. Rohov.“); 1795 už zemřelý zahradník v Rohově.",
-        "Sňatek s Rosinou nejspíš 1758–1770 v Sudicích (H XVI 6). V Rohově žil i Franz Strusch, sedlák × Anna (syn Jan 1771) – možný bratr (K)."
+        "Sňatek 1759: „Honestus Juvenis Mathaeus Andreae Strusch Col: Rohov filius cum honesta Rozina Petri Gadacz Gaz: Rohov filia“ – syn Andrease Strusche (H XVI 6 fol. 53).",
+        "1765 chalupník v Rohově (svědek); otec Valentina (křest 1770: „Mathias Struss Colon. Rohov.“); 1795 už zemřelý zahradník.",
+        "Sestry (PRAVDĚPODOBNĚ): Eva (sňatek 1762), Marina (sňatek 1765 s Lorenzem Janoschem). V Rohově žili i Franz Strusch, sedlák, a Wenzel Struss, sedlák – příbuzní (K)."
       ],
       sources: [
+        "ZA Opava, NAD 165 Sbírka matrik, Sudice H XVI 6 (O 1737–1849) fol. 53, sken 26 (1759)",
         "ZA Opava, NAD 165 Sbírka matrik, Sudice H XVI 2 fol. 180; POL IX 2 sn. 135",
         "OFB Kranowitz I25412"
       ],
       scans: [
+        {"f":"img/1759_snatek_strusch_gadacz.jpg","t":"Sňatek 8. 7. 1759, Sudice (H XVI 6 fol. 53, sken 26)"},
         {"f":"img/1770_krest_valentin_strusch.jpg","t":"Křest 21. 2. 1770, Rohov (Sudice H XVI 2 fol. 180)"},
         {"f":"img/1795_snatek_strusch_holeczek.jpg","t":"Sňatek 20. 1. 1795, Krzanowice (POL IX 2 sn. 135)"}
       ]
     },
     {
-      id: "rosinaGa",
-      name: "Rosina Strusch",
-      maiden: "Gadacz (podle OFB – v křtu neuvedeno)",
+      id: "andreasS",
+      name: "Andreas Strusch",
       line: "struz",
       cert: "M",
-      b: {"date":"cca 1745","year":1745,"approx":true},
+      b: {"date":"cca 1705–1715","year":1710,"approx":true},
+      occ: "sedlák / chalupník (colonus, gazarius) v Rohově",
       notes: [
-        "Matka Valentina (křest 1770: „Rosina uxor“); rodné příjmení Gadacz jen podle rodopisu OFB (D) – v Rohově žili Gadaczové."
+        "Otec Mathiase (sňatek 1759), Evy (1762) a Mariny (1765). Nejstarší doložený Strusch (aktivní 1759–1765).",
+        "V zápisu 1759 je otec „Col.“, svědek Andreas Strusch „Gaz.“ – buď nedůsledný stav, nebo dva Andreasové (K)."
+      ],
+      sources: [
+        "ZA Opava, NAD 165 Sbírka matrik, Sudice H XVI 6 (O 1737–1849) fol. 53 (1759), 58 (1762), 63 (1765)"
+      ],
+      scans: [
+        {"f":"img/1759_snatek_strusch_gadacz.jpg","t":"Sňatek 8. 7. 1759, Sudice (H XVI 6 fol. 53, sken 26)"}
+      ]
+    },
+    {
+      id: "rosinaGa",
+      name: "Rosina Strusch",
+      maiden: "Gadacz",
+      line: "struz",
+      cert: "M",
+      b: {"date":"cca 1738","year":1738,"approx":true,"place":"Rohov"},
+      father: "petrGa",
+      notes: [
+        "Dcera Petra Gadacze, chalupníka v Rohově (sňatek 1759: „Rozina Petri Gadacz Gaz: Rohov filia“) – tip OFB „Euphrosina“ neplatí; matka Valentina (křest 1770)."
       ],
       sources: [
         "OFB Kranowitz"
       ],
       scans: [
+        {"f":"img/1759_snatek_strusch_gadacz.jpg","t":"Sňatek 8. 7. 1759, Sudice (H XVI 6 fol. 53, sken 26)"},
         {"f":"img/1770_krest_valentin_strusch.jpg","t":"Křest 21. 2. 1770, Rohov (Sudice H XVI 2 fol. 180)"}
+      ]
+    },
+    {
+      id: "petrGa",
+      name: "Petr Gadacz",
+      line: "struz",
+      cert: "M",
+      b: {"date":"cca 1710","year":1710,"approx":true},
+      occ: "chalupník (gazarius) v Rohově",
+      notes: [
+        "Otec Rosiny (sňatek 1759)."
+      ],
+      sources: [
+        "ZA Opava, NAD 165 Sbírka matrik, Sudice H XVI 6 (O 1737–1849) fol. 53"
+      ],
+      scans: [
+        {"f":"img/1759_snatek_strusch_gadacz.jpg","t":"Sňatek 8. 7. 1759, Sudice (H XVI 6 fol. 53, sken 26)"}
       ]
     },
     {
