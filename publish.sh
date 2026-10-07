@@ -8,6 +8,10 @@ git commit -q -m "${1:-Aktualizace rodokmenu}
 
 Co-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>" || { echo "nothing to commit"; exit 0; }
 git push -q && echo "pushed"
+# then commit + push the private research repo (scans, notes, the web submodule pointer) – nothing stays only local
+( cd .. && git add -A && git commit -q -m "Výzkum: ${1:-průběžný stav}
+
+Co-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>" && git push -q origin main && echo "research repo pushed" ) || echo "research repo: nothing to commit or push failed"
 # verify in the background that GitHub Pages serves the new build (result in .live_check.log, shown by the next publish)
 [ -f .live_check.log ] && cat .live_check.log
 STAMP=$(grep -o "RODOKMEN_BUILD='[^']*'" index.html | head -1)
