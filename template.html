@@ -165,6 +165,12 @@ dl.facts dd{margin:0;min-width:0}
 .tl ol{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:8px}
 .tl li{background:var(--surface);border:1px solid var(--rule);border-radius:6px;padding:8px 10px;font-size:.85rem;line-height:1.35}
 .tl b{font-variant-numeric:tabular-nums;display:block;font-family:var(--f-name);font-size:1rem}
+.tl li.hist{background:transparent;color:var(--muted)}
+.tl li.anc{border-color:var(--accent)}
+.story .facts{font-size:.8rem;color:var(--muted);border-top:1px solid var(--rule);border-bottom:1px solid var(--rule);padding:4px 0}
+#map .auto{font-size:9.5px;fill:var(--muted)}
+#map circle.auto{stroke-width:1}
+.meta .plink{font:inherit;color:var(--link);background:none;border:0;padding:0;cursor:pointer;text-decoration:underline}
 @media (max-width:520px){ header h1{font-size:1.25rem} .certs{margin-left:0} dl.facts{grid-template-columns:1fr} }
 @media (prefers-reduced-motion:reduce){ *{transition:none!important;scroll-behavior:auto!important} }
 </style>
@@ -202,7 +208,7 @@ dl.facts dd{margin:0;min-width:0}
 
 <div id="zoombar" role="toolbar" aria-label="Přiblížení">
   <button id="zout" type="button" aria-label="Oddálit">−</button>
-  <input id="zr" type="range" min="10" max="250" step="5" value="100" aria-label="Přiblížení v procentech">
+  <input id="zr" type="range" min="3" max="250" step="5" value="100" aria-label="Přiblížení v procentech">
   <button id="zin" type="button" aria-label="Přiblížit">+</button>
   <output id="zp" for="zr">100 %</output>
   <button id="zfit" type="button">Celý strom</button>
@@ -221,7 +227,7 @@ const CERT = {M:"Přečteno v matrice",D:"Jiný doklad (parte, rodný list, pam�
 const lineVar = l => `var(--l-${l})`;
 const zoom = 1; let active = null;
 // view scale (whole tree incl. cards and text), 0.1–2.5; layout itself is computed at scale 1
-let vs = 1; const VS_MIN = 0.1, VS_MAX = 2.5;
+let vs = 1; const VS_MIN = 0.03, VS_MAX = 2.5;
 try{ const z = parseFloat(localStorage.getItem('rv-scale')); if(z>=VS_MIN&&z<=VS_MAX) vs=z; }catch(e){}
 let W0 = 0, H0 = 0;
 
@@ -322,8 +328,13 @@ Object.entries(D.lines).forEach(([k,label])=>{
 });
 
 const nM = D.people.filter(p=>p.cert==='M').length;
-const oldest = D.people.reduce((a,p)=>p.b.year<a.b.year?p:a);
-document.getElementById('meta').textContent = `${D.people.length} osob · ${nM} doloženo přímo v matrikách · nejstarší předek ${oldest.name} (~${oldest.b.year}) · aktualizováno ${D.updated}`;
+// everything below is derived from data.js on every load – no hand-maintained summary that could go stale
+const documented = D.people.filter(p=>p.cert==='M'||p.cert==='D');
+const oldest = documented.reduce((a,p)=>p.b.year<a.b.year?p:a);
+const meta = document.getElementById('meta');
+meta.innerHTML = `${D.people.length} osob · ${nM} doloženo přímo v matrikách · nejstarší doložený předek <button type="button" class="plink" id="oldest">${oldest.name}</button> (~${oldest.b.year}) · aktualizováno ${window.RODOKMEN_BUILD||D.updated}`;
+document.getElementById('oldest').addEventListener('click',()=>{ applyScale(Math.max(vs,0.6)); focusCard(oldest.id); });
+window.RV_focus = id => { applyScale(Math.max(vs,0.6)); focusCard(id); };
 
 // dialog
 const dlg = document.getElementById('dlg'), body = document.getElementById('dlgBody');
@@ -455,17 +466,38 @@ requestAnimationFrame(()=>{ const c=document.querySelector(`.card[data-id="${D.r
     g+=`<path class="route k-${m.kind}" stroke="var(--l-${m.line})" stroke-dasharray="${DASH[m.kind]}" marker-end="url(#ar-${m.line})" d="${d}"><title>${m.who}, ${m.when}: ${m.note}</title></path>`;
     if(m.fromOffMap) g+=`<text class="lbl sub" x="${pts[0][0]+4}" y="${pts[0][1]-6}">← ${m.fromOffMap}</text>`;
   });
+  // people per gazetteer place (longest alias match in birth/death place)
+  const GZ=(window.RODOKMEN_GAZ||[]), gzOf=txt=>{ let best=null,bl=0; GZ.forEach(z=>z.a.forEach(a=>{ if(txt&&txt.includes(a)&&a.length>bl){best=z;bl=a.length;} })); return best; };
+  const gzUse=new Map();
+  D.people.forEach(p=>[p.b,p.d].forEach(e=>{ if(!e||!e.place) return; const z=gzOf(e.place); if(!z||z.off) return;
+    const u=gzUse.get(z.n)||{z,ids:new Set(),from:9999,lines:{}}; u.ids.add(p.id); if(e.year) u.from=Math.min(u.from,e.year); u.lines[p.line]=(u.lines[p.line]||0)+1; gzUse.set(z.n,u); }));
+  const curatedZ=new Set();
+  D.places.forEach(p=>{ const z=gzOf(p.name); if(z){ curatedZ.add(z.n); const u=gzUse.get(z.n); if(u) p._auto=`${u.ids.size} ${u.ids.size===1?'osoba':u.ids.size<5?'osoby':'osob'} · od ${u.from}`; } });
+  gzUse.forEach(u=>{ if(curatedZ.has(u.z.n)) return;
+    const line=Object.entries(u.lines).sort((a,b)=>b[1]-a[1])[0][0], x=X(u.z.lon), y=Y(u.z.lat);
+    g+=`<circle class="pt auto" cx="${x}" cy="${y}" r="3.5" fill="var(--l-${line})"><title>${u.z.n} – ${u.ids.size} osob v rodokmenu, doloženo od ${u.from}</title></circle><text class="lbl auto" x="${x+6}" y="${y+3}">${u.z.n}</text>`; });
   D.places.forEach(p=>{
-    const x=X(p.lon),y=Y(p.lat), right = p.lon<19 ? (p.name==='Nedašov'||p.name==='Bolatice') : false;
+    const x=X(p.lon),y=Y(p.lat);
     const anchor = p.anchor || ((p.lon<18.2 && !p.hub) ? 'end' : 'start'), dx = anchor==='end'?-10:10, dy=p.dy||0;
     g+=`<circle class="pt ${p.hub?'hub':''}" cx="${x}" cy="${y}" r="${p.hub?9:(p.small?4.5:6)}" fill="${p.hub?'var(--accent)':'var(--l-'+p.line+')'}"><title>${p.name} – ${p.note}</title></circle>`;
-    g+=`<text class="lbl" x="${x+dx}" y="${y+4+dy}" text-anchor="${anchor}">${p.name}</text><text class="lbl sub" x="${x+dx}" y="${y+17+dy}" text-anchor="${anchor}">${p.note}</text>`;
+    g+=`<text class="lbl" x="${x+dx}" y="${y+4+dy}" text-anchor="${anchor}">${p.name}</text><text class="lbl sub" x="${x+dx}" y="${y+17+dy}" text-anchor="${anchor}">${p.note}${p._auto?' · '+p._auto:''}</text>`;
   });
   svg.innerHTML=g;
   const KIND={doc:'doloženo',rail:'trasa pravděpodobná',hyp:'domněnka'};
   document.getElementById('moves').innerHTML=D.moves.map(m=>`<li style="--c:var(--l-${m.line})"><b>${m.when}</b> – ${m.who}: ${m.note}<span class="k">${KIND[m.kind]}</span></li>`).join('');
-  document.getElementById('story').innerHTML=D.story.map(s=>`<article style="--c:var(--l-${s.line})"><h2>${s.title}</h2>${s.text.map(t=>`<p>${t}</p>`).join('')}</article>`).join('');
-  document.getElementById('tl').innerHTML=D.timeline.map(e=>`<li><b>${e.y}</b>${e.t}</li>`).join('');
+  const doc=p=>p.cert==='M'||p.cert==='D', place=e=>(e&&e.place||'').replace(/\s*č\.\s*\d+.*$/,'').replace(/,.*$/,'');
+  const oldestOf=ls=>D.people.filter(p=>ls.includes(p.line)&&doc(p)).reduce((a,p)=>!a||p.b.year<a.b.year?p:a,null);
+  const go=p=>`<button type="button" class="plink" data-go="${p.id}">${p.name}</button>`;
+  document.getElementById('story').innerHTML=D.story.map(s=>{
+    const ls=s.lines||[s.line], ps=D.people.filter(p=>ls.includes(p.line)), o=oldestOf(ls);
+    const facts=o?`<p class="facts">V rodokmenu ${ps.length} osob, z toho ${ps.filter(p=>p.cert==='M').length} přímo z matrik · nejstarší doložený předek ${go(o)} (*~${o.b.year}${place(o.b)?', '+place(o.b):''})</p>`:'';
+    return `<article style="--c:var(--l-${s.line})"><h2>${s.title}</h2>${facts}${s.text.map(t=>`<p>${t}</p>`).join('')}</article>`; }).join('');
+  // timeline = family milestones (data) + oldest documented ancestor of every line (computed) + historical events
+  const auto=Object.entries(D.lines).map(([k,l])=>{ const o=oldestOf([k]); return o&&{y:o.b.year,t:`Nejstarší doložený předek rodu ${l}: ${go(o)}${place(o.b)?' ('+place(o.b)+')':''}`,k:'anc'}; }).filter(Boolean);
+  const hist=(D.events||[]).map(e=>({y:e.y,t:(e.y2?e.y+'–'+e.y2+' ':'')+e.t,k:'hist'}));
+  const TLs=[...D.timeline.map(e=>({...e,k:'fam'})),...auto,...hist].sort((a,b)=>a.y-b.y||(a.k==='hist')-(b.k==='hist'));
+  document.getElementById('tl').innerHTML=TLs.map(e=>`<li class="${e.k}"><b>${e.y}</b>${e.t}</li>`).join('');
+  document.getElementById('mapView').addEventListener('click',e=>{ const b=e.target.closest('[data-go]'); if(!b) return; show(false); window.RV_focus&&window.RV_focus(b.dataset.go); });
   const tT=document.getElementById('tabTree'), tM=document.getElementById('tabMap'), MV=document.getElementById('mapView'), SC=document.getElementById('scroller'), LG=document.querySelector('.legend'), TL=document.querySelector('.tools'), ZB=document.getElementById('zoombar');
   function show(map){ MV.hidden=!map; SC.hidden=map; LG.hidden=map; TL.hidden=map; ZB.hidden=map; tT.setAttribute('aria-selected',!map); tM.setAttribute('aria-selected',map); try{localStorage.setItem('rv-tab',map?'map':'tree')}catch(e){} }
   tT.addEventListener('click',()=>show(false)); tM.addEventListener('click',()=>show(true));

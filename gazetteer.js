@@ -1,0 +1,40 @@
+// Gazetteer for the origin map: places that appear in people's birth/death places.
+// Coordinates are approximate (village centre, ±2 km). The map shows every place that people
+// in data.js refer to automatically – add a place here when validate.js lists it as missing.
+// a = aliases matched as substrings of b.place / d.place (longest match wins); off = outside the map frame.
+window.RODOKMEN_GAZ = [
+  { n: 'Ostrava', a: ['Ostrava'], lat: 49.835, lon: 18.29 },
+  { n: 'Frýdek-Místek', a: ['Frýdek-Místek', 'Frýdek'], lat: 49.68, lon: 18.35 },
+  { n: 'Opava', a: ['Opava'], lat: 49.94, lon: 17.9 },
+  { n: 'Kežmarok', a: ['Kežmarok'], lat: 49.135, lon: 20.43 },
+  { n: 'Uherský Brod', a: ['Uherský Brod'], lat: 49.025, lon: 17.65 },
+  // Haná
+  { n: 'Věrovany', a: ['Věrovany'], lat: 49.46, lon: 17.29 },
+  { n: 'Dub nad Moravou', a: ['Dub (nad Moravou)', 'Dub nad Moravou'], lat: 49.48, lon: 17.28 },
+  { n: 'Kralice na Hané', a: ['Kralice na Hané', 'Kralice'], lat: 49.462, lon: 17.18 },
+  { n: 'Řepčín', a: ['Řepčín'], lat: 49.605, lon: 17.245 },
+  { n: 'Neředín', a: ['Neředín'], lat: 49.59, lon: 17.225 },
+  // Valašsko – panství Brumov
+  { n: 'Nedašova Lhota', a: ['Nedašova Lhota'], lat: 49.135, lon: 18.09 },
+  { n: 'Nedašov', a: ['Nedašov'], lat: 49.105, lon: 18.06 },
+  { n: 'Návojná', a: ['Návojná'], lat: 49.10, lon: 18.04 },
+  { n: 'Bylnice', a: ['Bylnice'], lat: 49.07, lon: 18.03 },
+  { n: 'Brumov', a: ['Brumov'], lat: 49.09, lon: 17.99 },
+  // Hlučínsko a Ratibořsko
+  { n: 'Chuchelná', a: ['Chuchelná', 'Kuchelna'], lat: 50.0, lon: 18.03 },
+  { n: 'Krzanowice', a: ['Krzanowice'], lat: 50.01, lon: 18.12 },
+  { n: 'Rohov (Strandorf)', a: ['Strandorf', 'Rohov'], lat: 49.98, lon: 18.08 },
+  { n: 'Bolatice', a: ['Bolatice'], lat: 49.95, lon: 18.08 },
+  { n: 'Ehrenfeld (Sławienko)', a: ['Ehrenfeld', 'Sławienko'], lat: 50.17, lon: 18.16 },
+  { n: 'Schonowitz (Szonowice)', a: ['Schonowitz', 'Szonowice'], lat: 50.13, lon: 18.11 },
+  // Halič
+  { n: 'Lednica Dolna', a: ['Lednica Dolna'], lat: 49.985, lon: 20.03 },
+  { n: 'Lednica Górna', a: ['Lednica Górna', 'Lednica (Wieliczka)'], lat: 49.97, lon: 20.05 },
+  { n: 'Wieliczka', a: ['Wieliczka'], lat: 49.987, lon: 20.065 },
+  { n: 'Rajbrot', a: ['Rajbrot'], lat: 49.8, lon: 20.42 },
+  { n: 'Zagórzany', a: ['Zagórzany'], lat: 49.93, lon: 20.21 },
+  // outside the map frame (Bohemia) – listed so they are not reported as missing
+  { n: 'Plavnice', a: ['Plavnice'], off: true },
+  { n: 'Vodňany', a: ['Vodňany'], off: true },
+  { n: 'Plzeň', a: ['Plzeň'], off: true },
+];

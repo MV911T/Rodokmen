@@ -4,7 +4,10 @@ cd "$(dirname "$0")"
 # Consistency gate: stale or contradictory data must never reach the web (errors AND warnings block).
 node validate.js --strict || { echo "build.sh: validate.js failed – fix data.js (via datatool.js) first"; exit 1; }
 python3 -I - <<'PY'
-t=open('template.html',encoding='utf8').read(); d=open('geo.js',encoding='utf8').read()+open('data.js',encoding='utf8').read()
+import datetime
+t=open('template.html',encoding='utf8').read(); d=open('geo.js',encoding='utf8').read()+open('gazetteer.js',encoding='utf8').read()+open('data.js',encoding='utf8').read()
+# build stamp: the "updated" date on the page always reflects the last publish
+now=datetime.datetime.now(); d+='\nwindow.RODOKMEN_BUILD=%r;\n' % ('%d. %d. %d %d:%02d' % (now.day,now.month,now.year,now.hour,now.minute))
 page=t.replace('/*DATA*/',d)
 head='''<!doctype html>
 <html lang="cs">

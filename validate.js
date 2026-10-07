@@ -103,6 +103,29 @@ for (const c of P) {
     warn(f, `marriage year ${yf} differs from spouse ${m.id} (${ym})`);
 }
 
+// 8. page context – everything the "Odkud jsme" view and the event column derive from must stay in sync
+const tpl = fs.readFileSync(path.join(__dirname, 'template.html'), 'utf8');
+for (const p of P) if (!D.lines[p.line]) err(p, `line "${p.line}" is not defined in D.lines`);
+for (const k of Object.keys(D.lines)) if (!tpl.includes(`--l-${k}:`)) err(null, `line "${k}" has no colour --l-${k} in template.html`);
+for (const s of D.story || []) {
+  for (const l of s.lines || [s.line]) if (!D.lines[l]) err(null, `story "${s.title}" refers to unknown line "${l}"`);
+  for (const t of s.text) if (/nejstarší doložen/i.test(t)) warn(null, `story "${s.title}" hard-codes the oldest ancestor (computed on the page) – remove it`);
+}
+for (const pl of D.places || []) if (/\bod 1\d{3}\b/.test(pl.note)) warn(null, `place "${pl.name}" note hard-codes a year ("${pl.note}") – the page adds "od YYYY" itself`);
+// historical events must cover the whole time span of the tree (≥ 1 event per 50 years)
+const minY = Math.min(...P.map(p => p.b.year));
+for (let y = Math.floor(minY / 50) * 50; y < 2000; y += 50)
+  if (!(D.events || []).some(e => (e.y2 || e.y) >= y && e.y < y + 50)) warn(null, `no historical event in ${y}–${y + 49} (event column would be empty there)`);
+// map: every place people refer to should be in the gazetteer (INFO – does not block publishing)
+global.window.RODOKMEN_GAZ = undefined;
+eval(fs.readFileSync(path.join(__dirname, 'gazetteer.js'), 'utf8'));
+const GZ = window.RODOKMEN_GAZ || [], missing = new Map();
+for (const p of P) for (const e of [p.b, p.d]) {
+  if (!e || !e.place || /^\?|nejisté|\(\?\)$/.test(e.place)) continue;
+  if (!GZ.some(z => z.a.some(a => e.place.includes(a)))) missing.set(e.place, p.id);
+}
+for (const [pl, id] of missing) console.log(`INFO  ${id.padEnd(14)} place not in gazetteer.js (not on the map): "${pl}"`);
+
 const uniq = [...new Map(out.map(o => [o.join('|'), o])).values()];
 const errors = uniq.filter(o => o[0] === 'ERROR'), warns = uniq.filter(o => o[0] === 'WARN');
 for (const [lvl, id, msg] of [...errors, ...warns]) console.log(`${lvl.padEnd(5)} ${id.padEnd(14)} ${msg}`);
