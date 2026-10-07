@@ -86,7 +86,7 @@ window.RODOKMEN = {
         "Kandidát (K): Karel Veselý, předseda ONV Uherský Brod 1945 – rodina se kolem 1940 přestěhovala do Uherského Brodu, což tuto stopu podporuje; neověřeno.",
         "Křest 4. 10. 1904 NENÍ: Kamenný Újezd (Plavnice – jediná Plavnice v Čechách), Vodňany město a předměstí (N 1902–1912, id 11829), Radčice, Křtětice, České Budějovice sv. Mikuláš (rejstřík 1904, zápisy 20. 9.–18. 10. 1904 a většina vesnických knih farnosti); Doudleby/Plav 1904 nejsou digitalizované. Údaj o okrese ve sčítání je nespolehlivý (Vodňany patřily pod Písek). Zbývá: předměstí ČB, Doudleby (Plav), sourozenci Veselí ve Vodňanech 1882–1912.",
         "Kandidátní stopa (K): učitelská rodina Veselých z Bavorova u Vodňan (řídící učitel; syn PhDr. Jindřich Veselý *1885, loutkář, †1939 ČB) – bez dokladu.",
-        "Kandidátní rodiče (K): Václav Veselý, domkář a obuvník ve Vodňanech-předměstí (č. 74/78), *21. 3. 1862 Temelinec (syn Františka Veselého a Marie roz. Brabcové z Dívčic) × Kateřina roz. Rodová *27. 4. 1874 Lhota u Kamenice nad Lipou (dcera Karla Rody a Anny roz. Holé); sňatek 5. 6. 1897; děti Marie 1905, Anna 1911, další 1912 (SOA Třeboň, Vodňany N 1902–1912, id 11829, sk. 102, 256, 303). Jediná rodina Veselých ve Vodňanech té doby – Karel ale ve vodňanské knize 1904 není, takže by se narodil jinde."
+        "Kandidátní rodiče (K): Václav Veselý, domkář a obuvník ve Vodňanech-předměstí (č. 74/78), *21. 3. 1862 Temelinec (syn Františka Veselého a Marie roz. Brabcové z Dívčic) × Kateřina roz. Rodová *27. 4. 1874 Lhota u Kamenice nad Lipou (dcera Karla Rody a Anny roz. Holé); sňatek 1897 (5. 6. nebo 5. 7.); děti František *22. 7. 1898 (Vodňany-předměstí 74; 1924 vystoupil z církve – „bez vyznání“ jako Karel v roce 1930), Marie 1905, Anna 1911, další 1912 (SOA Třeboň, Vodňany N 1902–1912, id 11829, sk. 102, 256, 303). Jediná rodina Veselých ve Vodňanech té doby – Karel ale ve vodňanské knize 1904 není, takže by se narodil jinde."
       ],
       sources: [
         "Sčítání lidu 1930, Kežmarok, arch 321/56 (Slovakiana, objekt cair-ko11kbp)",
@@ -2459,21 +2459,24 @@ window.RODOKMEN = {
       name: "Joseph Opolony",
       line: "opolony",
       cert: "M",
-      b: {"date":"cca 1810","year":1810,"approx":true,"place":"Ehrenfeld (Sławienko)"},
-      occ: "ovčák (Schäfer?) v Ehrenfeldu",
+      b: {"date":"cca 1809","year":1809,"approx":true,"place":"Ehrenfeld (Sławienko) (?)"},
+      occ: "svobodný zahradník (Freigärtner) v Ehrenfeldu",
       marriage: "20. 9. 1836, Grzędzin – s Marianou Hawel (on 26, ona 24); svědci Andreas Riedel (?) a Johann Philipp (?)",
       notes: [
         "Sňatek 1836 jako svobodný, 26 let, z Ehrenfeldu; rodiče duplikát neuvádí.",
-        "Děti: Anton 1841, další dítě 1845; v roce 1866 Josef Opolony (Ehrenfeld) × Margaretha Lindner – druhé manželství, nebo jiný Josef (K).",
-        "Křest není v Grzędzinu 1809–1811 (prošlo) – nejspíš jiná farnost nebo jiný tvar jména (Opolon, Opollony)."
+        "Ovdověl 12. 11. 1848; 14. 2. 1849 se jako vdovec (40 let) znovu oženil s Margarethou Lindner (22) z Mosurau – svědek „Opolony aus Rachowitz“ (stopa k rodu).",
+        "Děti s Marianou: Anton 1841, další dítě 1845.",
+        "Křest není v Grzędzinu 1809–1811 (prošlo) – nejspíš jiná farnost (Rachowice?) nebo jiný tvar jména (Opolon, Opollony)."
       ],
       sources: [
         "AP Opole 45/3251/0/4/1, sken 286–287, 1836 Nr 29",
-        "křest syna Antona 1841 (AP Opole 45/3251/0/4/1, sken 422)"
+        "křest syna Antona 1841 (AP Opole 45/3251/0/4/1, sken 422)",
+        "Grzędzin 4/5 sken 37–38 Nr 12 (sňatek 1849)"
       ],
       scans: [
         {"f":"img/1836_snatek_opolony_hawel.jpg","t":"Sňatek 20. 9. 1836 (Grzędzin 1836 Nr 29)"},
-        {"f":"img/1841_krest_anton_opolony.jpg","t":"Křest syna Antona 1841"}
+        {"f":"img/1841_krest_anton_opolony.jpg","t":"Křest syna Antona 1841"},
+        {"f":"img/1849_snatek_joseph_opolony_vdovec.jpg","t":"Druhý sňatek 14. 2. 1849 jako vdovec, 40 let (4/5 sken 37 Nr 12)"}
       ]
     },
     {
@@ -2482,17 +2485,22 @@ window.RODOKMEN = {
       maiden: "Hawel (Havel)",
       line: "opolony",
       cert: "M",
-      b: {"date":"cca 1812","year":1812,"approx":true,"place":"Ehrenfeld (?)"},
+      b: {"date":"cca 1811","year":1811,"approx":true,"place":"Ehrenfeld (?)"},
+      d: {"date":"12. 11. 1848","year":1848,"place":"Ehrenfeld"},
+      cause: "kolika",
       notes: [
+        "Zemřela 12. 11. 1848 v Ehrenfeldu, pohřbena 15. 11., 37 let, jako žena svobodného zahradníka (Freigärtnerin): „Marianna Opolony geb. Hafel“ (rodiče neuvedeni).",
         "Při sňatku 1836 svobodná, 24 let; rodiče neuvedeni.",
         "Sestra pravděpodobně Johanna Hawel (29 let, Ehrenfeld), provd. 1842 za vdovce Franze Wojtka (K).",
-        "Kandidátky na křest (K): Marianna *26. 2. 1811 Kolonie Ehrenfeld, dcera Josepha Hawela a Marianny roz. Czerny (4/7 sk. 27–28) – ta se ale možná 1834 vdala za Mathese Schiwana; Marianna Hemel *1811 Dolendzin (nemanželská, matka Margaretha) – vysvětlovala by chybějící rodiče u sňatku 1836; Marianna Hemel *19. 10. 1813 Dolendzin (otec Wenzel). Rozhodne až její úmrtní zápis."
+        "Kandidátky na křest (K): Marianna *26. 2. 1811 Kolonie Ehrenfeld, dcera Josepha Hawela a Marianny roz. Czerny (4/7 sk. 27–28) – ta se ale možná 1834 vdala za Mathese Schiwana; Marianna Hemel *1811 Dolendzin (nemanželská, matka Margaretha) – vysvětlovala by chybějící rodiče u sňatku 1836; Marianna Hemel *19. 10. 1813 Dolendzin (otec Wenzel). Úmrtní zápis rodiče neuvádí; věk (*cca 1811) a bydliště Ehrenfeld ukazují nejspíš na první kandidátku (PRAVDĚPODOBNÉ), je ale třeba vyloučit, že to byla nevěsta Schiwanova."
       ],
       sources: [
+        "Grzędzin – AP Opole 45/3251 j. 4/3, sken 325 Nr 206 (úmrtí 1848)",
         "AP Opole 45/3251/0/4/1, sken 286–287, 1836 Nr 29",
         "křest syna Antona 1841 (AP Opole 45/3251/0/4/1, sken 422)"
       ],
       scans: [
+        {"f":"img/1848_umrti_mariana_opolony.jpg","t":"Úmrtí 12. 11. 1848, Ehrenfeld (Grzędzin 4/3 sken 325 Nr 206)"},
         {"f":"img/1836_snatek_opolony_hawel.jpg","t":"Sňatek 20. 9. 1836 (Grzędzin 1836 Nr 29)"},
         {"f":"img/1841_krest_anton_opolony.jpg","t":"Křest syna Antona 1841"}
       ]
@@ -2535,7 +2543,7 @@ window.RODOKMEN = {
       d: {"date":"před 1913","year":1912,"approx":true},
       occ: "zahradník (Gärtner) v Schonowitz",
       notes: [
-        "Pravděpodobně týž Johann Czenschkowsky, podruh ze Schonowitz, 27 let, který se 8. 10. 1840 oženil s Marianou Schramowsky (23, dcera Johanna Schramowského) – Lucia Blana by pak byla jeho druhá žena; jejich sňatek není v Grzędzinu 1841–1846 (nejspíš ve farnosti nevěsty).",
+        "Pravděpodobně týž Johann Czenschkowsky, podruh ze Schonowitz, 27 let, který se 8. 10. 1840 oženil s Marianou Schramowsky (23, dcera Johanna Schramowského). Už 9. 2. 1844 se mu s Lucií Blania narodila dcera Josepha († 17. 9. 1845) – druhý sňatek tedy cca 1841–1843.",
         "Kandidátní křest (D, nejpravděpodobnější): Johann *13. 5. 1812 Schonowitz, syn Josepha Czenskowského, robotního zahradníka (Robotgärtner), a Johanny roz. Hangenga/Wangenga (?) – Grzędzin 4/7 sken 140–141 Nr 57; Joseph (*cca 1779) ovdověl a 1831 se znovu oženil s Theresií Swobodou. Druhý kandidát (K): Johann *2. 3. 1814, syn Simona Czienskowského, domkáře.",
         "Zemřel před 1913."
       ],
@@ -2544,6 +2552,7 @@ window.RODOKMEN = {
         "AP Opole 45/3251/0/4/1, sken 404–405, 1840 Nr 37"
       ],
       scans: [
+        {"f":"img/1844_krest_josepha_czienskowsky.jpg","t":"Křest dcery Josephy 9. 2. 1844 – matka Lucia Blania (4/3 sken 86 Nr 28)"},
         {"f":"img/1846_krest_rosalia_czienskowsky.jpg","t":"Křest dcery Rosalie 1846"},
         {"f":"img/1913_umrti_rosalie_opolony.jpg","t":"Úmrtí dcery Rosalie 1913"},
         {"f":"img/1840_snatek_czenschkowsky_schramowsky.jpg","t":"1. sňatek Johanna 8. 10. 1840 (Grzędzin 1840 Nr 37)"}
@@ -2552,20 +2561,22 @@ window.RODOKMEN = {
     {
       id: "luziaB",
       name: "Lucie (Luzia) Czienskowski",
-      maiden: "Blana",
+      maiden: "Blana (Blania)",
       line: "opolony",
       cert: "M",
       b: {"date":"?","year":1818,"approx":true},
       d: {"date":"před 1913","year":1912,"approx":true},
       notes: [
-        "Rodné příjmení „Blana“ potvrzeno v křtu dcery Rosalie 1846.",
-        "Pravděpodobně druhá manželka Johanna Czienskowského (sňatek 1841–46 mimo Grzędzin – nenalezen).",
+        "Rodné příjmení „Blania“ (křest dcery Josephy 9. 2. 1844) a „Blana“ (křest Rosalie 1846).",
+        "Druhá manželka Johanna Czienskowského – první žena Mariana Schramowsky (sňatek 8. 10. 1840) zemřela nebo zmizela před 1843; sňatek s Lucií tedy nejspíš 1841–1843 (nenalezen).",
+        "Kmotry dětí byli opakovaně Herzogové, mlynáři ze Silberkopf (farnost Grzędzin) – možná Luciina rodina nebo sousedé (K).",
         "Zemřela před 1913, naposledy v Schonowitz."
       ],
       sources: [
         "křest dcery Rosalie 1846"
       ],
       scans: [
+        {"f":"img/1844_krest_josepha_czienskowsky.jpg","t":"Křest dcery Josephy 9. 2. 1844 – matka Lucia Blania (4/3 sken 86 Nr 28)"},
         {"f":"img/1846_krest_rosalia_czienskowsky.jpg","t":"Křest dcery Rosalie 1846"},
         {"f":"img/1913_umrti_rosalie_opolony.jpg","t":"Úmrtí dcery Rosalie 1913"}
       ]
