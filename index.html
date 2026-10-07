@@ -76,10 +76,10 @@ header .meta{color:var(--muted);font-size:.8rem;letter-spacing:.02em}
 @media (max-width:520px){ :root{--evw:92px} .evl .l{display:none} .evl .s{display:inline} }
 .tick{position:absolute;right:8px;font-size:.72rem;color:var(--muted);font-variant-numeric:tabular-nums;transform:translateY(-50%)}
 .tick.century{color:var(--ink);font-weight:600}
-.gridline{position:absolute;left:0;right:0;height:1px;background:var(--grid)}
-.gridline.century{background:var(--rule)}
+.gridline{position:absolute;left:0;right:0;height:1px;background:repeating-linear-gradient(90deg,var(--grid) 0 6px,transparent 6px 12px)}   /* year lines dashed, so they never look like family links */
+.gridline.century{background:repeating-linear-gradient(90deg,var(--rule) 0 8px,transparent 8px 14px)}
 svg.links{position:absolute;inset:0;pointer-events:none;overflow:visible}
-svg.links path{fill:none;stroke:var(--rule);stroke-width:1.4}
+svg.links path{fill:none;stroke:color-mix(in srgb,var(--muted) 55%,var(--rule));stroke-width:2.2}
 svg.links path.mat{stroke:var(--mat);stroke-width:3.2}
 svg.links path.pat{stroke:var(--pat);stroke-width:3.2}
 .card.mat{box-shadow:inset 3px 0 0 var(--mat),var(--shadow)}
