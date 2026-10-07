@@ -4066,7 +4066,8 @@ window.RODOKMEN = {
         "Kmotra dětí z rodu Herzog = dcera Franze Ignatze Herzoga, větrného mlynáře v Silberkopfu (sousedé).",
         "Další děti (PRAVDĚPODOBNĚ její): Valentin († 21. 6. 1862, 21 dní), Veronika (*cca 1864, † 24. 12. 1865).",
         "Kmotry dětí byli opakovaně Herzogové, mlynáři ze Silberkopf (farnost Grzędzin) – možná Luciina rodina nebo sousedé (K).",
-        "Rodina Thomase Blany žila 1817 v Czienskowitz (křest sestry Marianny 1. 4. 1817, Polnisch Neukirch – M). Luciin křest není v Polnisch Neukirch 1818–1821 ani v Rudniku 1820–21."
+        "Rodina Thomase Blany žila 1817 v Czienskowitz (křest sestry Marianny 1. 4. 1817, Polnisch Neukirch – M). Luciin křest není v Polnisch Neukirch 1818–1821 ani v Rudniku 1820–21.",
+        "Křest prohledán negativně i v Rudniku 1818–1819, Sławikově 1818–1822 (jen sloupec jmen) a Grzędzinu X/1818–1820. V Silberkopfu žily 1818–19 i Franziska Blania (provd. Manderski) a Barbara Blania, služka – možné příbuzné (K)."
       ],
       sources: [
         "AP Opole 45/3251 Grzędzin 4/8 sk. 431–432 Nr 4 – https://www.szukajwarchiwach.gov.pl/jednostka/-/jednostka/5184279",
