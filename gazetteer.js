@@ -29,6 +29,8 @@ window.RODOKMEN_GAZ = [
   { n: 'Dobroslavice', a: ['Dobroslavice'], lat: 49.875, lon: 18.135 },
   { n: 'Bolatice', a: ['Bolatice'], lat: 49.95, lon: 18.08 },
   { n: 'Ehrenfeld (Sławienko)', a: ['Ehrenfeld', 'Sławienko'], lat: 50.17, lon: 18.16 },
+  { n: 'Rudnik', a: ['Rudnik'], lat: 50.13, lon: 18.16 },
+  { n: 'Silberkopf (Strzybnik)', a: ['Silberkopf', 'Strzybnik'], lat: 50.11, lon: 18.14 },
   { n: 'Schonowitz (Szonowice)', a: ['Schonowitz', 'Szonowice'], lat: 50.13, lon: 18.11 },
   // Halič
   { n: 'Lednica Dolna', a: ['Lednica Dolna'], lat: 49.985, lon: 20.03 },
