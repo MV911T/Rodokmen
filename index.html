@@ -467,7 +467,8 @@ window.RODOKMEN = {
       notes: [
         "Syn Jana Plachého, výměnkáře ve Věrovanech, a Josefy roz. Opluštilové z Dubu.",
         "Sňatek s Františkou Kočířovou (*1828) zatím nenalezen: není v Kralicích 1825–1874 (rejstřík), ve Věrovanech 1850–51 ani 1861–64 – zbývá Věrovany 1852–1860.",
-        "Rejstřík N Věrovany (D XII 18) uvádí „Plachy Joseph – s. 209“ – narození nejspíš cca 1833 (K). Sňatek s Františkou není ve Věrovanech 1850–51 ani 1855–60."
+        "Rejstřík N Věrovany (D XII 18) uvádí „Plachy Joseph – s. 209“ – narození nejspíš cca 1833 (K). Sňatek s Františkou není ve Věrovanech 1850–51 ani 1855–60.",
+        "Sňatek s Františkou není ve Věrovanech (index D XII 29: jen Josef Plachý vdovec 1850 – jiná osoba, *cca 1810, možná příbuzný) ani v Kralicích 1825–1874 ani ve Věrovanech 1861–64 – nejspíš v Dubu nad Moravou."
       ],
       sources: [
         "křest syna Jana 1864 (D XII 19, sken 75)"
@@ -487,7 +488,7 @@ window.RODOKMEN = {
       mother: "mariannaNa",
       notes: [
         "Pokřtěna v září 1828 (den „6.“ čten s malou nejistotou): dcera Johanna Kočíře, sedláka v Kralicích, a Maryi, dcery výměnkáře Fabiána Navrátila.",
-        "Sestra Mariana (*cca 1837) se 11. 2. 1861 provdala za Johanna Wysloužila z Držovic."
+        "Sestra Mariana (*cca 1837) se 11. 2. 1861 v Kralicích provdala za vdovce Johanna Wysloužila z Držovic – zápis uvádí matku „Mariana geb. Fabian Navratil, Viertler aus Kralic“ (MZA 9181 sken 28)."
       ],
       sources: [
         "MZA Brno, Kralice N/O/Z 1825–1874 (sign. 9181, Acta Publica id 5779), sken 75",
@@ -661,18 +662,57 @@ window.RODOKMEN = {
       name: "Fabián Navrátil",
       line: "vesely",
       cert: "M",
-      b: {"date":"cca 1775","year":1775,"approx":true},
-      occ: "sedlák v Kralicích č. 27, později výměnkář",
+      b: {"date":"leden 1776 (křest, 13.–19. 1.)","year":1776,"place":"Kralice na Hané č. 27"},
+      father: "sarkanderNa",
+      mother: "mariannaNa0",
+      occ: "sedlák, čtvrtláník (Viertler) v Kralicích č. 27, později výměnkář",
       notes: [
-        "Otec Mariany (*1805); manželka Kateřina.",
-        "Sňatek není v Kralicích 1784–1824 – nejspíš před 1784. Fabián Navrátil, vdovec, 53 let, oddaný 1858 ve Věrovanech, je jiná osoba (*cca 1805)."
+        "Pokřtěn v lednu 1776 v Kralicích č. 27: „Fabianus | Nawratil Sarkander Rust. Kralitzio, Mariana“; kmotři sedlák Jan Studený a Barbora.",
+        "Otec Mariany (*1805), manželka Kateřina; v roce 1861 uváděn jako „Fabian Navratil, Viertler aus Kralic“ (sňatek vnučky Mariany Kočířové, MZA 9181 sken 28).",
+        "Sňatek není v Kralicích 1761–1824 – nejspíš ve farnosti nevěsty. Fabián Navrátil, vdovec 53 let (sňatek 1858 ve Věrovanech), je jiná osoba."
       ],
       sources: [
-        "MZA 9178 sken 31"
+        "MZA, Kralice na Hané N/O/Z 1761–1784 (sign. 9177, Acta Publica id 5775), sken 78 – https://www.mza.cz/actapublica/matrika/detail/5775",
+        "MZA 9178 sken 31; 9181 sken 28"
       ],
       scans: [
+        {"f":"img/1776_krest_fabian_navratil.jpg","t":"Křest Fabiána, leden 1776, Kralice č. 27 – otec Sarkander Navrátil, sedlák (MZA 9177 sken 78)"},
         {"f":"img/1805_krest_mariana_navratilova.jpg","t":"Křest 17. 12. 1805, Kralice č. 27 (MZA 9178 sken 31)"},
         {"f":"img/1824_snatek_kocir_navratilova.jpg","t":"Sňatek 27. 1. 1824, Kralice č. 65 (MZA 9179 sken 23)"}
+      ]
+    },
+    {
+      id: "sarkanderNa",
+      name: "Sarkander Navrátil",
+      line: "vesely",
+      cert: "M",
+      b: {"date":"cca 1740","year":1740,"approx":true},
+      occ: "sedlák (rusticus) v Kralicích č. 27",
+      notes: [
+        "Otec Fabiána (křest I/1776); manželka Mariana.",
+        "Sňatek není v Kralicích 1761–1784 – tedy před 1761 (kniha 9176a, 1708–1760, oddaní sk. 267–372)."
+      ],
+      sources: [
+        "MZA 9177 sken 78"
+      ],
+      scans: [
+        {"f":"img/1776_krest_fabian_navratil.jpg","t":"Křest Fabiána, leden 1776, Kralice č. 27 – otec Sarkander Navrátil, sedlák (MZA 9177 sken 78)"}
+      ]
+    },
+    {
+      id: "mariannaNa0",
+      name: "Mariana Navrátilová",
+      line: "vesely",
+      cert: "M",
+      b: {"date":"cca 1745","year":1745,"approx":true},
+      notes: [
+        "Matka Fabiána (křest 1776)."
+      ],
+      sources: [
+        "MZA 9177 sken 78"
+      ],
+      scans: [
+        {"f":"img/1776_krest_fabian_navratil.jpg","t":"Křest Fabiána, leden 1776, Kralice č. 27 – otec Sarkander Navrátil, sedlák (MZA 9177 sken 78)"}
       ]
     },
     {
@@ -3720,7 +3760,7 @@ window.RODOKMEN.events = [
   {"y":1993,"t":"Vzniká Česká republika","s":"Vznik ČR"}
 ];
 
-window.RODOKMEN_BUILD='7. 10. 2026 7:47';
+window.RODOKMEN_BUILD='7. 10. 2026 8:05';
 
 </script>
 <script>
