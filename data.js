@@ -85,8 +85,8 @@ window.RODOKMEN = {
         "Přihláška k pobytu, Popisný úřad města Plzně (D): „Veselý Karel“, rodiště Volešník, domovská obec Zbudov, okres Hluboká, země česká; nar. 4. 10. 1904; katolík; národnost česká; svobodný. Přihlášen 18. 10. 1920 v Plzni, Nerudova 999/29 – u tety Kateřiny Roušalové; ve sčítání 1921 už na adrese veden není.",
         "Totožnost s kežmarským Karlem: shoduje se přesné datum narození i příchod z Plzně (sčítání 1930: do Kežmarku 19. 11. 1922 z Plzně). Údaje sčítání 1930 „Plavnice“ a „Vodňany“ jsou tedy zřejmě zkomolené čtení Volešníku a Zbudova.",
         "Rodiče podle rešerše Archivu města Plzně (PhDr. Š. Pflegerová, 7. 10. 2026): Jan Veselý a Marie roz. Koželuhová – PRAVDĚPODOBNÉ, odvozeno ze sourozenců (stejná domovská obec Zbudov, společné bydliště u tety v Plzni). Karlův vlastní křestní zápis zatím neověřen.",
-        "Sourozenci (podle rešerše AMP): Jan *20. 8. 1889 Dříteň, padl v 1. světové válce; Kateřina *2. 2. 1894 Dříteň, komptoiristka, v Plzni od 1911; Růžena *2. 3. 1896 Chvalsovice, komptoiristka, později advokátní úřednice a úřednice Škodových závodů, v Plzni od 13. 3. 1915.",
-        "Teta Kateřina Roušalová roz. Veselá (*20. 9. 1864 Velice), manžel Josef Roušal (*19. 3. 1867 Kaliště, zemř. 21. 5. 1925 Plzeň); sňatek 13. 1. 1891 v Českých Budějovicích; v Plzni Nerudova 999 – zde bydleli Kateřina, Růžena i Karel.",
+        "Sourozenci (podle rešerše AMP): Jan *20. 8. 1889 Dříteň, padl v 1. světové válce (VÚA); Kateřina *2. 2. 1894 Dříteň, komptoiristka, příslušná do Zbudova u Hluboké – v Plzni od 11. 2. 1911 (Nerudova 1124/5 u Roušala), 18. 2. 1913 Jámečnická (?) 589/10, 1. 4. 1917 Otakarovy sady 402/510 (Školské sestry) – adresy čteny ze skenu, částečně nejisté; Růžena *2. 3. 1896 Chvalsovice, komptoiristka, později advokátní úřednice a úřednice Škodových závodů, v Plzni od 13. 3. 1915 (Nerudova 999/29 u Roušala).",
+        "Teta Kateřina Roušalová roz. Veselá (*20. 9. 1864 Velice – podle AMP; na skenu „1864 2?/9 … ve Velicích“), zemř. 4. 11. 193? v Plzni (poslední číslice nejistá). Manžel Josef Roušal *19. 3. 1867 Kaliště (okr. Týn nad Vltavou), zemř. 21. 5. 1925 v Plzni; sňatek 13. 1. 1891 v Českých Budějovicích. Domovský arch Plzeň (D): dřívější domovská obec Velký Temelín (okr. Týn nad Vltavou), domovské právo v Plzni usnesením městského zastupitelstva 17. 3. 1915 č. 7460 (žádost 24. 2. 1915); 1922 bydliště Plzeň, Nerudova 999 – zde bydleli Kateřina, Růžena i Karel.",
         "Sčítání 2. 12. 1930: podnájemník v domě Elsy Hegenbart, Hauptgasse (Hlavná ul.) č. 7; svobodný; národnost česká; bez vyznání; do Kežmarku přišel 19. 11. 1922 z Plzně; rodiště čteno „Plavnice / České Budějovice / Čechy“, domovská obec „Vodňany / České Budějovice“.",
         "Karpathen-Post: 27. 10. 1934 náhradník kandidátky ČSSD („Karol Vesely, Beamter“), 16. 2. 1935 složil slib jako městský zastupitel, člen finanční komise; 1936 bydliště Kežmarok, Sihoť (Insel) 15; 1937 jednatel místní skupiny KČST (Klub čs. turistů).",
         "Prověřeno dříve negativně (křest 4. 10. 1904): farnosti Vodňany, Křtěnov, Kamenný Újezd (Plavnice), Radčice, Křtětice, České Budějovice sv. Mikuláš, Plánice, Blovice, Planá – hledalo se podle chybně čteného sčítání. Další krok: křest ve farnosti Olešník (Volešník), SOA Třeboň, případně matriční úřad, pokud kniha ještě nebyla předána do archivu.",
@@ -94,6 +94,8 @@ window.RODOKMEN = {
       ],
       sources: [
         "Archiv města Plzně, Popisný úřad města Plzně – přihlášky k pobytu: Veselý Karel (1920), Veselá Kateřina (1911), Veselá Růžena (1915); domovský arch Roušal Josef; rešerše PhDr. Štěpánky Pflegerové, e-mail 7. 10. 2026",
+        "Bratr Jan Veselý (*1889) – padlí v 1. světové válce, VÚA: https://www.vuapraha.cz/padli-1-svetova/170921",
+        "Sňatek Josef Roušal × Kateřina Veselá 13. 1. 1891, České Budějovice: https://digi.ceskearchivy.cz/2778/236/1813/916/68/0",
         "Sčítání lidu 1921, Plzeň, Nerudova 999 (SOA Plzeň, Porta fontium): https://www.portafontium.eu/iipimage/34590604/soap-pn_10010_census-1921-plzen-3-cp0999_0060",
         "Sčítání lidu 1930, Kežmarok, arch 321/56 (Slovakiana, objekt cair-ko11kbp)",
         "Karpathen-Post 27. 10. 1934, 8. 12. 1934, 26. 1. 1935, 16. 2. 1935, 5. 12. 1936, 27. 11. 1937 (difmoe.eu)"
@@ -4414,7 +4416,8 @@ window.RODOKMEN = {
       b: {"date":"cca 1860","year":1860,"approx":true,"place":"jižní Čechy (domovská obec Zbudov u Hluboké)"},
       notes: [
         "KANDIDÁT na otce Karla – Rodiče Karla Veselého (*1904) podle rešerše Archivu města Plzně (7. 10. 2026) – odvozeno ze sourozenců Jana, Kateřiny a Růženy (domovská obec Zbudov u Hluboké); Karlův křest zatím neověřen.",
-        "Děti (podle AMP): Jan *20. 8. 1889 Dříteň, Kateřina *2. 2. 1894 Dříteň, Růžena *2. 3. 1896 Chvalsovice, Karel *4. 10. 1904 Volešník. Sestra (?) Kateřina Roušalová roz. Veselá *1864 Velice."
+        "Děti (podle AMP): Jan *20. 8. 1889 Dříteň, Kateřina *2. 2. 1894 Dříteň, Růžena *2. 3. 1896 Chvalsovice, Karel *4. 10. 1904 Volešník. Sestra (?) Kateřina Roušalová roz. Veselá *1864 Velice.",
+        "Syn Jan (*1889) padl v 1. světové válce – VÚA: https://www.vuapraha.cz/padli-1-svetova/170921"
       ],
       sources: [
         "Křest syna Jana 1889, Dříteň: https://digi.ceskearchivy.cz/9211/54/2999/2789/28/0 a https://digi.ceskearchivy.cz/630257/17/3187/2176/30/0",
