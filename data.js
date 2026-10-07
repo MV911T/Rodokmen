@@ -1386,7 +1386,8 @@ window.RODOKMEN = {
       marriage: "25. 1. 1762 – s Marinou Machulčíkovou z Lhoty; svědci Jiří Vašíčka a Mikuláš Holík z Návojné",
       notes: [
         "Sňatek: „hon: ado: Nicolaum filium post def: Joannem Wanick navog: cum hon: Virg: Marina filia post def: Georgium Machulčík Lho:“ – syn † Jana Vaňka z Návojné.",
-        "Děti: Jakub *25. 7. 1765, Jan *16. 6. 1768, Pavel *22. 6. 1772, Anna 1782."
+        "Děti: Jakub *25. 7. 1765, Jan *16. 6. 1768, Pavel *22. 6. 1772, Anna 1782.",
+        "Rektifikace 1749 / katastr 1752: čtvrtlán č. 2 v Lhotě drží Mikula Wanků (předtím cca 1678 Martin Wanků); 1783 rozdělen na třetiny mezi Nicolause, Josepha a vdovu Vaňkovy (PK 11934 fol. 77). Pozor: náš Mikuláš byl synem Jana Vaňka z Návojné – Mikula 1749 je spíš jiná osoba nebo starší generace (HYPOTÉZA)."
       ],
       sources: [
         "Brumov 4012 img 160 (1762), 31, 44, 79"
@@ -1457,7 +1458,8 @@ window.RODOKMEN = {
       b: {"date":"?","year":1710,"approx":true,"place":"Nedašova Lhota"},
       d: {"date":"před 1762","year":1761,"approx":true},
       notes: [
-        "Hypotéza (K): v lánovém rejstříku 1670 je v Lhotě čtvrtláník Jan Machulčík (MZA D 1/312)."
+        "Hypotéza (K): v lánovém rejstříku 1670 je v Lhotě čtvrtláník Jan Machulčík (MZA D 1/312).",
+        "Čtvrtlán č. 9 v Lhotě držel kolem 1678 „Jann Machůlčzik“ (RA 312 I, img 55 a 355); v roce 1749 už jiná rodina – Jiří Machulčík byl nejspíš podruh (1752 „Jiřa Machůčziček?“ mezi podruhy)."
       ],
       sources: [
         "sňatek dcery Mariny 1762 (4012 img 160)"
@@ -1597,7 +1599,8 @@ window.RODOKMEN = {
         "Další doložené děti s Kateřinou: Anna (pokř. 2. 8. 1763, otec zapsán „Fojtik seu Pacik“ – tj. Fojtík neboli Pacík) a Tobiáš ml. (pokř. 19. 11. 1766).",
         "V matrikách psán Pazik / Pačík i Fojtík – rod Pacíků se v 18. století psal Fojtík.",
         "Hypotéza (K): v lánovém rejstříku panství Brumov 1670 je v Lhotě čtvrtláník Jan Fojtík (dříve Václav Machač) – možný předek (MZA D 1/312, img 33–35).",
-        "Urbářový odhad 1681/84 (opis Novotný, MZA G 371 inv. 61, str. 19–20): v Nedašově Lhotě 9 sedláků – mj. Vašek Fojtů, Jan Fojtík, Bartoš Fojtů, Martin Vaňků, Martin Machačů (vše ¼ lánu)."
+        "Urbářový odhad 1681/84 (opis Novotný, MZA G 371 inv. 61, str. 19–20): v Nedašově Lhotě 9 sedláků – mj. Vašek Fojtů, Jan Fojtík, Bartoš Fojtů, Martin Vaňků, Martin Machačů (vše ¼ lánu).",
+        "Pozemková kniha Nedašova Lhota 1782–1850 (MZA C 17/11934, img 17, fol. 14): dům č. 5 nadepsán „Tobias Pacsik, Häusler“, bez zápisů; v knize mlýnů panství (11871) lhotský mlýn není – mlýn byl nejspíš vrchnostenský nebo zanikl."
       ],
       sources: [
         "MZA Brumov sign. 4012, img 262"
@@ -2220,7 +2223,8 @@ window.RODOKMEN = {
         "Marina byla jeho druhá žena (sňatek 7. 2. 1763, vdova po Ondřeji Adamkovi) – matka Jiřího tedy zemřela před 1763.",
         "Nejstarší doložený předek této větve; křest v matrikách není (Brumov začíná 1688) – další krok: gruntovní knihy, usedlost č. 17.",
         "Kandidáti na rodiče (HYPOTÉZA): Jan Fojtík × Kateřina z Lhoty (děti 1689–1694; Kateřina se 1706 znovu vdala jako vdova). Kandidátní sňatek 5. 2. 1708 v Lhotě: Jan, syn † Jana Fojtíka, × Marina (opis7 img 119); s Marianou měl Jan dceru Marianu (*5. 4. 1713 Lhota) a Barboru (*1716 Nedašov).",
-        "Hypotéza (K): v Nedašově Lhotě drží ¼ lánu Jan Fojtík v lánovém rejstříku 1670 i v urbářovém odhadu 1681/84 (opis Novotný, MZA G 371 inv. 61 str. 19) – generace jeho děda?"
+        "Hypotéza (K): v Nedašově Lhotě drží ¼ lánu Jan Fojtík v lánovém rejstříku 1670 i v urbářovém odhadu 1681/84 (opis Novotný, MZA G 371 inv. 61 str. 19) – generace jeho děda?",
+        "Rektifikace 1749 (RA 312 I, img 352): čtvrtlán č. 3 v Lhotě drží „Mikula Foitků“, předtím (vizitace cca 1678) „Jann Foitků“ – rodový grunt Fojtíků v Lhotě (PRAVDĚPODOBNĚ). Nedašovský grunt č. 7 (dům 17) přešel mezi 1678 a 1749 od Šrámků na „Jůru Fogtů“."
       ],
       sources: [
         "Brumov 4012 img 242 (úmrtí 1771), 162 (sňatek 1763)"
