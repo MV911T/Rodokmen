@@ -1067,10 +1067,11 @@ window.RODOKMEN = {
       occ: "zedník (Maurer), Nedašova Lhota č. 21, později č. 22",
       marriage: "před 1780 – s Annou Kolínkovou (zápis nenalezen v Brumově 1770–1787)",
       notes: [
-        "Zedník Tomáš Vaněk s manželkou Annou roz. Kolínkovou: děti Anna *1. 6. 1780, Marina *3. 9. 1782, Anna *27. 7. 1789 (Lhota č. 21), Barbora *19. 9. 1796 a Veronika *2. 4. 1799 (č. 22) – stále titíž kmotři (Martin Fojtík, Dorota žena Josefa Fojtíka), tedy jeden pár už od roku 1780.",
-        "Sňatek před 1780 není v brumovských oddacích 1770–1787 (4012 img 180–204) ani 1787–1796; nečteno zbývá 1770–1777 (img 174–179).",
+        "Zedník Tomáš Vaněk s manželkou Annou roz. Kolínkovou: děti Anna *1. 6. 1780, Marina *3. 9. 1782, Anna *27. 7. 1789 (Lhota č. 21), Martin *24. 10. 1784, Barbora *19. 9. 1796 a Veronika *2. 4. 1799 a Jiří *10. 2. 1802 (č. 22) – stále titíž kmotři (Martin Fojtík, Dorota žena Josefa Fojtíka), tedy jeden pár už od roku 1780.",
+        "Sňatek před 1780 není v brumovských oddacích 1760–1796 (4012 celé, 4023) – nejspíš jinde.",
         "Kandidát (K): syn Tomáše Vaňka a Anny Hoštovecké (?) z Nedašova, oddaných 23. 1. 1757 (opis7 img 293) – jeho křest by padl do mezery 1758–59, která v brumovských matrikách chybí.",
-        "Kandidát (K): totožnost s Tomášem Fojtíkem, který se 1. 6. 1778 v Lhotě oženil s Annou, dcerou † Jiřího Kolínka (dvojí příjmení jako u Tobiáše Fojtíka zv. Pacík) – proti tomu mluví souběžné děti Tomáše Fojtíka × Anny (Kateřina 14. 9. 1780)."
+        "Kandidát (K): totožnost s Tomášem Fojtíkem, který se 1. 6. 1778 v Lhotě oženil s Annou, dcerou † Jiřího Kolínka (dvojí příjmení jako u Tobiáše Fojtíka zv. Pacík) – proti tomu mluví souběžné děti Tomáše Fojtíka × Anny (Kateřina 14. 9. 1780).",
+        "Pozor: křížek „+“ před jmény otců v knize N 4473 je značka formuláře, ne „zemřel“ – Tomáš žil ještě 1802."
       ],
       sources: [
         "N 4473 img 129, 138, 140",
@@ -1080,6 +1081,7 @@ window.RODOKMEN = {
         {"f":"img/1789_krest_anna_vankova.jpg","t":"Křest dcery Anny 27. 7. 1789, Lhota č. 21 (N 4473 img 129)"},
         {"f":"img/1782_krest_marina_vankova.jpg","t":"Křest dcery Mariny 3. 9. 1782, Lhota č. 21 (4012 img 132)"},
         {"f":"img/1780_krest_anna_vankova.jpg","t":"Křest dcery Anny 1. 6. 1780 (4012 img 121)"},
+        {"f":"img/1784_krest_martin_vanek.jpg","t":"Křest syna Martina 24. 10. 1784 (4012 img 145)"},
         {"f":"img/1799_krest_veronika_vankova.jpg","t":"Křest dcery Veroniky 1799"},
         {"f":"img/1778_snatek_tomas_anna_K.jpg","t":"Kandidát: sňatek 1. 6. 1778"}
       ]
@@ -1222,7 +1224,7 @@ window.RODOKMEN = {
       mother: "rosinaFo",
       notes: [
         "Dcera sedláka Martina Fojtíka (sňatek 1800: 18 let).",
-        "Kandidátka na křest (K, silná): Marina, dcera Martina Fojtíka a Rosiny, Lhota č. 39, pokřtěna 13. 4. 1777 (4012 img 104); v 1775–IX/1783 jiná taková dcera není – věk 18 při sňatku 1800 by byl o 5 let nižší."
+        "Kandidátka na křest (K, silná): Marina, dcera Martina Fojtíka a Rosiny, Lhota č. 39, pokřtěna 13. 4. 1777 (4012 img 104); v 1775–XII/1784 jiná taková dcera není (1784 jen syn Josef) – věk 18 při sňatku 1800 by byl o 5 let nižší."
       ],
       sources: [
         "O 4023 img 126 (sňatek 1800)",
@@ -1240,7 +1242,8 @@ window.RODOKMEN = {
       notes: [
         "Podle oddacího zápisu syn Josefa Bartošáka a Anny roz. Bartošákové (?).",
         "Kandidát: 1. 8. 1802 pokřtěn nemanželský Václav, syn Anny Bartoškové z Lhoty č. 50 (4473 img 143) – věk nesedí, neověřeno.",
-        "Josef Bartošák × Marina, zahradník v Lhotě č. 50 (dcery Anna 1783, Marina 1801); v Lhotě 1795–1800 žádný Václav Bartošák nepokřtěn."
+        "Josef Bartošák × Marina, zahradník v Lhotě č. 50 (dcery Anna 1783, Marina 1801); v Lhotě 1795–1800 žádný Václav Bartošák nepokřtěn.",
+        "Sňatek 5. 2. 1822 (O 4489 img 2): „Wenzl Sohn des Joseph Bartošak … und Anna gebohrne Bartošak, 24“ × Marianna, dcera sedláka Pavla Vaňka a Marianny roz. Tomečkové, 20, Lhota 26."
       ],
       scans: [
         {"f":"img/1822_snatek_bartosak.jpg","t":"Sňatek 5. 2. 1822"}
@@ -1647,7 +1650,7 @@ window.RODOKMEN = {
       cert: "M",
       b: {"date":"cca 1824","year":1824,"approx":true,"place":"Nedašov č. 88"},
       notes: [
-        "Dcera Josefa Vaculíka, čtvrtláníka v Nedašově č. 88, a Ludmily(?) roz. Kopečné(?).",
+        "Dcera Josefa Vaculíka, sedláka v Nedašově (č. 78 v roce 1821, č. 88 později), a pravděpodobně Mariny, dcery Jana Mikušky (křest sestry Mariny 3. 10. 1821, 4474 img 2) – dřívější čtení „Ludmila Kopečná“ nepotvrzeno.",
         "Křest není v Nedašově XI/1821–XII/1824 (4474 img 2–9) – nejspíš dříve (4473, 1819–21)."
       ],
       scans: [
@@ -1857,19 +1860,57 @@ window.RODOKMEN = {
       name: "Mikuláš Holba",
       line: "matusu",
       cert: "M",
-      b: {"date":"cca 1713","year":1713,"approx":true},
+      b: {"date":"1. 11. 1714 (křest)","year":1714,"place":"Nedašov"},
       d: {"date":"22. 9. 1777","year":1777,"place":"Nedašov č. 39"},
+      father: "jiriHo",
+      mother: "annaHo1",
       notes: [
+        "Pokřtěn 1. 11. 1714 v Nedašově (PRAVDĚPODOBNĚ on – jiný Mikuláš Holba v Nedašově 1709–1726 není; věk 64 při úmrtí sedí): „Nicolaus | Georgius Holbů, Mater Anna … ex Nedašow“.",
         "Zemřel 22. 9. 1777 v Nedašově č. 39 jako vdovec, 64 let: „Nicolaus Holba viduus – Nedasch. 39 – 64 an.“",
-        "Otec Matěje (sňatek 1763), Jana (1765) a Matiáše (1770).",
-        "Křest není v Brumově 1712–1714 (opis7); sňatek spadá do mezery matrik 1727–1754 – pokračovat přes gruntovní knihy (usedlost č. 39 / 32)."
+        "Otec Matěje (sňatek 1763), Jana (1765) a Matiáše (1770)."
       ],
       sources: [
         "Brumov 4012 img 260 (úmrtí 1777)",
-        "4012 img 163 (sňatek syna 1763)"
+        "4012 img 163 (sňatek syna 1763)",
+        "Brumov opis7 img 171 (křest 1714) – https://www.mza.cz/actapublica/matrika/detail/10376"
       ],
       scans: [
+        {"f":"img/1714_krest_mikulas_holba.jpg","t":"Křest 1. 11. 1714, Nedašov (opis7 img 171)"},
         {"f":"img/1777_umrti_mikulas_holba.jpg","t":"Úmrtí 22. 9. 1777, Nedašov č. 39 (4012 img 260)"}
+      ]
+    },
+    {
+      id: "jiriHo",
+      name: "Jiří Holba",
+      line: "matusu",
+      cert: "D",
+      b: {"date":"cca 1685","year":1685,"approx":true},
+      occ: "Nedašov",
+      notes: [
+        "Otec Mikuláše (křest 1. 11. 1714) – opis brumovské matriky; manželka Anna.",
+        "Sňatek nejspíš 1705–1713 (opis7 img 115–140, nečteno). V Nedašově žili i Ondřej Holba × Marina a Bartoloměj Holba × Anna (děti 1722–1725) – možná bratři."
+      ],
+      sources: [
+        "Brumov opis7 img 171"
+      ],
+      scans: [
+        {"f":"img/1714_krest_mikulas_holba.jpg","t":"Křest 1. 11. 1714, Nedašov (opis7 img 171)"}
+      ]
+    },
+    {
+      id: "annaHo1",
+      name: "Anna Holbová",
+      line: "matusu",
+      cert: "D",
+      b: {"date":"cca 1690","year":1690,"approx":true},
+      notes: [
+        "Matka Mikuláše (křest 1714)."
+      ],
+      sources: [
+        "Brumov opis7 img 171"
+      ],
+      scans: [
+        {"f":"img/1714_krest_mikulas_holba.jpg","t":"Křest 1. 11. 1714, Nedašov (opis7 img 171)"}
       ]
     },
     {
@@ -1915,17 +1956,55 @@ window.RODOKMEN = {
       name: "Mikuláš Miřička",
       line: "matusu",
       cert: "M",
-      b: {"date":"cca 1716","year":1716,"approx":true},
+      b: {"date":"13. 9. 1715 (křest)","year":1715,"place":"Nedašova Lhota"},
       d: {"date":"24. 3. 1781","year":1781,"place":"Nedašov č. 62"},
+      father: "mikulasMi0",
+      mother: "zuzanaMi",
       notes: [
+        "Pokřtěn 13. 9. 1715 v Nedašově Lhotě (PRAVDĚPODOBNĚ on – věk 65 při úmrtí 1781 sedí): „Nicolaus | Nicolaus Mierzičík, Mater Susanna … ex Lhota“; do Nedašova č. 62 se přestěhoval později. Pozor na jmenovce: Mikuláš, syn Jana Miřičky a Zuzany, pokřtěn 14. 11. 1714 (opis7 img 171).",
         "Zemřel 24. 3. 1781 v Nedašově č. 62 jako vdovec, 65 let: „Nicolaus mirzička viduus – Nedaš. 62 – 65 an.“",
         "Manželka Anna († 14. 1. 1777, 53 let, č. 62)."
       ],
       sources: [
-        "Brumov 4012 img 266 (úmrtí 1781), 259 (úmrtí manželky 1777)"
+        "Brumov 4012 img 266 (úmrtí 1781), 259 (úmrtí manželky 1777)",
+        "Brumov opis7 img 180 (křest 1715)"
       ],
       scans: [
+        {"f":"img/1715_krest_mikulas_miricka.jpg","t":"Křest 13. 9. 1715, Nedašova Lhota (opis7 img 180)"},
         {"f":"img/1781_umrti_mikulas_miricka.jpg","t":"Úmrtí 24. 3. 1781, Nedašov č. 62 (4012 img 266)"}
+      ]
+    },
+    {
+      id: "mikulasMi0",
+      name: "Mikuláš Miřička st.",
+      line: "matusu",
+      cert: "D",
+      b: {"date":"cca 1690","year":1690,"approx":true},
+      occ: "Nedašova Lhota",
+      notes: [
+        "Otec Mikuláše (křest 13. 9. 1715); další děti Martin (10. 10. 1718) a Jan (1719) – manželka Zuzana."
+      ],
+      sources: [
+        "Brumov opis7 img 180, 203, 212"
+      ],
+      scans: [
+        {"f":"img/1715_krest_mikulas_miricka.jpg","t":"Křest 13. 9. 1715, Nedašova Lhota (opis7 img 180)"}
+      ]
+    },
+    {
+      id: "zuzanaMi",
+      name: "Zuzana Miřičková",
+      line: "matusu",
+      cert: "D",
+      b: {"date":"cca 1692","year":1692,"approx":true},
+      notes: [
+        "Matka Mikuláše (křest 1715), Martina (1718) a Jana (1719)."
+      ],
+      sources: [
+        "Brumov opis7 img 180"
+      ],
+      scans: [
+        {"f":"img/1715_krest_mikulas_miricka.jpg","t":"Křest 13. 9. 1715, Nedašova Lhota (opis7 img 180)"}
       ]
     },
     {
