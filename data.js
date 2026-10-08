@@ -3840,7 +3840,9 @@ window.RODOKMEN = {
       father: "josefIr",
       mother: "johannaDu",
       occ: "domkář a řezník v Bolaticích",
+      marriage: "14. 11. 1826, Dolní Benešov – s Johannou Tomanek",
       notes: [
+        "Sňatek 14. 11. 1826 Dolní Benešov (M): „Adolescens Cyrillus Josephi Girzik lanionis (?) filius cum virgine Johanna Joannis Tomanek coloni filia“, 30 a 19 let, Bolatice / Benešov; svědci Joannes Postulka, coronarius (?), a Ignatius Kaluza, řezník (lanio).",
         "Pokřtěn 3. 3. 1796 v Bolaticích: „Cyrillus – Joseph Irzik Häußler von Bolatitz, und die Mutter Johanna gebohrne Dudin“; kmotři domkář Carl Bartonetz a Elisabetha Ballarin.",
         "Totožnost potvrzena křtem syna Johanna 1848: „Cyrill Irzik Häusler, Sohn des verstorb. Häuslers Josef Irzik und dessen Eheweib Johanna“.",
         "Manželky: 1) Johanna Tomanek († 1846; děti mj. Josepha 1827, Joseph 1836, Marianna 1839, Franz 1841, Monica 1844 – podle indexu); 2) Johanna Kostelny (dcera † domkáře Johanna Kostelného; děti Johann 1848, Jacob 1849, Sylvester 1860, Paulus 1861, Maria 1864).",
@@ -3848,10 +3850,12 @@ window.RODOKMEN = {
         "Hypotéza (K): svobodný domek Jiříků – František Jiřík ho koupil od vrchnosti 1753, † 1781; vdova Barbora ho 30. 3. 1797 prodala synovi Josefu Jiříkovi (V. Štěpán, Bolatice od pravěku…, 2009). Pokud je to Cyrillův otec, byl František jeho děd."
       ],
       sources: [
-        "ZA Opava, NAD 165 Sbírka matrik, Bolatice N 1765–1810 (H III 2) fol. 107; index H III 11"
+        "ZA Opava, NAD 165 Sbírka matrik, Bolatice N 1765–1810 (H III 2) fol. 107; index H III 11",
+        "ZA Opava, NAD 165 Sbírka matrik, Dolní Benešov H IV 5 (O 1798–1867), sken 34, listopad 1826"
       ],
       scans: [
-        {"f":"img/1796_krest_cyrill_irzik.jpg","t":"Křest 3. 3. 1796 (H III 2 fol. 107)"}
+        {"f":"img/1796_krest_cyrill_irzik.jpg","t":"Křest 3. 3. 1796 (H III 2 fol. 107)"},
+        {"f":"img/1826_snatek_irzik_tomanek.jpg","t":"Sňatek 14. 11. 1826, Dolní Benešov – Cyrill Irzik × Johanna Tomanek (H IV 5, sken 34)"}
       ]
     },
     {
@@ -3994,16 +3998,20 @@ window.RODOKMEN = {
       b: {"date":"cca 1807","year":1807,"approx":true},
       d: {"date":"22. 3. 1846","year":1846,"place":"Bolatice"},
       cause: "tyfus (Nervenfieber)",
+      father: "janTom",
       notes: [
+        "Sňatek 14. 11. 1826 Dolní Benešov (M): „virgine Johanna Joannis Tomanek coloni filia“, 19 let (*~XI 1806 – XI 1807), z Benešova.",
         "Zemřela 22. 3. 1846 v Bolaticích, 39 let: „Johanna Irzik, Eheweib des Häuslers und Fleischhauers Cyrill Irzik und Tochter des Bauers Johann Tomanek“.",
         "Dcera sedláka Johanna Tomanka – v Bolaticích rod Tomanek nebyl; sňatek s Cyrillem (cca 1820–27) nejspíš ve farnosti nevěsty, snad Dolní Benešov (kmotr Adamik odtud)."
       ],
       sources: [
-        "ZA Opava, NAD 165 Sbírka matrik, Bolatice Z 1841–1915 (H III 9) sken 9, č. 67"
+        "ZA Opava, NAD 165 Sbírka matrik, Bolatice Z 1841–1915 (H III 9) sken 9, č. 67",
+        "ZA Opava, NAD 165 Sbírka matrik, Dolní Benešov H IV 5 (O 1798–1867), sken 34, listopad 1826"
       ],
       scans: [
         {"f":"img/1846_umrti_johanna_irzik.jpg","t":"Úmrtí 22. 3. 1846, 39 let (H III 9 sken 9, č. 67)"},
-        {"f":"img/1841_krest_franz_irzik.jpg","t":"Křest 29. 10. 1841 (H III 3 sken 144, č. 46)"}
+        {"f":"img/1841_krest_franz_irzik.jpg","t":"Křest 29. 10. 1841 (H III 3 sken 144, č. 46)"},
+        {"f":"img/1826_snatek_irzik_tomanek.jpg","t":"Sňatek 14. 11. 1826, Dolní Benešov – Cyrill Irzik × Johanna Tomanek (H IV 5, sken 34)"}
       ]
     },
     {
@@ -4810,6 +4818,25 @@ window.RODOKMEN = {
       scans: [
         {"f":"img/1889_krest_jan_vesely_driten.jpg","t":"Křest bratra Jana 20. 8. 1889, Dříteň č. 6 (Bílá Hůrka 5A, sken 54) – rodiče Jan Veselý × Marie Koželuhová, legitimace"},
         {"f":"img/1891_snatek_rousal_vesela.jpg","t":"Sňatek tety Kateřiny Veselé s Josefem Roušalem 13. 1. 1891, České Budějovice (sv. Mikuláš O 68, sken 236)"}
+      ]
+    },
+    {
+      id: "janTom",
+      name: "Johann (Jan) Tomanek",
+      line: "jirik",
+      cert: "M",
+      b: {"date":"cca 1775","year":1775,"approx":true,"place":"Dolní Benešov"},
+      occ: "sedlák (colonus) v Dolním Benešově",
+      notes: [
+        "Otec Johanny (sňatek 1826): „Johanna Joannis Tomanek coloni filia“, Benešov.",
+        "Pravděpodobně i otec Antonia Tomanka (sňatek 2. 5. 1826 s Franciskou Dudovou: „Antonius Joannis Tomanek coloni filius“) – jen podle jména (D)."
+      ],
+      sources: [
+        "ZA Opava, NAD 165 Sbírka matrik, Dolní Benešov H IV 5 (O 1798–1867), sken 34, listopad 1826",
+        "ZA Opava, Dolní Benešov H IV 5, sken 33 (2. 5. 1826)"
+      ],
+      scans: [
+        {"f":"img/1826_snatek_irzik_tomanek.jpg","t":"Sňatek 14. 11. 1826, Dolní Benešov – Cyrill Irzik × Johanna Tomanek (H IV 5, sken 34)"}
       ]
     }
   ]
