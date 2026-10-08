@@ -3087,13 +3087,16 @@ window.RODOKMEN = {
       notes: [
         "Otec Mathiase (sňatek 1759), Evy (1762) a Mariny (1765). Nejstarší doložený Strusch (aktivní 1759–1765).",
         "V zápisu 1759 je otec „Col.“, svědek Andreas Strusch „Gaz.“ – buď nedůsledný stav, nebo dva Andreasové (K).",
-        "Doložen už 5. 5. 1737 jako svědek v Rohově (H XVI 6 fol. 6); svědek ještě 1745–1752. Úmrtí není v Sudicích 1763–1777. V Rohově žil i Georg Strusch († před 1739; děti Martin, m. 1739, a Barbara, m. 1745) – možná Andreasův otec (HYPOTÉZA); Laurentius Strusch (*cca 1710 †1773) a Wenzel – možní bratři. Vdova Anna Strusin († 14. 10. 1776, 68 let) – možná jeho žena (K)."
+        "Doložen už 5. 5. 1737 jako svědek v Rohově (H XVI 6 fol. 6); svědek ještě 1745–1752. Úmrtí není v Sudicích 1763–1777. V Rohově žil i Georg Strusch († před 1739; děti Martin, m. 1739, a Barbara, m. 1745) – možná Andreasův otec (HYPOTÉZA); Laurentius Strusch (*cca 1710 †1773) a Wenzel – možní bratři. Vdova Anna Strusin († 14. 10. 1776, 68 let) – možná jeho žena (K).",
+        "Dcera Marina pokřtěna 1. 1. 1732 v Rohově (M): „Marina | Andreas Struz et Anna uxor | Joannes Dobowy et Marina Halfarka uterqs Rohovio“ (H XVI 1 sken 127)."
       ],
       sources: [
-        "ZA Opava, NAD 165 Sbírka matrik, Sudice H XVI 6 (O 1737–1849) fol. 53 (1759), 58 (1762), 63 (1765)"
+        "ZA Opava, NAD 165 Sbírka matrik, Sudice H XVI 6 (O 1737–1849) fol. 53 (1759), 58 (1762), 63 (1765)",
+        "ZA Opava, NAD 165 Sbírka matrik, Sudice H XVI 1 (1702–1736), sken 127"
       ],
       scans: [
-        {"f":"img/1759_snatek_strusch_gadacz.jpg","t":"Sňatek 8. 7. 1759, Sudice (H XVI 6 fol. 53, sken 26)"}
+        {"f":"img/1759_snatek_strusch_gadacz.jpg","t":"Sňatek 8. 7. 1759, Sudice (H XVI 6 fol. 53, sken 26)"},
+        {"f":"img/1732_krest_marina_strusch.jpg","t":"Křest dcery Mariny 1. 1. 1732, Rohov – „Andreas Struz et Anna uxor“ (Sudice H XVI 1, sken 127)"}
       ]
     },
     {
@@ -3106,7 +3109,8 @@ window.RODOKMEN = {
       father: "petrGa",
       mother: "barbaraGa",
       notes: [
-        "Dcera Petra Gadacze, chalupníka v Rohově (sňatek 1759: „Rozina Petri Gadacz Gaz: Rohov filia“) – tip OFB „Euphrosina“ neplatí; matka Valentina (křest 1770)."
+        "Dcera Petra Gadacze, chalupníka v Rohově (sňatek 1759: „Rozina Petri Gadacz Gaz: Rohov filia“) – tip OFB „Euphrosina“ neplatí; matka Valentina (křest 1770).",
+        "Matka nejistá: Petr Gadacz měl 1729–30 manželku Catharinu, Barbara byla zřejmě 2. manželka. Zda je Rosina (*~1738) dcerou Barbary, nebo Cathariny, rozhodne až její křest (Sudice H XVI 1 sk. 129–146 nebo H XVI 2) – K."
       ],
       sources: [
         "OFB Kranowitz"
@@ -3127,15 +3131,18 @@ window.RODOKMEN = {
       notes: [
         "Otec Rosiny (sňatek 1759).",
         "Zemřel 4. 5. 1775 v Rohově, 84 let: „Petrus Gadacz Casarius Rohoviensis“ (Sudice H XVI 7 fol. 177).",
-        "Sňatek před 1737 (není v oddacích Sudice 1737–1772) – hledat v H XVI 1 (1702–1736)."
+        "Sňatek před 1737 (není v oddacích Sudice 1737–1772) – hledat v H XVI 1 (1702–1736).",
+        "1. manželka Catharina (M): křty dcer Cathariny 10. 10. 1729 („Petrus Gadacz et Catharina Rohowio“, sken 120) a Mariny 26. 10. 1730 (sken 123); Marina zemřela 18. 12. 1730 ve stáří 7½ týdne – „Petri Gadatz Operarij filiola“ (sken 292) – Petr tehdy nádeník (operarius) v Rohově. Barbara (†1769) byla tedy nejspíš jeho 2. manželka (sňatek po 1732, nenalezen) – D."
       ],
       sources: [
         "ZA Opava, NAD 165 Sbírka matrik, Sudice H XVI 6 (O 1737–1849) fol. 53",
-        "ZA Opava, NAD 165 Sbírka matrik, Sudice H XVI 7 sken 90"
+        "ZA Opava, NAD 165 Sbírka matrik, Sudice H XVI 7 sken 90",
+        "ZA Opava, NAD 165 Sbírka matrik, Sudice H XVI 1 (1702–1736), sken 120, 123, 292"
       ],
       scans: [
         {"f":"img/1759_snatek_strusch_gadacz.jpg","t":"Sňatek 8. 7. 1759, Sudice (H XVI 6 fol. 53, sken 26)"},
-        {"f":"img/1775_umrti_petr_gadacz.jpg","t":"Úmrtí Petra Gadacze 4. 5. 1775, Rohov, 84 let (H XVI 7 fol. 177)"}
+        {"f":"img/1775_umrti_petr_gadacz.jpg","t":"Úmrtí Petra Gadacze 4. 5. 1775, Rohov, 84 let (H XVI 7 fol. 177)"},
+        {"f":"img/1729_krest_catharina_gadacz.jpg","t":"Křest dcery Cathariny 10. 10. 1729, Rohov – „Petrus Gadacz et Catharina“ (Sudice H XVI 1, sken 120)"}
       ]
     },
     {
@@ -3146,7 +3153,8 @@ window.RODOKMEN = {
       b: {"date":"cca 1705","year":1705,"approx":true},
       d: {"date":"15. 2. 1769","year":1769,"place":"Rohov"},
       notes: [
-        "Zemřela 15. 2. 1769 v Rohově, 64 let: „Barbara Petri Gadacz inquil. Rohov. uxor“ (M). Jako matka Rosiny PRAVDĚPODOBNÁ – mohla být i druhou ženou."
+        "Zemřela 15. 2. 1769 v Rohově, 64 let: „Barbara Petri Gadacz inquil. Rohov. uxor“ (M). Jako matka Rosiny PRAVDĚPODOBNÁ – mohla být i druhou ženou.",
+        "Pravděpodobně 2. manželka Petra Gadacze – v letech 1729–1730 měl Petr manželku Catharinu (D)."
       ],
       sources: [
         "ZA Opava, NAD 165 Sbírka matrik, Sudice H XVI 7 sken 76, fol. 148"
