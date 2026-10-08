@@ -2274,7 +2274,7 @@ window.RODOKMEN = {
         "V Lhotě 1752 drží čtvrtlán Jiřa Matůšků; v lánovém rejstříku 1670 jsou v Nedašově Martin a Mikuláš Matůšů – možní předkové (K).",
         "Kandidáti na původ (HYPOTÉZA): Václav ml., syn Václava Matušů z Lhoty, oženil se 28. 10. 1721 s Annou; nebo syn nedašovského páru Václav Matušů × Kateřina (děti 1711, 1716) – křest v opisu chybí (mezery 1699–1705, 1711, 1719).",
         "Žil ještě 1. 5. 1760 (zemřela mu manželka Rosina, 40 let, 4012 img 213); jeho úmrtí není v Brumově 1760–1773.",
-        "Gruntovní kniha Nedašov II, podsedek č. 79 (staré č. 24), img 110R–111L (M): vrchnost prodává „jmenovanému Václavovi Matůšovi“ dědičně podsedek, „který nyní sám Matůšů užíval“, za 30 zlatých; datováno na hradě Brumově „ultima Xbris 17[3?]4“, podepsán hrabě Jos. Illésházy; ingrosováno 8. 12. 1782 (?). Rok čten 1734, třetí číslice nejistá (možné 1774) – D.",
+        "Gruntovní kniha Nedašov II, podsedek č. 79 (staré č. 24), img 110R–111L (M): vrchnost prodává „jmenovanému Václavovi Matůšovi“ dědičně podsedek, „který nyní sám Matůšů užíval“, za 30 zlatých; „Což se stalo na Hradu Brumowě dne ultima Xbris 1734“, podepsán „Jos. Hrabě Illesházy“; ingrosováno 8. 12. 1782 (?). Rok 1734 ověřen výřezem (třetí číslice jasně „3“, odlišná od „7“) – Václav tedy koupil podsedek 31. 12. 1734 a narodil se nejpozději kolem 1710.",
         "Pozdější držitel č. 79 Jan Jakubík († před 26. 3. 1817), po něm syn Mathias Jakubík; kdy podsedek přešel z Matůšů na Jakubíky, kniha neuvádí."
       ],
       sources: [
@@ -2299,7 +2299,8 @@ window.RODOKMEN = {
         "Dcera Josefa Šurana z Nedašova č. 79 (sňatek 1773, asi 17 let); otec žil ještě 1779.",
         "Zemřela 15. 12. 1826 jako vdova po sedlákovi Jiřím Matůšů, 70 let (Z 4491 img 9).",
         "Hypotéza (K): otec Josef Šuran mohl pocházet z Jestřabí – Josef, syn Jana Šurana a Rosiny, pokřtěn 12. 12. 1724 v Jestřabí (opis7 img 253).",
-        "Její otec Josef Šuran držel grunt č. 67 (lánský katastr č. 18) v Nedašově; 10. 3. 1785 ho vrchnost prodala Josefovi a Jiřímu Matůšů (Jiří = její manžel). Josef Šuran tedy do 3/1785 zemřel nebo grunt předal (D) – úmrtí 1760–1820 ve farnosti Brumov nenalezeno, zemřelí 1783 (4012 img 272) jsou vybledlí."
+        "Její otec Josef Šuran držel grunt č. 67 (lánský katastr č. 18) v Nedašově; 10. 3. 1785 ho vrchnost prodala Josefovi a Jiřímu Matůšů (Jiří = její manžel). Josef Šuran tedy do 3/1785 zemřel nebo grunt předal (D) – úmrtí 1760–1820 ve farnosti Brumov nenalezeno, zemřelí 1783 (4012 img 272) jsou vybledlí.",
+        "Pozor na jmenovce: Josef Šuran ml., oddaný 22. 9. 1765 s Marinou Mišů, byl syn JIŘÍHO Šurana („Josephum filium Georgij Šuran“, Brumov 4012 img 167R) – není to syn ani totožný s jejím otcem Josefem. Úmrtí jejího otce není v Brumově 1760–1787 (zemřelí přečteni celí)."
       ],
       sources: [
         "Brumov 4012 img 183",
