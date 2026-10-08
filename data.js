@@ -1084,7 +1084,8 @@ window.RODOKMEN = {
       notes: [
         "Datum a místo přečteny v křestním zápisu dcery Honoraty (SO VII 36): „Bergmann aus Zagórzany … 7/1 76 Wieliczka“. Křty farnosti Gdów 1870–1876 nejsou online.",
         "Kandidát z Geneteky (Stanisław *11. 3. 1872, Gdów č. 145, syn Marcina × Marianny Grzyb) je nepravděpodobný. Křty Zagórzan 1867–1883 nejsou online (jen na faře Gdów). Hypotéza (K): rodiče z rodů Jan Chmielek × Helena Jakóbczyk (Zagórzany 24) nebo Piotr Chmielek × Józefa Zygmunt (sňatek 1876).",
-        "Úmrtí Zagórzany 1890–1935: Marcin Chmielek ani Marianna Grzyb tam nezemřeli; žádný zápis zatím nespojuje Stanisława s touto rodinou. Sňatky Gdów 1890–97 bez Chmielka."
+        "Úmrtí Zagórzany 1890–1935: Marcin Chmielek ani Marianna Grzyb tam nezemřeli; žádný zápis zatím nespojuje Stanisława s touto rodinou. Sňatky Gdów 1890–97 bez Chmielka.",
+        "Sňatek (podle křtu Honoraty „18/9 03“ nebo „8/9 03“) NENÍ v Ostravě: ř.-k. Slezská Ostrava, Moravská Ostrava, Přívoz, Hrušov, Mariánské Hory ani civilní CV XII 1 (v těchto farnostech se 8. ani 18. 9. 1903 neoddávalo) → nejspíš v Haliči (Łęg Tarnowski / Rudno nebo Gdów)."
       ],
       sources: [
         "ř.-k. fara Slezská Ostrava, N 1902–1905 (SO VII 36), sken 101 – ZA Opava"
@@ -1105,14 +1106,17 @@ window.RODOKMEN = {
       notes: [
         "Narozena 12. 9. 1884, pokřtěna 14. 9. v Rudně č. 28 (farnost Łęg Tarnowski): „Thomas Dydowicz fil. Josephi et Mariae Chmiela | Ludovica Pikul filia Josephi et Mariae Drąg“; kmotři Józef Pikul a Teresa Golec.",
         "Toto je „Helena Chmielková“ z rodinných poznámek – matka Honoraty. Dřívější čtení data „1. 9.“ z ostravského zápisu opraveno; rod Dydowicz ze Szczucina je jiná rodina.",
-        "Sourozenci (rejstřík): Kateřina 1863 (†1926), Jakub 1866, Jan 1869, Józef 1873, Marianna 1876, Julia 1879, Karolina 1882, Feliks 1888, Wiktorie 1891."
+        "Sourozenci (rejstřík): Kateřina 1863 (†1926), Jakub 1866, Jan 1869, Józef 1873, Marianna 1876, Julia 1879, Karolina 1882, Feliks 1888, Wiktorie 1891.",
+        "Bratr Jan Dydowicz (*10. 6. 1869), kovář závodní v Polské Ostravě, vdovec, se 3. 10. 1903 v Moravské Ostravě oženil s Johannou Svrčkovou z Pražmy; zápis (M): „syn Tomáše Dydowicze zahradníka v Rudně (okr. Tarnów) a jeho manželky Ludviky, dcery Josefa Pikala“; svědek Jakub Dydowicz, kovář v Pol. Ostravě (snad další bratr – D)."
       ],
       sources: [
         "Skanoteka PTG – AD Tarnów, Łęg Tarnowski (id4305): U 1856–1886 „Ilkow. Rudno Sanok“ (sy3565) sken 070 – https://skanoteka.genealodzy.pl/id4305-sy3565-kt1",
-        "SO VII 36 sken 101 (křest dcery Honoraty)"
+        "SO VII 36 sken 101 (křest dcery Honoraty)",
+        "ZA Opava, Sbírka matrik, ř.-k. fara Moravská Ostrava, O 1900–1907 (MO I 46), str. 183, sken 193"
       ],
       scans: [
-        {"f":"img/1884_krest_helena_dydowicz.jpg","t":"Křest Heleny 14. 9. 1884, Rudno č. 28 (Łęg Tarnowski U 1856–1886 s. 136 č. 27)"}
+        {"f":"img/1884_krest_helena_dydowicz.jpg","t":"Křest Heleny 14. 9. 1884, Rudno č. 28 (Łęg Tarnowski U 1856–1886 s. 136 č. 27)"},
+        {"f":"img/1903_snatek_jan_dydowicz.jpg","t":"Sňatek bratra Jana Dydowicze 3. 10. 1903, Moravská Ostrava – „syn Tomáše Dydowicze zahradníka v Rudně a jeho manželky Ludviky, dcery Josefa Pikala“ (MO I 46, str. 183)"}
       ]
     },
     {
@@ -1127,15 +1131,18 @@ window.RODOKMEN = {
       marriage: "20. 10. 1862, Łęg Tarnowski – s Ludwikou Pikul (on 26, ona 17, s otcovým souhlasem); svědci Jakub a Valentin Pikul",
       notes: [
         "Narozen 27. 2. 1836 ve Wierzchosławicích, syn ovčáka Józefa Dydowicze a Marianny roz. Chmil.",
-        "Sňatek 1862: „Thomas Dydowicz granarius Josephi et Mariannae natae Chmil opilionis filius ex Wierszchosławice natus“ × „Ludovica Josephi Pikul et Mariae natae Drąg cmetonum filia ex Rudno nata“."
+        "Sňatek 1862: „Thomas Dydowicz granarius Josephi et Mariannae natae Chmil opilionis filius ex Wierszchosławice natus“ × „Ludovica Josephi Pikul et Mariae natae Drąg cmetonum filia ex Rudno nata“.",
+        "Syn Jan Dydowicz (*10. 6. 1869), kovář závodní v Polské Ostravě, vdovec, se 3. 10. 1903 v Moravské Ostravě oženil s Johannou Svrčkovou z Pražmy; zápis (M): „syn Tomáše Dydowicze zahradníka v Rudně (okr. Tarnów) a jeho manželky Ludviky, dcery Josefa Pikala“; svědek Jakub Dydowicz, kovář v Pol. Ostravě (snad další bratr – D)."
       ],
       sources: [
         "Skanoteka – AD Tarnów, Wierzchosławice U 1824–1845 (id3741, sy1824e) sken 046",
-        "Skanoteka PTG – AD Tarnów, Łęg Tarnowski (id4305): M 1855–1901 (sy4545) sken 008"
+        "Skanoteka PTG – AD Tarnów, Łęg Tarnowski (id4305): M 1855–1901 (sy4545) sken 008",
+        "ZA Opava, Sbírka matrik, ř.-k. fara Moravská Ostrava, O 1900–1907 (MO I 46), str. 183, sken 193"
       ],
       scans: [
         {"f":"img/1836_krest_tomasz_dydowicz.jpg","t":"Křest Tomasze 28. 2. 1836, Wierzchosławice (U 1824–1845 s. 405)"},
-        {"f":"img/1862_snatek_dydowicz_pikul.jpg","t":"Sňatek 20. 10. 1862 (Łęg Tarnowski M 1855–1901 s. 14)"}
+        {"f":"img/1862_snatek_dydowicz_pikul.jpg","t":"Sňatek 20. 10. 1862 (Łęg Tarnowski M 1855–1901 s. 14)"},
+        {"f":"img/1903_snatek_jan_dydowicz.jpg","t":"Sňatek bratra Jana Dydowicze 3. 10. 1903, Moravská Ostrava – „syn Tomáše Dydowicze zahradníka v Rudně a jeho manželky Ludviky, dcery Josefa Pikala“ (MO I 46, str. 183)"}
       ]
     },
     {
@@ -1247,16 +1254,19 @@ window.RODOKMEN = {
       mother: "mariaDrag",
       notes: [
         "Křest 30. 4. 1845 (M): „Ludovica“, dům 18; otec „Josephus Pikul Hyacinthi et Annae Grabczyńska hortul.“, matka „Maria è Benedicto Drąg et Catharina Sukienik“ (rodné jméno babičky je jinde všude Schab – zde chyba zápisu; porodní bábou byla Thecla Sukienik); kmotři Regina, žena Andrease Węgla (?), a Martinus Filip (?). Na okraji „† 5/2 908“ = zemřela 5. 2. 1908.",
-        "Dcera sedláků Józefa Pikula a Marie roz. Drąg z Rudna; při sňatku 1862 17 let (nezletilá – souhlas otce podepsán křížkem)."
+        "Dcera sedláků Józefa Pikula a Marie roz. Drąg z Rudna; při sňatku 1862 17 let (nezletilá – souhlas otce podepsán křížkem).",
+        "Syn Jan Dydowicz (*10. 6. 1869), kovář závodní v Polské Ostravě, vdovec, se 3. 10. 1903 v Moravské Ostravě oženil s Johannou Svrčkovou z Pražmy; zápis (M): „syn Tomáše Dydowicze zahradníka v Rudně (okr. Tarnów) a jeho manželky Ludviky, dcery Josefa Pikala“; svědek Jakub Dydowicz, kovář v Pol. Ostravě (snad další bratr – D)."
       ],
       sources: [
         "Skanoteka PTG – AD Tarnów, Łęg Tarnowski (id4305): M 1855–1901 sken 008",
-        "Skanoteka PTG – AD Tarnów, parafia Łęg Tarnowski (id4305): U 1841–1856 (jedn. 3560) sken 023, s. 43"
+        "Skanoteka PTG – AD Tarnów, parafia Łęg Tarnowski (id4305): U 1841–1856 (jedn. 3560) sken 023, s. 43",
+        "ZA Opava, Sbírka matrik, ř.-k. fara Moravská Ostrava, O 1900–1907 (MO I 46), str. 183, sken 193"
       ],
       scans: [
         {"f":"img/1845_krest_ludwika_pikul.jpg","t":"Křest 30. 4. 1845, Rudno č. 18 – Ludwika Pikul (U 1841–1856, s. 43)"},
         {"f":"img/1862_snatek_dydowicz_pikul.jpg","t":"Sňatek 20. 10. 1862 (Łęg Tarnowski M 1855–1901 s. 14)"},
-        {"f":"img/1884_krest_helena_dydowicz.jpg","t":"Křest Heleny 14. 9. 1884, Rudno č. 28 (Łęg Tarnowski U 1856–1886 s. 136 č. 27)"}
+        {"f":"img/1884_krest_helena_dydowicz.jpg","t":"Křest Heleny 14. 9. 1884, Rudno č. 28 (Łęg Tarnowski U 1856–1886 s. 136 č. 27)"},
+        {"f":"img/1903_snatek_jan_dydowicz.jpg","t":"Sňatek bratra Jana Dydowicze 3. 10. 1903, Moravská Ostrava – „syn Tomáše Dydowicze zahradníka v Rudně a jeho manželky Ludviky, dcery Josefa Pikala“ (MO I 46, str. 183)"}
       ]
     },
     {
