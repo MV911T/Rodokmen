@@ -46,4 +46,7 @@ window.RODOKMEN_GAZ = [
   { n: 'Plzeň', a: ['Plzeň'], off: true },
   { n: 'Volešník (Olešník)', a: ['Volešník', 'Olešník'], off: true },
   { n: 'Zbudov', a: ['Zbudov'], off: true },
+  { n: 'Dříteň', a: ['Dříteň'], off: true },
+  { n: 'Hluboká nad Vltavou', a: ['Hluboké nad Vltavou'], off: true },
+  { n: 'Křesín', a: ['Křesín'], off: true },
 ];

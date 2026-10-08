@@ -95,12 +95,12 @@ window.RODOKMEN = {
         "Přihláška k pobytu, Popisný úřad města Plzně (D): „Veselý Karel“, rodiště Volešník, domovská obec Zbudov, okres Hluboká, země česká; nar. 4. 10. 1904; katolík; národnost česká; svobodný. Přihlášen 18. 10. 1920 v Plzni, Nerudova 999/29 – u tety Kateřiny Roušalové; ve sčítání 1921 už na adrese veden není.",
         "Oddací zápis syna Svatoně 1957 (M): otec ženicha Karel Veselý, nar. 6. prosince 1904, rodiště Plavnice, okres České Budějovice, úředník, bydliště Uherský Brod, Horní valy 993 – v září 1957 tedy žil. ROZPOR: datum 6. 12. 1904 nesouhlasí s přihláškou v Plzni ani se sčítáním 1930 (shodně 4. 10. 1904); stejný zápis má chybné i datum narození Anny – jde nejspíš o chybu matrikáře.",
         "Totožnost s kežmarským Karlem: shoduje se přesné datum narození 4. 10. 1904 i příchod z Plzně (sčítání 1930: do Kežmarku 19. 11. 1922 z Plzně). Rodiště se ale v pramenech liší – Plzeň 1920 „Volešník“, sčítání 1930 i oddací zápis syna 1957 „Plavnice, okr. České Budějovice“ (viz níže); obojí může pocházet z Karlova vlastního (nepřesného) údaje.",
-        "Rodiče podle rešerše Archivu města Plzně (PhDr. Š. Pflegerová, 7. 10. 2026): Jan Veselý a Marie roz. Koželuhová – PRAVDĚPODOBNÉ, odvozeno ze sourozenců (stejná domovská obec Zbudov, společné bydliště u tety v Plzni). Karlův vlastní křestní zápis zatím neověřen.",
-        "Sourozenci (podle rešerše AMP): Jan *20. 8. 1889 Dříteň, padl v 1. světové válce (VÚA); Kateřina *2. 2. 1894 Dříteň, komptoiristka, příslušná do Zbudova u Hluboké – v Plzni od 11. 2. 1911 (Nerudova 1124/5 u Roušala), 18. 2. 1913 Jámečnická (?) 589/10, 1. 4. 1917 Otakarovy sady 402/510 (Školské sestry) – adresy čteny ze skenu, částečně nejisté; Růžena *2. 3. 1896 Chvalsovice, komptoiristka, později advokátní úřednice a úřednice Škodových závodů, v Plzni od 13. 3. 1915 (Nerudova 999/29 u Roušala).",
+        "Rodiče Jan Veselý, ovčák v Dřítni č. 28, × Marie roz. Koželuhová – rodina POTVRZENA matrikami sourozenců (křty 1889 a 1894 v Dřítni, sňatek tety 1891), na Karla přenesena PRAVDĚPODOBNĚ (D): stejná domovská obec Zbudov, společné bydliště s tetou Roušalovou a se sestrami v Plzni. Karlův vlastní křest zatím nenalezen.",
+        "Sourozenci: Jan *20. 8. 1889 Dříteň č. 6 (narozen před sňatkem rodičů, legitimován; M), padl v 1. světové válce (VÚA); Kateřina *1. 2. 1894 Dříteň č. 28 (M; AMP uvádí 2. 2. = den křtu), komptoiristka, příslušná do Zbudova u Hluboké – v Plzni od 11. 2. 1911 (Nerudova 1124/5 u Roušala), 18. 2. 1913 Jámečnická (?) 589/10, 1. 4. 1917 Otakarovy sady 402/510 (Školské sestry) – adresy čteny ze skenu, částečně nejisté; Růžena *2. 3. 1896 Chvalsovice, komptoiristka, později advokátní úřednice a úřednice Škodových závodů, v Plzni od 13. 3. 1915 (Nerudova 999/29 u Roušala).",
         "Teta Kateřina Roušalová roz. Veselá (*20. 9. 1864 Velice – podle AMP; na skenu „1864 2?/9 … ve Velicích“), zemř. 4. 11. 193? v Plzni (poslední číslice nejistá). Manžel Josef Roušal *19. 3. 1867 Kaliště (okr. Týn nad Vltavou), zemř. 21. 5. 1925 v Plzni; sňatek 13. 1. 1891 v Českých Budějovicích. Domovský arch Plzeň (D): dřívější domovská obec Velký Temelín (okr. Týn nad Vltavou), domovské právo v Plzni usnesením městského zastupitelstva 17. 3. 1915 č. 7460 (žádost 24. 2. 1915); 1922 bydliště Plzeň, Nerudova 999 – zde bydleli Kateřina, Růžena i Karel.",
         "Sčítání 2. 12. 1930: podnájemník v domě Elsy Hegenbart, Hauptgasse (Hlavná ul.) č. 7; svobodný; národnost česká; bez vyznání; do Kežmarku přišel 19. 11. 1922 z Plzně; rodiště čteno „Plavnice / České Budějovice / Čechy“, domovská obec „Vodňany / České Budějovice“.",
         "Karpathen-Post: 27. 10. 1934 náhradník kandidátky ČSSD („Karol Vesely, Beamter“), 16. 2. 1935 složil slib jako městský zastupitel, člen finanční komise; 1936 bydliště Kežmarok, Sihoť (Insel) 15; 1937 jednatel místní skupiny KČST (Klub čs. turistů).",
-        "Prověřeno dříve negativně (křest 4. 10. 1904): farnosti Vodňany, Křtěnov, Kamenný Újezd (Plavnice), Radčice, Křtětice, České Budějovice sv. Mikuláš, Plánice, Blovice, Planá – hledalo se podle údaje „Plavnice“ ze sčítání a datum 4. 10. 1904; datum 6. 12. 1904 z oddacího zápisu 1957 v Kamenném Újezdu (Plavnice) zatím ověřeno není. Další krok: křest ve farnosti Olešník (Volešník), SOA Třeboň, případně matriční úřad, pokud kniha ještě nebyla předána do archivu.",
+        "Prověřeno dříve negativně (křest 4. 10. 1904): farnosti Vodňany, Křtěnov, Kamenný Újezd (Plavnice), Radčice, Křtětice, České Budějovice sv. Mikuláš, Plánice, Blovice, Planá – hledalo se podle údaje „Plavnice“ ze sčítání a datum 4. 10. 1904; datum 6. 12. 1904 z oddacího zápisu 1957 v Kamenném Újezdu (Plavnice) zatím ověřeno není. Další krok: křest ve farnosti Olešník (Volešník), SOA Třeboň, případně matriční úřad, pokud kniha ještě nebyla předána do archivu. Prověřeno 8. 10. (VES-ZB1): Zbudov 1904 (Nákří 6, id 5767, sk. 518) a Dříteň 1904 (Bílá Hůrka 5A, sk. 107–111) – nic. Olešník patří do farnosti Zahájí, jejíž kniha N 1903–1944 (id 9140) ani index N 1899–1949 (id 9144) NEJSOU digitalizované – Karlův křest je nejspíš tam (hledat i pod příjmením Koželuh, pokud by se narodil před sňatkem rodičů).",
         "Kandidát (K): Karel Veselý, předseda ONV Uherský Brod 1945 – rodina se kolem 1940 přestěhovala do Uherského Brodu, což tuto stopu podporuje; neověřeno."
       ],
       sources: [
@@ -110,10 +110,16 @@ window.RODOKMEN = {
         "Sčítání lidu 1921, Plzeň, Nerudova 999 (SOA Plzeň, Porta fontium): https://www.portafontium.eu/iipimage/34590604/soap-pn_10010_census-1921-plzen-3-cp0999_0060",
         "Sčítání lidu 1930, Kežmarok, arch 321/56 (Slovakiana, objekt cair-ko11kbp)",
         "Karpathen-Post 27. 10. 1934, 8. 12. 1934, 26. 1. 1935, 16. 2. 1935, 5. 12. 1936, 27. 11. 1937 (difmoe.eu)",
-        "Matrika manželství ÚMOb Slezská Ostrava, sv. 2, roč. 1957, str. 1, poř. č. 40 – doslovný výpis ze 7. 10. 2026 (Bc. M. Božková), doručen datovou schránkou"
+        "Matrika manželství ÚMOb Slezská Ostrava, sv. 2, roč. 1957, str. 1, poř. č. 40 – doslovný výpis ze 7. 10. 2026 (Bc. M. Božková), doručen datovou schránkou",
+        "SOA Třeboň, Sbírka matrik, Bílá Hůrka 5A (N Dříteň 1876–1912), id 9211, sken 54, fol. 50 – https://digi.ceskearchivy.cz/DA?menu=3&id=9211&page=54",
+        "SOA Třeboň, Bílá Hůrka 5A, id 9211, sken 69 – https://digi.ceskearchivy.cz/DA?menu=3&id=9211&page=69",
+        "SOA Třeboň, České Budějovice sv. Mikuláš O 68 (1887–1895), id 2778, sken 236, fol. 234 – https://digi.ceskearchivy.cz/DA?menu=3&id=2778&page=236"
       ],
       scans: [
         {"f":"img/1957_snatek_svaton_vesely_marta_woronova_1.jpg","t":"Sňatek 28. 9. 1957, Slezská Ostrava – snoubenci a jejich rodiče (poř. č. 40)"},
+        {"f":"img/1889_krest_jan_vesely_driten.jpg","t":"Křest bratra Jana 20. 8. 1889, Dříteň č. 6 (Bílá Hůrka 5A, sken 54) – rodiče Jan Veselý × Marie Koželuhová, legitimace"},
+        {"f":"img/1894_krest_katerina_vesela_driten.jpg","t":"Křest sestry Kateřiny 1. 2. 1894, Dříteň č. 28 (Bílá Hůrka 5A, sken 69) – kmotra teta Kateřina Roušalová"},
+        {"f":"img/1891_snatek_rousal_vesela.jpg","t":"Sňatek tety Kateřiny Veselé s Josefem Roušalem 13. 1. 1891, České Budějovice (sv. Mikuláš O 68, sken 236)"},
         {"f":"img/1920_prihlaska_plzen_karel_vesely_osobni.jpg","t":"Přihláška k pobytu, Plzeň 1920 – list osobní (nar. 4. 10. 1904 Volešník, domovská obec Zbudov)"},
         {"f":"img/1920_prihlaska_plzen_karel_vesely_rejstrikovy.jpg","t":"Přihláška k pobytu, Plzeň – list rejstříkový (18. 10. 1920, Nerudova 999/29)"},
         {"f":"img/1911_prihlaska_plzen_katerina_vesela.jpg","t":"Sestra Kateřina Veselá – přihláška k pobytu v Plzni (od 1911), příslušná do Zbudova u Hluboké"},
@@ -4470,17 +4476,26 @@ window.RODOKMEN = {
       id: "janVesZ",
       name: "Jan Veselý",
       line: "vesely",
-      cert: "K",
-      b: {"date":"cca 1860","year":1860,"approx":true,"place":"jižní Čechy (domovská obec Zbudov u Hluboké)"},
+      cert: "D",
+      b: {"date":"cca 1862","year":1862,"approx":true,"place":"okolí Hluboké nad Vltavou (otec hajný v Dívčicích)"},
+      father: "matejVes",
+      mother: "annaPet",
+      occ: "ovčák (ovčinský) ve Dřítni č. 28 (1889, 1894)",
+      marriage: "mezi 8/1889 a 2/1894 – s Marií Koželuhovou (syn Jan *1889 legitimován, dcera Kateřina 1894 už manželská)",
       notes: [
-        "KANDIDÁT na otce Karla – Rodiče Karla Veselého (*1904) podle rešerše Archivu města Plzně (7. 10. 2026) – odvozeno ze sourozenců Jana, Kateřiny a Růženy (domovská obec Zbudov u Hluboké); Karlův křest zatím neověřen.",
-        "Děti (podle AMP): Jan *20. 8. 1889 Dříteň, Kateřina *2. 2. 1894 Dříteň, Růžena *2. 3. 1896 Chvalsovice, Karel *4. 10. 1904 Volešník. Sestra (?) Kateřina Roušalová roz. Veselá *1864 Velice.",
+        "Křest syna Jana 20. 8. 1889 (M): „Za otce se přihlásil Jan Veselý ovčinský ve Dřitni č. 28, syn Matěje Veselého hajného z Dívčic č. 1 a matky Anny rozené Peterka z Křesína“; pozdější poznámka „Legitimatio facta coram me … Oba doznávají, že Jana nar. jako svého společně zplodili.“",
+        "Křest dcery Kateřiny 1. 2. 1894 (M): stejné údaje, dítě manželské; kmotra „Kateřina Roušalová, manželka Josefa Roušala, nádeníka v Č. Budějovicích“ – Janova sestra.",
+        "Vazba na Karla (*1904) je PRAVDĚPODOBNÁ (D) – Karlův křest zatím nenalezen (viz Karel).",
         "Syn Jan (*1889) padl v 1. světové válce – VÚA: https://www.vuapraha.cz/padli-1-svetova/170921"
       ],
       sources: [
-        "Křest syna Jana 1889, Dříteň: https://digi.ceskearchivy.cz/9211/54/2999/2789/28/0 a https://digi.ceskearchivy.cz/630257/17/3187/2176/30/0",
-        "Křest dcery Kateřiny 1894, Dříteň: https://digi.ceskearchivy.cz/9211/69/3183/1328/32/0",
+        "SOA Třeboň, Sbírka matrik, Bílá Hůrka 5A (N Dříteň 1876–1912), id 9211, sken 54, fol. 50 – https://digi.ceskearchivy.cz/DA?menu=3&id=9211&page=54",
+        "SOA Třeboň, Bílá Hůrka 5A, id 9211, sken 69 – https://digi.ceskearchivy.cz/DA?menu=3&id=9211&page=69",
         "Archiv města Plzně, rešerše 7. 10. 2026"
+      ],
+      scans: [
+        {"f":"img/1889_krest_jan_vesely_driten.jpg","t":"Křest bratra Jana 20. 8. 1889, Dříteň č. 6 (Bílá Hůrka 5A, sken 54) – rodiče Jan Veselý × Marie Koželuhová, legitimace"},
+        {"f":"img/1894_krest_katerina_vesela_driten.jpg","t":"Křest sestry Kateřiny 1. 2. 1894, Dříteň č. 28 (Bílá Hůrka 5A, sken 69) – kmotra teta Kateřina Roušalová"}
       ]
     },
     {
@@ -4488,13 +4503,20 @@ window.RODOKMEN = {
       name: "Marie Veselá",
       maiden: "Koželuhová",
       line: "vesely",
-      cert: "K",
-      b: {"date":"cca 1865","year":1865,"approx":true,"place":"jižní Čechy"},
+      cert: "D",
+      b: {"date":"cca 1868","year":1868,"approx":true,"place":"Dříteň"},
+      mother: "marieKozSt",
       notes: [
-        "KANDIDÁTKA na matku Karla – Rodiče Karla Veselého (*1904) podle rešerše Archivu města Plzně (7. 10. 2026) – odvozeno ze sourozenců Jana, Kateřiny a Růženy (domovská obec Zbudov u Hluboké); Karlův křest zatím neověřen."
+        "Křest syna Jana 1889 (M): matka „Koželuhová Marie, nemanželská dcera Marie, tato dcera † Josefa Koželuha, domkáře ze Dřítně č. 6, a jeho manželky Marie rozené Maršálkové ze Dřítně č. 7, nyní provdané za Jana Chmela, chalupníka ve Dřitni [č. 6]“ (stejně 1894). Zda je „nyní provdaná“ za Chmela její matka, nebo babička (vdova Maršálková), zápis jednoznačně neříká.",
+        "Vazba na Karla (*1904) je PRAVDĚPODOBNÁ (D) – viz Karel."
       ],
       sources: [
-        "Archiv města Plzně, rešerše 7. 10. 2026; křty dětí Dříteň 1889 a 1894 (digi.ceskearchivy.cz)"
+        "SOA Třeboň, Sbírka matrik, Bílá Hůrka 5A (N Dříteň 1876–1912), id 9211, sken 54, fol. 50 – https://digi.ceskearchivy.cz/DA?menu=3&id=9211&page=54",
+        "SOA Třeboň, Bílá Hůrka 5A, id 9211, sken 69 – https://digi.ceskearchivy.cz/DA?menu=3&id=9211&page=69"
+      ],
+      scans: [
+        {"f":"img/1889_krest_jan_vesely_driten.jpg","t":"Křest bratra Jana 20. 8. 1889, Dříteň č. 6 (Bílá Hůrka 5A, sken 54) – rodiče Jan Veselý × Marie Koželuhová, legitimace"},
+        {"f":"img/1894_krest_katerina_vesela_driten.jpg","t":"Křest sestry Kateřiny 1. 2. 1894, Dříteň č. 28 (Bílá Hůrka 5A, sken 69) – kmotra teta Kateřina Roušalová"}
       ]
     },
     {
@@ -4570,18 +4592,21 @@ window.RODOKMEN = {
       maiden: "Schab",
       line: "chmielek",
       cert: "M",
-      b: {"date":"cca 1797","year":1797,"approx":true,"place":"Łęg (farnost Łęg Tarnowski)"},
+      b: {"date":"24. 11. 1796","year":1796,"place":"Łęg č. 152 (farnost Łęg Tarnowski)"},
       father: "janSchab",
       mother: "agataMar",
       notes: [
+        "Křest 24. 11. 1796 (M; měsíc podle pořadí zápisů – předchází „Die 22 November“): „Catharina“, dům 152, otec „Joannes Schab“, matka „Agnes Markowna“; kmotři Casimirus Woźny a Margarita Schabowa, zahradníci. Totožnost s nevěstou z 1820 PRAVDĚPODOBNÁ (D) – věk 23 i otec Jan Schab sedí; v Łęgu ale žilo víc rodin Schabů, vazbu nese číslo domu 152.",
         "Sňatek 29. 5. 1820: „Catharina Joannis Schab hort. et Agathae de Marek hort. Parentum Legitimorum Filia“, 23 let, nezletilá.",
         "Rodné jméno Schab potvrzují tři zápisy (sňatek 1820, křest dcery 1821, sňatek dcery 1840); „Sukienik“ v křtu vnučky Ludwiky 1845 je chyba zápisu (porodní bábou tam byla Thecla Sukienik)."
       ],
       sources: [
         "Skanoteka PTG – AD Tarnów, parafia Łęg Tarnowski (id4305): M 1785–1828 (jedn. 4555) sken 018, s. 44",
-        "Skanoteka PTG – AD Tarnów, parafia Łęg Tarnowski (id4305): U 1785–1828 (jedn. 3580) sken 061, s. 115"
+        "Skanoteka PTG – AD Tarnów, parafia Łęg Tarnowski (id4305): U 1785–1828 (jedn. 3580) sken 061, s. 115",
+        "Skanoteka PTG – AD Tarnów, parafia Łęg Tarnowski (id4305): U 1785–1828 (jedn. 3580) sken 022, s. 52 – https://skanoteka.genealodzy.pl/index.php?op=pg&id=4305&sy=3580&kt=1&plik=022.jpg"
       ],
       scans: [
+        {"f":"img/1796_krest_katarzyna_schab.jpg","t":"Křest 24. 11. 1796, Łęg č. 152 – Catharina, rodiče Joannes Schab × Agnes Markówna (U 1785–1828, s. 52)"},
         {"f":"img/1820_snatek_drag_schab.jpg","t":"Sňatek 29. 5. 1820, Łęg č. 180 – Benedikt Drąg × Katarzyna Schab (M 1785–1828, s. 44)"},
         {"f":"img/1821_krest_marianna_drag.jpg","t":"Křest 4. 2. 1821, Łęg č. 180 – Marianna Drąg (U 1785–1828, s. 115)"}
       ]
@@ -4629,30 +4654,136 @@ window.RODOKMEN = {
       occ: "zahradník (hortulanus)",
       marriage: "s Agátou Marek",
       notes: [
-        "Otec Katarzyny (sňatek 1820): „Catharina Joannis Schab hort.“; 1820 zřejmě žil (bez „olim“)."
+        "Otec Katarzyny (sňatek 1820): „Catharina Joannis Schab hort.“; 1820 zřejmě žil (bez „olim“).",
+        "Zahradník v Łęgu č. 152 nejpozději od 1790 (křty dvojčat 1790 a Katarzyny 1796)."
       ],
       sources: [
-        "Skanoteka PTG – AD Tarnów, parafia Łęg Tarnowski (id4305): M 1785–1828 (jedn. 4555) sken 018, s. 44"
+        "Skanoteka PTG – AD Tarnów, parafia Łęg Tarnowski (id4305): M 1785–1828 (jedn. 4555) sken 018, s. 44",
+        "Skanoteka PTG – AD Tarnów, parafia Łęg Tarnowski (id4305): U 1785–1828 (jedn. 3580) sken 022, s. 52 – https://skanoteka.genealodzy.pl/index.php?op=pg&id=4305&sy=3580&kt=1&plik=022.jpg"
       ],
       scans: [
+        {"f":"img/1796_krest_katarzyna_schab.jpg","t":"Křest 24. 11. 1796, Łęg č. 152 – Catharina, rodiče Joannes Schab × Agnes Markówna (U 1785–1828, s. 52)"},
         {"f":"img/1820_snatek_drag_schab.jpg","t":"Sňatek 29. 5. 1820, Łęg č. 180 – Benedikt Drąg × Katarzyna Schab (M 1785–1828, s. 44)"}
       ]
     },
     {
       id: "agataMar",
-      name: "Agáta Schab",
+      name: "Agnieszka (Agáta?) Schab",
       maiden: "Marek",
       line: "chmielek",
       cert: "M",
       b: {"date":"cca 1770","year":1770,"approx":true,"place":"Łęg (farnost Łęg Tarnowski)"},
       notes: [
-        "Matka Katarzyny (sňatek 1820): „Agathae de Marek hort.“"
+        "ROZPOR v křestním jménu: křest dcery 1796 „Agnes Markowna“, sňatek dcery 1820 „Agathae de Marek“ – příjmení Marek souhlasí. Pravděpodobně Agnieszka (Agnes); kmotra 1796 „Agnes Markowa Hortulana“.",
+        "Matka Katarzyny (sňatek 1820): „Agathae de Marek hort.“",
+        "Děti v Łęgu č. 152 (D): dvojčata Zofia a Magdalena *10. 7. 1790 (U 3580 sken 010), Katarzyna *24. 11. 1796."
       ],
       sources: [
-        "Skanoteka PTG – AD Tarnów, parafia Łęg Tarnowski (id4305): M 1785–1828 (jedn. 4555) sken 018, s. 44"
+        "Skanoteka PTG – AD Tarnów, parafia Łęg Tarnowski (id4305): M 1785–1828 (jedn. 4555) sken 018, s. 44",
+        "Skanoteka PTG – AD Tarnów, parafia Łęg Tarnowski (id4305): U 1785–1828 (jedn. 3580) sken 022, s. 52 – https://skanoteka.genealodzy.pl/index.php?op=pg&id=4305&sy=3580&kt=1&plik=022.jpg"
       ],
       scans: [
+        {"f":"img/1796_krest_katarzyna_schab.jpg","t":"Křest 24. 11. 1796, Łęg č. 152 – Catharina, rodiče Joannes Schab × Agnes Markówna (U 1785–1828, s. 52)"},
         {"f":"img/1820_snatek_drag_schab.jpg","t":"Sňatek 29. 5. 1820, Łęg č. 180 – Benedikt Drąg × Katarzyna Schab (M 1785–1828, s. 44)"}
+      ]
+    },
+    {
+      id: "marieKozSt",
+      name: "Marie Koželuhová",
+      line: "vesely",
+      cert: "M",
+      b: {"date":"cca 1848","year":1848,"approx":true,"place":"Dříteň"},
+      father: "josefKoz",
+      mother: "marieMars",
+      notes: [
+        "Svobodná matka Marie (matky Karla Veselého) – „Marie, nemanželská dcera Marie, tato dcera † Josefa Koželuha … a Marie roz. Maršálkové“ (křty vnoučat 1889 a 1894). Možná se později provdala za Jana Chmela, chalupníka v Dřítni č. 6 (nejednoznačné – viz dcera)."
+      ],
+      sources: [
+        "SOA Třeboň, Sbírka matrik, Bílá Hůrka 5A (N Dříteň 1876–1912), id 9211, sken 54, fol. 50 – https://digi.ceskearchivy.cz/DA?menu=3&id=9211&page=54",
+        "SOA Třeboň, Bílá Hůrka 5A, id 9211, sken 69 – https://digi.ceskearchivy.cz/DA?menu=3&id=9211&page=69"
+      ],
+      scans: [
+        {"f":"img/1889_krest_jan_vesely_driten.jpg","t":"Křest bratra Jana 20. 8. 1889, Dříteň č. 6 (Bílá Hůrka 5A, sken 54) – rodiče Jan Veselý × Marie Koželuhová, legitimace"},
+        {"f":"img/1894_krest_katerina_vesela_driten.jpg","t":"Křest sestry Kateřiny 1. 2. 1894, Dříteň č. 28 (Bílá Hůrka 5A, sken 69) – kmotra teta Kateřina Roušalová"}
+      ]
+    },
+    {
+      id: "josefKoz",
+      name: "Josef Koželuh",
+      line: "vesely",
+      cert: "M",
+      b: {"date":"cca 1820","year":1820,"approx":true,"place":"Dříteň"},
+      occ: "domkář, Dříteň č. 6",
+      marriage: "s Marií Maršálkovou ze Dřítně č. 7",
+      notes: [
+        "V roce 1889 už nežil („† Josefa Koželuha, domkáře ze Dřítně č. 6“)."
+      ],
+      sources: [
+        "SOA Třeboň, Sbírka matrik, Bílá Hůrka 5A (N Dříteň 1876–1912), id 9211, sken 54, fol. 50 – https://digi.ceskearchivy.cz/DA?menu=3&id=9211&page=54",
+        "SOA Třeboň, Bílá Hůrka 5A, id 9211, sken 69 – https://digi.ceskearchivy.cz/DA?menu=3&id=9211&page=69"
+      ],
+      scans: [
+        {"f":"img/1889_krest_jan_vesely_driten.jpg","t":"Křest bratra Jana 20. 8. 1889, Dříteň č. 6 (Bílá Hůrka 5A, sken 54) – rodiče Jan Veselý × Marie Koželuhová, legitimace"}
+      ]
+    },
+    {
+      id: "marieMars",
+      name: "Marie Koželuhová",
+      maiden: "Maršálková",
+      line: "vesely",
+      cert: "M",
+      b: {"date":"cca 1825","year":1825,"approx":true,"place":"Dříteň č. 7"},
+      notes: [
+        "„jeho manželky Marie rozené Maršálkové ze Dřítně č. 7“ (křty pravnoučat 1889, 1894). Možná se jako vdova provdala za Jana Chmela, chalupníka v Dřítni č. 6 – zápis nejednoznačný."
+      ],
+      sources: [
+        "SOA Třeboň, Sbírka matrik, Bílá Hůrka 5A (N Dříteň 1876–1912), id 9211, sken 54, fol. 50 – https://digi.ceskearchivy.cz/DA?menu=3&id=9211&page=54",
+        "SOA Třeboň, Bílá Hůrka 5A, id 9211, sken 69 – https://digi.ceskearchivy.cz/DA?menu=3&id=9211&page=69"
+      ],
+      scans: [
+        {"f":"img/1889_krest_jan_vesely_driten.jpg","t":"Křest bratra Jana 20. 8. 1889, Dříteň č. 6 (Bílá Hůrka 5A, sken 54) – rodiče Jan Veselý × Marie Koželuhová, legitimace"}
+      ]
+    },
+    {
+      id: "matejVes",
+      name: "Matěj Veselý",
+      line: "vesely",
+      cert: "M",
+      b: {"date":"cca 1835","year":1835,"approx":true,"place":"okolí Hluboké nad Vltavou"},
+      occ: "hajný v Dívčicích č. 1 (1889, 1894); 1891 „polesný (?)“ ve Velici č. 23",
+      marriage: "před 1864 – s Annou Peterkovou z Křesína",
+      notes: [
+        "Otec Jana (ovčáka v Dřítni) a Kateřiny provd. Roušalové (*1864 Velice č. 23): „syn Matěje Veselého hajného z Dívčic č. 1 a matky Anny rozené Peterka z Křesína“ (1889, 1894); „manž. dcera Matěje, polesného (?) ve Velici č. 23 a Anny rozené Peterka z Křesína“ (sňatek 1891).",
+        "Velice i Dívčice patří do farnosti Nákří (N 1859–1907 = Nákří 6, id 5767). Další krok: křest Kateřiny ~20. 9. 1864 (Velice) a sňatek Matěj × Anna Peterková."
+      ],
+      sources: [
+        "SOA Třeboň, Sbírka matrik, Bílá Hůrka 5A (N Dříteň 1876–1912), id 9211, sken 54, fol. 50 – https://digi.ceskearchivy.cz/DA?menu=3&id=9211&page=54",
+        "SOA Třeboň, Bílá Hůrka 5A, id 9211, sken 69 – https://digi.ceskearchivy.cz/DA?menu=3&id=9211&page=69",
+        "SOA Třeboň, České Budějovice sv. Mikuláš O 68 (1887–1895), id 2778, sken 236, fol. 234 – https://digi.ceskearchivy.cz/DA?menu=3&id=2778&page=236"
+      ],
+      scans: [
+        {"f":"img/1889_krest_jan_vesely_driten.jpg","t":"Křest bratra Jana 20. 8. 1889, Dříteň č. 6 (Bílá Hůrka 5A, sken 54) – rodiče Jan Veselý × Marie Koželuhová, legitimace"},
+        {"f":"img/1891_snatek_rousal_vesela.jpg","t":"Sňatek tety Kateřiny Veselé s Josefem Roušalem 13. 1. 1891, České Budějovice (sv. Mikuláš O 68, sken 236)"}
+      ]
+    },
+    {
+      id: "annaPet",
+      name: "Anna Veselá",
+      maiden: "Peterková (Peterka)",
+      line: "vesely",
+      cert: "M",
+      b: {"date":"cca 1840","year":1840,"approx":true,"place":"Křesín (?)"},
+      notes: [
+        "„matky Anny rozené Peterka z Křesína“ (1889, 1894, 1891); místo „Křesín“ čteno s otazníkem."
+      ],
+      sources: [
+        "SOA Třeboň, Sbírka matrik, Bílá Hůrka 5A (N Dříteň 1876–1912), id 9211, sken 54, fol. 50 – https://digi.ceskearchivy.cz/DA?menu=3&id=9211&page=54",
+        "SOA Třeboň, Bílá Hůrka 5A, id 9211, sken 69 – https://digi.ceskearchivy.cz/DA?menu=3&id=9211&page=69",
+        "SOA Třeboň, České Budějovice sv. Mikuláš O 68 (1887–1895), id 2778, sken 236, fol. 234 – https://digi.ceskearchivy.cz/DA?menu=3&id=2778&page=236"
+      ],
+      scans: [
+        {"f":"img/1889_krest_jan_vesely_driten.jpg","t":"Křest bratra Jana 20. 8. 1889, Dříteň č. 6 (Bílá Hůrka 5A, sken 54) – rodiče Jan Veselý × Marie Koželuhová, legitimace"},
+        {"f":"img/1891_snatek_rousal_vesela.jpg","t":"Sňatek tety Kateřiny Veselé s Josefem Roušalem 13. 1. 1891, České Budějovice (sv. Mikuláš O 68, sken 236)"}
       ]
     }
   ]
