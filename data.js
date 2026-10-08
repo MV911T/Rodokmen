@@ -4859,21 +4859,26 @@ window.RODOKMEN = {
       name: "Matouš (Matthaeus) Navrátil",
       line: "vesely",
       cert: "M",
-      b: {"date":"cca 1720","year":1720,"approx":true,"place":"Kralice na Hané (?)"},
+      b: {"date":"cca 1712","year":1712,"approx":true,"place":"Kralice na Hané"},
+      father: "jakubNa",
       occ: "sedlák, pololáník v Kralicích (fase 1749 č. 35, katastr 1762 „27 – 11 Mathauß Nawratil“ = pozdější č. 27)",
-      marriage: "před 1749 – s Rosinou (sňatek není v Kralicích 1740–1749)",
+      marriage: "17. 1. 1736, Kralice – s Rosinou, dcerou † Pavla Přidala (?)",
       notes: [
+        "Sňatek 17. 1. 1736 Kralice (M): „Adolescens Matthias filius Jacobi Navratil cum Rosina Virg. def[uncti] Pauli Bridal [Přidal?]“; svědci Carolus Zářecký, Franc. Minařík a Mathias Ja[naušek]; oddával P. Carolus Joseph Bezruč, kooperátor. Totožnost s držitelem č. 35 PRAVDĚPODOBNÁ (D, silná) – Janaušek kmotrem jeho dětí 1752/1754, Zářecký soused (fase 1749 č. 20).",
         "Rektifikační fase 1749 (M): „35. Mathes Nawratil“, pololán 42 měřic, 8 kusů polí („hinter dem herrschaftl. Garten“, „bey Hrdibořitz“, „bey Biskupitzer Granitz“, „beym Haus“…); při předchozí vizitaci (asi 70. léta 17. stol.) držel tento grunt „10 Jann Zawadil“.",
         "Tereziánský katastr 1762: „27 – 11 Mathauß Nawratil“, pololáník. Usedlost přešla na Sarkandera, pak Fabiána (1797) a Valentina (1840).",
         "XI/1748 svědek na svatbě v Kralicích („Matth. Navratil Kralic.“). 1754 v křtu dcery Anny „rusticus“.",
-        "Děti (M): Sarkander *7. 12. 1749, Johana *3. 8. 1752, Anna *1754, Vendelín *8. 10. 1759.",
-        "HYPOTÉZA (K): otcem mohl být Martin Navrátil z Kralic († před 5/1748) – fase 1749 to nepotvrzuje."
+        "Děti (M): Jan Vendelín *18. 4. (?) 1737, Mariana *8. 7. 1739 (kmotři Augustin Fiala, šenkýř z Vítonic, s Terezií), Sarkander *7. 12. 1749, Johana *3. 8. 1752, Anna *1754, Vendelín *8. 10. 1759.",
+        "Befund 1754 (rektifikace, sken 88): „35 Matauš Navratil bes[itzt]“ – usedlost stále v jeho držení.",
+        "Martin Navrátil († před 5/1748, vdova Marina) patří k jiné větvi – otcem Matouše NENÍ (hypotéza vyvrácena sňatkem 1736)."
       ],
       sources: [
         "MZA Brno, Rektifikační akta panství Kralice 1667–1768, ARON https://www.mza.cz/aron/apu/e1add1be-11f1-424e-8860-f691c5901a91, sken 12",
-        "MZA Brno, Acta Publica, Kralice na Hané 9176a (N/O/Z 1726–1784, detail 5774), sken 212, 223, 233; sňatek 1748 sken 347"
+        "MZA Brno, Acta Publica, Kralice na Hané 9176a (N/O/Z 1726–1784, detail 5774), sken 212, 223, 233; sňatek 1748 sken 347",
+        "MZA Brno, Acta Publica, Kralice na Hané 9176a (detail 5774), O sken 324, s. 112"
       ],
       scans: [
+        {"f":"img/1736_snatek_matous_navratil.jpg","t":"Sňatek 17. 1. 1736, Kralice – Matouš (Matthias), syn Jakuba Navrátila × Rosina, dcera † Pavla Přidala (?) (9176a, sken 324, s. 112)"},
         {"f":"img/1749_fase_matous_navratil_kralice.jpg","t":"Rektifikační fase 1749, městečko Kralice – č. 35 „Mathes Nawratil“ (dřívější držitel č. 10 Jan Zavadil), pololán 42 měřic (ARON e1add1be, sken 12)"},
         {"f":"img/1749_krest_sarkander_navratil.jpg","t":"Křest 7. 12. 1749, Kralice – Joannes Sarcander, rodiče Matthaeus Navratil × Rosina (Kralice 9176a, sken 212, s. 392)"},
         {"f":"img/1752_krest_johana_navratilova.jpg","t":"Křest sestry Johany 3. 8. 1752, Kralice (9176a, sken 223)"}
@@ -4882,18 +4887,57 @@ window.RODOKMEN = {
     {
       id: "rosinaNa",
       name: "Rosina Navrátilová",
+      maiden: "Přidalová (?)",
       line: "vesely",
       cert: "M",
       b: {"date":"cca 1725","year":1725,"approx":true},
+      father: "pavelPr",
       notes: [
+        "Sňatek 17. 1. 1736 (M): „Rosina Virg. def. Pauli Bridal [Přidal?]“ – dcera zemřelého Pavla; ve fasi 1749 v Kralicích č. 21 „Jan Pi..dal“ a č. 23 „Wittib Prsidalin“ → příjmení nejspíš Přidal (D).",
         "Manželka Matouše Navrátila, matka Sarkandera (1749), Johany (1752), Anny (1754) a Vendelína (1759); rodné příjmení v křtech neuvedeno."
       ],
       sources: [
-        "MZA Brno, Acta Publica, Kralice na Hané 9176a (N/O/Z 1726–1784, detail 5774), sken 212, 223, 233"
+        "MZA Brno, Acta Publica, Kralice na Hané 9176a (N/O/Z 1726–1784, detail 5774), sken 212, 223, 233",
+        "MZA Brno, Acta Publica, Kralice na Hané 9176a (detail 5774), O sken 324, s. 112"
       ],
       scans: [
+        {"f":"img/1736_snatek_matous_navratil.jpg","t":"Sňatek 17. 1. 1736, Kralice – Matouš (Matthias), syn Jakuba Navrátila × Rosina, dcera † Pavla Přidala (?) (9176a, sken 324, s. 112)"},
         {"f":"img/1749_krest_sarkander_navratil.jpg","t":"Křest 7. 12. 1749, Kralice – Joannes Sarcander, rodiče Matthaeus Navratil × Rosina (Kralice 9176a, sken 212, s. 392)"},
         {"f":"img/1752_krest_johana_navratilova.jpg","t":"Křest sestry Johany 3. 8. 1752, Kralice (9176a, sken 223)"}
+      ]
+    },
+    {
+      id: "jakubNa",
+      name: "Jakub Navrátil",
+      line: "vesely",
+      cert: "M",
+      b: {"date":"cca 1685","year":1685,"approx":true,"place":"Kralice na Hané"},
+      notes: [
+        "Otec Matouše (sňatek 17. 1. 1736: „Matthias filius Jacobi Navratil“).",
+        "Pravděpodobně i otec Ondřeje (sňatek XI/1735 s Barborou Konizilovou z Hrubčic), Josefa („Jacobi Navratil Kralicio filius“, sňatek 1740 s Marinou Babieradovou z Hrubčic) a Václava (sňatek 1745 s Kateřinou z Bedihoště) – D.",
+        "V Kralicích žili 1727–29 Jakub Navrátil × Marina – možná on (K)."
+      ],
+      sources: [
+        "MZA Brno, Acta Publica, Kralice na Hané 9176a (detail 5774), O sken 324, s. 112"
+      ],
+      scans: [
+        {"f":"img/1736_snatek_matous_navratil.jpg","t":"Sňatek 17. 1. 1736, Kralice – Matouš (Matthias), syn Jakuba Navrátila × Rosina, dcera † Pavla Přidala (?) (9176a, sken 324, s. 112)"}
+      ]
+    },
+    {
+      id: "pavelPr",
+      name: "Pavel Přidal (?)",
+      line: "vesely",
+      cert: "M",
+      b: {"date":"cca 1680","year":1680,"approx":true,"place":"Kralice na Hané (?)"},
+      notes: [
+        "Otec Rosiny (sňatek 1736: „def. Pauli Bridal“) – v lednu 1736 už nežil. Příjmení čteno nejistě (Bridal/Přidal)."
+      ],
+      sources: [
+        "MZA Brno, Acta Publica, Kralice na Hané 9176a (detail 5774), O sken 324, s. 112"
+      ],
+      scans: [
+        {"f":"img/1736_snatek_matous_navratil.jpg","t":"Sňatek 17. 1. 1736, Kralice – Matouš (Matthias), syn Jakuba Navrátila × Rosina, dcera † Pavla Přidala (?) (9176a, sken 324, s. 112)"}
       ]
     }
   ]
