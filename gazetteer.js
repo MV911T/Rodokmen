@@ -12,6 +12,7 @@ window.RODOKMEN_GAZ = [
   { n: 'Věrovany', a: ['Věrovany'], lat: 49.46, lon: 17.29 },
   { n: 'Dub nad Moravou', a: ['Dub (nad Moravou)', 'Dub nad Moravou'], lat: 49.48, lon: 17.28 },
   { n: 'Kralice na Hané', a: ['Kralice na Hané', 'Kralice'], lat: 49.462, lon: 17.18 },
+  { n: 'Lutín', a: ['Lutín'], lat: 49.56, lon: 17.14 },
   { n: 'Řepčín', a: ['Řepčín'], lat: 49.605, lon: 17.245 },
   { n: 'Neředín', a: ['Neředín'], lat: 49.59, lon: 17.225 },
   // Valašsko – panství Brumov

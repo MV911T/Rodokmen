@@ -4933,20 +4933,24 @@ window.RODOKMEN = {
       name: "Jakub Navrátil",
       line: "vesely",
       cert: "M",
-      b: {"date":"cca 1665","year":1665,"approx":true,"place":"Kralice na Hané (?)"},
-      marriage: "1) před 1708 – s Juditou († 30. 4. 1711, D); 2) 21. 9. 1711, Kralice – s Marinou, dcerou Jakuba Kelčáka (?)",
+      b: {"date":"cca 1678","year":1678,"approx":true,"place":"Lutín (?)"},
+      marriage: "1) 30. 6. 1704, Kralice – s Juditou, vdovou po Matěji Konečném († 30. 4. 1711); 2) 21. 9. 1711, Kralice – s Marinou, dcerou Jakuba Kelčáka (?)",
       notes: [
+        "1. sňatek 30. 6. 1704 Kralice (M): „oddan gest poc[tivý] mládenec Jakub Navrátil z Lutína s Juditou, vdovou po neb[ožtíkovi] Matějovi Konečným z Kralic; svědkové Tomáš Doležel a Matěj Zbožil z Lubenic“ (9176 O sken 261, s. 123). Jakub tedy pocházel z Lutína – jeho křest hledat v lutínské farnosti (~1675–1682).",
+        "Judita (*~1663) zemřela 30. 4. 1711 ve 48 letech („Juditha Navratilka“, 9176a Z sken 382) – nyní doloženo, že šlo o Jakubovu první manželku (vdova po Matěji Konečném); rodné příjmení neznámé.",
+        "Syn z 1. manželství pravděpodobně Jiří, pokřtěn 30. 4. 1706 v Kralicích („Girzik z rodu Jakuba Nawratila a matky Justyny“ – „Justyna“ nejspíš omyl za Juditu; kmotři Jiří Pospíšil a Judita Janíšková z Vítonic jako u Doroty 1708) – D.",
         "Sňatek 21. 9. 1711 Kralice (M): „Viduus Jacobus Navratil cum Marina filia Jacobi Kelčžak“, svědci Andreas Blaha a Joannes Ohnisko z Kralic (9176a O sken 273, s. 11).",
         "Děti (M): Dorota *14. 2. 1708 (matka Judita), Cecilie Alžběta *5. 11. 1712 (matka Marina; kmotr Jiří Pospíšil z Vítonic), Matouš *4. 9. 1716 (matka Marina; týž kmotr).",
-        "První manželka nejspíš Judita Navrátilová, † 30. 4. 1711 v Kralicích ve 48 letech (*~1663) – „Juditha Navratilka“ (9176a Z sken 382); v zápisu chybí manžel, vazba D (jméno z křtu 1708, místo a čas – o 5 měsíců později je Jakub vdovec). Jakub se tedy narodil zhruba 1660–1675; první sňatek hledat ve starší knize 9176 (N/O 1652–1707).",
         "Pravděpodobně i otec Ondřeje (sňatek XI/1735 s Barborou Konizilovou z Hrubčic), Josefa („Jacobi Navratil Kralicio filius“, sňatek 1740 s Marinou Babieradovou z Hrubčic) a Václava (sňatek 1745 s Kateřinou z Bedihoště) – D.",
         "V Kralicích žili 1727–29 Jakub Navrátil × Marina – možná on (K)."
       ],
       sources: [
+        "MZA Brno, Acta Publica, Kralice na Hané 9176 (detail 5773), O sken 261, s. 123; N sken 133",
         "MZA Brno, Acta Publica, Kralice na Hané 9176a (detail 5774), O sken 273; N sken 16, 34, 47; Z sken 382",
         "MZA Brno, Acta Publica, Kralice na Hané 9176a (detail 5774), O sken 324, s. 112"
       ],
       scans: [
+        {"f":"img/1704_snatek_jakub_navratil_judita.jpg","t":"Sňatek 30. 6. 1704, Kralice – mládenec Jakub Navrátil z Lutína × Judita, vdova po Matěji Konečném (9176 O, sken 261, s. 123)"},
         {"f":"img/1711_snatek_jakub_navratil_marina.jpg","t":"Sňatek 21. 9. 1711, Kralice – vdovec Jakub Navrátil × Marina, dcera Jakuba Kelčáka (9176a O, sken 273, s. 11)"},
         {"f":"img/1716_krest_matous_rosina_kralice.jpg","t":"Křty 3. a 4. 9. 1716, Kralice – Rosina (Paulus Přidal × Mariana) a Matouš (Jacobus Nawratil × Marina) (9176a N, sken 47)"},
         {"f":"img/1711_umrti_judita_navratilova.jpg","t":"Úmrtí Judity Navrátilové 30. 4. 1711, Kralice, 48 let (9176a Z, sken 382, s. 16)"},
