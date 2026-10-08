@@ -3056,12 +3056,14 @@ window.RODOKMEN = {
       name: "Mathias (Matthäus) Strusch",
       line: "struz",
       cert: "M",
-      b: {"date":"cca 1735","year":1735,"approx":true,"place":"Rohov"},
+      b: {"date":"28. 1. 1735","year":1735,"place":"Rohov"},
       d: {"date":"před 1795","year":1794,"approx":true},
       father: "andreasS",
+      mother: "annaPro",
       occ: "sedlák / zahradník (colonus, hortulanus) v Rohově",
       marriage: "8. 7. 1759, Sudice – s Rosinou, dcerou Petra Gadacze; svědci Franz Strusch, sedlák, a Andreas Strusch, chalupník, oba z Rohova",
       notes: [
+        "Křest 28. 1. 1735 Rohov (M): „Mathias | Andreas Struz, Anna uxor ejus | Joannes Dubowy, Marina Halfarin“ – kmotři stejní jako u sestry Mariny (1. 1. 1732).",
         "Sňatek 1759: „Honestus Juvenis Mathaeus Andreae Strusch Col: Rohov filius cum honesta Rozina Petri Gadacz Gaz: Rohov filia“ – syn Andrease Strusche (H XVI 6 fol. 53).",
         "1765 chalupník v Rohově (svědek); otec Valentina (křest 1770: „Mathias Struss Colon. Rohov.“); 1795 už zemřelý zahradník.",
         "Sestry (PRAVDĚPODOBNĚ): Eva (sňatek 1762), Marina (sňatek 1765 s Lorenzem Janoschem). V Rohově žili i Franz Strusch, sedlák, a Wenzel Struss, sedlák – příbuzní (K)."
@@ -3069,9 +3071,11 @@ window.RODOKMEN = {
       sources: [
         "ZA Opava, NAD 165 Sbírka matrik, Sudice H XVI 6 (O 1737–1849) fol. 53, sken 26 (1759)",
         "ZA Opava, NAD 165 Sbírka matrik, Sudice H XVI 2 fol. 180; POL IX 2 sn. 135",
-        "OFB Kranowitz I25412"
+        "OFB Kranowitz I25412",
+        "ZA Opava, NAD 165 Sbírka matrik, Sudice H XVI 1 (1702–1736), sken 133"
       ],
       scans: [
+        {"f":"img/1735_krest_mathias_strusch.jpg","t":"Křest 28. 1. 1735, Rohov – Mathias, rodiče Andreas Struz × Anna (Sudice H XVI 1, sken 133)"},
         {"f":"img/1759_snatek_strusch_gadacz.jpg","t":"Sňatek 8. 7. 1759, Sudice (H XVI 6 fol. 53, sken 26)"},
         {"f":"img/1770_krest_valentin_strusch.jpg","t":"Křest 21. 2. 1770, Rohov (Sudice H XVI 2 fol. 180)"},
         {"f":"img/1795_snatek_strusch_holeczek.jpg","t":"Sňatek 20. 1. 1795, Krzanowice (POL IX 2 sn. 135)"}
@@ -3082,19 +3086,25 @@ window.RODOKMEN = {
       name: "Andreas Strusch",
       line: "struz",
       cert: "M",
-      b: {"date":"před 1716","year":1712,"approx":true},
+      b: {"date":"cca 1700","year":1700,"approx":true,"place":"Rohov"},
+      father: "georgSt",
       occ: "sedlák / chalupník (colonus, gazarius) v Rohově",
+      marriage: "7. 8. 1725, Rohov (farnost Sudice) – s Annou Prochaskovou",
       notes: [
+        "Sňatek 7. 8. 1725 (M): „Andreas, Georgij Struz filius, cum Anna Prochaskiana, Rohowio“; svědci Jacobus Kloss, kostelník, a Matthaeus Sylvester ze Zauditz (H XVI 1 sken 217).",
+        "Děti (M): Marina *1. 1. 1732, Mathias *28. 1. 1735 (oba kmotři Joannes Dubowy a Marina Halfarka).",
         "Otec Mathiase (sňatek 1759), Evy (1762) a Mariny (1765). Nejstarší doložený Strusch (aktivní 1759–1765).",
         "V zápisu 1759 je otec „Col.“, svědek Andreas Strusch „Gaz.“ – buď nedůsledný stav, nebo dva Andreasové (K).",
-        "Doložen už 5. 5. 1737 jako svědek v Rohově (H XVI 6 fol. 6); svědek ještě 1745–1752. Úmrtí není v Sudicích 1763–1777. V Rohově žil i Georg Strusch († před 1739; děti Martin, m. 1739, a Barbara, m. 1745) – možná Andreasův otec (HYPOTÉZA); Laurentius Strusch (*cca 1710 †1773) a Wenzel – možní bratři. Vdova Anna Strusin († 14. 10. 1776, 68 let) – možná jeho žena (K).",
+        "Doložen už 5. 5. 1737 jako svědek v Rohově (H XVI 6 fol. 6); svědek ještě 1745–1752. Úmrtí není v Sudicích 1763–1777. V Rohově žil i Georg Strusch († před 1739; děti Martin, m. 1739, a Barbara, m. 1745) – možná Andreasův otec (HYPOTÉZA); Laurentius Strusch (*cca 1710 †1773) a Wenzel – možní bratři. Vdova Anna Strusin († 14. 10. 1776, 68 let, *~1708) – nejspíš jeho žena Anna roz. Prochaska (D).",
         "Dcera Marina pokřtěna 1. 1. 1732 v Rohově (M): „Marina | Andreas Struz et Anna uxor | Joannes Dobowy et Marina Halfarka uterqs Rohovio“ (H XVI 1 sken 127)."
       ],
       sources: [
         "ZA Opava, NAD 165 Sbírka matrik, Sudice H XVI 6 (O 1737–1849) fol. 53 (1759), 58 (1762), 63 (1765)",
-        "ZA Opava, NAD 165 Sbírka matrik, Sudice H XVI 1 (1702–1736), sken 127"
+        "ZA Opava, NAD 165 Sbírka matrik, Sudice H XVI 1 (1702–1736), sken 127",
+        "ZA Opava, NAD 165 Sbírka matrik, Sudice H XVI 1 (1702–1736), sken 217"
       ],
       scans: [
+        {"f":"img/1725_snatek_andreas_strusch.jpg","t":"Sňatek 7. 8. 1725, Rohov – Andreas, syn Georga Struze, × Anna Prochaska (Sudice H XVI 1, sken 217, s. 251v)"},
         {"f":"img/1759_snatek_strusch_gadacz.jpg","t":"Sňatek 8. 7. 1759, Sudice (H XVI 6 fol. 53, sken 26)"},
         {"f":"img/1732_krest_marina_strusch.jpg","t":"Křest dcery Mariny 1. 1. 1732, Rohov – „Andreas Struz et Anna uxor“ (Sudice H XVI 1, sken 127)"}
       ]
@@ -3105,17 +3115,19 @@ window.RODOKMEN = {
       maiden: "Gadacz",
       line: "struz",
       cert: "M",
-      b: {"date":"cca 1738","year":1738,"approx":true,"place":"Rohov"},
+      b: {"date":"27. 10. 1736","year":1736,"place":"Rohov"},
       father: "petrGa",
-      mother: "barbaraGa",
+      mother: "catharinaGa",
       notes: [
-        "Dcera Petra Gadacze, chalupníka v Rohově (sňatek 1759: „Rozina Petri Gadacz Gaz: Rohov filia“) – tip OFB „Euphrosina“ neplatí; matka Valentina (křest 1770).",
-        "Matka nejistá: Petr Gadacz měl 1729–30 manželku Catharinu, Barbara byla zřejmě 2. manželka. Zda je Rosina (*~1738) dcerou Barbary, nebo Cathariny, rozhodne až její křest (Sudice H XVI 1 sk. 129–146 nebo H XVI 2) – K."
+        "Křest 27. 10. 1736 Rohov (M): „Rosina | Petrus Hadass, Catharina uxor | Andreas Zajecz, Cathar. Andrysin (?)“ (měsíc ze sloupce dat). Totožnost s nevěstou Mathiase Strusche 1759 PRAVDĚPODOBNÁ (D): obec, otec Petr Gadacz i věk 23 let sedí. Matkou je tedy Catharina; Barbara († 1769) byla její macecha.",
+        "Dcera Petra Gadacze, chalupníka v Rohově (sňatek 1759: „Rozina Petri Gadacz Gaz: Rohov filia“) – tip OFB „Euphrosina“ neplatí; matka Valentina (křest 1770)."
       ],
       sources: [
-        "OFB Kranowitz"
+        "OFB Kranowitz",
+        "ZA Opava, NAD 165 Sbírka matrik, Sudice H XVI 1 (1702–1736), sken 137"
       ],
       scans: [
+        {"f":"img/1736_krest_rosina_gadacz.jpg","t":"Křest 27. 10. 1736, Rohov – Rosina, rodiče Petrus Hadass (Gadacz) × Catharina (Sudice H XVI 1, sken 137)"},
         {"f":"img/1759_snatek_strusch_gadacz.jpg","t":"Sňatek 8. 7. 1759, Sudice (H XVI 6 fol. 53, sken 26)"},
         {"f":"img/1770_krest_valentin_strusch.jpg","t":"Křest 21. 2. 1770, Rohov (Sudice H XVI 2 fol. 180)"}
       ]
@@ -3128,11 +3140,14 @@ window.RODOKMEN = {
       b: {"date":"cca 1691","year":1691,"approx":true},
       d: {"date":"4. 5. 1775","year":1775,"place":"Rohov"},
       occ: "domkář (casarius), 1769 podruh v Rohově",
+      marriage: "1) před 1729 – s Catharinou; 2) po 1736 – s Barbarou († 15. 2. 1769)",
       notes: [
         "Otec Rosiny (sňatek 1759).",
         "Zemřel 4. 5. 1775 v Rohově, 84 let: „Petrus Gadacz Casarius Rohoviensis“ (Sudice H XVI 7 fol. 177).",
         "Sňatek před 1737 (není v oddacích Sudice 1737–1772) – hledat v H XVI 1 (1702–1736).",
-        "1. manželka Catharina (M): křty dcer Cathariny 10. 10. 1729 („Petrus Gadacz et Catharina Rohowio“, sken 120) a Mariny 26. 10. 1730 (sken 123); Marina zemřela 18. 12. 1730 ve stáří 7½ týdne – „Petri Gadatz Operarij filiola“ (sken 292) – Petr tehdy nádeník (operarius) v Rohově. Barbara (†1769) byla tedy nejspíš jeho 2. manželka (sňatek po 1732, nenalezen) – D."
+        "1. manželka Catharina (M): křty dcer Cathariny 10. 10. 1729 („Petrus Gadacz et Catharina Rohowio“, sken 120) a Mariny 26. 10. 1730 (sken 123); Marina zemřela 18. 12. 1730 ve stáří 7½ týdne – „Petri Gadatz Operarij filiola“ (sken 292) – Petr tehdy nádeník (operarius) v Rohově. Barbara (†1769) byla tedy nejspíš jeho 2. manželka (sňatek po 1732, nenalezen) – D.",
+        "Další děti s Catharinou (M): Joannes *26. 6. 1732, Veronica *15. 12. 1733, Jacobus *22. 7. 1735, Rosina *27. 10. 1736.",
+        "2. manželka Barbara Gadacz (*~1705, † 15. 2. 1769) – sňatek po 1736 nenalezen; nebyla matkou Rosiny (*1736 z 1. manželství)."
       ],
       sources: [
         "ZA Opava, NAD 165 Sbírka matrik, Sudice H XVI 6 (O 1737–1849) fol. 53",
@@ -3143,24 +3158,6 @@ window.RODOKMEN = {
         {"f":"img/1759_snatek_strusch_gadacz.jpg","t":"Sňatek 8. 7. 1759, Sudice (H XVI 6 fol. 53, sken 26)"},
         {"f":"img/1775_umrti_petr_gadacz.jpg","t":"Úmrtí Petra Gadacze 4. 5. 1775, Rohov, 84 let (H XVI 7 fol. 177)"},
         {"f":"img/1729_krest_catharina_gadacz.jpg","t":"Křest dcery Cathariny 10. 10. 1729, Rohov – „Petrus Gadacz et Catharina“ (Sudice H XVI 1, sken 120)"}
-      ]
-    },
-    {
-      id: "barbaraGa",
-      name: "Barbara Gadacz",
-      line: "struz",
-      cert: "D",
-      b: {"date":"cca 1705","year":1705,"approx":true},
-      d: {"date":"15. 2. 1769","year":1769,"place":"Rohov"},
-      notes: [
-        "Zemřela 15. 2. 1769 v Rohově, 64 let: „Barbara Petri Gadacz inquil. Rohov. uxor“ (M). Jako matka Rosiny PRAVDĚPODOBNÁ – mohla být i druhou ženou.",
-        "Pravděpodobně 2. manželka Petra Gadacze – v letech 1729–1730 měl Petr manželku Catharinu (D)."
-      ],
-      sources: [
-        "ZA Opava, NAD 165 Sbírka matrik, Sudice H XVI 7 sken 76, fol. 148"
-      ],
-      scans: [
-        {"f":"img/1769_umrti_barbara_gadacz.jpg","t":"Úmrtí Barbary, ženy Petra Gadacze, 15. 2. 1769, 64 let (H XVI 7 fol. 148)"}
       ]
     },
     {
@@ -5045,6 +5042,60 @@ window.RODOKMEN = {
       ],
       scans: [
         {"f":"img/1800_snatek_tomanek_postulka.jpg","t":"Sňatek 18. 2. 1800, Dolní Benešov – Johann Tomanek, čeledín „ex parte austriaca“, × Barbara, dcera † Johanna Postulky (H IV 5, sken 4)"}
+      ]
+    },
+    {
+      id: "catharinaGa",
+      name: "Catharina Gadacz",
+      line: "struz",
+      cert: "M",
+      b: {"date":"cca 1705","year":1705,"approx":true,"place":"Rohov (?)"},
+      notes: [
+        "1. manželka Petra Gadacze; děti v Rohově (M): Catharina *10. 10. 1729, Marina *26. 10. 1730 († 18. 12. 1730), Joannes *26. 6. 1732, Veronica *15. 12. 1733, Jacobus *22. 7. 1735, Rosina *27. 10. 1736 (Sudice H XVI 1, sken 120–137). Zemřela zřejmě po X/1736; Petr se pak oženil s Barbarou († 1769)."
+      ],
+      sources: [
+        "ZA Opava, NAD 165 Sbírka matrik, Sudice H XVI 1 (1702–1736), sken 120, 123, 128, 131, 134, 137"
+      ],
+      scans: [
+        {"f":"img/1736_krest_rosina_gadacz.jpg","t":"Křest 27. 10. 1736, Rohov – Rosina, rodiče Petrus Hadass (Gadacz) × Catharina (Sudice H XVI 1, sken 137)"}
+      ]
+    },
+    {
+      id: "annaPro",
+      name: "Anna Strusch",
+      maiden: "Prochaska",
+      line: "struz",
+      cert: "M",
+      b: {"date":"cca 1708","year":1708,"approx":true,"place":"Rohov"},
+      notes: [
+        "Sňatek 7. 8. 1725 s Andreasem Struschem: „cum Anna Prochaskiana, Rohowio“.",
+        "Matka Mariny (1732) a Mathiase (1735): „Andreas Struz, Anna uxor ejus“.",
+        "Pravděpodobně vdova „Anna Strusin“, † 14. 10. 1776 v 68 letech (D). Prochaskové žili v Rohově (Simon Prochaska, Andreas Simonis Prochaska 1728)."
+      ],
+      sources: [
+        "ZA Opava, NAD 165 Sbírka matrik, Sudice H XVI 1 (1702–1736), sken 217, 127, 133"
+      ],
+      scans: [
+        {"f":"img/1725_snatek_andreas_strusch.jpg","t":"Sňatek 7. 8. 1725, Rohov – Andreas, syn Georga Struze, × Anna Prochaska (Sudice H XVI 1, sken 217, s. 251v)"},
+        {"f":"img/1735_krest_mathias_strusch.jpg","t":"Křest syna Mathiase 28. 1. 1735 (H XVI 1, sken 133)"}
+      ]
+    },
+    {
+      id: "georgSt",
+      name: "Georg Strusch (Struz)",
+      line: "struz",
+      cert: "M",
+      b: {"date":"cca 1670","year":1670,"approx":true,"place":"Rohov (?)"},
+      notes: [
+        "Otec Andrease (sňatek 1725: „Andreas, Georgij Struz filius“).",
+        "V Rohově doložen jako svědek 1716–1725 („Georgius Struz Rohowio“, 1725 i „Straz“ – týž písař); úmrtí mezi VIII/1731 a 1739 (v H XVI 1 zemřelí končí VII/1731 bez něj; 1739 už „†“ u sňatku syna Martina).",
+        "Další děti (D): Martin (sňatek 1739), Barbara (sňatek 1745); možní synové i Laurentius (*~1710 †1773) a Wenzel (sňatek 1734)."
+      ],
+      sources: [
+        "ZA Opava, NAD 165 Sbírka matrik, Sudice H XVI 1 (1702–1736), sken 216–217; H XVI 6"
+      ],
+      scans: [
+        {"f":"img/1725_snatek_andreas_strusch.jpg","t":"Sňatek 7. 8. 1725, Rohov – Andreas, syn Georga Struze, × Anna Prochaska (Sudice H XVI 1, sken 217, s. 251v)"}
       ]
     }
   ]
