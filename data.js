@@ -4953,7 +4953,8 @@ window.RODOKMEN = {
         "Pravděpodobně i otec Ondřeje (sňatek XI/1735 s Barborou Konizilovou z Hrubčic), Josefa („Jacobi Navratil Kralicio filius“, sňatek 1740 s Marinou Babieradovou z Hrubčic) a Václava (sňatek 1745 s Kateřinou z Bedihoště) – D.",
         "V Kralicích žili 1727–29 Jakub Navrátil × Marina – možná on (K).",
         "HYPOTÉZA (K): Judita mohla být dcera Pavla Pešky (?) z Kralic, 30. 1. 1691 oddaná s Vavřincem, synem † Pavla Konečného (9176 O sk 244, s. 90) – v roce 1704 je ale vdovou po MATĚJI Konečném; buď měla tři manžele, nebo jde o dvě Judity. Sňatek Matěje Konečného s Juditou v 9176 O 1682–II/1692 není; 1692–1703 zbývá.",
-        "Lutín nemá matriky v MZA – patří pod ZA Opava, pobočka Olomouc (dnes farnost Slatinice); křest Jakuba (~1672–1684) hledat na digi.archives.cz."
+        "Lutín patřil k faře (Velké) Slatinice – nejstarší matrika Č XII 1 O (ZA Opava, pobočka Olomouc) začíná až I/1689, starší knihy nejsou digitalizované (nejspíš nedochovány) → Jakubův křest (~1672–1684) online není.",
+        "HYPOTÉZA (K): otcem mohl být Martin Navrátil z Třebčína (dnes část Lutína), 1697 kmotr „z Lutína“, 1689–1694 častý kmotr a svědek; 1698 vdával dcery Rosinu (za Františka, syna Václava Navrátila z Vojnic) a Annu (za Martina Bichala z Topolan); děti s Marinou/Mariannou 1693 a 1699 (snad 2. manželství nebo jiný Martin). Spojeno jen podle jména a místa – NEDOLOŽENO. Pramen: ZA Opava, Slatinice Č XII 1 O, sk 14, 23, 31, 32."
       ],
       sources: [
         "MZA Brno, Acta Publica, Kralice na Hané 9176 (detail 5773), O sken 261, s. 123; N sken 133",
