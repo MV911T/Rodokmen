@@ -1048,7 +1048,8 @@ window.RODOKMEN = {
       b: {"date":"cca 1748","year":1748,"approx":true,"place":"Rajbrot"},
       marriage: "4. 2. 1812 Rajbrot č. 191 – s Mariannou Fitrzyk (on 64letý vdovec, ona 36letá vdova)",
       notes: [
-        "Ženatý třikrát: 1) Marianna NN (děti Konstancja 1783, Šimon 1785 – podle rejstříku); 2) 26. 10. 1806 Anna, dcera Macieje Gromały, 30 let (on 50, vdovec; dům 191); 3) 4. 2. 1812 Marianna roz. Fitrzyk, vdova, 36 let (dům 191). Věk se rozchází (50 v r. 1806, 64 v r. 1812)."
+        "Ženatý třikrát: 1) Marianna NN (děti Konstancja 1783, Šimon 1785 – podle rejstříku); 2) 26. 10. 1806 Anna, dcera Macieje Gromały, 30 let (on 50, vdovec; dům 191); 3) 4. 2. 1812 Marianna roz. Fitrzyk, vdova, 36 let (dům 191). Věk se rozchází (50 v r. 1806, 64 v r. 1812).",
+        "Úmrtí podle rejstříku zemřelých 7010 (Lit. D): „Drąg Simon 21 8br [1816?] p. 9“ nebo „23 Mart 1825 p. 32“ – kniha 1813–1825 nenaskenovaná; spíš 21. 10. 1816 (měsíc předtím zemřel „Jacobus f. Simonis“) – K."
       ],
       sources: [
         "křest vnučky Małgorzaty 1858"
@@ -1065,10 +1066,12 @@ window.RODOKMEN = {
       cert: "M",
       b: {"date":"cca 1776","year":1776,"approx":true,"place":"Rajbrot"},
       notes: [
-        "Při sňatku 4. 2. 1812 vdova, 36 let, „de Patre Fitrzyk“; svědci Franciscus Radzięta a Franciscus Drąg. Křest v mezeře 1768–1776."
+        "Při sňatku 4. 2. 1812 vdova, 36 let, „de Patre Fitrzyk“; svědci Franciscus Radzięta a Franciscus Drąg. Křest v mezeře 1768–1776.",
+        "PRAVDĚPODOBNÝ 1. sňatek (D): 15. 4. 1807 Rajbrot č. 95 – „Szymon Fitrzyk“, 25 let, × „Marianna patre Zoc (?)“, 30 let (*~1777), svědci Antonius a Jakobus Trojan (M 4510 sken 020, s. 40; rejstřík 7005: „Fitrzyk Szymon / żona Maria Zoc 15/4 807“). V domě 95 zemřel 13. 2. 1809 „Josephus Simonis Fitrzyk et Mariannae filius“. Rodné příjmení tedy nejspíš Zoc (?), „Fitrzyk“ v zápisu 1812 je příjmení po 1. manželovi. Křest ~1776–77: kniha 1768–1776 nenaskenovaná; 1777 je v knize 3505."
       ],
       sources: [
-        "křest vnučky Małgorzaty 1858"
+        "křest vnučky Małgorzaty 1858",
+        "Skanoteka PTG Rajbrot (id4946): M 1788–1840 (jedn. 4510) sken 020; rejstřík sňatků 7005 sken 016"
       ],
       scans: [
         {"f":"img/1812_snatek_drag_fitrzyk.jpg","t":"Sňatek 4. 2. 1812"}
