@@ -4455,12 +4455,14 @@ window.RODOKMEN = {
       b: {"date":"4. 7. 1782 (podle OFB)","year":1782,"place":"Rudnik"},
       d: {"date":"30. 9. 1859 (podle OFB)","year":1859},
       father: "johannesBl",
+      mother: "magdalenaBa",
       occ: "čeledín (1806), robotní zahradník v Silberkopfu",
       marriage: "13. 7. 1806, Silberkopf (kaple) – s Rosalií Josephou Kaluza (OFB)",
       notes: [
         "Otec Lucie (sňatek 1840: „Thomas Blana Robothg. von Silberkopf“).",
         "Sňatek 13. 7. 1806 v Rudniku (sken): „Thomas Blania Junggesell | Silberkopf | 23 – Rosalia Kaluza Jungfer | Johannes Blania Inlieger in Silberkopf und Andreas Kaluza Freigärtner | 22“; svědci robotní zahradníci Lucas Kraykala, Mathias Wyglenda, Andreas Sobola a Anton Kaluza, všichni ze Silberkopfu.",
-        "Podle OFB (D): pokřtěn 4. 7. 1782 v Rudniku, 1817 hlídač v Czienskowitz, zemřel 30. 9. 1859; děti Catharina 1807, Jacob 1810, Anton 1813, Michael 1814, Marianna 1817."
+        "Podle OFB (D): pokřtěn 4. 7. 1782 v Rudniku, 1817 hlídač v Czienskowitz, zemřel 30. 9. 1859; děti Catharina 1807, Jacob 1810, Anton 1813, Michael 1814, Marianna 1817.",
+        "Podle OFB I4243 (D): kmotři při křtu 4. 7. 1782 Peter Paul Lanczyk a Catharina Kaluza."
       ],
       sources: [
         "AP Katowice, oddz. Racibórz, 18/13/0/19 (Rudnik, duplikáty; Silius Radicum), sygn. 1730 sken 0005 (1806); sygn. 1766 sken 0120 (1840)",
@@ -4477,11 +4479,14 @@ window.RODOKMEN = {
       line: "opolony",
       cert: "M",
       b: {"date":"cca 1755 (podle OFB, Sławików)","year":1755,"approx":true},
-      d: {"date":"18. 5. 1814 (podle OFB)","year":1814},
+      d: {"date":"18. 5. 1814","year":1814},
+      father: "casparBl",
       occ: "podruh (Inlieger) v Silberkopfu",
+      marriage: "23. 1. 1780, Silberkopf (kaple) – s Magdalenou Banas (OFB, D)",
       notes: [
         "Otec Thomase (sňatek 1806: „Johannes Blania Inlieger in Silberkopf“).",
-        "Podle OFB (D): manželka Magdalena Banas (1756–1821)."
+        "Podle OFB (D): manželka Magdalena Banas (1756–1821).",
+        "Podle OFB (D): zemřel 18. 5. 1814 v 69 letech; sňatek 23. 1. 1780 v kapli v Silberkopfu (24 a 23 let), svědci Johannes Zorambek a Josephus Rzodeczka; otec Caspar Blana."
       ],
       sources: [
         "AP Katowice, oddz. Racibórz, 18/13/0/19 (Rudnik, duplikáty; Silius Radicum), sygn. 1730 sken 0005"
@@ -4499,15 +4504,20 @@ window.RODOKMEN = {
       b: {"date":"2. 9. 1787 (podle OFB)","year":1787,"place":"Rudnik"},
       d: {"date":"před 1827","year":1826,"approx":true},
       father: "andreasKal",
+      mother: "johannaZi",
       notes: [
         "Sňatek 1806 (sken): dcera Andrease Kaluzy, svobodného zahradníka (Freigärtner); věk 22 (OFB: pokřtěna 2. 9. 1787 – rozpor).",
-        "Jako matka Lucie jen podle OFB (D); zemřela před 1827."
+        "Jako matka Lucie jen podle OFB (D); zemřela před 1827.",
+        "Podle OFB Rudnik I4245 (D): pokřtěna 2. 9. 1787 v Rudniku, narozena v Silberkopfu, kmotři Antonius Pampecky, švec, a Josepha Engelbrechtin, oba z Ratiboře. Při jejím sňatku 13. 7. 1806 už byli oba rodiče mrtví (otec † 30. 8. 1805, matka † 28. 4. 1806 – M). Originály křtů 1787 jsou jen na FamilySearch (katalog 302112, přihlášení)."
       ],
       sources: [
-        "OFB Rudnik I4245"
+        "OFB Rudnik I4245",
+        "OFB Rudnik (online-ofb.de) I4245"
       ],
       scans: [
-        {"f":"img/1806_snatek_blania_kaluza.jpg","t":"Sňatek 13. 7. 1806, Rudnik Nr 10 (sygn. 1730, sken 0005)"}
+        {"f":"img/1806_snatek_blania_kaluza.jpg","t":"Sňatek 13. 7. 1806, Rudnik Nr 10 (sygn. 1730, sken 0005)"},
+        {"f":"img/1805_umrti_andreas_kaluza.jpg","t":"Pohřeb 2. 9. 1805, Rudnik – Andreas Kaluza, Inlieger ze Silberkopfu, † 30. 8. 1805, 68 let (AP Racibórz 18/13/0/19 sygn. 1750, sken 0013, č. 45)"},
+        {"f":"img/1806_umrti_johanna_kaluza.jpg","t":"Pohřeb 30. 4. 1806, Rudnik – Johanna Kaluza, vdova a podruhyně ze Silberkopfu, † 28. 4. 1806, 58 let (sygn. 1751, sken 0004, č. 10)"}
       ]
     },
     {
@@ -4516,17 +4526,25 @@ window.RODOKMEN = {
       line: "opolony",
       cert: "M",
       b: {"date":"cca 1737 (podle OFB)","year":1737,"approx":true},
-      d: {"date":"1805 (podle OFB)","year":1805},
+      d: {"date":"30. 8. 1805","year":1805,"place":"Silberkopf (Strzybnik)"},
+      father: "wenzelKal",
+      mother: "annaKal",
       occ: "svobodný zahradník (Freigärtner) v Silberkopfu",
+      marriage: "19. 7. 1767, Rudnik – s Johannou Nepomucenou Zimovou (OFB, D)",
       notes: [
+        "Úmrtí (M): pohřben 2. 9. 1805 v Rudniku – „Andreas Kaluza Inlieger … den dreißigsten August im Alter von 68 Jahr starb“, příčina Engbrüstigkeit (dušnost).",
+        "Podle OFB (D): robotní sedlák a svobodný zahradník v Silberkopfu; sňatek 19. 7. 1767 Rudnik s Johannou Nepomucenou Zimovou (svědci Adam Hadelko a Wenzel Kaluza); děti Thomas 1768, Franciscus 1770, Peter 1773–1820, Maximilian 1775, Maria 1778–1831, Simon Carolus 1780, Anton Johannes 1783–1843, Rosalia Josepha 1787.",
         "Otec Rosalie (sňatek 1806).",
         "Podle OFB (D): manželka Johanna Nepomucena Zima (1749–1806)."
       ],
       sources: [
-        "AP Katowice, oddz. Racibórz, 18/13/0/19 (Rudnik, duplikáty; Silius Radicum), sygn. 1730 sken 0005"
+        "AP Katowice, oddz. Racibórz, 18/13/0/19 (Rudnik, duplikáty; Silius Radicum), sygn. 1730 sken 0005",
+        "AP Racibórz, fond 18/13/0/19 (duplikáty matrik Rudnik, Silius Radicum), sygn. 1750 sken 0013 č. 45",
+        "OFB Rudnik (online-ofb.de) I4246, I1224"
       ],
       scans: [
-        {"f":"img/1806_snatek_blania_kaluza.jpg","t":"Sňatek 13. 7. 1806, Rudnik Nr 10 (sygn. 1730, sken 0005)"}
+        {"f":"img/1806_snatek_blania_kaluza.jpg","t":"Sňatek 13. 7. 1806, Rudnik Nr 10 (sygn. 1730, sken 0005)"},
+        {"f":"img/1805_umrti_andreas_kaluza.jpg","t":"Pohřeb 2. 9. 1805, Rudnik – Andreas Kaluza, Inlieger ze Silberkopfu, † 30. 8. 1805, 68 let (AP Racibórz 18/13/0/19 sygn. 1750, sken 0013, č. 45)"}
       ]
     },
     {
@@ -5225,6 +5243,145 @@ window.RODOKMEN = {
         "Skanoteka PTG – AD Tarnów, parafia Łęg Tarnowski (id4305): U Rudno (jedn. 3605) sken 004–005, 008; M 4580 sken 003"
       ],
       scans: []
+    },
+    {
+      id: "johannaZi",
+      name: "Johanna Nepomucena Kaluza",
+      maiden: "Zima (Zimni)",
+      line: "opolony",
+      cert: "D",
+      b: {"date":"28. 4. 1749 (podle OFB)","year":1749,"place":"Rudnik"},
+      d: {"date":"28. 4. 1806","year":1806,"place":"Silberkopf (Strzybnik)"},
+      father: "bartholomausZi",
+      mother: "annaMu",
+      notes: [
+        "Úmrtí (M): pohřbena 30. 4. 1806 v Rudniku – „Johanna Kaluza Wittwe und Inliegerin … den acht und zwanzigsten April 1806 Nachmittags um 2 Uhr im Alter von 58 Jahr starb“.",
+        "Podle OFB (D): pokřtěna 28. 4. 1749 v Rudniku (kmotři Wenzel Kaluza a Catharina Pietruczka), též „Anna Zimni“; sňatek s Andreasem Kaluzou 19. 7. 1767; příčina smrti Seitenstechen. Že pohřbená vdova Johanna je ona, plyne jen z OFB."
+      ],
+      sources: [
+        "AP Racibórz, fond 18/13/0/19 (duplikáty matrik Rudnik, Silius Radicum), sygn. 1751 sken 0004 č. 10",
+        "OFB Rudnik (online-ofb.de) I1224"
+      ],
+      scans: [
+        {"f":"img/1806_umrti_johanna_kaluza.jpg","t":"Pohřeb 30. 4. 1806, Rudnik – Johanna Kaluza, vdova a podruhyně ze Silberkopfu, † 28. 4. 1806, 58 let (sygn. 1751, sken 0004, č. 10)"}
+      ]
+    },
+    {
+      id: "bartholomausZi",
+      name: "Bartholomäus Zima",
+      line: "opolony",
+      cert: "D",
+      b: {"date":"cca 1710","year":1710,"approx":true,"place":"Rudnik (?)"},
+      d: {"date":"15. 10. 1768","year":1768,"place":"Rudnik (?)"},
+      occ: "zahradník, sedlák (hortulanus, colonus)",
+      marriage: "26. 6. 1740, Rudnik – s Annou Mussiol",
+      notes: [
+        "Podle OFB Rudnik (D) – nečteno ve skenu."
+      ],
+      sources: [
+        "OFB Rudnik (online-ofb.de)"
+      ]
+    },
+    {
+      id: "annaMu",
+      name: "Anna Zima",
+      maiden: "Mussiol",
+      line: "opolony",
+      cert: "D",
+      b: {"date":"cca 1722","year":1722,"approx":true,"place":"Rudnik (?)"},
+      d: {"date":"20. 8. 1792","year":1792},
+      father: "thomasMu",
+      notes: [
+        "Podle OFB Rudnik (D): sňatek 26. 6. 1740 s Bartholomäem Zimou; dcera † Thomase Mussiola."
+      ],
+      sources: [
+        "OFB Rudnik (online-ofb.de)"
+      ]
+    },
+    {
+      id: "thomasMu",
+      name: "Thomas Mussiol",
+      line: "opolony",
+      cert: "D",
+      b: {"date":"cca 1690","year":1690,"approx":true,"place":"Rudnik (?)"},
+      notes: [
+        "Podle OFB Rudnik (D): otec Anny, zemřel před VI/1740."
+      ],
+      sources: [
+        "OFB Rudnik (online-ofb.de)"
+      ]
+    },
+    {
+      id: "wenzelKal",
+      name: "Wenceslaus (Wenzel) Kaluza",
+      line: "opolony",
+      cert: "D",
+      b: {"date":"cca 1702","year":1702,"approx":true,"place":"Rudnik (?)"},
+      d: {"date":"20. 4. 1751","year":1751,"place":"Rudnik"},
+      occ: "krejčí a muzikant (Sartor et musicus) v Rudniku",
+      marriage: "s Annou",
+      notes: [
+        "Podle OFB Rudnik I2371 (D): zemřel 20. 4. 1751 ve 49 letech; otec Andrease."
+      ],
+      sources: [
+        "OFB Rudnik (online-ofb.de) I2371"
+      ]
+    },
+    {
+      id: "annaKal",
+      name: "Anna Kaluza",
+      line: "opolony",
+      cert: "D",
+      b: {"date":"cca 1705","year":1705,"approx":true},
+      notes: [
+        "Podle OFB (D): manželka Wenzela Kaluzy, matka Andrease; rodné jméno neznámé."
+      ],
+      sources: [
+        "OFB Rudnik (online-ofb.de)"
+      ]
+    },
+    {
+      id: "magdalenaBa",
+      name: "Magdalena Blania",
+      maiden: "Banas",
+      line: "opolony",
+      cert: "D",
+      b: {"date":"4. 5. 1756 (podle OFB)","year":1756},
+      d: {"date":"4. 8. 1821","year":1821},
+      father: "maximilianBa",
+      notes: [
+        "Podle OFB Rudnik (D): manželka Johannese Blanii (sňatek 23. 1. 1780), matka Thomase (*1782)."
+      ],
+      sources: [
+        "OFB Rudnik (online-ofb.de)"
+      ]
+    },
+    {
+      id: "maximilianBa",
+      name: "Maximilian Banas",
+      line: "opolony",
+      cert: "D",
+      b: {"date":"cca 1693","year":1693,"approx":true},
+      d: {"date":"1789","year":1789},
+      notes: [
+        "Podle OFB Rudnik (D): otec Magdaleny."
+      ],
+      sources: [
+        "OFB Rudnik (online-ofb.de)"
+      ]
+    },
+    {
+      id: "casparBl",
+      name: "Caspar Blana (Blania)",
+      line: "opolony",
+      cert: "D",
+      b: {"date":"cca 1725","year":1725,"approx":true,"place":"Sławików (?)"},
+      notes: [
+        "Podle OFB (D): otec Johannese Blanii."
+      ],
+      sources: [
+        "OFB Rudnik (online-ofb.de)"
+      ]
     }
   ]
 };
