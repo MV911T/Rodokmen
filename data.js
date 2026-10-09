@@ -5124,21 +5124,24 @@ window.RODOKMEN = {
       maiden: "Kelčáková (?)",
       line: "plachy",
       cert: "M",
-      b: {"date":"cca 1690","year":1690,"approx":true,"place":"Kralice na Hané (?)"},
+      b: {"date":"cca 1686","year":1686,"approx":true,"place":"Kralice na Hané (?)"},
+      d: {"date":"22. 5. 1771","year":1771,"place":"Kralice na Hané"},
       notes: [
+        "Úmrtí 22. 5. 1771 Kralice (M): „Mariana Navratilin Vidua Kralitzio | 85 annorum“ (Kralice 9177 Z, sken 234; *~1686). Totožnost s vdovou po Jakubovi PRAVDĚPODOBNÁ (D) – manžel v zápisu nejmenován, jiná vdova Navrátilová z Kralic tohoto věku není; v Z III/1742–IV/1771 jiný zápis není.",
         "Sňatek 21. 9. 1711 s vdovcem Jakubem Navrátilem (M): „Marina filia Jacobi Kelčžak“ – příjmení otce čteno nejistě (v knize i Václav Kelčák/Kelčžak 1709/1710).",
         "Děti: Cecilie Alžběta *1712, Matouš *1716.",
-        "Žila v VIII/1745 – kmotra s manželem Jakubem (9176a N sk196, M).",
-        "Úmrtí NENÍ v Kralicích Z III/1742–III/1765 (9176a, 9177) – zemřela po IV/1765 nebo jinde."
+        "Žila v VIII/1745 – kmotra s manželem Jakubem (9176a N sk196, M)."
       ],
       sources: [
         "MZA Brno, Acta Publica, Kralice na Hané 9176a (detail 5774), O sken 273; N sken 34, 47",
-        "MZA, Kralice 9176a (Acta Publica id 5774), N sk189, 196, 197; Z sk480, 490"
+        "MZA, Kralice 9176a (Acta Publica id 5774), N sk189, 196, 197; Z sk480, 490",
+        "MZA, Kralice 9177 (Acta Publica id 5775), Z, sken 234"
       ],
       scans: [
         {"f":"img/1711_snatek_jakub_navratil_marina.jpg","t":"Sňatek 21. 9. 1711, Kralice – vdovec Jakub Navrátil × Marina, dcera Jakuba Kelčáka (9176a O, sken 273, s. 11)"},
         {"f":"img/1716_krest_matous_rosina_kralice.jpg","t":"Křty 3. a 4. 9. 1716, Kralice – Rosina (Paulus Přidal × Mariana) a Matouš (Jacobus Nawratil × Marina) (9176a N, sken 47)"},
-        {"f":"img/1745_kmotri_jakub_matous_navratil.jpg","t":"VIII/1745, Kralice – kmotři dvojčat: „Jacobus Navratil cum Marina conjuge sua. Matthaeus Navratil cum Rosina conjuge sua“ (9176a N, sken 196)"}
+        {"f":"img/1745_kmotri_jakub_matous_navratil.jpg","t":"VIII/1745, Kralice – kmotři dvojčat: „Jacobus Navratil cum Marina conjuge sua. Matthaeus Navratil cum Rosina conjuge sua“ (9176a N, sken 196)"},
+        {"f":"img/1771_umrti_marina_navratilova.jpg","t":"Úmrtí 22. 5. 1771, Kralice – Mariana Navratilin, vdova, 85 let (9177 Z, sken 234)"}
       ]
     },
     {
