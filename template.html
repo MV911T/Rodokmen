@@ -354,6 +354,10 @@ const genDepth = (()=>{ const byId=Object.fromEntries(D.people.map(p=>[p.id,p]))
   const g=id=>{ if(!id||!byId[id]) return -1; if(id in memo) return memo[id]; memo[id]=0;
     return memo[id]=1+Math.max(g(byId[id].father),g(byId[id].mother)); };
   return g(D.root); })();
+// generation of each ancestor counted from the root (parents = 1); nearest path wins
+const genOf = (()=>{ const byId=Object.fromEntries(D.people.map(p=>[p.id,p])), g={[D.root]:0}, q=[D.root];
+  while(q.length){ const id=q.shift(); for(const x of [byId[id].father,byId[id].mother]) if(x&&byId[x]&&!(x in g)){ g[x]=g[id]+1; q.push(x); } }
+  return g; })();
 const meta = document.getElementById('meta');
 meta.innerHTML = `${D.people.length} osob · <b title="Nejdelší doložená řada předků od Matěje Veselého">${genDepth} generací</b> zpět · ${nM} doloženo přímo v matrikách · nejstarší doložený předek <button type="button" class="plink" id="oldest">${oldest.name}</button> (~${oldest.b.year}) · aktualizováno ${window.RODOKMEN_BUILD||D.updated}`;
 document.getElementById('oldest').addEventListener('click',()=>{ applyScale(Math.max(vs,0.6)); focusCard(oldest.id); });
@@ -383,7 +387,7 @@ function open(id){
   if(kids[p.id]) rows.push(['Děti v rodokmenu', kids[p.id].map(link).join('<br>')]);
   body.innerHTML = `<button type="button" class="x" aria-label="Zavřít">×</button>
     <h2>${p.name}</h2>
-    <div class="sub">${p.maiden?'roz. '+p.maiden+' · ':''}rod ${D.lines[p.line]}</div>
+    <div class="sub">${p.maiden?'roz. '+p.maiden+' · ':''}rod ${D.lines[p.line]}${genOf[p.id]?` · ${genOf[p.id]}. generace zpět`:''}</div>
     <span class="badge"><span class="dot ${p.cert}"></span>${CERT[p.cert]}</span>
     <dl class="facts">${rows.map(([k,v])=>`<dt>${k}</dt><dd>${v}</dd>`).join('')}</dl>
     ${p.notes&&p.notes.length?`<h3>Poznámky</h3><ul>${p.notes.map(n=>`<li>${n}</li>`).join('')}</ul>`:''}
