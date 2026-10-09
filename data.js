@@ -22,6 +22,7 @@ window.RODOKMEN = {
       b: {"date":"15. 1. 1986","year":1986,"place":"Ostrava"},
       father: "radim",
       mother: "jana",
+      alive: true,
       notes: [
         "Výchozí osoba rodokmenu.",
         "Nemá sourozence."
@@ -35,6 +36,7 @@ window.RODOKMEN = {
       b: {"date":"1961","year":1961,"place":"pravděpodobně Frýdek-Místek"},
       father: "svaton",
       mother: "marta",
+      alive: true,
       marriage: "22. 6. 1985 – s Janou Pacíkovou (údaj rodiny)",
       notes: [],
       siblings: ["Sestra Miluše Kempná, roz. Veselá (*19. 4. 1958 Ostrava-Fifejdy), manžel Rostislav Kempný, děti Rostislav a Barbora."]
@@ -48,6 +50,7 @@ window.RODOKMEN = {
       b: {"date":"23. 6. 1962","year":1962,"place":"Ostrava"},
       father: "rudolf1936",
       mother: "margareta",
+      alive: true,
       notes: [],
       siblings: ["Rudolf Pacík (*29. 3. 1961 Ostrava, †3. 8. 2018 Ostrava, pohřben v Chuchelné), Tomáš Pacík."]
     },
