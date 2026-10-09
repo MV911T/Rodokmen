@@ -1222,8 +1222,11 @@ window.RODOKMEN = {
       maiden: "Chrapusta",
       line: "chmielek",
       cert: "M",
-      b: {"date":"cca 1776","year":1776,"approx":true,"place":"Dębno (pow. brzeski) (?)"},
+      b: {"date":"3. 11. 1774 (křest)","year":1774,"place":"Jastew, farnost Dębno (pow. brzeski)"},
+      father: "martinCh",
+      mother: "magdalenaSw",
       notes: [
+        "Křest 3. 11. 1774 Jastew (M): „Anno ut supra d. 3 9bris ego idem baptizavi Gertrudem Martini Chrapusta et Mariannae Świstakowna CC. LL. PP. – ff. Thomas Cura (?) et Magdalena Kurgolka (?)“. Totožnost s nevěstou z 1802 PRAVDĚPODOBNÁ (D): věk sedí (26 v II/1802), jiná Gertruda Chrapusta 1774–1776 není.",
         "Sňatek 2. 2. 1802 Dębno č. 44 (M): „Gertrudis Chrapuścionka“, 26 let, svobodná (*~1776). Kmotři dětí z rodu Chrapusta (Antoni, Apolonia) – rodina z Dębna.",
         "Ohlášky dcery Katarzyny (18 let) 21. 10. a 4. 11. 1826, Rozembark č. 160, farnost Rożnowice (M): „z Katarzyną panną córką Woyciecha y Gertrudy Dydowiczów Owczarzów, oboie z Rozenbarku“.",
         "Podle indexu Geneteka (D): křty dětí v Dębnie (okr. brzeski) – Mikołaj *4. 12. 1802 (dům 44) a Marianna *19. 6. 1804 (dům 38), rodiče „Wojciech Dyda × Gertruda Chrapusta“, kmotr mj. Antoni Chrapusta. Rod Chrapusta pochází z Dębna/Wojnicze.",
@@ -1231,12 +1234,14 @@ window.RODOKMEN = {
         "Matka Józefa (křest vnuka 1836)."
       ],
       sources: [
+        "Skanoteka PTG id4239 (Dębno): U 1765–1777 (sy3505) sken 044, s. 74; M 1765–1777 (sy4505) sken 011",
         "Skanoteka PTG id4239 (Dębno, pow. brzeski; orig. AD Tarnów): M Dębno 1784–1865 (sy4515) sken 012, s. 14; U Dębno 1784–1842 (sy3515) skeny 022 a 024",
         "Skanoteka PTG id5886 (Rożnowice), Zapowiedzi 1824–1849 (sy7000), skeny 008–009",
         "Skanoteka PTG id4956 (Zalasowa), M 1846–1879 (sy4520), sken 007, s. 10, č. 10",
         "Skanoteka – Wierzchosławice U 1824–1845 sken 046"
       ],
       scans: [
+        {"f":"img/1774_krest_gertruda_chrapusta.jpg","t":"Křest 3. 11. 1774, Jastew (farnost Dębno) – Gertruda, dcera Martina Chrapusty a Marianny Świstakówny (Skanoteka id4239, U 1765–1777, sken 044)"},
         {"f":"img/1802_snatek_dydowicz_chrapusta.jpg","t":"Sňatek 2. 2. 1802, Dębno č. 44 – Adalbertus Dydowicz (22) × Gertrudis Chrapuścionka (26) (Skanoteka id4239, M Dębno 1784–1865, sken 012)"},
         {"f":"img/1826_ohlasky_katarzyna_dydowicz.jpg","t":"Ohlášky 4. 11. 1826, Rozembark – Józef Bogdański × Katarzyna, dcera Wojciecha a Gertrudy Dydowiczových, ovčáků (Rożnowice, Skanoteka id5886 sy7000, sken 009)"},
         {"f":"img/1849_snatek_marianna_dydowicz_zalasowa.jpg","t":"Sňatek 21. 11. 1849, Zalasowa – Marianna, vdova po Vojtěchu Klimkovi, dcera Adalberta Dydowicze a Gertrudy Chrapusta (Skanoteka id4956, M 1846–79, sken 007)"}
@@ -5688,6 +5693,44 @@ window.RODOKMEN = {
       ],
       scans: [
         {"f":"img/1851_snatek_matej_vesely_anna_peterkova.jpg","t":"Sňatek 13. 10. 1851, Hluboká – Matěj Veselý, luční hajný v Dívčicích č. 1, syn Tomáše a Marie Bočkové × Anna Peterková, dcera Jana Peterky a Mariany Ployharové (Hluboká 11 O, id 3564, sken 29)"}
+      ]
+    },
+    {
+      id: "martinCh",
+      name: "Martin Chrapusta",
+      line: "chmielek",
+      cert: "D",
+      b: {"date":"cca 1750","year":1750,"approx":true,"place":"Dębno (?)"},
+      marriage: "29. 8. 1773, Dębno – s Magdalenou Świstakównou",
+      notes: [
+        "Sňatek 29. 8. 1773 Dębno (M): „… inter Martinum Chrapusta juvenem et Magdalenam Świstakowna virginem. In praesentia Adalberti Świstak, Sebastiani Krawczyk, Thomae Kargol etc.“",
+        "Otec Gertrudy (křest 1774 Jastew, M zápis; vazba na naši Gertrudu D)."
+      ],
+      sources: [
+        "Skanoteka PTG id4239 (Dębno): U 1765–1777 (sy3505) sken 044, s. 74; M 1765–1777 (sy4505) sken 011"
+      ],
+      scans: [
+        {"f":"img/1773_snatek_martin_chrapusta.jpg","t":"Sňatek 29. 8. 1773, Dębno – Martin Chrapusta × Magdalena Świstakówna (Skanoteka id4239, M 1765–1777, sken 011)"},
+        {"f":"img/1774_krest_gertruda_chrapusta.jpg","t":"Křest 3. 11. 1774, Jastew (farnost Dębno) – Gertruda, dcera Martina Chrapusty a Marianny Świstakówny (Skanoteka id4239, U 1765–1777, sken 044)"}
+      ]
+    },
+    {
+      id: "magdalenaSw",
+      name: "Magdalena Chrapusta",
+      maiden: "Świstak (Świstakówna)",
+      line: "chmielek",
+      cert: "D",
+      b: {"date":"cca 1752","year":1752,"approx":true,"place":"Dębno (?)"},
+      notes: [
+        "Sňatek 29. 8. 1773 Dębno s Martinem Chrapustou: „Magdalenam Świstakowna virginem“, svědek Adalbert Świstak (otec?).",
+        "V křtu dcery Gertrudy 1774 zapsána jako „Marianna Świstakowna“ – rozpor Magdalena/Marianna (kmotra se jmenovala Magdalena; možná záměna písaře) (K)."
+      ],
+      sources: [
+        "Skanoteka PTG id4239 (Dębno): U 1765–1777 (sy3505) sken 044, s. 74; M 1765–1777 (sy4505) sken 011"
+      ],
+      scans: [
+        {"f":"img/1773_snatek_martin_chrapusta.jpg","t":"Sňatek 29. 8. 1773, Dębno – Martin Chrapusta × Magdalena Świstakówna (Skanoteka id4239, M 1765–1777, sken 011)"},
+        {"f":"img/1774_krest_gertruda_chrapusta.jpg","t":"Křest 3. 11. 1774, Jastew (farnost Dębno) – Gertruda, dcera Martina Chrapusty a Marianny Świstakówny (Skanoteka id4239, U 1765–1777, sken 044)"}
       ]
     }
   ]

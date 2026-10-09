@@ -50,4 +50,5 @@ window.RODOKMEN_GAZ = [
   { n: 'Dříteň', a: ['Dříteň'], off: true },
   { n: 'Hluboká nad Vltavou', a: ['Hluboké nad Vltavou'], off: true },
   { n: 'Křesín', a: ['Křesín'], off: true },
+  { n: 'Litoradlice', a: ['Litoradlice'], off: true },
 ];
