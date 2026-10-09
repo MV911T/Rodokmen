@@ -4811,17 +4811,20 @@ window.RODOKMEN = {
       name: "Marie Koželuhová",
       line: "vesely",
       cert: "M",
-      b: {"date":"cca 1848","year":1848,"approx":true,"place":"Dříteň"},
+      b: {"date":"1844 (I–V; den 25.?)","year":1844,"place":"Dříteň č. 6"},
       father: "josefKoz",
       mother: "marieMars",
       notes: [
+        "Křest 1844 Dříteň č. 6 (M): „M. Anna Koželuhowá“; otec „Josef Koželuh chalupník, syn † Jana Koželuha chalupníka ze Dřjtně No 6, matky † M. Anny rozené Frauhowy (?) z … (?)“; matka „M. Anna, dcera Wjta Maršálka chalupníka ze Dřjtně No 7, matky † … rozené … (?)“; kmotři Josef Kozák (?), chalupník ze Dřítně, a Johana, manželka; marginálie „Kř. list vydán 30/9 1940“ (stejně jako u křtu dcery 1866). Totožnost s matkou Marie *1866 PRAVDĚPODOBNÁ (D, silná): týž dům č. 6, tíž rodiče.",
         "Svobodná matka Marie (matky Karla Veselého) – „Marie, nemanželská dcera Marie, tato dcera † Josefa Koželuha … a Marie roz. Maršálkové“ (křty vnoučat 1889 a 1894). Možná se později provdala za Jana Chmela, chalupníka v Dřítni č. 6 (nejednoznačné – viz dcera)."
       ],
       sources: [
+        "SOA Třeboň, Bílá Hůrka N 4 (id 2212), sken 171 – https://digi.ceskearchivy.cz/DA?menu=3&id=2212&page=171",
         "SOA Třeboň, Sbírka matrik, Bílá Hůrka 5A (N Dříteň 1876–1912), id 9211, sken 54, fol. 50 – https://digi.ceskearchivy.cz/DA?menu=3&id=9211&page=54",
         "SOA Třeboň, Bílá Hůrka 5A, id 9211, sken 69 – https://digi.ceskearchivy.cz/DA?menu=3&id=9211&page=69"
       ],
       scans: [
+        {"f":"img/1844_krest_marie_kozeluhova_st.jpg","t":"Křest 1844, Dříteň č. 6 – M. Anna Koželuhová, rodiče Josef Koželuh × M. Anna Maršálková (Bílá Hůrka N 4, id 2212, sken 171)"},
         {"f":"img/1889_krest_jan_vesely_driten.jpg","t":"Křest bratra Jana 20. 8. 1889, Dříteň č. 6 (Bílá Hůrka 5A, sken 54) – rodiče Jan Veselý × Marie Koželuhová, legitimace"},
         {"f":"img/1894_krest_katerina_vesela_driten.jpg","t":"Křest sestry Kateřiny 1. 2. 1894, Dříteň č. 28 (Bílá Hůrka 5A, sken 69) – kmotra teta Kateřina Roušalová"}
       ]
@@ -4832,21 +4835,25 @@ window.RODOKMEN = {
       line: "vesely",
       cert: "M",
       b: {"date":"cca 1813","year":1813,"approx":true,"place":"Dříteň"},
+      father: "janKozSt",
       occ: "domkář, Dříteň č. 6",
-      marriage: "4. 2. 1840, Dříteň (farnost Bílá Hůrka) – s M. Annou Maršálkovou (PRAVDĚPODOBNĚ = Marie Maršálková)",
+      marriage: "4. 2. 1840, Dříteň (farnost Bílá Hůrka) – s M. Annou (Marií) Maršálkovou",
       notes: [
-        "Sňatek 4. 2. 1840 Dříteň (M): ženich z Dřítně č. 16, „Josef wlastnj syn po † Janowi Koželuhowi, chalupnjku z wsi Dřjteň … matky † M. Anny rozené Frauhowy (?) …“, 27 let, svobodný; nevěsta z Dřítně č. 3, „M. Anna, wlastnj dcera Wjta Maršálka, chalupnjka ze wsi Dřjteň No 3 … matky Alžběty rozené Mšatnikowy (?)“, 24 let. Totožnost s rodiči Marie Koželuhové st. PRAVDĚPODOBNÁ (D) – jediný Koželuh v Dřítni 1838–49; nevěsta tu „M. Anna“, později „Marie“, a čísla domů se liší (3 → 7/8; 16 → 6).",
-        "Rodiče (K, z tohoto zápisu): Jan Koželuh, chalupník v Dřítni († před 1840), × M. Anna roz. Frauh (?) († před 1840).",
-        "V roce 1889 už nežil („† Josefa Koželuha, domkáře ze Dřítně č. 6“)."
+        "Sňatek 4. 2. 1840 Dříteň (M): ženich z Dřítně č. 16, „Josef wlastnj syn po † Janowi Koželuhowi, chalupnjku z wsi Dřjteň … matky † M. Anny rozené Frauhowy (?) …“, 27 let, svobodný; nevěsta z Dřítně č. 3, „M. Anna, wlastnj dcera Wjta Maršálka, chalupnjka ze wsi Dřjteň No 3 … matky Alžběty rozené Mšatnikowy (?)“, 24 let. Vazba na Marii Koželuhovou st. POTVRZENA křtem 1844 (stejní rodiče a prarodiče).",
+        "V roce 1889 už nežil („† Josefa Koželuha, domkáře ze Dřítně č. 6“).",
+        "Křest dcery M. Anny (Marie) 1844 – chalupník v Dřítni č. 6. V lednu 1877 žil jako výminkář (úmrtí manželky); úmrtí Josefa po VI/1882 (navazující kniha Z Bílá Hůrka nezjištěna; po 1889 už nežil)."
       ],
       sources: [
         "SOA Třeboň, Bílá Hůrka O 7 (1797–1898), id 2215, sken 92, str. 180–181 – https://digi.ceskearchivy.cz/DA?menu=3&id=2215&page=92",
         "SOA Třeboň, Sbírka matrik, Bílá Hůrka 5A (N Dříteň 1876–1912), id 9211, sken 54, fol. 50 – https://digi.ceskearchivy.cz/DA?menu=3&id=9211&page=54",
-        "SOA Třeboň, Bílá Hůrka 5A, id 9211, sken 69 – https://digi.ceskearchivy.cz/DA?menu=3&id=9211&page=69"
+        "SOA Třeboň, Bílá Hůrka 5A, id 9211, sken 69 – https://digi.ceskearchivy.cz/DA?menu=3&id=9211&page=69",
+        "SOA Třeboň, Bílá Hůrka N 4 (id 2212), sken 171 – https://digi.ceskearchivy.cz/DA?menu=3&id=2212&page=171",
+        "SOA Třeboň, Bílá Hůrka Z 9 (id 2217), sken 130 – https://digi.ceskearchivy.cz/DA?menu=3&id=2217&page=130"
       ],
       scans: [
         {"f":"img/1840_snatek_kozeluh_marsalkova.jpg","t":"Sňatek 4. 2. 1840, Dříteň – Josef Koželuh (27) × M. Anna Maršálková (24) (Bílá Hůrka O 7, id 2215, sken 92)"},
-        {"f":"img/1889_krest_jan_vesely_driten.jpg","t":"Křest bratra Jana 20. 8. 1889, Dříteň č. 6 (Bílá Hůrka 5A, sken 54) – rodiče Jan Veselý × Marie Koželuhová, legitimace"}
+        {"f":"img/1889_krest_jan_vesely_driten.jpg","t":"Křest bratra Jana 20. 8. 1889, Dříteň č. 6 (Bílá Hůrka 5A, sken 54) – rodiče Jan Veselý × Marie Koželuhová, legitimace"},
+        {"f":"img/1844_krest_marie_kozeluhova_st.jpg","t":"Křest 1844, Dříteň č. 6 – M. Anna Koželuhová, rodiče Josef Koželuh × M. Anna Maršálková (Bílá Hůrka N 4, id 2212, sken 171)"}
       ]
     },
     {
@@ -4856,16 +4863,22 @@ window.RODOKMEN = {
       line: "vesely",
       cert: "M",
       b: {"date":"cca 1816","year":1816,"approx":true,"place":"Dříteň č. 3"},
+      d: {"date":"3. 1. 1877","year":1877,"place":"Dříteň č. 6"},
+      cause: "sešlost věkem",
+      father: "vitMars",
       notes: [
-        "Pravděpodobně „M. Anna Maršálková“ ze sňatku 4. 2. 1840 (D): 24 let, „wlastnj dcera Wjta Maršálka, chalupnjka ze wsi Dřjteň No 3, matky Alžběty rozené Mšatnikowy (?)“.",
+        "Sňatek 4. 2. 1840 (M): „M. Anna, wlastnj dcera Wjta Maršálka, chalupnjka ze wsi Dřjteň No 3“, 24 let; matka „Alžběta rozená Mšatník (?)“ (v křtu 1844 čteno jinak – nejisté).",
+        "Úmrtí 3. 1. 1877 (M): „Koželuh Marie, manželka Josefa Koželuha výminkáře ze Dřítně č. 6“, 64 let (*~1812/13), sešlost věkem; pohřbena 5. 1.",
         "„jeho manželky Marie rozené Maršálkové ze Dřítně č. 7“ (křty pravnoučat 1889, 1894). Možná se jako vdova provdala za Jana Chmela, chalupníka v Dřítni č. 6 – zápis nejednoznačný."
       ],
       sources: [
         "SOA Třeboň, Bílá Hůrka O 7 (1797–1898), id 2215, sken 92, str. 180–181 – https://digi.ceskearchivy.cz/DA?menu=3&id=2215&page=92",
         "SOA Třeboň, Sbírka matrik, Bílá Hůrka 5A (N Dříteň 1876–1912), id 9211, sken 54, fol. 50 – https://digi.ceskearchivy.cz/DA?menu=3&id=9211&page=54",
-        "SOA Třeboň, Bílá Hůrka 5A, id 9211, sken 69 – https://digi.ceskearchivy.cz/DA?menu=3&id=9211&page=69"
+        "SOA Třeboň, Bílá Hůrka 5A, id 9211, sken 69 – https://digi.ceskearchivy.cz/DA?menu=3&id=9211&page=69",
+        "SOA Třeboň, Bílá Hůrka Z 9 (id 2217), sken 130 – https://digi.ceskearchivy.cz/DA?menu=3&id=2217&page=130"
       ],
       scans: [
+        {"f":"img/1877_umrti_marie_kozeluhova.jpg","t":"Úmrtí 3. 1. 1877, Dříteň č. 6 – Marie Koželuhová, manželka Josefa, 64 let (Bílá Hůrka Z 9, id 2217, sken 130)"},
         {"f":"img/1840_snatek_kozeluh_marsalkova.jpg","t":"Sňatek 4. 2. 1840, Dříteň – Josef Koželuh (27) × M. Anna Maršálková (24) (Bílá Hůrka O 7, id 2215, sken 92)"},
         {"f":"img/1889_krest_jan_vesely_driten.jpg","t":"Křest bratra Jana 20. 8. 1889, Dříteň č. 6 (Bílá Hůrka 5A, sken 54) – rodiče Jan Veselý × Marie Koželuhová, legitimace"}
       ]
@@ -5446,6 +5459,40 @@ window.RODOKMEN = {
       ],
       scans: [
         {"f":"img/1709_krest_anna_prochaska.jpg","t":"Křest 8. 5. 1709, Rohov – Anna Marina, rodiče Michael Prochaska × Hedwig (Sudice H XVI 1, sken 26)"}
+      ]
+    },
+    {
+      id: "janKozSt",
+      name: "Jan Koželuh",
+      line: "vesely",
+      cert: "M",
+      b: {"date":"cca 1780","year":1780,"approx":true,"place":"Dříteň"},
+      occ: "chalupník, Dříteň č. 6",
+      notes: [
+        "Otec Josefa (sňatek 1840 a křest vnučky 1844): „† Jan Koželuh, chalupník ze Dřjtně No 6“ – v roce 1840 už nežil. Manželka M. Anna roz. Frauh (?) z … (?), také † před 1840 (čtení nejisté)."
+      ],
+      sources: [
+        "SOA Třeboň, Bílá Hůrka O 7 (id 2215) sken 92; N 4 (id 2212) sken 171"
+      ],
+      scans: [
+        {"f":"img/1844_krest_marie_kozeluhova_st.jpg","t":"Křest 1844, Dříteň č. 6 – M. Anna Koželuhová, rodiče Josef Koželuh × M. Anna Maršálková (Bílá Hůrka N 4, id 2212, sken 171)"}
+      ]
+    },
+    {
+      id: "vitMars",
+      name: "Vít Maršálek",
+      line: "vesely",
+      cert: "M",
+      b: {"date":"cca 1785","year":1785,"approx":true,"place":"Dříteň"},
+      occ: "chalupník, Dříteň č. 3 / č. 7",
+      notes: [
+        "Otec M. Anny (sňatek 1840: „Wjt Maršálek, chalupník ze wsi Dřjteň No 3“; křest vnučky 1844: „… ze Dřjtně No 7“). Manželka Alžběta (?) roz. Mšatník (?) – čtení nejisté."
+      ],
+      sources: [
+        "SOA Třeboň, Bílá Hůrka O 7 (id 2215) sken 92; N 4 (id 2212) sken 171"
+      ],
+      scans: [
+        {"f":"img/1844_krest_marie_kozeluhova_st.jpg","t":"Křest 1844, Dříteň č. 6 – M. Anna Koželuhová, rodiče Josef Koželuh × M. Anna Maršálková (Bílá Hůrka N 4, id 2212, sken 171)"}
       ]
     }
   ]
