@@ -5211,18 +5211,21 @@ window.RODOKMEN = {
       maiden: "Postulka",
       line: "jirik",
       cert: "M",
-      b: {"date":"cca 1778","year":1778,"approx":true,"place":"Dolní Benešov"},
+      b: {"date":"31. 7. 1772 (křest)","year":1772,"place":"Dolní Benešov"},
       father: "janPos",
+      mother: "rosinaPo",
       notes: [
+        "Křest 31. 7. 1772 Dolní Benešov (M): „Idem | 31 | Barbara | Joannes Poschtulka colonus et Rosina | Casparus Smolka hortul. et Barbara Gaideczkin casaria | de Beneschovio“ (ZAO, N H IV 2, sken 176). Totožnost s nevěstou z 1800 („dcera † Jana Postulky, sedláka“) PRAVDĚPODOBNÁ (D, silná): jediný zemřelý Jan Postulka sedlák († 1780); druhý Jan (chalupník × Kateřina, Barbara *1774) v roce 1800 žil.",
         "Sňatek 18. 2. 1800 s Johannem Tomankem: „virgine Barbara def. Joannis Postulka coloni filia“.",
         "Matka Johanny (*1807): „Barbara nata Postulka“.",
-        "Pravděpodobná sestra Anna Postulka, provdaná XI/1798 za Laurentia Michalka (H IV 5 sken 2, čteno v nízkém rozlišení – D).",
-        "Kandidát na křest (K): 28. 11. 1774 Dolní Benešov – „Barbara | Joannes Postulka casarius, Catharina | David Halffar mola socius, Catharina … casaria“ (ZAO, Dolní Benešov N H IV 2, sken 186). NEJISTÉ: při sňatku 1800 je otec „colonus“ (sedlák), ve farnosti žili dva Jani Postulkové – chalupník × Kateřina a sedlák × Rosina; jiná Barbora Jana Postulky 4/1774–10/1782 není."
+        "Pravděpodobná sestra Anna Postulka, provdaná XI/1798 za Laurentia Michalka (H IV 5 sken 2, čteno v nízkém rozlišení – D)."
       ],
       sources: [
+        "ZA Opava, Sbírka matrik (NAD 165), Dolní Benešov N H IV 2 (1735–1792), sken 176; Z H IV 7 (1771–1829), sken 30",
         "ZA Opava, NAD 165 Sbírka matrik, Dolní Benešov H IV 5 sken 4; H IV 3 sken 63"
       ],
       scans: [
+        {"f":"img/1772_krest_barbara_postulka.jpg","t":"Křest 31. 7. 1772, Dolní Benešov – Barbara, dcera Jana Postulky, sedláka, a Rosiny (ZAO, N H IV 2, sken 176)"},
         {"f":"img/1800_snatek_tomanek_postulka.jpg","t":"Sňatek 18. 2. 1800, Dolní Benešov – Johann Tomanek, čeledín „ex parte austriaca“, × Barbara, dcera † Johanna Postulky (H IV 5, sken 4)"},
         {"f":"img/1807_krest_johanna_tomanek.jpg","t":"Křest 23. 5. 1807, Dolní Benešov – Johanna, rodiče Joannes Tomanek, sedlák, × Barbara roz. Postulka (H IV 3, sken 63, č. 57)"}
       ]
@@ -5232,16 +5235,19 @@ window.RODOKMEN = {
       name: "Johann Postulka",
       line: "jirik",
       cert: "M",
-      b: {"date":"cca 1745","year":1745,"approx":true,"place":"Dolní Benešov"},
-      occ: "sedlák (colonus) v Dolním Benešově",
+      b: {"date":"cca X/1731","year":1731,"approx":true,"place":"Dolní Benešov (?)"},
+      d: {"date":"22. 1. 1780","year":1780,"place":"Dolní Benešov"},
+      occ: "sedlák (colonus), Dolní Benešov",
       notes: [
-        "Otec Barbary; při jejím sňatku 18. 2. 1800 už nežil („def. Joannis Postulka coloni filia“).",
-        "Kandidát úmrtí (D/K): „Joannes Postulka Colonus, Beneschovii“, † 22. 1. 1780 Dolní Benešov, 48 let 3 měsíce (*~X/1731) (ZAO, Z H IV 7, sken 30). Jiný dospělý Jan Postulka v Z 2/1780–12/1797 nezemřel (1798 zbývá). Pokud je to otec Barbary, narodila se před IV/1774 (jeho děti s Rosinou: Valentin 1775, Jan 1777)."
+        "Úmrtí 22. 1. 1780 (M): „Joannes Postulka Colonus | Beneschovii | 48 [let] 3 [měsíce]“ (Z H IV 7, sken 30). Manželka Rosina; děti Barbara 1772, Valentin 1775, Jan 1777. Jiný dospělý Jan Postulka II/1780–II/1800 nezemřel.",
+        "Otec Barbary; při jejím sňatku 18. 2. 1800 už nežil („def. Joannis Postulka coloni filia“)."
       ],
       sources: [
-        "ZA Opava, NAD 165 Sbírka matrik, Dolní Benešov H IV 5 sken 4"
+        "ZA Opava, NAD 165 Sbírka matrik, Dolní Benešov H IV 5 sken 4",
+        "ZA Opava, Dolní Benešov Z H IV 7, sken 30"
       ],
       scans: [
+        {"f":"img/1780_umrti_jan_postulka.jpg","t":"Úmrtí 22. 1. 1780, Dolní Benešov – Joannes Postulka colonus, 48 let (ZAO, Z H IV 7, sken 30)"},
         {"f":"img/1800_snatek_tomanek_postulka.jpg","t":"Sňatek 18. 2. 1800, Dolní Benešov – Johann Tomanek, čeledín „ex parte austriaca“, × Barbara, dcera † Johanna Postulky (H IV 5, sken 4)"}
       ]
     },
@@ -5734,6 +5740,22 @@ window.RODOKMEN = {
       scans: [
         {"f":"img/1773_snatek_martin_chrapusta.jpg","t":"Sňatek 29. 8. 1773, Dębno – Martin Chrapusta × Magdalena Świstakówna (Skanoteka id4239, M 1765–1777, sken 011)"},
         {"f":"img/1774_krest_gertruda_chrapusta.jpg","t":"Křest 3. 11. 1774, Jastew (farnost Dębno) – Gertruda, dcera Martina Chrapusty a Marianny Świstakówny (Skanoteka id4239, U 1765–1777, sken 044)"}
+      ]
+    },
+    {
+      id: "rosinaPo",
+      name: "Rosina Postulka",
+      line: "jirik",
+      cert: "M",
+      b: {"date":"cca 1740","year":1740,"approx":true,"place":"?"},
+      notes: [
+        "Manželka Jana Postulky, sedláka v Dolním Benešově; matka Barbary *31. 7. 1772 (křest, M). Rodné příjmení neznámé – sňatek není v O H IV 4 1763–1776 (dřív?)."
+      ],
+      sources: [
+        "ZA Opava, Dolní Benešov N H IV 2, sken 176"
+      ],
+      scans: [
+        {"f":"img/1772_krest_barbara_postulka.jpg","t":"Křest 31. 7. 1772, Dolní Benešov – Barbara, dcera Jana Postulky, sedláka, a Rosiny (ZAO, N H IV 2, sken 176)"}
       ]
     }
   ]
