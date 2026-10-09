@@ -2320,7 +2320,9 @@ window.RODOKMEN = {
         "Gruntovní kniha Nedašov II, podsedek č. 79 (staré č. 24), img 110R–111L (M): vrchnost prodává „jmenovanému Václavovi Matůšovi“ dědičně podsedek, „který nyní sám Matůšů užíval“, za 30 zlatých; „Což se stalo na Hradu Brumowě dne ultima Xbris 1734“, podepsán „Jos. Hrabě Illesházy“; ingrosováno 8. 12. 1782 (?). Rok 1734 ověřen výřezem (třetí číslice jasně „3“, odlišná od „7“) – Václav tedy koupil podsedek 31. 12. 1734 a narodil se nejpozději kolem 1710.",
         "Pozdější držitel č. 79 Jan Jakubík († před 26. 3. 1817), po něm syn Mathias Jakubík; kdy podsedek přešel z Matůšů na Jakubíky, kniha neuvádí.",
         "Manželka Rosina † 1. 5. 1760 Nedašov, 40 let (*~1720) (M): „1. Maji. Coop: Rosinam uxorem Wenceslai Matuschůj Nedasch: SS. provisa. 40 annorum“ (Brumov 4012 img 213L). Rosině by v roce 1734 (koupě podsedku) bylo 14 – buď druhá manželka, nebo jde o mladšího Václava (syna kupce) (K). Rosina může být matkou Jiřího (*~1740) – NEDOLOŽENO.",
-        "Úmrtí Václava NENÍ v Brumov 4012 zemřelí 1760–1763 ani I/1771–XII/1772 (znovu celé, 9. 10.)."
+        "Úmrtí Václava NENÍ v Brumov 4012 zemřelí 1760–1763 ani I/1771–XII/1772 (znovu celé, 9. 10.).",
+        "Úmrtí NENÍ v Brumov 4012 Z 1760–1787 (celé, 9.–10. 10.; 1773–78 jen z montáží) – poslední doklad žití 1. 5. 1760. Podsedek Nedašov č. 79 drží v 1775–76 rodina Václava Rožňovjáka (D) – kdy přešel, by ukázala gruntovní kniha.",
+        "Pozor na záměny v Nedašově/Bylnici: Mikuláš Matůšů × Rosina († 20. 8. 1764, 50 let, Nedašov – 4012 img 225L, M); Václav Matůšů z BYLNICE (vdova Anna † 17. 7. 1767, 70 let); Jiří Matůšů × Barbora, Nedašov č. 88 († 1776, 44 let)."
       ],
       sources: [
         "Brumov 4012 (sňatek syna 1773)",
