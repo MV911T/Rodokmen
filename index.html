@@ -5536,7 +5536,8 @@ window.RODOKMEN = {
         {"f":"img/1772_krest_barbara_postulka.jpg","t":"Křest 31. 7. 1772, Dolní Benešov – Barbara, dcera Jana Postulky, sedláka, a Rosiny (ZAO, N H IV 2, sken 176)"},
         {"f":"img/1800_snatek_tomanek_postulka.jpg","t":"Sňatek 18. 2. 1800, Dolní Benešov – Johann Tomanek, čeledín „ex parte austriaca“, × Barbara, dcera † Johanna Postulky (H IV 5, sken 4)"},
         {"f":"img/1807_krest_johanna_tomanek.jpg","t":"Křest 23. 5. 1807, Dolní Benešov – Johanna, rodiče Joannes Tomanek, sedlák, × Barbara roz. Postulka (H IV 3, sken 63, č. 57)"}
-      ]
+      ],
+      siblings: ["Jiří *14. (?) 4. 1768 (M)","Valentin *9. 2. 1775 (M)","Jan *14. 6. 1777 (M)"]
     },
     {
       id: "janPos",
@@ -5545,16 +5546,21 @@ window.RODOKMEN = {
       cert: "M",
       b: {"date":"cca X/1731","year":1731,"approx":true,"place":"Dolní Benešov (?)"},
       d: {"date":"22. 1. 1780","year":1780,"place":"Dolní Benešov"},
+      father: "tomasPos",
       occ: "sedlák (colonus), Dolní Benešov",
+      marriage: "2. 6. 1761, Dolní Benešov – s Rosinou Novákovou",
       notes: [
+        "Sňatek 2. 6. 1761 Dolní Benešov (M zápis): „Joannes adolescens filius Thomae Puschtulka et Rosina virgo filia post def. Georgium Novak | Beneschii | [svědci] Josephus Prichala, Josephus Robenek“. Totožnost se sedlákem Janem († 1780) PRAVDĚPODOBNÁ (D): věk ~30, jediný sňatek Jana Postulky s Rosinou 1755–1776. Další dítě: Jiří pokř. 14. (?) 4. 1768 („Joannes Postulka rusticus, Rosina“, N H IV 2 sk152).",
         "Úmrtí 22. 1. 1780 (M): „Joannes Postulka Colonus | Beneschovii | 48 [let] 3 [měsíce]“ (Z H IV 7, sken 30). Manželka Rosina; děti Barbara 1772, Valentin 1775, Jan 1777. Jiný dospělý Jan Postulka II/1780–II/1800 nezemřel.",
         "Otec Barbary; při jejím sňatku 18. 2. 1800 už nežil („def. Joannis Postulka coloni filia“)."
       ],
       sources: [
         "ZA Opava, NAD 165 Sbírka matrik, Dolní Benešov H IV 5 sken 4",
-        "ZA Opava, Dolní Benešov Z H IV 7, sken 30"
+        "ZA Opava, Dolní Benešov Z H IV 7, sken 30",
+        "ZA Opava, Dolní Benešov O H IV 4 (1692–1797), sken 73; N H IV 2, sken 152"
       ],
       scans: [
+        {"f":"img/1761_snatek_jan_postulka_rosina_novak.jpg","t":"Sňatek 2. 6. 1761, Dolní Benešov – Jan, syn Tomáše Postulky × Rosina, dcera † Jiřího Nováka (ZAO, O H IV 4, sken 73)"},
         {"f":"img/1780_umrti_jan_postulka.jpg","t":"Úmrtí 22. 1. 1780, Dolní Benešov – Joannes Postulka colonus, 48 let (ZAO, Z H IV 7, sken 30)"},
         {"f":"img/1800_snatek_tomanek_postulka.jpg","t":"Sňatek 18. 2. 1800, Dolní Benešov – Johann Tomanek, čeledín „ex parte austriaca“, × Barbara, dcera † Johanna Postulky (H IV 5, sken 4)"}
       ]
@@ -6061,16 +6067,20 @@ window.RODOKMEN = {
     {
       id: "rosinaPo",
       name: "Rosina Postulka",
+      maiden: "Nováková",
       line: "jirik",
       cert: "M",
       b: {"date":"cca 1740","year":1740,"approx":true,"place":"?"},
+      father: "jiriNov",
       notes: [
-        "Manželka Jana Postulky, sedláka v Dolním Benešově; matka Barbary *31. 7. 1772 (křest, M). Rodné příjmení neznámé – sňatek není v O H IV 4 1763–1776 (dřív?)."
+        "Sňatek 2. 6. 1761 (M): „Rosina virgo filia post def. Georgium Novak“, Dolní Benešov. Manželka Jana Postulky, sedláka; děti Jiří 1768, Barbara 1772, Valentin 1775, Jan 1777."
       ],
       sources: [
-        "ZA Opava, Dolní Benešov N H IV 2, sken 176"
+        "ZA Opava, Dolní Benešov N H IV 2, sken 176",
+        "ZA Opava, Dolní Benešov O H IV 4 (1692–1797), sken 73; N H IV 2, sken 152"
       ],
       scans: [
+        {"f":"img/1761_snatek_jan_postulka_rosina_novak.jpg","t":"Sňatek 2. 6. 1761, Dolní Benešov – Jan, syn Tomáše Postulky × Rosina, dcera † Jiřího Nováka (ZAO, O H IV 4, sken 73)"},
         {"f":"img/1772_krest_barbara_postulka.jpg","t":"Křest 31. 7. 1772, Dolní Benešov – Barbara, dcera Jana Postulky, sedláka, a Rosiny (ZAO, N H IV 2, sken 176)"}
       ]
     },
@@ -6105,6 +6115,39 @@ window.RODOKMEN = {
       ],
       scans: [
         {"f":"img/1816_krest_matej_vesely_bysov.jpg","t":"Křest 4. 2. 1816, Býšov č. 14 (Knín, fara Křtěnov) – Matěj, syn Tomáše Veselého, šafáře, a Marie, dcery Josefa (?) Bočka (recte Jíry), sedláka z Litoradlic č. 5 (Křtěnov 7, id 5022, sken 23)"}
+      ]
+    },
+    {
+      id: "tomasPos",
+      name: "Tomáš Postulka",
+      line: "jirik",
+      cert: "D",
+      b: {"date":"cca 1700","year":1700,"approx":true,"place":"Dolní Benešov (?)"},
+      notes: [
+        "Otec Jana Postulky – sňatek syna 2. 6. 1761: „Joannes adolescens filius Thomae Puschtulka“ (M zápis; vazba na našeho Jana D). Stav neuveden."
+      ],
+      sources: [
+        "ZA Opava, Dolní Benešov O H IV 4 (1692–1797), sken 73; N H IV 2, sken 152"
+      ],
+      scans: [
+        {"f":"img/1761_snatek_jan_postulka_rosina_novak.jpg","t":"Sňatek 2. 6. 1761, Dolní Benešov – Jan, syn Tomáše Postulky × Rosina, dcera † Jiřího Nováka (ZAO, O H IV 4, sken 73)"}
+      ]
+    },
+    {
+      id: "jiriNov",
+      name: "Jiří Novák",
+      line: "jirik",
+      cert: "D",
+      b: {"date":"cca 1705","year":1705,"approx":true,"place":"Dolní Benešov (?)"},
+      d: {"date":"před 1761","year":1760,"approx":true},
+      notes: [
+        "Otec Rosiny – sňatek dcery 2. 6. 1761: „filia post def. Georgium Novak“ – v roce 1761 už nežil (M zápis; vazba D)."
+      ],
+      sources: [
+        "ZA Opava, Dolní Benešov O H IV 4 (1692–1797), sken 73; N H IV 2, sken 152"
+      ],
+      scans: [
+        {"f":"img/1761_snatek_jan_postulka_rosina_novak.jpg","t":"Sňatek 2. 6. 1761, Dolní Benešov – Jan, syn Tomáše Postulky × Rosina, dcera † Jiřího Nováka (ZAO, O H IV 4, sken 73)"}
       ]
     }
   ]
@@ -6211,7 +6254,7 @@ window.RODOKMEN.events = [
   {"y":1993,"t":"Vzniká Česká republika","s":"Vznik ČR"}
 ];
 
-window.RODOKMEN_BUILD='9. 10. 2026 23:27';
+window.RODOKMEN_BUILD='9. 10. 2026 23:50';
 
 </script>
 <script>
