@@ -5235,7 +5235,8 @@ window.RODOKMEN = {
       b: {"date":"cca 1745","year":1745,"approx":true,"place":"Dolní Benešov"},
       occ: "sedlák (colonus) v Dolním Benešově",
       notes: [
-        "Otec Barbary; při jejím sňatku 18. 2. 1800 už nežil („def. Joannis Postulka coloni filia“)."
+        "Otec Barbary; při jejím sňatku 18. 2. 1800 už nežil („def. Joannis Postulka coloni filia“).",
+        "Kandidát úmrtí (D/K): „Joannes Postulka Colonus, Beneschovii“, † 22. 1. 1780 Dolní Benešov, 48 let 3 měsíce (*~X/1731) (ZAO, Z H IV 7, sken 30). Jiný dospělý Jan Postulka v Z 2/1780–12/1797 nezemřel (1798 zbývá). Pokud je to otec Barbary, narodila se před IV/1774 (jeho děti s Rosinou: Valentin 1775, Jan 1777)."
       ],
       sources: [
         "ZA Opava, NAD 165 Sbírka matrik, Dolní Benešov H IV 5 sken 4"
