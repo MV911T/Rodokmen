@@ -2318,16 +2318,20 @@ window.RODOKMEN = {
         "Kandidáti na původ (HYPOTÉZA): Václav ml., syn Václava Matušů z Lhoty, oženil se 28. 10. 1721 s Annou; nebo syn nedašovského páru Václav Matušů × Kateřina (děti 1711, 1716) – křest v opisu chybí (mezery 1699–1705, 1711, 1719).",
         "Žil ještě 1. 5. 1760 (zemřela mu manželka Rosina, 40 let, 4012 img 213); jeho úmrtí není v Brumově 1760–1773.",
         "Gruntovní kniha Nedašov II, podsedek č. 79 (staré č. 24), img 110R–111L (M): vrchnost prodává „jmenovanému Václavovi Matůšovi“ dědičně podsedek, „který nyní sám Matůšů užíval“, za 30 zlatých; „Což se stalo na Hradu Brumowě dne ultima Xbris 1734“, podepsán „Jos. Hrabě Illesházy“; ingrosováno 8. 12. 1782 (?). Rok 1734 ověřen výřezem (třetí číslice jasně „3“, odlišná od „7“) – Václav tedy koupil podsedek 31. 12. 1734 a narodil se nejpozději kolem 1710.",
-        "Pozdější držitel č. 79 Jan Jakubík († před 26. 3. 1817), po něm syn Mathias Jakubík; kdy podsedek přešel z Matůšů na Jakubíky, kniha neuvádí."
+        "Pozdější držitel č. 79 Jan Jakubík († před 26. 3. 1817), po něm syn Mathias Jakubík; kdy podsedek přešel z Matůšů na Jakubíky, kniha neuvádí.",
+        "Manželka Rosina † 1. 5. 1760 Nedašov, 40 let (*~1720) (M): „1. Maji. Coop: Rosinam uxorem Wenceslai Matuschůj Nedasch: SS. provisa. 40 annorum“ (Brumov 4012 img 213L). Rosině by v roce 1734 (koupě podsedku) bylo 14 – buď druhá manželka, nebo jde o mladšího Václava (syna kupce) (K). Rosina může být matkou Jiřího (*~1740) – NEDOLOŽENO.",
+        "Úmrtí Václava NENÍ v Brumov 4012 zemřelí 1760–1763 ani I/1771–XII/1772 (znovu celé, 9. 10.)."
       ],
       sources: [
         "Brumov 4012 (sňatek syna 1773)",
         "MZA, D 4 Tereziánský katastr, I. 309 (Brumov) – https://www.mza.cz/aron/apu/7d505ec6-be00-4402-ba0d-70595082836f, img 167",
-        "MZA Brno, Velkostatek Brumov (C 17), gruntovní kniha Nedašov II, sign. 11952 – ARON https://www.mza.cz/aron/apu/b299b13f-50e4-42eb-8dcc-993c43822945, img 110R–111L"
+        "MZA Brno, Velkostatek Brumov (C 17), gruntovní kniha Nedašov II, sign. 11952 – ARON https://www.mza.cz/aron/apu/b299b13f-50e4-42eb-8dcc-993c43822945, img 110R–111L",
+        "MZA, Brumov 4012, img 213L (Z 1760)"
       ],
       scans: [
         {"f":"img/1752_katastr_vaclav_matusku.jpg","t":"Tereziánský katastr 1752, Nedašov: „24. Waczlaw Matůšků“, tužkou dům 79 (MZA D 4 I. 309 img 167)"},
-        {"f":"img/1734_grunt_vaclav_matusu_nedasov79.jpg","t":"Gruntovní kniha Nedašov II (11952), podsedek č. 79 – kupní listina Václava Matůšů „ultima Xbris 1734 (?)“ (img 110R)"}
+        {"f":"img/1734_grunt_vaclav_matusu_nedasov79.jpg","t":"Gruntovní kniha Nedašov II (11952), podsedek č. 79 – kupní listina Václava Matůšů „ultima Xbris 1734 (?)“ (img 110R)"},
+        {"f":"img/1760_umrti_rosina_matusu.jpg","t":"Úmrtí 1. 5. 1760, Nedašov – Rosina, manželka Václava Matůšů, 40 let (Brumov 4012, img 213L)"}
       ]
     },
     {
@@ -2343,7 +2347,8 @@ window.RODOKMEN = {
         "Zemřela 15. 12. 1826 jako vdova po sedlákovi Jiřím Matůšů, 70 let (Z 4491 img 9).",
         "Hypotéza (K): otec Josef Šuran mohl pocházet z Jestřabí – Josef, syn Jana Šurana a Rosiny, pokřtěn 12. 12. 1724 v Jestřabí (opis7 img 253).",
         "Její otec Josef Šuran držel grunt č. 67 (lánský katastr č. 18) v Nedašově; 10. 3. 1785 ho vrchnost prodala Josefovi a Jiřímu Matůšů (Jiří = její manžel). Josef Šuran tedy do 3/1785 zemřel nebo grunt předal (D) – úmrtí 1760–1820 ve farnosti Brumov nenalezeno, zemřelí 1783 (4012 img 272) jsou vybledlí.",
-        "Pozor na jmenovce: Josef Šuran ml., oddaný 22. 9. 1765 s Marinou Mišů, byl syn JIŘÍHO Šurana („Josephum filium Georgij Šuran“, Brumov 4012 img 167R) – není to syn ani totožný s jejím otcem Josefem. Úmrtí jejího otce není v Brumově 1760–1787 (zemřelí přečteni celí)."
+        "Pozor na jmenovce: Josef Šuran ml., oddaný 22. 9. 1765 s Marinou Mišů, byl syn JIŘÍHO Šurana („Josephum filium Georgij Šuran“, Brumov 4012 img 167R) – není to syn ani totožný s jejím otcem Josefem. Úmrtí jejího otce není v Brumově 1760–1787 (zemřelí přečteni celí).",
+        "Sňatek 22. 9. 1765 Nedašov (4012 img 167R, M) – „Josephum filium Georgij Šuran cum … Marina filia Andreae Missij“ – tento Josef je syn JIŘÍHO Šurana, tedy ne Josef st. z gruntu č. 67; s Marininým původem nesouvisí."
       ],
       sources: [
         "Brumov 4012 img 183",
