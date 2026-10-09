@@ -1987,7 +1987,8 @@ window.RODOKMEN = {
       marriage: "1784 – s Marinou Markovou („Mathaeus filius defuncti Tobiae Fojtik“)",
       notes: [
         "Další sestra: Kateřina (pokř. 12. 11. 1757, Nedašov).",
-        "Děti doplněny (M): Mariana pokř. 17. 2. 1743 („Mariana | Mathaeus Navratil Rosina“, N sk189 – druhá Mariana, starší z 1739 tedy asi zemřela), Elisabetha pokř. 10. 9. 1745 (N sk197); Johana † 2. 10. 1752 ve věku 8 týdnů (Z sk490). VIII/1745 kmotr dvojčat s Rosinou (N sk196). Jiné děti IX/1742–II/1749 nejsou."
+        "Děti doplněny (M): Mariana pokř. 17. 2. 1743 („Mariana | Mathaeus Navratil Rosina“, N sk189 – druhá Mariana, starší z 1739 tedy asi zemřela), Elisabetha pokř. 10. 9. 1745 (N sk197); Johana † 2. 10. 1752 ve věku 8 týdnů (Z sk490). VIII/1745 kmotr dvojčat s Rosinou (N sk196). Jiné děti IX/1742–II/1749 nejsou.",
+        "Dcera Anna († V/1756, 1 3/4 roku – „Anna Matthaei Navratil incolae Kraliziensis filiola“, 9176a Z sk499, M)."
       ],
       sources: [
         "MZA Brumov sign. 4012, img 6 a 200",
@@ -5042,8 +5043,10 @@ window.RODOKMEN = {
       line: "plachy",
       cert: "M",
       b: {"date":"cca 1678","year":1678,"approx":true,"place":"Lutín (?)"},
+      d: {"date":"6. 2. 1754","year":1754,"place":"Kralice na Hané"},
       marriage: "1) 30. 6. 1704, Kralice – s Juditou, vdovou po Matěji Konečném († 30. 4. 1711); 2) 21. 9. 1711, Kralice – s Marinou, dcerou Jakuba Kelčáka (?)",
       notes: [
+        "Úmrtí 6. 2. 1754 (M): „Jacobus Navratil inquilinus Kraliziensis omnibus provisus | in Coemeterio Kraliziensi | 85 annorum“ (Kralice 9176a Z, sken 492). Podle věku *~1669 (dřívější odhad ~1678 – věky v matrikách bývají zaokrouhlené). V 1754 už podruh – grunt měl syn Matouš.",
         "1. sňatek 30. 6. 1704 Kralice (M): „oddan gest poc[tivý] mládenec Jakub Navrátil z Lutína s Juditou, vdovou po neb[ožtíkovi] Matějovi Konečným z Kralic; svědkové Tomáš Doležel a Matěj Zbožil z Lubenic“ (9176 O sken 261, s. 123). Jakub tedy pocházel z Lutína – jeho křest hledat v lutínské farnosti (~1675–1682).",
         "Judita (*~1663) zemřela 30. 4. 1711 ve 48 letech („Juditha Navratilka“, 9176a Z sken 382) – nyní doloženo, že šlo o Jakubovu první manželku (vdova po Matěji Konečném); rodné příjmení neznámé.",
         "Syn z 1. manželství pravděpodobně Jiří, pokřtěn 30. 4. 1706 v Kralicích („Girzik z rodu Jakuba Nawratila a matky Justyny“ – „Justyna“ nejspíš omyl za Juditu; kmotři Jiří Pospíšil a Judita Janíšková z Vítonic jako u Doroty 1708) – D.",
@@ -5054,7 +5057,6 @@ window.RODOKMEN = {
         "HYPOTÉZA (K): Judita mohla být dcera Pavla Pešky (?) z Kralic, 30. 1. 1691 oddaná s Vavřincem, synem † Pavla Konečného (9176 O sk 244, s. 90) – v roce 1704 je ale vdovou po MATĚJI Konečném; buď měla tři manžele, nebo jde o dvě Judity. Sňatek Matěje Konečného s Juditou v 9176 O 1682–II/1692 není; 1692–1703 zbývá.",
         "Lutín patřil k faře (Velké) Slatinice – nejstarší matrika Č XII 1 O (ZA Opava, pobočka Olomouc) začíná až I/1689, starší knihy nejsou digitalizované (nejspíš nedochovány) → Jakubův křest (~1672–1684) online není.",
         "HYPOTÉZA (K): otcem mohl být Martin Navrátil z Třebčína (dnes část Lutína), 1697 kmotr „z Lutína“, 1689–1694 častý kmotr a svědek; 1698 vdával dcery Rosinu (za Františka, syna Václava Navrátila z Vojnic) a Annu (za Martina Bichala z Topolan); děti s Marinou/Mariannou 1693 a 1699 (snad 2. manželství nebo jiný Martin). Spojeno jen podle jména a místa – NEDOLOŽENO. Pramen: ZA Opava, Slatinice Č XII 1 O, sk 14, 23, 31, 32.",
-        "Úmrtí NENÍ v Kralicích Z III/1716–VII/1730; při sňatcích synů 1736 a 1740 není uveden jako zemřelý → žil ještě v VIII/1745 (viz níže).",
         "VIII/1745 (M): kmotr dvojčat Mariny a Rosiny (otec František Konížil?, matka Juliana) – „Jacobus Navratil cum Marina conjuge sua. Matthaeus Navratil cum Rosina conjuge sua. Patrini ex Kralicio.“ Jakub i manželka Marina tehdy žili. Úmrtí NENÍ v Kralicích Z III/1742–II/1753.",
         "Pavel Navrátil, † 3. 12. 1747 Kralice, 64 (?) let (*~1683) – vrstevník, možná bratr (K)."
       ],
@@ -5062,7 +5064,8 @@ window.RODOKMEN = {
         "MZA Brno, Acta Publica, Kralice na Hané 9176 (detail 5773), O sken 261, s. 123; N sken 133",
         "MZA Brno, Acta Publica, Kralice na Hané 9176a (detail 5774), O sken 273; N sken 16, 34, 47; Z sken 382",
         "MZA Brno, Acta Publica, Kralice na Hané 9176a (detail 5774), O sken 324, s. 112",
-        "MZA, Kralice 9176a (Acta Publica id 5774), N sk189, 196, 197; Z sk480, 490"
+        "MZA, Kralice 9176a (Acta Publica id 5774), N sk189, 196, 197; Z sk480, 490",
+        "MZA, Kralice 9176a Z, sken 492 (I–II/1754)"
       ],
       scans: [
         {"f":"img/1704_snatek_jakub_navratil_judita.jpg","t":"Sňatek 30. 6. 1704, Kralice – mládenec Jakub Navrátil z Lutína × Judita, vdova po Matěji Konečném (9176 O, sken 261, s. 123)"},
@@ -5070,7 +5073,8 @@ window.RODOKMEN = {
         {"f":"img/1716_krest_matous_rosina_kralice.jpg","t":"Křty 3. a 4. 9. 1716, Kralice – Rosina (Paulus Přidal × Mariana) a Matouš (Jacobus Nawratil × Marina) (9176a N, sken 47)"},
         {"f":"img/1711_umrti_judita_navratilova.jpg","t":"Úmrtí Judity Navrátilové 30. 4. 1711, Kralice, 48 let (9176a Z, sken 382, s. 16)"},
         {"f":"img/1736_snatek_matous_navratil.jpg","t":"Sňatek 17. 1. 1736, Kralice – Matouš (Matthias), syn Jakuba Navrátila × Rosina, dcera † Pavla Přidala (?) (9176a, sken 324, s. 112)"},
-        {"f":"img/1745_kmotri_jakub_matous_navratil.jpg","t":"VIII/1745, Kralice – kmotři dvojčat: „Jacobus Navratil cum Marina conjuge sua. Matthaeus Navratil cum Rosina conjuge sua“ (9176a N, sken 196)"}
+        {"f":"img/1745_kmotri_jakub_matous_navratil.jpg","t":"VIII/1745, Kralice – kmotři dvojčat: „Jacobus Navratil cum Marina conjuge sua. Matthaeus Navratil cum Rosina conjuge sua“ (9176a N, sken 196)"},
+        {"f":"img/1754_umrti_jakub_navratil.jpg","t":"Úmrtí 6. 2. 1754, Kralice – Jacobus Navratil, podruh, 85 let (9176a Z, sken 492)"}
       ]
     },
     {
@@ -5106,7 +5110,8 @@ window.RODOKMEN = {
       notes: [
         "Sňatek 21. 9. 1711 s vdovcem Jakubem Navrátilem (M): „Marina filia Jacobi Kelčžak“ – příjmení otce čteno nejistě (v knize i Václav Kelčák/Kelčžak 1709/1710).",
         "Děti: Cecilie Alžběta *1712, Matouš *1716.",
-        "Žila v VIII/1745 – kmotra s manželem Jakubem (9176a N sk196, M)."
+        "Žila v VIII/1745 – kmotra s manželem Jakubem (9176a N sk196, M).",
+        "Úmrtí NENÍ v Kralicích Z III/1742–III/1765 (9176a, 9177) – zemřela po IV/1765 nebo jinde."
       ],
       sources: [
         "MZA Brno, Acta Publica, Kralice na Hané 9176a (detail 5774), O sken 273; N sken 34, 47",
