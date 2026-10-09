@@ -4950,11 +4950,14 @@ window.RODOKMEN = {
       name: "Matěj Veselý",
       line: "vesely",
       cert: "M",
-      b: {"date":"cca 1835","year":1835,"approx":true,"place":"okolí Hluboké nad Vltavou"},
-      occ: "hajný v Dívčicích č. 1 (1889, 1894); 1891 „polesný (?)“ ve Velici č. 23",
-      marriage: "před 1864 – s Annou Peterkovou z Křesína",
+      b: {"date":"cca 1816","year":1816,"approx":true,"place":"? (otec šafář v „Zbeyšově“ ?)"},
+      father: "tomasVes",
+      mother: "marieBoc",
+      occ: "luční hajný knížecí (schwarzenberský), Dívčice č. 1",
+      marriage: "13. 10. 1851, Hluboká nad Vltavou – s Annou Peterkovou",
       notes: [
-        "Rodiče podle křtu syna Jana 21. 12. 1860 (Nákří 6 N sk. 3; kurent čten na max. rozlišení, D): „Matěj Veselý, hajný, … [syn] Matěje (?), pastýře (?) na … (místo nečteno, „-vicích“?), a Marie … (?)“ – otec tedy nejspíš Matěj, pastýř; místo a rod matky nepřečteny.",
+        "Sňatek 13. 10. 1851 Hluboká (M): „Weselí Matěj, luční hajný knížecí v Dívčicích čís. 1, syn Tomáše Weselího, knížecího šafáře v Zbeyšově (?), a Marii Bočkové z Litoradlic čís. 5“, 35 let, svobodný – nevěsta z Křesínského dvora č. 24: „Peterková Anna, dcera Jána Peterky, knížecího poklasného v Křesíně čís. 24, a Mariany Ployharové, dcery Vojtěcha Ployhara, sedláka z Wolešníka čís. 21“, 24 let, svobodná; svědci … (?), dvořák, a Martin Peterka, dvořák, první šafář z Olešníka; oddával farář Josef Kišer (?).",
+        "OPRAVA: dřívější čtení křtu syna Jana 1860 („syn Matěje, pastýře“) bylo chybné – sňatek 1851 jasně uvádí otce Tomáše, knížecího šafáře; „Marie … z Li…“ v křtu 1860 = Marie Bočková z Litoradlic.",
         "Otec Jana (ovčáka v Dřítni) a Kateřiny provd. Roušalové (*1864 Velice č. 23): „syn Matěje Veselého hajného z Dívčic č. 1 a matky Anny rozené Peterka z Křesína“ (1889, 1894); „manž. dcera Matěje, polesného (?) ve Velici č. 23 a Anny rozené Peterka z Křesína“ (sňatek 1891).",
         "Velice i Dívčice patří do farnosti Nákří (N 1859–1907 = Nákří 6, id 5767). Další krok: křest Kateřiny ~20. 9. 1864 (Velice) a sňatek Matěj × Anna Peterková.",
         "Sňatek syna Jana 1894: „matky Anny rozené Peterka ze dvora Křesín (?), Hluboka“ – Anna pocházela z (panského) dvora u Hluboké.",
@@ -4963,6 +4966,7 @@ window.RODOKMEN = {
         "V Nákří 6 sekce Dívčice 1859–1869 nemá žádné další dítě kromě dvojčat Jana a Magdaleny (1860)."
       ],
       sources: [
+        "SOA Třeboň, Hluboká nad Vltavou 11 O (id 3564), sken 29 – https://digi.ceskearchivy.cz/DA?menu=3&id=3564&page=29",
         "SOA Třeboň, Nákří 6 N (id 5767), sken 3 – https://digi.ceskearchivy.cz/DA?menu=3&id=5767&page=3",
         "SOA Třeboň, Sbírka matrik, Bílá Hůrka 5A (N Dříteň 1876–1912), id 9211, sken 54, fol. 50 – https://digi.ceskearchivy.cz/DA?menu=3&id=9211&page=54",
         "SOA Třeboň, Bílá Hůrka 5A, id 9211, sken 69 – https://digi.ceskearchivy.cz/DA?menu=3&id=9211&page=69",
@@ -4970,6 +4974,7 @@ window.RODOKMEN = {
         "SOA Třeboň, Bílá Hůrka 7B (O Dříteň 1884–1949), id 9222, sken 15, 3. zápis – https://digi.ceskearchivy.cz/DA?menu=3&id=9222&page=15"
       ],
       scans: [
+        {"f":"img/1851_snatek_matej_vesely_anna_peterkova.jpg","t":"Sňatek 13. 10. 1851, Hluboká – Matěj Veselý, luční hajný v Dívčicích č. 1, syn Tomáše a Marie Bočkové × Anna Peterková, dcera Jana Peterky a Mariany Ployharové (Hluboká 11 O, id 3564, sken 29)"},
         {"f":"img/1860_krest_jan_vesely_divcice.jpg","t":"Křest 21. 12. 1860, Dívčice č. 1 – dvojčata Jan a Magdalena, otec Matěj Veselý, hajný (Nákří 6 N, sken 3)"},
         {"f":"img/1889_krest_jan_vesely_driten.jpg","t":"Křest bratra Jana 20. 8. 1889, Dříteň č. 6 (Bílá Hůrka 5A, sken 54) – rodiče Jan Veselý × Marie Koželuhová, legitimace"},
         {"f":"img/1891_snatek_rousal_vesela.jpg","t":"Sňatek tety Kateřiny Veselé s Josefem Roušalem 13. 1. 1891, České Budějovice (sv. Mikuláš O 68, sken 236)"}
@@ -4981,13 +4986,17 @@ window.RODOKMEN = {
       maiden: "Peterková (Peterka)",
       line: "vesely",
       cert: "M",
-      b: {"date":"cca 1840","year":1840,"approx":true,"place":"Křesín (?)"},
+      b: {"date":"cca 1827","year":1827,"approx":true,"place":"? (rodiče Křesín č. 24 / Olešník)"},
+      father: "janPet",
+      mother: "marianaPl",
       notes: [
-        "Rodiče podle křtu syna Jana 1860 (D): „Anna dc. Jana Peterky, rolníka (?) … z Křesína, a Anny Ko… (Kostkovy?) z Hol… (Holašovic / Holubova?)“.",
+        "Sňatek 13. 10. 1851 Hluboká (M): „Weselí Matěj, luční hajný knížecí v Dívčicích čís. 1, syn Tomáše Weselího, knížecího šafáře v Zbeyšově (?), a Marii Bočkové z Litoradlic čís. 5“, 35 let, svobodný – nevěsta z Křesínského dvora č. 24: „Peterková Anna, dcera Jána Peterky, knížecího poklasného v Křesíně čís. 24, a Mariany Ployharové, dcery Vojtěcha Ployhara, sedláka z Wolešníka čís. 21“, 24 let, svobodná; svědci … (?), dvořák, a Martin Peterka, dvořák, první šafář z Olešníka; oddával farář Josef Kišer (?).",
+        "Křest Anny není v Hluboká N 3557 (Zámostí/Křesínský dvůr XI/1826–V/1827) – na Křesíně 24 tehdy bydlela jiná rodina; narozena nejspíš v Olešníku nebo jinde podle služby otce.",
         "„matky Anny rozené Peterka z Křesína“ (1889, 1894, 1891); místo „Křesín“ čteno s otazníkem.",
         "Sňatek syna Jana 1894: „matky Anny rozené Peterka ze dvora Křesín (?), Hluboka“ – Anna pocházela z (panského) dvora u Hluboké."
       ],
       sources: [
+        "SOA Třeboň, Hluboká nad Vltavou 11 O (id 3564), sken 29 – https://digi.ceskearchivy.cz/DA?menu=3&id=3564&page=29",
         "SOA Třeboň, Nákří 6 N (id 5767), sken 3 – https://digi.ceskearchivy.cz/DA?menu=3&id=5767&page=3",
         "SOA Třeboň, Sbírka matrik, Bílá Hůrka 5A (N Dříteň 1876–1912), id 9211, sken 54, fol. 50 – https://digi.ceskearchivy.cz/DA?menu=3&id=9211&page=54",
         "SOA Třeboň, Bílá Hůrka 5A, id 9211, sken 69 – https://digi.ceskearchivy.cz/DA?menu=3&id=9211&page=69",
@@ -4995,6 +5004,7 @@ window.RODOKMEN = {
         "SOA Třeboň, Bílá Hůrka 7B (O Dříteň 1884–1949), id 9222, sken 15, 3. zápis – https://digi.ceskearchivy.cz/DA?menu=3&id=9222&page=15"
       ],
       scans: [
+        {"f":"img/1851_snatek_matej_vesely_anna_peterkova.jpg","t":"Sňatek 13. 10. 1851, Hluboká – Matěj Veselý, luční hajný v Dívčicích č. 1, syn Tomáše a Marie Bočkové × Anna Peterková, dcera Jana Peterky a Mariany Ployharové (Hluboká 11 O, id 3564, sken 29)"},
         {"f":"img/1860_krest_jan_vesely_divcice.jpg","t":"Křest 21. 12. 1860, Dívčice č. 1 – dvojčata Jan a Magdalena, otec Matěj Veselý, hajný (Nákří 6 N, sken 3)"},
         {"f":"img/1889_krest_jan_vesely_driten.jpg","t":"Křest bratra Jana 20. 8. 1889, Dříteň č. 6 (Bílá Hůrka 5A, sken 54) – rodiče Jan Veselý × Marie Koželuhová, legitimace"},
         {"f":"img/1891_snatek_rousal_vesela.jpg","t":"Sňatek tety Kateřiny Veselé s Josefem Roušalem 13. 1. 1891, České Budějovice (sv. Mikuláš O 68, sken 236)"}
@@ -5592,6 +5602,92 @@ window.RODOKMEN = {
       ],
       scans: [
         {"f":"img/1787_krest_magdalena_krautwurst.jpg","t":"Křest 23. 5. 1787 – Magdalena, rodiče Joannes Krauthwurst, kovář ve Strandorfu, a Rosina (ZAO, Krzanowice POL IX 2, sken 16)"}
+      ]
+    },
+    {
+      id: "tomasVes",
+      name: "Tomáš Veselý",
+      line: "vesely",
+      cert: "M",
+      b: {"date":"cca 1785","year":1785,"approx":true,"place":"?"},
+      occ: "knížecí (schwarzenberský) šafář v „Zbeyšově“ (?)",
+      notes: [
+        "Otec Matěje Veselého (sňatek syna 1851, M): „Tomáš Weselí, knížecí šafář v Zbeyšově (?)“; manželka Marie Bočková z Litoradlic č. 5. Místo služby nejisté (Zbudov?)."
+      ],
+      sources: [
+        "SOA Třeboň, Hluboká nad Vltavou 11 O (id 3564), sken 29 – https://digi.ceskearchivy.cz/DA?menu=3&id=3564&page=29"
+      ],
+      scans: [
+        {"f":"img/1851_snatek_matej_vesely_anna_peterkova.jpg","t":"Sňatek 13. 10. 1851, Hluboká – Matěj Veselý, luční hajný v Dívčicích č. 1, syn Tomáše a Marie Bočkové × Anna Peterková, dcera Jana Peterky a Mariany Ployharové (Hluboká 11 O, id 3564, sken 29)"}
+      ]
+    },
+    {
+      id: "marieBoc",
+      name: "Marie Veselá",
+      maiden: "Bočková",
+      line: "vesely",
+      cert: "M",
+      b: {"date":"cca 1790","year":1790,"approx":true,"place":"Litoradlice č. 5"},
+      notes: [
+        "Matka Matěje Veselého (sňatek syna 1851, M): „Marie Bočková z Litoradlic čís. 5“."
+      ],
+      sources: [
+        "SOA Třeboň, Hluboká nad Vltavou 11 O (id 3564), sken 29 – https://digi.ceskearchivy.cz/DA?menu=3&id=3564&page=29"
+      ],
+      scans: [
+        {"f":"img/1851_snatek_matej_vesely_anna_peterkova.jpg","t":"Sňatek 13. 10. 1851, Hluboká – Matěj Veselý, luční hajný v Dívčicích č. 1, syn Tomáše a Marie Bočkové × Anna Peterková, dcera Jana Peterky a Mariany Ployharové (Hluboká 11 O, id 3564, sken 29)"}
+      ]
+    },
+    {
+      id: "janPet",
+      name: "Jan Peterka",
+      line: "vesely",
+      cert: "M",
+      b: {"date":"cca 1795","year":1795,"approx":true,"place":"?"},
+      occ: "knížecí poklasný, Křesín (Křesínský dvůr) č. 24",
+      notes: [
+        "Otec Anny Peterkové (sňatek dcery 1851, M): „Ján Peterka, knížecí poklasný v Křesíně čís. 24“; manželka Mariana Ployharová z Olešníka. Martin Peterka, první šafář v Olešníku (svědek 1851), zřejmě příbuzný (K)."
+      ],
+      sources: [
+        "SOA Třeboň, Hluboká nad Vltavou 11 O (id 3564), sken 29 – https://digi.ceskearchivy.cz/DA?menu=3&id=3564&page=29"
+      ],
+      scans: [
+        {"f":"img/1851_snatek_matej_vesely_anna_peterkova.jpg","t":"Sňatek 13. 10. 1851, Hluboká – Matěj Veselý, luční hajný v Dívčicích č. 1, syn Tomáše a Marie Bočkové × Anna Peterková, dcera Jana Peterky a Mariany Ployharové (Hluboká 11 O, id 3564, sken 29)"}
+      ]
+    },
+    {
+      id: "marianaPl",
+      name: "Mariana Peterková",
+      maiden: "Ployharová",
+      line: "vesely",
+      cert: "M",
+      b: {"date":"cca 1800","year":1800,"approx":true,"place":"Olešník (Volešník) č. 21"},
+      father: "vojtechPl",
+      notes: [
+        "Matka Anny Peterkové (sňatek dcery 1851, M): „Mariany Ployharové, dcery Vojtěcha Ployhara, sedláka z Wolešníka čís. 21“. V křtu vnuka Jana 1860 čteno „Anny Ko… z Hol…“ – nejspíš chybné čtení kurentu."
+      ],
+      sources: [
+        "SOA Třeboň, Hluboká nad Vltavou 11 O (id 3564), sken 29 – https://digi.ceskearchivy.cz/DA?menu=3&id=3564&page=29"
+      ],
+      scans: [
+        {"f":"img/1851_snatek_matej_vesely_anna_peterkova.jpg","t":"Sňatek 13. 10. 1851, Hluboká – Matěj Veselý, luční hajný v Dívčicích č. 1, syn Tomáše a Marie Bočkové × Anna Peterková, dcera Jana Peterky a Mariany Ployharové (Hluboká 11 O, id 3564, sken 29)"}
+      ]
+    },
+    {
+      id: "vojtechPl",
+      name: "Vojtěch Ployhar",
+      line: "vesely",
+      cert: "M",
+      b: {"date":"cca 1770","year":1770,"approx":true,"place":"Olešník (Volešník)"},
+      occ: "sedlák, Olešník (Volešník) č. 21",
+      notes: [
+        "Děd Anny Peterkové (sňatek vnučky 1851, M): „Vojtěch Ployhar, sedlák z Wolešníka čís. 21“."
+      ],
+      sources: [
+        "SOA Třeboň, Hluboká nad Vltavou 11 O (id 3564), sken 29 – https://digi.ceskearchivy.cz/DA?menu=3&id=3564&page=29"
+      ],
+      scans: [
+        {"f":"img/1851_snatek_matej_vesely_anna_peterkova.jpg","t":"Sňatek 13. 10. 1851, Hluboká – Matěj Veselý, luční hajný v Dívčicích č. 1, syn Tomáše a Marie Bočkové × Anna Peterková, dcera Jana Peterky a Mariany Ployharové (Hluboká 11 O, id 3564, sken 29)"}
       ]
     }
   ]
