@@ -11,7 +11,8 @@ window.RODOKMEN = {
     "matusu": "Matůšů",
     "struz": "Struž",
     "jirik": "Jiřík",
-    "opolony": "Opoloný"
+    "opolony": "Opoloný",
+    "plachy": "Plachý"
   },
   people: [
     {
@@ -139,7 +140,7 @@ window.RODOKMEN = {
       id: "annaP",
       name: "Anna Veselá",
       maiden: "Plachá",
-      line: "vesely",
+      line: "plachy",
       cert: "M",
       b: {"date":"5. 12. 1907","year":1907,"place":"Věrovany č. 79, okr. Tovačov, Morava"},
       father: "janPl",
@@ -165,7 +166,7 @@ window.RODOKMEN = {
     {
       id: "janPl",
       name: "Jan Plachý",
-      line: "vesely",
+      line: "plachy",
       cert: "M",
       b: {"date":"19. 4. 1864","year":1864,"place":"Věrovany č. 51"},
       father: "josefPl",
@@ -189,7 +190,7 @@ window.RODOKMEN = {
       id: "mariannaVi",
       name: "Marianna Plachá",
       maiden: "Vincourová",
-      line: "vesely",
+      line: "plachy",
       cert: "M",
       b: {"date":"6. 9. 1869","year":1869,"place":"Řepčín č. 31 (dnes Olomouc)"},
       father: "josefVi",
@@ -210,7 +211,7 @@ window.RODOKMEN = {
     {
       id: "josefPl",
       name: "Josef Plachý",
-      line: "vesely",
+      line: "plachy",
       cert: "M",
       b: {"date":"?","year":1835,"approx":true,"place":"Věrovany"},
       father: "janPl2",
@@ -233,7 +234,7 @@ window.RODOKMEN = {
       id: "frantiskaKo",
       name: "Františka Plachá",
       maiden: "Kočířová",
-      line: "vesely",
+      line: "plachy",
       cert: "M",
       b: {"date":"6. 9. 1828","year":1828,"place":"Kralice na Hané č. 65"},
       father: "janKo",
@@ -255,7 +256,7 @@ window.RODOKMEN = {
     {
       id: "josefVi",
       name: "Josef Vincour",
-      line: "vesely",
+      line: "plachy",
       cert: "M",
       b: {"date":"cca 1837","year":1837,"approx":true,"place":"Neředín (?)"},
       father: "josefVi2",
@@ -278,7 +279,7 @@ window.RODOKMEN = {
       id: "terezieDo",
       name: "Terezie Vincourová",
       maiden: "Dosoudilová",
-      line: "vesely",
+      line: "plachy",
       cert: "M",
       b: {"date":"cca 1840","year":1840,"approx":true,"place":"Řepčín č. 29"},
       father: "franzDo",
@@ -299,7 +300,7 @@ window.RODOKMEN = {
     {
       id: "janPl2",
       name: "Jan Plachý",
-      line: "vesely",
+      line: "plachy",
       cert: "M",
       b: {"date":"?","year":1800,"approx":true,"place":"Věrovany"},
       occ: "výměnkář ve Věrovanech",
@@ -317,7 +318,7 @@ window.RODOKMEN = {
       id: "josefaOp",
       name: "Josefa Plachá",
       maiden: "Opluštilová",
-      line: "vesely",
+      line: "plachy",
       cert: "M",
       b: {"date":"?","year":1805,"approx":true,"place":"Dub (nad Moravou)"},
       sources: [
@@ -330,7 +331,7 @@ window.RODOKMEN = {
     {
       id: "janKo",
       name: "Jan Kočíř",
-      line: "vesely",
+      line: "plachy",
       cert: "M",
       b: {"date":"12. 12. 1801 (křest)","year":1801,"place":"Kralice na Hané č. 65"},
       d: {"date":"25. 11. 1864","year":1864,"place":"Kralice na Hané č. 65"},
@@ -356,7 +357,7 @@ window.RODOKMEN = {
     {
       id: "jakubKo",
       name: "Jakub (Jakob) Kočíř",
-      line: "vesely",
+      line: "plachy",
       cert: "M",
       b: {"date":"cca 1776","year":1776,"approx":true,"place":"„Ar…schan / Ur…schan“ (?)"},
       d: {"date":"24. 9. 1829","year":1829,"place":"Kralice na Hané č. 65"},
@@ -384,7 +385,7 @@ window.RODOKMEN = {
     {
       id: "janKoSt",
       name: "Jan (Johann) Kočíř",
-      line: "vesely",
+      line: "plachy",
       cert: "M",
       b: {"date":"cca 1740","year":1740,"approx":true},
       d: {"date":"před 1797","year":1796,"approx":true},
@@ -403,7 +404,7 @@ window.RODOKMEN = {
       id: "terezieSch",
       name: "Terezie Kočířová",
       maiden: "Schindlerová",
-      line: "vesely",
+      line: "plachy",
       cert: "M",
       b: {"date":"cca 1776","year":1776,"approx":true},
       d: {"date":"9. 10. 1836","year":1836,"place":"Kralice na Hané č. 65"},
@@ -425,7 +426,7 @@ window.RODOKMEN = {
       id: "mariannaNa",
       name: "Marianna Kočířová",
       maiden: "Navrátilová",
-      line: "vesely",
+      line: "plachy",
       cert: "M",
       b: {"date":"17. 12. 1805 (křest)","year":1805,"place":"Kralice na Hané č. 27"},
       father: "fabianNa",
@@ -446,7 +447,7 @@ window.RODOKMEN = {
     {
       id: "fabianNa",
       name: "Fabián Navrátil",
-      line: "vesely",
+      line: "plachy",
       cert: "M",
       b: {"date":"leden 1776 (křest, 13.–19. 1.)","year":1776,"place":"Kralice na Hané č. 27"},
       d: {"date":"29. 12. 1840","year":1840,"place":"Kralice na Hané č. 15"},
@@ -477,7 +478,7 @@ window.RODOKMEN = {
     {
       id: "sarkanderNa",
       name: "Sarkander Navrátil",
-      line: "vesely",
+      line: "plachy",
       cert: "M",
       b: {"date":"7. 12. 1749","year":1749,"place":"Kralice na Hané"},
       d: {"date":"březen 1811 (2. 3.?)","year":1811,"place":"Kralice na Hané č. 27"},
@@ -507,7 +508,7 @@ window.RODOKMEN = {
     {
       id: "mariannaNa0",
       name: "Mariana Navrátilová",
-      line: "vesely",
+      line: "plachy",
       cert: "M",
       b: {"date":"cca 1745","year":1745,"approx":true},
       d: {"date":"22. 2. 1812 (PRAVDĚPODOBNĚ)","year":1812,"place":"Kralice na Hané č. 27"},
@@ -526,7 +527,7 @@ window.RODOKMEN = {
       id: "katerinaNa",
       name: "Kateřina Navrátilová",
       maiden: "Hryšová (Hrsch)",
-      line: "vesely",
+      line: "plachy",
       cert: "M",
       b: {"date":"cca 1770","year":1770,"approx":true},
       d: {"date":"15. 3. 1866","year":1866,"place":"Kralice na Hané č. 15"},
@@ -545,7 +546,7 @@ window.RODOKMEN = {
     {
       id: "josefVi2",
       name: "Josef Vincour",
-      line: "vesely",
+      line: "plachy",
       cert: "M",
       b: {"date":"?","year":1810,"approx":true},
       occ: "půlláník v Nemilanech (?)",
@@ -564,7 +565,7 @@ window.RODOKMEN = {
       id: "katerinaVi",
       name: "Kateřina Vincourová",
       maiden: "„Du…“ (?) – nečitelné",
-      line: "vesely",
+      line: "plachy",
       cert: "M",
       b: {"date":"?","year":1815,"approx":true},
       notes: [
@@ -581,7 +582,7 @@ window.RODOKMEN = {
     {
       id: "franzDo",
       name: "František Dosoudil",
-      line: "vesely",
+      line: "plachy",
       cert: "M",
       b: {"date":"?","year":1815,"approx":true,"place":"Řepčín"},
       occ: "chalupník / domkář (?) v Řepčíně č. 29",
@@ -598,7 +599,7 @@ window.RODOKMEN = {
       id: "franziskaPi",
       name: "Františka Dosoudilová",
       maiden: "Pikl",
-      line: "vesely",
+      line: "plachy",
       cert: "M",
       b: {"date":"?","year":1818,"approx":true,"place":"Řepčín"},
       notes: [
@@ -4965,7 +4966,7 @@ window.RODOKMEN = {
     {
       id: "matousNa",
       name: "Matouš (Matthaeus) Navrátil",
-      line: "vesely",
+      line: "plachy",
       cert: "M",
       b: {"date":"4. 9. 1716","year":1716,"place":"Kralice na Hané"},
       father: "jakubNa",
@@ -5000,7 +5001,7 @@ window.RODOKMEN = {
       id: "rosinaNa",
       name: "Rosina Navrátilová",
       maiden: "Přidalová",
-      line: "vesely",
+      line: "plachy",
       cert: "M",
       b: {"date":"3. 9. 1716","year":1716,"place":"Kralice na Hané"},
       father: "pavelPr",
@@ -5025,7 +5026,7 @@ window.RODOKMEN = {
     {
       id: "jakubNa",
       name: "Jakub Navrátil",
-      line: "vesely",
+      line: "plachy",
       cert: "M",
       b: {"date":"cca 1678","year":1678,"approx":true,"place":"Lutín (?)"},
       marriage: "1) 30. 6. 1704, Kralice – s Juditou, vdovou po Matěji Konečném († 30. 4. 1711); 2) 21. 9. 1711, Kralice – s Marinou, dcerou Jakuba Kelčáka (?)",
@@ -5057,7 +5058,7 @@ window.RODOKMEN = {
     {
       id: "pavelPr",
       name: "Pavel Přidal",
-      line: "vesely",
+      line: "plachy",
       cert: "M",
       b: {"date":"cca 1680","year":1680,"approx":true,"place":"Kralice na Hané (?)"},
       marriage: "s Marianou",
@@ -5076,7 +5077,7 @@ window.RODOKMEN = {
       id: "marinaKel",
       name: "Marina Navrátilová",
       maiden: "Kelčáková (?)",
-      line: "vesely",
+      line: "plachy",
       cert: "M",
       b: {"date":"cca 1690","year":1690,"approx":true,"place":"Kralice na Hané (?)"},
       notes: [
@@ -5094,7 +5095,7 @@ window.RODOKMEN = {
     {
       id: "marianaPr",
       name: "Mariana Přidalová",
-      line: "vesely",
+      line: "plachy",
       cert: "M",
       b: {"date":"cca 1690","year":1690,"approx":true},
       notes: [
@@ -5522,7 +5523,7 @@ window.RODOKMEN.story = [
   {"line":"pacik","title":"Valašsko pod Bílými Karpaty – Pacíci a Matůšů","text":["Nedašov a Nedašova Lhota leží na moravsko-slovenském pomezí pod Bílými Karpaty a patřily k panství Brumov. Mlynář Tobiáš Pacík (*cca 1712, †1779) žil v Nedašově Lhotě v domě č. 5, kde rod přebýval přes 150 let. Matriky farnosti Brumov začínají rokem 1688 – pro starší dobu zbývají gruntovní knihy a urbáře brumovského panství.","V matrikách 18. století se stejná rodina psala jednou „Pacík“, jindy „Fojtík“ – příjmení se v té době teprve ustalovala. Zápisy jsou latinsky, v 19. století německy a od 70. let česky.","Předkové byli domkáři, podsedníci a tkalci – drobní venkované bez větší půdy. Dědeček Rudolf (*1936) odešel jako mnoho Valachů za prací do průmyslové Ostravy."],"lines":["pacik","matusu"]},
   {"line":"struz","title":"Hlučínsko – Struž, Jiřík a Opoloný","text":["Chuchelná a Bolatice leží na Hlučínsku. Po slezských válkách v roce 1742 připadlo Prusku, takže zdejší lidé byli 178 let pruskými (později německými) občany, i když mluvili moravským nářečím „po našymu“.","Proto jsou jejich matriky od roku 1874 německé civilní (Standesamt Kuchelna) a jména se psala německy: Ernst Strusch, Rudolf Irzik, Marie Opolony.","V roce 1920 bylo Hlučínsko připojeno k Československu, v roce 1938 k Německu a v roce 1945 znovu k ČSR. Muži jako Arnošt Struž proto za 2. světové války sloužili v německé armádě a po válce byli souzeni lidovými soudy."],"lines":["struz","jirik","opolony"]},
   {"line":"woron","title":"Halič – Woroň, Włudyka, Chmielek a Dydowicz","text":["Halič (polsky Galicja) byla v letech 1772–1918 korunní zemí Rakouska-Uherska – zhruba dnešní jižní Polsko a západní Ukrajina. Na přelomu 19. a 20. století patřila k nejchudším oblastem Evropy („galicyjska bieda“).","Tisíce lidí proto odcházely za prací do ostravských dolů – byly ve stejné monarchii, takže se dalo volně stěhovat. Přesně tak přišli Ondřej Woroń z Lednice u Wieliczky, Markéta Włudyka z Rajbrotu (rod Włudyků tam žil už v 18. století), Stanislav Chmielek ze Zagórzan a Helena Dydowicz od Tarnova.","Usadili se v hornické Polské Ostravě (od roku 1919 Slezská Ostrava), kde se jim v roce 1903 narodili Ludvík a Honorata – rodiče babičky Marty."],"lines":["woron","chmielek"]},
-  {"line":"vesely","title":"Spiš – Veselí a Plaší","text":["Po vzniku Československa v roce 1918 odcházely na Slovensko tisíce Čechů – úředníci, železničáři, četníci, učitelé i řemeslníci. Mezi nimi Karel Veselý (*1904 ve Volešníku u Hluboké, domovem ze Zbudova), který v Plzni bydlel u tety Kateřiny Roušalové a v listopadu 1922 přišel do Kežmarku a pracoval jako úředník tamní nemocenské pojišťovny.","Kežmarok byl tehdy převážně německé a maďarské město – sčítací arch z roku 1930 je vyplněný německy. Karel bydlel v podnájmu na Hlavní ulici, v letech 1935–1937 seděl v městském zastupitelstvu za sociální demokraty a dělal jednatele Klubu československých turistů.","Anna Plachá (*1907) pocházela z Věrovan na Hané. Do Kežmarku ji přivedla starší sestra Terezie, provdaná za řezníka Methoda Krejsu, kterému Anna dělala pokladní. S Karlem se vzali mezi lety 1931 a 1933 a v září 1933 se jim narodil Svatoň.","Po vzniku Slovenského státu v roce 1939 museli Češi ve státní službě většinou odejít do českých zemí – rodina Veselých se tak přestěhovala do Uherského Brodu, jak babička Marta mnohokrát vyprávěla."],"lines":["vesely"]}
+  {"line":"vesely","title":"Spiš – Veselí a Plaší","text":["Po vzniku Československa v roce 1918 odcházely na Slovensko tisíce Čechů – úředníci, železničáři, četníci, učitelé i řemeslníci. Mezi nimi Karel Veselý (*1904 ve Volešníku u Hluboké, domovem ze Zbudova), který v Plzni bydlel u tety Kateřiny Roušalové a v listopadu 1922 přišel do Kežmarku a pracoval jako úředník tamní nemocenské pojišťovny.","Kežmarok byl tehdy převážně německé a maďarské město – sčítací arch z roku 1930 je vyplněný německy. Karel bydlel v podnájmu na Hlavní ulici, v letech 1935–1937 seděl v městském zastupitelstvu za sociální demokraty a dělal jednatele Klubu československých turistů.","Anna Plachá (*1907) pocházela z Věrovan na Hané. Do Kežmarku ji přivedla starší sestra Terezie, provdaná za řezníka Methoda Krejsu, kterému Anna dělala pokladní. S Karlem se vzali mezi lety 1931 a 1933 a v září 1933 se jim narodil Svatoň.","Po vzniku Slovenského státu v roce 1939 museli Češi ve státní službě většinou odejít do českých zemí – rodina Veselých se tak přestěhovala do Uherského Brodu, jak babička Marta mnohokrát vyprávěla."],"lines":["vesely","plachy"]}
 ];
 window.RODOKMEN.timeline = [
   {"y":1759,"t":"V Rajbrotu se berou Jan Włodyka a Konstancie Kanownik"},
@@ -5556,7 +5557,7 @@ window.RODOKMEN.moves = [
   {"line":"chmielek","kind":"rail","who":"Stanislav Chmielek","when":"před 1903","note":"ze Zagórzan do Polské Ostravy; trasa přes Kraków pravděpodobná","path":[[49.93,20.21],[50.06,19.94],[50.04,19.22],[49.95,18.75],[49.9,18.36],[49.835,18.29]]},
   {"line":"chmielek","kind":"hyp","who":"Helena Dydowicz","when":"před 1903","note":"z Rudna u Tarnova do Polské Ostravy; kudy a kdy šla, zatím nevíme","path":[[50.01,20.99],[50.06,19.94]]},
   {"line":"vesely","kind":"doc","who":"Karel Veselý","when":"1922","note":"z Plzně (narozen 1904 u Českých Budějovic) do Kežmarku; vlakem přes Přerov – Žilinu – Poprad","path":[[49.4,16.95],[49.455,17.45],[49.6,18.14],[49.22,18.74],[49.06,20.3],[49.135,20.43]],"fromOffMap":"z Plzně"},
-  {"line":"vesely","kind":"doc","who":"Anna Plachá","when":"1930","note":"z Věrovan za sestrou Terezií Krejsovou do Kežmarku","path":[[49.46,17.29],[49.455,17.45],[49.6,18.14],[49.22,18.74],[49.06,20.3],[49.135,20.43]]},
+  {"line":"plachy","kind":"doc","who":"Anna Plachá","when":"1930","note":"z Věrovan za sestrou Terezií Krejsovou do Kežmarku","path":[[49.46,17.29],[49.455,17.45],[49.6,18.14],[49.22,18.74],[49.06,20.3],[49.135,20.43]]},
   {"line":"vesely","kind":"doc","who":"Veselí se Svatoněm","when":"cca 1939–1940","note":"po vzniku Slovenského státu odchod do Uherského Brodu – potvrzeno vyprávěním babičky Marty (opakovaně)","path":[[49.135,20.43],[49.06,20.3],[49.22,18.74],[49.025,17.65]]},
   {"line":"vesely","kind":"hyp","who":"Svatoň Veselý","when":"před 1957","note":"do Ostravy; sňatek s Martou Woroňovou 1957 ve Slezské Ostravě","path":[[49.025,17.65],[49.455,17.45],[49.6,18.14],[49.835,18.29]]},
   {"line":"opolony","kind":"doc","who":"Anton a Rosalie Opolonyovi","when":"1867–1878","note":"z Ehrenfeldu a Schonowitz (farnost Grzędzin u Ratiboře) do Chuchelné; sňatek 18. 6. 1867, syn Adolph se narodil 1878 už v Chuchelné","path":[[50.17,18.16],[50.13,18.11],[50,18.03]]}

@@ -1,6 +1,6 @@
 # Rodokmen Matěje Veselého
 
-Interaktivní rodokmen Matěje Veselého na časové ose – větve Veselý, Woroň, Chmielek, Pacík, Matůšů, Struž, Jiřík a Opoloný.
+Interaktivní rodokmen Matěje Veselého na časové ose – větve Veselý, Plachý, Woroň, Chmielek, Pacík, Matůšů, Struž, Jiřík a Opoloný.
 
 **Web:** https://mv911t.github.io/Rodokmen/
 
