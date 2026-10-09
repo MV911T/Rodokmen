@@ -5129,16 +5129,21 @@ window.RODOKMEN = {
       maiden: "Prochaska",
       line: "struz",
       cert: "M",
-      b: {"date":"cca 1708","year":1708,"approx":true,"place":"Rohov"},
+      b: {"date":"8. 5. 1709","year":1709,"place":"Rohov"},
+      father: "michaelPr",
+      mother: "hedvikaPr",
       notes: [
+        "Křest 8. 5. 1709 Rohov (M): „8va ejusd. [Maii] | Anna Marina | Michaële Prochaska, & Hedwige, Rohowio | Matthias Kmura (?), & Magdalena Tiemnikiana, Rohowio“. Totožnost s nevěstou Andrease Strusche 1725 PRAVDĚPODOBNÁ (D): jediná Anna z rohovských Prochasků 1705–1711, věk sedí (vdova Anna Strusin † 1776 v 68 letech).",
         "Sňatek 7. 8. 1725 s Andreasem Struschem: „cum Anna Prochaskiana, Rohowio“.",
         "Matka Mariny (1732) a Mathiase (1735): „Andreas Struz, Anna uxor ejus“.",
         "Pravděpodobně vdova „Anna Strusin“, † 14. 10. 1776 v 68 letech (D). Prochaskové žili v Rohově (Simon Prochaska, Andreas Simonis Prochaska 1728)."
       ],
       sources: [
-        "ZA Opava, NAD 165 Sbírka matrik, Sudice H XVI 1 (1702–1736), sken 217, 127, 133"
+        "ZA Opava, NAD 165 Sbírka matrik, Sudice H XVI 1 (1702–1736), sken 217, 127, 133",
+        "ZA Opava, NAD 165 Sbírka matrik, Sudice H XVI 1 (inv. č. 2669), sken 26"
       ],
       scans: [
+        {"f":"img/1709_krest_anna_prochaska.jpg","t":"Křest 8. 5. 1709, Rohov – Anna Marina, rodiče Michael Prochaska × Hedwig (Sudice H XVI 1, sken 26)"},
         {"f":"img/1725_snatek_andreas_strusch.jpg","t":"Sňatek 7. 8. 1725, Rohov – Andreas, syn Georga Struze, × Anna Prochaska (Sudice H XVI 1, sken 217, s. 251v)"},
         {"f":"img/1735_krest_mathias_strusch.jpg","t":"Křest syna Mathiase 28. 1. 1735 (H XVI 1, sken 133)"}
       ]
@@ -5152,7 +5157,8 @@ window.RODOKMEN = {
       notes: [
         "Otec Andrease (sňatek 1725: „Andreas, Georgij Struz filius“).",
         "V Rohově doložen jako svědek 1716–1725 („Georgius Struz Rohowio“, 1725 i „Straz“ – týž písař); úmrtí mezi VIII/1731 a 1739 (v H XVI 1 zemřelí končí VII/1731 bez něj; 1739 už „†“ u sňatku syna Martina).",
-        "Další děti (D): Martin (sňatek 1739), Barbara (sňatek 1745); možní synové i Laurentius (*~1710 †1773) a Wenzel (sňatek 1734)."
+        "Další děti (D): Martin (sňatek 1739), Barbara (sňatek 1745); možní synové i Laurentius (*~1710 †1773) a Wenzel (sňatek 1734).",
+        "V Rohově 1705–1710 „Georgius Straz & Catharina Rohowio“ – děti X/1705, XI/1707, IV/1710 (H XVI 1 sk 9, 18, 31; jména nečtena) – nejspíš Georg Strusch s manželkou Catharinou (K/D)."
       ],
       sources: [
         "ZA Opava, NAD 165 Sbírka matrik, Sudice H XVI 1 (1702–1736), sken 216–217; H XVI 6"
@@ -5383,6 +5389,39 @@ window.RODOKMEN = {
       ],
       sources: [
         "OFB Rudnik (online-ofb.de)"
+      ]
+    },
+    {
+      id: "michaelPr",
+      name: "Michael Prochaska",
+      line: "struz",
+      cert: "M",
+      b: {"date":"cca 1680","year":1680,"approx":true,"place":"Rohov"},
+      marriage: "s Hedvikou",
+      notes: [
+        "Rohov; děti (M): Rosina *16. [?] 1706 (H XVI 1 sk 11) a Anna Marina *8. 5. 1709 (sk 26), oba křty se stejnými kmotry Matthias Kmura a Magdalena Tiemnikiana. V Rohově žili i Simon Prochaska × Anna a Thomas Prochaska × Marina (jiné rodiny)."
+      ],
+      sources: [
+        "ZA Opava, NAD 165 Sbírka matrik, Sudice H XVI 1 (inv. č. 2669), sken 26, sken 11, 26"
+      ],
+      scans: [
+        {"f":"img/1709_krest_anna_prochaska.jpg","t":"Křest 8. 5. 1709, Rohov – Anna Marina, rodiče Michael Prochaska × Hedwig (Sudice H XVI 1, sken 26)"}
+      ]
+    },
+    {
+      id: "hedvikaPr",
+      name: "Hedvika (Hedwig) Prochaska",
+      line: "struz",
+      cert: "M",
+      b: {"date":"cca 1685","year":1685,"approx":true},
+      notes: [
+        "Manželka Michaela Prochasky, matka Rosiny (1706) a Anny Mariny (1709); rodné příjmení neuvedeno."
+      ],
+      sources: [
+        "ZA Opava, NAD 165 Sbírka matrik, Sudice H XVI 1 (inv. č. 2669), sken 26, sken 11, 26"
+      ],
+      scans: [
+        {"f":"img/1709_krest_anna_prochaska.jpg","t":"Křest 8. 5. 1709, Rohov – Anna Marina, rodiče Michael Prochaska × Hedwig (Sudice H XVI 1, sken 26)"}
       ]
     }
   ]
