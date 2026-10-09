@@ -4892,12 +4892,13 @@ window.RODOKMEN = {
       occ: "hajný v Dívčicích č. 1 (1889, 1894); 1891 „polesný (?)“ ve Velici č. 23",
       marriage: "před 1864 – s Annou Peterkovou z Křesína",
       notes: [
-        "Rodiče Matěje jsou uvedeni v křtu syna Jana 1860 (Nákří 6 sken 3) – kurent čten jen zčásti: „Matěj Veselý, hajný, syn Matěje, pastýře na … (?), a Marie roz. … (?) z … (?)“ – nutno přečíst odborně (K).",
+        "Rodiče podle křtu syna Jana 21. 12. 1860 (Nákří 6 N sk. 3; kurent čten na max. rozlišení, D): „Matěj Veselý, hajný, … [syn] Matěje (?), pastýře (?) na … (místo nečteno, „-vicích“?), a Marie … (?)“ – otec tedy nejspíš Matěj, pastýř; místo a rod matky nepřečteny.",
         "Otec Jana (ovčáka v Dřítni) a Kateřiny provd. Roušalové (*1864 Velice č. 23): „syn Matěje Veselého hajného z Dívčic č. 1 a matky Anny rozené Peterka z Křesína“ (1889, 1894); „manž. dcera Matěje, polesného (?) ve Velici č. 23 a Anny rozené Peterka z Křesína“ (sňatek 1891).",
         "Velice i Dívčice patří do farnosti Nákří (N 1859–1907 = Nákří 6, id 5767). Další krok: křest Kateřiny ~20. 9. 1864 (Velice) a sňatek Matěj × Anna Peterková.",
         "Sňatek syna Jana 1894: „matky Anny rozené Peterka ze dvora Křesín (?), Hluboka“ – Anna pocházela z (panského) dvora u Hluboké.",
         "POZOR na jmenovce: ve Velici č. 8 žil jiný Matěj Veselý, podruh, syn Bartoloměje, × Anna roz. Dominová (?), zemřel před XII/1876 (Nákří 6 N sk. 362) – NENÍ to on.",
-        "Mladší děti Matěje × Anny nejsou v Nákří 6 (Dívčice 1869–1886, Velice 1867–VI/1885). Ve Velici č. 2 žili Peterkové (Vojtěch × Marie Fejtlová, syn František) – možná rodina Anny (K, neověřeno)."
+        "Mladší děti Matěje × Anny nejsou v Nákří 6 (Dívčice 1869–1886, Velice 1867–VI/1885). Ve Velici č. 2 žili Peterkové (Vojtěch × Marie Fejtlová, syn František) – možná rodina Anny (K, neověřeno).",
+        "V Nákří 6 sekce Dívčice 1859–1869 nemá žádné další dítě kromě dvojčat Jana a Magdaleny (1860)."
       ],
       sources: [
         "SOA Třeboň, Nákří 6 N (id 5767), sken 3 – https://digi.ceskearchivy.cz/DA?menu=3&id=5767&page=3",
@@ -4920,7 +4921,7 @@ window.RODOKMEN = {
       cert: "M",
       b: {"date":"cca 1840","year":1840,"approx":true,"place":"Křesín (?)"},
       notes: [
-        "Rodiče Anny v křtu syna Jana 1860 (čteno zčásti, K): „Anna dc. Jana Peterky, rolníka (?) z Křesína (?), a Anny Kostkovy (?) z … (?)“.",
+        "Rodiče podle křtu syna Jana 1860 (D): „Anna dc. Jana Peterky, rolníka (?) … z Křesína, a Anny Ko… (Kostkovy?) z Hol… (Holašovic / Holubova?)“.",
         "„matky Anny rozené Peterka z Křesína“ (1889, 1894, 1891); místo „Křesín“ čteno s otazníkem.",
         "Sňatek syna Jana 1894: „matky Anny rozené Peterka ze dvora Křesín (?), Hluboka“ – Anna pocházela z (panského) dvora u Hluboké."
       ],
