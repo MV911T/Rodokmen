@@ -5908,7 +5908,7 @@ window.RODOKMEN.events = [
   {"y":1993,"t":"Vzniká Česká republika","s":"Vznik ČR"}
 ];
 
-window.RODOKMEN_BUILD='9. 10. 2026 20:45';
+window.RODOKMEN_BUILD='9. 10. 2026 20:50';
 
 </script>
 <script>
@@ -6022,8 +6022,13 @@ const nM = D.people.filter(p=>p.cert==='M').length;
 // everything below is derived from data.js on every load – no hand-maintained summary that could go stale
 const documented = D.people.filter(p=>p.cert==='M'||p.cert==='D');
 const oldest = documented.reduce((a,p)=>p.b.year<a.b.year?p:a);
+// generations back from the root: longest father/mother chain (root = 0)
+const genDepth = (()=>{ const byId=Object.fromEntries(D.people.map(p=>[p.id,p])), memo={};
+  const g=id=>{ if(!id||!byId[id]) return -1; if(id in memo) return memo[id]; memo[id]=0;
+    return memo[id]=1+Math.max(g(byId[id].father),g(byId[id].mother)); };
+  return g(D.root); })();
 const meta = document.getElementById('meta');
-meta.innerHTML = `${D.people.length} osob · ${nM} doloženo přímo v matrikách · nejstarší doložený předek <button type="button" class="plink" id="oldest">${oldest.name}</button> (~${oldest.b.year}) · aktualizováno ${window.RODOKMEN_BUILD||D.updated}`;
+meta.innerHTML = `${D.people.length} osob · <b title="Nejdelší doložená řada předků od Matěje Veselého">${genDepth} generací</b> zpět · ${nM} doloženo přímo v matrikách · nejstarší doložený předek <button type="button" class="plink" id="oldest">${oldest.name}</button> (~${oldest.b.year}) · aktualizováno ${window.RODOKMEN_BUILD||D.updated}`;
 document.getElementById('oldest').addEventListener('click',()=>{ applyScale(Math.max(vs,0.6)); focusCard(oldest.id); });
 window.RV_focus = id => { applyScale(Math.max(vs,0.6)); focusCard(id); };
 
