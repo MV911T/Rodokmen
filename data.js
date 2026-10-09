@@ -98,7 +98,7 @@ window.RODOKMEN = {
         "Sčítání 2. 12. 1930: podnájemník v domě Elsy Hegenbart, Hauptgasse (Hlavná ul.) č. 7; svobodný; národnost česká; bez vyznání; do Kežmarku přišel 19. 11. 1922 z Plzně; rodiště čteno „Plavnice / České Budějovice / Čechy“, domovská obec „Vodňany / České Budějovice“.",
         "Karpathen-Post: 27. 10. 1934 náhradník kandidátky ČSSD („Karol Vesely, Beamter“), 16. 2. 1935 složil slib jako městský zastupitel, člen finanční komise; 1936 bydliště Kežmarok, Sihoť (Insel) 15; 1937 jednatel místní skupiny KČST (Klub čs. turistů).",
         "Prověřeno dříve negativně (křest 4. 10. 1904): farnosti Vodňany, Křtěnov, Kamenný Újezd (Plavnice), Radčice, Křtětice, České Budějovice sv. Mikuláš, Plánice, Blovice, Planá – hledalo se podle údaje „Plavnice“ ze sčítání a datum 4. 10. 1904; datum 6. 12. 1904 z oddacího zápisu 1957 v Kamenném Újezdu (Plavnice) zatím ověřeno není. Další krok: křest ve farnosti Olešník (Volešník), SOA Třeboň, případně matriční úřad, pokud kniha ještě nebyla předána do archivu. Prověřeno 8. 10. (VES-ZB1): Zbudov 1904 (Nákří 6, id 5767, sk. 518) a Dříteň 1904 (Bílá Hůrka 5A, sk. 107–111) – nic. Olešník patří do farnosti Zahájí, jejíž kniha N 1903–1944 (id 9140) ani index N 1899–1949 (id 9144) NEJSOU digitalizované – Karlův křest je nejspíš tam (hledat i pod příjmením Koželuh, pokud by se narodil před sňatkem rodičů).",
-        "Kandidát (K): Karel Veselý, předseda ONV Uherský Brod 1945 – rodina se kolem 1940 přestěhovala do Uherského Brodu, což tuto stopu podporuje; neověřeno.",
+        "Kandidát (K): Karel Veselý, předseda ONV Uherský Brod – doložen v tisku 1946: Naše pravda 9. 7. 1946 („Předsedou uherskobrodské odbočky [Svazu národní revoluce] byl zvolen br. Karel Veselý, předseda ONV“; Kramerius NKP uuid:c7667410-116c-11e7-ac02-5ef3fc9ae867) a Čin (list ČSSD) 21. 11. a 19. 12. 1946 („s. Karel Veselý … předseda ONV v Uh. [Brodě]“). Sedí s přesunem rodiny do Uherského Brodu (~1940) a s Karlovou činností v ČSSD v Kežmarku – totožnost ale NEOVĚŘENA (tisk neuvádí věk ani původ). Ověřit: matrika zemřelých / pozůstalost (SOkA Uherské Hradiště), kronika Uherského Brodu.",
         "Prověřeno 9. 10. (VES-ZB9): Kamenný Újezd / Plavnice celý rok 1904 (X/1903–XII/1904) – Karel NENÍ."
       ],
       sources: [
@@ -112,7 +112,8 @@ window.RODOKMEN = {
         "SOA Třeboň, Sbírka matrik, Bílá Hůrka 5A (N Dříteň 1876–1912), id 9211, sken 54, fol. 50 – https://digi.ceskearchivy.cz/DA?menu=3&id=9211&page=54",
         "SOA Třeboň, Bílá Hůrka 5A, id 9211, sken 69 – https://digi.ceskearchivy.cz/DA?menu=3&id=9211&page=69",
         "SOA Třeboň, České Budějovice sv. Mikuláš O 68 (1887–1895), id 2778, sken 236, fol. 234 – https://digi.ceskearchivy.cz/DA?menu=3&id=2778&page=236",
-        "SOA Třeboň, Bílá Hůrka 7B (O Dříteň 1884–1949), id 9222, sken 15, 3. zápis – https://digi.ceskearchivy.cz/DA?menu=3&id=9222&page=15"
+        "SOA Třeboň, Bílá Hůrka 7B (O Dříteň 1884–1949), id 9222, sken 15, 3. zápis – https://digi.ceskearchivy.cz/DA?menu=3&id=9222&page=15",
+        "Naše pravda 9. 7. 1946 (Kramerius NKP, uuid:c7667410-116c-11e7-ac02-5ef3fc9ae867); Čin 21. 11. 1946 (uuid:d0ac2c70-a209-11e8-8b41-005056822549) a 19. 12. 1946 (uuid:db821c30-a20a-11e8-8b41-005056822549)"
       ],
       scans: [
         {"f":"img/1957_snatek_svaton_vesely_marta_woronova_1.jpg","t":"Sňatek 28. 9. 1957, Slezská Ostrava – snoubenci a jejich rodiče (poř. č. 40)"},
