@@ -58,6 +58,12 @@ for (const p of P) {
   if (my && by(p.b) && my - by(p.b) < 14) (p.b.approx ? warn : err)(p, `married ${my} at age ${my - by(p.b)}`);
   if (my && by(p.d) && p.d && !p.d.approx && my > by(p.d)) err(p, `married ${my} after death ${by(p.d)}`);
 
+  // siblings: free-text strings or {name, b, d, note} objects
+  if (p.siblings !== undefined) {
+    if (!Array.isArray(p.siblings)) err(p, 'siblings must be an array');
+    else p.siblings.forEach(s => { if (!(typeof s === 'string' ? s.trim() : s && typeof s.name === 'string' && s.name.trim())) err(p, 'sibling entry needs text or a name'); });
+  }
+  if ((p.notes || []).some(n => /^(Sourozen|Sestra|Bratr)/.test(n))) warn(p, 'sibling info belongs in the siblings field, not in notes');
   // 5. notes that contradict the structured fields (stale text)
   const notes = p.notes || [];
   const deathWords = /\b(zemřel|zemřela|†)/i;
