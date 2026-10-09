@@ -5632,17 +5632,22 @@ window.RODOKMEN = {
       name: "Tomáš Veselý",
       line: "vesely",
       cert: "M",
-      b: {"date":"cca 1785","year":1785,"approx":true,"place":"?"},
+      b: {"date":"cca 1768","year":1768,"approx":true,"place":"Hluboká nad Vltavou (?)"},
+      father: "pavelVes",
       occ: "šafář na knížecím (schwarzenberském) dvoře Býšov (Bejšov) č. 14, Knín – fara Křtěnov",
+      marriage: "28. 4. 1795, Knín (fara Křtěnov) – s Marianou (Marií) Bočkovou",
       notes: [
+        "Sňatek 28. 4. 1795 Knín č. 5 (M): „Tomáš, wlastnj syn † Pawla Weselýho haušlerníka z Hluboký pocházejícý“, 27 let, svobodný – nevěsta „Mariana z Lyttoradlic … N. 5, Jozefa Bočka a Kateřiny … dcera“, 20 let; svědci Vojtěch Klesse (?) a František Kyzanka (?), sedláci z Litoradlic.",
         "Otec Matěje Veselého (sňatek syna 1851, M): „Tomáš Weselí, knížecí šafář v Zbeyšově (?)“; manželka Marie Bočková z Litoradlic č. 5. Místo služby nejisté (Zbudov?).",
         "Křest syna Matěje 4. 2. 1816, Býšov č. 14 (M). Podle rejstříku N Křtěnov (D) další děti v Knín č. 14: Rozálie 22. 8. 1807, Marie 23. 2. 1810, snad Václav VIII/1810 – rodina na Býšově nejpozději od 1807. Pozor: Tomáš Veselý z Temelínce č. 12 je jiná rodina (děti 1807–1815)."
       ],
       sources: [
+        "SOA Třeboň, Křtěnov 7 (Knín) O, id 5022, sken 74, s. 195 – https://digi.ceskearchivy.cz/DA?menu=3&id=5022&page=74; rejstřík O Křtěnov 14 (id 5029) sken 49",
         "SOA Třeboň, Hluboká nad Vltavou 11 O (id 3564), sken 29 – https://digi.ceskearchivy.cz/DA?menu=3&id=3564&page=29",
         "SOA Třeboň, Křtěnov 7 (Knín) N 1787–1847 (id 5022), sken 23, s. 60 – https://digi.ceskearchivy.cz/DA?menu=3&id=5022&page=23; rejstřík N Křtěnov 13 (id 5028), sken 113"
       ],
       scans: [
+        {"f":"img/1795_snatek_tomas_vesely_marie_bockova.jpg","t":"Sňatek 28. 4. 1795, Knín č. 5 (fara Křtěnov) – Tomáš, syn † Pavla Veselého, domkáře z Hluboké × Mariana, dcera Josefa Bočka a Kateřiny (Křtěnov 7, id 5022, sken 74)"},
         {"f":"img/1816_krest_matej_vesely_bysov.jpg","t":"Křest 4. 2. 1816, Býšov č. 14 (Knín, fara Křtěnov) – Matěj, syn Tomáše Veselého, šafáře, a Marie, dcery Josefa (?) Bočka (recte Jíry), sedláka z Litoradlic č. 5 (Křtěnov 7, id 5022, sken 23)"}
       ],
       siblings: undefined
@@ -5653,18 +5658,24 @@ window.RODOKMEN = {
       maiden: "Bočková",
       line: "vesely",
       cert: "M",
-      b: {"date":"cca 1790","year":1790,"approx":true,"place":"Litoradlice č. 5"},
+      b: {"date":"27. 11. 1775 (křest 28. 11.)","year":1775,"place":"Litoradlice č. 18 (panství Hluboká – „Dominii Frambergensis“), fara Bílá Hůrka"},
       father: "josefBoc",
       mother: "katerinaBoc",
       notes: [
+        "Křest 28. 11. 1775 (M): „27 | 28 | R. D. Joannes Korbis cooperator | Mariana subditorum parentum | Josephus Boczek et ejus uxor Catharina nata Bendiana | [kmotra] Rosina Hudaykiana ex Lito-Radlic | Laurentius Nowak et ejus uxor Catharina | cath. | Lito-Radlicz Dominii Frambergensis | 18“; přípis „Křest. list vydán 25/11 1845“.",
+        "Sňatek 28. 4. 1795 Knín (M): 20 let, z Litoradlic č. 5, dcera Josefa Bočka a Kateřiny.",
         "Matka Matěje Veselého (sňatek syna 1851, M): „Marie Bočková z Litoradlic čís. 5“.",
         "Křest syna Matěje 1816 (M): matka Marie, dcera „Jozefa (?) Bočka, recte Jíry, sedláka z Litoradlic N. 5, a Kateřiny“ – „recte Jíra“ = správné (úřední) příjmení usedlosti byl Jíra; v sňatku syna 1851 „Marie Bočková“."
       ],
       sources: [
+        "SOA Třeboň, Bílá Hůrka 3 N 1767–1796 (id 2211), sken 64 – https://digi.ceskearchivy.cz/DA?menu=3&id=2211&page=64",
+        "SOA Třeboň, Křtěnov 7 (Knín) O, id 5022, sken 74, s. 195 – https://digi.ceskearchivy.cz/DA?menu=3&id=5022&page=74; rejstřík O Křtěnov 14 (id 5029) sken 49",
         "SOA Třeboň, Hluboká nad Vltavou 11 O (id 3564), sken 29 – https://digi.ceskearchivy.cz/DA?menu=3&id=3564&page=29",
         "SOA Třeboň, Křtěnov 7 (Knín) N 1787–1847 (id 5022), sken 23, s. 60 – https://digi.ceskearchivy.cz/DA?menu=3&id=5022&page=23; rejstřík N Křtěnov 13 (id 5028), sken 113"
       ],
       scans: [
+        {"f":"img/1775_krest_marie_bockova.jpg","t":"Křest 28. 11. 1775, Litoradlice č. 18 – Mariana, dcera Josefa Bočka a Kateřiny roz. Bendové (Bílá Hůrka 3, id 2211, sken 64)"},
+        {"f":"img/1795_snatek_tomas_vesely_marie_bockova.jpg","t":"Sňatek 28. 4. 1795, Knín č. 5 (fara Křtěnov) – Tomáš, syn † Pavla Veselého, domkáře z Hluboké × Mariana, dcera Josefa Bočka a Kateřiny (Křtěnov 7, id 5022, sken 74)"},
         {"f":"img/1816_krest_matej_vesely_bysov.jpg","t":"Křest 4. 2. 1816, Býšov č. 14 (Knín, fara Křtěnov) – Matěj, syn Tomáše Veselého, šafáře, a Marie, dcery Josefa (?) Bočka (recte Jíry), sedláka z Litoradlic č. 5 (Křtěnov 7, id 5022, sken 23)"},
         {"f":"img/1851_snatek_matej_vesely_anna_peterkova.jpg","t":"Sňatek 13. 10. 1851, Hluboká – Matěj Veselý, luční hajný v Dívčicích č. 1, syn Tomáše a Marie Bočkové × Anna Peterková, dcera Jana Peterky a Mariany Ployharové (Hluboká 11 O, id 3564, sken 29)"}
       ]
@@ -5781,34 +5792,41 @@ window.RODOKMEN = {
     },
     {
       id: "josefBoc",
-      name: "Josef (?) Boček (recte Jíra)",
+      name: "Josef Boček (Jíra)",
       line: "vesely",
       cert: "M",
       b: {"date":"cca 1755","year":1755,"approx":true,"place":"Litoradlice (?)"},
       occ: "sedlák, Litoradlice č. 5",
       notes: [
+        "Křest dcery Mariany 1775 (M): „Josephus Boczek et ejus uxor Catharina nata Bendiana“, Litoradlice č. 18; kolem 1774–75 i syn Jan („Josephus Boczek inquilinus“ – tehdy podruh). Křestní jméno Josef tím potvrzeno.",
         "Děd Matěje Veselého (křest 1816, M): „Jozef (?) Boček recte Jíra, sedlák z Littoradlic N. 5“; křestní jméno čteno nejistě. Manželka Kateřina. Pravděpodobně i dcera Veronika (∞ 1806 Litoradlice č. 17 – D)."
       ],
       sources: [
+        "SOA Třeboň, Bílá Hůrka 3 N 1767–1796 (id 2211), sken 64 – https://digi.ceskearchivy.cz/DA?menu=3&id=2211&page=64",
         "SOA Třeboň, Křtěnov 7 (Knín) N 1787–1847 (id 5022), sken 23, s. 60 – https://digi.ceskearchivy.cz/DA?menu=3&id=5022&page=23; rejstřík N Křtěnov 13 (id 5028), sken 113"
       ],
       scans: [
+        {"f":"img/1775_krest_marie_bockova.jpg","t":"Křest 28. 11. 1775, Litoradlice č. 18 – Mariana, dcera Josefa Bočka a Kateřiny roz. Bendové (Bílá Hůrka 3, id 2211, sken 64)"},
         {"f":"img/1816_krest_matej_vesely_bysov.jpg","t":"Křest 4. 2. 1816, Býšov č. 14 (Knín, fara Křtěnov) – Matěj, syn Tomáše Veselého, šafáře, a Marie, dcery Josefa (?) Bočka (recte Jíry), sedláka z Litoradlic č. 5 (Křtěnov 7, id 5022, sken 23)"}
       ]
     },
     {
       id: "katerinaBoc",
       name: "Kateřina Bočková",
+      maiden: "Bendová (Bendiana)",
       line: "vesely",
       cert: "M",
       b: {"date":"cca 1760","year":1760,"approx":true,"place":"?"},
       notes: [
+        "Rodné příjmení Bendová – křest dcery Mariany 1775: „Catharina nata Bendiana“ (M).",
         "Babička Matěje Veselého (křest 1816, M): „Kateřina geho manželka“ – manželka Josefa (?) Bočka (Jíry), sedláka v Litoradlicích č. 5; rodné příjmení neuvedeno."
       ],
       sources: [
+        "SOA Třeboň, Bílá Hůrka 3 N 1767–1796 (id 2211), sken 64 – https://digi.ceskearchivy.cz/DA?menu=3&id=2211&page=64",
         "SOA Třeboň, Křtěnov 7 (Knín) N 1787–1847 (id 5022), sken 23, s. 60 – https://digi.ceskearchivy.cz/DA?menu=3&id=5022&page=23; rejstřík N Křtěnov 13 (id 5028), sken 113"
       ],
       scans: [
+        {"f":"img/1775_krest_marie_bockova.jpg","t":"Křest 28. 11. 1775, Litoradlice č. 18 – Mariana, dcera Josefa Bočka a Kateřiny roz. Bendové (Bílá Hůrka 3, id 2211, sken 64)"},
         {"f":"img/1816_krest_matej_vesely_bysov.jpg","t":"Křest 4. 2. 1816, Býšov č. 14 (Knín, fara Křtěnov) – Matěj, syn Tomáše Veselého, šafáře, a Marie, dcery Josefa (?) Bočka (recte Jíry), sedláka z Litoradlic č. 5 (Křtěnov 7, id 5022, sken 23)"}
       ]
     },
@@ -5843,6 +5861,24 @@ window.RODOKMEN = {
       ],
       scans: [
         {"f":"img/1761_snatek_jan_postulka_rosina_novak.jpg","t":"Sňatek 2. 6. 1761, Dolní Benešov – Jan, syn Tomáše Postulky × Rosina, dcera † Jiřího Nováka (ZAO, O H IV 4, sken 73)"}
+      ]
+    },
+    {
+      id: "pavelVes",
+      name: "Pavel Veselý",
+      line: "vesely",
+      cert: "M",
+      b: {"date":"cca 1740","year":1740,"approx":true,"place":"Hluboká nad Vltavou (?)"},
+      d: {"date":"před 1795","year":1794,"approx":true},
+      occ: "domkář (haušlerník), Hluboká (?)",
+      notes: [
+        "Otec Tomáše Veselého – sňatek syna 28. 4. 1795 (M): „Tomáš, wlastnj syn † Pawla Weselýho haušlerníka z Hluboký pocházejícý“ – v roce 1795 už nežil. Možný další syn Matěj (sňatek 7. 10. 1794 Knín č. 3 – K)."
+      ],
+      sources: [
+        "SOA Třeboň, Křtěnov 7 (Knín) O, id 5022, sken 74, s. 195 – https://digi.ceskearchivy.cz/DA?menu=3&id=5022&page=74; rejstřík O Křtěnov 14 (id 5029) sken 49"
+      ],
+      scans: [
+        {"f":"img/1795_snatek_tomas_vesely_marie_bockova.jpg","t":"Sňatek 28. 4. 1795, Knín č. 5 (fara Křtěnov) – Tomáš, syn † Pavla Veselého, domkáře z Hluboké × Mariana, dcera Josefa Bočka a Kateřiny (Křtěnov 7, id 5022, sken 74)"}
       ]
     }
   ]
