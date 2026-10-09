@@ -197,6 +197,7 @@ dl.facts dd{margin:0;min-width:0}
 .meta .plink{font:inherit;color:var(--link);background:none;border:0;padding:0;cursor:pointer;text-decoration:underline}
 @media (max-width:520px){ header h1{font-size:1.25rem} .certs{margin-left:0} dl.facts{grid-template-columns:1fr} }
 @media (prefers-reduced-motion:reduce){ *{transition:none!important;scroll-behavior:auto!important} }
+.gen-note{opacity:.75;font-size:.92em}
 </style>
 </head>
 <body>
@@ -5908,7 +5909,7 @@ window.RODOKMEN.events = [
   {"y":1993,"t":"Vzniká Česká republika","s":"Vznik ČR"}
 ];
 
-window.RODOKMEN_BUILD='9. 10. 2026 20:53';
+window.RODOKMEN_BUILD='9. 10. 2026 20:54';
 
 </script>
 <script>
@@ -6032,7 +6033,7 @@ const genOf = (()=>{ const byId=Object.fromEntries(D.people.map(p=>[p.id,p])), g
   while(q.length){ const id=q.shift(); for(const x of [byId[id].father,byId[id].mother]) if(x&&byId[x]&&!(x in g)){ g[x]=g[id]+1; q.push(x); } }
   return g; })();
 const meta = document.getElementById('meta');
-meta.innerHTML = `${D.people.length} osob · <b title="Nejdelší doložená řada předků od Matěje Veselého">${genDepth} generací</b> zpět · ${nM} doloženo přímo v matrikách · nejstarší doložený předek <button type="button" class="plink" id="oldest">${oldest.name}</button> (~${oldest.b.year}) · aktualizováno ${window.RODOKMEN_BUILD||D.updated}`;
+meta.innerHTML = `${D.people.length} osob · <b>${genDepth} generací zpět</b> <span class="gen-note">(počítáno od Matěje: rodiče = 1. generace, prarodiče = 2. …)</span> · ${nM} doloženo přímo v matrikách · nejstarší doložený předek <button type="button" class="plink" id="oldest">${oldest.name}</button> (~${oldest.b.year}) · aktualizováno ${window.RODOKMEN_BUILD||D.updated}`;
 document.getElementById('oldest').addEventListener('click',()=>{ applyScale(Math.max(vs,0.6)); focusCard(oldest.id); });
 window.RV_focus = id => { applyScale(Math.max(vs,0.6)); focusCard(id); };
 
