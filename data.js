@@ -11,7 +11,6 @@ window.RODOKMEN = {
     "matusu": "Matůšů",
     "struz": "Struž",
     "jirik": "Jiřík",
-    "opolony": "Opoloný",
     "plachy": "Plachý"
   },
   people: [
@@ -3805,7 +3804,7 @@ window.RODOKMEN = {
       id: "marieO",
       name: "Marie Jiříková",
       maiden: "Opolony (Opoloná)",
-      line: "opolony",
+      line: "jirik",
       cert: "M",
       b: {"date":"30. 6. 1885","year":1885,"place":"Chuchelná"},
       father: "antonO",
@@ -4145,7 +4144,7 @@ window.RODOKMEN = {
     {
       id: "antonO",
       name: "Anton Opolony",
-      line: "opolony",
+      line: "jirik",
       cert: "M",
       b: {"date":"15. 1. 1841","year":1841,"place":"Ehrenfeld (dnes Sławienko / Kołomyja, gm. Rudnik), farnost Grzędzin, Horní Slezsko"},
       d: {"date":"9. 2. 1923","year":1923,"place":"Chuchelná č. 70"},
@@ -4177,7 +4176,7 @@ window.RODOKMEN = {
     {
       id: "josefOp",
       name: "Joseph Opolony",
-      line: "opolony",
+      line: "jirik",
       cert: "M",
       b: {"date":"cca 1810","year":1810,"approx":true,"place":"Rogau (Rogów) – podle OFB"},
       occ: "svobodný zahradník (Freigärtner) v Ehrenfeldu",
@@ -4206,7 +4205,7 @@ window.RODOKMEN = {
       id: "marianaHa",
       name: "Mariana Opolony",
       maiden: "Hawel (Havel)",
-      line: "opolony",
+      line: "jirik",
       cert: "M",
       b: {"date":"cca 1811","year":1811,"approx":true,"place":"Ehrenfeld (?)"},
       d: {"date":"12. 11. 1848","year":1848,"place":"Ehrenfeld"},
@@ -4234,7 +4233,7 @@ window.RODOKMEN = {
     {
       id: "josefHaw",
       name: "Joseph Hawel",
-      line: "opolony",
+      line: "jirik",
       cert: "D",
       b: {"date":"cca 1759","year":1759,"approx":true},
       d: {"date":"24. 1. 1836","year":1836,"place":"Ehrenfeld"},
@@ -4256,7 +4255,7 @@ window.RODOKMEN = {
       id: "mariannaCz",
       name: "Marianna Hawel",
       maiden: "Czerny",
-      line: "opolony",
+      line: "jirik",
       cert: "D",
       b: {"date":"cca 1775","year":1775,"approx":true},
       notes: [
@@ -4273,7 +4272,7 @@ window.RODOKMEN = {
       id: "rosalie",
       name: "Rosalie Opolony",
       maiden: "Czienskowski (Czienskowsky)",
-      line: "opolony",
+      line: "jirik",
       cert: "M",
       b: {"date":"6. 6. 1846","year":1846,"place":"Schonowitz (dnes Szonowice, gm. Rudnik), farnost Grzędzin"},
       d: {"date":"21. 7. 1913","year":1913,"place":"Chuchelná"},
@@ -4301,7 +4300,7 @@ window.RODOKMEN = {
     {
       id: "janCz",
       name: "Johann Czienskowski",
-      line: "opolony",
+      line: "jirik",
       cert: "M",
       b: {"date":"9. 3. 1817","year":1817,"place":"Schonowitz (Szonowice)"},
       d: {"date":"11. 6. 1876 (podle OFB)","year":1876,"place":"Schonowitz"},
@@ -4335,7 +4334,7 @@ window.RODOKMEN = {
     {
       id: "thomasCz",
       name: "Thomas Czenskowski (Czienskowski)",
-      line: "opolony",
+      line: "jirik",
       cert: "M",
       b: {"date":"cca 1795","year":1795,"approx":true,"place":"Schonowitz (?)"},
       d: {"date":"8. 4. 1860","year":1860,"place":"Schonowitz"},
@@ -4363,7 +4362,7 @@ window.RODOKMEN = {
     {
       id: "lorenzCz",
       name: "Lorenz Czenskowski",
-      line: "opolony",
+      line: "jirik",
       cert: "D",
       b: {"date":"cca 1748","year":1748,"approx":true},
       d: {"date":"12. 3. 1823","year":1823,"place":"Schonowitz"},
@@ -4385,7 +4384,7 @@ window.RODOKMEN = {
       id: "apolloniaRy",
       name: "Apollonia Czenskowski",
       maiden: "Ryczek (podle OFB)",
-      line: "opolony",
+      line: "jirik",
       cert: "D",
       b: {"date":"cca 1754","year":1754,"approx":true},
       d: {"date":"23. 12. 1824","year":1824,"place":"Ponientzütz"},
@@ -4400,7 +4399,7 @@ window.RODOKMEN = {
       id: "franziskaKow",
       name: "Franziska Czenskowski",
       maiden: "Kowaczek",
-      line: "opolony",
+      line: "jirik",
       cert: "M",
       b: {"date":"cca 1790","year":1790,"approx":true},
       d: {"date":"16. 9. 1859 (podle OFB)","year":1859,"place":"Schonowitz"},
@@ -4418,7 +4417,7 @@ window.RODOKMEN = {
       id: "luziaB",
       name: "Lucie (Luzia) Czienskowski",
       maiden: "Blana (Blania)",
-      line: "opolony",
+      line: "jirik",
       cert: "M",
       b: {"date":"cca 1820","year":1820,"approx":true,"place":"Czienskowitz (?)"},
       d: {"date":"10. 1. 1866","year":1866,"place":"Schonowitz"},
@@ -4452,7 +4451,7 @@ window.RODOKMEN = {
     {
       id: "thomasBl",
       name: "Thomas Elias Blania",
-      line: "opolony",
+      line: "jirik",
       cert: "M",
       b: {"date":"4. 7. 1782 (podle OFB)","year":1782,"place":"Rudnik"},
       d: {"date":"30. 9. 1859 (podle OFB)","year":1859},
@@ -4479,7 +4478,7 @@ window.RODOKMEN = {
     {
       id: "johannesBl",
       name: "Johannes Blania",
-      line: "opolony",
+      line: "jirik",
       cert: "M",
       b: {"date":"cca 1755 (podle OFB, Sławików)","year":1755,"approx":true},
       d: {"date":"18. 5. 1814","year":1814},
@@ -4502,7 +4501,7 @@ window.RODOKMEN = {
       id: "rosaliaKal",
       name: "Rosalia Josepha Blania",
       maiden: "Kaluza",
-      line: "opolony",
+      line: "jirik",
       cert: "D",
       b: {"date":"2. 9. 1787 (podle OFB)","year":1787,"place":"Rudnik"},
       d: {"date":"před 1827","year":1826,"approx":true},
@@ -4526,7 +4525,7 @@ window.RODOKMEN = {
     {
       id: "andreasKal",
       name: "Andreas Kaluza",
-      line: "opolony",
+      line: "jirik",
       cert: "M",
       b: {"date":"cca 1737 (podle OFB)","year":1737,"approx":true},
       d: {"date":"30. 8. 1805","year":1805,"place":"Silberkopf (Strzybnik)"},
@@ -5295,7 +5294,7 @@ window.RODOKMEN = {
       id: "johannaZi",
       name: "Johanna Nepomucena Kaluza",
       maiden: "Zima (Zimni)",
-      line: "opolony",
+      line: "jirik",
       cert: "D",
       b: {"date":"28. 4. 1749 (podle OFB)","year":1749,"place":"Rudnik"},
       d: {"date":"28. 4. 1806","year":1806,"place":"Silberkopf (Strzybnik)"},
@@ -5316,7 +5315,7 @@ window.RODOKMEN = {
     {
       id: "bartholomausZi",
       name: "Bartholomäus Zima",
-      line: "opolony",
+      line: "jirik",
       cert: "D",
       b: {"date":"cca 1710","year":1710,"approx":true,"place":"Rudnik (?)"},
       d: {"date":"15. 10. 1768","year":1768,"place":"Rudnik (?)"},
@@ -5333,7 +5332,7 @@ window.RODOKMEN = {
       id: "annaMu",
       name: "Anna Zima",
       maiden: "Mussiol",
-      line: "opolony",
+      line: "jirik",
       cert: "D",
       b: {"date":"cca 1722","year":1722,"approx":true,"place":"Rudnik (?)"},
       d: {"date":"20. 8. 1792","year":1792},
@@ -5348,7 +5347,7 @@ window.RODOKMEN = {
     {
       id: "thomasMu",
       name: "Thomas Mussiol",
-      line: "opolony",
+      line: "jirik",
       cert: "D",
       b: {"date":"cca 1690","year":1690,"approx":true,"place":"Rudnik (?)"},
       notes: [
@@ -5361,7 +5360,7 @@ window.RODOKMEN = {
     {
       id: "wenzelKal",
       name: "Wenceslaus (Wenzel) Kaluza",
-      line: "opolony",
+      line: "jirik",
       cert: "D",
       b: {"date":"cca 1702","year":1702,"approx":true,"place":"Rudnik (?)"},
       d: {"date":"20. 4. 1751","year":1751,"place":"Rudnik"},
@@ -5377,7 +5376,7 @@ window.RODOKMEN = {
     {
       id: "annaKal",
       name: "Anna Kaluza",
-      line: "opolony",
+      line: "jirik",
       cert: "D",
       b: {"date":"cca 1705","year":1705,"approx":true},
       notes: [
@@ -5391,7 +5390,7 @@ window.RODOKMEN = {
       id: "magdalenaBa",
       name: "Magdalena Blania",
       maiden: "Banas",
-      line: "opolony",
+      line: "jirik",
       cert: "D",
       b: {"date":"4. 5. 1756 (podle OFB)","year":1756},
       d: {"date":"4. 8. 1821","year":1821},
@@ -5406,7 +5405,7 @@ window.RODOKMEN = {
     {
       id: "maximilianBa",
       name: "Maximilian Banas",
-      line: "opolony",
+      line: "jirik",
       cert: "D",
       b: {"date":"cca 1693","year":1693,"approx":true},
       d: {"date":"1789","year":1789},
@@ -5420,7 +5419,7 @@ window.RODOKMEN = {
     {
       id: "casparBl",
       name: "Caspar Blana (Blania)",
-      line: "opolony",
+      line: "jirik",
       cert: "D",
       b: {"date":"cca 1725","year":1725,"approx":true,"place":"Sławików (?)"},
       notes: [
@@ -5516,12 +5515,12 @@ window.RODOKMEN.places = [
   {"name":"Nedašov","dy":8,"lat":49.105,"lon":18.06,"line":"matusu","note":"Rod Matůšů, Novák, Holba"},
   {"name":"Chuchelná","dy":-24,"lat":50,"lon":18.03,"line":"struz","note":"Rody Strusch, Opolony, Jiřík"},
   {"name":"Bolatice","anchor":"start","dy":2,"lat":49.95,"lon":18.08,"line":"jirik","note":"Rudolf Irzik *1882"},
-  {"name":"Ehrenfeld (Sławienko)","lat":50.17,"lon":18.16,"line":"opolony","note":"Anton Opolony *1841","small":true,"dy":4},
-  {"name":"Schonowitz (Szonowice)","lat":50.13,"lon":18.11,"line":"opolony","note":"Rosalie Czienskowski *1846","small":true,"anchor":"end","dy":12}
+  {"name":"Ehrenfeld (Sławienko)","lat":50.17,"lon":18.16,"line":"jirik","note":"Anton Opolony *1841","small":true,"dy":4},
+  {"name":"Schonowitz (Szonowice)","lat":50.13,"lon":18.11,"line":"jirik","note":"Rosalie Czienskowski *1846","small":true,"anchor":"end","dy":12}
 ];
 window.RODOKMEN.story = [
   {"line":"pacik","title":"Valašsko pod Bílými Karpaty – Pacíci a Matůšů","text":["Nedašov a Nedašova Lhota leží na moravsko-slovenském pomezí pod Bílými Karpaty a patřily k panství Brumov. Mlynář Tobiáš Pacík (*cca 1712, †1779) žil v Nedašově Lhotě v domě č. 5, kde rod přebýval přes 150 let. Matriky farnosti Brumov začínají rokem 1688 – pro starší dobu zbývají gruntovní knihy a urbáře brumovského panství.","V matrikách 18. století se stejná rodina psala jednou „Pacík“, jindy „Fojtík“ – příjmení se v té době teprve ustalovala. Zápisy jsou latinsky, v 19. století německy a od 70. let česky.","Předkové byli domkáři, podsedníci a tkalci – drobní venkované bez větší půdy. Dědeček Rudolf (*1936) odešel jako mnoho Valachů za prací do průmyslové Ostravy."],"lines":["pacik","matusu"]},
-  {"line":"struz","title":"Hlučínsko – Struž, Jiřík a Opoloný","text":["Chuchelná a Bolatice leží na Hlučínsku. Po slezských válkách v roce 1742 připadlo Prusku, takže zdejší lidé byli 178 let pruskými (později německými) občany, i když mluvili moravským nářečím „po našymu“.","Proto jsou jejich matriky od roku 1874 německé civilní (Standesamt Kuchelna) a jména se psala německy: Ernst Strusch, Rudolf Irzik, Marie Opolony.","V roce 1920 bylo Hlučínsko připojeno k Československu, v roce 1938 k Německu a v roce 1945 znovu k ČSR. Muži jako Arnošt Struž proto za 2. světové války sloužili v německé armádě a po válce byli souzeni lidovými soudy."],"lines":["struz","jirik","opolony"]},
+  {"line":"struz","title":"Hlučínsko – Struž, Jiřík a Opoloný","text":["Chuchelná a Bolatice leží na Hlučínsku. Po slezských válkách v roce 1742 připadlo Prusku, takže zdejší lidé byli 178 let pruskými (později německými) občany, i když mluvili moravským nářečím „po našymu“.","Proto jsou jejich matriky od roku 1874 německé civilní (Standesamt Kuchelna) a jména se psala německy: Ernst Strusch, Rudolf Irzik, Marie Opolony.","V roce 1920 bylo Hlučínsko připojeno k Československu, v roce 1938 k Německu a v roce 1945 znovu k ČSR. Muži jako Arnošt Struž proto za 2. světové války sloužili v německé armádě a po válce byli souzeni lidovými soudy."],"lines":["struz","jirik"]},
   {"line":"woron","title":"Halič – Woroň, Włudyka, Chmielek a Dydowicz","text":["Halič (polsky Galicja) byla v letech 1772–1918 korunní zemí Rakouska-Uherska – zhruba dnešní jižní Polsko a západní Ukrajina. Na přelomu 19. a 20. století patřila k nejchudším oblastem Evropy („galicyjska bieda“).","Tisíce lidí proto odcházely za prací do ostravských dolů – byly ve stejné monarchii, takže se dalo volně stěhovat. Přesně tak přišli Ondřej Woroń z Lednice u Wieliczky, Markéta Włudyka z Rajbrotu (rod Włudyků tam žil už v 18. století), Stanislav Chmielek ze Zagórzan a Helena Dydowicz od Tarnova.","Usadili se v hornické Polské Ostravě (od roku 1919 Slezská Ostrava), kde se jim v roce 1903 narodili Ludvík a Honorata – rodiče babičky Marty."],"lines":["woron","chmielek"]},
   {"line":"vesely","title":"Spiš – Veselí a Plaší","text":["Po vzniku Československa v roce 1918 odcházely na Slovensko tisíce Čechů – úředníci, železničáři, četníci, učitelé i řemeslníci. Mezi nimi Karel Veselý (*1904 ve Volešníku u Hluboké, domovem ze Zbudova), který v Plzni bydlel u tety Kateřiny Roušalové a v listopadu 1922 přišel do Kežmarku a pracoval jako úředník tamní nemocenské pojišťovny.","Kežmarok byl tehdy převážně německé a maďarské město – sčítací arch z roku 1930 je vyplněný německy. Karel bydlel v podnájmu na Hlavní ulici, v letech 1935–1937 seděl v městském zastupitelstvu za sociální demokraty a dělal jednatele Klubu československých turistů.","Anna Plachá (*1907) pocházela z Věrovan na Hané. Do Kežmarku ji přivedla starší sestra Terezie, provdaná za řezníka Methoda Krejsu, kterému Anna dělala pokladní. S Karlem se vzali mezi lety 1931 a 1933 a v září 1933 se jim narodil Svatoň.","Po vzniku Slovenského státu v roce 1939 museli Češi ve státní službě většinou odejít do českých zemí – rodina Veselých se tak přestěhovala do Uherského Brodu, jak babička Marta mnohokrát vyprávěla."],"lines":["vesely","plachy"]}
 ];
@@ -5560,7 +5559,7 @@ window.RODOKMEN.moves = [
   {"line":"plachy","kind":"doc","who":"Anna Plachá","when":"1930","note":"z Věrovan za sestrou Terezií Krejsovou do Kežmarku","path":[[49.46,17.29],[49.455,17.45],[49.6,18.14],[49.22,18.74],[49.06,20.3],[49.135,20.43]]},
   {"line":"vesely","kind":"doc","who":"Veselí se Svatoněm","when":"cca 1939–1940","note":"po vzniku Slovenského státu odchod do Uherského Brodu – potvrzeno vyprávěním babičky Marty (opakovaně)","path":[[49.135,20.43],[49.06,20.3],[49.22,18.74],[49.025,17.65]]},
   {"line":"vesely","kind":"hyp","who":"Svatoň Veselý","when":"před 1957","note":"do Ostravy; sňatek s Martou Woroňovou 1957 ve Slezské Ostravě","path":[[49.025,17.65],[49.455,17.45],[49.6,18.14],[49.835,18.29]]},
-  {"line":"opolony","kind":"doc","who":"Anton a Rosalie Opolonyovi","when":"1867–1878","note":"z Ehrenfeldu a Schonowitz (farnost Grzędzin u Ratiboře) do Chuchelné; sňatek 18. 6. 1867, syn Adolph se narodil 1878 už v Chuchelné","path":[[50.17,18.16],[50.13,18.11],[50,18.03]]}
+  {"line":"jirik","kind":"doc","who":"Anton a Rosalie Opolonyovi","when":"1867–1878","note":"z Ehrenfeldu a Schonowitz (farnost Grzędzin u Ratiboře) do Chuchelné; sňatek 18. 6. 1867, syn Adolph se narodil 1878 už v Chuchelné","path":[[50.17,18.16],[50.13,18.11],[50,18.03]]}
 ];
 
 // Historical events for the context column right of the year ruler; y2 = end year of a period (drawn as a band), major = shown even when zoomed out

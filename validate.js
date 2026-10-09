@@ -112,6 +112,15 @@ for (const c of P) {
 // 8. page context – everything the "Odkud jsme" view and the event column derive from must stay in sync
 const tpl = fs.readFileSync(path.join(__dirname, 'template.html'), 'utf8');
 for (const p of P) if (!D.lines[p.line]) err(p, `line "${p.line}" is not defined in D.lines`);
+// branch rule: every ancestor of one of the root's 8 great-grandparents carries that great-grandparent's line
+{
+  const byId = Object.fromEntries(P.map(p => [p.id, p]));
+  const par = id => [byId[id] && byId[id].father, byId[id] && byId[id].mother].filter(x => x && byId[x]);
+  const ggp = []; par(D.root).forEach(a => par(a).forEach(b => par(b).forEach(c => ggp.push(c))));
+  const owner = {};
+  for (const g of ggp) { const seen = new Set(); (function up(id) { if (seen.has(id)) return; seen.add(id); (owner[id] = owner[id] || new Set()).add(byId[g].line); par(id).forEach(up); })(g); }
+  for (const p of P) { const o = owner[p.id]; if (o && o.size === 1 && !o.has(p.line)) err(p, `line "${p.line}" but is an ancestor of the "${[...o][0]}" great-grandparent`); }
+}
 for (const k of Object.keys(D.lines)) if (!tpl.includes(`--l-${k}:`)) err(null, `line "${k}" has no colour --l-${k} in template.html`);
 for (const s of D.story || []) {
   for (const l of s.lines || [s.line]) if (!D.lines[l]) err(null, `story "${s.title}" refers to unknown line "${l}"`);
