@@ -5023,25 +5023,29 @@ window.RODOKMEN = {
       name: "Johann (Jan) Tomanek",
       line: "jirik",
       cert: "M",
-      b: {"date":"cca 1775","year":1775,"approx":true,"place":"Dolní Benešov"},
+      b: {"date":"cca 1775","year":1775,"approx":true,"place":"rakouské Slezsko (?)"},
+      d: {"date":"19. 9. 1850","year":1850,"place":"Dolní Benešov"},
+      cause: "Altersschwäche (sešlost věkem)",
       occ: "čeledín (1800), sedlák (colonus), 1830 výměnkář (Bauerausgedingler), Dolní Benešov č. 7",
       marriage: "18. 2. 1800, Dolní Benešov – s Barborou Postulkovou",
       notes: [
+        "Úmrtí 19. 9. 1850 v 6 h večer, pohřeb 23. 9. (M): „Johann Tomanek Bauerauszügler aus Beneschau | Beneschau | [Geburtsort] Beneschau | Altersschwäche | kath. | 75“ (ZAO, Z H IV 10, sken 98, č. 56). Věk → *~1775. „Geburtsort Beneschau“ je nejspíš bydliště – při sňatku 1800 „famulus ex parte austriaca“. V roce 1830 už výměnkář (úmrtí manželky, č. 7).",
         "Sňatek 18. 2. 1800 Dolní Benešov (M): „honestus adolescens Joannes Tomaneck famulus ex parte austriaca cum virgine Barbara def. Joannis Postulka coloni filia“; svědci Thomas Morawetz, sedlák, a Isidorus Gelny (?), zahradník, oba z Benešova. Tehdy svobodný čeledín z rakouské strany (Rakouské Slezsko), později sedlák v Benešově.",
         "Otec Johanny (sňatek 1826): „Johanna Joannis Tomanek coloni filia“, Benešov.",
         "Pravděpodobně i otec Antonia Tomanka (*~1800/01; sňatek 2. 5. 1826 s Franciskou Dudovou: „Coelebs Antonius Joannis Tomanek coloni filius“, ~25 let) – D, Antoniův křest neověřen.",
-        "Při sňatku 1800 „famulus ex parte austriaca“ – čeledín z rakouského Slezska, není benešovský rodák; křest jinde (farnost neznámá).",
-        "Žil 17. 1. 1830 (úmrtí manželky – „Bauerausgedingler“, č. 7). Kandidát úmrtí: rejstřík H IV 11 – „Tomanek Johann, Ben. 56“, 1850 (D/K – jiný dům; zápis v Z H IV 10 nepřečten)."
+        "Při sňatku 1800 „famulus ex parte austriaca“ – čeledín z rakouského Slezska, není benešovský rodák; křest jinde (farnost neznámá)."
       ],
       sources: [
         "ZA Opava, NAD 165 Sbírka matrik, Dolní Benešov H IV 5 (O 1798–1867), sken 34, listopad 1826",
         "ZA Opava, Dolní Benešov H IV 5, sken 33 (2. 5. 1826)",
-        "ZA Opava, NAD 165 Sbírka matrik, Dolní Benešov H IV 5 (O 1798–1867), sken 4"
+        "ZA Opava, NAD 165 Sbírka matrik, Dolní Benešov H IV 5 (O 1798–1867), sken 4",
+        "ZA Opava, Dolní Benešov Z H IV 10 (1830–1891), sken 98"
       ],
       scans: [
         {"f":"img/1800_snatek_tomanek_postulka.jpg","t":"Sňatek 18. 2. 1800, Dolní Benešov – Johann Tomanek, čeledín „ex parte austriaca“, × Barbara, dcera † Johanna Postulky (H IV 5, sken 4)"},
         {"f":"img/1807_krest_johanna_tomanek.jpg","t":"Křest 23. 5. 1807, Dolní Benešov – Johanna, rodiče Joannes Tomanek, sedlák, × Barbara roz. Postulka (H IV 3, sken 63, č. 57)"},
-        {"f":"img/1826_snatek_irzik_tomanek.jpg","t":"Sňatek 14. 11. 1826, Dolní Benešov – Cyrill Irzik × Johanna Tomanek (H IV 5, sken 34)"}
+        {"f":"img/1826_snatek_irzik_tomanek.jpg","t":"Sňatek 14. 11. 1826, Dolní Benešov – Cyrill Irzik × Johanna Tomanek (H IV 5, sken 34)"},
+        {"f":"img/1850_umrti_johann_tomanek.jpg","t":"Úmrtí 19. 9. 1850, Dolní Benešov – Johann Tomanek, výměnkář, 75 let (ZAO, Z H IV 10, sken 98)"}
       ]
     },
     {
