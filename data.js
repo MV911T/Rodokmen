@@ -1176,7 +1176,8 @@ window.RODOKMEN = {
         "Otec Tomasze (*1836): „Josephus Dydowicz opilio Adalberti et Gertrudis“ – syn Wojciecha Dydowicze a Gertrudy.",
         "Sňatek s Marianou Chmil nejspíš 1830–35 (Wierzchosławice, nečteno).",
         "Křest Józefa, sňatek s Mariannou Chmil ani jejich rodiče nejsou v indexu Geneteka (celá Małopolska, 9. 10. 2026). Další: ohlášky Rożnowice 1824–1849 (Skanoteka id5886 sy7000), křty Rożnowice/Sitnica ~1803–1812.",
-        "Rodiče doloženi ohláškami sestry Katarzyny 1826 (M) a křty v Dębnie (Geneteka, D). Józefův vlastní křest (~1805) zatím nenalezen – rodina po 1804 z Dębna odešla; Rożnowice křty I/1807–II/1810 bez Dydowicz."
+        "Rodiče doloženi ohláškami sestry Katarzyny 1826 (M) a křty v Dębnie (Geneteka, D). Józefův vlastní křest (~1805) zatím nenalezen – rodina po 1804 z Dębna odešla; Rożnowice křty I/1807–II/1810 bez Dydowicz.",
+        "Křest Józefa NENÍ: Dębno VI/1804–IV/1807, Rożnowice X/1804–II/1810 (Geneteka i skeny)."
       ],
       sources: [
         "Skanoteka – Wierzchosławice U 1824–1845 sken 046"
@@ -1184,7 +1185,7 @@ window.RODOKMEN = {
       scans: [
         {"f":"img/1836_krest_tomasz_dydowicz.jpg","t":"Křest Tomasze 28. 2. 1836, Wierzchosławice (U 1824–1845 s. 405)"}
       ],
-      siblings: ["Marianna *~1811 (D) – ∞ 1) Vojtěch Klimek, 2) 21. 11. 1849 Zalasowa Paweł Peca","Mikołaj (Dyda) *4. 12. 1802 Dębno (D) – ∞ 25. 9. 1826 Szczucin Tekla Kogut","Marianna *19. 6. 1804 Dębno (D)","Katarzyna *~1808 (M – ohlášky 1826) – ∞ 1826 Józef Bogdański, Sitnica"]
+      siblings: ["Marianna *~1811 (D) – ∞ 1) Vojtěch Klimek, 2) 21. 11. 1849 Zalasowa Paweł Peca","Mikołaj (Dyda) *4. 12. 1802 Dębno (M) – ∞ 25. 9. 1826 Szczucin Tekla Kogut","Marianna *19. 6. 1804 Dębno (M)","Katarzyna *~1808 (M – ohlášky 1826) – ∞ 1826 Józef Bogdański, Sitnica"]
     },
     {
       id: "wojciechDy",
@@ -1192,18 +1193,23 @@ window.RODOKMEN = {
       line: "chmielek",
       cert: "M",
       b: {"date":"cca 1775","year":1775,"approx":true},
+      marriage: "2. 2. 1802, Dębno č. 44 (pow. brzeski) – s Gertrudou Chrapustovou",
       notes: [
+        "Sňatek 2. 2. 1802 Dębno (M): „2 | 44 | Adalbertus Dydowicz | 22 | caelebs | Gertrudis Chrapuścionka | 26 | caelebs | Gregorius Janas, Georgius Jemioło – vicini | copulavit R. Antonius Szygulinski parochus“ (rodiče neuvedeni). Podle věku *~1780 (při úmrtí 1832 uvedeno 55 → *~1777).",
+        "Křty dětí v Dębnie ověřeny ve skenu (M): Mikołaj 4. 12. 1802 č. 44 („Nicolaus Dyda | Adalbertus Dyda | Gertrudis nata patre Chrapusta“), Marianna 19. 6. 1804 č. 38 („Marianna Dydowiczowna | Adalbertus Dyda | Gertrudis Chrapuścionka“ – doklad, že Dyda = Dydowicz).",
         "Ovčák (owczarz); rodina: Dębno 1802–1804 (příjmení i „Dyda“) → Rozembark, farnost Rożnowice (1826) → Sitnica († 1832). Doloženo ohláškami dcery Katarzyny 1826 (M) a křty dětí v Dębnie (index Geneteka, D).",
         "Dcera (D) Marianna *~1811, vdova po Vojtěchu Klimkovi, 2. sňatek 21. 11. 1849 Zalasowa s Pawłem Pecou (uvádí rodiče Adalbert Dydowicz × Gertruda Chrapusta). Rod Dydowicz – ovčáci, stěhování Sitnica (Rożnowice) → Tarnowiec → Wierzchosławice → Zalasowa.",
         "Otec Józefa (křest vnuka Tomasze 1836); manželka Gertruda.",
         "Kandidát na úmrtí (K/D): „Adalbertus Dydowicz, opilio“, Sitnica č. 16 (farnost Rożnowice), † VI/1832 (den 4.?), 55 let (*~1777) – sedí jméno, povolání ovčák i kraj; manželka v zápisu neuvedena."
       ],
       sources: [
+        "Skanoteka PTG id4239 (Dębno, pow. brzeski; orig. AD Tarnów): M Dębno 1784–1865 (sy4515) sken 012, s. 14; U Dębno 1784–1842 (sy3515) skeny 022 a 024",
         "Skanoteka PTG id5886 (Rożnowice), Zapowiedzi 1824–1849 (sy7000), skeny 008–009",
         "Skanoteka id5886 (Rożnowice), Z 1784–1873 Sitnica (sy5545), sken 024; id4956 Zalasowa M sy4520 sken 007",
         "Skanoteka – Wierzchosławice U 1824–1845 sken 046"
       ],
       scans: [
+        {"f":"img/1802_snatek_dydowicz_chrapusta.jpg","t":"Sňatek 2. 2. 1802, Dębno č. 44 – Adalbertus Dydowicz (22) × Gertrudis Chrapuścionka (26) (Skanoteka id4239, M Dębno 1784–1865, sken 012)"},
         {"f":"img/1826_ohlasky_katarzyna_dydowicz.jpg","t":"Ohlášky 4. 11. 1826, Rozembark – Józef Bogdański × Katarzyna, dcera Wojciecha a Gertrudy Dydowiczových, ovčáků (Rożnowice, Skanoteka id5886 sy7000, sken 009)"},
         {"f":"img/1849_snatek_marianna_dydowicz_zalasowa.jpg","t":"Sňatek 21. 11. 1849, Zalasowa – Marianna, vdova po Vojtěchu Klimkovi, dcera Adalberta Dydowicze a Gertrudy Chrapusta (Skanoteka id4956, M 1846–79, sken 007)"},
         {"f":"img/1832_umrti_wojciech_dydowicz_sitnica.jpg","t":"Úmrtí VI/1832, Sitnica č. 16 – Adalbertus Dydowicz, ovčák, 55 let (Rożnowice, Skanoteka id5886, sken 024)"},
@@ -1216,19 +1222,22 @@ window.RODOKMEN = {
       maiden: "Chrapusta",
       line: "chmielek",
       cert: "M",
-      b: {"date":"cca 1780","year":1780,"approx":true},
+      b: {"date":"cca 1776","year":1776,"approx":true,"place":"Dębno (pow. brzeski) (?)"},
       notes: [
+        "Sňatek 2. 2. 1802 Dębno č. 44 (M): „Gertrudis Chrapuścionka“, 26 let, svobodná (*~1776). Kmotři dětí z rodu Chrapusta (Antoni, Apolonia) – rodina z Dębna.",
         "Ohlášky dcery Katarzyny (18 let) 21. 10. a 4. 11. 1826, Rozembark č. 160, farnost Rożnowice (M): „z Katarzyną panną córką Woyciecha y Gertrudy Dydowiczów Owczarzów, oboie z Rozenbarku“.",
         "Podle indexu Geneteka (D): křty dětí v Dębnie (okr. brzeski) – Mikołaj *4. 12. 1802 (dům 44) a Marianna *19. 6. 1804 (dům 38), rodiče „Wojciech Dyda × Gertruda Chrapusta“, kmotr mj. Antoni Chrapusta. Rod Chrapusta pochází z Dębna/Wojnicze.",
         "Rodné příjmení PRAVDĚPODOBNĚ Chrapusta (D): sňatek Józefovy pravděpodobné sestry Marianny (*~1811) 21. 11. 1849 v Zalasowé: „Marianna vidua post Adalbertum Klimek inquil., filia Adalb. Dydowicz et Gertrudis Chrapusta“, 38 let (M zápis). Stejná jména rodičů jako u Józefa – vazba přes shodu jmen, ne přímým dokladem. Rod Chrapusta: farnosti Wojnicz (Łoponie, Biadoliny, Zakrzów), Dębno.",
         "Matka Józefa (křest vnuka 1836)."
       ],
       sources: [
+        "Skanoteka PTG id4239 (Dębno, pow. brzeski; orig. AD Tarnów): M Dębno 1784–1865 (sy4515) sken 012, s. 14; U Dębno 1784–1842 (sy3515) skeny 022 a 024",
         "Skanoteka PTG id5886 (Rożnowice), Zapowiedzi 1824–1849 (sy7000), skeny 008–009",
         "Skanoteka PTG id4956 (Zalasowa), M 1846–1879 (sy4520), sken 007, s. 10, č. 10",
         "Skanoteka – Wierzchosławice U 1824–1845 sken 046"
       ],
       scans: [
+        {"f":"img/1802_snatek_dydowicz_chrapusta.jpg","t":"Sňatek 2. 2. 1802, Dębno č. 44 – Adalbertus Dydowicz (22) × Gertrudis Chrapuścionka (26) (Skanoteka id4239, M Dębno 1784–1865, sken 012)"},
         {"f":"img/1826_ohlasky_katarzyna_dydowicz.jpg","t":"Ohlášky 4. 11. 1826, Rozembark – Józef Bogdański × Katarzyna, dcera Wojciecha a Gertrudy Dydowiczových, ovčáků (Rożnowice, Skanoteka id5886 sy7000, sken 009)"},
         {"f":"img/1849_snatek_marianna_dydowicz_zalasowa.jpg","t":"Sňatek 21. 11. 1849, Zalasowa – Marianna, vdova po Vojtěchu Klimkovi, dcera Adalberta Dydowicze a Gertrudy Chrapusta (Skanoteka id4956, M 1846–79, sken 007)"}
       ]
