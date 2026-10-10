@@ -6129,7 +6129,7 @@ window.RODOKMEN.collateral = [
   {"cert":"R","note":"údaj rodiny (Matěj Veselý, 10. 10. 2026)","id":"c_gabrielaR","name":"Gabriela Randulová","father":"c_dusan"},
   {"cert":"R","note":"údaj rodiny (Matěj Veselý, 10. 10. 2026)","id":"c_adamR","name":"Adam Randula","father":"c_tomasR","d":{"date":"zemřel"}},
   {"cert":"R","note":"údaj rodiny (Matěj Veselý, 10. 10. 2026)","id":"c_evaR","name":"Eva Randulová","father":"c_tomasR"},
-  {"cert":"R","note":"údaj rodiny (Matěj Veselý, 10. 10. 2026)","id":"c_miluse","name":"Miluše Kempná","maiden":"Veselá","father":"svaton","mother":"marta","b":{"date":"19. 4. 1958","year":1958,"place":"Ostrava-Fifejdy"},"spouse":"1) Josef Lamanec (děti Barbora a Rostislav), 2) Rostislav Kempný (†)"},
+  {"cert":"R","note":"údaj rodiny (Matěj Veselý, 10. 10. 2026) V rodině jí říkají teta Milena; za 1. manželství Lamancová.","id":"c_miluse","name":"Miluše („teta Milena“) Kempná","maiden":"Veselá","father":"svaton","mother":"marta","b":{"date":"19. 4. 1958","year":1958,"place":"Ostrava-Fifejdy"},"spouse":"1) Josef Lamanec (děti Barbora a Rostislav), 2) Rostislav Kempný (†)"},
   {"cert":"R","note":"syn z 1. manželství s Josefem Lamancem – údaj rodiny (Matěj Veselý, 10. 10. 2026)","id":"c_rostislavL","name":"Rostislav Lamanec","mother":"c_miluse"},
   {"cert":"R","note":"dcera z 1. manželství s Josefem Lamancem – údaj rodiny (Matěj Veselý, 10. 10. 2026)","id":"c_barboraL","name":"Barbora Lamancová","mother":"c_miluse"},
   {"cert":"R","note":"údaj rodiny (Matěj Veselý, 10. 10. 2026)","id":"c_rudolfP","name":"Rudolf Pacík","father":"rudolf1936","mother":"margareta","b":{"date":"29. 3. 1961","year":1961,"place":"Ostrava"},"d":{"date":"3. 8. 2018","year":2018,"place":"Ostrava (pohřben v Chuchelné)"}},
