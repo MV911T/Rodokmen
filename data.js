@@ -6270,7 +6270,8 @@ window.RODOKMEN = {
         "Sňatek 7. 2. 1701 Kobeřice (M): „Die 7ma Februarij wstaupil gest w stawo Swatÿ Manzelski Podcziwoj Mladenec George Kremer z Raczan (?), wzal sobie za Manzelku Podcziwie zachowalau Diewczku gmenem Magdalena Pyrzchalka, wlastni Czerau Jakuba Pyrzchaly z Koberzitz. Swietkowie Jakub Czugiek, Ventzel Pyrzchala“ (H IX 12 sk40). Ženich mládenec, odjinud – „z Raczan (?)“ (Ratiboř? čtení i místo nejisté); rodiče neuvedeni.",
         "Úmrtí 14. 12. 1744, pohřeb 16. 12. (M zápis, totožnost D – psáno „Krener“): „Georgius Krener | sepultus 16 | 76 annorum“ (H IX 1 sk164) → *~1668. Možná manželka: Magdalena „Kremerka fabrissa“ † 1758, 78 let (sk180 – K).",
         "Otec Jacoba – sňatek syna 1735 (M): „Jacobus Georgii Kremer“. Pravděpodobně „Jura Kromer“, svědek 1729, a „Gura Kremer“, kmotr 1734 (D). Pozor: v Kobeřicích i Johann Kremer × Marina a Simon Kremer × Barbara.",
-        "Manželka Magdalena – matka dětí Ondřeje (24. 11. 1707), Jakuba (30. 3. 1710) a Šimona (24. 10. 1713) (M); sňatek 7. 2. 1701 (H IX 12)."
+        "Manželka Magdalena – matka dětí Ondřeje (24. 11. 1707), Jakuba (30. 3. 1710) a Šimona (24. 10. 1713) (M); sňatek 7. 2. 1701 (H IX 12).",
+        "„z Raczan“ možno číst i „z Kaczan“ – lokalita nevyřešena (K; Ratiboř by písař psal „z Ratiboře“). V Kobeřicích 1688–1698 jiný Kremer není; farář 1697–98 „Andreas Josephus Kre…(?)“ – neověřeno."
       ],
       sources: [
         "ZA Opava, Sbírka matrik, Kobeřice H IX 12 (N a O 1688–1705, roční opisy), sken 40 (O 1701); N sk39, 44, 48",
@@ -6884,7 +6885,8 @@ window.RODOKMEN = {
       b: {"date":"?","year":1650,"approx":true,"place":"Kobeřice (?)"},
       d: {"date":"mezi II/1701 a I/1703","year":1702,"approx":true,"place":"Kobeřice (?)"},
       notes: [
-        "Otec nevěsty Magdaleny (sňatek 7. 2. 1701: „wlastni Czerau Jakuba Pyrzchaly z Koberzitz“ – žil, M). 27. 1. 1703 se ženil „Petr po N[ebožtíku] Pirchalu“ a 13. 1. 1704 Jan Sluchnik s „Annou po N. Pirchali“ → Jakub † 1701–1703 (D); Petr a Anna snad sourozenci Magdaleny (K). Svědek 1701 Ventzel Pyrzchala – příbuzný."
+        "Otec nevěsty Magdaleny (sňatek 7. 2. 1701: „wlastni Czerau Jakuba Pyrzchaly z Koberzitz“ – žil, M). 27. 1. 1703 se ženil „Petr po N[ebožtíku] Pirchalu“ a 13. 1. 1704 Jan Sluchnik s „Annou po N. Pirchali“ → Jakub † 1701–1703 (D); Petr a Anna snad sourozenci Magdaleny (K). Svědek 1701 Ventzel Pyrzchala – příbuzný.",
+        "Doložen v Kobeřicích 1693–1696 jako kmotr a svědek (H IX 12 sk13L 1693, sk21L 1695, sk25L 1696). Jako otec dítěte v 1688–1697 není (Magdalena *~1680 je před začátkem knihy). Příbuzní (K): Jiří Pirchala × Marianna (děti Jan 1690, Filip 1694), Ondřej Pirchala ∞ 28. 10. 1691 Magdalena Weylameh (?) (sk9R, M)."
       ],
       sources: [
         "ZA Opava, Sbírka matrik, Kobeřice H IX 12 (N a O 1688–1705, roční opisy), sken 40 (O 1701); N sk39, 44, 48"
