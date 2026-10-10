@@ -3193,7 +3193,7 @@ window.RODOKMEN = {
         {"f":"img/1759_snatek_strusch_gadacz.jpg","t":"Sňatek 8. 7. 1759, Sudice (H XVI 6 fol. 53, sken 26)"},
         {"f":"img/1732_krest_marina_strusch.jpg","t":"Křest dcery Mariny 1. 1. 1732, Rohov – „Andreas Struz et Anna uxor“ (Sudice H XVI 1, sken 127)"}
       ],
-      siblings: ["Václav (Wenceslaus) *29. 9. 1705 Rohov (M) – † 28. 10. 1782","Martin *5. 11. 1707 Rohov (M) – ∞ 8. 1. 1739","Rosina *3. 4. 1710 Rohov (M)","Simon *4. 10. 1711 Rohov (M)","Jakub *8. 7. 1714 Rohov (M) – † 7. 7. 1718","Valentin *~1720/21 – † 24. 1. 1724, 3 roky (M)"]
+      siblings: ["Václav (Wenceslaus) *29. 9. 1705 Rohov (M) – † 28. 10. 1782","Martin *5. 11. 1707 Rohov (M) – ∞ 8. 1. 1739","Rosina *3. 4. 1710 Rohov (M)","Simon *4. 10. 1711 Rohov (M)","Jakub *8. 7. 1714 Rohov (M) – † 7. 7. 1718","Valentin *14. 2. 1721 Rohov (M) – † 24. 1. 1724","Vavřinec (Laurentius) *10. 8. 1719 Rohov (M)"]
     },
     {
       id: "rosinaGa",
@@ -3233,7 +3233,8 @@ window.RODOKMEN = {
         "Sňatek před 1737 (není v oddacích Sudice 1737–1772) – hledat v H XVI 1 (1702–1736).",
         "1. manželka Catharina (M): křty dcer Cathariny 10. 10. 1729 („Petrus Gadacz et Catharina Rohowio“, sken 120) a Mariny 26. 10. 1730 (sken 123); Marina zemřela 18. 12. 1730 ve stáří 7½ týdne – „Petri Gadatz Operarij filiola“ (sken 292) – Petr tehdy nádeník (operarius) v Rohově. Barbara (†1769) byla tedy nejspíš jeho 2. manželka (sňatek po 1732, nenalezen) – D.",
         "Další děti s Catharinou (M): Joannes *26. 6. 1732, Veronica *15. 12. 1733, Jacobus *22. 7. 1735, Rosina *27. 10. 1736.",
-        "2. manželka Barbara Gadacz (*~1705, † 15. 2. 1769) – sňatek po 1736 nenalezen; nebyla matkou Rosiny (*1736 z 1. manželství)."
+        "2. manželka Barbara Gadacz (*~1705, † 15. 2. 1769) – sňatek po 1736 nenalezen; nebyla matkou Rosiny (*1736 z 1. manželství).",
+        "Sňatek Petra × Catharina NENÍ v Sudicích I/1717–V/1729; v křtech VI/1718–VIII/1724 žádné jejich dítě. V Rohově současně Bartoloměj Gadacz (Hadas/Gadasz) × Rosina (syn Jakub 1719–1723) – možný bratr (K)."
       ],
       sources: [
         "ZA Opava, NAD 165 Sbírka matrik, Sudice H XVI 6 (O 1737–1849) fol. 53",
@@ -5910,7 +5911,7 @@ window.RODOKMEN = {
       b: {"date":"cca 1680","year":1680,"approx":true,"place":"?"},
       notes: [
         "Manželka Georga Strusche (Straze), Rohov; matka Andrease (*1703), Václava (*1705) a Martina (*1707) – křty H XVI 1 (M). Rodné příjmení neznámé.",
-        "Děti s Georgem (křty H XVI 1, M): Andreas 1703, Václav 1705, Martin 1707, Rosina 1710, Simon 1711, Jakub 1714 († 1718), Valentin ~1720/21 († 1724). Úmrtí Cathariny NENÍ v Sudicích 1715–VII/1731."
+        "Děti s Georgem (křty H XVI 1, M): Andreas 1703, Václav 1705, Martin 1707, Rosina 1710, Simon 1711, Jakub 1714 († 1718), Vavřinec 1719, Valentin 1721 († 1724). Úmrtí Cathariny NENÍ v Sudicích 1715–VII/1731."
       ],
       sources: [
         "ZA Opava, Sbírka matrik (NAD 165), Sudice H XVI 1 (1702–1736), skeny 2, 9, 18"
