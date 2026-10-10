@@ -6242,7 +6242,8 @@ window.RODOKMEN = {
       occ: "sedlák (laborator), Lednica Górna č. 5 (?)",
       marriage: "18. 10. 1750, Lednica Górna – s Markétou Sykałankou",
       notes: [
-        "Sňatek 18. 10. 1750 Lednica Górna (M): „inter LL. Adalbertum Witarowski et Margaretham Sykałankę, … praesentibus LL. Jacobo Kowal, Mathia Dziewulski, Hyacyntho Przybycki de eadem villa“ (KM-10-5 #0776_v). Děti (D): Vojtěch *1752, Ignác *1760 (∞ 1780 z č. 5), Marianna (∞ 1784 Kasper Pytel/Pawlik), Kateřina (∞ 1781 Antoni Mikuła), Kunegunda 1772. Možná matka Elżbieta Witarowska († 1768, 60 let) – K."
+        "Sňatek 18. 10. 1750 Lednica Górna (M): „inter LL. Adalbertum Witarowski et Margaretham Sykałankę, … praesentibus LL. Jacobo Kowal, Mathia Dziewulski, Hyacyntho Przybycki de eadem villa“ (KM-10-5 #0776_v). Děti (D): Vojtěch *1752, Ignác *1760 (∞ 1780 z č. 5), Marianna (∞ 1784 Kasper Pytel/Pawlik), Kateřina (∞ 1781 Antoni Mikuła), Kunegunda 1772. Možná matka Elżbieta Witarowska († 1768, 60 let) – K.",
+        "KANDIDÁT NA RODIČE (K, 10. 10. – WOR7): Vojtěch Witarowski × Alžběta Kołodziejówna z Lednice, oddáni 14. 1. 1720 Wieliczka (KM-10-5 #0883_r, M: „inter Adalbertum Witarowski & Elisabeth Kołodziejowna Lednicensem“); jejich syn Valentin pokř. 11. 2. 1721 (#0227_v, M). Jediný sňatek Vojtěcha Witarowského 1700–1749 (Geneteka); Alžběta snad = „Elżbieta Witarowska, 60 l., de Lednica“ † 29. 3. 1768. Vojtěchův vlastní křest zatím nenalezen (křty 1721–30 nejsou indexované)."
       ],
       sources: [
         "CAAK KM-10-5 #0610_r (křest 1752), #0776_v (sňatek 1750); KM-10-11 #0256_v (sňatek Ignáce 1780)"
@@ -6259,7 +6260,8 @@ window.RODOKMEN = {
       cert: "D",
       b: {"date":"cca 1730","year":1730,"approx":true,"place":"Lednica (?)"},
       notes: [
-        "Sňatek 18. 10. 1750 (M): „Margaretham Sykałankę“; v křtu syna 1752 „Margaritha“."
+        "Sňatek 18. 10. 1750 (M): „Margaretham Sykałankę“; v křtu syna 1752 „Margaritha“.",
+        "KANDIDÁT NA RODIČE (K, WOR7): Jakub Sykała × Kateřina Pudłówna z Lednice, oddáni 9. 2. 1722 (KM-10-5 #0877_v, M); Jakub † 8. 3. 1769 (70 let), Kateřina † 18. 3. 1761 (50 let) – Geneteka. Další páry Sykałů: Wojciech × Kateřina Celowska (1708), Maciej × Magdalena Chyżowska (1710), Maciej × Anežka Mietelska (1732). Markétin křest nenalezen."
       ],
       sources: [
         "CAAK KM-10-5 #0610_r (křest 1752), #0776_v (sňatek 1750); KM-10-11 #0256_v (sňatek Ignáce 1780)"
