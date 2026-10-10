@@ -307,7 +307,8 @@ window.RODOKMEN = {
         "Sňatek 7. 7. 1829 Dub (M): „Johann, Sohn des Johann Plachy, Bauers von Werowan. Mit Einwilligung des Vaters“, kat., 21 let, svobodný, dům č. 51 × „Josepha, Tochter des Paul Opluštil, Chalupners von Dub. Mit Einwilligung des Vaters“, 19 let, dům č. 10; svědci Anton Ezechiel (?) a Anton Gelinek (?), sedláci z Věrovan (D I 13 str. 44). Věk 21 → *~1808.",
         "1864 kmotrem vnuka Jana (podepsán křížkem).",
         "Pozor: Věrovany č. 51 patřilo v XII/1808 sedlákovi Jakubu Kreidlovi (?) (D XII 18 sk107) – Jan se tam nejspíš nenarodil; Plachý se do č. 51 dostal později. Křest Jana není v D XII 18 v č. 51 III/1806–VII/1809.",
-        "Křest NENÍ v N Věrovany D XII 18 sk90–118 (~1804/5–1811; jediný Plachý-otec je Viktorin Plachý, podruh, I–II/1807) – Jan se buď narodil jinde, nebo je věk 21 při sňatku nepřesný. Viktorin Plachý (sňatek Věrovany, rejstřík D XII 29 s. 9) – možný příbuzný (K)."
+        "Křest NENÍ v N Věrovany D XII 18 sk90–118 (~1804/5–1811; jediný Plachý-otec je Viktorin Plachý, podruh, I–II/1807) – Jan se buď narodil jinde, nebo je věk 21 při sňatku nepřesný. Viktorin Plachý (sňatek Věrovany, rejstřík D XII 29 s. 9) – možný příbuzný (K).",
+        "Křest není v N Věrovany 1802–1811 (D XII 18 sk80–118) ani v rejstříku 1801–41; kandidát „…ch Johann“ str. ~72 (~1799/1800, sk ~67) – k ověření."
       ],
       sources: [
         "ZA Opava, O Dub nad Moravou 1797–1866 (D I 13), sken 46, str. 44",
@@ -6399,7 +6400,8 @@ window.RODOKMEN = {
       b: {"date":"?","year":1780,"approx":true,"place":"Věrovany (?)"},
       occ: "sedlák (Bauer) ve Věrovanech (č. 51)",
       notes: [
-        "Otec ženicha Jana (sňatek 7. 7. 1829 Dub, M): „Johann, Sohn des Johann Plachy, Bauers von Werowan. Mit Einwilligung des Vaters“ – v roce 1829 žil. Rok narození jen odhad (syn *~1808)."
+        "Otec ženicha Jana (sňatek 7. 7. 1829 Dub, M): „Johann, Sohn des Johann Plachy, Bauers von Werowan. Mit Einwilligung des Vaters“ – v roce 1829 žil. Rok narození jen odhad (syn *~1808).",
+        "Původ zatím nedoložen. Ve Věrovanech žil Viktorin Plachý (*~1762), syn Tomáše Plachého, chalupníka z Klenovic (?) – ∞ 3. 11. 1790 Věrovany č. 18 Barbora, dcera Josefa Kučíka (?) (D XII 29 str. 9, M); 1803 s manželkou Mariannou roz. Dosoudilovou (?) křest syna Tomáše (č. 78, D XII 18 sk86). Možný bratr Jana st. (K). Rejstřík N Věrovany 1801–1841 nemá žádného Johanna Plachého; kandidát „…ch Johann“ str. ~72 (~1799/1800) neověřen."
       ],
       sources: [
         "ZA Opava, O Dub nad Moravou 1797–1866 (D I 13), sken 46, str. 44"
@@ -6437,17 +6439,22 @@ window.RODOKMEN = {
       name: "Tomáš Opluštil",
       line: "plachy",
       cert: "M",
-      b: {"date":"?","year":1755,"approx":true,"place":"Dub (nad Moravou) (?)"},
+      b: {"date":"cca 1750","year":1750,"approx":true,"place":"Dub (nad Moravou)"},
+      father: "janOpSt",
       occ: "chalupník (casarius) / domkář v Dubu nad Moravou č. 10",
+      marriage: "3. 7. 1775, Dub – s Viktorií Postalovou",
       notes: [
+        "Sňatek 3. 7. 1775 Dub (M): „Hon. Adol. Thomas superstes filius post † Joannem Oploschczil, Dubâ, cum hon. Virg. Victoria superstite filia post † Antonium Postal, Dubâ“; svědci Victorinus Meyzlanis (?) a Mathias Mraczek, sedláci z Dubu; č. 51 (D I 3 sk133).",
         "Otec ženicha Pavla (sňatek 1804 Dub, M): „Paul, Sohn des Thomas Opluštil, Häuslers v. Dub“. Rok narození jen odhad. V Dubu žili i Janové Opluštilové (sňatky 1800, 1801, 1807 – rejstřík, D) – možní příbuzní.",
         "Křest syna Pavla 13. 1. 1783 (M): „Thomas Opluschtzil, Casar. et Victoria“, Dub č. 10."
       ],
       sources: [
+        "ZA Opava, N/O Dub nad Moravou 1766–1784 (D I 3), sken 133 (oddaní 1775)",
         "ZA Opava, N/O Dub nad Moravou 1766–1784 (D I 3), sken 27",
         "ZA Opava, O Dub nad Moravou 1797–1866 (D I 13), sken 10, str. 8"
       ],
       scans: [
+        {"f":"img/1775_snatek_oplustil_postalova.jpg","t":"Sňatek 3. 7. 1775, Dub – Tomáš, syn † Jana Opluštila × Viktorie, dcera † Antonína Postala (ZA Opava, N/O Dub D I 3, sken 133 – druhý zápis)"},
         {"f":"img/1783_krest_pavel_oplustil.jpg","t":"Křest 13. 1. 1783, Dub č. 10 – Pavel, syn Tomáše Opluštila, chalupníka, a Viktorie (ZA Opava, N/O Dub D I 3, sken 27)"},
         {"f":"img/1804_snatek_oplustil_topischil.jpg","t":"Sňatek 7. 3. (?) 1804, Dub – Pavel, syn Tomáše Opluštila, domkáře (21) × Kateřina, dcera Jana Topischila, domkáře (19) (ZA Opava, O Dub D I 13, str. 8)"}
       ]
@@ -6712,16 +6719,21 @@ window.RODOKMEN = {
     {
       id: "viktorieOp",
       name: "Viktorie Opluštilová",
+      maiden: "Postalová",
       line: "plachy",
       cert: "M",
-      b: {"date":"?","year":1758,"approx":true,"place":"?"},
+      b: {"date":"cca 1755","year":1755,"approx":true,"place":"Dub (nad Moravou)"},
+      father: "antoninPos",
       notes: [
-        "Manželka Tomáše Opluštila, matka Pavla (křest 1783: „Thomas Opluschtzil Casar. et Victoria“, M); rodné příjmení neuvedeno."
+        "Sňatek 3. 7. 1775 Dub (M): „Hon. Adol. Thomas superstes filius post † Joannem Oploschczil, Dubâ, cum hon. Virg. Victoria superstite filia post † Antonium Postal, Dubâ“; svědci Victorinus Meyzlanis (?) a Mathias Mraczek, sedláci z Dubu; č. 51 (D I 3 sk133).",
+        "Matka Pavla (křest 1783: „Thomas Opluschtzil Casar. et Victoria“, M)."
       ],
       sources: [
+        "ZA Opava, N/O Dub nad Moravou 1766–1784 (D I 3), sken 133 (oddaní 1775)",
         "ZA Opava, N/O Dub nad Moravou 1766–1784 (D I 3), sken 27"
       ],
       scans: [
+        {"f":"img/1775_snatek_oplustil_postalova.jpg","t":"Sňatek 3. 7. 1775, Dub – Tomáš, syn † Jana Opluštila × Viktorie, dcera † Antonína Postala (ZA Opava, N/O Dub D I 3, sken 133 – druhý zápis)"},
         {"f":"img/1783_krest_pavel_oplustil.jpg","t":"Křest 13. 1. 1783, Dub č. 10 – Pavel, syn Tomáše Opluštila, chalupníka, a Viktorie (ZA Opava, N/O Dub D I 3, sken 27)"}
       ]
     },
@@ -6759,6 +6771,40 @@ window.RODOKMEN = {
       ],
       scans: [
         {"f":"img/1772_snatek_mikuska_kolincikova.jpg","t":"Sňatek 10. 2. (?) 1772, Nedašov č. 87 – Jan, syn † Jana Mikušky × Kateřina, dcera † Martina Kolinčíka (MZA, Brumov 4012, img 180)"}
+      ]
+    },
+    {
+      id: "janOpSt",
+      name: "Jan Opluštil",
+      line: "plachy",
+      cert: "M",
+      b: {"date":"?","year":1720,"approx":true,"place":"Dub (nad Moravou) (?)"},
+      d: {"date":"před 1775","year":1774,"approx":true,"place":"Dub (?)"},
+      notes: [
+        "Otec ženicha Tomáše (sňatek 1775: „Thomas superstes filius post † Joannem Oploschczil, Dubâ“, M) – v roce 1775 už nežil."
+      ],
+      sources: [
+        "ZA Opava, N/O Dub nad Moravou 1766–1784 (D I 3), sken 133 (oddaní 1775)"
+      ],
+      scans: [
+        {"f":"img/1775_snatek_oplustil_postalova.jpg","t":"Sňatek 3. 7. 1775, Dub – Tomáš, syn † Jana Opluštila × Viktorie, dcera † Antonína Postala (ZA Opava, N/O Dub D I 3, sken 133 – druhý zápis)"}
+      ]
+    },
+    {
+      id: "antoninPos",
+      name: "Antonín Postal",
+      line: "plachy",
+      cert: "M",
+      b: {"date":"?","year":1725,"approx":true,"place":"Dub (nad Moravou) (?)"},
+      d: {"date":"před 1775","year":1774,"approx":true,"place":"Dub (?)"},
+      notes: [
+        "Otec nevěsty Viktorie (sňatek 1775: „Victoria superstite filia post † Antonium Postal, Dubâ“, M) – v roce 1775 už nežil."
+      ],
+      sources: [
+        "ZA Opava, N/O Dub nad Moravou 1766–1784 (D I 3), sken 133 (oddaní 1775)"
+      ],
+      scans: [
+        {"f":"img/1775_snatek_oplustil_postalova.jpg","t":"Sňatek 3. 7. 1775, Dub – Tomáš, syn † Jana Opluštila × Viktorie, dcera † Antonína Postala (ZA Opava, N/O Dub D I 3, sken 133 – druhý zápis)"}
       ]
     }
   ]
