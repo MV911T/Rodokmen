@@ -6387,5 +6387,5 @@ window.RODOKMEN.collateral = [
   {"cert":"R","note":"údaj rodiny (Matěj Veselý, 10. 10. 2026)","id":"c_pavelP","name":"Pavel Pacík","father":"c_tomasP"},
   {"cert":"R","note":"údaj rodiny (Matěj Veselý, 10. 10. 2026)","id":"c_petraP","name":"Petra Pacíková","father":"c_tomasP"},
   {"cert":"R","note":"údaj rodiny (Matěj Veselý, 10. 10. 2026)","id":"c_janP2","name":"Jan Pacík","father":"c_rudolfP"},
-  {"cert":"R","note":"údaj rodiny (Matěj Veselý, 10. 10. 2026)","id":"c_rudolfP_d2","name":"(další dítě – jméno nezjištěno)","father":"c_rudolfP"}
+  {"cert":"R","note":"údaj rodiny (Matěj Veselý, 10. 10. 2026)","id":"c_robertP","name":"Robert Pacík","father":"c_rudolfP"}
 ];
