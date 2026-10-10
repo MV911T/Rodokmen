@@ -1104,7 +1104,9 @@ window.RODOKMEN = {
         "Datum a místo přečteny v křestním zápisu dcery Honoraty (SO VII 36): „Bergmann aus Zagórzany … 7/1 76 Wieliczka“. Křty farnosti Gdów 1870–1876 nejsou online.",
         "Kandidát z Geneteky (Stanisław *11. 3. 1872, Gdów č. 145, syn Marcina × Marianny Grzyb) je nepravděpodobný. Křty Zagórzan 1867–1883 nejsou online (jen na faře Gdów). Hypotéza (K): rodiče z rodů Jan Chmielek × Helena Jakóbczyk (Zagórzany 24) nebo Piotr Chmielek × Józefa Zygmunt (sňatek 1876).",
         "Úmrtí Zagórzany 1890–1935: Marcin Chmielek ani Marianna Grzyb tam nezemřeli; žádný zápis zatím nespojuje Stanisława s touto rodinou. Sňatky Gdów 1890–97 bez Chmielka.",
-        "Sňatek (podle křtu Honoraty „18/9 03“ nebo „8/9 03“) NENÍ v Ostravě: ř.-k. Slezská Ostrava, Moravská Ostrava, Přívoz, Hrušov, Mariánské Hory ani civilní CV XII 1 (v těchto farnostech se 8. ani 18. 9. 1903 neoddávalo) → nejspíš v Haliči (Łęg Tarnowski / Rudno nebo Gdów)."
+        "Sňatek (podle křtu Honoraty „18/9 03“ nebo „8/9 03“) NENÍ v Ostravě: ř.-k. Slezská Ostrava, Moravská Ostrava, Přívoz, Hrušov, Mariánské Hory ani civilní CV XII 1 (v těchto farnostech se 8. ani 18. 9. 1903 neoddávalo) → nejspíš v Haliči (Łęg Tarnowski / Rudno nebo Gdów).",
+        "Křest dcery Honoraty 1903 přečten znovu celý (M): formulář u otce rodiče neuvádí („Vater, dessen Tauf- und Zuname und Charakter“) – rodiče Stanislava z něj nezjistíme.",
+        "Geneteka (10. 10., D): křty Zagórzan 1866–1884 NEJSOU indexovány (jen Gdów-město a některé obce), sňatky ano. Kandidáti na rodiče (K): (1) Piotr Chmielek (syn Kaspra a Anežky Dziedzic), 30 let, Zagórzany č. 11 × Józefa Zygmunt (dcera Kazimíra a Reginy Wróbel), sňatek Gdów 16. 2. 1876 – 5 týdnů po Stanislavově narození → možná předmanželský syn legitimovaný sňatkem; Józefa † před 1884. (2) Jan Chmielek × Helena Jakóbczyk, Zagórzany č. 24 (v indexu jejich potomstvo z let 1863–1879). Rozhodne jen křest 7. 1. 1876 (fara Gdów – kniha Zagórzan není online)."
       ],
       sources: [
         "ř.-k. fara Slezská Ostrava, N 1902–1905 (SO VII 36), sken 101 – ZA Opava"
