@@ -406,7 +406,7 @@ function renderWide(){
       ...treeSibs.map(q=>`<li>${nm(q.id)}${dates(q.id)}</li>`), ...colSibs.map(colItem), ...(colSibs.length?[]:strSibs.map(t=>`<li>${t}</li>`))];
     (groups[g]=groups[g]||[]).push(`<div class="fam" style="--c:var(--l-${lineK})"><div class="fh">${nm(F)} × ${nm(M)}</div>${mar?`<div class="fm">${mar}</div>`:''}<ul>${items.join('')}</ul>${cnt?'':`<div class="none">${x.onlyChild?'Bez sourozenců (údaj rodiny).':'Sourozenci zatím nejsou známi.'}</div>`}</div>`); }
   const head=g=>g===1?'Rodiče a jejich děti (1. generace zpět)':g===2?'Prarodiče a jejich děti – strýcové a tety (2. generace)':`${g}. generace zpět – rodiny předků`;
-  document.getElementById('wideIntro').textContent=`Každá karta je jedna rodina předků: rodiče a všechny jejich známé děti – přímý předek je tučně, ostatní jsou jeho sourozenci; pod nimi jejich manželé a děti (bratranci a sestřenice), pokud jsou známi. ${nFam} rodin, ${nSib} známých sourozenců${COL.length?`, ${COL.length} dalších příbuzných`:''}. Generace se počítají od Matěje (rodiče = 1).`;
+  document.getElementById('wideIntro').textContent=`Každá karta je jedna rodina předků: rodiče a všechny jejich známé děti – přímý předek je tučně, ostatní jsou jeho sourozenci; pod nimi jejich manželé a děti (bratranci a sestřenice), pokud jsou známi. ${nFam} rodin, ${nSib} sourozenců předků (včetně nevlastních a dětí zemřelých v útlém věku; většina z rejstříků a rodopisů, část přímo z matrik – po najetí myší je vidět původ). Generace se počítají od Matěje (rodiče = 1).`;
   document.getElementById('wideBody').innerHTML=Object.keys(groups).map(Number).sort((a,b)=>a-b).map(g=>`<h3>${head(g)}</h3>${groups[g].join('')}`).join('')||'<p class="none">Nic neodpovídá filtru.</p>';
 }
 window.renderWide = renderWide;

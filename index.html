@@ -6598,7 +6598,6 @@ window.RODOKMEN.collateral = [
   {"id":"c_mirJan1720","name":"Jan Miřička","b":{"date":"1720","year":1720,"place":"Nedašova Lhota"},"father":"mikulasMi0","mother":"zuzanaMi","note":"Bratr Mikuláše (*1715); opis img 212 (data.js mikulasMi0).","cert":"D"},
   {"id":"c_fojJos","name":"Josef Fojtík","father":"jiriFo","mother":"veronikaPa","note":"Bratr Mariny Holbové: 14. 3. 1816 převzal grunt č. 17 „Nachlass seines verstorbenen Vaters Georg Fogtík“ (gruntovní kniha, img 55–56, M). Matka nepřímo (jediná doložená žena Jiřího).","cert":"D"},
   {"id":"c_fojJan1774","name":"Jan Fojtík","d":{"date":"1774","year":1774,"place":"Nedašov"},"father":"jiriFo","mother":"veronikaPa","note":"Bratr Mariny Holbové, zemřel jako dítě (data.js jiriFo).","cert":"D"},
-  {"id":"c_fojJan1779","name":"Jan Fojtík","d":{"date":"1779","year":1779,"place":"Nedašov"},"father":"jiriFo","mother":"veronikaPa","note":"Bratr Mariny Holbové, zemřel jako dítě (data.js jiriFo).","cert":"D"},
   {"id":"c_fojMat1775","name":"Matouš Fojtík","father":"janFoN","spouse":"∞ 1775","note":"Bratr Jiřího (data.js jiriFo); matka (1. žena Jana) neznámá.","cert":"D"},
   {"id":"c_worSte1889","name":"Stefania Woroń","b":{"date":"cca VI/1889","year":1889,"approx":true},"d":{"date":"18. 12. 1896","year":1896,"place":"Polská Ostrava"},"father":"andreas","note":"Nevlastní sestra Ludvíka – z 1. manželství Ondřeje s Emilií Galasowskou. Úmrtí SO VII 29 fol. 82 (M): „Woroń Stefania, Tochter des Andreas, Bergmann“, 7 let 6 měsíců, zápal plic.","cert":"M"},
   {"id":"c_worFr1847","name":"Franciszek Woroń","b":{"date":"14. 9. 1847","year":1847,"place":"Lednica (Wieliczka)"},"father":"kasperW","spouse":"∞ 1892","note":"Bratr Ondřeje (*1849) (data.js kasperW, M). Matka v textu neuvedena (pravděpodobně Katarzyna Szarek).","cert":"M"},
@@ -6775,7 +6774,7 @@ window.RODOKMEN.collateral = [
   {"id":"c_witKlem","name":"Klemens Witarowski","father":"wojciechWi","mother":"zofiaWi","spouse":"sňatky 1817, 1819, 1842","cert":"D","note":"Geneteka (Wieliczka) – index"}
 ];
 
-window.RODOKMEN_BUILD='10. 10. 2026 10:32';
+window.RODOKMEN_BUILD='10. 10. 2026 10:36';
 
 </script>
 <script>
@@ -6929,7 +6928,7 @@ function renderWide(){
       ...treeSibs.map(q=>`<li>${nm(q.id)}${dates(q.id)}</li>`), ...colSibs.map(colItem), ...(colSibs.length?[]:strSibs.map(t=>`<li>${t}</li>`))];
     (groups[g]=groups[g]||[]).push(`<div class="fam" style="--c:var(--l-${lineK})"><div class="fh">${nm(F)} × ${nm(M)}</div>${mar?`<div class="fm">${mar}</div>`:''}<ul>${items.join('')}</ul>${cnt?'':`<div class="none">${x.onlyChild?'Bez sourozenců (údaj rodiny).':'Sourozenci zatím nejsou známi.'}</div>`}</div>`); }
   const head=g=>g===1?'Rodiče a jejich děti (1. generace zpět)':g===2?'Prarodiče a jejich děti – strýcové a tety (2. generace)':`${g}. generace zpět – rodiny předků`;
-  document.getElementById('wideIntro').textContent=`Každá karta je jedna rodina předků: rodiče a všechny jejich známé děti – přímý předek je tučně, ostatní jsou jeho sourozenci; pod nimi jejich manželé a děti (bratranci a sestřenice), pokud jsou známi. ${nFam} rodin, ${nSib} známých sourozenců${COL.length?`, ${COL.length} dalších příbuzných`:''}. Generace se počítají od Matěje (rodiče = 1).`;
+  document.getElementById('wideIntro').textContent=`Každá karta je jedna rodina předků: rodiče a všechny jejich známé děti – přímý předek je tučně, ostatní jsou jeho sourozenci; pod nimi jejich manželé a děti (bratranci a sestřenice), pokud jsou známi. ${nFam} rodin, ${nSib} sourozenců předků (včetně nevlastních a dětí zemřelých v útlém věku; většina z rejstříků a rodopisů, část přímo z matrik – po najetí myší je vidět původ). Generace se počítají od Matěje (rodiče = 1).`;
   document.getElementById('wideBody').innerHTML=Object.keys(groups).map(Number).sort((a,b)=>a-b).map(g=>`<h3>${head(g)}</h3>${groups[g].join('')}`).join('')||'<p class="none">Nic neodpovídá filtru.</p>';
 }
 window.renderWide = renderWide;
