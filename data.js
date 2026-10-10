@@ -6236,8 +6236,8 @@ window.RODOKMEN = {
       notes: [
         "Úmrtí 4. 3. 1760 (M): „Marina Jacobi Kremer fabri ferrarii uxor Köbrovicio | 51 annorum“ (H IX 1 sk184) → *~1709.",
         "Sňatek 24. 5. 1735 (M): „virgo Marina Mathaei Kucza“, Kobeřice; matka Rosiny (*1738).",
-        "Křest nenalezen pod jménem Kucza (N 1706–1716). KANDIDÁT (K): Marina, dcera Matěje Kurky a Zuzany, pokř. 20. 8. 1713 Kobeřice (sk11); sňatek Matiz Kurka, mládenec, syn † Jana Kurky × Zuzana, dcera † Jury Mayschka (?), 28. 5. (1713?) (O sk105) – „Kurka“ = „Kucza“? Věk 51 při úmrtí 1760 by dal *1709 (u Jakuba věky nadsazené o 5 let). – SLÁBNE (STR-D9): Kurka a Kuča jsou v N 1716–30 dvě různé rodiny (1725 zapsány na sousedních řádcích odlišně).",
-        "Pravděpodobná rodina otce (D): Matiss Kuča × Marÿna, Kobeřice – děti Zuzanna 22. (IV?) 1725 (N H IX 1 sk25) a Margeta 13. 7. 1728 (sk29); jiný Matěj Kuča v N 1716–30 není → Matiss = Mathaeus Kucza († 1736). Matka Mariny tedy snad také Marina (K). Varianty psaní Kuča/Kuša/Guša/Kutzy – křest Mariny ~1706–13 hledat znovu s nimi."
+        "Pravděpodobná rodina otce (D): Matiss Kuča × Marÿna, Kobeřice – děti Zuzanna 22. (IV?) 1725 (N H IX 1 sk25) a Margeta 13. 7. 1728 (sk29); jiný Matěj Kuča v N 1716–30 není → Matiss = Mathaeus Kucza († 1736). Matka Mariny tedy snad také Marina (K). Varianty psaní Kuča/Kuša/Guša/Kutzy – křest Mariny ~1706–13 hledat znovu s nimi.",
+        "Vyloučeno (STR-D10, M): Marina pokř. 20. 8. 1713 je dcera Matize KURKY × Zuzanny – jiná rodina. Křest naší Mariny NENÍ v N H IX 1 I/1706–1716 (všechny varianty Kuča/Kuša/Guša/Kutzy) → snad před 1706 – nová kniha H IX 12 (N/O 1688–1705, Kobeřice a Štěpánkovice)."
       ],
       sources: [
         "ZA Opava, Sbírka matrik (NAD 165), Kobeřice H IX 1 (N/Z/O 1706–1765), skeny 46, 48, 53, 57, 121",
