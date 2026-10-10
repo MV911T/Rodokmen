@@ -6583,7 +6583,8 @@ window.RODOKMEN = {
       b: {"date":"cca 1777","year":1777,"approx":true,"place":"Nedašov"},
       father: "martinKos",
       notes: [
-        "Sňatek II/1797 (M): „Barbara, Tochter des verstorbenen Martin Kop(s)trna (?), Bauer in Nedaschow“, 20 let. Příjmení v zápisech čteno různě: „Kopschtenin“ (křest 1797), „Kostrnin“ (křest 1798), „Kopčn“ (sňatek syna 1821) – nejspíš Kostrnová (?)."
+        "Sňatek II/1797 (M): „Barbara, Tochter des verstorbenen Martin Kop(s)trna (?), Bauer in Nedaschow“, 20 let. Příjmení v zápisech čteno různě: „Kopschtenin“ (křest 1797), „Kostrnin“ (křest 1798), „Kopčn“ (sňatek syna 1821) – nejspíš Kostrnová (?).",
+        "„Kostrna“ je přezdívka nedašovských Holbů („Wenceslaus Golba vulgo Kosstrna“ † 1772) → Barbora byla nejspíš rozená Holbová (K). Křest s otcem Martinem Holbou/Kostrnou NENÍ v 4012 N I/1774–XII/1780."
       ],
       sources: [
         "MZA, O 4023, img 86",
@@ -6614,14 +6615,15 @@ window.RODOKMEN = {
     },
     {
       id: "martinKos",
-      name: "Martin Kostrna (?)",
+      name: "Martin Kostrna (Holba ?)",
       line: "matusu",
       cert: "M",
       b: {"date":"?","year":1745,"approx":true,"place":"Nedašov (?)"},
       d: {"date":"před 1797","year":1796,"approx":true,"place":"Nedašov (?)"},
       occ: "sedlák v Nedašově",
       notes: [
-        "Otec Barbory (sňatek 1797: „verstorbenen Martin Kop(s)trna (?), Bauer in Nedaschow“, M) – příjmení čteno nejistě."
+        "Otec Barbory (sňatek 1797: „verstorbenen Martin Kop(s)trna (?), Bauer in Nedaschow“, M) – příjmení čteno nejistě.",
+        "Úmrtí NENÍ v 4034 Z Nedašov ~1787–1797 → zemřel nejspíš před 1787 (K). V 4012 N 1774–80 není jako otec."
       ],
       sources: [
         "MZA, O 4023, img 86"
