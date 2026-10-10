@@ -41,7 +41,7 @@ header .meta{color:var(--muted);font-size:.8rem;letter-spacing:.02em}
 .chip{display:inline-flex;align-items:center;gap:6px;border:1px solid var(--rule);border-radius:999px;padding:3px 10px;background:var(--surface);color:var(--ink);font:inherit;font-size:.75rem;cursor:pointer}
 .chip[aria-pressed="true"]{border-color:var(--ink)}
 .sw{width:10px;height:10px;border-radius:2px;display:inline-block}
-.certs{display:flex;gap:12px;align-items:center;margin-left:auto}
+.certs{display:flex;flex-wrap:wrap;gap:6px 12px;align-items:center;margin-left:auto;min-width:0}
 .cert{display:inline-flex;align-items:center;gap:5px}
 .dot{width:9px;height:9px;border-radius:50%;display:inline-block;border:1.5px solid var(--ink)}
 .dot.M{background:var(--ink)} .dot.D{background:var(--muted);border-color:var(--muted)} .dot.R{background:transparent} .dot.K{background:transparent;border-style:dashed}
@@ -480,6 +480,7 @@ function openCol(id){
   if(!dlg.open) dlg.showModal();
 }
 window.openCol = openCol;
+window.RV_open = open;
 document.addEventListener('click',e=>{ const b=e.target.closest('[data-col]'); if(b){ e.preventDefault(); e.stopPropagation(); openCol(b.dataset.col); } }, true);
 dlg.addEventListener('click',e=>{ if(e.target===dlg) dlg.close(); });
 const V=document.getElementById('viewer'), VP=document.getElementById('vp');
@@ -640,6 +641,15 @@ requestAnimationFrame(()=>{ const c=document.querySelector(`.card[data-id="${D.r
     vb.x=Math.min(base.x+base.w-vb.w,Math.max(base.x,vb.x)); vb.y=Math.min(base.y+base.h-vb.h,Math.max(base.y,vb.y));
     svg.setAttribute('viewBox',`${vb.x} ${vb.y} ${vb.w} ${vb.h}`);
     svg.style.setProperty('--k',Math.pow(base.w/vb.w,-0.7).toFixed(3));
+    declutter();
+  }
+  // hide auto-place and city labels that would overlap a label placed before them (curated labels first); recomputed on zoom
+  function declutter(){
+    const placed=[], hit=(a,b)=>a.left<b.right&&b.left<a.right&&a.top<b.bottom&&b.top<a.bottom;
+    const order=[...svg.querySelectorAll('text.lbl:not(.auto):not(.sub)'),...svg.querySelectorAll('text.lbl.sub'),...svg.querySelectorAll('text.lbl.auto'),...svg.querySelectorAll('text.cityl')];
+    order.forEach(t=>{ t.style.visibility=''; const r=t.getBoundingClientRect(); if(!r.width) return;
+      const keep=!t.classList.contains('auto')&&!t.classList.contains('sub')&&!t.classList.contains('cityl');
+      if(!keep && placed.some(q=>hit(r,q))){ t.style.visibility='hidden'; return; } placed.push(r); });
   }
   function zoomAt(f,cx,cy){
     const r=svg.getBoundingClientRect(); if(cx===undefined){cx=r.left+r.width/2;cy=r.top+r.height/2;}
@@ -664,7 +674,7 @@ requestAnimationFrame(()=>{ const c=document.querySelector(`.card[data-id="${D.r
   });
   const mend=e=>{ mp.delete(e.pointerId); if(mp.size<2) mpinch=null; if(!mp.size){ mdrag=null; svg.classList.remove('drag'); } };
   ['pointerup','pointercancel','pointerleave'].forEach(t=>svg.addEventListener(t,mend));
-  setVB();
+  setVB(); window.RV_mapDeclutter=declutter;
   const KIND={doc:'doloženo',rail:'trasa pravděpodobná',hyp:'domněnka'};
   document.getElementById('moves').innerHTML=D.moves.map(m=>`<li style="--c:var(--l-${m.line})"><b>${m.when}</b> – ${m.who}: ${m.note}<span class="k">${KIND[m.kind]}</span></li>`).join('');
   const doc=p=>p.cert==='M'||p.cert==='D', place=e=>(e&&e.place||'').replace(/\s*č\.\s*\d+.*$/,'').replace(/,.*$/,'');
@@ -685,7 +695,7 @@ requestAnimationFrame(()=>{ const c=document.querySelector(`.card[data-id="${D.r
   function show(mode){ const m=mode===true?'map':mode===false?'tree':mode; const tree=m==='tree';
     MV.hidden=m!=='map'; WV.hidden=m!=='wide'; SC.hidden=!tree; LG.hidden=!tree; TL.hidden=!tree; ZB.hidden=!tree;
     tT.setAttribute('aria-selected',tree); tM.setAttribute('aria-selected',m==='map'); tW.setAttribute('aria-selected',m==='wide');
-    if(m==='wide') window.renderWide();
+    if(m==='wide') window.renderWide(); if(m==='map') window.RV_mapDeclutter&&window.RV_mapDeclutter();
     try{localStorage.setItem('rv-tab',m)}catch(e){} }
   tT.addEventListener('click',()=>show('tree')); tM.addEventListener('click',()=>show('map')); tW.addEventListener('click',()=>show('wide'));
   WV.addEventListener('click',e=>{ const b=e.target.closest('[data-go]'); if(!b) return; show('tree'); window.RV_focus&&window.RV_focus(b.dataset.go); });

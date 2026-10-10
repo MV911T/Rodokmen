@@ -26,6 +26,10 @@ window.RODOKMEN_GAZ = [
   { n: 'Krzanowice', a: ['Krzanowice'], lat: 50.01, lon: 18.12 },
   { n: 'Strahovice (Strandorf)', a: ['Strahovice', 'Strandorf'], lat: 50.005, lon: 18.075 },
   { n: 'Rohov', a: ['Rohov'], lat: 49.99, lon: 18.05 },
+  { n: 'Kobeřice', a: ['Kobeřice'], lat: 49.986, lon: 18.045 },
+  { n: 'Dolní Benešov', a: ['Dolní Benešov'], lat: 49.92, lon: 18.11 },
+  { n: 'Rogów', a: ['Rogau', 'Rogów'], lat: 49.97, lon: 18.33 },
+  { n: 'Ponięcice (Ponientzütz)', a: ['Ponientzütz', 'Ponięcice'], lat: 50.10, lon: 18.19 },
   { n: 'Borucin (Borutín)', a: ['Borutín', 'Borucin', 'Borutin'], lat: 50.0, lon: 18.16 },
   { n: 'Dobroslavice', a: ['Dobroslavice'], lat: 49.875, lon: 18.135 },
   { n: 'Bolatice', a: ['Bolatice'], lat: 49.95, lon: 18.08 },
@@ -41,6 +45,8 @@ window.RODOKMEN_GAZ = [
   { n: 'Wierzchosławice', a: ['Wierzchosławice'], lat: 50.03, lon: 20.84 },
   { n: 'Rajbrot', a: ['Rajbrot'], lat: 49.8, lon: 20.42 },
   { n: 'Zagórzany', a: ['Zagórzany'], lat: 49.93, lon: 20.21 },
+  { n: 'Łęg Tarnowski', a: ['Łęg'], lat: 50.07, lon: 20.90 },
+  { n: 'Jastew (Dębno)', a: ['Jastew'], lat: 49.97, lon: 20.72 },
   // outside the map frame (Bohemia) – listed so they are not reported as missing
   { n: 'Plavnice', a: ['Plavnice'], off: true },
   { n: 'Vodňany', a: ['Vodňany'], off: true },
@@ -52,4 +58,5 @@ window.RODOKMEN_GAZ = [
   { n: 'Křesín', a: ['Křesín'], off: true },
   { n: 'Litoradlice', a: ['Litoradlice'], off: true },
   { n: 'Býšov (Knín)', a: ['Býšov', 'Bejšov'], off: true },
+  { n: 'Dívčice', a: ['Dívčice'], off: true },
 ];
