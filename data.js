@@ -5368,16 +5368,21 @@ window.RODOKMEN = {
       name: "Paweł (Paulus) Woroń",
       line: "woron",
       cert: "M",
-      b: {"date":"cca 1790","year":1790,"approx":true,"place":"Lednica (Wieliczka)"},
+      b: {"date":"cca 1785","year":1785,"approx":true,"place":"? (Wieliczka)"},
+      mother: "margarethaPo",
       occ: "dělník v solných dolech (laborator salinarum) – podle poznámek",
+      marriage: "24. 1. 1820, Zabawa (farnost Wieliczka) – s Reginou Witarowskou (D)",
       notes: [
+        "Sňatek 24. 1. 1820, Zabawa č. 18 (M zápis): „Paulus Baron (?) [syn] Margarethae Porchała (?) | 35 | caelebs || Regina Adalberti Witarowski [et] Sophiae Wilk | 25 || [svědci] Josephus Szarek, Michael Dembosz (?)“. Příjmení ženicha čteno „Baron“ – nejspíš zkomolené „Woroń“ (W/B nejisté); jiná Regina Witarowská vhodného věku není a sňatek je těsně před narozením Kaspra → totožnost s rodiči Kaspra PRAVDĚPODOBNÁ (D). Rozhodne křest Kaspra (Lednica 1820–21 – kniha není online, jen AKMK/fara).",
         "Otec Kaspra (sňatek 6. 2. 1844: „Casparus Pauli Woroń et Reginae Witarowski L. S.“).",
         "Jeho křest ani sňatek s Reginou nejsou v online knihách CAAK (Lednica Górna O 1785–1823, Lednica Dolna 1810–21, Wieliczka O 1810–21). HYPOTÉZA (K): syn Wojciecha Woronia × Marianny Barańské (Wieliczka 236) nebo Andrzeje Woronia × Kateřiny Klappy (Lednica Dolna)."
       ],
       sources: [
+        "Archiwum Kurii Metropolitalnej Kraków (CAAK), KM-10-78, Zabawa – Copulatorum, snímek #0007_r; Geneteka (Wieliczka) – sňatky Witarowski 1792, 1820",
         "CAAK KM-10-78 (sňatky Wieliczka – Lednica Górna 1785–1846), snímek 0045_r"
       ],
       scans: [
+        {"f":"img/1820_snatek_pawel_woron_regina_witarowska.jpg","t":"Sňatek 24. 1. 1820, Zabawa č. 18 (farnost Wieliczka) – Paulus „Baron/Woroń (?)“, syn Markéty Porchały, 35 let × Regina, dcera Vojtěcha Witarowského a Žofie Wilk, 25 let; svědek Josef Szarek (CAAK KM-10-78, #0007_r)"},
         {"f":"img/1844_snatek_kasper_woron_szarek.jpg","t":"Sňatek 6. 2. 1844, Lednica Górna (CAAK KM-10-78)"}
       ]
     },
@@ -5387,15 +5392,21 @@ window.RODOKMEN = {
       maiden: "Witarowska",
       line: "woron",
       cert: "M",
-      b: {"date":"cca 1795","year":1795,"approx":true,"place":"Lednica / Wieliczka"},
+      b: {"date":"cca 1795","year":1795,"approx":true,"place":"Zabawa (?)"},
+      father: "wojciechWi",
+      mother: "zofiaWi",
       notes: [
+        "Sňatek 24. 1. 1820, Zabawa č. 18 (M zápis): „Paulus Baron (?) [syn] Margarethae Porchała (?) | 35 | caelebs || Regina Adalberti Witarowski [et] Sophiae Wilk | 25 || [svědci] Josephus Szarek, Michael Dembosz (?)“. Příjmení ženicha čteno „Baron“ – nejspíš zkomolené „Woroń“ (W/B nejisté); jiná Regina Witarowská vhodného věku není a sňatek je těsně před narozením Kaspra → totožnost s rodiči Kaspra PRAVDĚPODOBNÁ (D). Rozhodne křest Kaspra (Lednica 1820–21 – kniha není online, jen AKMK/fara).",
         "Matka Kaspra (sňatek 1844: „Reginae Witarowski“).",
-        "HYPOTÉZA (K): dcera Wojciecha Witarowského (*~1750, Lednica Górna) nebo Franciszka Witarowského × Reginy (Wieliczka)."
+        "HYPOTÉZA (K): dcera Wojciecha Witarowského (*~1750, Lednica Górna) nebo Franciszka Witarowského × Reginy (Wieliczka).",
+        "Křest Reginy podle Geneteky 6. 8. 1798 Zabawa č. 8 – ve skenu KM-10-34 nenalezen."
       ],
       sources: [
+        "Archiwum Kurii Metropolitalnej Kraków (CAAK), KM-10-78, Zabawa – Copulatorum, snímek #0007_r; Geneteka (Wieliczka) – sňatky Witarowski 1792, 1820",
         "CAAK KM-10-78 (sňatky Wieliczka – Lednica Górna 1785–1846), snímek 0045_r"
       ],
       scans: [
+        {"f":"img/1820_snatek_pawel_woron_regina_witarowska.jpg","t":"Sňatek 24. 1. 1820, Zabawa č. 18 (farnost Wieliczka) – Paulus „Baron/Woroń (?)“, syn Markéty Porchały, 35 let × Regina, dcera Vojtěcha Witarowského a Žofie Wilk, 25 let; svědek Josef Szarek (CAAK KM-10-78, #0007_r)"},
         {"f":"img/1844_snatek_kasper_woron_szarek.jpg","t":"Sňatek 6. 2. 1844, Lednica Górna (CAAK KM-10-78)"}
       ]
     },
@@ -6014,6 +6025,56 @@ window.RODOKMEN = {
       scans: [
         {"f":"img/1778_krest_sebastian_kussi.jpg","t":"Křest 9. 1. 1778, Dobroslavice č. 21 (fara Hlučín) – Sebastian, syn Jana Kussiho, sedláka, a Anny (ZAO, H I 1 O 2, sken 547)"}
       ]
+    },
+    {
+      id: "margarethaPo",
+      name: "Markéta (Margaretha) Porchała (?)",
+      line: "woron",
+      cert: "D",
+      b: {"date":"cca 1760","year":1760,"approx":true,"place":"?"},
+      notes: [
+        "Matka Pawła – sňatek 1820: „Paulus … Margarethae Porchała (?)“; otec Pawła neuveden (snad nemanželský syn). Čtení příjmení nejisté (Borchała?)."
+      ],
+      sources: [
+        "Archiwum Kurii Metropolitalnej Kraków (CAAK), KM-10-78, Zabawa – Copulatorum, snímek #0007_r; Geneteka (Wieliczka) – sňatky Witarowski 1792, 1820"
+      ],
+      scans: [
+        {"f":"img/1820_snatek_pawel_woron_regina_witarowska.jpg","t":"Sňatek 24. 1. 1820, Zabawa č. 18 (farnost Wieliczka) – Paulus „Baron/Woroń (?)“, syn Markéty Porchały, 35 let × Regina, dcera Vojtěcha Witarowského a Žofie Wilk, 25 let; svědek Josef Szarek (CAAK KM-10-78, #0007_r)"}
+      ]
+    },
+    {
+      id: "wojciechWi",
+      name: "Wojciech (Adalbert) Witarowski",
+      line: "woron",
+      cert: "D",
+      b: {"date":"cca 1750","year":1750,"approx":true,"place":"Zabawa / Lednica (?)"},
+      marriage: "14. 10. 1792 (jako vdovec, 42 let) – se Žofií Wilk (Geneteka, D)",
+      notes: [
+        "Otec Reginy – sňatek 1820 (M zápis, vazba D): „Regina Adalberti Witarowski“. Sňatek se Žofií Wilk 14. 10. 1792 – vdovec, 42 let (index Geneteka)."
+      ],
+      sources: [
+        "Archiwum Kurii Metropolitalnej Kraków (CAAK), KM-10-78, Zabawa – Copulatorum, snímek #0007_r; Geneteka (Wieliczka) – sňatky Witarowski 1792, 1820"
+      ],
+      scans: [
+        {"f":"img/1820_snatek_pawel_woron_regina_witarowska.jpg","t":"Sňatek 24. 1. 1820, Zabawa č. 18 (farnost Wieliczka) – Paulus „Baron/Woroń (?)“, syn Markéty Porchały, 35 let × Regina, dcera Vojtěcha Witarowského a Žofie Wilk, 25 let; svědek Josef Szarek (CAAK KM-10-78, #0007_r)"}
+      ]
+    },
+    {
+      id: "zofiaWi",
+      name: "Žofie (Sophia) Witarowska",
+      maiden: "Wilk",
+      line: "woron",
+      cert: "D",
+      b: {"date":"cca 1760","year":1760,"approx":true,"place":"?"},
+      notes: [
+        "Matka Reginy – sňatek 1820: „Sophiae Wilk“ (M zápis, vazba D)."
+      ],
+      sources: [
+        "Archiwum Kurii Metropolitalnej Kraków (CAAK), KM-10-78, Zabawa – Copulatorum, snímek #0007_r; Geneteka (Wieliczka) – sňatky Witarowski 1792, 1820"
+      ],
+      scans: [
+        {"f":"img/1820_snatek_pawel_woron_regina_witarowska.jpg","t":"Sňatek 24. 1. 1820, Zabawa č. 18 (farnost Wieliczka) – Paulus „Baron/Woroń (?)“, syn Markéty Porchały, 35 let × Regina, dcera Vojtěcha Witarowského a Žofie Wilk, 25 let; svědek Josef Szarek (CAAK KM-10-78, #0007_r)"}
+      ]
     }
   ]
 };
@@ -6388,5 +6449,7 @@ window.RODOKMEN.collateral = [
   {"cert":"R","note":"údaj rodiny (Matěj Veselý, 10. 10. 2026)","id":"c_pavelP","name":"Pavel Pacík","father":"c_tomasP"},
   {"cert":"R","note":"údaj rodiny (Matěj Veselý, 10. 10. 2026)","id":"c_petraP","name":"Petra Pacíková","father":"c_tomasP"},
   {"cert":"R","note":"údaj rodiny (Matěj Veselý, 10. 10. 2026)","id":"c_janP2","name":"Jan Pacík","father":"c_rudolfP"},
-  {"cert":"R","note":"údaj rodiny (Matěj Veselý, 10. 10. 2026)","id":"c_robertP","name":"Robert Pacík","father":"c_rudolfP"}
+  {"cert":"R","note":"údaj rodiny (Matěj Veselý, 10. 10. 2026)","id":"c_robertP","name":"Robert Pacík","father":"c_rudolfP"},
+  {"id":"c_witKat1795","name":"Katarzyna Witarowska","b":{"date":"17. 11. 1795","year":1795,"place":"Zabawa"},"father":"wojciechWi","mother":"zofiaWi","spouse":"Michał Kempa (∞ 1824, Mietniów č. 9)","cert":"D","note":"Geneteka (Wieliczka) – index"},
+  {"id":"c_witKlem","name":"Klemens Witarowski","father":"wojciechWi","mother":"zofiaWi","spouse":"sňatky 1817, 1819, 1842","cert":"D","note":"Geneteka (Wieliczka) – index"}
 ];
