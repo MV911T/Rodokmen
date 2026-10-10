@@ -5056,7 +5056,8 @@ window.RODOKMEN = {
         "Křest Anny není v Hluboká N 3557 (Zámostí/Křesínský dvůr XI/1826–V/1827) – na Křesíně 24 tehdy bydlela jiná rodina; narozena nejspíš v Olešníku nebo jinde podle služby otce.",
         "„matky Anny rozené Peterka z Křesína“ (1889, 1894, 1891); místo „Křesín“ čteno s otazníkem.",
         "Sňatek syna Jana 1894: „matky Anny rozené Peterka ze dvora Křesín (?), Hluboka“ – Anna pocházela z (panského) dvora u Hluboké.",
-        "Křest NENÍ v Zahájí 1822–1851 (rejstřík 8696, písmeno P) → nejspíš Křesín, fara Hluboká."
+        "Křest NENÍ v Zahájí 1822–1851 (rejstřík 8696, písmeno P) → nejspíš Křesín, fara Hluboká.",
+        "Křest NENÍ ani v N Hluboká 3555–3559 (rejstříky, P) a v N 3557 sk10–15 (XI/1826–1828, Zámostí i Křesín – ručně); na Křesíně č. 24 žili 1826 Pyskačkovi → Peterkovi tam přišli později; místo narození Anny zatím neznámé."
       ],
       sources: [
         "SOA Třeboň, Hluboká nad Vltavou 11 O (id 3564), sken 29 – https://digi.ceskearchivy.cz/DA?menu=3&id=3564&page=29",
@@ -5829,7 +5830,8 @@ window.RODOKMEN = {
       notes: [
         "Děd Anny Peterkové (sňatek vnučky 1851, M): „Vojtěch Ployhar, sedlák z Wolešníka čís. 21“.",
         "1809 svědek „Wogtiech Ployhar z Wolessnjka“; 1813 otec nevěsty, sedlák v Olešníku č. 21 (Zahájí 8, sk27–28, M).",
-        "Křty dětí v Olešníku č. 21 (8695, D – čteno v polovičním rozlišení): Matouš 12. 9. 1786, Matěj 14. 2. 1788, Mariana 22. 12. 1792 (M). Pozor: ve Volešníku žil i jiný Vojtěch Ployhar – výměnkář v č. 18 (dcera Kateřina 1785) a podruh v č. 28 (syn Jakub 1788); výměnkář snad otec sedláka (K). Sňatek s Kateřinou Novotnou není v O Zahájí – Volešník IX/1784–1794 → před 1784 nebo jinde (Hluboká?)."
+        "Křty dětí v Olešníku č. 21 (8695, D – čteno v polovičním rozlišení): Matouš 12. 9. 1786, Matěj 14. 2. 1788, Mariana 22. 12. 1792 (M). Pozor: ve Volešníku žil i jiný Vojtěch Ployhar – výměnkář v č. 18 (dcera Kateřina 1785) a podruh v č. 28 (syn Jakub 1788); výměnkář snad otec sedláka (K). Sňatek s Kateřinou Novotnou není v O Zahájí – Volešník IX/1784–1794 → před 1784 nebo jinde (Hluboká?).",
+        "Odlišen od jmenovce (M): 22. 4. 1777 Olešník se oženil „viduus Ploghar Adalbertus alias Tříska, exemptarius“ (výměnkář) s Kateřinou, dcerou † Štěpána Bezpalce, pastýře v Lhotě Likařově (?) (O Zahájí 7, id 8699 sk46) – to je výměnkář z č. 18, NE náš sedlák z č. 21 (manželka Kateřina Novotná)."
       ],
       sources: [
         "SOA Třeboň, Hluboká nad Vltavou 11 O (id 3564), sken 29 – https://digi.ceskearchivy.cz/DA?menu=3&id=3564&page=29",
@@ -6344,9 +6346,10 @@ window.RODOKMEN = {
       maiden: "Novotná (?)",
       line: "vesely",
       cert: "M",
-      b: {"date":"?","year":1765,"approx":true,"place":"Hlu… (?) – snad Hluboká"},
+      b: {"date":"?","year":1765,"approx":true,"place":"Hlum… / Hlinč… (?)"},
       notes: [
-        "Manželka Vojtěcha Ployhara, sedláka v Olešníku č. 21; v křtu dcery Mariany 1792 (M): „Kateřina Nowotna z Hlu…(?)“ – příjmení i místo čteny nejistě. Rok narození jen odhad."
+        "Manželka Vojtěcha Ployhara, sedláka v Olešníku č. 21; v křtu dcery Mariany 1792 (M): „Kateřina Nowotna z Hlum…(?)“ (konec slova spíš Hlum…/Hlinč… než Hluboká) – příjmení i místo čteny nejistě. Rok narození jen odhad.",
+        "Sňatek s Vojtěchem nenalezen: O Zahájí 1777–II/1784 a Volešník IX/1784–1794 negativní (D) → nejspíš 1784–86 v Hosíně, Hluboké nebo ve farnosti nevěsty."
       ],
       sources: [
         "SOA Třeboň, Zahájí 3 N 1784–1822 (id 8695), sken 68, P. 12 – https://digi.ceskearchivy.cz/DA?menu=3&id=8695&page=68"
