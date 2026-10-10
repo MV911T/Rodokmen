@@ -390,7 +390,7 @@ function renderWide(){
   // collateral subtree: children of a collateral person (cousins, their children …)
   const colKids=id=>COL.filter(c=>c.father===id||c.mother===id);
   const cdates=c=>c.b?` <span class="src">${span(c)}</span>`:c.d?` <span class="src">† ${c.d.date||''}</span>`:'';
-  const colItem=c=>{ const k=colKids(c.id); return `<li${c.note?` title="${c.note.replace(/"/g,'&quot;')}"`:''}>${c.name}${c.maiden?` <span class="tag">roz. ${c.maiden}</span>`:''}${cdates(c)}${c.spouse?` <span class="tag">∞ ${c.spouse}</span>`:''}${k.length?`<ul>${k.map(colItem).join('')}</ul>`:''}</li>`; };
+  const colItem=c=>{ const k=colKids(c.id); return `<li${c.note?` title="${c.note.replace(/"/g,'&quot;')}"`:''}><button type="button" class="plink" data-col="${c.id}">${c.name}</button>${c.maiden?` <span class="tag">roz. ${c.maiden}</span>`:''}${cdates(c)}${c.spouse?` <span class="tag">∞ ${c.spouse}</span>`:''}${k.length?`<ul>${k.map(colItem).join('')}</ul>`:''}</li>`; };
   // families: one per direct-line child X (gen g) whose parents are known
   const fams=D.people.filter(x=>(x.father&&P[x.father])||(x.mother&&P[x.mother])).filter(x=>genOf[x.id]!==undefined||x.id===D.root);
   const groups={}; let nFam=0, nSib=0;
@@ -431,7 +431,7 @@ function open(id){
   if(par.length) rows.push(['Rodiče', par.map(link).join('<br>')]);
   // siblings: people in the tree sharing a parent, plus recorded siblings outside the tree
   const sib = D.people.filter(q=>q.id!==p.id && ((p.father&&q.father===p.father)||(p.mother&&q.mother===p.mother)));
-  const colSib = (window.RODOKMEN.collateral||[]).filter(c=>(p.father&&c.father===p.father)||(p.mother&&c.mother===p.mother)).map(c=>c.name+(c.b?' *'+c.b.date:'')+(c.d?' †'+(c.d.date||''):''));
+  const colSib = (window.RODOKMEN.collateral||[]).filter(c=>(p.father&&c.father===p.father)||(p.mother&&c.mother===p.mother)).map(c=>colbtn(c)+(c.b?' <span class="src">*'+c.b.date+'</span>':'')+(c.d?' <span class="src">†'+(c.d.date||'')+'</span>':''));
   const sibText = colSib.length ? colSib : [...(p.siblings||[]).map(s=>typeof s==='string'?s:[s.name,s.b&&('*'+s.b),s.d&&('†'+s.d),s.note].filter(Boolean).join(' '))];
   if(sib.length||sibText.length) rows.push(['Sourozenci', [...sib.map(q=>link(q.id)), ...sibText].join('<br>')]);
   if(kids[p.id]) rows.push(['Děti v rodokmenu', kids[p.id].map(link).join('<br>')]);
@@ -448,6 +448,39 @@ function open(id){
   body.querySelectorAll('[data-go]').forEach(b=>b.addEventListener('click',()=>{ focusCard(b.dataset.go); open(b.dataset.go); }));
   if(!dlg.open) dlg.showModal();
 }
+// collateral relative (Širší okruh) – own detail dialog
+const colbtn = c => `<button type="button" class="plink" data-col="${c.id}">${c.name}</button>`;
+const colDates = c => [c.b&&('* '+c.b.date+(c.b.place?', '+c.b.place:'')), c.d&&('† '+(c.d.date||'')+(c.d.place?', '+c.d.place:''))].filter(Boolean).join(' · ');
+function openCol(id){
+  const C = window.RODOKMEN.collateral||[], c = C.find(x=>x.id===id); if(!c) return;
+  const ref = x => P[x] ? link(x) : (C.find(y=>y.id===x) ? colbtn(C.find(y=>y.id===x)) : '');
+  const rows = [];
+  rows.push(['Narození', c.b ? `${c.b.date||'?'}${c.b.place?', '+c.b.place:''}` : '<span class="src">neznámé</span>']);
+  rows.push(['Úmrtí', c.d ? `${c.d.date||''}${c.d.place?', '+c.d.place:''}` : '<span class="src">neznámé – zatím nedohledáno</span>']);
+  if(c.cause) rows.push(['Příčina úmrtí', c.cause]);
+  if(c.occ) rows.push(['Povolání', c.occ]);
+  if(c.spouse) rows.push(['Manžel/ka', c.spouse]);
+  const par=[c.father,c.mother].filter(Boolean); if(par.length) rows.push(['Rodiče', par.map(ref).join('<br>')]);
+  const sibs=[...D.people.filter(q=>(c.father&&q.father===c.father)||(c.mother&&q.mother===c.mother)).map(q=>link(q.id)+' <span class="src">(přímá linie)</span>'),
+    ...C.filter(x=>x.id!==c.id&&((c.father&&x.father===c.father)||(c.mother&&x.mother===c.mother))).map(colbtn)];
+  if(sibs.length) rows.push(['Sourozenci', sibs.join('<br>')]);
+  const ch=C.filter(x=>x.father===c.id||x.mother===c.id); if(ch.length) rows.push(['Děti', ch.map(colbtn).join('<br>')]);
+  const notes=[...(c.notes||[]), ...(c.note?[c.note]:[])];
+  body.innerHTML = `<button type="button" class="x" aria-label="Zavřít">×</button>
+    <h2>${c.name}</h2>
+    <div class="sub">${c.maiden?'roz. '+c.maiden+' · ':''}širší rodina (není v přímé linii)</div>
+    ${c.cert?`<span class="badge"><span class="dot ${c.cert}"></span>${CERT[c.cert]||''}</span>`:''}
+    <dl class="facts">${rows.map(([k,v])=>`<dt>${k}</dt><dd>${v}</dd>`).join('')}</dl>
+    ${notes.length?`<h3>Poznámky a původ údaje</h3><ul>${notes.map(n=>`<li>${n}</li>`).join('')}</ul>`:''}
+    ${c.scans&&c.scans.length?`<h3>Zápisy v matrice</h3><div class="scans">${c.scans.map(s=>`<button type="button" class="scan" data-src="${s.f}" data-t="${s.t}"><img src="${s.f}" alt="${s.t}" loading="lazy"><span>${s.t}</span></button>`).join('')}</div>`:''}
+    ${c.sources&&c.sources.length?`<h3>Prameny</h3><ul class="src">${c.sources.map(n=>`<li>${n}</li>`).join('')}</ul>`:''}`;
+  body.querySelector('.x').addEventListener('click',()=>dlg.close());
+  body.querySelectorAll('.scan').forEach(b=>b.addEventListener('click',()=>showScan(b.dataset.src,b.dataset.t)));
+  body.querySelectorAll('[data-go]').forEach(b=>b.addEventListener('click',()=>{ focusCard(b.dataset.go); open(b.dataset.go); }));
+  if(!dlg.open) dlg.showModal();
+}
+window.openCol = openCol;
+document.addEventListener('click',e=>{ const b=e.target.closest('[data-col]'); if(b){ e.preventDefault(); e.stopPropagation(); openCol(b.dataset.col); } }, true);
 dlg.addEventListener('click',e=>{ if(e.target===dlg) dlg.close(); });
 const V=document.getElementById('viewer'), VP=document.getElementById('vp');
 function showScan(src,t){ document.getElementById('vi').src=src; document.getElementById('vt').textContent=t; VP.classList.add('fit'); document.getElementById('vz').textContent='Přiblížit'; if(dlg.open) dlg.close(); V.hidden=false; }
