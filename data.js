@@ -3255,10 +3255,12 @@ window.RODOKMEN = {
       d: {"date":"9. 1. 1829","year":1829,"place":"Chuchelná"},
       cause: "souchotiny (Hektik)",
       father: "josefHol",
+      mother: "rosinaKrem",
       notes: [
         "Dcera † Josepha Holeczka, kováře a chalupníka z Kobeřic; před sňatkem 1795 sloužila v Chuchelné.",
         "Dcera Josepha Holeczka: „Catharina geborene Joseph Holeczek“ (křest dcery Cäcilie 1801). V křtu Heinricha 1805 je zapsána „geb. Kremer“ – titíž kmotři, tedy týž pár; nejspíš chyba duplikátu.",
-        "Zemřela 9. 1. 1829 v Chuchelné, 56 let, na souchotiny."
+        "Zemřela 9. 1. 1829 v Chuchelné, 56 let, na souchotiny.",
+        "Matka PRAVDĚPODOBNĚ Rosina roz. Kremer (D): v křtu bratra Mathiase 19. 9. 1774 „des Inmans Joseph Holaschek von seinem Weibe Rosina gebohrne Krammerin“ (Kobeřice H IX 2 sk45) – zápis „geb. Kremer“ u Cathariny v r. 1805 tedy zřejmě omylem uvedené příjmení matky. Křest Cathariny NENÍ v Kobeřicích 1771–1775."
       ],
       sources: [
         "Silius Radicum – duplikáty Krzanowice křty 1801 Nr 95, 1805 Nr 123; úmrtí 1829 Nr 7 (461/0002)"
@@ -3279,14 +3281,17 @@ window.RODOKMEN = {
       occ: "kovář a chalupník (Faber ferrarius et casarius) v Kobeřicích",
       notes: [
         "Otec Cathariny (sňatek 1795: „Filia Defuncti Josephi Holeczek Fabri Ferarii et Casarii Koebrovicensis“).",
-        "III/1773 chalupník (Häusler) v Kobeřicích, manželka Rosina (D – zápis kmotry: „Rosina Eheweib des Häuslers Joseph Holschek v. Kobro.“, ZAO Kobeřice H IX 2 sken 39). Rodné příjmení Rosiny neznámé. Catharina (*~1772) NENÍ v křtech Kobeřic 1772–1773; sňatek Josefa není v O 1766–I/1774. V Kobeřicích kovářská rodina Kremer (Catharina v r. 1805 „geb. Kremer“) – souvislost K."
+        "III/1773 chalupník (Häusler) v Kobeřicích, manželka Rosina (D – zápis kmotry: „Rosina Eheweib des Häuslers Joseph Holschek v. Kobro.“, ZAO Kobeřice H IX 2 sken 39). Rodné příjmení Rosiny neznámé. Catharina (*~1772) NENÍ v křtech Kobeřic 1772–1773; sňatek Josefa není v O 1766–I/1774. V Kobeřicích kovářská rodina Kremer (Catharina v r. 1805 „geb. Kremer“) – souvislost K.",
+        "Manželka Rosina roz. Kremer („Krammerin“) – křest syna Mathiase 19. 9. 1774, Joseph tehdy „Inman“ (podruh) v Kobeřicích (M)."
       ],
       sources: [
-        "Silius Radicum – duplikáty Krzanowice křty 1801 Nr 95"
+        "Silius Radicum – duplikáty Krzanowice křty 1801 Nr 95",
+        "ZA Opava, Sbírka matrik (NAD 165), Kobeřice H IX 2 (N 1766–1794), skeny 39, 45"
       ],
       scans: [
         {"f":"img/1795_snatek_strusch_holeczek.jpg","t":"Sňatek 20. 1. 1795, Krzanowice (POL IX 2 sn. 135)"},
-        {"f":"img/1801_krest_caecilia_strusch.jpg","t":"Křest sestry Cäcilie 20. 9. 1801 – matka „Catharina geb. Joseph Holeczek“ (334/0033)"}
+        {"f":"img/1801_krest_caecilia_strusch.jpg","t":"Křest sestry Cäcilie 20. 9. 1801 – matka „Catharina geb. Joseph Holeczek“ (334/0033)"},
+        {"f":"img/1774_krest_mathias_holeczek.jpg","t":"Křest 19. 9. 1774, Kobeřice – Mathias, syn podruha Josepha Holeczka a Rosiny rozené Krammerin (Kremer) (ZAO, Kobeřice H IX 2, sken 45)"}
       ]
     },
     {
@@ -6075,6 +6080,23 @@ window.RODOKMEN = {
       scans: [
         {"f":"img/1820_snatek_pawel_woron_regina_witarowska.jpg","t":"Sňatek 24. 1. 1820, Zabawa č. 18 (farnost Wieliczka) – Paulus „Baron/Woroń (?)“, syn Markéty Porchały, 35 let × Regina, dcera Vojtěcha Witarowského a Žofie Wilk, 25 let; svědek Josef Szarek (CAAK KM-10-78, #0007_r)"}
       ]
+    },
+    {
+      id: "rosinaKrem",
+      name: "Rosina Holeczek",
+      maiden: "Kremer",
+      line: "struz",
+      cert: "D",
+      b: {"date":"cca 1745","year":1745,"approx":true,"place":"Kobeřice (?)"},
+      notes: [
+        "Manželka Josepha Holeczka, Kobeřice; v křtu syna Mathiase 1774 „Rosina gebohrne Krammerin“ (M zápis); jako matka Cathariny (*~1772) pravděpodobná (D). V Kobeřicích kovářský rod Kremer (Jacob † před 1772, Johann) – možná dcera Jacoba (K)."
+      ],
+      sources: [
+        "ZA Opava, Sbírka matrik (NAD 165), Kobeřice H IX 2 (N 1766–1794), skeny 39, 45"
+      ],
+      scans: [
+        {"f":"img/1774_krest_mathias_holeczek.jpg","t":"Křest 19. 9. 1774, Kobeřice – Mathias, syn podruha Josepha Holeczka a Rosiny rozené Krammerin (Kremer) (ZAO, Kobeřice H IX 2, sken 45)"}
+      ]
     }
   ]
 };
@@ -6450,5 +6472,6 @@ window.RODOKMEN.collateral = [
   {"cert":"R","note":"údaj rodiny (Matěj Veselý, 10. 10. 2026)","id":"c_janP2","name":"Jan Pacík","father":"c_rudolfP"},
   {"cert":"R","note":"údaj rodiny (Matěj Veselý, 10. 10. 2026)","id":"c_robertP","name":"Robert Pacík","father":"c_rudolfP"},
   {"id":"c_witKat1795","name":"Katarzyna Witarowska","b":{"date":"17. 11. 1795","year":1795,"place":"Zabawa"},"father":"wojciechWi","mother":"zofiaWi","spouse":"Michał Kempa (∞ 1824, Mietniów č. 9)","cert":"D","note":"Geneteka (Wieliczka) – index"},
-  {"id":"c_witKlem","name":"Klemens Witarowski","father":"wojciechWi","mother":"zofiaWi","spouse":"sňatky 1817, 1819, 1842","cert":"D","note":"Geneteka (Wieliczka) – index"}
+  {"id":"c_witKlem","name":"Klemens Witarowski","father":"wojciechWi","mother":"zofiaWi","spouse":"sňatky 1817, 1819, 1842","cert":"D","note":"Geneteka (Wieliczka) – index"},
+  {"id":"c_holMat1774","name":"Mathias Holeczek","b":{"date":"19. 9. 1774","year":1774,"place":"Kobeřice"},"father":"josefHol","mother":"rosinaKrem","cert":"M","note":"Křest Kobeřice H IX 2 sk45 (M)"}
 ];
