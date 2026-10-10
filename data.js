@@ -3372,15 +3372,18 @@ window.RODOKMEN = {
       occ: "domkář (Häusler) v Chuchelné; podle OFB sedlák z Dobroslavic",
       marriage: "29. 1. 1805, Krzanowice – s Theresií, dcerou zahradníka Josefa Stusika; svědci zahradník Jacob Sajiczek a chalupník Franz Pospiech",
       notes: [
+        "Sňatek 29. 1. 1805 (M): „oriundus Dobroslavic ex Ditione Austriaca, famulus Kuchelnae serviens“ – pochází z Dobroslavic, ne z Hlučína.",
         "Sňatek 1805: „Sebastianus Kusin, oriundus Dobroslavic ex Ditione Austriaca, Famulus Kuchelnae serviens“ – pocházel z Dobroslavic na rakouské straně hranice, v Chuchelné sloužil jako čeledín. Křest hledat v Hlučíně (Dobroslavice patřily do 1780 k farnosti Hlučín, pak Plesná).",
         "Otec Carla (křest 1808: „Häusler Sebastian Kussin × Theresia geb. Joseph Stasik“), Johanny (1806), Cathariny (1811), Marianny (1814).",
         "Zemřel 25. 12. 1823 v Chuchelné, 47 let („Sebastian Gusin Häusler“)."
       ],
       sources: [
+        "ZA Opava, Sbírka matrik (NAD 165), konsignace fary Krzanowice POL IX 1 (sk643, 650) a POL IX 2 (sk285, 297, 345)",
         "Silius Radicum – duplikáty Krzanowice křty 1808 Nr 135 (341/0045); úmrtí 1823 Nr 154 (455/0022)",
         "OFB Kranowitz (I11930)"
       ],
       scans: [
+        {"f":"img/1805_snatek_kussin_stusik.jpg","t":"Sňatek 29. 1. 1805, Chuchelná – Sebastian Kusin z Dobroslavic × Theresia, dcera Josefa Stusika (POL IX 2, sken 285)"},
         {"f":"img/1805_snatek_kussin_stusik.jpg","t":"Sňatek 29. 1. 1805 (POL IX 2 sn. 285)"},
         {"f":"img/1808_krest_carl_kussin.jpg","t":"Křest 9. 10. 1808 (341/0045 Nr 135)"},
         {"f":"img/1823_umrti_sebastian_kussin.jpg","t":"Úmrtí 25. 12. 1823, 47 let (455/0022)"}
@@ -3392,17 +3395,23 @@ window.RODOKMEN = {
       maiden: "Stusik (Stasik)",
       line: "struz",
       cert: "M",
-      b: {"date":"1. 8. 1782 (podle OFB)","year":1782,"place":"Chuchelná"},
+      b: {"date":"1. 8. 1782","year":1782,"place":"Chuchelná"},
       d: {"date":"28. 3. 1838","year":1838,"place":"Chuchelná"},
       father: "josefSt",
+      mother: "magdalenaKa",
       notes: [
+        "Křest 1. 8. 1782 (M): „Theresia | Josephus Stusik gazarius Kuchelnensis et Magdalena | Michael Moravetz hortulanus et Margarita uxor Francisci Pospiech gazarii, ambo Kuchelnenses“ (POL IX 1 sk650).",
+        "Sňatek 29. 1. 1805 Chuchelná (M): „Sebastianus Kusin, oriundus Dobroslavic ex Ditione Austriaca, famulus Kuchelnae serviens, cum … Theresia filia Josephi Stusik hortulani Kuchelnensis“ (POL IX 2 sk285). Dcera Johanna pokř. IV/1806.",
         "Dcera Josepha Stasika (křest syna Carla 1808).",
         "Zemřela 28. 3. 1838 jako vdova po výměnkáři Sebastianu Kussinovi, 60 let; narození 1. 8. 1782 podle rodopisu OFB (D)."
       ],
       sources: [
+        "ZA Opava, Sbírka matrik (NAD 165), konsignace fary Krzanowice POL IX 1 (sk643, 650) a POL IX 2 (sk285, 297, 345)",
         "Silius Radicum – duplikáty Krzanowice křty 1808 Nr 135; úmrtí 1838 Nr 44 (470/0007)"
       ],
       scans: [
+        {"f":"img/1782_krest_theresia_stusik.jpg","t":"Křest 1. 8. 1782, Chuchelná – Theresia, dcera Josefa Stusika, chalupníka, a Magdaleny (POL IX 1, sken 650)"},
+        {"f":"img/1805_snatek_kussin_stusik.jpg","t":"Sňatek 29. 1. 1805, Chuchelná – Sebastian Kusin z Dobroslavic × Theresia, dcera Josefa Stusika (POL IX 2, sken 285)"},
         {"f":"img/1805_snatek_kussin_stusik.jpg","t":"Sňatek 29. 1. 1805 (POL IX 2 sn. 285)"},
         {"f":"img/1808_krest_carl_kussin.jpg","t":"Křest 9. 10. 1808 (341/0045 Nr 135)"},
         {"f":"img/1838_umrti_theresia_kussin.jpg","t":"Úmrtí 28. 3. 1838, 60 let (470/0007)"}
@@ -3414,17 +3423,22 @@ window.RODOKMEN = {
       line: "struz",
       cert: "M",
       b: {"date":"cca 1753","year":1753,"approx":true},
-      d: {"date":"19. 9. 1809 (podle OFB)","year":1809},
-      occ: "zahradník v Chuchelné",
+      d: {"date":"21. 9. 1809 (pohřeb; † 19. 9. dle OFB)","year":1809,"place":"Chuchelná"},
+      occ: "čeledín ze Strahovic (1781), chalupník (1782), zahradník (1805), podruh (1809), Chuchelná",
+      marriage: "23. 10. 1781, Chuchelná – s Magdalenou Karpensteinovou",
       notes: [
+        "Sňatek 23. 10. 1781 Chuchelná (M): „Josephus Stusick famulus Strandorffensis cum Magdalena filia Caroli Karpenstein gazarii Kuchellnensis | Mathias Pluschka caupo Strandorffensis et Thomas Saitz gazarius Kuchellnensis“ (POL IX 1 sk643) – původem ze Strahovic.",
+        "Úmrtí (pohřeb 21. 9. 1809) (M): „Josephus Stusik inquilinus … Kuchelna | hectica | 56“ (POL IX 2 sk345) → *~1753.",
         "Otec Theresie (sňatek 1805: „Theresia Filia Josephi Stusik Hortulani Kuchelnensis“).",
         "Podle OFB (D): sňatek 23. 10. 1781 s Magdalenou Karpenstein (*1759, †1798), dcerou Carla Karpensteina (*1726 Chuchelná) a Cathariny Klicha."
       ],
       sources: [
+        "ZA Opava, Sbírka matrik (NAD 165), konsignace fary Krzanowice POL IX 1 (sk643, 650) a POL IX 2 (sk285, 297, 345)",
         "ZA Opava, NAD 165 Sbírka matrik, POL IX 2 sn. 285",
         "OFB Kranowitz I30903"
       ],
       scans: [
+        {"f":"img/1781_snatek_josef_stusik_karpenstein.jpg","t":"Sňatek 23. 10. 1781, Chuchelná – Josef Stusik, čeledín ze Strahovic × Magdalena, dcera Karla Karpensteina, chalupníka (ZAO, Krzanowice POL IX 1, sken 643)"},
         {"f":"img/1805_snatek_kussin_stusik.jpg","t":"Sňatek 29. 1. 1805 (POL IX 2 sn. 285)"}
       ]
     },
@@ -5921,6 +5935,42 @@ window.RODOKMEN = {
       ],
       scans: [
         {"f":"img/1703_krest_andreas_strusch.jpg","t":"Křest 29. 11. 1703, Rohov (farnost Sudice) – Andreas, syn Georga Straze (Strusche) a Cathariny (ZAO, Sudice H XVI 1, sken 2)"}
+      ]
+    },
+    {
+      id: "magdalenaKa",
+      name: "Magdalena Stusik",
+      maiden: "Karpenstein",
+      line: "struz",
+      cert: "M",
+      b: {"date":"cca 1758","year":1758,"approx":true,"place":"Chuchelná (?)"},
+      father: "karlKa",
+      notes: [
+        "Sňatek 23. 10. 1781 (M): „Magdalena filia Caroli Karpenstein gazarii Kuchellnensis“; matka Theresie (*1782)."
+      ],
+      sources: [
+        "ZA Opava, Sbírka matrik (NAD 165), konsignace fary Krzanowice POL IX 1 (sk643, 650) a POL IX 2 (sk285, 297, 345)"
+      ],
+      scans: [
+        {"f":"img/1781_snatek_josef_stusik_karpenstein.jpg","t":"Sňatek 23. 10. 1781, Chuchelná – Josef Stusik, čeledín ze Strahovic × Magdalena, dcera Karla Karpensteina, chalupníka (ZAO, Krzanowice POL IX 1, sken 643)"}
+      ]
+    },
+    {
+      id: "karlKa",
+      name: "Karl Karpenstein",
+      line: "struz",
+      cert: "M",
+      b: {"date":"cca 1725","year":1725,"approx":true,"place":"?"},
+      d: {"date":"před VII/1782","year":1782,"approx":true},
+      occ: "chalupník (gazarius), Chuchelná",
+      notes: [
+        "Otec Magdaleny (sňatek 1781, M). V VII/1782 kmotra „Catharina uxor def. Caroli Karpenstein“ (D, náhled) → zemřel 1781–82; manželka Catharina."
+      ],
+      sources: [
+        "ZA Opava, Sbírka matrik (NAD 165), konsignace fary Krzanowice POL IX 1 (sk643, 650) a POL IX 2 (sk285, 297, 345)"
+      ],
+      scans: [
+        {"f":"img/1781_snatek_josef_stusik_karpenstein.jpg","t":"Sňatek 23. 10. 1781, Chuchelná – Josef Stusik, čeledín ze Strahovic × Magdalena, dcera Karla Karpensteina, chalupníka (ZAO, Krzanowice POL IX 1, sken 643)"}
       ]
     }
   ]
