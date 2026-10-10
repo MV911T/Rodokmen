@@ -389,7 +389,8 @@ function renderWide(){
   const dates=x=>{ const p=P[x]||CP[x]; return p&&p.b?` <span class="src">${span(p)}</span>`:''; };
   // collateral subtree: children of a collateral person (cousins, their children …)
   const colKids=id=>COL.filter(c=>c.father===id||c.mother===id);
-  const colItem=c=>{ const k=colKids(c.id); return `<li>${c.name}${c.b?` <span class="src">${span(c)}</span>`:''}${c.spouse?` <span class="tag">∞ ${c.spouse}</span>`:''}${c.note?` <span class="tag">${c.note}</span>`:''}${k.length?`<ul>${k.map(colItem).join('')}</ul>`:''}</li>`; };
+  const cdates=c=>c.b?` <span class="src">${span(c)}</span>`:c.d?` <span class="src">† ${c.d.date||''}</span>`:'';
+  const colItem=c=>{ const k=colKids(c.id); return `<li${c.note?` title="${c.note.replace(/"/g,'&quot;')}"`:''}>${c.name}${c.maiden?` <span class="tag">roz. ${c.maiden}</span>`:''}${cdates(c)}${c.spouse?` <span class="tag">∞ ${c.spouse}</span>`:''}${k.length?`<ul>${k.map(colItem).join('')}</ul>`:''}</li>`; };
   // families: one per direct-line child X (gen g) whose parents are known
   const fams=D.people.filter(x=>(x.father&&P[x.father])||(x.mother&&P[x.mother])).filter(x=>genOf[x.id]!==undefined||x.id===D.root);
   const groups={}; let nFam=0, nSib=0;
@@ -430,7 +431,8 @@ function open(id){
   if(par.length) rows.push(['Rodiče', par.map(link).join('<br>')]);
   // siblings: people in the tree sharing a parent, plus recorded siblings outside the tree
   const sib = D.people.filter(q=>q.id!==p.id && ((p.father&&q.father===p.father)||(p.mother&&q.mother===p.mother)));
-  const sibText = (p.siblings||[]).map(s=>typeof s==='string'?s:[s.name,s.b&&('*'+s.b),s.d&&('†'+s.d),s.note].filter(Boolean).join(' '));
+  const colSib = (window.RODOKMEN.collateral||[]).filter(c=>(p.father&&c.father===p.father)||(p.mother&&c.mother===p.mother)).map(c=>c.name+(c.b?' *'+c.b.date:'')+(c.d?' †'+(c.d.date||''):''));
+  const sibText = [...colSib, ...(p.siblings||[]).map(s=>typeof s==='string'?s:[s.name,s.b&&('*'+s.b),s.d&&('†'+s.d),s.note].filter(Boolean).join(' '))];
   if(sib.length||sibText.length) rows.push(['Sourozenci', [...sib.map(q=>link(q.id)), ...sibText].join('<br>')]);
   if(kids[p.id]) rows.push(['Děti v rodokmenu', kids[p.id].map(link).join('<br>')]);
   body.innerHTML = `<button type="button" class="x" aria-label="Zavřít">×</button>

@@ -359,8 +359,7 @@ window.RODOKMEN = {
       mother: "marta",
       alive: true,
       marriage: "22. 6. 1985 – s Janou Pacíkovou (údaj rodiny)",
-      notes: [],
-      siblings: ["Sestra Miluše Kempná, roz. Veselá (*19. 4. 1958 Ostrava-Fifejdy), manžel Rostislav Kempný, děti Rostislav a Barbora."]
+      notes: []
     },
     {
       id: "jana",
@@ -372,8 +371,7 @@ window.RODOKMEN = {
       father: "rudolf1936",
       mother: "margareta",
       alive: true,
-      notes: [],
-      siblings: ["Rudolf Pacík (*29. 3. 1961 Ostrava, †3. 8. 2018 Ostrava, pohřben v Chuchelné), Tomáš Pacík."]
+      notes: []
     },
     {
       id: "svaton",
@@ -400,8 +398,7 @@ window.RODOKMEN = {
       scans: [
         {"f":"img/1957_snatek_svaton_vesely_marta_woronova_2.jpg","t":"Sňatek 28. 9. 1957 – svědci, dohoda o příjmení „Veselý“, podpis matrikáře"},
         {"f":"img/1957_snatek_svaton_vesely_marta_woronova_1.jpg","t":"Sňatek 28. 9. 1957, Slezská Ostrava – snoubenci a jejich rodiče (poř. č. 40)"}
-      ],
-      siblings: ["Karel, Růženka."]
+      ]
     },
     {
       id: "karelV",
@@ -959,8 +956,7 @@ window.RODOKMEN = {
       scans: [
         {"f":"img/1957_snatek_svaton_vesely_marta_woronova_2.jpg","t":"Sňatek 28. 9. 1957 – svědci, dohoda o příjmení „Veselý“, podpis matrikáře"},
         {"f":"img/1957_snatek_svaton_vesely_marta_woronova_1.jpg","t":"Sňatek 28. 9. 1957, Slezská Ostrava – snoubenci a jejich rodiče (poř. č. 40)"}
-      ],
-      siblings: ["Sestra Libuše Randulová (manžel Josef, děti Dušan a Tomáš); sourozenci Miloslava a Jaroslav zemřeli před jejím narozením."]
+      ]
     },
     {
       id: "ludvik",
@@ -6442,7 +6438,27 @@ window.RODOKMEN.events = [
   {"y":1993,"t":"Vzniká Česká republika","s":"Vznik ČR"}
 ];
 
-window.RODOKMEN_BUILD='10. 10. 2026 9:37';
+// Collateral relatives outside the direct line ("Širší okruh"): siblings of ancestors, their spouses and descendants; father/mother = id of a person or another collateral entry
+window.RODOKMEN.collateral = [
+  {"cert":"R","note":"údaj rodiny (Matěj Veselý, 10. 10. 2026)","id":"c_libuse","name":"Libuše Randulová","maiden":"Woroňová","father":"ludvik","mother":"honorata","spouse":"Josef Randula"},
+  {"cert":"R","note":"zemřela před narozením sestry Marty (1939) – údaj rodiny (Matěj Veselý, 10. 10. 2026)","id":"c_miloslava","name":"Miloslava Woroňová","father":"ludvik","mother":"honorata"},
+  {"cert":"R","note":"zemřel před narozením sestry Marty (1939) – údaj rodiny (Matěj Veselý, 10. 10. 2026)","id":"c_jaroslav","name":"Jaroslav Woroň","father":"ludvik","mother":"honorata"},
+  {"cert":"R","note":"údaj rodiny (Matěj Veselý, 10. 10. 2026)","id":"c_dusan","name":"Dušan Randula","mother":"c_libuse"},
+  {"cert":"R","note":"údaj rodiny (Matěj Veselý, 10. 10. 2026)","id":"c_tomasR","name":"Tomáš Randula","mother":"c_libuse","d":{"date":"zemřel"}},
+  {"cert":"R","note":"údaj rodiny (Matěj Veselý, 10. 10. 2026)","id":"c_martinR","name":"Martin Randula","father":"c_dusan"},
+  {"cert":"R","note":"údaj rodiny (Matěj Veselý, 10. 10. 2026)","id":"c_gabrielaR","name":"Gabriela Randulová","father":"c_dusan"},
+  {"cert":"R","note":"údaj rodiny (Matěj Veselý, 10. 10. 2026)","id":"c_adamR","name":"Adam Randula","father":"c_tomasR","d":{"date":"zemřel"}},
+  {"cert":"R","note":"údaj rodiny (Matěj Veselý, 10. 10. 2026)","id":"c_evaR","name":"Eva Randulová","father":"c_tomasR"},
+  {"cert":"R","note":"údaj rodiny (Matěj Veselý, 10. 10. 2026)","id":"c_miluse","name":"Miluše Kempná","maiden":"Veselá","father":"svaton","mother":"marta","b":{"date":"19. 4. 1958","year":1958,"place":"Ostrava-Fifejdy"},"spouse":"Rostislav Kempný"},
+  {"cert":"R","note":"údaj rodiny (Matěj Veselý, 10. 10. 2026)","id":"c_rostislavK","name":"Rostislav Kempný","mother":"c_miluse"},
+  {"cert":"R","note":"údaj rodiny (Matěj Veselý, 10. 10. 2026)","id":"c_barboraK","name":"Barbora Kempná","mother":"c_miluse"},
+  {"cert":"R","note":"údaj rodiny (Matěj Veselý, 10. 10. 2026)","id":"c_rudolfP","name":"Rudolf Pacík","father":"rudolf1936","mother":"margareta","b":{"date":"29. 3. 1961","year":1961,"place":"Ostrava"},"d":{"date":"3. 8. 2018","year":2018,"place":"Ostrava (pohřben v Chuchelné)"}},
+  {"cert":"R","note":"údaj rodiny (Matěj Veselý, 10. 10. 2026)","id":"c_tomasP","name":"Tomáš Pacík","father":"rudolf1936","mother":"margareta"},
+  {"cert":"R","note":"údaj rodiny (Matěj Veselý, 10. 10. 2026)","id":"c_karelV2","name":"Karel Veselý","father":"karelV","mother":"annaP"},
+  {"cert":"R","note":"údaj rodiny (Matěj Veselý, 10. 10. 2026)","id":"c_ruzenka","name":"Růženka Veselá","father":"karelV","mother":"annaP"}
+];
+
+window.RODOKMEN_BUILD='10. 10. 2026 9:46';
 
 </script>
 <script>
@@ -6579,7 +6595,8 @@ function renderWide(){
   const dates=x=>{ const p=P[x]||CP[x]; return p&&p.b?` <span class="src">${span(p)}</span>`:''; };
   // collateral subtree: children of a collateral person (cousins, their children …)
   const colKids=id=>COL.filter(c=>c.father===id||c.mother===id);
-  const colItem=c=>{ const k=colKids(c.id); return `<li>${c.name}${c.b?` <span class="src">${span(c)}</span>`:''}${c.spouse?` <span class="tag">∞ ${c.spouse}</span>`:''}${c.note?` <span class="tag">${c.note}</span>`:''}${k.length?`<ul>${k.map(colItem).join('')}</ul>`:''}</li>`; };
+  const cdates=c=>c.b?` <span class="src">${span(c)}</span>`:c.d?` <span class="src">† ${c.d.date||''}</span>`:'';
+  const colItem=c=>{ const k=colKids(c.id); return `<li${c.note?` title="${c.note.replace(/"/g,'&quot;')}"`:''}>${c.name}${c.maiden?` <span class="tag">roz. ${c.maiden}</span>`:''}${cdates(c)}${c.spouse?` <span class="tag">∞ ${c.spouse}</span>`:''}${k.length?`<ul>${k.map(colItem).join('')}</ul>`:''}</li>`; };
   // families: one per direct-line child X (gen g) whose parents are known
   const fams=D.people.filter(x=>(x.father&&P[x.father])||(x.mother&&P[x.mother])).filter(x=>genOf[x.id]!==undefined||x.id===D.root);
   const groups={}; let nFam=0, nSib=0;
@@ -6620,7 +6637,8 @@ function open(id){
   if(par.length) rows.push(['Rodiče', par.map(link).join('<br>')]);
   // siblings: people in the tree sharing a parent, plus recorded siblings outside the tree
   const sib = D.people.filter(q=>q.id!==p.id && ((p.father&&q.father===p.father)||(p.mother&&q.mother===p.mother)));
-  const sibText = (p.siblings||[]).map(s=>typeof s==='string'?s:[s.name,s.b&&('*'+s.b),s.d&&('†'+s.d),s.note].filter(Boolean).join(' '));
+  const colSib = (window.RODOKMEN.collateral||[]).filter(c=>(p.father&&c.father===p.father)||(p.mother&&c.mother===p.mother)).map(c=>c.name+(c.b?' *'+c.b.date:'')+(c.d?' †'+(c.d.date||''):''));
+  const sibText = [...colSib, ...(p.siblings||[]).map(s=>typeof s==='string'?s:[s.name,s.b&&('*'+s.b),s.d&&('†'+s.d),s.note].filter(Boolean).join(' '))];
   if(sib.length||sibText.length) rows.push(['Sourozenci', [...sib.map(q=>link(q.id)), ...sibText].join('<br>')]);
   if(kids[p.id]) rows.push(['Děti v rodokmenu', kids[p.id].map(link).join('<br>')]);
   body.innerHTML = `<button type="button" class="x" aria-label="Zavřít">×</button>

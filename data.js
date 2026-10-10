@@ -38,8 +38,7 @@ window.RODOKMEN = {
       mother: "marta",
       alive: true,
       marriage: "22. 6. 1985 – s Janou Pacíkovou (údaj rodiny)",
-      notes: [],
-      siblings: ["Sestra Miluše Kempná, roz. Veselá (*19. 4. 1958 Ostrava-Fifejdy), manžel Rostislav Kempný, děti Rostislav a Barbora."]
+      notes: []
     },
     {
       id: "jana",
@@ -51,8 +50,7 @@ window.RODOKMEN = {
       father: "rudolf1936",
       mother: "margareta",
       alive: true,
-      notes: [],
-      siblings: ["Rudolf Pacík (*29. 3. 1961 Ostrava, †3. 8. 2018 Ostrava, pohřben v Chuchelné), Tomáš Pacík."]
+      notes: []
     },
     {
       id: "svaton",
@@ -79,8 +77,7 @@ window.RODOKMEN = {
       scans: [
         {"f":"img/1957_snatek_svaton_vesely_marta_woronova_2.jpg","t":"Sňatek 28. 9. 1957 – svědci, dohoda o příjmení „Veselý“, podpis matrikáře"},
         {"f":"img/1957_snatek_svaton_vesely_marta_woronova_1.jpg","t":"Sňatek 28. 9. 1957, Slezská Ostrava – snoubenci a jejich rodiče (poř. č. 40)"}
-      ],
-      siblings: ["Karel, Růženka."]
+      ]
     },
     {
       id: "karelV",
@@ -638,8 +635,7 @@ window.RODOKMEN = {
       scans: [
         {"f":"img/1957_snatek_svaton_vesely_marta_woronova_2.jpg","t":"Sňatek 28. 9. 1957 – svědci, dohoda o příjmení „Veselý“, podpis matrikáře"},
         {"f":"img/1957_snatek_svaton_vesely_marta_woronova_1.jpg","t":"Sňatek 28. 9. 1957, Slezská Ostrava – snoubenci a jejich rodiče (poř. č. 40)"}
-      ],
-      siblings: ["Sestra Libuše Randulová (manžel Josef, děti Dušan a Tomáš); sourozenci Miloslava a Jaroslav zemřeli před jejím narozením."]
+      ]
     },
     {
       id: "ludvik",
@@ -6119,4 +6115,24 @@ window.RODOKMEN.events = [
   {"y":1968,"t":"Pražské jaro a okupace","s":"Okupace 1968"},
   {"y":1989,"t":"Sametová revoluce","s":"Listopad 1989","major":true},
   {"y":1993,"t":"Vzniká Česká republika","s":"Vznik ČR"}
+];
+
+// Collateral relatives outside the direct line ("Širší okruh"): siblings of ancestors, their spouses and descendants; father/mother = id of a person or another collateral entry
+window.RODOKMEN.collateral = [
+  {"cert":"R","note":"údaj rodiny (Matěj Veselý, 10. 10. 2026)","id":"c_libuse","name":"Libuše Randulová","maiden":"Woroňová","father":"ludvik","mother":"honorata","spouse":"Josef Randula"},
+  {"cert":"R","note":"zemřela před narozením sestry Marty (1939) – údaj rodiny (Matěj Veselý, 10. 10. 2026)","id":"c_miloslava","name":"Miloslava Woroňová","father":"ludvik","mother":"honorata"},
+  {"cert":"R","note":"zemřel před narozením sestry Marty (1939) – údaj rodiny (Matěj Veselý, 10. 10. 2026)","id":"c_jaroslav","name":"Jaroslav Woroň","father":"ludvik","mother":"honorata"},
+  {"cert":"R","note":"údaj rodiny (Matěj Veselý, 10. 10. 2026)","id":"c_dusan","name":"Dušan Randula","mother":"c_libuse"},
+  {"cert":"R","note":"údaj rodiny (Matěj Veselý, 10. 10. 2026)","id":"c_tomasR","name":"Tomáš Randula","mother":"c_libuse","d":{"date":"zemřel"}},
+  {"cert":"R","note":"údaj rodiny (Matěj Veselý, 10. 10. 2026)","id":"c_martinR","name":"Martin Randula","father":"c_dusan"},
+  {"cert":"R","note":"údaj rodiny (Matěj Veselý, 10. 10. 2026)","id":"c_gabrielaR","name":"Gabriela Randulová","father":"c_dusan"},
+  {"cert":"R","note":"údaj rodiny (Matěj Veselý, 10. 10. 2026)","id":"c_adamR","name":"Adam Randula","father":"c_tomasR","d":{"date":"zemřel"}},
+  {"cert":"R","note":"údaj rodiny (Matěj Veselý, 10. 10. 2026)","id":"c_evaR","name":"Eva Randulová","father":"c_tomasR"},
+  {"cert":"R","note":"údaj rodiny (Matěj Veselý, 10. 10. 2026)","id":"c_miluse","name":"Miluše Kempná","maiden":"Veselá","father":"svaton","mother":"marta","b":{"date":"19. 4. 1958","year":1958,"place":"Ostrava-Fifejdy"},"spouse":"Rostislav Kempný"},
+  {"cert":"R","note":"údaj rodiny (Matěj Veselý, 10. 10. 2026)","id":"c_rostislavK","name":"Rostislav Kempný","mother":"c_miluse"},
+  {"cert":"R","note":"údaj rodiny (Matěj Veselý, 10. 10. 2026)","id":"c_barboraK","name":"Barbora Kempná","mother":"c_miluse"},
+  {"cert":"R","note":"údaj rodiny (Matěj Veselý, 10. 10. 2026)","id":"c_rudolfP","name":"Rudolf Pacík","father":"rudolf1936","mother":"margareta","b":{"date":"29. 3. 1961","year":1961,"place":"Ostrava"},"d":{"date":"3. 8. 2018","year":2018,"place":"Ostrava (pohřben v Chuchelné)"}},
+  {"cert":"R","note":"údaj rodiny (Matěj Veselý, 10. 10. 2026)","id":"c_tomasP","name":"Tomáš Pacík","father":"rudolf1936","mother":"margareta"},
+  {"cert":"R","note":"údaj rodiny (Matěj Veselý, 10. 10. 2026)","id":"c_karelV2","name":"Karel Veselý","father":"karelV","mother":"annaP"},
+  {"cert":"R","note":"údaj rodiny (Matěj Veselý, 10. 10. 2026)","id":"c_ruzenka","name":"Růženka Veselá","father":"karelV","mother":"annaP"}
 ];
