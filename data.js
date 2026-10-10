@@ -3279,17 +3279,22 @@ window.RODOKMEN = {
       cert: "M",
       b: {"date":"cca 1745","year":1745,"approx":true},
       d: {"date":"před 1795","year":1794,"approx":true},
-      occ: "kovář a chalupník (Faber ferrarius et casarius) v Kobeřicích",
+      occ: "kovář (1761), chalupník (1773), podruh (1774–1776), Kobeřice",
+      marriage: "6. 2. 1761, Kobeřice – s Rosinou Kremerovou",
       notes: [
+        "Sňatek 6. 2. 1761 Kobeřice (M): „Honestus juvenis Josephus Holeschny (Holeczek) faber ferrarius cum honesta virg. Rosina defuncti Jacobi Kremar fabri ferrarii filia, uterque ex Köbrowitz | [svědci] Joannes Kremar faber ferrarius et Simon Kremer hortulanus, uterque ex Köbrowitz“.",
+        "Žil VII/1776 (pohřeb syna Jacoba, 2 týdny, H IX 5 sk25). Úmrtí NENÍ v Kobeřicích VI/1776–V/1781.",
         "Otec Cathariny (sňatek 1795: „Filia Defuncti Josephi Holeczek Fabri Ferarii et Casarii Koebrovicensis“).",
         "III/1773 chalupník (Häusler) v Kobeřicích, manželka Rosina (D – zápis kmotry: „Rosina Eheweib des Häuslers Joseph Holschek v. Kobro.“, ZAO Kobeřice H IX 2 sken 39). Rodné příjmení Rosiny neznámé. Catharina (*~1772) NENÍ v křtech Kobeřic 1772–1773; sňatek Josefa není v O 1766–I/1774. V Kobeřicích kovářská rodina Kremer (Catharina v r. 1805 „geb. Kremer“) – souvislost K.",
         "Manželka Rosina roz. Kremer („Krammerin“) – křest syna Mathiase 19. 9. 1774, Joseph tehdy „Inman“ (podruh) v Kobeřicích (M)."
       ],
       sources: [
+        "ZA Opava, Sbírka matrik (NAD 165), Kobeřice H IX 1 (N/Z/O 1706–1765), sken 139; H IX 5 (Z 1767–1811), sken 25",
         "Silius Radicum – duplikáty Krzanowice křty 1801 Nr 95",
         "ZA Opava, Sbírka matrik (NAD 165), Kobeřice H IX 2 (N 1766–1794), skeny 39, 45"
       ],
       scans: [
+        {"f":"img/1761_snatek_holeczek_kremer.jpg","t":"Sňatek 6. 2. 1761, Kobeřice – Joseph Holeczek, mládenec, kovář × Rosina, dcera † Jacoba Kremera, kováře (ZAO, Kobeřice H IX 1, sken 139)"},
         {"f":"img/1795_snatek_strusch_holeczek.jpg","t":"Sňatek 20. 1. 1795, Krzanowice (POL IX 2 sn. 135)"},
         {"f":"img/1801_krest_caecilia_strusch.jpg","t":"Křest sestry Cäcilie 20. 9. 1801 – matka „Catharina geb. Joseph Holeczek“ (334/0033)"},
         {"f":"img/1774_krest_mathias_holeczek.jpg","t":"Křest 19. 9. 1774, Kobeřice – Mathias, syn podruha Josepha Holeczka a Rosiny rozené Krammerin (Kremer) (ZAO, Kobeřice H IX 2, sken 45)"}
@@ -6088,15 +6093,37 @@ window.RODOKMEN = {
       maiden: "Kremer",
       line: "struz",
       cert: "D",
-      b: {"date":"cca 1745","year":1745,"approx":true,"place":"Kobeřice (?)"},
+      b: {"date":"cca 1740","year":1740,"approx":true,"place":"Kobeřice"},
+      father: "jacobKrem",
       notes: [
+        "Sňatek 6. 2. 1761 Kobeřice (M): „Honestus juvenis Josephus Holeschny (Holeczek) faber ferrarius cum honesta virg. Rosina defuncti Jacobi Kremar fabri ferrarii filia, uterque ex Köbrowitz | [svědci] Joannes Kremar faber ferrarius et Simon Kremer hortulanus, uterque ex Köbrowitz“.",
         "Manželka Josepha Holeczka, Kobeřice; v křtu syna Mathiase 1774 „Rosina gebohrne Krammerin“ (M zápis); jako matka Cathariny (*~1772) pravděpodobná (D). V Kobeřicích kovářský rod Kremer (Jacob † před 1772, Johann) – možná dcera Jacoba (K)."
       ],
       sources: [
+        "ZA Opava, Sbírka matrik (NAD 165), Kobeřice H IX 1 (N/Z/O 1706–1765), sken 139; H IX 5 (Z 1767–1811), sken 25",
         "ZA Opava, Sbírka matrik (NAD 165), Kobeřice H IX 2 (N 1766–1794), skeny 39, 45"
       ],
       scans: [
+        {"f":"img/1761_snatek_holeczek_kremer.jpg","t":"Sňatek 6. 2. 1761, Kobeřice – Joseph Holeczek, mládenec, kovář × Rosina, dcera † Jacoba Kremera, kováře (ZAO, Kobeřice H IX 1, sken 139)"},
         {"f":"img/1774_krest_mathias_holeczek.jpg","t":"Křest 19. 9. 1774, Kobeřice – Mathias, syn podruha Josepha Holeczka a Rosiny rozené Krammerin (Kremer) (ZAO, Kobeřice H IX 2, sken 45)"}
+      ]
+    },
+    {
+      id: "jacobKrem",
+      name: "Jacob Kremer",
+      line: "struz",
+      cert: "M",
+      b: {"date":"cca 1710","year":1710,"approx":true,"place":"Kobeřice (?)"},
+      d: {"date":"před 6. 2. 1761","year":1760,"approx":true},
+      occ: "kovář (faber ferrarius), Kobeřice",
+      notes: [
+        "Otec Rosiny – sňatek dcery 6. 2. 1761 (M): „Rosina defuncti Jacobi Kremar fabri ferrarii filia“. Kovářský rod Kremer v Kobeřicích – svědci 1761 Johann Kremer, kovář (snad syn Georga Kremera, kováře – D), a Simon Kremer, zahradník."
+      ],
+      sources: [
+        "ZA Opava, Sbírka matrik (NAD 165), Kobeřice H IX 1 (N/Z/O 1706–1765), sken 139; H IX 5 (Z 1767–1811), sken 25"
+      ],
+      scans: [
+        {"f":"img/1761_snatek_holeczek_kremer.jpg","t":"Sňatek 6. 2. 1761, Kobeřice – Joseph Holeczek, mládenec, kovář × Rosina, dcera † Jacoba Kremera, kováře (ZAO, Kobeřice H IX 1, sken 139)"}
       ]
     }
   ]
@@ -6476,5 +6503,6 @@ window.RODOKMEN.collateral = [
   {"id":"c_witKlem","name":"Klemens Witarowski","father":"wojciechWi","mother":"zofiaWi","spouse":"sňatky 1817, 1819, 1842","cert":"D","note":"Geneteka (Wieliczka) – index"},
   {"id":"c_holMat1774","name":"Mathias Holeczek","b":{"date":"19. 9. 1774","year":1774,"place":"Kobeřice"},"father":"josefHol","mother":"rosinaKrem","cert":"M","note":"Křest Kobeřice H IX 2 sk45 (M)"},
   {"id":"c_pacAloisie","name":"Aloisie Pacíková","b":{"date":"3. 8. 1926","year":1926,"place":"Nedašova Lhota"},"d":{"date":"4. 2. 1929","year":1929,"place":"Nedašova Lhota č. 5"},"cause":"bronchopneumonie","father":"frantisek1892","mother":"annaM","cert":"M","note":"Úmrtí: MZA Z 4496 (Nedašova Lhota 1902–1949) s. 87 č. 5, sk45 – „Pacíková Aloisie, manželská dcera Františka Pacíka, dělníka v Nedašové Lhotě, a jeho manželky Anny Matůšů, nar. 3/8 1926“; 2 roky 6 měsíců."},
-  {"id":"c_pacStan","name":"Stanislav Pacík","b":{"date":"22. 6. 1938","year":1938,"place":"Nedašova Lhota"},"d":{"date":"2. 6. 1939","year":1939,"place":"Nedašova Lhota č. 5"},"cause":"stav po mozkomíšní meningitidě (?)","father":"frantisek1892","mother":"annaM","cert":"M","note":"Úmrtí: MZA Z 4496 s. 117 č. 9, sk60 – „Pacík Stanislav, manželský syn Františka Pacíka, dělníka v Nedašové Lhotě, a jeho manželky Anny Matůšů. Narozen 22/6 1938“; 11 měsíců 10 dní; pohřben 4. 6."}
+  {"id":"c_pacStan","name":"Stanislav Pacík","b":{"date":"22. 6. 1938","year":1938,"place":"Nedašova Lhota"},"d":{"date":"2. 6. 1939","year":1939,"place":"Nedašova Lhota č. 5"},"cause":"stav po mozkomíšní meningitidě (?)","father":"frantisek1892","mother":"annaM","cert":"M","note":"Úmrtí: MZA Z 4496 s. 117 č. 9, sk60 – „Pacík Stanislav, manželský syn Františka Pacíka, dělníka v Nedašové Lhotě, a jeho manželky Anny Matůšů. Narozen 22/6 1938“; 11 měsíců 10 dní; pohřben 4. 6."},
+  {"id":"c_holJac1776","name":"Jacob Holeczek","b":{"date":"VII/1776","year":1776,"place":"Kobeřice"},"d":{"date":"13. (?) 7. 1776","year":1776,"place":"Kobeřice"},"cause":"křeče (Fraiß)","father":"josefHol","mother":"rosinaKrem","cert":"M","note":"Pohřeb Kobeřice H IX 5 sk25 č. 31 (M), 2 týdny."}
 ];
