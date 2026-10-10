@@ -6023,19 +6023,22 @@ window.RODOKMEN = {
       occ: "ovčák – pastýř skopců (Hamelhirt) při panském dvoře v Kníně (1775–1780); později domkář (haušlerník) v Hluboké",
       notes: [
         "Soupis poddaných 1780 (M zápis; ztotožnění D – shoda jmen otce i syna, věk Tomáše, Knín): „Pawel Weselý 41 | žena Anna 43 | dětj Tomaš 14, Matěg 2, Anna 1“, poznámka „Hamelhirt in Knin“ (pastýř skopců v Kníně); v oddílu „Owčáci“ na konci svazku (fol. 251–255), hned pod ním „Tomaš Wolf 42 … Schafmeister“. V Podhradí 1780 (domy, domky, podruzi, sirotci) Pavel není.",
-        "Soupis 1775 (oddíl „Při owčinách“, M zápis; ztotožnění D): „Peter (?) Weselý 3? | žena Rozalia 38 | dětj Tomaš 9“, poznámka „Kninger Hirt“ (knínský pastýř); hned pod ním Tomáš Wolf 37 × Anna 35, Schafmeister – tatáž dvojice 1780 (42/40). Věky sedí (Tomáš 9 → 14, žena 38 → 43); křestní jméno „Peter“ a žena „Rozalia“ (1780 „Anna“ – přepsané) nesouhlasí – ověřit matrikou. V soupisu 1770 (ovčáci ani ves Knín) není → na panství / do Knína přišel 1770–1775 (D); odkud, neuvedeno.",
+        "Soupis 1774 (oddíl „Při owčinách“, M zápis): „Pawel (?) Weslay 35 | žena Rozalie 37 | dětj Tomaš 8“, poznámka „… Hirt“ (pastýř). V soupisech 1771–1773 mezi ovčáky není → na panství Hluboká přišel 1773/74 (D); odkud, neuvedeno. Řada 1774 → 1775 → 1780 věkově přesně sedí (35/36/41; žena 37/38/43; Tomáš 8/9/14) – „Peter“ 1775 je nejspíš chyba čtení či písaře. 1786 už mezi ovčáky ani v Podhradí (domky, podruzi) není.",
+        "Soupis 1775 (oddíl „Při owčinách“, M zápis; ztotožnění D): „Peter (?) Weselý 3? | žena Rozalia 38 | dětj Tomaš 9“, poznámka „Kninger Hirt“ (knínský pastýř); hned pod ním Tomáš Wolf 37 × Anna 35, Schafmeister – tatáž dvojice 1780 (42/40). Věky sedí (Tomáš 9 → 14, žena 38 → 43); křestní jméno „Peter“ a žena „Rozalia“ (1780 „Anna“ – přepsané) nesouhlasí – ověřit matrikou. ",
         "Otec Tomáše Veselého – sňatek syna 28. 4. 1795 (M): „Tomáš, wlastnj syn † Pawla Weselýho haušlerníka z Hluboký pocházejícý“ – v roce 1795 už nežil. Matěj Veselý (sňatek 7. 10. 1794 Knín č. 3) NENÍ jeho syn – otec Jakub.",
         "Hluboká má matriky až od 1784; dříve fara Hosín (N 1745–84: Hosín 7 id 3857, Hosín 8 id 3858). Křest syna Tomáše (~1767–68) NENÍ v Hosín 8 I–VI/1768 ani Hosín 7 od V/1767. V Podskalí 1768 Ondřej Veselý (dcera Josefa) – možný příbuzný (K)."
       ],
       sources: [
         "SOA Třeboň, Vs Hluboká, soupis poddaných 1780 („Kniha syrotčí na rok 1780“), id 52578, sken 257, fol. 255 – https://digi.ceskearchivy.cz/DA?menu=3&id=52578&page=257",
+        "SOA Třeboň, Vs Hluboká, soupis poddaných 1774, id 52571, sken 329 (oddíl „Při owčinách“)",
         "SOA Třeboň, Vs Hluboká, soupis poddaných 1775, id 52572, sken 302, fol. 299 (oddíl „Při owčinách“)",
         "SOA Třeboň, Křtěnov 7 (Knín) O, id 5022, sken 74, s. 195 – https://digi.ceskearchivy.cz/DA?menu=3&id=5022&page=74; rejstřík O Křtěnov 14 (id 5029) sken 49"
       ],
       scans: [
         {"f":"img/1780_soupis_poddanych_vesely.jpg","t":"Soupis poddaných panství Hluboká 1780, fol. 255 (oddíl dvorských služebníků) – Pavel Veselý 41, žena Anna 43, děti Tomáš 14, Matěj 2, Anna 1; poznámka „Hammel… in Knin“ (SOA Třeboň, Vs Hluboká, id 52578, sken 257)"},
         {"f":"img/1795_snatek_tomas_vesely_marie_bockova.jpg","t":"Sňatek 28. 4. 1795, Knín č. 5 (fara Křtěnov) – Tomáš, syn † Pavla Veselého, domkáře z Hluboké × Mariana, dcera Josefa Bočka a Kateřiny (Křtěnov 7, id 5022, sken 74)"},
-        {"f":"img/1775_soupis_poddanych_vesely.jpg","t":"Soupis poddaných panství Hluboká 1775, oddíl „Při owčinách“ – „Peter (?) Weselý, žena Rozalia 38, dětj Tomaš 9“, poznámka „Kninger Hirt“ (SOA Třeboň, Vs Hluboká, id 52572, sken 302)"}
+        {"f":"img/1775_soupis_poddanych_vesely.jpg","t":"Soupis poddaných panství Hluboká 1775, oddíl „Při owčinách“ – „Peter (?) Weselý, žena Rozalia 38, dětj Tomaš 9“, poznámka „Kninger Hirt“ (SOA Třeboň, Vs Hluboká, id 52572, sken 302)"},
+        {"f":"img/1774_soupis_poddanych_vesely.jpg","t":"Soupis poddaných panství Hluboká 1774, oddíl „Při owčinách“ – „Pawel (?) Weslay, žena Rozalie 37, dětj Tomaš 8“ (SOA Třeboň, Vs Hluboká, id 52571, sken 329)"}
       ]
     },
     {
@@ -6907,15 +6910,15 @@ window.RODOKMEN = {
     },
     {
       id: "annaVesP",
-      name: "Anna (Rozálie ?) Veselá",
+      name: "Rozálie Veselá",
       line: "vesely",
       cert: "D",
       b: {"date":"cca 1737","year":1737,"approx":true,"place":"?"},
       notes: [
-        "Manželka Pavla Veselého v soupisu poddaných 1780, 43 let („žena Anna (?)“ – jméno přepsané) – pravděpodobná matka Tomáše (D; mohla být i 2. manželka). Rodné příjmení neznámé.",
-        "V soupisu 1775 je žena Pavla (?) Veselého zapsána jako „Rozalia“, 38 let (52572 sk302) – jméno manželky tedy nejisté (Anna/Rozálie, K)."
+        "Manželka Pavla Veselého: soupis 1774 „žena Rozalie 37“, 1775 „Rozalia 38“, 1780 „Anna (?) 43“ (jméno v zápisu přepsané). Věk sedí rok po roku → nejspíš táž žena, Rozálie (D); pravděpodobná matka Tomáše (*~1766). Rodné příjmení neznámé."
       ],
       sources: [
+        "SOA Třeboň, Vs Hluboká, soupis poddaných 1774, id 52571, sken 329 (oddíl „Při owčinách“)",
         "SOA Třeboň, Vs Hluboká, soupis poddaných 1780 („Kniha syrotčí na rok 1780“), id 52578, sken 257, fol. 255 – https://digi.ceskearchivy.cz/DA?menu=3&id=52578&page=257",
         "SOA Třeboň, Vs Hluboká, soupis poddaných 1775, id 52572, sken 302, fol. 299 (oddíl „Při owčinách“)"
       ],
