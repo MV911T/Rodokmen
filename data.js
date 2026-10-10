@@ -6133,7 +6133,7 @@ window.RODOKMEN.collateral = [
   {"cert":"R","note":"syn z 1. manželství s Josefem Lamancem – údaj rodiny (Matěj Veselý, 10. 10. 2026)","id":"c_rostislavL","name":"Rostislav Lamanec","mother":"c_miluse"},
   {"cert":"R","note":"dcera z 1. manželství s Josefem Lamancem – údaj rodiny (Matěj Veselý, 10. 10. 2026)","id":"c_barboraL","name":"Barbora Lamancová","mother":"c_miluse"},
   {"cert":"R","note":"údaj rodiny (Matěj Veselý, 10. 10. 2026)","id":"c_rudolfP","name":"Rudolf Pacík","father":"rudolf1936","mother":"margareta","b":{"date":"29. 3. 1961","year":1961,"place":"Ostrava"},"d":{"date":"3. 8. 2018","year":2018,"place":"Ostrava (pohřben v Chuchelné)"}},
-  {"cert":"R","note":"údaj rodiny (Matěj Veselý, 10. 10. 2026)","id":"c_tomasP","name":"Tomáš Pacík","father":"rudolf1936","mother":"margareta"},
+  {"cert":"R","note":"údaj rodiny (Matěj Veselý, 10. 10. 2026)","id":"c_tomasP","name":"Tomáš Pacík","father":"rudolf1936","mother":"margareta","spouse":"Eva"},
   {"cert":"R","note":"údaj rodiny (Matěj Veselý, 10. 10. 2026)","id":"c_karelV2","name":"Karel Veselý","father":"karelV","mother":"annaP"},
   {"cert":"R","note":"údaj rodiny (Matěj Veselý, 10. 10. 2026)","id":"c_ruzenka","name":"Růženka Veselá","father":"karelV","mother":"annaP"},
   {"id":"c_vesJan1889","name":"Jan Veselý","b":{"date":"20. 8. 1889","year":1889,"place":"Dříteň č. 6"},"father":"janVesZ","mother":"marieKoz","note":"Bratr Karla. Křest Bílá Hůrka 5A sk. 54 (M): narozen před sňatkem rodičů, legitimován; padl v 1. světové válce (VÚA). data.js karelV.siblings, janVesZ.notes.","cert":"M"},
@@ -6383,5 +6383,7 @@ window.RODOKMEN.collateral = [
   {"id":"c_pacFa1919","name":"Františka Pacíková","b":{"date":"5. 1. 1919","year":1919,"place":"Nedašova Lhota"},"father":"frantisek1892","mother":"annaM","cert":"M","note":"matrika Nedašova Lhota (zapsáno u Rudolfa *1936)"},
   {"id":"c_pacJan1920","name":"Jan Pacík","b":{"date":"23. 10. 1920","year":1920,"place":"Nedašova Lhota"},"father":"frantisek1892","mother":"annaM","cert":"M","note":"matrika Nedašova Lhota (zapsáno u Rudolfa *1936)"},
   {"id":"c_pacAl1922","name":"Alois Pacík","b":{"date":"7. 11. 1922","year":1922,"place":"Nedašova Lhota"},"father":"frantisek1892","mother":"annaM","cert":"M","note":"matrika Nedašova Lhota (zapsáno u Rudolfa *1936)"},
-  {"id":"c_pacMar","name":"Marie Halamová","maiden":"Pacíková","father":"frantisek1892","mother":"annaM","cert":"R","note":"provdaná Halamová, Orlová – údaj rodiny"}
+  {"id":"c_pacMar","name":"Marie Halamová","maiden":"Pacíková","father":"frantisek1892","mother":"annaM","cert":"R","note":"provdaná Halamová, Orlová – údaj rodiny"},
+  {"cert":"R","note":"údaj rodiny (Matěj Veselý, 10. 10. 2026)","id":"c_pavelP","name":"Pavel Pacík","father":"c_tomasP"},
+  {"cert":"R","note":"údaj rodiny (Matěj Veselý, 10. 10. 2026)","id":"c_petraP","name":"Petra Pacíková","father":"c_tomasP"}
 ];
