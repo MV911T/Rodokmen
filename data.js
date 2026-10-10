@@ -2259,20 +2259,22 @@ window.RODOKMEN = {
       name: "Josef Vaculík",
       line: "matusu",
       cert: "D",
-      b: {"date":"10. 2. 1797","year":1797,"place":"Návojná č. 16"},
+      b: {"date":"1797 nebo 1798","year":1798,"approx":true,"place":"Návojná (č. 16 / 39)"},
       father: "josefVaSt",
       mother: "barboraKop",
       occ: "sedlák v Nedašově č. 78/88",
       marriage: "6. 2. 1821, Nedašov – s Marinou Mikuškovou (on 24, ona 25); svědci Jan Macek (?) z Návojné a Jan Fendrich (?) z Nedašova",
       notes: [
-        "Křest 10. 2. 1797 Návojná č. 16 (M): „Josephus | 16 | Joseph Wazulik, Bauer | Barbara Kopschtenin (?)“; kmotři Martin Jurg (?) a Anna Pramažikin (?), oba z Návojné (4473 img 15). Ztotožnění se ženichem 1821 PRAVDĚPODOBNÉ (D): shodní rodiče i věk 24; rejstřík Návojné má ještě jednoho Josefa Vaculíka (fol. 28/29) – neprověřen.",
+        "Rodiče Josef Vaculík (sedlák) × Barbora měli dva syny Josefy: pokř. 10. 2. 1797 Návojná č. 16 (4473 img 15) a 23. 2. 1798 Návojná č. 39 (4473 img 16; stejní kmotři Martin Jurg (?) a Anna Pramažikin (?)) – první nejspíš zemřel; ženich 1821 (24 let) je spíš Josef *1798 (D, úmrtí prvního neověřeno).",
         "Sňatek 1821: „Joseph Sohn des Joseph Wazulik und Barbara gebohrne Kopčn(?)“ – syn Josefa Vaculíka a Barbory roz. Kopečné (?)."
       ],
       sources: [
+        "MZA, N 4473, img 16 (Návojná fol. 28)",
         "MZA, N Nedašov 1787–1820 (4473), img 15 (Návojná, fol. 26)",
         "Brumov O 4485 img 1 – https://www.mza.cz/actapublica/matrika/detail/4485"
       ],
       scans: [
+        {"f":"img/1798_krest_josef_vaculik.jpg","t":"Křest 23. 2. 1798, Návojná č. 39 – Josef, syn Josefa Vaculíka, sedláka, a Barbory Kostrnové (?) (MZA, N 4473, img 16)"},
         {"f":"img/1797_krest_josef_vaculik.jpg","t":"Křest 10. 2. 1797, Návojná č. 16 – Josef, syn Josefa Vaculíka, sedláka, a Barbory Kop… (?) (MZA, N 4473, img 15)"},
         {"f":"img/1821_snatek_vaculik_mikuskova.jpg","t":"Sňatek 6. 2. 1821, Nedašov č. 88 (O 4485 img 1)"}
       ]
@@ -2283,14 +2285,19 @@ window.RODOKMEN = {
       maiden: "Mikušková",
       line: "matusu",
       cert: "D",
-      b: {"date":"cca 1796","year":1796,"approx":true},
+      b: {"date":"21. 2. 1797","year":1797,"place":"Nedašov č. 87"},
+      father: "janMik",
+      mother: "marinaHol",
       notes: [
-        "Dcera † Jana Mikušky, sedláka, a Mariny roz. Holbové (sňatek 1821) – Holbové z Nedašova, možná příbuzní linie Holba."
+        "Křest 21. 2. 1797 Nedašov č. 87 (M): „Marina | Johann Mikuška, Gartler | Marina Holbin“; kmotři Johann Schafařík (?) a Rosina Schenichin (?) z Nedašova (4473 img 74).",
+        "Dcera † Jana Mikušky, zahradníka (Gartler), a Mariny roz. Holbové (sňatek 1821) – Holbové z Nedašova, možná příbuzní linie Holba."
       ],
       sources: [
+        "MZA, N 4473, img 74 (Nedašov fol. 40)",
         "Brumov O 4485 img 1"
       ],
       scans: [
+        {"f":"img/1797_krest_marina_mikuskova.jpg","t":"Křest 21. 2. 1797, Nedašov č. 87 – Marina, dcera Jana Mikušky, zahradníka, a Mariny Holbové (MZA, N 4473, img 74)"},
         {"f":"img/1821_snatek_vaculik_mikuskova.jpg","t":"Sňatek 6. 2. 1821, Nedašov č. 88 (O 4485 img 1)"}
       ]
     },
@@ -6529,36 +6536,159 @@ window.RODOKMEN = {
     },
     {
       id: "josefVaSt",
-      name: "Josef Vaculík st.",
+      name: "Josef Vaculík",
       line: "matusu",
       cert: "M",
-      b: {"date":"?","year":1765,"approx":true,"place":"Návojná (?)"},
-      occ: "sedlák v Návojné č. 16",
+      b: {"date":"cca 1775","year":1775,"approx":true,"place":"Návojná"},
+      father: "josefVaSS",
+      occ: "sedlák v Návojné (č. 16 / 39)",
+      marriage: "II/1797, Návojná – s Barborou, dcerou † Martina Kostrny (?)",
       notes: [
-        "Otec Josefa (*1797; křest: „Joseph Wazulik, Bauer“, Návojná č. 16, M)."
+        "Sňatek II/1797 Návojná č. 16 (M; den neuveden): „Joseph Sohn des Joseph Wazulik, Bauer | 22 || Barbara Tochter des verstorbenen Martin Kop(s)trna (?), Bauer in Nedaschow | 20“; svědci Franz Wažo (?) a Martin Walka (?), sedláci z Návojné (O 4023 img 86).",
+        "Otec Josefa (*1797/1798)."
       ],
       sources: [
-        "MZA, N 4473, img 15"
+        "MZA, O 4023, img 86",
+        "MZA, N 4473, img 15–16"
       ],
       scans: [
+        {"f":"img/1797_snatek_vaculik_kostrna.jpg","t":"Sňatek II/1797, Návojná č. 16 – Josef, syn Josefa Vaculíka, sedláka (22) × Barbora, dcera † Martina Kostrny (?), sedláka v Nedašově (20) (MZA, O 4023, img 86)"},
+        {"f":"img/1798_krest_josef_vaculik.jpg","t":"Křest 23. 2. 1798, Návojná č. 39 – Josef, syn Josefa Vaculíka, sedláka, a Barbory Kostrnové (?) (MZA, N 4473, img 16)"},
         {"f":"img/1797_krest_josef_vaculik.jpg","t":"Křest 10. 2. 1797, Návojná č. 16 – Josef, syn Josefa Vaculíka, sedláka, a Barbory Kop… (?) (MZA, N 4473, img 15)"}
       ]
     },
     {
       id: "barboraKop",
       name: "Barbora Vaculíková",
-      maiden: "Kop… (Kopečná ?)",
+      maiden: "Kostrna / Koptrna (?)",
       line: "matusu",
       cert: "M",
-      b: {"date":"?","year":1770,"approx":true,"place":"?"},
+      b: {"date":"cca 1777","year":1777,"approx":true,"place":"Nedašov"},
+      father: "martinKos",
       notes: [
-        "Matka Josefa (*1797): křest „Barbara Kopschtenin (?)“, sňatek syna 1821 „Barbara gebohrne Kopčn (?)“ – příjmení čteno nejistě."
+        "Sňatek II/1797 (M): „Barbara, Tochter des verstorbenen Martin Kop(s)trna (?), Bauer in Nedaschow“, 20 let. Příjmení v zápisech čteno různě: „Kopschtenin“ (křest 1797), „Kostrnin“ (křest 1798), „Kopčn“ (sňatek syna 1821) – nejspíš Kostrnová (?)."
       ],
       sources: [
-        "MZA, N 4473, img 15"
+        "MZA, O 4023, img 86",
+        "MZA, N 4473, img 15–16"
       ],
       scans: [
+        {"f":"img/1797_snatek_vaculik_kostrna.jpg","t":"Sňatek II/1797, Návojná č. 16 – Josef, syn Josefa Vaculíka, sedláka (22) × Barbora, dcera † Martina Kostrny (?), sedláka v Nedašově (20) (MZA, O 4023, img 86)"},
+        {"f":"img/1798_krest_josef_vaculik.jpg","t":"Křest 23. 2. 1798, Návojná č. 39 – Josef, syn Josefa Vaculíka, sedláka, a Barbory Kostrnové (?) (MZA, N 4473, img 16)"},
         {"f":"img/1797_krest_josef_vaculik.jpg","t":"Křest 10. 2. 1797, Návojná č. 16 – Josef, syn Josefa Vaculíka, sedláka, a Barbory Kop… (?) (MZA, N 4473, img 15)"}
+      ]
+    },
+    {
+      id: "josefVaSS",
+      name: "Josef Vaculík st.",
+      line: "matusu",
+      cert: "M",
+      b: {"date":"?","year":1745,"approx":true,"place":"Návojná (?)"},
+      occ: "sedlák v Návojné",
+      notes: [
+        "Otec ženicha Josefa (sňatek 1797: „Joseph Sohn des Joseph Wazulik, Bauer“, M)."
+      ],
+      sources: [
+        "MZA, O 4023, img 86"
+      ],
+      scans: [
+        {"f":"img/1797_snatek_vaculik_kostrna.jpg","t":"Sňatek II/1797, Návojná č. 16 – Josef, syn Josefa Vaculíka, sedláka (22) × Barbora, dcera † Martina Kostrny (?), sedláka v Nedašově (20) (MZA, O 4023, img 86)"}
+      ]
+    },
+    {
+      id: "martinKos",
+      name: "Martin Kostrna (?)",
+      line: "matusu",
+      cert: "M",
+      b: {"date":"?","year":1745,"approx":true,"place":"Nedašov (?)"},
+      d: {"date":"před 1797","year":1796,"approx":true,"place":"Nedašov (?)"},
+      occ: "sedlák v Nedašově",
+      notes: [
+        "Otec Barbory (sňatek 1797: „verstorbenen Martin Kop(s)trna (?), Bauer in Nedaschow“, M) – příjmení čteno nejistě."
+      ],
+      sources: [
+        "MZA, O 4023, img 86"
+      ],
+      scans: [
+        {"f":"img/1797_snatek_vaculik_kostrna.jpg","t":"Sňatek II/1797, Návojná č. 16 – Josef, syn Josefa Vaculíka, sedláka (22) × Barbora, dcera † Martina Kostrny (?), sedláka v Nedašově (20) (MZA, O 4023, img 86)"}
+      ]
+    },
+    {
+      id: "janMik",
+      name: "Jan Mikuška",
+      line: "matusu",
+      cert: "M",
+      b: {"date":"cca 1774","year":1774,"approx":true,"place":"Nedašov"},
+      d: {"date":"před 1821","year":1820,"approx":true},
+      father: "janMikSt",
+      occ: "zahradník (Gartler) v Nedašově č. 87",
+      marriage: "10. 11. 1793, Nedašov – s Marinou Holbovou",
+      notes: [
+        "Sňatek 10. 11. 1793 Nedašov č. 87 (M): „Johann Sohn des Johann Mikuška, Gartler von Nedaschow | 19 || Marina Tochter des Bartoš Holba, Bauer in Nedaschow | 20“; svědci Joseph Holba a Andreas Polišek (?), sedláci (O 4023 img 104).",
+        "V roce 1821 už nežil (sňatek dcery: „† Jan Mikuška“)."
+      ],
+      sources: [
+        "MZA, O 4023, img 104"
+      ],
+      scans: [
+        {"f":"img/1793_snatek_mikuska_holbova.jpg","t":"Sňatek 10. 11. 1793, Nedašov č. 87 – Jan, syn Jana Mikušky, zahradníka (19) × Marina, dcera Bartoše Holby, sedláka (20) (MZA, O 4023, img 104)"},
+        {"f":"img/1797_krest_marina_mikuskova.jpg","t":"Křest 21. 2. 1797, Nedašov č. 87 – Marina, dcera Jana Mikušky, zahradníka, a Mariny Holbové (MZA, N 4473, img 74)"}
+      ]
+    },
+    {
+      id: "marinaHol",
+      name: "Marina Mikušková",
+      maiden: "Holbová",
+      line: "matusu",
+      cert: "M",
+      b: {"date":"cca 1773","year":1773,"approx":true,"place":"Nedašov"},
+      father: "bartosHol",
+      notes: [
+        "Dcera Bartoše Holby, sedláka v Nedašově (sňatek 1793, 20 let, M)."
+      ],
+      sources: [
+        "MZA, O 4023, img 104"
+      ],
+      scans: [
+        {"f":"img/1793_snatek_mikuska_holbova.jpg","t":"Sňatek 10. 11. 1793, Nedašov č. 87 – Jan, syn Jana Mikušky, zahradníka (19) × Marina, dcera Bartoše Holby, sedláka (20) (MZA, O 4023, img 104)"},
+        {"f":"img/1797_krest_marina_mikuskova.jpg","t":"Křest 21. 2. 1797, Nedašov č. 87 – Marina, dcera Jana Mikušky, zahradníka, a Mariny Holbové (MZA, N 4473, img 74)"}
+      ]
+    },
+    {
+      id: "janMikSt",
+      name: "Jan Mikuška st.",
+      line: "matusu",
+      cert: "M",
+      b: {"date":"cca 1746","year":1746,"approx":true,"place":"?"},
+      occ: "zahradník v Nedašově č. 87",
+      notes: [
+        "Otec ženicha Jana (1793: „Johann Mikuška, Gartler von Nedaschow“, M).",
+        "PRAVDĚPODOBNĚ (D) týž: 6. 7. 1794 Nedašov č. 87 „Johann Mikuška, Wittiber, Gartler in Nedaschow“, 48 let, × Anna, dcera Jana Jakubů (?), 22; svědek Johann Mikuška (O 4023 img 104) → 1. manželka (matka Jana ml.) zemřela před 1794."
+      ],
+      sources: [
+        "MZA, O 4023, img 104"
+      ],
+      scans: [
+        {"f":"img/1793_snatek_mikuska_holbova.jpg","t":"Sňatek 10. 11. 1793, Nedašov č. 87 – Jan, syn Jana Mikušky, zahradníka (19) × Marina, dcera Bartoše Holby, sedláka (20) (MZA, O 4023, img 104)"},
+        {"f":"img/1794_snatek_mikuska_st.jpg","t":"Sňatek 6. 7. 1794, Nedašov č. 87 – Jan Mikuška, vdovec, zahradník, 48 let × Anna, dcera Jana Jakubů (?) (MZA, O 4023, img 104)"}
+      ]
+    },
+    {
+      id: "bartosHol",
+      name: "Bartoš (Bartoloměj) Holba",
+      line: "matusu",
+      cert: "M",
+      b: {"date":"?","year":1745,"approx":true,"place":"Nedašov (?)"},
+      occ: "sedlák v Nedašově",
+      notes: [
+        "Otec Mariny (sňatek 1793: „Bartoš Holba, Bauer in Nedaschow“ – žil, M).",
+        "HYPOTÉZA (K): souvislost s „Bartoš Holbů“, Nedašov č. 28 (fase 1749, TK 1752) – týž nebo jeho otec; s rodem Holba (Jiří, Mikuláš, Matěj) zatím nespojeno."
+      ],
+      sources: [
+        "MZA, O 4023, img 104"
+      ],
+      scans: [
+        {"f":"img/1793_snatek_mikuska_holbova.jpg","t":"Sňatek 10. 11. 1793, Nedašov č. 87 – Jan, syn Jana Mikušky, zahradníka (19) × Marina, dcera Bartoše Holby, sedláka (20) (MZA, O 4023, img 104)"}
       ]
     }
   ]
