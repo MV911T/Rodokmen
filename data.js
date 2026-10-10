@@ -6255,16 +6255,20 @@ window.RODOKMEN = {
       cert: "M",
       b: {"date":"cca 1668","year":1668,"approx":true,"place":"?"},
       d: {"date":"14. 12. 1744","year":1744,"place":"Kobeřice"},
+      marriage: "7. 2. 1701, Kobeřice – s Magdalenou Pyrchalovou",
       notes: [
+        "Sňatek 7. 2. 1701 Kobeřice (M): „Die 7ma Februarij wstaupil gest w stawo Swatÿ Manzelski Podcziwoj Mladenec George Kremer z Raczan (?), wzal sobie za Manzelku Podcziwie zachowalau Diewczku gmenem Magdalena Pyrzchalka, wlastni Czerau Jakuba Pyrzchaly z Koberzitz. Swietkowie Jakub Czugiek, Ventzel Pyrzchala“ (H IX 12 sk40). Ženich mládenec, odjinud – „z Raczan (?)“ (Ratiboř? čtení i místo nejisté); rodiče neuvedeni.",
         "Úmrtí 14. 12. 1744, pohřeb 16. 12. (M zápis, totožnost D – psáno „Krener“): „Georgius Krener | sepultus 16 | 76 annorum“ (H IX 1 sk164) → *~1668. Možná manželka: Magdalena „Kremerka fabrissa“ † 1758, 78 let (sk180 – K).",
         "Otec Jacoba – sňatek syna 1735 (M): „Jacobus Georgii Kremer“. Pravděpodobně „Jura Kromer“, svědek 1729, a „Gura Kremer“, kmotr 1734 (D). Pozor: v Kobeřicích i Johann Kremer × Marina a Simon Kremer × Barbara.",
-        "Manželka Magdalena – matka dětí Ondřeje (24. 11. 1707), Jakuba (30. 3. 1710) a Šimona (24. 10. 1713) (M); sňatek před 1706 (před začátkem matriky)."
+        "Manželka Magdalena – matka dětí Ondřeje (24. 11. 1707), Jakuba (30. 3. 1710) a Šimona (24. 10. 1713) (M); sňatek 7. 2. 1701 (H IX 12)."
       ],
       sources: [
+        "ZA Opava, Sbírka matrik, Kobeřice H IX 12 (N a O 1688–1705, roční opisy), sken 40 (O 1701); N sk39, 44, 48",
         "ZA Opava, Sbírka matrik (NAD 165), Kobeřice H IX 1 (N/Z/O 1706–1765), skeny 46, 48, 53, 57, 121",
         "ZA Opava, Kobeřice H IX 1 – zemřelí: sken 157 (1736), 164 (1744), 180 (1758), 184 (1760)"
       ],
       scans: [
+        {"f":"img/1701_snatek_kremer_pyrchalova.jpg","t":"Sňatek 7. 2. 1701, Kobeřice – Jiří (George) Kremer z Raczan (?) × Magdalena, dcera Jakuba Pyrchaly z Kobeřic (ZA Opava, H IX 12, sken 40 – druhý zápis)"},
         {"f":"img/1735_snatek_jacob_kremer_marina_kucza.jpg","t":"Sňatek 24. 5. 1735, Kobeřice – Jacob, syn Jiřího Kremera × Marina, dcera Matěje Kuczy (ZAO, Kobeřice H IX 1, sken 121)"},
         {"f":"img/1744_umrti_georg_kremer.jpg","t":"Úmrtí 14. 12. 1744, Kobeřice – Georgius Krener (Kremer), 76 let (ZAO, Kobeřice H IX 1, sken 164)"}
       ]
@@ -6330,17 +6334,22 @@ window.RODOKMEN = {
     {
       id: "magdalenaKrem",
       name: "Magdalena Kremer",
+      maiden: "Pyrchalová (Pyrzchala)",
       line: "struz",
       cert: "M",
       b: {"date":"cca 1680","year":1680,"approx":true,"place":"?"},
       d: {"date":"11. (12.?) 1758 (?)","year":1758,"approx":true,"place":"Kobeřice"},
+      father: "jakubPyr",
       notes: [
-        "Manželka Jury (Georga) Kremera, matka Jakuba (*1710) – křty 1707, 1710, 1713 (M). Pravděpodobně „Magdalena Kremerka fabrissa“ † 1758, 78 let (H IX 1 sk180; D) → *~1680. Rodné příjmení neznámé (sňatek před 1706)."
+        "Sňatek 7. 2. 1701 Kobeřice (M): „Die 7ma Februarij wstaupil gest w stawo Swatÿ Manzelski Podcziwoj Mladenec George Kremer z Raczan (?), wzal sobie za Manzelku Podcziwie zachowalau Diewczku gmenem Magdalena Pyrzchalka, wlastni Czerau Jakuba Pyrzchaly z Koberzitz. Swietkowie Jakub Czugiek, Ventzel Pyrzchala“ (H IX 12 sk40).",
+        "Manželka Jury (Georga) Kremera, matka Jakuba (*1710) – křty 1707, 1710, 1713 (M). Pravděpodobně „Magdalena Kremerka fabrissa“ † 1758, 78 let (H IX 1 sk180; D) → *~1680. Rodná Pyrchalová – sňatek 7. 2. 1701 (M)."
       ],
       sources: [
+        "ZA Opava, Sbírka matrik, Kobeřice H IX 12 (N a O 1688–1705, roční opisy), sken 40 (O 1701); N sk39, 44, 48",
         "ZA Opava, Kobeřice H IX 1 – N sken 5, 7, 11; O sken 105"
       ],
       scans: [
+        {"f":"img/1701_snatek_kremer_pyrchalova.jpg","t":"Sňatek 7. 2. 1701, Kobeřice – Jiří (George) Kremer z Raczan (?) × Magdalena, dcera Jakuba Pyrchaly z Kobeřic (ZA Opava, H IX 12, sken 40 – druhý zápis)"},
         {"f":"img/1710_krest_jacob_kremer.jpg","t":"Křest 30. 3. 1710, Kobeřice – Jakub, syn Jury (Jiřího) Kremera a Magdaleny (ZAO, Kobeřice H IX 1, sken 7)"}
       ]
     },
@@ -6856,6 +6865,23 @@ window.RODOKMEN = {
       scans: [
         {"f":"img/1771_snatek_holba_misova.jpg","t":"Sňatek 17. 11. 1771, Nedašov č. 44 – Bartoš, syn Ondřeje Holby × Anna, vdova po † Václavu Mišťů (MZA, Brumov O 4012, img 177 – poslední zápis)"}
       ]
+    },
+    {
+      id: "jakubPyr",
+      name: "Jakub Pyrchala (Pyrzchala)",
+      line: "struz",
+      cert: "M",
+      b: {"date":"?","year":1650,"approx":true,"place":"Kobeřice (?)"},
+      d: {"date":"mezi II/1701 a I/1703","year":1702,"approx":true,"place":"Kobeřice (?)"},
+      notes: [
+        "Otec nevěsty Magdaleny (sňatek 7. 2. 1701: „wlastni Czerau Jakuba Pyrzchaly z Koberzitz“ – žil, M). 27. 1. 1703 se ženil „Petr po N[ebožtíku] Pirchalu“ a 13. 1. 1704 Jan Sluchnik s „Annou po N. Pirchali“ → Jakub † 1701–1703 (D); Petr a Anna snad sourozenci Magdaleny (K). Svědek 1701 Ventzel Pyrzchala – příbuzný."
+      ],
+      sources: [
+        "ZA Opava, Sbírka matrik, Kobeřice H IX 12 (N a O 1688–1705, roční opisy), sken 40 (O 1701); N sk39, 44, 48"
+      ],
+      scans: [
+        {"f":"img/1701_snatek_kremer_pyrchalova.jpg","t":"Sňatek 7. 2. 1701, Kobeřice – Jiří (George) Kremer z Raczan (?) × Magdalena, dcera Jakuba Pyrchaly z Kobeřic (ZA Opava, H IX 12, sken 40 – druhý zápis)"}
+      ]
     }
   ]
 };
@@ -7252,5 +7278,8 @@ window.RODOKMEN.collateral = [
   {"father":"vojtechPl","mother":"katerinaNov","cert":"M","id":"c_ploMtj1788","name":"Matěj Ployhar","b":{"date":"14. 2. 1788","year":1788,"place":"Olešník č. 21"},"note":"8695 sk65 – matka „Kateřina“ (M)."},
   {"id":"c_vacJos1797","name":"Josef Vaculík","b":{"date":"10. 2. 1797","year":1797,"place":"Návojná č. 16"},"d":{"date":"16. 2. 1797","year":1797,"place":"Návojná č. 16"},"cause":"vnitřní křeče (Innerliche Fraisen ?)","father":"josefVaSt","mother":"barboraKop","cert":"M","note":"Křest 4473 img 15, úmrtí Z 4034 img 222 (6 dní).","scans":[{"f":"img/1797_krest_josef_vaculik.jpg","t":"Křest 10. 2. 1797, Návojná č. 16 (MZA, N 4473, img 15)"},{"f":"img/1797_umrti_josef_vaculik.jpg","t":"Úmrtí 16. 2. 1797, Návojná č. 16 – Josef, syn Josefa Vaculíka a Barbory, 6 dní (MZA, Brumov Z 4034, img 222)"}]},
   {"id":"c_kucZuz1725","name":"Zuzana Kuczová","b":{"date":"22. (IV?) 1725","year":1725,"place":"Kobeřice"},"father":"mathaeusKuc","cert":"D","note":"Křest N H IX 1 sk25 (M): „Matiss Kuča, Marÿna“; ztotožnění otce s Mathaeem Kuczou D."},
-  {"id":"c_kucMar1728","name":"Markéta Kuczová","b":{"date":"13. 7. 1728","year":1728,"place":"Kobeřice"},"father":"mathaeusKuc","cert":"D","note":"Křest N H IX 1 sk29 (M): „Matiss Kuča, Marÿna“; kmotři Jan Morawec a Marÿna Stuchlykowa."}
+  {"id":"c_kucMar1728","name":"Markéta Kuczová","b":{"date":"13. 7. 1728","year":1728,"place":"Kobeřice"},"father":"mathaeusKuc","cert":"D","note":"Křest N H IX 1 sk29 (M): „Matiss Kuča, Marÿna“; kmotři Jan Morawec a Marÿna Stuchlykowa."},
+  {"father":"georgKrem","mother":"magdalenaKrem","cert":"M","id":"c_kreKat1701","name":"Kateřina Kremerová","b":{"date":"23. 10. 1701","year":1701,"place":"Kobeřice"},"note":"H IX 12 sk39: „Georgius Kremer, Magdalena“; kmotři Josephus Twerdi, Marianna Wasarzka (?)."},
+  {"father":"georgKrem","mother":"magdalenaKrem","cert":"M","id":"c_kreMar1703","name":"Marianna Kremerová","b":{"date":"1. 1. 1703","year":1703,"place":"Kobeřice"},"note":"H IX 12 sk44: „Zura Kremer, Magdalena“."},
+  {"father":"georgKrem","mother":"magdalenaKrem","cert":"D","id":"c_kreJur1705","name":"Jiří (Jura) Kremer","b":{"date":"11. 4. 1705","year":1705,"place":"Kobeřice"},"note":"H IX 12 sk48: „Zura Kremer, Magdalena | Zura (?)“ – jméno dítěte pod kaňkou."}
 ];
