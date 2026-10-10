@@ -6707,7 +6707,8 @@ window.RODOKMEN = {
       notes: [
         "Otec Mariny (sňatek 1793: „Bartoš Holba, Bauer in Nedaschow“ – žil, M).",
         "HYPOTÉZA (K): souvislost s „Bartoš Holbů“, Nedašov č. 28 (fase 1749, TK 1752) – týž nebo jeho otec; s rodem Holba (Jiří, Mikuláš, Matěj) zatím nespojeno.",
-        "Kandidát (K): Bartoš (Bartoloměj) Holba ml., syn Bartoše Holby st., ∞ 25. 1. 1761 Nedašov Marina, dcera † Martina Kolínka (4012 img 159, M); v č. 40 dcera Rosina 1773 (4012 img 87). Marinin křest (~1772–73) zatím nenalezen – vazba nepotvrzena. Pozor: v č. 40 i Václav Holba, syn Bartoše, × Marina, vdova Madirková (∞ 1772)."
+        "Kandidát (K): Bartoš (Bartoloměj) Holba ml., syn Bartoše Holby st., ∞ 25. 1. 1761 Nedašov Marina, dcera † Martina Kolínka (4012 img 159, M); v č. 40 dcera Rosina 1773 (4012 img 87). Marinin křest (~1772–73) zatím nenalezen – vazba nepotvrzena. Pozor: v č. 40 i Václav Holba, syn Bartoše, × Marina, vdova Madirková (∞ 1772).",
+        "Rodina Bartoš Holba × Marina v Nedašově (D – stejní kmotři Jiří Novák + Rosina): Jiří pokř. 10. (II?) 1769 (4012 img54), Jan 8. 2. 1771 (img67), Rosina 21. 12. 1773 (č. 40, img87). Křest Mariny (nevěsta 1793) NENÍ v 4012 N IX/1768–II/1776 → snad starší (1762–68). „Kosstrna (Golba)“ 1764 = Václav Kostrna z Brumova – s Holby nesouvisí."
       ],
       sources: [
         "MZA, O 4023, img 104"
