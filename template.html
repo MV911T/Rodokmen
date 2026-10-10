@@ -129,6 +129,21 @@ dl.facts dd{margin:0;min-width:0}
 .tabs button{font:inherit;font-size:.85rem;padding:6px 12px;border:1px solid var(--rule);border-radius:6px;background:var(--surface);color:var(--muted);cursor:pointer}
 .tabs button[aria-selected="true"]{color:var(--ink);border-color:var(--ink);font-weight:600}
 #mapView{flex:1;overflow:auto;padding:16px;box-sizing:border-box}
+#wideView{flex:1;overflow:auto;padding:16px;box-sizing:border-box}
+.wide{max-width:980px;margin:0 auto}
+.wintro{color:var(--muted);margin:0 0 10px;max-width:70ch}
+.wtools{display:flex;flex-wrap:wrap;gap:14px;align-items:center;margin-bottom:14px;font-size:.9rem}
+.wtools select{font:inherit}
+.wide h3{font-family:var(--f-name);font-weight:600;font-size:1.1rem;margin:22px 0 8px;border-bottom:1px solid var(--rule);padding-bottom:4px}
+.fam{background:var(--surface);border:1px solid var(--rule);border-left:4px solid var(--c,var(--rule));border-radius:8px;padding:10px 14px;margin:0 0 10px}
+.fam .fh{font-weight:600;margin-bottom:4px}
+.fam .fm{color:var(--muted);font-size:.85rem;margin-bottom:6px}
+.fam ul{margin:0;padding-left:20px}
+.fam li{margin:2px 0}
+.fam li.direct{font-weight:600}
+.fam li .tag{font-size:.75rem;font-weight:400;color:var(--muted);margin-left:6px}
+.fam li ul{margin-top:2px}
+.fam .none{color:var(--muted);font-style:italic;font-size:.88rem}
 .mapwrap{display:grid;grid-template-columns:minmax(0,1.3fr) minmax(0,1fr);gap:24px;max-width:1300px;margin:0 auto}
 @media (max-width:900px){.mapwrap{grid-template-columns:1fr}}
 .mapfig{min-width:0}
@@ -199,7 +214,7 @@ dl.facts dd{margin:0;min-width:0}
     <h1>Rodokmen Matěje Veselého</h1>
     <div class="meta" id="meta"></div>
   </div>
-  <nav class="tabs" role="tablist"><button type="button" role="tab" id="tabTree" aria-selected="true">Rodokmen</button><button type="button" role="tab" id="tabMap" aria-selected="false">Odkud jsme</button></nav>
+  <nav class="tabs" role="tablist"><button type="button" role="tab" id="tabTree" aria-selected="true">Rodokmen</button><button type="button" role="tab" id="tabWide" aria-selected="false">Širší okruh</button><button type="button" role="tab" id="tabMap" aria-selected="false">Odkud jsme</button></nav>
   <div class="tools">
     <input id="q" type="search" placeholder="Najít osobu…" aria-label="Najít osobu">
     <button id="home" type="button">Na Matěje</button>
@@ -216,6 +231,7 @@ dl.facts dd{margin:0;min-width:0}
     <span class="lin"><i style="background:var(--pat)"></i>otcovská linie</span>
   </div>
 </div>
+<section id="wideView" hidden><div class="wide"><p class="wintro" id="wideIntro"></p><div class="wtools"><label>Větev <select id="wLine"><option value="">všechny</option></select></label> <label><input type="checkbox" id="wOnly"> jen rodiny se známými sourozenci</label></div><div id="wideBody"></div></div></section>
 <section id="mapView" hidden><div class="mapwrap"><div class="mapfig"><div class="mapbox"><svg id="map" role="img" aria-label="Mapa původu rodových větví"></svg><div class="mapzoom" role="toolbar" aria-label="Přiblížení mapy"><button type="button" id="mzin" aria-label="Přiblížit mapu">+</button><button type="button" id="mzout" aria-label="Oddálit mapu">−</button><button type="button" id="mzreset">Celá mapa</button></div></div><div class="mlegend"><span><svg width="28" height="6"><line x1="0" y1="3" x2="28" y2="3" stroke="var(--muted)" stroke-width="2.2"/></svg>doložený přesun</span><span><svg width="28" height="6"><line x1="0" y1="3" x2="28" y2="3" stroke="var(--muted)" stroke-width="2.2" stroke-dasharray="7 5"/></svg>pravděpodobná trasa (vlakem)</span><span><svg width="28" height="6"><line x1="0" y1="3" x2="28" y2="3" stroke="var(--muted)" stroke-width="2.2" stroke-dasharray="2 5" stroke-linecap="round"/></svg>domněnka</span></div><p class="cap">Hranice podle dnešních států (Natural Earth). Čáry vedou po tehdejších železničních tratích, kde přesná cesta není známa. Po najetí myší se ukáže, kdo a kdy. Přiblížení: tlačítka, dvojklik, Ctrl/⌘ + kolečko nebo sevření prstů; posun tažením.</p><ol class="moves" id="moves"></ol></div><div id="story" class="story"></div></div><div class="tl"><h3>Časová osa</h3><ol id="tl"></ol></div></section>
 <div id="scroller">
   <div id="inner">
@@ -362,6 +378,37 @@ const genOf = (()=>{ const byId=Object.fromEntries(D.people.map(p=>[p.id,p])), g
 const meta = document.getElementById('meta');
 meta.innerHTML = `${D.people.length} osob · <b>${genDepth} generací zpět</b> <span class="gen-note">(počítáno od Matěje: rodiče = 1. generace, prarodiče = 2. …)</span> · ${nM} doloženo přímo v matrikách · nejstarší doložený předek <button type="button" class="plink" id="oldest">${oldest.name}</button> (~${oldest.b.year}) · aktualizováno ${window.RODOKMEN_BUILD||D.updated}`;
 document.getElementById('oldest').addEventListener('click',()=>{ applyScale(Math.max(vs,0.6)); focusCard(oldest.id); });
+// "Širší okruh": every ancestral couple with all their known children (direct line + siblings),
+// plus collateral relatives from D.collateral (people outside the direct line, e.g. siblings' families, cousins)
+const COL = D.collateral || [], CP = Object.fromEntries(COL.map(c=>[c.id,c]));
+function renderWide(){
+  const sel=document.getElementById('wLine'), only=document.getElementById('wOnly');
+  if(!sel.dataset.ready){ Object.entries(D.lines).forEach(([k,l])=>sel.insertAdjacentHTML('beforeend',`<option value="${k}">${l}</option>`)); sel.addEventListener('change',renderWide); only.addEventListener('change',renderWide); sel.dataset.ready=1; }
+  const line=sel.value, onlySib=only.checked;
+  const nm=x=>x?(P[x]?`<button type="button" class="plink" data-go="${x}">${P[x].name}</button>`:(CP[x]?CP[x].name:'')):'?';
+  const dates=x=>{ const p=P[x]||CP[x]; return p&&p.b?` <span class="src">${span(p)}</span>`:''; };
+  // collateral subtree: children of a collateral person (cousins, their children …)
+  const colKids=id=>COL.filter(c=>c.father===id||c.mother===id);
+  const colItem=c=>{ const k=colKids(c.id); return `<li>${c.name}${c.b?` <span class="src">${span(c)}</span>`:''}${c.spouse?` <span class="tag">∞ ${c.spouse}</span>`:''}${c.note?` <span class="tag">${c.note}</span>`:''}${k.length?`<ul>${k.map(colItem).join('')}</ul>`:''}</li>`; };
+  // families: one per direct-line child X (gen g) whose parents are known
+  const fams=D.people.filter(x=>(x.father&&P[x.father])||(x.mother&&P[x.mother])).filter(x=>genOf[x.id]!==undefined||x.id===D.root);
+  const groups={}; let nFam=0, nSib=0;
+  for(const x of fams){ const F=x.father, M=x.mother, g=(genOf[x.id]||0)+1;
+    const lineK=(P[F]||P[M]).line; if(line&&lineK!==line) continue;
+    const treeSibs=D.people.filter(q=>q.id!==x.id&&((F&&q.father===F)||(M&&q.mother===M)));
+    const strSibs=(x.siblings||[]).map(s=>typeof s==='string'?s:[s.name,s.b&&('*'+s.b),s.d&&('†'+s.d),s.note].filter(Boolean).join(' '));
+    const colSibs=COL.filter(c=>(F&&c.father===F)||(M&&c.mother===M));
+    const cnt=treeSibs.length+strSibs.length+colSibs.length; if(onlySib&&!cnt) continue;
+    nFam++; nSib+=cnt;
+    const mar=(P[F]&&P[F].marriage)||(P[M]&&P[M].marriage)||'';
+    const items=[`<li class="direct">${nm(x.id)}${dates(x.id)}<span class="tag">přímá linie</span></li>`,
+      ...treeSibs.map(q=>`<li>${nm(q.id)}${dates(q.id)}</li>`), ...colSibs.map(colItem), ...strSibs.map(t=>`<li>${t}</li>`)];
+    (groups[g]=groups[g]||[]).push(`<div class="fam" style="--c:var(--l-${lineK})"><div class="fh">${nm(F)} × ${nm(M)}</div>${mar?`<div class="fm">${mar}</div>`:''}<ul>${items.join('')}</ul>${cnt?'':'<div class="none">Sourozenci zatím nejsou známi.</div>'}</div>`); }
+  const head=g=>g===1?'Rodiče a jejich děti (1. generace zpět)':g===2?'Prarodiče a jejich děti – strýcové a tety (2. generace)':`${g}. generace zpět – rodiny předků`;
+  document.getElementById('wideIntro').textContent=`Každá karta je jedna rodina předků: rodiče a všechny jejich známé děti – přímý předek je tučně, ostatní jsou jeho sourozenci; pod nimi jejich manželé a děti (bratranci a sestřenice), pokud jsou známi. ${nFam} rodin, ${nSib} známých sourozenců${COL.length?`, ${COL.length} dalších příbuzných`:''}. Generace se počítají od Matěje (rodiče = 1).`;
+  document.getElementById('wideBody').innerHTML=Object.keys(groups).map(Number).sort((a,b)=>a-b).map(g=>`<h3>${head(g)}</h3>${groups[g].join('')}`).join('')||'<p class="none">Nic neodpovídá filtru.</p>';
+}
+window.renderWide = renderWide;
 window.RV_focus = id => { applyScale(Math.max(vs,0.6)); focusCard(id); };
 
 // dialog
@@ -598,10 +645,16 @@ requestAnimationFrame(()=>{ const c=document.querySelector(`.card[data-id="${D.r
   const TLs=[...D.timeline.map(e=>({...e,k:'fam'})),...auto,...hist].sort((a,b)=>a.y-b.y||(a.k==='hist')-(b.k==='hist'));
   document.getElementById('tl').innerHTML=TLs.map(e=>`<li class="${e.k}"><b>${e.y}</b>${e.t}</li>`).join('');
   document.getElementById('mapView').addEventListener('click',e=>{ const b=e.target.closest('[data-go]'); if(!b) return; show(false); window.RV_focus&&window.RV_focus(b.dataset.go); });
-  const tT=document.getElementById('tabTree'), tM=document.getElementById('tabMap'), MV=document.getElementById('mapView'), SC=document.getElementById('scroller'), LG=document.querySelector('.legend'), TL=document.querySelector('.tools'), ZB=document.getElementById('zoombar');
-  function show(map){ MV.hidden=!map; SC.hidden=map; LG.hidden=map; TL.hidden=map; ZB.hidden=map; tT.setAttribute('aria-selected',!map); tM.setAttribute('aria-selected',map); try{localStorage.setItem('rv-tab',map?'map':'tree')}catch(e){} }
-  tT.addEventListener('click',()=>show(false)); tM.addEventListener('click',()=>show(true));
-  try{ if(localStorage.getItem('rv-tab')==='map') show(true); }catch(e){}
-  if(location.hash==='#mapa') show(true);
+  const tT=document.getElementById('tabTree'), tM=document.getElementById('tabMap'), tW=document.getElementById('tabWide'), MV=document.getElementById('mapView'), WV=document.getElementById('wideView'), SC=document.getElementById('scroller'), LG=document.querySelector('.legend'), TL=document.querySelector('.tools'), ZB=document.getElementById('zoombar');
+  // mode: false/'tree' = tree, true/'map' = map, 'wide' = wider family circle
+  function show(mode){ const m=mode===true?'map':mode===false?'tree':mode; const tree=m==='tree';
+    MV.hidden=m!=='map'; WV.hidden=m!=='wide'; SC.hidden=!tree; LG.hidden=!tree; TL.hidden=!tree; ZB.hidden=!tree;
+    tT.setAttribute('aria-selected',tree); tM.setAttribute('aria-selected',m==='map'); tW.setAttribute('aria-selected',m==='wide');
+    if(m==='wide') window.renderWide();
+    try{localStorage.setItem('rv-tab',m)}catch(e){} }
+  tT.addEventListener('click',()=>show('tree')); tM.addEventListener('click',()=>show('map')); tW.addEventListener('click',()=>show('wide'));
+  WV.addEventListener('click',e=>{ const b=e.target.closest('[data-go]'); if(!b) return; show('tree'); window.RV_focus&&window.RV_focus(b.dataset.go); });
+  try{ const t=localStorage.getItem('rv-tab'); if(t==='map'||t==='wide') show(t); }catch(e){}
+  if(location.hash==='#mapa') show('map'); if(location.hash==='#okruh') show('wide');
 })();
 </script>

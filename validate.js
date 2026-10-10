@@ -112,6 +112,15 @@ for (const c of P) {
 // 8. page context – everything the "Odkud jsme" view and the event column derive from must stay in sync
 const tpl = fs.readFileSync(path.join(__dirname, 'template.html'), 'utf8');
 for (const p of P) if (!D.lines[p.line]) err(p, `line "${p.line}" is not defined in D.lines`);
+// collateral relatives (Širší okruh): parents must point to a person or another collateral entry
+{
+  const C = D.collateral || [], ids = new Set([...P.map(p => p.id), ...C.map(c => c.id)]);
+  for (const c of C) {
+    if (!c.id || !c.name) err(null, `collateral entry without id/name: ${JSON.stringify(c).slice(0, 60)}`);
+    for (const k of ['father', 'mother']) if (c[k] && !ids.has(c[k])) err(null, `collateral ${c.id}: ${k} "${c[k]}" not found`);
+    if (!c.father && !c.mother) err(null, `collateral ${c.id}: needs father or mother`);
+  }
+}
 // branch rule: every ancestor of one of the root's 8 great-grandparents carries that great-grandparent's line
 {
   const byId = Object.fromEntries(P.map(p => [p.id, p]));
