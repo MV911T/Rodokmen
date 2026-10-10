@@ -6061,19 +6061,24 @@ window.RODOKMEN = {
       name: "Wojciech (Adalbert) Witarowski",
       line: "woron",
       cert: "M",
-      b: {"date":"cca 1750","year":1750,"approx":true,"place":"Zabawa / Lednica (?)"},
+      b: {"date":"11. 4. 1752 (křest)","year":1752,"place":"Lednica Górna (farnost Wieliczka)"},
+      father: "wojciechWiSt",
+      mother: "malgorzataSy",
       marriage: "1) 22. 11. 1772, Lednica Górna – s Katarzynou Wawrzyńczykówna; 2) 14. 10. 1792, Lednica Górna č. 6 – se Žofií Wilk (on vdovec, 42 let)",
       notes: [
+        "Křest 11. 4. 1752 Lednica (M zápis): „Filium nomine Adalbertum LL. Adalberti Witarowski et Margarithae CL. PP. – H. Adalbertus Twardos de Lednica et Marianna Czengowiczowa de eadem villa“ (KM-10-5 #0610_r). Totožnost s naším Vojtěchem PRAVDĚPODOBNÁ (D): rodina A bydlí v Lednici Górné č. 5, kde se 1780 ženil bratr Ignác a 1784 zemřel Vojtěchův syn Józef; sociálně sedláci; druhý kandidát (Vojtěch *1753, syn zvoníka Františka – městská rodina) nepravděpodobný.",
+        "1. sňatek 22. 11. 1772 Lednica Górna (M): „inter h. Adalbertum Witarowsczyk et Catharinam Wawrzyńczykownam“ (KM-10-71 #0011_v) – „Witarowsczyk“ = syn Witarowského; s Katarzynou děti 1773–1783 (D).",
         "Sňatek 14. 10. 1792 Lednica Górna č. 6 (M): „Adalbertus Witarowski | 42 | viduus || Sophia Wilkowna | 32 | coelebs || Thomas Konopka cmetho, Adalbertus Dębowski hortulanus“ (KM-10-78 #0026_r). Bydliště: Lednica Górna č. 6 (1792), Zabawa č. 5 (1795), č. 8 (1798).",
-        "1. sňatek 22. 11. 1772 Lednica Górna (M): „inter h. Adalbertum Witarowsczyk et Catharinam Wawrzyńczykownam … praesentibus Mathia Drzewulski, Jacobo Mikuła, Thoma Konopka“ (CAAK KM-10-71 #0011_v) – „Witarowsczyk“ = mladý syn Witarowského; s Katarzynou děti v Lednici Górné 1773–1783 (Łukasz, Regina Małgorzata, Łucja, Józef † 1784, Stanisław – D). Rodiče nerozhodnuto (K): Wojciech Witarowski × Małgorzata Sykała (∞ 18. 10. 1750 Lednica Górna – sken KM-10-5 #0776_v, M; podle Geneteky jejich syn Wojciech narozen 11. 4. 1752) – pravděpodobnější; nebo Franciszek × Dorota Adamczyk (jejich syn Wojciech narozen 19. 4. 1753).",
         "Otec Reginy – sňatek 1820 (M zápis, vazba D): „Regina Adalberti Witarowski“. Sňatek se Žofií Wilk 14. 10. 1792 – vdovec, 42 let (index Geneteka)."
       ],
       sources: [
+        "CAAK KM-10-5 #0610_r (křest 1752), #0776_v (sňatek 1750); KM-10-11 #0256_v (sňatek Ignáce 1780)",
         "CAAK (Archiwum Kurii Metropolitalnej Kraków): KM-10-34 (křty Zabawa) #0122_r, #0120_v; KM-10-78 (oddaní Wieliczka 1785–1844) #0026_r",
         "Archiwum Kurii Metropolitalnej Kraków (CAAK), KM-10-78, Zabawa – Copulatorum, snímek #0007_r; Geneteka (Wieliczka) – sňatky Witarowski 1792, 1820",
         "CAAK KM-10-71 #0011_v (sňatek 1772); KM-10-5 #0776_v (sňatek 1750)"
       ],
       scans: [
+        {"f":"img/1752_krest_wojciech_witarowski.jpg","t":"Křest 11. 4. 1752, Lednica – Vojtěch, syn Vojtěcha Witarowského a Markéty (CAAK KM-10-5, #0610_r)"},
         {"f":"img/1792_snatek_witarowski_wilk.jpg","t":"Sňatek 14. 10. 1792, Lednica Górna č. 6 – Adalbertus Witarowski, vdovec, 42 let × Sophia Wilkowna, 32 let (CAAK KM-10-78, #0026_r)"},
         {"f":"img/1798_krest_regina_witarowska.jpg","t":"Křest 6. 8. 1798, Zabawa č. 8 – Regina, dcera Vojtěcha Witarowského a Žofie roz. Wilk (CAAK KM-10-34, #0122_r)"}
       ]
@@ -6209,6 +6214,41 @@ window.RODOKMEN = {
       ],
       scans: [
         {"f":"img/1735_snatek_jacob_kremer_marina_kucza.jpg","t":"Sňatek 24. 5. 1735, Kobeřice – Jacob, syn Jiřího Kremera × Marina, dcera Matěje Kuczy (ZAO, Kobeřice H IX 1, sken 121)"}
+      ]
+    },
+    {
+      id: "wojciechWiSt",
+      name: "Vojtěch (Adalbert) Witarowski st.",
+      line: "woron",
+      cert: "D",
+      b: {"date":"cca 1725","year":1725,"approx":true,"place":"Lednica Górna (?)"},
+      occ: "sedlák (laborator), Lednica Górna č. 5 (?)",
+      marriage: "18. 10. 1750, Lednica Górna – s Markétou Sykałankou",
+      notes: [
+        "Sňatek 18. 10. 1750 Lednica Górna (M): „inter LL. Adalbertum Witarowski et Margaretham Sykałankę, … praesentibus LL. Jacobo Kowal, Mathia Dziewulski, Hyacyntho Przybycki de eadem villa“ (KM-10-5 #0776_v). Děti (D): Vojtěch *1752, Ignác *1760 (∞ 1780 z č. 5), Marianna (∞ 1784 Kasper Pytel/Pawlik), Kateřina (∞ 1781 Antoni Mikuła), Kunegunda 1772. Možná matka Elżbieta Witarowska († 1768, 60 let) – K."
+      ],
+      sources: [
+        "CAAK KM-10-5 #0610_r (křest 1752), #0776_v (sňatek 1750); KM-10-11 #0256_v (sňatek Ignáce 1780)"
+      ],
+      scans: [
+        {"f":"img/1750_snatek_witarowski_sykala.jpg","t":"Sňatek 18. 10. 1750, Lednica Górna – Vojtěch Witarowski × Markéta Sykałanka (CAAK KM-10-5, #0776_v)"}
+      ]
+    },
+    {
+      id: "malgorzataSy",
+      name: "Markéta (Małgorzata) Witarowska",
+      maiden: "Sykała (Sykałanka)",
+      line: "woron",
+      cert: "D",
+      b: {"date":"cca 1730","year":1730,"approx":true,"place":"Lednica (?)"},
+      notes: [
+        "Sňatek 18. 10. 1750 (M): „Margaretham Sykałankę“; v křtu syna 1752 „Margaritha“."
+      ],
+      sources: [
+        "CAAK KM-10-5 #0610_r (křest 1752), #0776_v (sňatek 1750); KM-10-11 #0256_v (sňatek Ignáce 1780)"
+      ],
+      scans: [
+        {"f":"img/1750_snatek_witarowski_sykala.jpg","t":"Sňatek 18. 10. 1750, Lednica Górna – Vojtěch Witarowski × Markéta Sykałanka (CAAK KM-10-5, #0776_v)"}
       ]
     }
   ]
@@ -6594,5 +6634,9 @@ window.RODOKMEN.collateral = [
   {"id":"c_holTho1761","name":"Thomas Holeczek (Holeschny)","b":{"date":"8. 12. 1761","year":1761,"place":"Kobeřice"},"father":"josefHol","mother":"rosinaKrem","cert":"M","note":"Křest Kobeřice H IX 1 sk91 (M): „Thomas | Josephus Holeschny faber ferrarius et Rosina uxor“."},
   {"father":"jacobKrem","mother":"marinaKuc","cert":"M","id":"c_kreAmb1736","name":"Ambrosius Kremer","b":{"date":"5. 12. 1736","year":1736,"place":"Kobeřice"},"note":"Křest H IX 1 sk46 (M)"},
   {"father":"jacobKrem","mother":"marinaKuc","cert":"M","id":"c_kreCat1741","name":"Catharina Kremer","b":{"date":"16. 4. 1741","year":1741,"place":"Kobeřice"},"note":"Křest H IX 1 sk53 (M)"},
-  {"father":"jacobKrem","mother":"marinaKuc","cert":"M","id":"c_kreMar1743","name":"Marina Kremer","b":{"date":"23. 9. 1743","year":1743,"place":"Kobeřice"},"note":"Křest H IX 1 sk57 (M)"}
+  {"father":"jacobKrem","mother":"marinaKuc","cert":"M","id":"c_kreMar1743","name":"Marina Kremer","b":{"date":"23. 9. 1743","year":1743,"place":"Kobeřice"},"note":"Křest H IX 1 sk57 (M)"},
+  {"father":"wojciechWiSt","mother":"malgorzataSy","id":"c_witIgn","name":"Ignác Witarowski","b":{"date":"cca 1760","year":1760,"approx":true,"place":"Lednica Górna"},"spouse":"Franciszka, dcera Šebestiána Pytla (∞ 23. 1. 1780, Lednica Górna č. 5)","cert":"M","note":"Sňatek KM-10-11 #0256_v (M): „Juv. Ignatius Adalberti Witarowski & Francisca Sebastiani Pytel … 5“."},
+  {"father":"wojciechWiSt","mother":"malgorzataSy","id":"c_witMarianna","name":"Marianna Witarowska","spouse":"Kasper Pytel/Pawlik (∞ 21. 11. 1784 Zabawa)","cert":"D","note":"Geneteka (index); kmotr Reginy 1798 Kasper Pawlik."},
+  {"father":"wojciechWiSt","mother":"malgorzataSy","id":"c_witKatSt","name":"Kateřina Witarowska","spouse":"Antoni Mikuła (∞ 4. 2. 1781)","cert":"D","note":"Geneteka (index)."},
+  {"father":"wojciechWiSt","mother":"malgorzataSy","id":"c_witKun","name":"Kunegunda Witarowska","b":{"date":"VII/1772","year":1772,"place":"Lednica Górna"},"cert":"D","note":"Geneteka (index) – dcera Vojtěcha × Markéty."}
 ];
