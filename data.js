@@ -6385,5 +6385,7 @@ window.RODOKMEN.collateral = [
   {"id":"c_pacAl1922","name":"Alois Pacík","b":{"date":"7. 11. 1922","year":1922,"place":"Nedašova Lhota"},"father":"frantisek1892","mother":"annaM","cert":"M","note":"matrika Nedašova Lhota (zapsáno u Rudolfa *1936)"},
   {"id":"c_pacMar","name":"Marie Halamová","maiden":"Pacíková","father":"frantisek1892","mother":"annaM","cert":"R","note":"provdaná Halamová, Orlová – údaj rodiny"},
   {"cert":"R","note":"údaj rodiny (Matěj Veselý, 10. 10. 2026)","id":"c_pavelP","name":"Pavel Pacík","father":"c_tomasP"},
-  {"cert":"R","note":"údaj rodiny (Matěj Veselý, 10. 10. 2026)","id":"c_petraP","name":"Petra Pacíková","father":"c_tomasP"}
+  {"cert":"R","note":"údaj rodiny (Matěj Veselý, 10. 10. 2026)","id":"c_petraP","name":"Petra Pacíková","father":"c_tomasP"},
+  {"cert":"R","note":"údaj rodiny (Matěj Veselý, 10. 10. 2026)","id":"c_janP2","name":"Jan Pacík","father":"c_rudolfP"},
+  {"cert":"R","note":"údaj rodiny (Matěj Veselý, 10. 10. 2026)","id":"c_rudolfP_d2","name":"(další dítě – jméno nezjištěno)","father":"c_rudolfP"}
 ];
