@@ -399,12 +399,12 @@ function renderWide(){
     const treeSibs=D.people.filter(q=>q.id!==x.id&&((F&&q.father===F)||(M&&q.mother===M)));
     const strSibs=(x.siblings||[]).map(s=>typeof s==='string'?s:[s.name,s.b&&('*'+s.b),s.d&&('†'+s.d),s.note].filter(Boolean).join(' '));
     const colSibs=COL.filter(c=>(F&&c.father===F)||(M&&c.mother===M));
-    const cnt=treeSibs.length+strSibs.length+colSibs.length; if(onlySib&&!cnt) continue;
+    const cnt=treeSibs.length+(colSibs.length||strSibs.length); if(onlySib&&!cnt) continue;
     nFam++; nSib+=cnt;
     const mar=(P[F]&&P[F].marriage)||(P[M]&&P[M].marriage)||'';
     const items=[`<li class="direct">${nm(x.id)}${dates(x.id)}<span class="tag">přímá linie</span></li>`,
-      ...treeSibs.map(q=>`<li>${nm(q.id)}${dates(q.id)}</li>`), ...colSibs.map(colItem), ...strSibs.map(t=>`<li>${t}</li>`)];
-    (groups[g]=groups[g]||[]).push(`<div class="fam" style="--c:var(--l-${lineK})"><div class="fh">${nm(F)} × ${nm(M)}</div>${mar?`<div class="fm">${mar}</div>`:''}<ul>${items.join('')}</ul>${cnt?'':'<div class="none">Sourozenci zatím nejsou známi.</div>'}</div>`); }
+      ...treeSibs.map(q=>`<li>${nm(q.id)}${dates(q.id)}</li>`), ...colSibs.map(colItem), ...(colSibs.length?[]:strSibs.map(t=>`<li>${t}</li>`))];
+    (groups[g]=groups[g]||[]).push(`<div class="fam" style="--c:var(--l-${lineK})"><div class="fh">${nm(F)} × ${nm(M)}</div>${mar?`<div class="fm">${mar}</div>`:''}<ul>${items.join('')}</ul>${cnt?'':`<div class="none">${x.onlyChild?'Bez sourozenců (údaj rodiny).':'Sourozenci zatím nejsou známi.'}</div>`}</div>`); }
   const head=g=>g===1?'Rodiče a jejich děti (1. generace zpět)':g===2?'Prarodiče a jejich děti – strýcové a tety (2. generace)':`${g}. generace zpět – rodiny předků`;
   document.getElementById('wideIntro').textContent=`Každá karta je jedna rodina předků: rodiče a všechny jejich známé děti – přímý předek je tučně, ostatní jsou jeho sourozenci; pod nimi jejich manželé a děti (bratranci a sestřenice), pokud jsou známi. ${nFam} rodin, ${nSib} známých sourozenců${COL.length?`, ${COL.length} dalších příbuzných`:''}. Generace se počítají od Matěje (rodiče = 1).`;
   document.getElementById('wideBody').innerHTML=Object.keys(groups).map(Number).sort((a,b)=>a-b).map(g=>`<h3>${head(g)}</h3>${groups[g].join('')}`).join('')||'<p class="none">Nic neodpovídá filtru.</p>';
@@ -432,7 +432,7 @@ function open(id){
   // siblings: people in the tree sharing a parent, plus recorded siblings outside the tree
   const sib = D.people.filter(q=>q.id!==p.id && ((p.father&&q.father===p.father)||(p.mother&&q.mother===p.mother)));
   const colSib = (window.RODOKMEN.collateral||[]).filter(c=>(p.father&&c.father===p.father)||(p.mother&&c.mother===p.mother)).map(c=>c.name+(c.b?' *'+c.b.date:'')+(c.d?' †'+(c.d.date||''):''));
-  const sibText = [...colSib, ...(p.siblings||[]).map(s=>typeof s==='string'?s:[s.name,s.b&&('*'+s.b),s.d&&('†'+s.d),s.note].filter(Boolean).join(' '))];
+  const sibText = colSib.length ? colSib : [...(p.siblings||[]).map(s=>typeof s==='string'?s:[s.name,s.b&&('*'+s.b),s.d&&('†'+s.d),s.note].filter(Boolean).join(' '))];
   if(sib.length||sibText.length) rows.push(['Sourozenci', [...sib.map(q=>link(q.id)), ...sibText].join('<br>')]);
   if(kids[p.id]) rows.push(['Děti v rodokmenu', kids[p.id].map(link).join('<br>')]);
   body.innerHTML = `<button type="button" class="x" aria-label="Zavřít">×</button>
