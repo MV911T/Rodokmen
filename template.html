@@ -413,6 +413,8 @@ window.renderWide = renderWide;
 window.RV_focus = id => { applyScale(Math.max(vs,0.6)); focusCard(id); };
 
 // dialog
+// make bare URLs in sources clickable (trailing punctuation stays outside the link)
+const linkify = t => String(t).replace(/https?:\/\/[^\s<>"“”]+/g, u => { const m=u.match(/[.,;:)\]]+$/), tail=m?m[0]:'', url=tail?u.slice(0,-tail.length):u; return `<a href="${url}" target="_blank" rel="noopener">${url}</a>${tail}`; });
 const dlg = document.getElementById('dlg'), body = document.getElementById('dlgBody');
 const link = id => P[id] ? `<button type="button" class="plink" data-go="${id}">${P[id].name}</button> <span class="src">${span(P[id])}</span>` : '';
 function open(id){
@@ -442,7 +444,7 @@ function open(id){
     <dl class="facts">${rows.map(([k,v])=>`<dt>${k}</dt><dd>${v}</dd>`).join('')}</dl>
     ${p.notes&&p.notes.length?`<h3>Poznámky</h3><ul>${p.notes.map(n=>`<li>${n}</li>`).join('')}</ul>`:''}
     ${p.scans&&p.scans.length?`<h3>Zápisy v matrice</h3><div class="scans">${p.scans.map(s=>`<button type="button" class="scan" data-src="${s.f}" data-t="${s.t}"><img src="${s.f}" alt="${s.t}" loading="lazy"><span>${s.t}</span></button>`).join('')}</div>`:''}
-    ${p.sources&&p.sources.length?`<h3>Prameny</h3><ul class="src">${p.sources.map(n=>`<li>${n}</li>`).join('')}</ul>`:''}`;
+    ${p.sources&&p.sources.length?`<h3>Prameny</h3><ul class="src">${p.sources.map(n=>`<li>${linkify(n)}</li>`).join('')}</ul>`:''}`;
   body.querySelector('.x').addEventListener('click',()=>dlg.close());
   body.querySelectorAll('.scan').forEach(b=>b.addEventListener('click',()=>showScan(b.dataset.src,b.dataset.t)));
   body.querySelectorAll('[data-go]').forEach(b=>b.addEventListener('click',()=>{ focusCard(b.dataset.go); open(b.dataset.go); }));
@@ -473,7 +475,7 @@ function openCol(id){
     <dl class="facts">${rows.map(([k,v])=>`<dt>${k}</dt><dd>${v}</dd>`).join('')}</dl>
     ${notes.length?`<h3>Poznámky a původ údaje</h3><ul>${notes.map(n=>`<li>${n}</li>`).join('')}</ul>`:''}
     ${c.scans&&c.scans.length?`<h3>Zápisy v matrice</h3><div class="scans">${c.scans.map(s=>`<button type="button" class="scan" data-src="${s.f}" data-t="${s.t}"><img src="${s.f}" alt="${s.t}" loading="lazy"><span>${s.t}</span></button>`).join('')}</div>`:''}
-    ${c.sources&&c.sources.length?`<h3>Prameny</h3><ul class="src">${c.sources.map(n=>`<li>${n}</li>`).join('')}</ul>`:''}`;
+    ${c.sources&&c.sources.length?`<h3>Prameny</h3><ul class="src">${c.sources.map(n=>`<li>${linkify(n)}</li>`).join('')}</ul>`:''}`;
   body.querySelector('.x').addEventListener('click',()=>dlg.close());
   body.querySelectorAll('.scan').forEach(b=>b.addEventListener('click',()=>showScan(b.dataset.src,b.dataset.t)));
   body.querySelectorAll('[data-go]').forEach(b=>b.addEventListener('click',()=>{ focusCard(b.dataset.go); open(b.dataset.go); }));

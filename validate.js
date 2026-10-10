@@ -63,7 +63,7 @@ for (const p of P) {
     if (!Array.isArray(p.siblings)) err(p, 'siblings must be an array');
     else p.siblings.forEach(s => { if (!(typeof s === 'string' ? s.trim() : s && typeof s.name === 'string' && s.name.trim())) err(p, 'sibling entry needs text or a name'); });
   }
-  if ((p.notes || []).some(n => /^(Sourozen|Sestra|Bratr)/.test(n))) warn(p, 'sibling info belongs in the siblings field, not in notes');
+  if ((p.notes || []).some(n => /^(Sourozen(?!ci viz)|Sestra|Bratr|(Starší|Mladší|Další) (sestra|bratr|sourozen))/i.test(n))) warn(p, 'sibling info belongs in the siblings field, not in notes');
   // 5. notes that contradict the structured fields (stale text)
   const notes = p.notes || [];
   const deathWords = /\b(zemřel|zemřela|†)/i;
