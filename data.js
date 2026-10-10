@@ -5745,27 +5745,31 @@ window.RODOKMEN = {
       name: "Tomáš Veselý",
       line: "vesely",
       cert: "M",
-      b: {"date":"cca 1768","year":1768,"approx":true,"place":"Hluboká nad Vltavou (?)"},
+      b: {"date":"cca 1766–1768","year":1767,"approx":true,"place":"Knín (?) / panství Hluboká"},
       father: "pavelVes",
+      mother: "annaVesP",
       occ: "šafář na knížecím (schwarzenberském) dvoře Býšov (Bejšov) č. 14, Knín – fara Křtěnov",
       marriage: "28. 4. 1795, Knín (fara Křtěnov) – s Marianou (Marií) Bočkovou",
       notes: [
         "Svatební smlouva 10. 4. 1795, Knín (M; Praes. 10. 4. 1795, N° Cat. 125): „… dobrowolná úmluwa swadebnj mezi Tomášem Weselym, šafářem w Panském Dworu (Bejšowě ?), jakožto ženichem z jedné, pak Marianau pozůstalau dcerau po Nebožt. Josefu Bočkovi neb Jírowi, sedláku z Litoradlic … newěstau z druhé strany“; nevěsta přináší dědický podíl po otci 23 fl 20 kr, matka přidává 100 fl – celkem 123 fl 20 kr; podepsáni „Tomaš Weselý ženich“, „Mariana Newěsta +++“, svědci (Wojtěch Kraus ? z Litoradlic, Franz Michalko ? z Knína); potvrzeno vrchnostenským soudem panství Frauenberg 10. 4. 1795. Pavel Veselý ve smlouvě uveden není.",
         "Sňatek 28. 4. 1795 Knín č. 5 (M): „Tomáš, wlastnj syn † Pawla Weselýho haušlerníka z Hluboký pocházejícý“, 27 let, svobodný – nevěsta „Mariana z Lyttoradlic … N. 5, Jozefa Bočka a Kateřiny … dcera“, 20 let; svědci Vojtěch Klesse (?) a František Kyzanka (?), sedláci z Litoradlic.",
         "Otec Matěje Veselého (sňatek syna 1851, M): „Tomáš Weselí, knížecí šafář v Zbeyšově (?)“; manželka Marie Bočková z Litoradlic č. 5. „Zbeyšov“ = Býšov (Bejšov) č. 14.",
-        "Křest syna Matěje 4. 2. 1816, Býšov č. 14 (M). Podle rejstříku N Křtěnov (D) další děti v Knín č. 14: Rozálie 22. 8. 1807, Marie 23. 2. 1810, snad Václav VIII/1810 – rodina na Býšově nejpozději od 1807. Pozor: Tomáš Veselý z Temelínce č. 12 je jiná rodina (děti 1807–1815)."
+        "Křest syna Matěje 4. 2. 1816, Býšov č. 14 (M). Podle rejstříku N Křtěnov (D) další děti v Knín č. 14: Rozálie 22. 8. 1807, Marie 23. 2. 1810, snad Václav VIII/1810 – rodina na Býšově nejpozději od 1807. Pozor: Tomáš Veselý z Temelínce č. 12 je jiná rodina (děti 1807–1815).",
+        "V soupisu poddaných 1780 jako syn Pavla Veselého, 14 let (*~1766; při sňatku 1795 27 let → *~1768) – rodina v Kníně (D)."
       ],
       sources: [
         "SOA Třeboň, Vs Hluboká, svatební smlouvy 1794–1797 (id 124155), fol. 86–87 – https://digi.ceskearchivy.cz/DA?menu=3&id=124155&page=86",
         "SOA Třeboň, Křtěnov 7 (Knín) O, id 5022, sken 74, s. 195 – https://digi.ceskearchivy.cz/DA?menu=3&id=5022&page=74; rejstřík O Křtěnov 14 (id 5029) sken 49",
         "SOA Třeboň, Hluboká nad Vltavou 11 O (id 3564), sken 29 – https://digi.ceskearchivy.cz/DA?menu=3&id=3564&page=29",
-        "SOA Třeboň, Křtěnov 7 (Knín) N 1787–1847 (id 5022), sken 23, s. 60 – https://digi.ceskearchivy.cz/DA?menu=3&id=5022&page=23; rejstřík N Křtěnov 13 (id 5028), sken 113"
+        "SOA Třeboň, Křtěnov 7 (Knín) N 1787–1847 (id 5022), sken 23, s. 60 – https://digi.ceskearchivy.cz/DA?menu=3&id=5022&page=23; rejstřík N Křtěnov 13 (id 5028), sken 113",
+        "SOA Třeboň, Vs Hluboká, soupis poddaných 1780 („Kniha syrotčí na rok 1780“), id 52578, sken 257, fol. 255 – https://digi.ceskearchivy.cz/DA?menu=3&id=52578&page=257"
       ],
       scans: [
         {"f":"img/1795_svatebni_smlouva_vesely_bockova_1.jpg","t":"Svatební smlouva 10. 4. 1795, Knín – Tomáš Veselý, šafář v panském dvoře (Býšov ?) × Mariana, dcera † Josefa Bočka neb Jíry z Litoradlic (SOA Třeboň, Vs Hluboká, svatební smlouvy 1794–97, fol. 86)"},
         {"f":"img/1795_svatebni_smlouva_vesely_bockova_2.jpg","t":"Svatební smlouva 1795 – pokračování, podpisy a potvrzení vrchnostenským soudem (fol. 86v–87)"},
         {"f":"img/1795_snatek_tomas_vesely_marie_bockova.jpg","t":"Sňatek 28. 4. 1795, Knín č. 5 (fara Křtěnov) – Tomáš, syn † Pavla Veselého, domkáře z Hluboké × Mariana, dcera Josefa Bočka a Kateřiny (Křtěnov 7, id 5022, sken 74)"},
-        {"f":"img/1816_krest_matej_vesely_bysov.jpg","t":"Křest 4. 2. 1816, Býšov č. 14 (Knín, fara Křtěnov) – Matěj, syn Tomáše Veselého, šafáře, a Marie, dcery Josefa (?) Bočka (recte Jíry), sedláka z Litoradlic č. 5 (Křtěnov 7, id 5022, sken 23)"}
+        {"f":"img/1816_krest_matej_vesely_bysov.jpg","t":"Křest 4. 2. 1816, Býšov č. 14 (Knín, fara Křtěnov) – Matěj, syn Tomáše Veselého, šafáře, a Marie, dcery Josefa (?) Bočka (recte Jíry), sedláka z Litoradlic č. 5 (Křtěnov 7, id 5022, sken 23)"},
+        {"f":"img/1780_soupis_poddanych_vesely.jpg","t":"Soupis poddaných panství Hluboká 1780, fol. 255 (oddíl dvorských služebníků) – Pavel Veselý 41, žena Anna 43, děti Tomáš 14, Matěj 2, Anna 1; poznámka „Hammel… in Knin“ (SOA Třeboň, Vs Hluboká, id 52578, sken 257)"}
       ],
       siblings: undefined
     },
@@ -6014,17 +6018,20 @@ window.RODOKMEN = {
       name: "Pavel Veselý",
       line: "vesely",
       cert: "M",
-      b: {"date":"cca 1740","year":1740,"approx":true,"place":"Hluboká nad Vltavou (?)"},
+      b: {"date":"cca 1739","year":1739,"approx":true,"place":"?"},
       d: {"date":"před 1795","year":1794,"approx":true},
-      occ: "domkář (haušlerník), Hluboká (?)",
+      occ: "ovčák (?) při panském dvoře v Kníně (1780); později domkář (haušlerník) v Hluboké",
       notes: [
+        "Soupis poddaných 1780 (M zápis; ztotožnění D – shoda jmen otce i syna, věk Tomáše, Knín): „Pawel Weselý 41 | žena Anna 43 | dětj Tomaš 14, Matěg 2, Anna 1“, poznámka „Hammel(…?) in Knin“ – nejspíš ovčák (pasák skopců) při panském dvoře v Kníně; v oddílu dvorských služebníků na konci svazku (fol. 255), hned pod ním „Tomaš Wolf 42 … Schafmeister“. V Podhradí 1780 (domy, domky, podruzi, sirotci) Pavel není.",
         "Otec Tomáše Veselého – sňatek syna 28. 4. 1795 (M): „Tomáš, wlastnj syn † Pawla Weselýho haušlerníka z Hluboký pocházejícý“ – v roce 1795 už nežil. Matěj Veselý (sňatek 7. 10. 1794 Knín č. 3) NENÍ jeho syn – otec Jakub.",
         "Hluboká má matriky až od 1784; dříve fara Hosín (N 1745–84: Hosín 7 id 3857, Hosín 8 id 3858). Křest syna Tomáše (~1767–68) NENÍ v Hosín 8 I–VI/1768 ani Hosín 7 od V/1767. V Podskalí 1768 Ondřej Veselý (dcera Josefa) – možný příbuzný (K)."
       ],
       sources: [
+        "SOA Třeboň, Vs Hluboká, soupis poddaných 1780 („Kniha syrotčí na rok 1780“), id 52578, sken 257, fol. 255 – https://digi.ceskearchivy.cz/DA?menu=3&id=52578&page=257",
         "SOA Třeboň, Křtěnov 7 (Knín) O, id 5022, sken 74, s. 195 – https://digi.ceskearchivy.cz/DA?menu=3&id=5022&page=74; rejstřík O Křtěnov 14 (id 5029) sken 49"
       ],
       scans: [
+        {"f":"img/1780_soupis_poddanych_vesely.jpg","t":"Soupis poddaných panství Hluboká 1780, fol. 255 (oddíl dvorských služebníků) – Pavel Veselý 41, žena Anna 43, děti Tomáš 14, Matěj 2, Anna 1; poznámka „Hammel… in Knin“ (SOA Třeboň, Vs Hluboká, id 52578, sken 257)"},
         {"f":"img/1795_snatek_tomas_vesely_marie_bockova.jpg","t":"Sňatek 28. 4. 1795, Knín č. 5 (fara Křtěnov) – Tomáš, syn † Pavla Veselého, domkáře z Hluboké × Mariana, dcera Josefa Bočka a Kateřiny (Křtěnov 7, id 5022, sken 74)"}
       ]
     },
@@ -6894,6 +6901,22 @@ window.RODOKMEN = {
       scans: [
         {"f":"img/1701_snatek_kremer_pyrchalova.jpg","t":"Sňatek 7. 2. 1701, Kobeřice – Jiří (George) Kremer z Raczan (?) × Magdalena, dcera Jakuba Pyrchaly z Kobeřic (ZA Opava, H IX 12, sken 40 – druhý zápis)"}
       ]
+    },
+    {
+      id: "annaVesP",
+      name: "Anna Veselá",
+      line: "vesely",
+      cert: "D",
+      b: {"date":"cca 1737","year":1737,"approx":true,"place":"?"},
+      notes: [
+        "Manželka Pavla Veselého v soupisu poddaných 1780, 43 let („žena Anna (?)“ – jméno přepsané) – pravděpodobná matka Tomáše (D; mohla být i 2. manželka). Rodné příjmení neznámé."
+      ],
+      sources: [
+        "SOA Třeboň, Vs Hluboká, soupis poddaných 1780 („Kniha syrotčí na rok 1780“), id 52578, sken 257, fol. 255 – https://digi.ceskearchivy.cz/DA?menu=3&id=52578&page=257"
+      ],
+      scans: [
+        {"f":"img/1780_soupis_poddanych_vesely.jpg","t":"Soupis poddaných panství Hluboká 1780, fol. 255 (oddíl dvorských služebníků) – Pavel Veselý 41, žena Anna 43, děti Tomáš 14, Matěj 2, Anna 1; poznámka „Hammel… in Knin“ (SOA Třeboň, Vs Hluboká, id 52578, sken 257)"}
+      ]
     }
   ]
 };
@@ -7293,5 +7316,7 @@ window.RODOKMEN.collateral = [
   {"id":"c_kucMar1728","name":"Markéta Kuczová","b":{"date":"13. 7. 1728","year":1728,"place":"Kobeřice"},"father":"mathaeusKuc","cert":"D","note":"Křest N H IX 1 sk29 (M): „Matiss Kuča, Marÿna“; kmotři Jan Morawec a Marÿna Stuchlykowa."},
   {"father":"georgKrem","mother":"magdalenaKrem","cert":"M","id":"c_kreKat1701","name":"Kateřina Kremerová","b":{"date":"23. 10. 1701","year":1701,"place":"Kobeřice"},"note":"H IX 12 sk39: „Georgius Kremer, Magdalena“; kmotři Josephus Twerdi, Marianna Wasarzka (?)."},
   {"father":"georgKrem","mother":"magdalenaKrem","cert":"M","id":"c_kreMar1703","name":"Marianna Kremerová","b":{"date":"1. 1. 1703","year":1703,"place":"Kobeřice"},"note":"H IX 12 sk44: „Zura Kremer, Magdalena“."},
-  {"father":"georgKrem","mother":"magdalenaKrem","cert":"D","id":"c_kreJur1705","name":"Jiří (Jura) Kremer","b":{"date":"11. 4. 1705","year":1705,"place":"Kobeřice"},"note":"H IX 12 sk48: „Zura Kremer, Magdalena | Zura (?)“ – jméno dítěte pod kaňkou."}
+  {"father":"georgKrem","mother":"magdalenaKrem","cert":"D","id":"c_kreJur1705","name":"Jiří (Jura) Kremer","b":{"date":"11. 4. 1705","year":1705,"place":"Kobeřice"},"note":"H IX 12 sk48: „Zura Kremer, Magdalena | Zura (?)“ – jméno dítěte pod kaňkou."},
+  {"father":"pavelVes","mother":"annaVesP","cert":"D","id":"c_vesMat1778","name":"Matěj Veselý","b":{"date":"cca 1778","year":1778,"approx":true,"place":"Knín (?)"},"note":"Soupis poddaných 1780 (52578 fol. 255): syn Pavla, 2 roky."},
+  {"father":"pavelVes","mother":"annaVesP","cert":"D","id":"c_vesAnna1779","name":"Anna Veselá","b":{"date":"cca 1779","year":1779,"approx":true,"place":"Knín (?)"},"note":"Soupis poddaných 1780 (52578 fol. 255): dcera Pavla, 1 rok."}
 ];
