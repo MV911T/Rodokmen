@@ -210,19 +210,20 @@ window.RODOKMEN = {
       name: "Josef Plachý",
       line: "plachy",
       cert: "M",
-      b: {"date":"cca 1833","year":1833,"approx":true,"place":"Věrovany"},
+      b: {"date":"9. 2. 1833","year":1833,"place":"Věrovany č. 51"},
       father: "janPl2",
       mother: "josefaOp",
       occ: "půlláník ve Věrovanech",
       notes: [
-        "Syn Jana Plachého, výměnkáře ve Věrovanech, a Josefy roz. Opluštilové z Dubu.",
-        "Rejstřík N Věrovany (D XII 18) uvádí „Plachy Joseph – s. 209“ – narození nejspíš cca 1833 (K).",
+        "Narozen 9. 2., pokřtěn 10. 2. 1833 ve Věrovanech č. 51 (M): „Joseph | Johann Plachy, Bauer allda | Josepha, Tochter des Paul Opluštil, Halbbauer(?) in Dub“; kmotři Fabian … (?) allda a Marianna, dessen Gattin (D XII 18 str. 209). Později syn Jana Plachého, výměnkáře ve Věrovanech.",
         "Sňatek s Františkou Kočířovou (*1828) zatím nenalezen: není v Kralicích 1825–1874 (rejstřík) ani ve Věrovanech 1850–51 a 1855–64 (1852–54 jen podle indexu D XII 29, kde je jen Josef Plachý vdovec 1850 – jiná osoba, *cca 1810, možná příbuzný) – nejspíš v Dubu nad Moravou."
       ],
       sources: [
+        "ZA Opava, N Věrovany 1784–1841 (D XII 18), sken 205, str. 209",
         "křest syna Jana 1864 (D XII 19, sken 75)"
       ],
       scans: [
+        {"f":"img/1833_krest_josef_plachy.jpg","t":"Křest 10. 2. 1833, Věrovany č. 51 – Josef, syn Jana Plachého, sedláka, a Josefy, dcery Pavla Opluštila z Dubu (ZA Opava, N Věrovany D XII 18, str. 209)"},
         {"f":"img/1864_narozeni_jan_plachy.jpg","t":"Křest syna Jana 1864"}
       ]
     },
@@ -299,11 +300,15 @@ window.RODOKMEN = {
       line: "plachy",
       cert: "M",
       b: {"date":"?","year":1800,"approx":true,"place":"Věrovany"},
-      occ: "výměnkář ve Věrovanech",
+      occ: "sedlák (Bauer) ve Věrovanech č. 51, později výměnkář",
+      marriage: "1829, Dub nad Moravou – s Josefou Opluštilovou (D, podle rejstříku: „1829 Plachy Johann – D. 44“)",
       notes: [
-        "1864 kmotrem vnuka Jana (podepsán křížkem)."
+        "1864 kmotrem vnuka Jana (podepsán křížkem).",
+        "Sňatek podle rejstříku oddaných Dubu 1829 (D I 29, sken 14) – samotný zápis (str. 44) dosud nečten; že nevěsta je Josefa Opluštilová, je velmi pravděpodobné (D). Ve Věrovanech (D XII 29) sňatek není."
       ],
       sources: [
+        "ZA Opava, N Věrovany 1784–1841 (D XII 18), sken 205, str. 209",
+        "ZA Opava, rejstřík oddaných Dub n. M. (D I 29), sken 14: „1829 Plachy Johann – D. 44“",
         "křest vnuka Jana 1864 (D XII 19)"
       ],
       scans: [
@@ -317,7 +322,12 @@ window.RODOKMEN = {
       line: "plachy",
       cert: "M",
       b: {"date":"?","year":1805,"approx":true,"place":"Dub (nad Moravou)"},
+      father: "pavelOp",
+      notes: [
+        "Dcera Pavla Opluštila z Dubu (křest syna Josefa 1833, M)."
+      ],
       sources: [
+        "ZA Opava, N Věrovany 1784–1841 (D XII 18), sken 205, str. 209",
         "křest vnuka Jana 1864 (D XII 19)"
       ],
       scans: [
@@ -6285,6 +6295,23 @@ window.RODOKMEN = {
       ],
       scans: [
         {"f":"img/1710_krest_jacob_kremer.jpg","t":"Křest 30. 3. 1710, Kobeřice – Jakub, syn Jury (Jiřího) Kremera a Magdaleny (ZAO, Kobeřice H IX 1, sken 7)"}
+      ]
+    },
+    {
+      id: "pavelOp",
+      name: "Pavel Opluštil",
+      line: "plachy",
+      cert: "M",
+      b: {"date":"?","year":1775,"approx":true,"place":"Dub (nad Moravou) (?)"},
+      occ: "půlláník (Halbbauer?) v Dubu nad Moravou",
+      notes: [
+        "Otec Josefy, provd. Plachá – křest vnuka Josefa 10. 2. 1833 Věrovany (M): „Josepha, Tochter des Paul Opluštil, Halbbauer (?) in Dub“. Stav čten nejistě. Rok narození jen odhad (dcera *~1805)."
+      ],
+      sources: [
+        "ZA Opava, N Věrovany 1784–1841 (D XII 18), sken 205, str. 209"
+      ],
+      scans: [
+        {"f":"img/1833_krest_josef_plachy.jpg","t":"Křest 10. 2. 1833, Věrovany č. 51 – Josef, syn Jana Plachého, sedláka, a Josefy, dcery Pavla Opluštila z Dubu (ZA Opava, N Věrovany D XII 18, str. 209)"}
       ]
     }
   ]
