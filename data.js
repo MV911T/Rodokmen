@@ -5046,7 +5046,8 @@ window.RODOKMEN = {
         "Sňatek 13. 10. 1851 Hluboká (M): „Weselí Matěj, luční hajný knížecí v Dívčicích čís. 1, syn Tomáše Weselího, knížecího šafáře v Zbeyšově (?), a Marii Bočkové z Litoradlic čís. 5“, 35 let, svobodný – nevěsta z Křesínského dvora č. 24: „Peterková Anna, dcera Jána Peterky, knížecího poklasného v Křesíně čís. 24, a Mariany Ployharové, dcery Vojtěcha Ployhara, sedláka z Wolešníka čís. 21“, 24 let, svobodná; svědci … (?), dvořák, a Martin Peterka, dvořák, první šafář z Olešníka; oddával farář Josef Kišer (?).",
         "Křest Anny není v Hluboká N 3557 (Zámostí/Křesínský dvůr XI/1826–V/1827) – na Křesíně 24 tehdy bydlela jiná rodina; narozena nejspíš v Olešníku nebo jinde podle služby otce.",
         "„matky Anny rozené Peterka z Křesína“ (1889, 1894, 1891); místo „Křesín“ čteno s otazníkem.",
-        "Sňatek syna Jana 1894: „matky Anny rozené Peterka ze dvora Křesín (?), Hluboka“ – Anna pocházela z (panského) dvora u Hluboké."
+        "Sňatek syna Jana 1894: „matky Anny rozené Peterka ze dvora Křesín (?), Hluboka“ – Anna pocházela z (panského) dvora u Hluboké.",
+        "Křest NENÍ v Zahájí 1822–1851 (rejstřík 8696, písmeno P) → nejspíš Křesín, fara Hluboká."
       ],
       sources: [
         "SOA Třeboň, Hluboká nad Vltavou 11 O (id 3564), sken 29 – https://digi.ceskearchivy.cz/DA?menu=3&id=3564&page=29",
@@ -5768,11 +5769,12 @@ window.RODOKMEN = {
       line: "vesely",
       cert: "M",
       b: {"date":"cca 1777","year":1777,"approx":true,"place":"?"},
-      occ: "knížecí poklasný, Křesín (Křesínský dvůr) č. 24",
+      occ: "panský (knížecí) poklasný – 1813 ve dvoře olešnickém, 1851 v Křesíně č. 24",
       marriage: "22. 11. 1813, Olešník (fara Zahájí) – s Marií (Marianou) Ployharovou",
       notes: [
         "Sňatek 22. 11. 1813 Olešník (M zápis; rok podle následujícího nadpisu 1814): „Jan Peterka, panský [ovčák?] ve dvoře Wolessnickém“, 36 let, svobodný × „Maria, dcera Wogtiecha Ployhara, sedláka z Wolessnika No 21“, 22 let, svobodná; oddával Leop. Jelen, cur. Totožnost s rodiči Anny (*~1827) PRAVDĚPODOBNÁ (D, silná): sedí jméno, otec nevěsty i dům č. 21.",
-        "Otec Anny Peterkové (sňatek dcery 1851, M): „Ján Peterka, knížecí poklasný v Křesíně čís. 24“; manželka Mariana Ployharová z Olešníka. Martin Peterka, první šafář v Olešníku (svědek 1851), zřejmě příbuzný (K)."
+        "Otec Anny Peterkové (sňatek dcery 1851, M): „Ján Peterka, knížecí poklasný v Křesíně čís. 24“; manželka Mariana Ployharová z Olešníka. Martin Peterka, první šafář v Olešníku (svědek 1851), zřejmě příbuzný (K).",
+        "Rok sňatku 1813 ověřen (nadpis „1813“ na stránce, M); povolání v zápisu „Panský poklasný (?)“."
       ],
       sources: [
         "SOA Třeboň, Zahájí 8 O 1784–1822 (id 8700), sken 28 (sekce Volešník) – https://digi.ceskearchivy.cz/DA?menu=3&id=8700&page=28",
@@ -5789,17 +5791,21 @@ window.RODOKMEN = {
       maiden: "Ployharová",
       line: "vesely",
       cert: "M",
-      b: {"date":"cca 1791","year":1791,"approx":true,"place":"Olešník (Volešník) č. 21"},
+      b: {"date":"22. 12. 1792","year":1792,"place":"Olešník (Volešník) č. 21"},
       father: "vojtechPl",
+      mother: "katerinaNov",
       notes: [
+        "Křest 22. 12. 1792 Olešník č. 21 (M): „Mariana Ployharowa | Wogtiech Ployhar, Sedlák | Kateřina Nowotna z Hlu…(?)“; kmotr Ambrož (?) Novák. Totožnost s nevěstou 1813 PRAVDĚPODOBNÁ (D, silná): dům č. 21 i otec Vojtěch sedlák; jiná Mariana Ployharová 1788–1792 není (při sňatku uvedeno 22 let, skutečně 20).",
         "Sňatek 22. 11. 1813 Olešník (M zápis; rok podle následujícího nadpisu 1814): „Jan Peterka, panský [ovčák?] ve dvoře Wolessnickém“, 36 let, svobodný × „Maria, dcera Wogtiecha Ployhara, sedláka z Wolessnika No 21“, 22 let, svobodná; oddával Leop. Jelen, cur. Totožnost s rodiči Anny (*~1827) PRAVDĚPODOBNÁ (D, silná): sedí jméno, otec nevěsty i dům č. 21.",
         "Matka Anny Peterkové (sňatek dcery 1851, M): „Mariany Ployharové, dcery Vojtěcha Ployhara, sedláka z Wolešníka čís. 21“. V křtu vnuka Jana 1860 čteno „Anny Ko… z Hol…“ – nejspíš chybné čtení kurentu."
       ],
       sources: [
+        "SOA Třeboň, Zahájí 3 N 1784–1822 (id 8695), sken 68, P. 12 – https://digi.ceskearchivy.cz/DA?menu=3&id=8695&page=68",
         "SOA Třeboň, Zahájí 8 O 1784–1822 (id 8700), sken 28 (sekce Volešník) – https://digi.ceskearchivy.cz/DA?menu=3&id=8700&page=28",
         "SOA Třeboň, Hluboká nad Vltavou 11 O (id 3564), sken 29 – https://digi.ceskearchivy.cz/DA?menu=3&id=3564&page=29"
       ],
       scans: [
+        {"f":"img/1792_krest_mariana_ployharova.jpg","t":"Křest 22. 12. 1792, Olešník (Volešník) č. 21 – Mariana, dcera Vojtěcha Ployhara, sedláka, a Kateřiny Novotné (?) (SOA Třeboň, Zahájí 3, id 8695, sken 68)"},
         {"f":"img/1813_snatek_peterka_ployharova.jpg","t":"Sňatek 22. 11. 1813, Olešník (fara Zahájí) – Jan Peterka, 36 let, panský … ve dvoře olešnickém × Marie, dcera Vojtěcha Ployhara, sedláka z Olešníka č. 21, 22 let (Zahájí 8, id 8700, sken 28)"},
         {"f":"img/1851_snatek_matej_vesely_anna_peterkova.jpg","t":"Sňatek 13. 10. 1851, Hluboká – Matěj Veselý, luční hajný v Dívčicích č. 1, syn Tomáše a Marie Bočkové × Anna Peterková, dcera Jana Peterky a Mariany Ployharové (Hluboká 11 O, id 3564, sken 29)"}
       ]
@@ -5813,11 +5819,13 @@ window.RODOKMEN = {
       occ: "sedlák, Olešník (Volešník) č. 21",
       notes: [
         "Děd Anny Peterkové (sňatek vnučky 1851, M): „Vojtěch Ployhar, sedlák z Wolešníka čís. 21“.",
-        "1809 svědek „Wogtiech Ployhar z Wolessnjka“; 1813 otec nevěsty, sedlák v Olešníku č. 21 (Zahájí 8, sk27–28, M)."
+        "1809 svědek „Wogtiech Ployhar z Wolessnjka“; 1813 otec nevěsty, sedlák v Olešníku č. 21 (Zahájí 8, sk27–28, M).",
+        "Křty dětí v Olešníku č. 21 (8695, D – čteno v polovičním rozlišení): Matouš 12. 9. 1786, Matěj 14. 2. 1788, Mariana 22. 12. 1792 (M). Pozor: ve Volešníku žil i jiný Vojtěch Ployhar – výměnkář v č. 18 (dcera Kateřina 1785) a podruh v č. 28 (syn Jakub 1788); výměnkář snad otec sedláka (K). Sňatek s Kateřinou Novotnou není v O Zahájí – Volešník IX/1784–1794 → před 1784 nebo jinde (Hluboká?)."
       ],
       sources: [
         "SOA Třeboň, Hluboká nad Vltavou 11 O (id 3564), sken 29 – https://digi.ceskearchivy.cz/DA?menu=3&id=3564&page=29",
-        "SOA Třeboň, Zahájí 8 O 1784–1822 (id 8700), sken 28 (sekce Volešník) – https://digi.ceskearchivy.cz/DA?menu=3&id=8700&page=28"
+        "SOA Třeboň, Zahájí 8 O 1784–1822 (id 8700), sken 28 (sekce Volešník) – https://digi.ceskearchivy.cz/DA?menu=3&id=8700&page=28",
+        "SOA Třeboň, Zahájí 3 N 1784–1822 (id 8695), sken 68, P. 12 – https://digi.ceskearchivy.cz/DA?menu=3&id=8695&page=68"
       ],
       scans: [
         {"f":"img/1851_snatek_matej_vesely_anna_peterkova.jpg","t":"Sňatek 13. 10. 1851, Hluboká – Matěj Veselý, luční hajný v Dívčicích č. 1, syn Tomáše a Marie Bočkové × Anna Peterková, dcera Jana Peterky a Mariany Ployharové (Hluboká 11 O, id 3564, sken 29)"}
@@ -6313,6 +6321,23 @@ window.RODOKMEN = {
       scans: [
         {"f":"img/1833_krest_josef_plachy.jpg","t":"Křest 10. 2. 1833, Věrovany č. 51 – Josef, syn Jana Plachého, sedláka, a Josefy, dcery Pavla Opluštila z Dubu (ZA Opava, N Věrovany D XII 18, str. 209)"}
       ]
+    },
+    {
+      id: "katerinaNov",
+      name: "Kateřina Ployharová",
+      maiden: "Novotná (?)",
+      line: "vesely",
+      cert: "M",
+      b: {"date":"?","year":1765,"approx":true,"place":"Hlu… (?) – snad Hluboká"},
+      notes: [
+        "Manželka Vojtěcha Ployhara, sedláka v Olešníku č. 21; v křtu dcery Mariany 1792 (M): „Kateřina Nowotna z Hlu…(?)“ – příjmení i místo čteny nejistě. Rok narození jen odhad."
+      ],
+      sources: [
+        "SOA Třeboň, Zahájí 3 N 1784–1822 (id 8695), sken 68, P. 12 – https://digi.ceskearchivy.cz/DA?menu=3&id=8695&page=68"
+      ],
+      scans: [
+        {"f":"img/1792_krest_mariana_ployharova.jpg","t":"Křest 22. 12. 1792, Olešník (Volešník) č. 21 – Mariana, dcera Vojtěcha Ployhara, sedláka, a Kateřiny Novotné (?) (SOA Třeboň, Zahájí 3, id 8695, sken 68)"}
+      ]
     }
   ]
 };
@@ -6704,5 +6729,7 @@ window.RODOKMEN.collateral = [
   {"father":"georgKrem","mother":"magdalenaKrem","cert":"M","id":"c_kreSim1713","name":"Šimon Kremer","b":{"date":"24. 10. 1713","year":1713,"place":"Kobeřice"},"note":"Křest H IX 1 sk11 (M); snad Simon Kremer, zahradník, svědek 1761, výměnkář † 1785 (K)"},
   {"id":"c_vesJar1908","name":"Jaroslav Veselý","b":{"date":"21. 7. 1908","year":1908,"place":"Plavnice č. 86 (Ovčín)"},"father":"janVesZ","mother":"marieKoz","cert":"M","note":"Bratr Karla (*1904)."},
   {"id":"c_opoEuph","name":"Euphemia Opolony","father":"josefOp","mother":"marianaHa","spouse":"… Dittrich ze Schonowitz (dcera Lucia 1866, kmotr Johann Czienskowski)","cert":"K","note":"Sestra Antona – kandidátka (K)."},
-  {"id":"c_opo1845","name":"dítě Opolony (jméno nezjištěno)","b":{"date":"1845","year":1845,"place":"Ehrenfeld"},"father":"josefOp","mother":"marianaHa","cert":"D","note":"Sourozenec Antona narozený 1845 (Joseph × Mari Hawel, Ehrenfeld)."}
+  {"id":"c_opo1845","name":"dítě Opolony (jméno nezjištěno)","b":{"date":"1845","year":1845,"place":"Ehrenfeld"},"father":"josefOp","mother":"marianaHa","cert":"D","note":"Sourozenec Antona narozený 1845 (Joseph × Mari Hawel, Ehrenfeld)."},
+  {"father":"vojtechPl","mother":"katerinaNov","cert":"D","id":"c_ploMat1786","name":"Matouš Ployhar","b":{"date":"12. 9. 1786","year":1786,"place":"Olešník č. 21"},"note":"8695 sk64 (čteno v polovičním rozlišení; jméno matky neověřeno)."},
+  {"father":"vojtechPl","mother":"katerinaNov","cert":"D","id":"c_ploMtj1788","name":"Matěj Ployhar","b":{"date":"14. 2. 1788","year":1788,"place":"Olešník č. 21"},"note":"8695 sk65 (čteno v polovičním rozlišení; jméno matky neověřeno)."}
 ];
