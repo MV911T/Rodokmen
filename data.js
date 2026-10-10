@@ -6062,15 +6062,16 @@ window.RODOKMEN = {
       line: "woron",
       cert: "M",
       b: {"date":"cca 1750","year":1750,"approx":true,"place":"Zabawa / Lednica (?)"},
-      marriage: "14. 10. 1792, Lednica Górna č. 6 – se Žofií Wilk (on vdovec, 42 let)",
+      marriage: "1) 22. 11. 1772, Lednica Górna – s Katarzynou Wawrzyńczykówna; 2) 14. 10. 1792, Lednica Górna č. 6 – se Žofií Wilk (on vdovec, 42 let)",
       notes: [
         "Sňatek 14. 10. 1792 Lednica Górna č. 6 (M): „Adalbertus Witarowski | 42 | viduus || Sophia Wilkowna | 32 | coelebs || Thomas Konopka cmetho, Adalbertus Dębowski hortulanus“ (KM-10-78 #0026_r). Bydliště: Lednica Górna č. 6 (1792), Zabawa č. 5 (1795), č. 8 (1798).",
-        "Rodiče (D – index Geneteka, nerozhodnuto): Wojciech *11. 4. 1752 Lednica Górna, syn Wojciecha Witarowského × Małgorzaty Sykałové (∞ 18. 10. 1750), NEBO Wojciech *19. 4. 1753, syn Franciszka × Doroty Adamczyk. 1. manželka snad Katarzyna (děti v Lednici Górné 1773–1783) – nedoloženo.",
+        "1. sňatek 22. 11. 1772 Lednica Górna (M): „inter h. Adalbertum Witarowsczyk et Catharinam Wawrzyńczykownam … praesentibus Mathia Drzewulski, Jacobo Mikuła, Thoma Konopka“ (CAAK KM-10-71 #0011_v) – „Witarowsczyk“ = mladý syn Witarowského; s Katarzynou děti v Lednici Górné 1773–1783 (Łukasz, Regina Małgorzata, Łucja, Józef † 1784, Stanisław – D). Rodiče nerozhodnuto (K): Wojciech Witarowski × Małgorzata Sykała (∞ 18. 10. 1750 Lednica Górna – sken KM-10-5 #0776_v, M; podle Geneteky jejich syn Wojciech narozen 11. 4. 1752) – pravděpodobnější; nebo Franciszek × Dorota Adamczyk (jejich syn Wojciech narozen 19. 4. 1753).",
         "Otec Reginy – sňatek 1820 (M zápis, vazba D): „Regina Adalberti Witarowski“. Sňatek se Žofií Wilk 14. 10. 1792 – vdovec, 42 let (index Geneteka)."
       ],
       sources: [
         "CAAK (Archiwum Kurii Metropolitalnej Kraków): KM-10-34 (křty Zabawa) #0122_r, #0120_v; KM-10-78 (oddaní Wieliczka 1785–1844) #0026_r",
-        "Archiwum Kurii Metropolitalnej Kraków (CAAK), KM-10-78, Zabawa – Copulatorum, snímek #0007_r; Geneteka (Wieliczka) – sňatky Witarowski 1792, 1820"
+        "Archiwum Kurii Metropolitalnej Kraków (CAAK), KM-10-78, Zabawa – Copulatorum, snímek #0007_r; Geneteka (Wieliczka) – sňatky Witarowski 1792, 1820",
+        "CAAK KM-10-71 #0011_v (sňatek 1772); KM-10-5 #0776_v (sňatek 1750)"
       ],
       scans: [
         {"f":"img/1792_snatek_witarowski_wilk.jpg","t":"Sňatek 14. 10. 1792, Lednica Górna č. 6 – Adalbertus Witarowski, vdovec, 42 let × Sophia Wilkowna, 32 let (CAAK KM-10-78, #0026_r)"},
