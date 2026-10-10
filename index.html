@@ -2095,16 +2095,20 @@ window.RODOKMEN = {
       name: "Václav Bartošák",
       line: "pacik",
       cert: "M",
-      b: {"date":"cca 1798","year":1798,"approx":true},
+      b: {"date":"1. 8. 1802","year":1802,"place":"Nedašova Lhota č. 50"},
+      mother: "annaBar",
       occ: "podsedník",
       marriage: "5. 2. 1822 – s Mariannou Vaňkovou",
       notes: [
-        "Podle oddacího zápisu syn Josefa Bartošáka a Anny roz. Bartošákové (?).",
-        "Kandidát: 1. 8. 1802 pokřtěn nemanželský Václav, syn Anny Bartoškové z Lhoty č. 50 (4473 img 143) – věk nesedí, neověřeno.",
-        "Josef Bartošák × Marina, zahradník v Lhotě č. 50 (dcery Anna 1783, Marina 1801); v Lhotě 1795–1800 žádný Václav Bartošák nepokřtěn.",
-        "Sňatek 5. 2. 1822 (O 4489 img 2): „Wenzl Sohn des Joseph Bartošak … und Anna gebohrne Bartošak, 24“ × Marianna, dcera sedláka Pavla Vaňka a Marianny roz. Tomečkové, 20, Lhota 26."
+        "Křest 1. 8. 1802 Nedašova Lhota č. 50 (M): „Wenceslaus | 50 | nemanželský | Anna Bartoschakin von Zhota“, otec neuveden; kmotři Johann Fojtik, rychtář, a Anna Dostkin (?), sedlačka, oba z Lhoty (4473 img 143). Ztotožnění se ženichem 1822 PRAVDĚPODOBNÉ (D, silné): jediný Václav Bartošák v rejstříku Lhoty i Nedašova 1787–1820; věk při sňatku (24) nadsazen.",
+        "Sňatek 5. 2. 1822 (O 4489 img 2): „Wenzl Sohn des Joseph Bartošak Gärtners (?) u. Anna geboren Bartošak, 24“ × Marianna, dcera sedláka Pavla Vaňka a Marianny roz. Tomečkové, 20, Lhota 26. „Joseph“ je nejspíš děd, u něhož vyrůstal (legitimace nenalezena); matka „rozená Bartošák“ = Anna."
+      ],
+      sources: [
+        "MZA, N Nedašov 1787–1820 (4473), img 143",
+        "MZA, O 4489, img 2"
       ],
       scans: [
+        {"f":"img/1802_krest_vaclav_bartosak.jpg","t":"Křest 1. 8. 1802, Nedašova Lhota č. 50 – Václav, nemanželský syn Anny Bartošákové (MZA, N 4473, img 143)"},
         {"f":"img/1822_snatek_bartosak.jpg","t":"Sňatek 5. 2. 1822"}
       ]
     },
@@ -2581,17 +2585,21 @@ window.RODOKMEN = {
       name: "Josef Vaculík",
       line: "matusu",
       cert: "D",
-      b: {"date":"cca 1797","year":1797,"approx":true},
+      b: {"date":"10. 2. 1797","year":1797,"place":"Návojná č. 16"},
+      father: "josefVaSt",
+      mother: "barboraKop",
       occ: "sedlák v Nedašově č. 78/88",
       marriage: "6. 2. 1821, Nedašov – s Marinou Mikuškovou (on 24, ona 25); svědci Jan Macek (?) z Návojné a Jan Fendrich (?) z Nedašova",
       notes: [
-        "Sňatek 1821: „Joseph Sohn des Joseph Wazulik und Barbara gebohrne Kopčn(?)“ – syn Josefa Vaculíka a Barbory roz. Kopečné (?).",
-        "Rod Vaculíků pochází nejspíš z Návojné (HYPOTÉZA)."
+        "Křest 10. 2. 1797 Návojná č. 16 (M): „Josephus | 16 | Joseph Wazulik, Bauer | Barbara Kopschtenin (?)“; kmotři Martin Jurg (?) a Anna Pramažikin (?), oba z Návojné (4473 img 15). Ztotožnění se ženichem 1821 PRAVDĚPODOBNÉ (D): shodní rodiče i věk 24; rejstřík Návojné má ještě jednoho Josefa Vaculíka (fol. 28/29) – neprověřen.",
+        "Sňatek 1821: „Joseph Sohn des Joseph Wazulik und Barbara gebohrne Kopčn(?)“ – syn Josefa Vaculíka a Barbory roz. Kopečné (?)."
       ],
       sources: [
+        "MZA, N Nedašov 1787–1820 (4473), img 15 (Návojná, fol. 26)",
         "Brumov O 4485 img 1 – https://www.mza.cz/actapublica/matrika/detail/4485"
       ],
       scans: [
+        {"f":"img/1797_krest_josef_vaculik.jpg","t":"Křest 10. 2. 1797, Návojná č. 16 – Josef, syn Josefa Vaculíka, sedláka, a Barbory Kop… (?) (MZA, N 4473, img 15)"},
         {"f":"img/1821_snatek_vaculik_mikuskova.jpg","t":"Sňatek 6. 2. 1821, Nedašov č. 88 (O 4485 img 1)"}
       ]
     },
@@ -6789,6 +6797,93 @@ window.RODOKMEN = {
       scans: [
         {"f":"img/1784_krest_katerina_topischilova.jpg","t":"Křest 7. 11. 1784, Dub č. 45 – Kateřina, dcera Jana Topischila, zahradníka, a Anny (ZA Opava, N Dub D I 4, sken 2)"}
       ]
+    },
+    {
+      id: "annaBar",
+      name: "Anna Bartošáková",
+      line: "pacik",
+      cert: "M",
+      b: {"date":"1783","year":1783,"place":"Nedašova Lhota č. 50"},
+      father: "josefBar",
+      mother: "marinaLuk",
+      marriage: "3. 2. 1805, Nedašova Lhota – s Janem Machačem (?)",
+      notes: [
+        "Narozena 1783 v Lhotě č. 50 – dcera Josefa Bartošáka, zahradníka, a Mariny roz. Lukšíkové. Matka nemanželského Václava (pokřtěn 1. 8. 1802).",
+        "Sňatek 3. 2. 1805 Lhota (M): „Johann, Sohn nach verstorbenem Wenzl Machač (?), Bauer von Zhota, 27 | Anna, Tochter des Joseph Bartošak, Gartlers von Zhota, 22 (?)“; svědci Johann Bartošak a Johann Machač, sedláci (O 4023 img 128)."
+      ],
+      sources: [
+        "MZA, O Brumov 4023, img 128"
+      ],
+      scans: [
+        {"f":"img/1805_snatek_machac_bartosakova.jpg","t":"Sňatek 3. 2. 1805, Nedašova Lhota – Jan Machač (?) × Anna, dcera Josefa Bartošáka, zahradníka (MZA, O 4023, img 128)"},
+        {"f":"img/1802_krest_vaclav_bartosak.jpg","t":"Křest 1. 8. 1802, Nedašova Lhota č. 50 – Václav, nemanželský syn Anny Bartošákové (MZA, N 4473, img 143)"}
+      ]
+    },
+    {
+      id: "josefBar",
+      name: "Josef Bartošák",
+      line: "pacik",
+      cert: "M",
+      b: {"date":"?","year":1755,"approx":true,"place":"Nedašova Lhota (?)"},
+      occ: "zahradník (Gärtler) v Nedašově Lhotě č. 50",
+      marriage: "5. 5. 1782 – s Marinou, dcerou Mikuláše Lukšíka",
+      notes: [
+        "Syn † Pavla Bartošáka; sňatek 5. 5. 1782 s Marinou, dcerou Mikuláše Lukšíka (Brumov 4012 img 197 – podle dřívějšího čtení, M). Dcery Anna 1783, Marina 1801. Nejspíš vychoval vnuka Václava (*1802) – v jeho sňatku 1822 uveden jako otec."
+      ],
+      sources: [
+        "MZA, O Brumov 4012, img 197"
+      ],
+      scans: [
+        {"f":"img/1805_snatek_machac_bartosakova.jpg","t":"Sňatek 3. 2. 1805, Nedašova Lhota – Jan Machač (?) × Anna, dcera Josefa Bartošáka, zahradníka (MZA, O 4023, img 128)"}
+      ]
+    },
+    {
+      id: "marinaLuk",
+      name: "Marina Bartošáková",
+      maiden: "Lukšíková",
+      line: "pacik",
+      cert: "M",
+      b: {"date":"?","year":1760,"approx":true,"place":"Nedašova Lhota (?)"},
+      notes: [
+        "Dcera Mikuláše Lukšíka; ∞ 5. 5. 1782 Josef Bartošák (4012 img 197). V Lhotě i Václav Lukšík (svědek u Fojtíků)."
+      ],
+      sources: [
+        "MZA, O Brumov 4012, img 197"
+      ]
+    },
+    {
+      id: "josefVaSt",
+      name: "Josef Vaculík st.",
+      line: "matusu",
+      cert: "M",
+      b: {"date":"?","year":1765,"approx":true,"place":"Návojná (?)"},
+      occ: "sedlák v Návojné č. 16",
+      notes: [
+        "Otec Josefa (*1797; křest: „Joseph Wazulik, Bauer“, Návojná č. 16, M)."
+      ],
+      sources: [
+        "MZA, N 4473, img 15"
+      ],
+      scans: [
+        {"f":"img/1797_krest_josef_vaculik.jpg","t":"Křest 10. 2. 1797, Návojná č. 16 – Josef, syn Josefa Vaculíka, sedláka, a Barbory Kop… (?) (MZA, N 4473, img 15)"}
+      ]
+    },
+    {
+      id: "barboraKop",
+      name: "Barbora Vaculíková",
+      maiden: "Kop… (Kopečná ?)",
+      line: "matusu",
+      cert: "M",
+      b: {"date":"?","year":1770,"approx":true,"place":"?"},
+      notes: [
+        "Matka Josefa (*1797): křest „Barbara Kopschtenin (?)“, sňatek syna 1821 „Barbara gebohrne Kopčn (?)“ – příjmení čteno nejistě."
+      ],
+      sources: [
+        "MZA, N 4473, img 15"
+      ],
+      scans: [
+        {"f":"img/1797_krest_josef_vaculik.jpg","t":"Křest 10. 2. 1797, Návojná č. 16 – Josef, syn Josefa Vaculíka, sedláka, a Barbory Kop… (?) (MZA, N 4473, img 15)"}
+      ]
     }
   ]
 };
@@ -7185,7 +7280,7 @@ window.RODOKMEN.collateral = [
   {"father":"vojtechPl","mother":"katerinaNov","cert":"M","id":"c_ploMtj1788","name":"Matěj Ployhar","b":{"date":"14. 2. 1788","year":1788,"place":"Olešník č. 21"},"note":"8695 sk65 – matka „Kateřina“ (M)."}
 ];
 
-window.RODOKMEN_BUILD='10. 10. 2026 17:18';
+window.RODOKMEN_BUILD='10. 10. 2026 17:39';
 
 </script>
 <script>
