@@ -308,7 +308,8 @@ window.RODOKMEN = {
         "1864 kmotrem vnuka Jana (podepsán křížkem).",
         "Pozor: Věrovany č. 51 patřilo v XII/1808 sedlákovi Jakubu Kreidlovi (?) (D XII 18 sk107) – Jan se tam nejspíš nenarodil; Plachý se do č. 51 dostal později. Křest Jana není v D XII 18 v č. 51 III/1806–VII/1809.",
         "Křest NENÍ v N Věrovany D XII 18 sk90–118 (~1804/5–1811; jediný Plachý-otec je Viktorin Plachý, podruh, I–II/1807) – Jan se buď narodil jinde, nebo je věk 21 při sňatku nepřesný. Viktorin Plachý (sňatek Věrovany, rejstřík D XII 29 s. 9) – možný příbuzný (K).",
-        "Křest není v N Věrovany 1802–1811 (D XII 18 sk80–118) ani v rejstříku 1801–41; kandidát „…ch Johann“ str. ~72 (~1799/1800, sk ~67) – k ověření."
+        "Křest není v N Věrovany 1802–1811 (D XII 18 sk80–118) ani v rejstříku 1801–41; kandidát „…ch Johann“ str. ~72 (~1799/1800, sk ~67) – k ověření.",
+        "Kandidát z rejstříku „…ch Johann“ (str. 72) = Jan Plachý pokř. 23. 10. 1800 Věrovany č. 18, ALE syn Viktorina Plachého, chalupníka, a Mariny, dcery † Jana Kovaříka (?), sedláka z Klopotovic (D XII 18 sk67, M) – nespojovat: ženich 1829 je syn Jana Plachého, sedláka, a měl by 28 let místo 21 (K). Jan Plachý st. není otcem v N Věrovany 1799–1811."
       ],
       sources: [
         "ZA Opava, O Dub nad Moravou 1797–1866 (D I 13), sken 46, str. 44",
@@ -6401,7 +6402,8 @@ window.RODOKMEN = {
       occ: "sedlák (Bauer) ve Věrovanech (č. 51)",
       notes: [
         "Otec ženicha Jana (sňatek 7. 7. 1829 Dub, M): „Johann, Sohn des Johann Plachy, Bauers von Werowan. Mit Einwilligung des Vaters“ – v roce 1829 žil. Rok narození jen odhad (syn *~1808).",
-        "Původ zatím nedoložen. Ve Věrovanech žil Viktorin Plachý (*~1762), syn Tomáše Plachého, chalupníka z Klenovic (?) – ∞ 3. 11. 1790 Věrovany č. 18 Barbora, dcera Josefa Kučíka (?) (D XII 29 str. 9, M); 1803 s manželkou Mariannou roz. Dosoudilovou (?) křest syna Tomáše (č. 78, D XII 18 sk86). Možný bratr Jana st. (K). Rejstřík N Věrovany 1801–1841 nemá žádného Johanna Plachého; kandidát „…ch Johann“ str. ~72 (~1799/1800) neověřen."
+        "Původ zatím nedoložen. Ve Věrovanech žil Viktorin Plachý (*~1762), syn Tomáše Plachého, chalupníka z Klenovic (?) – ∞ 3. 11. 1790 Věrovany č. 18 Barbora, dcera Josefa Kučíka (?) (D XII 29 str. 9, M); 1803 s manželkou Mariannou roz. Dosoudilovou (?) křest syna Tomáše (č. 78, D XII 18 sk86). Možný bratr Jana st. (K). Rejstřík N Věrovany 1801–1841 nemá žádného Johanna Plachého; kandidát „…ch Johann“ str. ~72 (~1799/1800) neověřen.",
+        "Viktorin Plachý měl i 2. manželku Marinu Kovaříkovou (?) z Klopotovic (děti Anna 1799, Jan 1800, Tomáš 1803 – č. 18/78). Původ Tomáše Plachého (Klenovice ? – od 1784 fara Polkovice, před tím Kojetín Km VI 1–3) zatím nenalezen; Km VI 2 sk21–40 (1761–63) bez Viktorina."
       ],
       sources: [
         "ZA Opava, O Dub nad Moravou 1797–1866 (D I 13), sken 46, str. 44"
