@@ -6634,7 +6634,8 @@ window.RODOKMEN = {
       father: "martinKos",
       notes: [
         "Sňatek II/1797 (M): „Barbara, Tochter des verstorbenen Martin Kop(s)trna (?), Bauer in Nedaschow“, 20 let. Příjmení v zápisech čteno různě: „Kopschtenin“ (křest 1797), „Kostrnin“ (křest 1798), „Kopčn“ (sňatek syna 1821) – nejspíš Kostrnová (?).",
-        "„Kostrna“ je přezdívka nedašovských Holbů („Wenceslaus Golba vulgo Kosstrna“ † 1772) → Barbora byla nejspíš rozená Holbová (K). Křest s otcem Martinem Holbou/Kostrnou NENÍ v 4012 N I/1774–XII/1780."
+        "„Kostrna“ je přezdívka nedašovských Holbů („Wenceslaus Golba vulgo Kosstrna“ † 1772) → Barbora byla nejspíš rozená Holbová (K). Křest s otcem Martinem Holbou/Kostrnou NENÍ v 4012 N XII/1765–XII/1780 (mezera ~V–IX/1768 neprověřena) – přestože jí 1797 bylo 20 let → snad pokřtěna jinde, nebo věk nepřesný (D).",
+        "Sňatek přečten znovu v plném rozlišení (PAC14, 4023 img86L): „Anno 1797 Februarius | 16 | Joseph Sohn des Joseph Wazulik Bauer | 1 .. 22 1 | Barbara Tochter des verstorbenen Martin Kop(s)-|trna Bauer in Nedaschow | 1 .. 20 1 | + Franz Wažo und + Martin Walka beede von Nawogna Bauern“ – den chybí, matka ani dům nevěsty neuvedeny."
       ],
       sources: [
         "MZA, O 4023, img 86",
@@ -6673,7 +6674,8 @@ window.RODOKMEN = {
       occ: "sedlák v Nedašově",
       notes: [
         "Otec Barbory (sňatek 1797: „verstorbenen Martin Kop(s)trna (?), Bauer in Nedaschow“, M) – příjmení čteno nejistě.",
-        "Úmrtí NENÍ v 4034 Z Nedašov ~1787–1797 → zemřel nejspíš před 1787 (K). V 4012 N 1774–80 není jako otec."
+        "Úmrtí NENÍ v 4034 Z Nedašov ~1787–1797 → zemřel nejspíš před 1787 (K). V 4012 N 1774–80 není jako otec.",
+        "Úmrtí NENÍ v Brumov 4012 Z I/1773–XII/1786 (PAC13–14; zápisy „Martinus Kotrb… Navo.“ 1778 a „Martinus Mac(?)žar(?)“ 1783 jsou jiní) ani v rejstříku 4034 Z (D); sňatek NENÍ v 4012 O 1760–XI/1776 (oddací kniha začíná 1760) → ženil se před 1760 nebo jinde. V Bylnici jiný Martin Golba × Marina (1766)."
       ],
       sources: [
         "MZA, O 4023, img 86"
