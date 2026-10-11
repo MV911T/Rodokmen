@@ -6019,11 +6019,13 @@ window.RODOKMEN = {
       line: "vesely",
       cert: "M",
       b: {"date":"cca 1739","year":1739,"approx":true,"place":"?"},
-      d: {"date":"před 1795","year":1794,"approx":true},
-      occ: "ovčák – pastýř skopců (Hamelhirt) při panském dvoře v Kníně (1775–1780); později domkář (haušlerník) v Hluboké",
+      d: {"date":"1790–1795","year":1793,"approx":true},
+      occ: "ovčák při panském dvoře v Kníně – pastýř skopců (Hamelhirt, 1774–1783), pacholek u skopců (Hamelknecht, 1790); 1795 uváděn jako domkář (haušlerník) z Hluboké",
       notes: [
         "Soupis poddaných 1780 (M zápis; ztotožnění D – shoda jmen otce i syna, věk Tomáše, Knín): „Pawel Weselý 41 | žena Anna 43 | dětj Tomaš 14, Matěg 2, Anna 1“, poznámka „Hamelhirt in Knin“ (pastýř skopců v Kníně); v oddílu „Owčáci“ na konci svazku (fol. 251–255), hned pod ním „Tomaš Wolf 42 … Schafmeister“. V Podhradí 1780 (domy, domky, podruzi, sirotci) Pavel není.",
-        "Soupis 1774 (oddíl „Při owčinách“, M zápis): „Pawel (?) Weslay 35 | žena Rozalie 37 | dětj Tomaš 8“, poznámka „… Hirt“ (pastýř). V soupisech 1771–1773 mezi ovčáky není → na panství Hluboká přišel 1773/74 (D); odkud, neuvedeno. Řada 1774 → 1775 → 1780 věkově přesně sedí (35/36/41; žena 37/38/43; Tomáš 8/9/14) – „Peter“ 1775 je nejspíš chyba čtení či písaře. 1786 už mezi ovčáky ani v Podhradí (domky, podruzi) není.",
+        "Soupis 1783 (oddíl „Při owčinách“, M): „Pawel Weselý 44 | žena Mariana (přeškrtnuto) Uršula 46 | dětj Tomaš 17, Anna 4“, poznámka „Kniner Hamelhirt“, u dětí „b. Vatter“ (52581 sk261). Matěj (1780 2 roky) chybí → asi zemřel 1780–83 (K).",
+        "Soupis 1790 (oddíl ovčáků, M): „Pawel Weselý 50 | žena Uršila 52 | dětj Tomaš 23, Anna 10“, poznámka „Kniner Hamelknecht“; u Tomáše „In … (?) 201“ – odkaz na fol. 201, kde je veden jinde (52586 sk253). Pavel tedy žil ještě 1790 a zemřel 1790–IV/1795.",
+        "Soupis 1774 (oddíl „Při owčinách“, M zápis): „Pawel (?) Weslay 35 | žena Rozalie 37 | dětj Tomaš 8“, poznámka „… Hirt“ (pastýř). V soupisech 1771–1773 mezi ovčáky není → na panství Hluboká přišel 1773/74 (D); odkud, neuvedeno. Řada 1774 → 1775 → 1780 věkově přesně sedí (35/36/41; žena 37/38/43; Tomáš 8/9/14) – „Peter“ 1775 je nejspíš chyba čtení či písaře. 1786 mezi ovčáky nenalezen (asi přehlédnut – 1790 tam opět je), v Podhradí (domy, domky, podruzi, sirotci) ani v Kníně 1786 není; „Pawel Weselý“ v Appendixu 1786 (vdova Kateřina, syn Matěj 38) je jiný, starší Pavel.",
         "Soupis 1775 (oddíl „Při owčinách“, M zápis; ztotožnění D): „Peter (?) Weselý 3? | žena Rozalia 38 | dětj Tomaš 9“, poznámka „Kninger Hirt“ (knínský pastýř); hned pod ním Tomáš Wolf 37 × Anna 35, Schafmeister – tatáž dvojice 1780 (42/40). Věky sedí (Tomáš 9 → 14, žena 38 → 43); křestní jméno „Peter“ a žena „Rozalia“ (1780 „Anna“ – přepsané) nesouhlasí – ověřit matrikou. ",
         "Otec Tomáše Veselého – sňatek syna 28. 4. 1795 (M): „Tomáš, wlastnj syn † Pawla Weselýho haušlerníka z Hluboký pocházejícý“ – v roce 1795 už nežil. Matěj Veselý (sňatek 7. 10. 1794 Knín č. 3) NENÍ jeho syn – otec Jakub.",
         "Hluboká má matriky až od 1784; dříve fara Hosín (N 1745–84: Hosín 7 id 3857, Hosín 8 id 3858). Křest syna Tomáše (~1767–68) NENÍ v Hosín 8 I–VI/1768 ani Hosín 7 od V/1767. V Podskalí 1768 Ondřej Veselý (dcera Josefa) – možný příbuzný (K)."
@@ -6032,13 +6034,17 @@ window.RODOKMEN = {
         "SOA Třeboň, Vs Hluboká, soupis poddaných 1780 („Kniha syrotčí na rok 1780“), id 52578, sken 257, fol. 255 – https://digi.ceskearchivy.cz/DA?menu=3&id=52578&page=257",
         "SOA Třeboň, Vs Hluboká, soupis poddaných 1774, id 52571, sken 329 (oddíl „Při owčinách“)",
         "SOA Třeboň, Vs Hluboká, soupis poddaných 1775, id 52572, sken 302, fol. 299 (oddíl „Při owčinách“)",
-        "SOA Třeboň, Křtěnov 7 (Knín) O, id 5022, sken 74, s. 195 – https://digi.ceskearchivy.cz/DA?menu=3&id=5022&page=74; rejstřík O Křtěnov 14 (id 5029) sken 49"
+        "SOA Třeboň, Křtěnov 7 (Knín) O, id 5022, sken 74, s. 195 – https://digi.ceskearchivy.cz/DA?menu=3&id=5022&page=74; rejstřík O Křtěnov 14 (id 5029) sken 49",
+        "SOA Třeboň, Vs Hluboká, soupis poddaných 1783, id 52581, sken 261 (oddíl „Při owčinách“) – https://digi.ceskearchivy.cz/DA?menu=3&id=52581&page=261",
+        "SOA Třeboň, Vs Hluboká, soupis poddaných 1790, id 52586, sken 253 (ovčáci) – https://digi.ceskearchivy.cz/DA?menu=3&id=52586&page=253"
       ],
       scans: [
         {"f":"img/1780_soupis_poddanych_vesely.jpg","t":"Soupis poddaných panství Hluboká 1780, fol. 255 (oddíl dvorských služebníků) – Pavel Veselý 41, žena Anna 43, děti Tomáš 14, Matěj 2, Anna 1; poznámka „Hammel… in Knin“ (SOA Třeboň, Vs Hluboká, id 52578, sken 257)"},
         {"f":"img/1795_snatek_tomas_vesely_marie_bockova.jpg","t":"Sňatek 28. 4. 1795, Knín č. 5 (fara Křtěnov) – Tomáš, syn † Pavla Veselého, domkáře z Hluboké × Mariana, dcera Josefa Bočka a Kateřiny (Křtěnov 7, id 5022, sken 74)"},
         {"f":"img/1775_soupis_poddanych_vesely.jpg","t":"Soupis poddaných panství Hluboká 1775, oddíl „Při owčinách“ – „Peter (?) Weselý, žena Rozalia 38, dětj Tomaš 9“, poznámka „Kninger Hirt“ (SOA Třeboň, Vs Hluboká, id 52572, sken 302)"},
-        {"f":"img/1774_soupis_poddanych_vesely.jpg","t":"Soupis poddaných panství Hluboká 1774, oddíl „Při owčinách“ – „Pawel (?) Weslay, žena Rozalie 37, dětj Tomaš 8“ (SOA Třeboň, Vs Hluboká, id 52571, sken 329)"}
+        {"f":"img/1774_soupis_poddanych_vesely.jpg","t":"Soupis poddaných panství Hluboká 1774, oddíl „Při owčinách“ – „Pawel (?) Weslay, žena Rozalie 37, dětj Tomaš 8“ (SOA Třeboň, Vs Hluboká, id 52571, sken 329)"},
+        {"f":"img/1783_soupis_poddanych_vesely.jpg","t":"Soupis poddaných panství Hluboká 1783, oddíl „Při owčinách“ – Pavel Veselý 44, žena (Mariana přeškrtnuto) Uršula 46, děti Tomáš 17, Anna 4; „Kniner Hamelhirt“ (SOA Třeboň, Vs Hluboká, id 52581, sken 261)"},
+        {"f":"img/1790_soupis_poddanych_vesely.jpg","t":"Soupis poddaných panství Hluboká 1790, ovčáci – Pavel Veselý 50, žena Uršila 52, děti Tomáš 23, Anna 10; „Kniner Hamelknecht“ (SOA Třeboň, Vs Hluboká, id 52586, sken 253)"}
       ]
     },
     {
@@ -6284,12 +6290,13 @@ window.RODOKMEN = {
         "Úmrtí 14. 12. 1744, pohřeb 16. 12. (M zápis, totožnost D – psáno „Krener“): „Georgius Krener | sepultus 16 | 76 annorum“ (H IX 1 sk164) → *~1668. Možná manželka: Magdalena „Kremerka fabrissa“ † 1758, 78 let (sk180 – K).",
         "Otec Jacoba – sňatek syna 1735 (M): „Jacobus Georgii Kremer“. Pravděpodobně „Jura Kromer“, svědek 1729, a „Gura Kremer“, kmotr 1734 (D). Pozor: v Kobeřicích i Johann Kremer × Marina a Simon Kremer × Barbara.",
         "Manželka Magdalena – matka dětí Ondřeje (24. 11. 1707), Jakuba (30. 3. 1710) a Šimona (24. 10. 1713) (M); sňatek 7. 2. 1701 (H IX 12).",
-        "„z Raczan“ možno číst i „z Kaczan“ – lokalita nevyřešena (K; Ratiboř by písař psal „z Ratiboře“). V Kobeřicích 1688–1698 jiný Kremer není; farář 1697–98 „Andreas Josephus Kre…(?)“ – neověřeno."
+        "„z Raczan“ – výřez v plném rozlišení (STR-D13): iniciála se liší od K v „Kremer“ → čtení „Raczan“ pravděpodobnější než „Kaczan“ (D); obec typu Račany/Raczany neurčena (K; Ratiboř by písař psal „z Ratiboře“). Kobeřický farář 1697–98 byl Andreas Josephus Kremer (M: „Andreas Josephus Kremer Parochus Kobericensis copulavi…“, O 7. 7. 1697, H IX 12 sk29R; též sk30R, sk32R) – Georg mohl být jeho příbuzný, který s ním přišel (K, jen shoda příjmení a doby). Jiný Kremer v Kobeřicích 1688–1700 není (rodič, snoubenec ani kmotr)."
       ],
       sources: [
         "ZA Opava, Sbírka matrik, Kobeřice H IX 12 (N a O 1688–1705, roční opisy), sken 40 (O 1701); N sk39, 44, 48",
         "ZA Opava, Sbírka matrik (NAD 165), Kobeřice H IX 1 (N/Z/O 1706–1765), skeny 46, 48, 53, 57, 121",
-        "ZA Opava, Kobeřice H IX 1 – zemřelí: sken 157 (1736), 164 (1744), 180 (1758), 184 (1760)"
+        "ZA Opava, Kobeřice H IX 1 – zemřelí: sken 157 (1736), 164 (1744), 180 (1758), 184 (1760)",
+        "ZA Opava, Sbírka matrik, Kobeřice H IX 12 – skeny 29R, 30R, 32R, 37L (1697–1700)"
       ],
       scans: [
         {"f":"img/1701_snatek_kremer_pyrchalova.jpg","t":"Sňatek 7. 2. 1701, Kobeřice – Jiří (George) Kremer z Raczan (?) × Magdalena, dcera Jakuba Pyrchaly z Kobeřic (ZA Opava, H IX 12, sken 40 – druhý zápis)"},
@@ -6366,11 +6373,13 @@ window.RODOKMEN = {
       father: "jakubPyr",
       notes: [
         "Sňatek 7. 2. 1701 Kobeřice (M): „Die 7ma Februarij wstaupil gest w stawo Swatÿ Manzelski Podcziwoj Mladenec George Kremer z Raczan (?), wzal sobie za Manzelku Podcziwie zachowalau Diewczku gmenem Magdalena Pyrzchalka, wlastni Czerau Jakuba Pyrzchaly z Koberzitz. Swietkowie Jakub Czugiek, Ventzel Pyrzchala“ (H IX 12 sk40).",
-        "Manželka Jury (Georga) Kremera, matka Jakuba (*1710) – křty 1707, 1710, 1713 (M). Pravděpodobně „Magdalena Kremerka fabrissa“ † 1758, 78 let (H IX 1 sk180; D) → *~1680. Rodná Pyrchalová – sňatek 7. 2. 1701 (M)."
+        "Manželka Jury (Georga) Kremera, matka Jakuba (*1710) – křty 1707, 1710, 1713 (M). Pravděpodobně „Magdalena Kremerka fabrissa“ † 1758, 78 let (H IX 1 sk180; D) → *~1680. Rodná Pyrchalová – sňatek 7. 2. 1701 (M).",
+        "Snad kmotra 21. 6. 1700 Kobeřice: „Andreas Halfar, Magdalena Ssÿrssalka“ (H IX 12 sk37L; zápis M, totožnost s Magdalenou Pyrchalovou D – písař 1700 zřejmě psal Pirchala jako „Ssirssala“)."
       ],
       sources: [
         "ZA Opava, Sbírka matrik, Kobeřice H IX 12 (N a O 1688–1705, roční opisy), sken 40 (O 1701); N sk39, 44, 48",
-        "ZA Opava, Kobeřice H IX 1 – N sken 5, 7, 11; O sken 105"
+        "ZA Opava, Kobeřice H IX 1 – N sken 5, 7, 11; O sken 105",
+        "ZA Opava, Sbírka matrik, Kobeřice H IX 12 – skeny 29R, 30R, 32R, 37L (1697–1700)"
       ],
       scans: [
         {"f":"img/1701_snatek_kremer_pyrchalova.jpg","t":"Sňatek 7. 2. 1701, Kobeřice – Jiří (George) Kremer z Raczan (?) × Magdalena, dcera Jakuba Pyrchaly z Kobeřic (ZA Opava, H IX 12, sken 40 – druhý zápis)"},
@@ -6899,10 +6908,12 @@ window.RODOKMEN = {
       d: {"date":"mezi II/1701 a I/1703","year":1702,"approx":true,"place":"Kobeřice (?)"},
       notes: [
         "Otec nevěsty Magdaleny (sňatek 7. 2. 1701: „wlastni Czerau Jakuba Pyrzchaly z Koberzitz“ – žil, M). 27. 1. 1703 se ženil „Petr po N[ebožtíku] Pirchalu“ a 13. 1. 1704 Jan Sluchnik s „Annou po N. Pirchali“ → Jakub † 1701–1703 (D); Petr a Anna snad sourozenci Magdaleny (K). Svědek 1701 Ventzel Pyrzchala – příbuzný.",
-        "Doložen v Kobeřicích 1693–1696 jako kmotr a svědek (H IX 12 sk13L 1693, sk21L 1695, sk25L 1696). Jako otec dítěte v 1688–1697 není (Magdalena *~1680 je před začátkem knihy). Příbuzní (K): Jiří Pirchala × Marianna (děti Jan 1690, Filip 1694), Ondřej Pirchala ∞ 28. 10. 1691 Magdalena Weylameh (?) (sk9R, M)."
+        "Doložen v Kobeřicích 1693–1696 jako kmotr a svědek (H IX 12 sk13L 1693, sk21L 1695, sk25L 1696). Jako otec dítěte v 1688–1697 není (Magdalena *~1680 je před začátkem knihy). Příbuzní (K): Jiří Pirchala × Marianna (děti Jan 1690, Filip 1694), Ondřej Pirchala ∞ 28. 10. 1691 Magdalena Weylameh (?) (sk9R, M).",
+        "Svědek sňatku 26. 1. 1698 (M): „Assistentibus testibus Georgius Ba…(?) et Jacobus Pirchala ex Köberitz“ (H IX 12 sk32R). Ve stejné době v Kobeřicích Estera Pirchalka (kmotra 26. 1. 1698, sk30R), Andreas Pirchala (kmotr 3. 7. 1700, sk37L). Úmrtí Jakuba NENÍ v Z H IX 1 1706–1713 a 1716 (1714–15 v knize chybí; 1701–05 zemřelí nedochováni) → † 1701–1705 (D)."
       ],
       sources: [
-        "ZA Opava, Sbírka matrik, Kobeřice H IX 12 (N a O 1688–1705, roční opisy), sken 40 (O 1701); N sk39, 44, 48"
+        "ZA Opava, Sbírka matrik, Kobeřice H IX 12 (N a O 1688–1705, roční opisy), sken 40 (O 1701); N sk39, 44, 48",
+        "ZA Opava, Sbírka matrik, Kobeřice H IX 12 – skeny 29R, 30R, 32R, 37L (1697–1700)"
       ],
       scans: [
         {"f":"img/1701_snatek_kremer_pyrchalova.jpg","t":"Sňatek 7. 2. 1701, Kobeřice – Jiří (George) Kremer z Raczan (?) × Magdalena, dcera Jakuba Pyrchaly z Kobeřic (ZA Opava, H IX 12, sken 40 – druhý zápis)"}
@@ -6910,20 +6921,24 @@ window.RODOKMEN = {
     },
     {
       id: "annaVesP",
-      name: "Rozálie Veselá",
+      name: "Rozálie (Uršula?) Veselá",
       line: "vesely",
       cert: "D",
       b: {"date":"cca 1737","year":1737,"approx":true,"place":"?"},
       notes: [
-        "Manželka Pavla Veselého: soupis 1774 „žena Rozalie 37“, 1775 „Rozalia 38“, 1780 „Anna (?) 43“ (jméno v zápisu přepsané). Věk sedí rok po roku → nejspíš táž žena, Rozálie (D); pravděpodobná matka Tomáše (*~1766). Rodné příjmení neznámé."
+        "Manželka Pavla Veselého; jméno se v soupisech mění: 1774 „Rozalie 37“, 1775 „Rozalia 38“, 1780 „Anna (?) 43“ (přepsáno), 1783 „Mariana“ přeškrtnuto → „Uršula 46“, 1790 „Uršila 52“. Věk sedí rok po roku → nejspíš stále táž žena (D), jméno nejisté – Rozálie nebo Uršula; ověřit matrikou (oddavky ~1765 nebo úmrtí). Pravděpodobná matka Tomáše (*~1766). Rodné příjmení neznámé."
       ],
       sources: [
         "SOA Třeboň, Vs Hluboká, soupis poddaných 1774, id 52571, sken 329 (oddíl „Při owčinách“)",
         "SOA Třeboň, Vs Hluboká, soupis poddaných 1780 („Kniha syrotčí na rok 1780“), id 52578, sken 257, fol. 255 – https://digi.ceskearchivy.cz/DA?menu=3&id=52578&page=257",
-        "SOA Třeboň, Vs Hluboká, soupis poddaných 1775, id 52572, sken 302, fol. 299 (oddíl „Při owčinách“)"
+        "SOA Třeboň, Vs Hluboká, soupis poddaných 1775, id 52572, sken 302, fol. 299 (oddíl „Při owčinách“)",
+        "SOA Třeboň, Vs Hluboká, soupis poddaných 1783, id 52581, sken 261 (oddíl „Při owčinách“) – https://digi.ceskearchivy.cz/DA?menu=3&id=52581&page=261",
+        "SOA Třeboň, Vs Hluboká, soupis poddaných 1790, id 52586, sken 253 (ovčáci) – https://digi.ceskearchivy.cz/DA?menu=3&id=52586&page=253"
       ],
       scans: [
-        {"f":"img/1780_soupis_poddanych_vesely.jpg","t":"Soupis poddaných panství Hluboká 1780, fol. 255 (oddíl dvorských služebníků) – Pavel Veselý 41, žena Anna 43, děti Tomáš 14, Matěj 2, Anna 1; poznámka „Hammel… in Knin“ (SOA Třeboň, Vs Hluboká, id 52578, sken 257)"}
+        {"f":"img/1780_soupis_poddanych_vesely.jpg","t":"Soupis poddaných panství Hluboká 1780, fol. 255 (oddíl dvorských služebníků) – Pavel Veselý 41, žena Anna 43, děti Tomáš 14, Matěj 2, Anna 1; poznámka „Hammel… in Knin“ (SOA Třeboň, Vs Hluboká, id 52578, sken 257)"},
+        {"f":"img/1783_soupis_poddanych_vesely.jpg","t":"Soupis poddaných panství Hluboká 1783, oddíl „Při owčinách“ – Pavel Veselý 44, žena (Mariana přeškrtnuto) Uršula 46, děti Tomáš 17, Anna 4; „Kniner Hamelhirt“ (SOA Třeboň, Vs Hluboká, id 52581, sken 261)"},
+        {"f":"img/1790_soupis_poddanych_vesely.jpg","t":"Soupis poddaných panství Hluboká 1790, ovčáci – Pavel Veselý 50, žena Uršila 52, děti Tomáš 23, Anna 10; „Kniner Hamelknecht“ (SOA Třeboň, Vs Hluboká, id 52586, sken 253)"}
       ]
     }
   ]
@@ -7325,6 +7340,6 @@ window.RODOKMEN.collateral = [
   {"father":"georgKrem","mother":"magdalenaKrem","cert":"M","id":"c_kreKat1701","name":"Kateřina Kremerová","b":{"date":"23. 10. 1701","year":1701,"place":"Kobeřice"},"note":"H IX 12 sk39: „Georgius Kremer, Magdalena“; kmotři Josephus Twerdi, Marianna Wasarzka (?)."},
   {"father":"georgKrem","mother":"magdalenaKrem","cert":"M","id":"c_kreMar1703","name":"Marianna Kremerová","b":{"date":"1. 1. 1703","year":1703,"place":"Kobeřice"},"note":"H IX 12 sk44: „Zura Kremer, Magdalena“."},
   {"father":"georgKrem","mother":"magdalenaKrem","cert":"D","id":"c_kreJur1705","name":"Jiří (Jura) Kremer","b":{"date":"11. 4. 1705","year":1705,"place":"Kobeřice"},"note":"H IX 12 sk48: „Zura Kremer, Magdalena | Zura (?)“ – jméno dítěte pod kaňkou."},
-  {"father":"pavelVes","mother":"annaVesP","cert":"D","id":"c_vesMat1778","name":"Matěj Veselý","b":{"date":"cca 1778","year":1778,"approx":true,"place":"Knín (?)"},"note":"Soupis poddaných 1780 (52578 fol. 255): syn Pavla, 2 roky."},
-  {"father":"pavelVes","mother":"annaVesP","cert":"D","id":"c_vesAnna1779","name":"Anna Veselá","b":{"date":"cca 1779","year":1779,"approx":true,"place":"Knín (?)"},"note":"Soupis poddaných 1780 (52578 fol. 255): dcera Pavla, 1 rok."}
+  {"father":"pavelVes","mother":"annaVesP","cert":"D","id":"c_vesMat1778","name":"Matěj Veselý","b":{"date":"cca 1778","year":1778,"approx":true,"place":"Knín (?)"},"note":"Soupis poddaných 1780 (52578 fol. 255): syn Pavla, 2 roky. V soupisu 1783 už není → asi zemřel 1780–83 (K)."},
+  {"father":"pavelVes","mother":"annaVesP","cert":"D","id":"c_vesAnna1779","name":"Anna Veselá","b":{"date":"cca 1779","year":1779,"approx":true,"place":"Knín (?)"},"note":"Soupis poddaných 1780 (52578 fol. 255): dcera Pavla, 1 rok. Soupis 1783: 4 roky, 1790: 10 let (u otce)."}
 ];
