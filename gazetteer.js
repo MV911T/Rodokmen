@@ -59,4 +59,5 @@ window.RODOKMEN_GAZ = [
   { n: 'Litoradlice', a: ['Litoradlice'], off: true },
   { n: 'Býšov (Knín)', a: ['Býšov', 'Bejšov'], off: true },
   { n: 'Dívčice', a: ['Dívčice'], off: true },
+  { n: 'Knín (Hluboká)', a: ['Knín'], off: true },
 ];

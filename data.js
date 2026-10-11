@@ -6018,13 +6018,15 @@ window.RODOKMEN = {
       name: "Pavel Veselý",
       line: "vesely",
       cert: "M",
-      b: {"date":"cca 1739","year":1739,"approx":true,"place":"?"},
-      d: {"date":"1790–1795","year":1793,"approx":true},
+      b: {"date":"cca 1740","year":1740,"approx":true,"place":"?"},
+      d: {"date":"15. 12. 1794","year":1794,"place":"Knín č. 9 (fara Křtěnov)"},
       occ: "ovčák při panském dvoře v Kníně – pastýř skopců (Hamelhirt, 1774–1783), pacholek u skopců (Hamelknecht, 1790); 1795 uváděn jako domkář (haušlerník) z Hluboké",
       notes: [
+        "Úmrtí 15. 12. 1794 Knín č. 9 (M): „1794 [z 1793 opraveno] Prasinec 15. | 9 | Pawel Weselý, Mistr pol…(?) umrlý | [katol.] 1 | [muž] 1 | 53 | na wodnatelnost“ (Křtěnov 7, Knín Z, id 5022 sk57, s. 131). Věk 53 → *~1741; soupisy 1790–94 dávají *~1740.",
+        "Soupisy 1791–1795 (oddíl „Při owčinách“, M): 1791 „Pawel Weselý 51, Kniner Hamelknecht; žena Uršila 53; Tomaš 24 Zutreiber; Anna 11“ (52587 sk246); 1793 Pawel 53(?), Uršila 55, Tomaš 26 (Anna už chybí; 52596 sk250); 1794 Pawel 54, Uršila 56, Tomaš 27 (52597 sk252); 1795 „† Pawel Weselý 55“ – přeškrtnut křížkem, žena Uršila 57, Tomaš 28 Zutreiber (52598 sk251).",
         "Soupis poddaných 1780 (M zápis; ztotožnění D – shoda jmen otce i syna, věk Tomáše, Knín): „Pawel Weselý 41 | žena Anna 43 | dětj Tomaš 14, Matěg 2, Anna 1“, poznámka „Hamelhirt in Knin“ (pastýř skopců v Kníně); v oddílu „Owčáci“ na konci svazku (fol. 251–255), hned pod ním „Tomaš Wolf 42 … Schafmeister“. V Podhradí 1780 (domy, domky, podruzi, sirotci) Pavel není.",
         "Soupis 1783 (oddíl „Při owčinách“, M): „Pawel Weselý 44 | žena Mariana (přeškrtnuto) Uršula 46 | dětj Tomaš 17, Anna 4“, poznámka „Kniner Hamelhirt“, u dětí „b. Vatter“ (52581 sk261). Matěj (1780 2 roky) chybí → asi zemřel 1780–83 (K).",
-        "Soupis 1790 (oddíl ovčáků, M): „Pawel Weselý 50 | žena Uršila 52 | dětj Tomaš 23, Anna 10“, poznámka „Kniner Hamelknecht“; u Tomáše „In … (?) 201“ – odkaz na fol. 201, kde je veden jinde (52586 sk253). Pavel tedy žil ještě 1790 a zemřel 1790–IV/1795.",
+        "Soupis 1790 (oddíl ovčáků, M): „Pawel Weselý 50 | žena Uršila 52 | dětj Tomaš 23, Anna 10“, poznámka „Kniner Hamelknecht“; u Tomáše „In … (?) 201“ – odkaz na fol. 201, kde je veden jinde (52586 sk253). Žil ještě 1790–94; zemřel 15. 12. 1794.",
         "Soupis 1774 (oddíl „Při owčinách“, M zápis): „Pawel (?) Weslay 35 | žena Rozalie 37 | dětj Tomaš 8“, poznámka „… Hirt“ (pastýř). V soupisech 1771–1773 mezi ovčáky není → na panství Hluboká přišel 1773/74 (D); odkud, neuvedeno. Řada 1774 → 1775 → 1780 věkově přesně sedí (35/36/41; žena 37/38/43; Tomáš 8/9/14) – „Peter“ 1775 je nejspíš chyba čtení či písaře. 1786 mezi ovčáky nenalezen (asi přehlédnut – 1790 tam opět je), v Podhradí (domy, domky, podruzi, sirotci) ani v Kníně 1786 není; „Pawel Weselý“ v Appendixu 1786 (vdova Kateřina, syn Matěj 38) je jiný, starší Pavel.",
         "Soupis 1775 (oddíl „Při owčinách“, M zápis; ztotožnění D): „Peter (?) Weselý 3? | žena Rozalia 38 | dětj Tomaš 9“, poznámka „Kninger Hirt“ (knínský pastýř); hned pod ním Tomáš Wolf 37 × Anna 35, Schafmeister – tatáž dvojice 1780 (42/40). Věky sedí (Tomáš 9 → 14, žena 38 → 43); křestní jméno „Peter“ a žena „Rozalia“ (1780 „Anna“ – přepsané) nesouhlasí – ověřit matrikou. ",
         "Otec Tomáše Veselého – sňatek syna 28. 4. 1795 (M): „Tomáš, wlastnj syn † Pawla Weselýho haušlerníka z Hluboký pocházejícý“ – v roce 1795 už nežil. Matěj Veselý (sňatek 7. 10. 1794 Knín č. 3) NENÍ jeho syn – otec Jakub.",
@@ -6036,15 +6038,19 @@ window.RODOKMEN = {
         "SOA Třeboň, Vs Hluboká, soupis poddaných 1775, id 52572, sken 302, fol. 299 (oddíl „Při owčinách“)",
         "SOA Třeboň, Křtěnov 7 (Knín) O, id 5022, sken 74, s. 195 – https://digi.ceskearchivy.cz/DA?menu=3&id=5022&page=74; rejstřík O Křtěnov 14 (id 5029) sken 49",
         "SOA Třeboň, Vs Hluboká, soupis poddaných 1783, id 52581, sken 261 (oddíl „Při owčinách“) – https://digi.ceskearchivy.cz/DA?menu=3&id=52581&page=261",
-        "SOA Třeboň, Vs Hluboká, soupis poddaných 1790, id 52586, sken 253 (ovčáci) – https://digi.ceskearchivy.cz/DA?menu=3&id=52586&page=253"
+        "SOA Třeboň, Vs Hluboká, soupis poddaných 1790, id 52586, sken 253 (ovčáci) – https://digi.ceskearchivy.cz/DA?menu=3&id=52586&page=253",
+        "SOA Třeboň, Sbírka matrik, Křtěnov 7 (Knín, NOZ 1787–1847), Z, id 5022, sken 57, s. 131 – https://digi.ceskearchivy.cz/DA?menu=3&id=5022&page=57",
+        "SOA Třeboň, Vs Hluboká, soupisy poddaných 1791 (id 52587 sk246), 1793 (52596 sk250), 1794 (52597 sk252), 1795 (52598 sk251)"
       ],
       scans: [
+        {"f":"img/1794_umrti_pavel_vesely.jpg","t":"Úmrtí 15. 12. 1794, Knín č. 9 – Pavel Veselý, 53 let, na vodnatelnost (SOA Třeboň, Křtěnov 7, id 5022, sken 57, s. 131)"},
         {"f":"img/1780_soupis_poddanych_vesely.jpg","t":"Soupis poddaných panství Hluboká 1780, fol. 255 (oddíl dvorských služebníků) – Pavel Veselý 41, žena Anna 43, děti Tomáš 14, Matěj 2, Anna 1; poznámka „Hammel… in Knin“ (SOA Třeboň, Vs Hluboká, id 52578, sken 257)"},
         {"f":"img/1795_snatek_tomas_vesely_marie_bockova.jpg","t":"Sňatek 28. 4. 1795, Knín č. 5 (fara Křtěnov) – Tomáš, syn † Pavla Veselého, domkáře z Hluboké × Mariana, dcera Josefa Bočka a Kateřiny (Křtěnov 7, id 5022, sken 74)"},
         {"f":"img/1775_soupis_poddanych_vesely.jpg","t":"Soupis poddaných panství Hluboká 1775, oddíl „Při owčinách“ – „Peter (?) Weselý, žena Rozalia 38, dětj Tomaš 9“, poznámka „Kninger Hirt“ (SOA Třeboň, Vs Hluboká, id 52572, sken 302)"},
         {"f":"img/1774_soupis_poddanych_vesely.jpg","t":"Soupis poddaných panství Hluboká 1774, oddíl „Při owčinách“ – „Pawel (?) Weslay, žena Rozalie 37, dětj Tomaš 8“ (SOA Třeboň, Vs Hluboká, id 52571, sken 329)"},
         {"f":"img/1783_soupis_poddanych_vesely.jpg","t":"Soupis poddaných panství Hluboká 1783, oddíl „Při owčinách“ – Pavel Veselý 44, žena (Mariana přeškrtnuto) Uršula 46, děti Tomáš 17, Anna 4; „Kniner Hamelhirt“ (SOA Třeboň, Vs Hluboká, id 52581, sken 261)"},
-        {"f":"img/1790_soupis_poddanych_vesely.jpg","t":"Soupis poddaných panství Hluboká 1790, ovčáci – Pavel Veselý 50, žena Uršila 52, děti Tomáš 23, Anna 10; „Kniner Hamelknecht“ (SOA Třeboň, Vs Hluboká, id 52586, sken 253)"}
+        {"f":"img/1790_soupis_poddanych_vesely.jpg","t":"Soupis poddaných panství Hluboká 1790, ovčáci – Pavel Veselý 50, žena Uršila 52, děti Tomáš 23, Anna 10; „Kniner Hamelknecht“ (SOA Třeboň, Vs Hluboká, id 52586, sken 253)"},
+        {"f":"img/1795_soupis_poddanych_vesely.jpg","t":"Soupis poddaných panství Hluboká 1795, ovčáci – „† Pawel Weselý 55“ (přeškrtnut), vdova Uršila 57, syn Tomáš 28 (SOA Třeboň, Vs Hluboká, id 52598, sken 251)"}
       ]
     },
     {
@@ -6921,24 +6927,26 @@ window.RODOKMEN = {
     },
     {
       id: "annaVesP",
-      name: "Rozálie (Uršula?) Veselá",
+      name: "Uršula (Rozálie?) Veselá",
       line: "vesely",
       cert: "D",
-      b: {"date":"cca 1737","year":1737,"approx":true,"place":"?"},
+      b: {"date":"cca 1738","year":1738,"approx":true,"place":"?"},
       notes: [
-        "Manželka Pavla Veselého; jméno se v soupisech mění: 1774 „Rozalie 37“, 1775 „Rozalia 38“, 1780 „Anna (?) 43“ (přepsáno), 1783 „Mariana“ přeškrtnuto → „Uršula 46“, 1790 „Uršila 52“. Věk sedí rok po roku → nejspíš stále táž žena (D), jméno nejisté – Rozálie nebo Uršula; ověřit matrikou (oddavky ~1765 nebo úmrtí). Pravděpodobná matka Tomáše (*~1766). Rodné příjmení neznámé."
+        "Manželka Pavla Veselého; jméno v soupisech: 1774 „Rozalie 37“, 1775 „Rozalia 38“, 1780 „Anna (?) 43“ (přepsáno), 1783 „Mariana“ přeškrtnuto → „Uršula 46“, 1790–95 „Uršila“ (52 → 57; 1795 už vdova). Věk sedí rok po roku → nejspíš táž žena (D); od 1783 stále Uršula, starší „Rozálie“ snad chyba písaře – ověřit matrikou (oddavky ~1760–66). Pravděpodobná matka Tomáše (*~1767). Rodné příjmení neznámé."
       ],
       sources: [
         "SOA Třeboň, Vs Hluboká, soupis poddaných 1774, id 52571, sken 329 (oddíl „Při owčinách“)",
         "SOA Třeboň, Vs Hluboká, soupis poddaných 1780 („Kniha syrotčí na rok 1780“), id 52578, sken 257, fol. 255 – https://digi.ceskearchivy.cz/DA?menu=3&id=52578&page=257",
         "SOA Třeboň, Vs Hluboká, soupis poddaných 1775, id 52572, sken 302, fol. 299 (oddíl „Při owčinách“)",
         "SOA Třeboň, Vs Hluboká, soupis poddaných 1783, id 52581, sken 261 (oddíl „Při owčinách“) – https://digi.ceskearchivy.cz/DA?menu=3&id=52581&page=261",
-        "SOA Třeboň, Vs Hluboká, soupis poddaných 1790, id 52586, sken 253 (ovčáci) – https://digi.ceskearchivy.cz/DA?menu=3&id=52586&page=253"
+        "SOA Třeboň, Vs Hluboká, soupis poddaných 1790, id 52586, sken 253 (ovčáci) – https://digi.ceskearchivy.cz/DA?menu=3&id=52586&page=253",
+        "SOA Třeboň, Vs Hluboká, soupisy poddaných 1791 (id 52587 sk246), 1793 (52596 sk250), 1794 (52597 sk252), 1795 (52598 sk251)"
       ],
       scans: [
         {"f":"img/1780_soupis_poddanych_vesely.jpg","t":"Soupis poddaných panství Hluboká 1780, fol. 255 (oddíl dvorských služebníků) – Pavel Veselý 41, žena Anna 43, děti Tomáš 14, Matěj 2, Anna 1; poznámka „Hammel… in Knin“ (SOA Třeboň, Vs Hluboká, id 52578, sken 257)"},
         {"f":"img/1783_soupis_poddanych_vesely.jpg","t":"Soupis poddaných panství Hluboká 1783, oddíl „Při owčinách“ – Pavel Veselý 44, žena (Mariana přeškrtnuto) Uršula 46, děti Tomáš 17, Anna 4; „Kniner Hamelhirt“ (SOA Třeboň, Vs Hluboká, id 52581, sken 261)"},
-        {"f":"img/1790_soupis_poddanych_vesely.jpg","t":"Soupis poddaných panství Hluboká 1790, ovčáci – Pavel Veselý 50, žena Uršila 52, děti Tomáš 23, Anna 10; „Kniner Hamelknecht“ (SOA Třeboň, Vs Hluboká, id 52586, sken 253)"}
+        {"f":"img/1790_soupis_poddanych_vesely.jpg","t":"Soupis poddaných panství Hluboká 1790, ovčáci – Pavel Veselý 50, žena Uršila 52, děti Tomáš 23, Anna 10; „Kniner Hamelknecht“ (SOA Třeboň, Vs Hluboká, id 52586, sken 253)"},
+        {"f":"img/1795_soupis_poddanych_vesely.jpg","t":"Soupis poddaných panství Hluboká 1795, ovčáci – „† Pawel Weselý 55“ (přeškrtnut), vdova Uršila 57, syn Tomáš 28 (SOA Třeboň, Vs Hluboká, id 52598, sken 251)"}
       ]
     }
   ]
@@ -7341,5 +7349,5 @@ window.RODOKMEN.collateral = [
   {"father":"georgKrem","mother":"magdalenaKrem","cert":"M","id":"c_kreMar1703","name":"Marianna Kremerová","b":{"date":"1. 1. 1703","year":1703,"place":"Kobeřice"},"note":"H IX 12 sk44: „Zura Kremer, Magdalena“."},
   {"father":"georgKrem","mother":"magdalenaKrem","cert":"D","id":"c_kreJur1705","name":"Jiří (Jura) Kremer","b":{"date":"11. 4. 1705","year":1705,"place":"Kobeřice"},"note":"H IX 12 sk48: „Zura Kremer, Magdalena | Zura (?)“ – jméno dítěte pod kaňkou."},
   {"father":"pavelVes","mother":"annaVesP","cert":"D","id":"c_vesMat1778","name":"Matěj Veselý","b":{"date":"cca 1778","year":1778,"approx":true,"place":"Knín (?)"},"note":"Soupis poddaných 1780 (52578 fol. 255): syn Pavla, 2 roky. V soupisu 1783 už není → asi zemřel 1780–83 (K)."},
-  {"father":"pavelVes","mother":"annaVesP","cert":"D","id":"c_vesAnna1779","name":"Anna Veselá","b":{"date":"cca 1779","year":1779,"approx":true,"place":"Knín (?)"},"note":"Soupis poddaných 1780 (52578 fol. 255): dcera Pavla, 1 rok. Soupis 1783: 4 roky, 1790: 10 let (u otce)."}
+  {"father":"pavelVes","mother":"annaVesP","cert":"D","id":"c_vesAnna1779","name":"Anna Veselá","b":{"date":"cca 1779","year":1779,"approx":true,"place":"Knín (?)"},"note":"Soupis poddaných 1780 (52578 fol. 255): dcera Pavla, 1 rok. Soupis 1783: 4 roky, 1790: 10 let (u otce). 1791: 11 let; od 1793 v domácnosti chybí (služba nebo †)."}
 ];
