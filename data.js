@@ -6031,7 +6031,8 @@ window.RODOKMEN = {
         "Soupis 1774 (oddíl „Při owčinách“, M zápis): „Pawel (?) Weslay 35 | žena Rozalie 37 | dětj Tomaš 8“, poznámka „… Hirt“ (pastýř). V soupisech 1771–1773 mezi ovčáky není → na panství Hluboká přišel 1773/74 (D); odkud, neuvedeno. Řada 1774 → 1775 → 1780 věkově přesně sedí (35/36/41; žena 37/38/43; Tomáš 8/9/14) – „Peter“ 1775 je nejspíš chyba čtení či písaře. 1786 mezi ovčáky nenalezen (asi přehlédnut – 1790 tam opět je), v Podhradí (domy, domky, podruzi, sirotci) ani v Kníně 1786 není; „Pawel Weselý“ v Appendixu 1786 (vdova Kateřina, syn Matěj 38) je jiný, starší Pavel.",
         "Soupis 1775 (oddíl „Při owčinách“, M zápis; ztotožnění D): „Peter (?) Weselý 3? | žena Rozalia 38 | dětj Tomaš 9“, poznámka „Kninger Hirt“ (knínský pastýř); hned pod ním Tomáš Wolf 37 × Anna 35, Schafmeister – tatáž dvojice 1780 (42/40). Věky sedí (Tomáš 9 → 14, žena 38 → 43); křestní jméno „Peter“ a žena „Rozalia“ (1780 „Anna“ – přepsané) nesouhlasí – ověřit matrikou. ",
         "Otec Tomáše Veselého – sňatek syna 28. 4. 1795 (M): „Tomáš, wlastnj syn † Pawla Weselýho haušlerníka z Hluboký pocházejícý“ – v roce 1795 už nežil. Matěj Veselý (sňatek 7. 10. 1794 Knín č. 3) NENÍ jeho syn – otec Jakub.",
-        "Hluboká má matriky až od 1784; dříve fara Hosín (N 1745–84: Hosín 7 id 3857, Hosín 8 id 3858). Křest syna Tomáše (~1767–68) NENÍ v Hosín 8 I–VI/1768 ani Hosín 7 od V/1767. V Podskalí 1768 Ondřej Veselý (dcera Josefa) – možný příbuzný (K)."
+        "Hluboká má matriky až od 1784; dříve fara Hosín (N 1745–84: Hosín 7 id 3857, Hosín 8 id 3858). Křest syna Tomáše (~1767–68) NENÍ v Hosín 8 I–VI/1768 ani Hosín 7 od V/1767. V Podskalí 1768 Ondřej Veselý (dcera Josefa) – možný příbuzný (K).",
+        "Kandidát na rodinu (K): Daniel Veselý, PASTÝŘ v Zahájí × Rosina, dcera Jiřího Czerowského(?), pastýře z Chlumce – dcera Kateřina pokř. 18. 9. 1741 Zahájí (M: „Pater Daniel Wesely pastor ex Zahay, Mater Rosina filia Georgii Czerowsky pastoris ex Chlumetz, ambo subditi Frauenbergenses“, N Zahájí 8694 sk83R). Pavlův křest ale NENÍ v 8694 VI/1739–XI/1741 (Pavel 26. 6. 1739 je syn Vojtěcha Schindla). Další Veselí v Zahájí: Vavřinec (dcera Kateřina 1760), Antonín (1760), † Adam (dcera Mariana ∞ ~II/1764 Vít Piskač(?), O 8699 sk29R). Sňatek Pavel × Uršula NENÍ v O Zahájí 8699 IX/1759–VII/1764 (1762 bez sňatků)."
       ],
       sources: [
         "SOA Třeboň, Vs Hluboká, soupis poddaných 1780 („Kniha syrotčí na rok 1780“), id 52578, sken 257, fol. 255 – https://digi.ceskearchivy.cz/DA?menu=3&id=52578&page=257",
@@ -6041,7 +6042,8 @@ window.RODOKMEN = {
         "SOA Třeboň, Vs Hluboká, soupis poddaných 1783, id 52581, sken 261 (oddíl „Při owčinách“) – https://digi.ceskearchivy.cz/DA?menu=3&id=52581&page=261",
         "SOA Třeboň, Vs Hluboká, soupis poddaných 1790, id 52586, sken 253 (ovčáci) – https://digi.ceskearchivy.cz/DA?menu=3&id=52586&page=253",
         "SOA Třeboň, Sbírka matrik, Křtěnov 7 (Knín, NOZ 1787–1847), Z, id 5022, sken 57, s. 131 – https://digi.ceskearchivy.cz/DA?menu=3&id=5022&page=57",
-        "SOA Třeboň, Vs Hluboká, soupisy poddaných 1791 (id 52587 sk246), 1793 (52596 sk250), 1794 (52597 sk252), 1795 (52598 sk251)"
+        "SOA Třeboň, Vs Hluboká, soupisy poddaných 1791 (id 52587 sk246), 1793 (52596 sk250), 1794 (52597 sk252), 1795 (52598 sk251)",
+        "SOA Třeboň, Sbírka matrik, Zahájí 2 N 1722–1784 (id 8694) sk75–84; Zahájí 7 OZ 1733–1784 (id 8699) sk25–30"
       ],
       scans: [
         {"f":"img/1794_umrti_pavel_vesely.jpg","t":"Úmrtí 15. 12. 1794, Knín č. 9 – Pavel Veselý, 53 let, na vodnatelnost (SOA Třeboň, Křtěnov 7, id 5022, sken 57, s. 131)"},
