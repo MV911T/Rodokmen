@@ -6032,7 +6032,8 @@ window.RODOKMEN = {
         "Soupis 1775 (oddíl „Při owčinách“, M zápis; ztotožnění D): „Peter (?) Weselý 3? | žena Rozalia 38 | dětj Tomaš 9“, poznámka „Kninger Hirt“ (knínský pastýř); hned pod ním Tomáš Wolf 37 × Anna 35, Schafmeister – tatáž dvojice 1780 (42/40). Věky sedí (Tomáš 9 → 14, žena 38 → 43); křestní jméno „Peter“ a žena „Rozalia“ (1780 „Anna“ – přepsané) nesouhlasí – ověřit matrikou. ",
         "Otec Tomáše Veselého – sňatek syna 28. 4. 1795 (M): „Tomáš, wlastnj syn † Pawla Weselýho haušlerníka z Hluboký pocházejícý“ – v roce 1795 už nežil. Matěj Veselý (sňatek 7. 10. 1794 Knín č. 3) NENÍ jeho syn – otec Jakub.",
         "Hluboká má matriky až od 1784; dříve fara Hosín (N 1745–84: Hosín 7 id 3857, Hosín 8 id 3858). Křest syna Tomáše (~1767–68) NENÍ v Hosín 8 I–VI/1768 ani Hosín 7 od V/1767. V Podskalí 1768 Ondřej Veselý (dcera Josefa) – možný příbuzný (K).",
-        "Kandidát na rodinu (K): Daniel Veselý, PASTÝŘ v Zahájí × Rosina, dcera Jiřího Czerowského(?), pastýře z Chlumce – dcera Kateřina pokř. 18. 9. 1741 Zahájí (M: „Pater Daniel Wesely pastor ex Zahay, Mater Rosina filia Georgii Czerowsky pastoris ex Chlumetz, ambo subditi Frauenbergenses“, N Zahájí 8694 sk83R). Pavlův křest ale NENÍ v 8694 VI/1739–XI/1741 (Pavel 26. 6. 1739 je syn Vojtěcha Schindla). Další Veselí v Zahájí: Vavřinec (dcera Kateřina 1760), Antonín (1760), † Adam (dcera Mariana ∞ ~II/1764 Vít Piskač(?), O 8699 sk29R). Sňatek Pavel × Uršula NENÍ v O Zahájí 8699 IX/1759–VII/1764 (1762 bez sňatků)."
+        "Kandidát na rodinu (K): Daniel Veselý, PASTÝŘ v Zahájí × Rosina, dcera Jiřího Czerowského(?), pastýře z Chlumce – dcera Kateřina pokř. 18. 9. 1741 Zahájí (M: „Pater Daniel Wesely pastor ex Zahay, Mater Rosina filia Georgii Czerowsky pastoris ex Chlumetz, ambo subditi Frauenbergenses“, N Zahájí 8694 sk83R). Pavlův křest ale NENÍ v 8694 VI/1739–XI/1741 (Pavel 26. 6. 1739 je syn Vojtěcha Schindla). Další Veselí v Zahájí: Vavřinec (dcera Kateřina 1760), Antonín (1760), † Adam (dcera Mariana ∞ ~II/1764 Vít Piskač(?), O 8699 sk29R). Sňatek Pavel × Uršula NENÍ v O Zahájí 8699 IX/1759–VII/1764 (1762 bez sňatků).",
+        "Chlumec farně patřil k Purkarci (Purkarec 4, SOA Třeboň id 6804: N Chlumec 1721–48, O 1722–84 i pro Zahájí, Hosín, Hlubokou; Hluboká má matriky až od 1784). Sňatek Daniel × Rosina NENÍ v Purkarci 4 VII/1738–II/1741 (sk183–188), křest Pavla NENÍ v III–VI/1741 (sk95–96). Stopa (K): 15. 9. 1739 Chlumec se znovu žení vdovec „Georgius Červeney“ s vdovou Magdalenou po Jakubu Mádkovi z Chvalšovic(?), „ambo subditi Fraumbergenses“ (Purkarec 4 sk184R, fol. 55, M zápis) – snad totožný s Jiřím Czerowským, otcem Rosiny (jen shoda jména, místa a doby). Svědek sňatku 23. 5. 1739 „Marco Wesseli“ (Purkarec 4) – vazba neurčena."
       ],
       sources: [
         "SOA Třeboň, Vs Hluboká, soupis poddaných 1780 („Kniha syrotčí na rok 1780“), id 52578, sken 257, fol. 255 – https://digi.ceskearchivy.cz/DA?menu=3&id=52578&page=257",
@@ -6299,13 +6300,13 @@ window.RODOKMEN = {
         "Úmrtí 14. 12. 1744, pohřeb 16. 12. (M zápis, totožnost D – psáno „Krener“): „Georgius Krener | sepultus 16 | 76 annorum“ (H IX 1 sk164) → *~1668. Možná manželka: Magdalena „Kremerka fabrissa“ † 1758, 78 let (sk180 – K).",
         "Otec Jacoba – sňatek syna 1735 (M): „Jacobus Georgii Kremer“. Pravděpodobně „Jura Kromer“, svědek 1729, a „Gura Kremer“, kmotr 1734 (D). Pozor: v Kobeřicích i Johann Kremer × Marina a Simon Kremer × Barbara.",
         "Manželka Magdalena – matka dětí Ondřeje (24. 11. 1707), Jakuba (30. 3. 1710) a Šimona (24. 10. 1713) (M); sňatek 7. 2. 1701 (H IX 12).",
-        "„z Raczan“ – výřez v plném rozlišení (STR-D13): iniciála se liší od K v „Kremer“ → čtení „Raczan“ pravděpodobnější než „Kaczan“ (D); obec typu Račany/Raczany neurčena (K; Ratiboř by písař psal „z Ratiboře“). Kobeřický farář 1697–98 byl Andreas Josephus Kremer (M: „Andreas Josephus Kremer Parochus Kobericensis copulavi…“, O 7. 7. 1697, H IX 12 sk29R; též sk30R, sk32R) – Georg mohl být jeho příbuzný, který s ním přišel (K, jen shoda příjmení a doby). Jiný Kremer v Kobeřicích 1688–1700 není (rodič, snoubenec ani kmotr)."
+        "„z Raczan“ – výřez v plném rozlišení (STR-D13, znovu STR-D14 porovnáním iniciál na listu): čtení „Raczan“ pravděpodobnější než „Kaczan“ (D); obec typu Račany/Raczany neurčena (K; Ratiboř by písař psal „z Ratiboře“). Kobeřický farář 1697–98 byl Andreas Josephus Kremer (M: „Andreas Josephus Kremer Parochus Kobericensis copulavi…“, O 7. 7. 1697, H IX 12 sk29R; též sk30R, sk32R; poslední výslovný úkon 13. 7. 1698 „Ego qui supra Copulavi…“, sk33L). Od 1699 v knize jiné ruce bez jména kněze, od 1703 farář Blasius Antonius Zlatý (M, záhlaví sk44R, 46R, 48R); kdo oddával 7. 2. 1701, zápis neuvádí. Georg mohl být příbuzný faráře Kremera (K, jen shoda příjmení a doby; oslabeno – při sňatku 1701 už Kremer v Kobeřicích nedoložen). Jiný Kremer v Kobeřicích 1688–1700 není (rodič, snoubenec ani kmotr)."
       ],
       sources: [
         "ZA Opava, Sbírka matrik, Kobeřice H IX 12 (N a O 1688–1705, roční opisy), sken 40 (O 1701); N sk39, 44, 48",
         "ZA Opava, Sbírka matrik (NAD 165), Kobeřice H IX 1 (N/Z/O 1706–1765), skeny 46, 48, 53, 57, 121",
         "ZA Opava, Kobeřice H IX 1 – zemřelí: sken 157 (1736), 164 (1744), 180 (1758), 184 (1760)",
-        "ZA Opava, Sbírka matrik, Kobeřice H IX 12 – skeny 29R, 30R, 32R, 37L (1697–1700)"
+        "ZA Opava, Sbírka matrik, Kobeřice H IX 12 – skeny 29R, 30R, 32R, 33L, 37L (1697–1700), 44R, 46R, 48R (záhlaví 1703–1705, farář Zlatý)"
       ],
       scans: [
         {"f":"img/1701_snatek_kremer_pyrchalova.jpg","t":"Sňatek 7. 2. 1701, Kobeřice – Jiří (George) Kremer z Raczan (?) × Magdalena, dcera Jakuba Pyrchaly z Kobeřic (ZA Opava, H IX 12, sken 40 – druhý zápis)"},
@@ -6682,10 +6683,12 @@ window.RODOKMEN = {
         "Úmrtí NENÍ v 4034 Z Nedašov ~1787–1797 → zemřel nejspíš před 1787 (K). V 4012 N 1774–80 není jako otec.",
         "Úmrtí NENÍ v Brumov 4012 Z I/1773–XII/1786 (PAC13–14; zápisy „Martinus Kotrb… Navo.“ 1778 a „Martinus Mac(?)žar(?)“ 1783 jsou jiní) ani v rejstříku 4034 Z (D); sňatek NENÍ v 4012 O 1760–XI/1776 (oddací kniha začíná 1760) → ženil se před 1760 nebo jinde. V Bylnici jiný Martin Golba × Marina (1766).",
         "Úmrtí NENÍ ani v 4034 Z Nedašov 1787–II/1797 (PAC15) → v Brumově negativní celé 1773–II/1797; zemřel jinde nebo pod jiným jménem. Kandidátka vdovy (K): „Catharina Martin Wittib Innmannin“, 56 let, † 1793 Nedašov č. 86 (4034 Z img264R).",
-        "Příjmení čteno „Koss-trna“ = Koštrna (PAC16). V Brumově Václav Kosstrna, vdovec, ∞ I/1764 – možný příbuzný (K). Úmrtí Martina snad před 1773 (4012 Z 1760–72 nečteno) nebo mimo Brumov."
+        "Příjmení čteno „Koss-trna“ = Koštrna (PAC16). V Nedašově přezdívka rodu Golba: „Wenceslaus Golba vulgo Kosstrna viduus post † Annam, Nedasch., [č.] 56, 105 an.“ † 18. 1. 1772 (4012 Z img247R, M; věk zřejmě nadsazený) – Martin snad jeho syn nebo vnuk (K, jen shoda přezdívky; přímý doklad chybí). Brumovský Václav Kosstrna (vdovec, ∞ 10. 1. 1764 Kateřina, „ambo Bru.“, 4012 O img163R, D; žena Zuzana † 9. 9. 1762, 73 let) je jiná rodina (D). Nedašovští Golbové 1760–71: Matěj, syn Mikuláše, ∞ ~XII/1763 Kateřina, č. 64; Václav × Anna (syn Jan † IV/1770) – možní příbuzní (K).",
+        "PAC17 (negativně): v 4012 Z I/1760–XII/1771 (img211–246, náhled) Golba/Kosstrna z Nedašova není (kromě dítěte Kateřiny Matěje Golby † 4. 8. 1771, č. 64); sňatek Martina NENÍ v opis7 O 1755 a I–II/1757. Opis7 pokrývá O jen 1688–1726, 1755, 1757, 1760 → sňatek 1727–54 v matrikách nedohledatelný; zbývá 4012 O XII/1776–1787 a gruntovní knihy Nedašova (11951/11952, grunt č. 56)."
       ],
       sources: [
-        "MZA, O 4023, img 86"
+        "MZA, O 4023, img 86",
+        "MZA, Brumov 4012 – Z img247R (1772), img163R (O 1764); opis7 img282R–284, 293R–294"
       ],
       scans: [
         {"f":"img/1797_snatek_vaculik_kostrna.jpg","t":"Sňatek II/1797, Návojná č. 16 – Josef, syn Josefa Vaculíka, sedláka (22) × Barbora, dcera † Martina Kostrny (?), sedláka v Nedašově (20) (MZA, O 4023, img 86)"}
