@@ -3508,19 +3508,53 @@ window.RODOKMEN = {
       line: "struz",
       cert: "M",
       b: {"date":"cca 1805","year":1805,"approx":true},
+      father: "mathesLa",
+      mother: "susannaSo",
       notes: [
         "Dcera Matthäuse Lassaka.",
         "Jako vdova (32 let) se 4. 7. 1837 znovu vdala za Josepha Latku (24), syna zahradníka z Chuchelné.",
         "Křest není v Krzanowicích 1804–1806 – Lassakové žili v Borutíně a Strandorfu.",
-        "Hypotéza (K): otec Mathias Lasak, výměnkář, zemřel 18. 12. 1823 ve věku 65 (455/0022; „aus Borutin“?, OFB uvádí Strandorf); OFB uvádí rodiče Mathias Lassak × Susanna Socha – neověřeno.",
-        "Podle OFB (D): rodiče Mathias Lassak × Susanna Socha (jinde „Gruschka“); zemřela 1. 1. 1867 v Krzanowicích. V Krzanowicích žilo několik Matějů Lasaků – otce je třeba rozlišit."
+        "Rodiče potvrzeny (M) křtem dcery Victorie Latky 4. 3. 1845 Chuchelná (tabulkový formulář s prarodiči): „Rosalia Tochter des Bauers Mathes Lassak et Susanna geb. Socha“ (Silius Radicum, Krzanowice 1845 = složka 379, sn 0005, Nr 35; ověřeno koordinátorem). Křest syna Alberta Latky 23. 4. 1846: „Rosalia geborene Mathaeus Lassak“ (sl. 380 sn 0020).",
+        "Křest syna Jacoba Kussina 4. 4. 1831 Chuchelná (M): „des Gärtner Carl Kussin von seinem Weibe Rosalia geborenen Mathias Lassak“ – manželský, tj. sňatek s Carlem nejpozději ~VII/1830; v oddacích Krzanowic 1824–36 ani v OFB Kranowitz NENÍ → brali se asi jinde (K). V OFB Kranowitz (435 Lassaků) Rosalie *1796–1812 není → narozena nejspíš mimo farnost (K). Zemřela 1. 1. 1867 Krzanowice (OFB I17021, D)."
       ],
       sources: [
-        "křest dcery Marianny 1837 (Krzanowice Nr. 58)"
+        "křest dcery Marianny 1837 (Krzanowice Nr. 58)",
+        "Silius Radicum – duplikáty Krzanowice: 1831 (sl. 364) sn 0020 Nr 57; 1845 (sl. 379) sn 0005 Nr 35; 1846 (sl. 380) sn 0020",
+        "OFB Kranowitz I17021 – https://ofb.genealogy.net/kranowitz"
       ],
       scans: [
         {"f":"img/1837_snatek_rosalia_kussin_latka.jpg","t":"Druhý sňatek 4. 7. 1837 jako vdova, 32 let (Krzanowice 1837 Nr 37)"},
-        {"f":"img/1837_krest_marianna_kussin.jpg","t":"Křest 2. 4. 1837 (Krzanowice 1837 Nr. 58)"}
+        {"f":"img/1837_krest_marianna_kussin.jpg","t":"Křest 2. 4. 1837 (Krzanowice 1837 Nr. 58)"},
+        {"f":"img/1845_krest_victoria_latka.jpg","t":"Křest Victorie Latky 4. 3. 1845 Chuchelná – matka „Rosalia Tochter des Bauers Mathes Lassak et Susanna geb. Socha“ (Krzanowice 1845 Nr 35, Silius Radicum)"},
+        {"f":"img/1831_krest_jacob_kussin.jpg","t":"Křest Jacoba Kussina 4. 4. 1831 Chuchelná – syn zahradníka Carla Kussina a Rosalie roz. Lassak (Krzanowice 1831 Nr 57, Silius Radicum)"}
+      ]
+    },
+    {
+      id: "mathesLa",
+      name: "Mathes (Mathias) Lassak",
+      line: "struz",
+      cert: "D",
+      b: {"date":"?","year":1770,"approx":true},
+      occ: "sedlák (Bauer) – Krzanowicko (Strandorf/Borutín?)",
+      notes: [
+        "Uveden jen jako otec Rosalie v křtu vnučky 1845: „Tochter des Bauers Mathes Lassak et Susanna geb. Socha“ (Krzanowice 1845 Nr 35, M zápis). V OFB Kranowitz bez dat a bez dalších dětí. Kandidáti v OFB (K): sedlák Matthäus ze Strandorfu (nar. 1777) (∞ 1810 Catharina Hlubek – dřívější manželství se Susannou?); Mathias *~1745, výměnkář (∞ 1817 Susanna, vdova Hlubek, 60 l.) – slabé; Mathias Lasak, výměnkář † 18. 12. 1823, 65 l."
+      ],
+      sources: [
+        "Silius Radicum – Krzanowice 1845 (sl. 379) sn 0005 Nr 35"
+      ]
+    },
+    {
+      id: "susannaSo",
+      name: "Susanna Lassak",
+      maiden: "Socha",
+      line: "struz",
+      cert: "D",
+      b: {"date":"?","year":1775,"approx":true},
+      notes: [
+        "Uvedena jen jako matka Rosalie v křtu vnučky 1845: „Susanna geb. Socha“ (Krzanowice 1845 Nr 35, M zápis). OFB uvádí u vnuka Alberta 1846 jméno „Gruschka (Hruschka)“ – v duplikátu 1846 matčina matka neuvedena; rozpor nevyjasněn."
+      ],
+      sources: [
+        "Silius Radicum – Krzanowice 1845 (sl. 379) sn 0005 Nr 35"
       ]
     },
     {
