@@ -412,18 +412,53 @@ window.RODOKMEN = {
       siblings: ["Bartoloměj (nevlastní? – asi z 1. manželství otce), ∞ 17. 6. 1777 Anna, dcera Jakuba Růžičky, sedláka z Ohrozimi; Lešany č. 32 (Mostkovice O 9271 sk36R, M)"]
     },
     {
+      id: "vaclavKo",
+      name: "Václav Kočí",
+      line: "plachy",
+      cert: "M",
+      b: {"date":"?","year":1645,"approx":true},
+      notes: [
+        "Otec ženicha 10. 2. 1697: „tomass Syn waclawa Koczyho z Krakowcých“ (MZA Bohuslavice 8737 O sk168R; zápis M, příjmení D). Krakovec u Konice. Ztotožnění Tomáše s otcem Martina Kočíře – D."
+      ],
+      sources: [
+        "MZA, Acta Publica, Bohuslavice u Konice 8737 (id 5477), O sken 168"
+      ]
+    },
+    {
       id: "tomasKo",
       name: "Tomáš Kočíř",
       line: "plachy",
       cert: "M",
-      b: {"date":"?","year":1665,"approx":true},
+      b: {"date":"cca 1670–1675","year":1672,"approx":true,"place":"Krakovec (?)"},
       d: {"date":"před 16. 11. 1721","year":1720,"approx":true},
+      father: "vaclavKo",
+      marriage: "10. 2. 1697, Bohuslavice – s Marijanou (dcera † Kryštofa Zlýsana?)",
       notes: [
         "Zemřelý otec ženicha 16. 11. 1721: „Mladenecz Martin Syn: † Tomaſſe Ko-cžiřže z ?rakowe(?)“ (MZA opis30 Mostkovice sk218L; zápis M, příjmení M−). Bydliště „Zrakowe/z Rakowe“ (?) – mimo farnost Mostkovice (K).",
-        "PLA30 (D): „z Rakowe“ = Raková (Velká Raková) nebo Rakůvka (Malá Raková) u Konice – obě fara Bohuslavice u Konice (MZA AP: 8737 = N/O/Z 1658–1706, 8738 = 1707–1745, 8739 = 1745–1803, index N 8758). Křest Martina (~1692–96) zatím nenalezen."
+        "PLA30 (D): „z Rakowe“ = Raková (Velká Raková) nebo Rakůvka (Malá Raková) u Konice – obě fara Bohuslavice u Konice (MZA AP: 8737 = N/O/Z 1658–1706, 8738 = 1707–1745, 8739 = 1745–1803, index N 8758). Křest Martina (~1692–96) zatím nenalezen.",
+        "Sňatek 10. 2. 1697 (PLA34; zápis M, příjmení D): „… w stawu Manželském Potwrzen Počestný Mladenec tomass Syn waclawa Koczyho z Krakowcých z Marijanu Dcerau po neb. Kryštofu(?) Zlýsan(?), Swědkowe toho Jiřík …, Waclaw Koczy(?) oba z Krakowcých“ (8737 O sk168R, str. 337). Obec = Krakovec u Konice (fara Bohuslavice)."
       ],
       sources: [
-        "MZA, Acta Publica, opis30 Mostkovice (id 10397), sken 218"
+        "MZA, Acta Publica, opis30 Mostkovice (id 10397), sken 218",
+        "MZA, Acta Publica, Bohuslavice u Konice 8737 (id 5477), O sken 168 (str. 337)"
+      ],
+      scans: [
+        {"f":"img/1697_snatek_tomas_koci.jpg","t":"Sňatek 10. 2. 1697 Bohuslavice – Tomáš, syn Václava Kočího z Krakovce × Marijana (MZA, Bohuslavice 8737 sken 168)"}
+      ]
+    },
+    {
+      id: "marijanaKo",
+      name: "Marijana Kočí",
+      maiden: "Zlýsan (?)",
+      line: "plachy",
+      cert: "M",
+      b: {"date":"?","year":1675,"approx":true},
+      marriage: "10. 2. 1697, Bohuslavice – s Tomášem Kočím",
+      notes: [
+        "Sňatek 10. 2. 1697: „z Marijanu Dcerau po neb. Kryštofu(?) Zlýsan(?)“ (8737 O sk168R, příjmení otce nejisté); matka při křtu Martina 16. 10. 1697 „Otcy tomass Koczý, Marijana“ (sk101L, M)."
+      ],
+      sources: [
+        "MZA, Acta Publica, Bohuslavice u Konice 8737 (id 5477), O sken 168, N sken 101"
       ]
     },
     {
@@ -431,25 +466,29 @@ window.RODOKMEN = {
       name: "Martin Kočíř (Kočí)",
       line: "plachy",
       cert: "M",
-      b: {"date":"cca 1696","year":1696,"approx":true},
+      b: {"date":"16. 10. 1697 (křest)","year":1697,"place":"Krakovec (fara Bohuslavice u Konice)"},
       d: {"date":"22. 1. 1747","year":1747,"place":"Lešany"},
       father: "tomasKo",
+      mother: "marijanaKo",
       marriage: "16. 11. 1721, Mostkovice – s Marinou (dcera † … Pilavského?)",
       notes: [
         "Zemřelý otec ženichů: 18. 7. 1747 „Joannes filius p. d. Martini Koči Leschanio“ (Mostkovice 9269 O sk216R) a 20. 1. 1753 „Franciscus Kočí p. d. Martini Kočiř … ex Pago Leschan“ (sk235L) – oba M. Vazba na Jana Kočíře, sedláka č. 33 – D. Synové Jan, Franz; Jiří Kočí (svědek 1747, 1753) asi také (K). Úmrtí 1742–47 nehledáno (9269 Z sk~290–318).",
         "Úmrtí/pohřeb 22. 1. 1747 Lešany, 51 let (PLA24, ověřeno koordinátorem): „22. Martinus Cozirz Incola Leschanensis | 51“ (Mostkovice 9269 Z sk302L, rok podle nadpisu „Anno 1747“; M). Jiný Martin Kočí v Z IX/1742–III/1747 není → týž jako otec Jana (∞ VII/1747) a Franze (D+).",
         "Sňatek 16. 11. 1721 Mostkovice (PLA26, off0; ověřeno koordinátorem – zápis M, příjmení ženicha M−, totožnost s Martinem † 1747 D+): „Dne 16 dito w chramu Panie Mostkowskem zdan gest od Pana Kaplana Poctiwy Mladenecz Martin Syn: † Tomaſſe Ko-cžiřže z ?rakowe(?) s Poctiwau diwkau Marinau Dcer: † Stawzinu(?) Pilawskim(?) Swědkowe Giržik Černul(?) a Waczlaw Gaſtek oba z Leſſan“ (MZA opis30, AP id 10397, sk218L). Obec ženicha „Zrakowe/z Rakowe“ nečitelná – mimo farnost (K). Syn Martin pokř. 4. 11. 1722: „Martin | Jan Kaplan | Martin Kocžij″ / Marina z Leſſan | Girzik Žebal(?), Marina manželka geho z Leſſan“ (sk227L, M). Jan (∞ 1747) dosud nenalezen (1722 a VII–VIII/1723 není).",
         "PLA27: dcera Mariana pokř. 16. 1. 1724 „Mariana | Parochus loci | Martinus Koczyj″(?) Mariana ex Pago Leſſan | Georgius Žebal(?), Mariana Uxor ejus ex Leſſan“ (opis30 sk246R, M; stejní kmotři jako 1722 → D+). Jan v N IX/1723–V/1724, 1725 (sk258R–262L), I–IV/1726 není (D).",
-        "PLA29: syn Franciscus pokř. 2. 12. 1728 „Parentes ejus Martinus Kozjný″(?) et Marina e pago Leſſan, et Patrini: Georgius Vrbel(?), et Marina uxor ejus e pago Leſſan“ (opis30 sk289R, M; kmotři jako 1722/1724 → D+; = Franz ∞ 1753 – D). Pozor: v Lešanech i jiné páry Martin × Marina (Přikryl, Kraina). Děti Martina × Mariny: Martin 1722, Mariana 1724, Franz 1728; Jan (∞ 1747) nejspíš 1727 – ročník v opis30 chybí."
+        "PLA29: syn Franciscus pokř. 2. 12. 1728 „Parentes ejus Martinus Kozjný″(?) et Marina e pago Leſſan, et Patrini: Georgius Vrbel(?), et Marina uxor ejus e pago Leſſan“ (opis30 sk289R, M; kmotři jako 1722/1724 → D+; = Franz ∞ 1753 – D). Pozor: v Lešanech i jiné páry Martin × Marina (Přikryl, Kraina). Děti Martina × Mariny: Martin 1722, Mariana 1724, Franz 1728; Jan (∞ 1747) nejspíš 1727 – ročník v opis30 chybí.",
+        "Křest 16. 10. 1697 (PLA34; zápis M, ověřeno koordinátorem; ztotožnění D – sedí otec Tomáš, Krakovec; věk 51 při úmrtí 1747 by dal ~1696): „16 Okřtěno dítě gmenem Martin, Otcy tomass Koczý(?), Marijana, Kmotrowe Matěg Zatloukal, Alžběta Manželka Jakuba Pospíšila z Lass…, oba, … z Krakowcy“ (8737 sk101L, str. 202; měsíc X podle návaznosti). „z Rakowe“ (1721) tedy spíš „z Krakowe“ = Krakovec."
       ],
       sources: [
         "MZA, Acta Publica, Mostkovice 9269 (id 5804), O sken 216, 235",
         "MZA, Acta Publica, Mostkovice 9269 (id 5804), Z sken 302",
-        "MZA, Acta Publica, opis30 Mostkovice (id 10397), sken 218, 227"
+        "MZA, Acta Publica, opis30 Mostkovice (id 10397), sken 218, 227",
+        "MZA, Acta Publica, Bohuslavice u Konice 8737 (id 5477), N sken 101 (str. 202)"
       ],
       scans: [
         {"f":"img/1747_umrti_martin_kocir.jpg","t":"Úmrtí 22. 1. 1747 – Martin Kočíř (Cozirz), obyvatel Lešan, 51 let (MZA, Mostkovice 9269 Z sken 302)"},
-        {"f":"img/1721_snatek_martin_kocir.jpg","t":"Sňatek 16. 11. 1721 Mostkovice – Martin, syn † Tomáše Kočíře × Marina (MZA, opis30 Mostkovice sken 218)"}
+        {"f":"img/1721_snatek_martin_kocir.jpg","t":"Sňatek 16. 11. 1721 Mostkovice – Martin, syn † Tomáše Kočíře × Marina (MZA, opis30 Mostkovice sken 218)"},
+        {"f":"img/1697_krest_martin_koci.jpg","t":"Křest 16. 10. 1697 – Martin, syn Tomáše Kočího a Marijany z Krakovce (MZA, Bohuslavice 8737 sken 101)"}
       ]
     },
     {
