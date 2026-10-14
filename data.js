@@ -420,7 +420,8 @@ window.RODOKMEN = {
       d: {"date":"22. 1. 1747","year":1747,"place":"Lešany"},
       notes: [
         "Zemřelý otec ženichů: 18. 7. 1747 „Joannes filius p. d. Martini Koči Leschanio“ (Mostkovice 9269 O sk216R) a 20. 1. 1753 „Franciscus Kočí p. d. Martini Kočiř … ex Pago Leschan“ (sk235L) – oba M. Vazba na Jana Kočíře, sedláka č. 33 – D. Synové Jan, Franz; Jiří Kočí (svědek 1747, 1753) asi také (K). Úmrtí 1742–47 nehledáno (9269 Z sk~290–318).",
-        "Úmrtí/pohřeb 22. 1. 1747 Lešany, 51 let (PLA24, ověřeno koordinátorem): „22. Martinus Cozirz Incola Leschanensis | 51“ (Mostkovice 9269 Z sk302L, rok podle nadpisu „Anno 1747“; M). Jiný Martin Kočí v Z IX/1742–III/1747 není → týž jako otec Jana (∞ VII/1747) a Franze (D+)."
+        "Úmrtí/pohřeb 22. 1. 1747 Lešany, 51 let (PLA24, ověřeno koordinátorem): „22. Martinus Cozirz Incola Leschanensis | 51“ (Mostkovice 9269 Z sk302L, rok podle nadpisu „Anno 1747“; M). Jiný Martin Kočí v Z IX/1742–III/1747 není → týž jako otec Jana (∞ VII/1747) a Franze (D+).",
+        "PLA25 (K/D, nutno ověřit v plném rozlišení): opis30 (MZA AP 10397, výtahy Mostkovice 1689–1741), sk218L: „Dne 16 dito [XI. 1721] w chrámu Páně Mostkowském zdan gest od Pana Kaplana Poctiwý Mladenecz Martin Syn † Tomaſſe Ko-cžiřže(?) z ?akowe(?) s Poctiwau diwkau Marinau Dcer(au) † Stawzina(?) Pilawskim(?) Swědkowé Girzik Černula(?) a Waclaw Gaſtek(?) oba z Leſſan“ – možný sňatek našeho Martina (otec † Tomáš); příjmení na zlomu řádku nejisté, koordinátor na výřezu off1 nedočetl."
       ],
       sources: [
         "MZA, Acta Publica, Mostkovice 9269 (id 5804), O sken 216, 235",
