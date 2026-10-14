@@ -6004,7 +6004,7 @@ window.RODOKMEN = {
       occ: "chalupník, Dříteň č. 3 / č. 7",
       notes: [
         "Otec M. Anny (sňatek 1840: „Wjt Maršálek, chalupník ze wsi Dřjteň No 3“; křest vnučky 1844: „… ze Dřjtně No 7“). Manželka Alžběta (?) roz. Mšatník (?) – čtení nejisté.",
-        "Křest dcery (Františky?) 24./25. 12. 1813 Dříteň č. 7 (VES-KM2; zápis M, čtení jmen D – ověřeno koordinátorem): otec „Wjt Maršálek, chalupník z Dřjtně“; matka „Alžběta dcera Jana M(y)šatníka, sedláka z Malého Zablat No 5, matky Rozyny rozené Lenáčkowé(?) ze Sedlic(?)“ (Bílá Hůrka N 4, id 2212, sk140, s. 248). Sňatek Víta × Alžběty asi v O 7 (id 2215) oddíl Záblatíčko (kniha řazena po obci nevěsty)."
+        "Křest dcery (Františky?) 24./25. 12. 1823 Dříteň č. 7 (VES-KM2; zápis M, čtení jmen D – ověřeno koordinátorem): otec „Wjt Maršálek, chalupník z Dřjtně“; matka „Alžběta dcera Jana M(y)šatníka, sedláka z Malého Zablat No 5, matky Rozyny rozené Lenáčkowé(?) ze Sedlic(?)“ (Bílá Hůrka N 4, id 2212, sk140, s. 248). Sňatek Víta × Alžběty asi v O 7 (id 2215) oddíl Záblatíčko (kniha řazena po obci nevěsty)."
       ],
       sources: [
         "SOA Třeboň, Bílá Hůrka O 7 (id 2215) sken 92; N 4 (id 2212) sken 171",
@@ -6012,7 +6012,7 @@ window.RODOKMEN = {
       ],
       scans: [
         {"f":"img/1844_krest_marie_kozeluhova_st.jpg","t":"Křest 1844, Dříteň č. 6 – M. Anna Koželuhová, rodiče Josef Koželuh × M. Anna Maršálková (Bílá Hůrka N 4, id 2212, sken 171)"},
-        {"f":"img/1813_krest_marsalkova_driten.jpg","t":"Křest 25. 12. 1813 Dříteň č. 7 – dcera Víta Maršálka a Alžběty, dcery Jana M(y)šatníka ze Záblatíčka č. 5 (SOA Třeboň, Bílá Hůrka N 4, id 2212, sken 140)"}
+        {"f":"img/1823_krest_marsalkova_driten.jpg","t":"Křest 25. 12. 1823 Dříteň č. 7 – dcera Víta Maršálka a Alžběty, dcery Jana M(y)šatníka ze Záblatíčka č. 5 (SOA Třeboň, Bílá Hůrka N 4, id 2212, sken 140)"}
       ]
     },
     {
@@ -6021,15 +6021,16 @@ window.RODOKMEN = {
       maiden: "Mšatník (Myšatník?)",
       line: "vesely",
       cert: "D",
-      b: {"date":"cca 1790","year":1790,"approx":true,"place":"Malé Záblatí (Záblatíčko) č. 5"},
+      b: {"date":"cca 1795","year":1795,"approx":true,"place":"Malé Záblatí (Záblatíčko) č. 5"},
       notes: [
-        "Křest dcery 25. 12. 1813 Dříteň č. 7 (zápis M): „Alžběta dcera Jana M(y)šatníka, sedláka z Malého Zablat No 5, matky Rozyny rozené Lenáčkowé(?) ze Sedlic(?)“ (Bílá Hůrka N 4, id 2212, sk140). Sňatek dcery M. Anny 1840: „Alžběta roz. Mšatník(?)“. Příjmení i jméno matky Roziny čteno nejistě – D."
+        "Křest dcery 25. 12. 1823 Dříteň č. 7 (zápis M): „Alžběta dcera Jana M(y)šatníka, sedláka z Malého Zablat No 5, matky Rozyny rozené Lenáčkowé(?) ze Sedlic(?)“ (Bílá Hůrka N 4, id 2212, sk140). Sňatek dcery M. Anny 1840: „Alžběta roz. Mšatník(?)“. Příjmení i jméno matky Roziny čteno nejistě – D.",
+        "OPRAVA (VES-KM3, ověřeno koordinátorem): záhlaví na sk140 je „Anno Domini 1824“ → křest dcery je z 24./25. 12. 1823, ne 1813. M. Anna Maršálková (*~1812–16, ∞ 1840) tedy může být z dřívějšího manželství Víta – totožnost Alžběty jako její matky opírá jen sňatek 1840 („Alžběta roz. Mšatník(?)“), D."
       ],
       sources: [
         "SOA Třeboň, Bílá Hůrka N 4 (id 2212), sken 140, s. 248"
       ],
       scans: [
-        {"f":"img/1813_krest_marsalkova_driten.jpg","t":"Křest 25. 12. 1813 Dříteň č. 7 (Bílá Hůrka N 4, sken 140)"}
+        {"f":"img/1823_krest_marsalkova_driten.jpg","t":"Křest 25. 12. 1823 Dříteň č. 7 (Bílá Hůrka N 4, sken 140)"}
       ]
     },
     {
