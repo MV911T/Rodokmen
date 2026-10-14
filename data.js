@@ -430,8 +430,8 @@ window.RODOKMEN = {
       name: "Tomáš Kočíř",
       line: "plachy",
       cert: "M",
-      b: {"date":"cca 1670–1675","year":1672,"approx":true,"place":"Raková / Krakovec u Konice"},
-      d: {"date":"před 16. 11. 1721","year":1720,"approx":true},
+      b: {"date":"cca 1665","year":1665,"approx":true,"place":"Raková / Krakovec u Konice"},
+      d: {"date":"pohřeb 18. 4. 1708 (pravděpodobně)","year":1708,"place":"Bohuslavice u Konice"},
       father: "vaclavKo",
       occ: "obyvatel (incola) Velké Rakové u Konice (1700)",
       marriage: "10. 2. 1697, Bohuslavice – s Marijanou (dcera † Kryštofa Zlýsana?)",
@@ -439,15 +439,18 @@ window.RODOKMEN = {
         "Zemřelý otec ženicha 16. 11. 1721: „Mladenecz Martin Syn: † Tomaſſe Ko-cžiřže z ?rakowe(?)“ (MZA opis30 Mostkovice sk218L; zápis M, příjmení M−). Bydliště „Zrakowe/z Rakowe“ (?) – mimo farnost Mostkovice (K).",
         "PLA30 (D): „z Rakowe“ = Raková (Velká Raková) nebo Rakůvka (Malá Raková) u Konice – obě fara Bohuslavice u Konice (MZA AP: 8737 = N/O/Z 1658–1706, 8738 = 1707–1745, 8739 = 1745–1803, index N 8758). Křest Martina (~1692–96) zatím nenalezen.",
         "Sňatek 10. 2. 1697 (PLA34; zápis M, příjmení D): „… w stawu Manželském Potwrzen Počestný Mladenec tomass Syn waclawa Koczyho z Krakowcých z Marijanu Dcerau po neb. Kryštofu(?) Zlýsan(?), Swědkowe toho Jiřík …, Waclaw Koczy(?) oba z Krakowcých“ (8737 O sk168R, str. 337). Obec „z Krakowcých/z Rakowcých“ nejednoznačná; s „z Rakowe“ (1721) a Václavem z Rakové (1677) spíš Raková u Konice (K/D), fara Bohuslavice.",
-        "PLA37: dcera Marina pokř. 5. 3. 1700 „Die 5ta Martij baptizatus est infans Marina filia Thomae Koczirz incolae Magno-Rakoviensis, et Marianae uxoris suae, levantibus: Thoma Servus filio opilionis magno Rakoviensis, [et] Elisabetha Pospíšilka Lasskovio“ (8737 sk121R, okraj „Rakova“, M; ověřeno koordinátorem). Kmotra Alžběta Pospíšilová z Laškova i u Martina 1697 → týž pár (D+). Tomáš 1700 ve Velké Rakové (M); 1697 snad Krakovec (přestěhování? K). Václav Kočíř: × Dorota (Rosina 4. 2. 1676, Matouš 1677, Raková) a × Anna (Jakub 13. 7. 1681, spíš Krakovec) – 2. sňatek nebo dva Václavové (K)."
+        "PLA37: dcera Marina pokř. 5. 3. 1700 „Die 5ta Martij baptizatus est infans Marina filia Thomae Koczirz incolae Magno-Rakoviensis, et Marianae uxoris suae, levantibus: Thoma Servus filio opilionis magno Rakoviensis, [et] Elisabetha Pospíšilka Lasskovio“ (8737 sk121R, okraj „Rakova“, M; ověřeno koordinátorem). Kmotra Alžběta Pospíšilová z Laškova i u Martina 1697 → týž pár (D+). Tomáš 1700 ve Velké Rakové (M); 1697 snad Krakovec (přestěhování? K). Václav Kočíř: × Dorota (Rosina 4. 2. 1676, Matouš 1677, Raková) a × Anna (Jakub 13. 7. 1681, spíš Krakovec) – 2. sňatek nebo dva Václavové (K).",
+        "Pravděpodobný pohřeb 18. 4. 1708 (PLA41; ověřeno koordinátorem na výřezu – D+): okraj „z Rakowey(?)“ | „18 | Pochowan Tomass Koczyrz w wieku swem 43 leta w Chramu Panie Bohuslawskem Pochowany“ (MZA Bohuslavice 8738 Z sk204L, str. 8; měsíc IV podle záhlaví) → *~1665. Okraj čtu „z Rakowey“ = z Rakové (agent četl Krakovec). V Z 1707–XI/1721 jiný kandidát není (kromě nečteného 1717–IV/1718)."
       ],
       sources: [
         "MZA, Acta Publica, opis30 Mostkovice (id 10397), sken 218",
-        "MZA, Acta Publica, Bohuslavice u Konice 8737 (id 5477), O sken 168 (str. 337)"
+        "MZA, Acta Publica, Bohuslavice u Konice 8737 (id 5477), O sken 168 (str. 337)",
+        "MZA, Acta Publica, Bohuslavice 8738 (id 5478), Z sken 204 (str. 8)"
       ],
       scans: [
         {"f":"img/1697_snatek_tomas_koci.jpg","t":"Sňatek 10. 2. 1697 Bohuslavice – Tomáš, syn Václava Kočího z Krakovce × Marijana (MZA, Bohuslavice 8737 sken 168)"},
-        {"f":"img/1700_krest_marina_kocir.jpg","t":"Křest 5. 3. 1700 – Marina, dcera Tomáše Kočíře, obyvatele Velké Rakové, a Mariany (MZA, Bohuslavice 8737 sken 121)"}
+        {"f":"img/1700_krest_marina_kocir.jpg","t":"Křest 5. 3. 1700 – Marina, dcera Tomáše Kočíře, obyvatele Velké Rakové, a Mariany (MZA, Bohuslavice 8737 sken 121)"},
+        {"f":"img/1708_pohreb_tomas_kocir.jpg","t":"Pohřeb 18. 4. 1708 Bohuslavice – Tomáš Kočíř (Koczyrz), 43 let (MZA, Bohuslavice 8738 Z sken 204) – pravděpodobně"}
       ]
     },
     {
