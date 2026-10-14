@@ -4583,7 +4583,8 @@ window.RODOKMEN = {
       marriage: "25. 2. 1748, Bolatice – s Annou Sniehotovou",
       notes: [
         "Otec ženicha při sňatku 6. 2. 1775: „Frantz Sohn des Bauern Anton Herudek“ (H III 4 sk5, M). Manželka Anna; děti v H III 1 (JIR-B3/B6): Fabian 1748, Franciscus 22. 3. 1751, Joannes 1753 (Fabian ≠ Fabian ∞ 1739 Hedvika Fusová).",
-        "Sňatek 25. 2. 1748 (M; JIR-B9): „Antonius Herudek Adoles: Anna Sniehotowa Virg. | Andreas Duda, Jacobus Rzehanek | Bolati“ (H III 1 sk49L, fol. 57v). Otcové neuvedeni."
+        "Sňatek 25. 2. 1748 (M; JIR-B9): „Antonius Herudek Adoles: Anna Sniehotowa Virg. | Andreas Duda, Jacobus Rzehanek | Bolati“ (H III 1 sk49L, fol. 57v). Otcové neuvedeni.",
+        "JIR-B10 (K): kandidáti na rodiče – Ondřej Herudek × Marina ∞ 31. 5. 1718, Wawra Herudek vdovec ∞ 25. 9. 1718 (H III 1 sk41R); jiný Herudek v sňatcích 1716–31 není. Anton žil 6. 2. 1775."
       ],
       sources: [
         "ZA Opava, NAD 165 Sbírka matrik, Bolatice H III 4, sken 5; H III 1",
@@ -4715,7 +4716,8 @@ window.RODOKMEN = {
       cert: "M",
       b: {"date":"?","year":1700,"approx":true},
       notes: [
-        "Otec ženicha 14. 10. 1754: „Simon Jacobi Sliwka filius“ (H III 1 sk51R, M). 6. 7. 1744 „Jacobus Sliwka viduus“ ∞ vdova Veronika Nawratová (sk48L) – asi týž (K); matka Simona tedy 1. žena."
+        "Otec ženicha 14. 10. 1754: „Simon Jacobi Sliwka filius“ (H III 1 sk51R, M). 6. 7. 1744 „Jacobus Sliwka viduus“ ∞ vdova Veronika Nawratová (sk48L) – asi týž (K); matka Simona tedy 1. žena.",
+        "JIR-B10: dcera Rosina † 2. 4. 1763, 17 let „Rosina filia Jacobi Sliwka“ (H III 1 sk88L, M) – asi z 2. manželství (∞ 1744 Veronika Nawratová, K). Úmrtí Jakuba v pohřbech XI/1754–V/1764 není."
       ],
       sources: [
         "ZA Opava, NAD 165 Sbírka matrik, Bolatice H III 1, sken 51; sken 48"
@@ -4728,7 +4730,8 @@ window.RODOKMEN = {
       cert: "M",
       b: {"date":"?","year":1705,"approx":true},
       notes: [
-        "Otec nevěsty 14. 10. 1754: „Barbara filia Simonis Kolarzik“ (Bolatice H III 1 sk51R, M)."
+        "Otec nevěsty 14. 10. 1754: „Barbara filia Simonis Kolarzik“ (Bolatice H III 1 sk51R, M).",
+        "JIR-B10 (K): kandidát Simon Kolarzik × Esthera ∞ 23. 1. 1729 (H III 1 sk43R); pozor 22. 1. 1731 Simon Kolarzik(?) × Magdalena (sk44R)."
       ],
       sources: [
         "ZA Opava, NAD 165 Sbírka matrik, Bolatice H III 1, sken 51"
@@ -4756,12 +4759,13 @@ window.RODOKMEN = {
       line: "jirik",
       cert: "M",
       b: {"date":"?","year":1730,"approx":true},
-      d: {"date":"před 20. 2. 1786","year":1785,"approx":true},
+      d: {"date":"1772–1786","year":1780,"approx":true},
       father: "jakubSl",
       marriage: "14. 10. 1754, Bolatice – s Barbarou Kolarzikovou",
       notes: [
         "Zemřelý otec ženicha 20. 2. 1786: „der Johannes des sel. Simon Sliwka leibl. Sohn“ (Bolatice H III 4 sk14, M).",
-        "Sňatek 14. 10. 1754 (M; JIR-B9, ověřeno koordinátorem): „Simon Jacobi Sliwka filius, Barbara filia Simonis Kolarzik, sponsi honesti, ambo Bollatitio | Nicolaus Lisska, Jacobus Duda“ (H III 1 sk51R, fol. 60)."
+        "Sňatek 14. 10. 1754 (M; JIR-B9, ověřeno koordinátorem): „Simon Jacobi Sliwka filius, Barbara filia Simonis Kolarzik, sponsi honesti, ambo Bollatitio | Nicolaus Lisska, Jacobus Duda“ (H III 1 sk51R, fol. 60).",
+        "JIR-B10: děti podle indexu H III 11 (D): Veronica 4. 2. 1766, Rosalia 24. 8. 1769, Josepha 15. 3. 1773 („Simon. Barbara geb. Kollarzik“); dcera Theresia † 19. 7. 1763 (H III 1 sk89L, M) → Simon žil ještě ~VI/1772, † 1772–1786 (H III 5). Úmrtí VI/1764–XII/1769 se v Bolaticích nedochovala; křty před ~1741 také ne."
       ],
       sources: [
         "ZA Opava, NAD 165 Sbírka matrik, Bolatice H III 4, sken 14",
