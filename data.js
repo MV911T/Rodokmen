@@ -4533,19 +4533,54 @@ window.RODOKMEN = {
       ]
     },
     {
+      id: "antonHe",
+      name: "Anton Herudek",
+      line: "jirik",
+      cert: "M",
+      b: {"date":"?","year":1720,"approx":true},
+      occ: "sedlák (Bauer) v Bolaticích",
+      notes: [
+        "Otec ženicha při sňatku 6. 2. 1775: „Frantz Sohn des Bauern Anton Herudek“ (H III 4 sk5, M). Manželka Anna; děti v H III 1 (JIR-B3/B6): Fabian 1748, Franciscus 22. 3. 1751, Joannes 1753 (Fabian ≠ Fabian ∞ 1739 Hedvika Fusová)."
+      ],
+      sources: [
+        "ZA Opava, NAD 165 Sbírka matrik, Bolatice H III 4, sken 5; H III 1"
+      ]
+    },
+    {
       id: "franzHe",
       name: "Franz Herudek",
       line: "jirik",
-      cert: "D",
-      b: {"date":"?","year":1745,"approx":true},
+      cert: "M",
+      b: {"date":"22. 3. 1751 (křest?)","year":1751,"approx":true},
+      father: "antonHe",
       occ: "podruh (Inlieger, 1775), později zahradník",
       notes: [
         "Uveden jako otec Barbary (sňatek 1794, žil) a 1797 „Frantz Herudek Gärt[ner]“ (H III 2 sk117). Kandidát (K): Franz Herudek, zahradník × Susanna – dítě 1791 (H III 2 sk87) → Susanna možná matka Barbary (neověřeno). Vztah k Martinu Herudkovi (naše linie) neurčen.",
-        "Manželka Susanna roz. Bartonek/Bartoňková (křest Barbary 1775, M). Děti podle indexu H III 11 (sk65–66): Barbara 1775, Ferdinand 30. 5. 1778, Franz 4. 10. 1780, Caspar 6. 1. 1786, Julianna 1. 5. 1791. Původ neurčen – syn Fabiana není (žádný Franciscus u Fabiana 1742–60); kandidát (K): Franciscus, syn Antonia Herudka × Anny, pokřtěný v březnu toho roku, kdy se narodil i Johann, syn Fabiana."
+        "Manželka Susanna roz. Bartonek/Bartoňková (křest Barbary 1775, M). Děti podle indexu H III 11 (sk65–66): Barbara 1775, Ferdinand 30. 5. 1778, Franz 4. 10. 1780, Caspar 6. 1. 1786, Julianna 1. 5. 1791. Původ neurčen – syn Fabiana není (žádný Franciscus u Fabiana 1742–60); kandidát (K): Franciscus, syn Antonia Herudka × Anny, pokřtěný v březnu toho roku, kdy se narodil i Johann, syn Fabiana.",
+        "Sňatek 6. 2. 1775 Bolatice, kostel sv. Stanislava (M; JIR-B7, ověřeno koordinátorem): „der Junggesell Frantz Sohn des Bauern Anton Herudek mit der Jungfrau Susanna Tochter des Gärtners Philipp Bartonetz beyde von Bollatitz, copulirt P. Hieronimus Schallmajer Administrator, Zeugen waren Wenzel Kramartzik Bauer und Joseph Fus Gärtner“ (H III 4 sk5). Pravděpodobně Franciscus pokř. 22. 3. 1751, syn Antona Herudka × Anny (H III 1 sk18R; K–D). Franz tedy NENÍ syn Fabiana."
       ],
       sources: [
         "ZA Opava, NAD 165 Sbírka matrik, Bolatice H III 4, sken 28",
-        "ZA Opava, NAD 165 Sbírka matrik, Bolatice H III 2, sken 117"
+        "ZA Opava, NAD 165 Sbírka matrik, Bolatice H III 2, sken 117",
+        "ZA Opava, NAD 165 Sbírka matrik, Bolatice H III 4 (O 1770–1840), sken 5"
+      ],
+      scans: [
+        {"f":"img/1775_snatek_franz_herudek.jpg","t":"Sňatek 6. 2. 1775 Bolatice – Franz, syn sedláka Antona Herudka, a Susanna, dcera zahradníka Philippa Bartonetze (ZA Opava, Bolatice H III 4 sken 5)"}
+      ],
+      m: {}
+    },
+    {
+      id: "philippBa",
+      name: "Philipp Bartonetz",
+      line: "jirik",
+      cert: "M",
+      b: {"date":"?","year":1725,"approx":true},
+      occ: "zahradník (Gärtner) v Bolaticích",
+      notes: [
+        "Otec nevěsty při sňatku 6. 2. 1775: „Susanna Tochter des Gärtners Philipp Bartonetz … von Bollatitz“ (H III 4 sk5, M)."
+      ],
+      sources: [
+        "ZA Opava, NAD 165 Sbírka matrik, Bolatice H III 4, sken 5"
       ]
     },
     {
@@ -4555,11 +4590,14 @@ window.RODOKMEN = {
       line: "jirik",
       cert: "M",
       b: {"date":"?","year":1750,"approx":true},
+      father: "philippBa",
       notes: [
-        "Křest dcery Barbary 29. 11. 1775 Bolatice (M): „von seinem Weibe Susanna Bartonkin“ (H III 2 sk40). Manželka Franze Herudka; další děti 1778–1791 (index H III 11)."
+        "Křest dcery Barbary 29. 11. 1775 Bolatice (M): „von seinem Weibe Susanna Bartonkin“ (H III 2 sk40). Manželka Franze Herudka; další děti 1778–1791 (index H III 11).",
+        "Sňatek 6. 2. 1775 s Franzem Herudkem: „Susanna Tochter des Gärtners Philipp Bartonetz … von Bollatitz“ (H III 4 sk5, M)."
       ],
       sources: [
-        "ZA Opava, NAD 165 Sbírka matrik, Bolatice H III 2, sken 40"
+        "ZA Opava, NAD 165 Sbírka matrik, Bolatice H III 2, sken 40",
+        "ZA Opava, NAD 165 Sbírka matrik, Bolatice H III 4, sken 5"
       ]
     },
     {
