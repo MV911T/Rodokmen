@@ -4546,11 +4546,32 @@ window.RODOKMEN = {
       cert: "M",
       b: {"date":"?","year":1720,"approx":true},
       occ: "sedlák (Bauer) v Bolaticích",
+      marriage: "25. 2. 1748, Bolatice – s Annou Sniehotovou",
       notes: [
-        "Otec ženicha při sňatku 6. 2. 1775: „Frantz Sohn des Bauern Anton Herudek“ (H III 4 sk5, M). Manželka Anna; děti v H III 1 (JIR-B3/B6): Fabian 1748, Franciscus 22. 3. 1751, Joannes 1753 (Fabian ≠ Fabian ∞ 1739 Hedvika Fusová)."
+        "Otec ženicha při sňatku 6. 2. 1775: „Frantz Sohn des Bauern Anton Herudek“ (H III 4 sk5, M). Manželka Anna; děti v H III 1 (JIR-B3/B6): Fabian 1748, Franciscus 22. 3. 1751, Joannes 1753 (Fabian ≠ Fabian ∞ 1739 Hedvika Fusová).",
+        "Sňatek 25. 2. 1748 (M; JIR-B9): „Antonius Herudek Adoles: Anna Sniehotowa Virg. | Andreas Duda, Jacobus Rzehanek | Bolati“ (H III 1 sk49L, fol. 57v). Otcové neuvedeni."
       ],
       sources: [
-        "ZA Opava, NAD 165 Sbírka matrik, Bolatice H III 4, sken 5; H III 1"
+        "ZA Opava, NAD 165 Sbírka matrik, Bolatice H III 4, sken 5; H III 1",
+        "ZA Opava, NAD 165 Sbírka matrik, Bolatice H III 1, sken 49 (fol. 57v)"
+      ],
+      scans: [
+        {"f":"img/1748_snatek_herudek_sniehota.jpg","t":"Sňatek 25. 2. 1748 Bolatice – Antonius Herudek, mládenec × Anna Sniehotová, panna (ZA Opava, Bolatice H III 1 sken 49)"}
+      ]
+    },
+    {
+      id: "annaSn",
+      name: "Anna Herudek",
+      maiden: "Sniehota (Sniehotowa)",
+      line: "jirik",
+      cert: "M",
+      b: {"date":"?","year":1725,"approx":true},
+      marriage: "25. 2. 1748, Bolatice – s Antonem Herudkem",
+      notes: [
+        "Sňatek 25. 2. 1748: „Antonius Herudek Adoles: Anna Sniehotowa Virg.“ (H III 1 sk49L, M). Matka Franze (pokř. 22. 3. 1751 „Antonius Herudek, Anna“). Otec neuveden."
+      ],
+      sources: [
+        "ZA Opava, NAD 165 Sbírka matrik, Bolatice H III 1, sken 49"
       ]
     },
     {
@@ -4560,6 +4581,7 @@ window.RODOKMEN = {
       cert: "M",
       b: {"date":"22. 3. 1751 (křest)","year":1751,"place":"Bolatice"},
       father: "antonHe",
+      mother: "annaSn",
       occ: "podruh (Inlieger, 1775), později zahradník",
       marriage: "6. 2. 1775, Bolatice – se Susannou Bartonetzovou",
       notes: [
@@ -4585,22 +4607,30 @@ window.RODOKMEN = {
       cert: "M",
       b: {"date":"?","year":1725,"approx":true},
       occ: "zahradník (Gärtner) v Bolaticích",
+      marriage: "10. 11. 1748, Bolatice – s Veronikou Dudovou",
       notes: [
         "Otec nevěsty při sňatku 6. 2. 1775: „Susanna Tochter des Gärtners Philipp Bartonetz … von Bollatitz“ (H III 4 sk5, M).",
-        "V H III 1 „Philippus Bartoniecz et Veronica“: Susanna 1749, dítě 1752, Franciscus 1760 („Hortulanus“). Souběžně „Georgius Bartonicz & Veronica“ 1748–52 – možná týž muž (K)."
+        "V H III 1 „Philippus Bartoniecz et Veronica“: Susanna 1749, dítě 1752, Franciscus 1760 („Hortulanus“). Souběžně „Georgius Bartonicz & Veronica“ 1748–52 – jiný pár (∞ 19. 2. 1748 Veronica Sniehotová).",
+        "Sňatek 10. 11. 1748 (M; JIR-B9): „Philippus Bartonicz Adolesc: et Veronica Dudowa Virgo | Joannes Duda, Mathaeus Duda | Bolatit.“ (H III 1 sk49R, fol. 58). Georg Bartoniz × Veronica Sniehotová (∞ 19. 2. 1748) je JINÝ pár."
       ],
       sources: [
-        "ZA Opava, NAD 165 Sbírka matrik, Bolatice H III 4, sken 5"
+        "ZA Opava, NAD 165 Sbírka matrik, Bolatice H III 4, sken 5",
+        "ZA Opava, NAD 165 Sbírka matrik, Bolatice H III 1, sken 49 (fol. 58)"
+      ],
+      scans: [
+        {"f":"img/1748_snatek_bartonicz_duda.jpg","t":"Sňatek 10. 11. 1748 Bolatice – Philippus Bartonicz × Veronika Dudová (ZA Opava, Bolatice H III 1 sken 49)"}
       ]
     },
     {
       id: "veronikaBa",
       name: "Veronika Bartoniecz",
+      maiden: "Duda (Dudowa)",
       line: "jirik",
       cert: "M",
       b: {"date":"?","year":1725,"approx":true},
       notes: [
-        "Matka Susanny při křtu 9. 8. 1749: „Philippus Bartoniecz et Veronica“ (H III 1 sk16R, M). Rodné příjmení neznámé."
+        "Matka Susanny při křtu 9. 8. 1749: „Philippus Bartoniecz et Veronica“ (H III 1 sk16R, M).",
+        "Sňatek 10. 11. 1748 „Philippus Bartonicz … et Veronica Dudowa Virgo“, svědci Joannes a Mathaeus Duda (H III 1 sk49R, M). Otec neuveden."
       ],
       sources: [
         "ZA Opava, NAD 165 Sbírka matrik, Bolatice H III 1, sken 16"
@@ -4645,17 +4675,66 @@ window.RODOKMEN = {
       ]
     },
     {
+      id: "jakubSl",
+      name: "Jakub (Jacobus) Sliwka",
+      line: "jirik",
+      cert: "M",
+      b: {"date":"?","year":1700,"approx":true},
+      notes: [
+        "Otec ženicha 14. 10. 1754: „Simon Jacobi Sliwka filius“ (H III 1 sk51R, M). 6. 7. 1744 „Jacobus Sliwka viduus“ ∞ vdova Veronika Nawratová (sk48L) – asi týž (K); matka Simona tedy 1. žena."
+      ],
+      sources: [
+        "ZA Opava, NAD 165 Sbírka matrik, Bolatice H III 1, sken 51; sken 48"
+      ]
+    },
+    {
+      id: "simonKo",
+      name: "Simon Kolarzik",
+      line: "jirik",
+      cert: "M",
+      b: {"date":"?","year":1705,"approx":true},
+      notes: [
+        "Otec nevěsty 14. 10. 1754: „Barbara filia Simonis Kolarzik“ (Bolatice H III 1 sk51R, M)."
+      ],
+      sources: [
+        "ZA Opava, NAD 165 Sbírka matrik, Bolatice H III 1, sken 51"
+      ]
+    },
+    {
+      id: "barbaraKo",
+      name: "Barbara Sliwka",
+      maiden: "Kolarzik",
+      line: "jirik",
+      cert: "M",
+      b: {"date":"?","year":1734,"approx":true},
+      father: "simonKo",
+      marriage: "14. 10. 1754, Bolatice – se Simonem Sliwkou",
+      notes: [
+        "Sňatek 14. 10. 1754: „Barbara filia Simonis Kolarzik … ambo Bollatitio“ (H III 1 sk51R, M); matka Johanna Franze Sliwky (pokř. 25. 6. 1764)."
+      ],
+      sources: [
+        "ZA Opava, NAD 165 Sbírka matrik, Bolatice H III 1, sken 51"
+      ]
+    },
+    {
       id: "simonSl",
       name: "Simon Sliwka",
       line: "jirik",
       cert: "M",
-      b: {"date":"?","year":1735,"approx":true},
+      b: {"date":"?","year":1730,"approx":true},
       d: {"date":"před 20. 2. 1786","year":1785,"approx":true},
+      father: "jakubSl",
+      marriage: "14. 10. 1754, Bolatice – s Barbarou Kolarzikovou",
       notes: [
-        "Zemřelý otec ženicha 20. 2. 1786: „der Johannes des sel. Simon Sliwka leibl. Sohn“ (Bolatice H III 4 sk14, M)."
+        "Zemřelý otec ženicha 20. 2. 1786: „der Johannes des sel. Simon Sliwka leibl. Sohn“ (Bolatice H III 4 sk14, M).",
+        "Sňatek 14. 10. 1754 (M; JIR-B9, ověřeno koordinátorem): „Simon Jacobi Sliwka filius, Barbara filia Simonis Kolarzik, sponsi honesti, ambo Bollatitio | Nicolaus Lisska, Jacobus Duda“ (H III 1 sk51R, fol. 60)."
       ],
       sources: [
-        "ZA Opava, NAD 165 Sbírka matrik, Bolatice H III 4, sken 14"
+        "ZA Opava, NAD 165 Sbírka matrik, Bolatice H III 4, sken 14",
+        "ZA Opava, NAD 165 Sbírka matrik, Bolatice H III 1, sken 51 (fol. 60)"
+      ],
+      scans: [
+        {"f":"img/1754_snatek_sliwka_kolarzik.jpg","t":"Sňatek 14. 10. 1754 Bolatice – Simon, syn Jakuba Sliwky × Barbara, dcera Simona Kolarzika (ZA Opava, Bolatice H III 1 sken 51)"}
       ]
     },
     {
@@ -4663,20 +4742,25 @@ window.RODOKMEN = {
       name: "Johann (Jan) Sliwka",
       line: "jirik",
       cert: "D",
-      b: {"date":"cca 1764","year":1764,"approx":true,"place":"Bolatice"},
+      b: {"date":"25. 6. 1764 (křest)","year":1764,"place":"Bolatice"},
+      d: {"date":"1842 (přípisek)","year":1842,"approx":true},
       father: "simonSl",
+      mother: "barbaraKo",
       occ: "domkář (Häusler, 1801), sedlák (colonus, 1821) v Bolaticích",
       marriage: "20. 2. 1786, Bolatice – s Veronikou Dudovou",
       notes: [
         "Uveden jako otec nevěsty Mariany 14. 11. 1821: „Mariana filia Joannis Sliwka coloni“ (H III 4 sk72).",
-        "Sňatek 20. 2. 1786 Bolatice, kostel sv. Stanislava (M; JIR-B8, ověřeno koordinátorem): „der Johannes des sel. Simon Sliwka leibl. Sohn, mit der Jungfer Verona Duda leibl. Tochter beyde von hier, copulirt Simon Ossmanczik, Zeugen waren Stanislaus Duda Freyhäusler und Bartek Sliwka … Er 22 Sie 20 Jahr“ (H III 4 sk14). Děti podle indexu H III 11: Valentin 8. 2. 1787, Urban ~VI/1790, Stanislaus 19. 5. 1794, Franz 5. 9. 1796, Simon 9. 6. 1799, Marianna 28. 12. 1801."
+        "Sňatek 20. 2. 1786 Bolatice, kostel sv. Stanislava (M; JIR-B8, ověřeno koordinátorem): „der Johannes des sel. Simon Sliwka leibl. Sohn, mit der Jungfer Verona Duda leibl. Tochter beyde von hier, copulirt Simon Ossmanczik, Zeugen waren Stanislaus Duda Freyhäusler und Bartek Sliwka … Er 22 Sie 20 Jahr“ (H III 4 sk14). Děti podle indexu H III 11: Valentin 8. 2. 1787, Urban ~VI/1790, Stanislaus 19. 5. 1794, Franz 5. 9. 1796, Simon 9. 6. 1799, Marianna 28. 12. 1801.",
+        "Křest 25. 6. 1764 (M; JIR-B9, ověřeno koordinátorem): „Item Junij 25 | P. Josephus | Joannes Franciscus [+ 1842] | Simon Sliwka, Barbara uxor ejus | Franciscus Nawrath, Juliana Kolarzykin“ (H III 1 sk37L). Ztotožnění s ženichem 1786 (22 l., syn † Simona) – D+. Rok úmrtí 1842 jen z pozdějšího přípisku."
       ],
       sources: [
         "ZA Opava, NAD 165 Sbírka matrik, Bolatice H III 4 (O 1770–1840), sken 72 (1821 č. 19)",
-        "ZA Opava, NAD 165 Sbírka matrik, Bolatice H III 4 (O 1770–1840), sken 14"
+        "ZA Opava, NAD 165 Sbírka matrik, Bolatice H III 4 (O 1770–1840), sken 14",
+        "ZA Opava, NAD 165 Sbírka matrik, Bolatice H III 1, sken 37"
       ],
       scans: [
-        {"f":"img/1786_snatek_sliwka_duda.jpg","t":"Sňatek 20. 2. 1786 Bolatice – Johann, syn † Simona Sliwky, a Verona Dudová (ZA Opava, Bolatice H III 4 sken 14)"}
+        {"f":"img/1786_snatek_sliwka_duda.jpg","t":"Sňatek 20. 2. 1786 Bolatice – Johann, syn † Simona Sliwky, a Verona Dudová (ZA Opava, Bolatice H III 4 sken 14)"},
+        {"f":"img/1764_krest_johann_sliwka.jpg","t":"Křest 25. 6. 1764 Bolatice – Joannes Franciscus, syn Simona Sliwky a Barbary (ZA Opava, Bolatice H III 1 sken 37)"}
       ]
     },
     {
