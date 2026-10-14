@@ -408,7 +408,8 @@ window.RODOKMEN = {
         {"f":"img/1801_krest_jan_kocir.jpg","t":"Křest 12. 12. 1801, Kralice č. 65 (MZA 9178 sken 26)"},
         {"f":"img/1824_snatek_kocir_navratilova.jpg","t":"Sňatek 27. 1. 1824, Kralice č. 65 (MZA 9179 sken 23)"},
         {"f":"img/1773_krest_jakub_kocir.jpg","t":"Křest 17. 7. 1773 Lešany č. 33 – Jakub, syn sedláka Jana Kočíře a Terezie (MZA, Mostkovice N 9270, sken 217)"}
-      ]
+      ],
+      siblings: ["Bartoloměj (nevlastní? – asi z 1. manželství otce), ∞ 17. 6. [~1776] Anna, dcera Jakuba Růžičky, sedláka z Ohrozimi; Lešany č. 32 (Mostkovice O 9271 sk36R, M; rok K)"]
     },
     {
       id: "janKoSt",
@@ -422,7 +423,8 @@ window.RODOKMEN = {
         "Otec Jakuba (sňatek 1797: „Sohn nach dem + Johann Kočiř Bauer von Ar…schan“) – obec nečitelná.",
         "PLA8 (14. 10. 2026): sňatek Jakuba 25. 11. 1797 Kralice (MZA 9179 sk10, fol. 14) přečten v plném rozlišení: „Jakob Sohn nach dem + Johann Kočiř Bauer von D[r]ahan“ – obec nejspíš Drahany (okr. Prostějov), D; dřívější čtení „Ar…schan“ opraveno. Výřez 00_klicove_doklady/1797-11-25_snatek_Jakob_Kocir_otec_Johann_von_Drahan…",
         "Původ „von Leſchan“ = Lešany u Prostějova (D, PLA13).",
-        "Sedlák v Lešanech č. 33 (fara Mostkovice); manželka Terezie; 18. 6. 1773 kmotři „Joannes Kocirz Rust: et Teresia uxor ejus Leschanio“ (9270 sk216, M)."
+        "Sedlák v Lešanech č. 33 (fara Mostkovice); manželka Terezie; 18. 6. 1773 kmotři „Joannes Kocirz Rust: et Teresia uxor ejus Leschanio“ (9270 sk216, M).",
+        "PLA20: syn Bartoloměj se ženil 17. 6. [~1776]: „Bartholomaeus filius Joannis Kočiř rustici Leschanio, et Anna filia Jacobi Rusiczka rustici Ohrozimio“ (Mostkovice O 9271 sk36R, ověřeno koordinátorem) → Jan narozen nejspíš do ~1730, Terezie možná 2. žena (K). Úmrtí Jana: v Mostkovice Z 1773–84 (rejstřík) ani Ohrozim Z 1785–97 není (D); na č. 33 v letech 1795–97 sedlák jiného příjmení (Paul ?ubiger?)."
       ],
       sources: [
         "MZA 9179 fol. 14, sken 10"
