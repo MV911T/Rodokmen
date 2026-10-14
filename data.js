@@ -1215,7 +1215,7 @@ window.RODOKMEN = {
       scans: [
         {"f":"img/1836_krest_tomasz_dydowicz.jpg","t":"Křest Tomasze 28. 2. 1836, Wierzchosławice (U 1824–1845 s. 405)"}
       ],
-      siblings: ["Marianna *~1811 (D) – ∞ 1) Vojtěch Klimek, 2) 21. 11. 1849 Zalasowa Paweł Peca","Mikołaj (Dyda) *4. 12. 1802 Dębno (M) – ∞ 25. 9. 1826 Szczucin Tekla Kogut","Marianna *19. 6. 1804 Dębno (M)","Katarzyna *~1808 (M – ohlášky 1826) – ∞ 1826 Józef Bogdański, Sitnica"]
+      siblings: ["Marianna *~1811 (D) – ∞ 1) Vojtěch Klimek, 2) 21. 11. 1849 Zalasowa Paweł Peca","Mikołaj (Dyda) *4. 12. 1802 Dębno (M) – ∞ 25. 9. 1826 Szczucin Tekla Kogut","Marianna *19. 6. 1804 Dębno (M)","Katarzyna *~1808 (M – ohlášky 1826) – ∞ 1826 Józef Bogdański, Sitnica","Mikołaj (Nicolaus) Dyda *4. 12. 1802 Dębno (M), ∞ IX/1826 Szczucin Tekla Rogacionka(?) (M)","Marianna *19. 6. 1804 Dębno (M), ∞ 1. Vojtěch Klimek, 2. 21. 11. 1849 Zalasowa Paweł Peca (D)","Katarzyna, ohlášky 4. 11. 1826 Rozembark – Józef Bogdański (M)"]
     },
     {
       id: "wojciechDy",
@@ -1231,7 +1231,8 @@ window.RODOKMEN = {
         "Ovčák (owczarz); rodina: Dębno 1802–1804 (příjmení i „Dyda“) → Rozembark, farnost Rożnowice (1826) → Sitnica († 1832). Doloženo ohláškami dcery Katarzyny 1826 (M) a křty dětí v Dębnie (index Geneteka, D).",
         "Dcera (D) Marianna *~1811, vdova po Vojtěchu Klimkovi, 2. sňatek 21. 11. 1849 Zalasowa s Pawłem Pecou (uvádí rodiče Adalbert Dydowicz × Gertruda Chrapusta). Rod Dydowicz – ovčáci, stěhování Sitnica (Rożnowice) → Tarnowiec → Wierzchosławice → Zalasowa.",
         "Otec Józefa (křest vnuka Tomasze 1836); manželka Gertruda.",
-        "Úmrtí 4. 6. 1832 Sitnica č. 16 (zápis M, přečten v plném rozlišení – GAL20): „Junius | 4. | 16. | Adalbertus Dydowicz Opilio | 1 | 1 | 55 | Munitus Sacramentis Sstis, ordinaria“ (Skanoteka id5886 sy5545 sk024). Totožnost PRAVDĚPODOBNÁ (D): sedí jméno, ovčák, věk (*~1777; při sňatku 1802 22 let) a kraj (Rozembark 1826 tatáž farnost); manželka ani rodiče neuvedeni."
+        "Úmrtí 4. 6. 1832 Sitnica č. 16 (zápis M, přečten v plném rozlišení – GAL20): „Junius | 4. | 16. | Adalbertus Dydowicz Opilio | 1 | 1 | 55 | Munitus Sacramentis Sstis, ordinaria“ (Skanoteka id5886 sy5545 sk024). Totožnost PRAVDĚPODOBNÁ (D): sedí jméno, ovčák, věk (*~1777; při sňatku 1802 22 let) a kraj (Rozembark 1826 tatáž farnost); manželka ani rodiče neuvedeni.",
+        "Sňatek syna Mikołaje IX/1826 Szczucin č. 1 (M; GAL23): „Nicolaus Dyda filius Adalberti et Gertrudis viventis“, 25 l., kolon × „Tecla Rogacionka? filia Josephi [†] et Hedvigis“, 20 l.; souhlas rodičů „Woyciech Dyda Oyciec, Gertruda Dydowa Matka“ (Szczucin M 1786–1854 sy4500 sk020, s. 152) → 1826 rodina v Szczucinu, psána „Dyda“."
       ],
       sources: [
         "Skanoteka PTG id4239 (Dębno, pow. brzeski; orig. AD Tarnów): M Dębno 1784–1865 (sy4515) sken 012, s. 14; U Dębno 1784–1842 (sy3515) skeny 022 a 024",
