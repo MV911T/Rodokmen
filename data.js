@@ -3010,7 +3010,7 @@ window.RODOKMEN = {
       line: "matusu",
       cert: "M",
       b: {"date":"?","year":1750,"approx":true},
-      d: {"date":"po 25. 1. 1802 (neznámo)","year":1810,"approx":true},
+      d: {"date":"po 25. 1. 1802 (asi po 1824)","year":1825,"approx":true},
       father: "stepanBi",
       occ: "zahradník (Gartler) v Nedašově",
       marriage: "15. 1. 1769, Brumov – s Marinou Fojtíkovou (1.); 2. 5. 1786 s vdovou Marinou Adamkovou z Bylnice (2.)",
@@ -3023,7 +3023,8 @@ window.RODOKMEN = {
         "MAT16: 26. II. 1778 Rosina „Georgius Birlog et Marina hortulanus | Jan Mišský(?) Nedaš., Rosina Jangatschka(?) Brumov | Nedaš. 74“ (4012 N img109L, M; č. 74 D+); 9. I–II/1780 Kateřina „Jura Birlog et Marina inquil. | … Marina Missuin(?) | Nedaš. 71“ (img118R). Kmotrovský řetěz Jangatsch (1770, 1773, 1778) → Missujová (1780–86) spojuje pár z Bylnice 29 s rodinou č. 74 → jiriBi × Marina (Fojtíková) = rodina č. 74 (D+). Proti: věk Mariny † 1786 „30“ (K – možná druhá Marina).",
         "MAT20 (gruntovní kniha GK II 11952): č. 74 (1/8 gruntu) zapsán na „Georg Bieleg“ ingrossací 3. 12. 1782 (img93R, M); č. 74 předtím nebirlogovský (1736 Martin Jakubů, 1766 Jan K…, 1771 ?). Rodový grunt Birlogů č. 71 (Cat. 23; 1752 na „Andr[ea] Birloga“ – D/K) prodán 10. 3. 1785 „Jurowi Bielegowi“ od vdovy Kateřiny Bielegové = Jiří A. Rozhodující pro vazbu na Štěpána zůstává oddací zápis 1769 (Jiří A byl tehdy ženatý) – D+.",
         "MAT22: Jiří B v Nedašově 1787–~1820 NEZEMŘEL (rejstřík Brumov 4034 Z Nedašov img293L: „Birlog Georg“ jen str. 45 = dítě 1808 a str. 50 = † 16. 1. 1811 „Georg Birlog Witwer Gartler, 71, 76“ = Jiří A, jehož žena Anna † 24. 5. 1804 č. 71, 52 l.). Ani 2. žena Marina tam nezemřela → Jiří B s Marinou Adamkovou asi odešli (Bylnice?) a zemřel před 1818 jinde (K).",
-        "MAT24 (oprava): údaj „† před 1818“ byl mylný – v křtu vnuka Václava Nováka 21. 9. 1818 „Anna Tochter des x Georg Birlog, Häusler“ (N 4473 img102, str. 97) je „x“ oddělovač, který písař dává téměř ke každému otci i k žijícím kmotrům (ověřeno koordinátorem na výřezu sloupce). Při sňatku dcery Anny 25. 1. 1802 „Anna Tochter des Georg Birlog, Gartler“ bez „verstorbenen“ (O 4023 img106) → žil 1802 (D+). Úmrtí po 1802 neznámé; v Nedašově, Bylnici a Brumově-městě 1787–1820 není → asi po 1820 (K)."
+        "MAT24 (oprava): údaj „† před 1818“ byl mylný – v křtu vnuka Václava Nováka 21. 9. 1818 „Anna Tochter des x Georg Birlog, Häusler“ (N 4473 img102, str. 97) je „x“ oddělovač, který písař dává téměř ke každému otci i k žijícím kmotrům (ověřeno koordinátorem na výřezu sloupce). Při sňatku dcery Anny 25. 1. 1802 „Anna Tochter des Georg Birlog, Gartler“ bez „verstorbenen“ (O 4023 img106) → žil 1802 (D+). Úmrtí po 1802 neznámé; v Nedašově, Bylnici a Brumově-městě 1787–1820 není → asi po 1820 (K).",
+        "MAT25: křest vnučky Marianny Novákové 17. 8. 1824 „Anna Tocht[er] d[es] Georg Birlog Bauern“ bez „verstorbenen“ (N 4474 img8, M) → možná žil ještě 1824 (K). Nedašov Z 4491 rejstřík B (1821–~1835): dospělý Georg Birlog není (jen dítě † 3. 4. 1826, syn Martina, č. 71); Návojná Z 1787–1820 bez Birlogů."
       ],
       sources: [
         "O 4023 img 106 (sňatek dcery 1802)",
