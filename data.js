@@ -416,13 +416,18 @@ window.RODOKMEN = {
       name: "Martin Kočíř (Kočí)",
       line: "plachy",
       cert: "M",
-      b: {"date":"?","year":1695,"approx":true},
-      d: {"date":"před 18. 7. 1747","year":1746,"approx":true,"place":"Lešany (?)"},
+      b: {"date":"cca 1696","year":1696,"approx":true},
+      d: {"date":"22. 1. 1747","year":1747,"place":"Lešany"},
       notes: [
-        "Zemřelý otec ženichů: 18. 7. 1747 „Joannes filius p. d. Martini Koči Leschanio“ (Mostkovice 9269 O sk216R) a 20. 1. 1753 „Franciscus Kočí p. d. Martini Kočiř … ex Pago Leschan“ (sk235L) – oba M. Vazba na Jana Kočíře, sedláka č. 33 – D. Synové Jan, Franz; Jiří Kočí (svědek 1747, 1753) asi také (K). Úmrtí 1742–47 nehledáno (9269 Z sk~290–318)."
+        "Zemřelý otec ženichů: 18. 7. 1747 „Joannes filius p. d. Martini Koči Leschanio“ (Mostkovice 9269 O sk216R) a 20. 1. 1753 „Franciscus Kočí p. d. Martini Kočiř … ex Pago Leschan“ (sk235L) – oba M. Vazba na Jana Kočíře, sedláka č. 33 – D. Synové Jan, Franz; Jiří Kočí (svědek 1747, 1753) asi také (K). Úmrtí 1742–47 nehledáno (9269 Z sk~290–318).",
+        "Úmrtí/pohřeb 22. 1. 1747 Lešany, 51 let (PLA24, ověřeno koordinátorem): „22. Martinus Cozirz Incola Leschanensis | 51“ (Mostkovice 9269 Z sk302L, rok podle nadpisu „Anno 1747“; M). Jiný Martin Kočí v Z IX/1742–III/1747 není → týž jako otec Jana (∞ VII/1747) a Franze (D+)."
       ],
       sources: [
-        "MZA, Acta Publica, Mostkovice 9269 (id 5804), O sken 216, 235"
+        "MZA, Acta Publica, Mostkovice 9269 (id 5804), O sken 216, 235",
+        "MZA, Acta Publica, Mostkovice 9269 (id 5804), Z sken 302"
+      ],
+      scans: [
+        {"f":"img/1747_umrti_martin_kocir.jpg","t":"Úmrtí 22. 1. 1747 – Martin Kočíř (Cozirz), obyvatel Lešan, 51 let (MZA, Mostkovice 9269 Z sken 302)"}
       ]
     },
     {
