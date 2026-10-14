@@ -760,7 +760,8 @@ window.RODOKMEN = {
         "Sňatek (M): „Casparus Pauli Woroń et Reginae Witarowski L. S. in Ant.“ – syn Pawła Woronia a Reginy Witarowské.",
         "Děti (M): Franciszek *14. 9. 1847 (sňatek 1892), Zofia *2. 4. 1857; Jan (sňatek 1890). V roce 1875 žil („Kasper Woroń ojciec“).",
         "Sňatek rodičů nalezen: 24. 1. 1820 Zabawa („Paulus Baron (?)“ × Regina Witarowski, D); Reginin křest 6. 8. 1798 Zabawa (M). Pawłův křest v online knihách CAAK není.",
-        "Další pramen: archiv Muzea Żup Krakowskich (Akta Salinarne 1772–1918 – osobní a mzdové spisy horníků) – Kasper i Paweł byli „laboratores salinarum“."
+        "Další pramen: archiv Muzea Żup Krakowskich (Akta Salinarne 1772–1918 – osobní a mzdové spisy horníků) – Kasper i Paweł byli „laboratores salinarum“.",
+        "Geneteka (D, WOR13): vdova Katarzyna Woroń roz. Szarek † 26. 9. 1898 Lednica Dolna, 73 l. (1898 č. 30); syn Wojciech Woroń † 2. 4. 1935 Wieliczka, 75 l. (*~1860), ž. Aniela Krzyszkowska (1935 č. 19)."
       ],
       sources: [
         "CAAK KM-10-78 (sňatky Wieliczka – Lednica Górna 1785–1846), snímek 0045_r",
@@ -5708,17 +5709,19 @@ window.RODOKMEN = {
       occ: "dělník v solných dolech (laborator salinarum) – podle poznámek",
       marriage: "24. 1. 1820, Zabawa (farnost Wieliczka) – s Reginou Witarowskou (D)",
       notes: [
-        "Sňatek 24. 1. 1820, Zabawa č. 18 (M zápis): „Paulus Baron (?) [syn] Margarethae Porchała (?) | 35 | caelebs || Regina Adalberti Witarowski [et] Sophiae Wilk | 25 || [svědci] Josephus Szarek, Michael Dembosz (?)“. Příjmení ženicha čteno „Baron“ – nejspíš zkomolené „Woroń“ (W/B nejisté); jiná Regina Witarowská vhodného věku není a sňatek je těsně před narozením Kaspra → totožnost s rodiči Kaspra PRAVDĚPODOBNÁ (D). Rozhodne křest Kaspra (Lednica 1820–21 – kniha není online, jen AKMK/fara).",
+        "Sňatek 24. 1. 1820, Zabawa č. 18 (M zápis): „Paulus Baron (?) [syn] Margarethae Borchała (?) | 35 | caelebs || Regina Adalberti Witarowski [et] Sophiae Wilk | 25 || [svědci] Josephus Szarek, Michael Dembosz (?)“. Příjmení ženicha čteno „Baron“ – nejspíš zkomolené „Woroń“ (W/B nejisté); jiná Regina Witarowská vhodného věku není a sňatek je těsně před narozením Kaspra → totožnost s rodiči Kaspra PRAVDĚPODOBNÁ (D). Rozhodne křest Kaspra (Lednica 1820–21 – kniha není online, jen AKMK/fara).",
         "Otec Kaspra (sňatek 6. 2. 1844: „Casparus Pauli Woroń et Reginae Witarowski L. S.“).",
-        "Jeho křest není v online knihách CAAK; sňatek s Reginou nalezen 24. 1. 1820 Zabawa pod jménem „Baron (?)“ (D) – uvádí jen matku Markétu Porchału (?). Starší HYPOTÉZA (K), tím nepotvrzená: syn Wojciecha Woronia × Marianny Barańské (Wieliczka 236) nebo Andrzeje Woronia × Kateřiny Klappy (Lednica Dolna)."
+        "Jeho křest není v online knihách CAAK; sňatek s Reginou nalezen 24. 1. 1820 Zabawa pod jménem „Baron (?)“ (D) – uvádí jen matku Markétu Borchału (?). Starší HYPOTÉZA (K), tím nepotvrzená: syn Wojciecha Woronia × Marianny Barańské (Wieliczka 236) nebo Andrzeje Woronia × Kateřiny Klappy (Lednica Dolna).",
+        "WOR13 (M zápis, ověřeno): ženich zapsán „Paulus / Baron / Margarethae / Borchała | 35“ – u ostatních ženichů na stránce je vždy jméno otce, u Pawła CHYBÍ → pravděpodobně nemanželský syn Markéty Borchały (K/D); příjmení Baron vs. Woroń (syn Kasper 1844 „Pauli Woroń“) nevysvětleno – snad jméno nevlastního/skutečného otce. Křest Pawła v indexu Geneteky Wieliczka 1778–1800 není (index má mezeru ~1785–89 pro Lednici). Úmrtí Pawła a Reginy online není (knihy Lednice/Zabawa 1835–90 v CAAK chybí). Kandidáti Jacenty Baran × Małgorzata Karolówna (∞ 1778) a Sebastian Woroń × Małgorzata Zakrzewska (∞ 1783) spíš ne."
       ],
       sources: [
         "Archiwum Kurii Metropolitalnej Kraków (CAAK), KM-10-78, Zabawa – Copulatorum, snímek #0007_r; Geneteka (Wieliczka) – sňatky Witarowski 1792, 1820",
         "CAAK KM-10-78 (sňatky Wieliczka – Lednica Górna 1785–1846), snímek 0045_r"
       ],
       scans: [
-        {"f":"img/1820_snatek_pawel_woron_regina_witarowska.jpg","t":"Sňatek 24. 1. 1820, Zabawa č. 18 (farnost Wieliczka) – Paulus „Baron/Woroń (?)“, syn Markéty Porchały, 35 let × Regina, dcera Vojtěcha Witarowského a Žofie Wilk, 25 let; svědek Josef Szarek (CAAK KM-10-78, #0007_r)"},
-        {"f":"img/1844_snatek_kasper_woron_szarek.jpg","t":"Sňatek 6. 2. 1844, Lednica Górna (CAAK KM-10-78)"}
+        {"f":"img/1820_snatek_pawel_woron_regina_witarowska.jpg","t":"Sňatek 24. 1. 1820, Zabawa č. 18 (farnost Wieliczka) – Paulus „Baron/Woroń (?)“, syn Markéty Borchały, 35 let × Regina, dcera Vojtěcha Witarowského a Žofie Wilk, 25 let; svědek Josef Szarek (CAAK KM-10-78, #0007_r)"},
+        {"f":"img/1844_snatek_kasper_woron_szarek.jpg","t":"Sňatek 6. 2. 1844, Lednica Górna (CAAK KM-10-78)"},
+        {"f":"img/1820_snatek_pawel_baron_vyrez.jpg","t":"Výřez sňatku 24. 1. 1820 Zabawa č. 18 – „Paulus Baron, Margarethae Borchała“, 35 let (CAAK KM-10-78 #0007_r)"}
       ]
     },
     {
@@ -5732,7 +5735,7 @@ window.RODOKMEN = {
       mother: "zofiaWi",
       notes: [
         "Křest 6. 8. 1798 Zabawa č. 8 (M): „Regina | Adalbertus Witarowski | Sophia de patre Wilk | Gasparus Pawlik, Agnes Dębowska, hortulani“ (KM-10-34 #0122_r). Při sňatku 1820 uvedeno 25 let (skutečně 21).",
-        "Sňatek 24. 1. 1820, Zabawa č. 18 (M zápis): „Paulus Baron (?) [syn] Margarethae Porchała (?) | 35 | caelebs || Regina Adalberti Witarowski [et] Sophiae Wilk | 25 || [svědci] Josephus Szarek, Michael Dembosz (?)“. Příjmení ženicha čteno „Baron“ – nejspíš zkomolené „Woroń“ (W/B nejisté); jiná Regina Witarowská vhodného věku není a sňatek je těsně před narozením Kaspra → totožnost s rodiči Kaspra PRAVDĚPODOBNÁ (D). Rozhodne křest Kaspra (Lednica 1820–21 – kniha není online, jen AKMK/fara).",
+        "Sňatek 24. 1. 1820, Zabawa č. 18 (M zápis): „Paulus Baron (?) [syn] Margarethae Borchała (?) | 35 | caelebs || Regina Adalberti Witarowski [et] Sophiae Wilk | 25 || [svědci] Josephus Szarek, Michael Dembosz (?)“. Příjmení ženicha čteno „Baron“ – nejspíš zkomolené „Woroń“ (W/B nejisté); jiná Regina Witarowská vhodného věku není a sňatek je těsně před narozením Kaspra → totožnost s rodiči Kaspra PRAVDĚPODOBNÁ (D). Rozhodne křest Kaspra (Lednica 1820–21 – kniha není online, jen AKMK/fara).",
         "Matka Kaspra (sňatek 1844: „Reginae Witarowski“)."
       ],
       sources: [
@@ -5742,7 +5745,7 @@ window.RODOKMEN = {
       ],
       scans: [
         {"f":"img/1798_krest_regina_witarowska.jpg","t":"Křest 6. 8. 1798, Zabawa č. 8 – Regina, dcera Vojtěcha Witarowského a Žofie roz. Wilk (CAAK KM-10-34, #0122_r)"},
-        {"f":"img/1820_snatek_pawel_woron_regina_witarowska.jpg","t":"Sňatek 24. 1. 1820, Zabawa č. 18 (farnost Wieliczka) – Paulus „Baron/Woroń (?)“, syn Markéty Porchały, 35 let × Regina, dcera Vojtěcha Witarowského a Žofie Wilk, 25 let; svědek Josef Szarek (CAAK KM-10-78, #0007_r)"},
+        {"f":"img/1820_snatek_pawel_woron_regina_witarowska.jpg","t":"Sňatek 24. 1. 1820, Zabawa č. 18 (farnost Wieliczka) – Paulus „Baron/Woroń (?)“, syn Markéty Borchały, 35 let × Regina, dcera Vojtěcha Witarowského a Žofie Wilk, 25 let; svědek Josef Szarek (CAAK KM-10-78, #0007_r)"},
         {"f":"img/1844_snatek_kasper_woron_szarek.jpg","t":"Sňatek 6. 2. 1844, Lednica Górna (CAAK KM-10-78)"}
       ]
     },
@@ -6495,18 +6498,19 @@ window.RODOKMEN = {
     },
     {
       id: "margarethaPo",
-      name: "Markéta (Margaretha) Porchała (?)",
+      name: "Markéta (Margaretha) Borchała",
       line: "woron",
       cert: "D",
       b: {"date":"cca 1760","year":1760,"approx":true,"place":"?"},
       notes: [
-        "Matka Pawła – sňatek 1820: „Paulus … Margarethae Porchała (?)“; otec Pawła neuveden (snad nemanželský syn). Čtení příjmení nejisté (Borchała?)."
+        "Matka Pawła – sňatek 1820: „Paulus … Margarethae Borchała (?)“; otec Pawła neuveden (snad nemanželský syn). Čtení příjmení nejisté (Borchała?).",
+        "WOR13 (14. 10. 2026): čtení opraveno z „Porchała“ na „Borchała“ – ve sňatku syna 1820 „Paulus / Baron / Margarethae / Borchała“ má příjmení stejné B jako „Baron“ (ověřeno koordinátorem na výřezu v plném rozlišení; shodně index Geneteky „Małgorzata Borchała“). Jinde (Wieliczka, Bieżanów, Niepołomice, Gdów) se jméno Borchała/Porchała v indexu nevyskytuje."
       ],
       sources: [
         "Archiwum Kurii Metropolitalnej Kraków (CAAK), KM-10-78, Zabawa – Copulatorum, snímek #0007_r; Geneteka (Wieliczka) – sňatky Witarowski 1792, 1820"
       ],
       scans: [
-        {"f":"img/1820_snatek_pawel_woron_regina_witarowska.jpg","t":"Sňatek 24. 1. 1820, Zabawa č. 18 (farnost Wieliczka) – Paulus „Baron/Woroń (?)“, syn Markéty Porchały, 35 let × Regina, dcera Vojtěcha Witarowského a Žofie Wilk, 25 let; svědek Josef Szarek (CAAK KM-10-78, #0007_r)"}
+        {"f":"img/1820_snatek_pawel_woron_regina_witarowska.jpg","t":"Sňatek 24. 1. 1820, Zabawa č. 18 (farnost Wieliczka) – Paulus „Baron/Woroń (?)“, syn Markéty Borchały, 35 let × Regina, dcera Vojtěcha Witarowského a Žofie Wilk, 25 let; svědek Josef Szarek (CAAK KM-10-78, #0007_r)"}
       ]
     },
     {
