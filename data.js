@@ -5984,20 +5984,24 @@ window.RODOKMEN = {
       name: "Jan Koželuh",
       line: "vesely",
       cert: "M",
-      b: {"date":"cca 1780","year":1780,"approx":true,"place":"Dříteň"},
-      d: {"date":"před 1840","year":1839,"approx":true},
+      b: {"date":"cca 1768","year":1768,"approx":true,"place":"?"},
+      d: {"date":"16. 5. 1839","year":1839,"place":"Dříteň č. 6"},
+      cause: "dušnost",
       occ: "chalupník, Dříteň č. 6",
       notes: [
         "Otec Josefa (sňatek 1840 a křest vnučky 1844): „† Jan Koželuh, chalupník ze Dřjtně No 6“ – v roce 1840 už nežil. Manželka Marie (M. Anna), dcera † Jiljího Frauha(?) – viz karta mariaFr.",
-        "Křest syna Jana 21. 6. 1811 Dříteň č. 6 (M; VES-KM4, ověřeno koordinátorem): otec „Jan Koželuh, chalupník“; matka „Marya po † Jiljím Frauhowy(?) … panství Hlubockého, Matky Alžběty rozený ?(Šauk/Pauk)owy z ?(Slow)ěnic“ (Bílá Hůrka N 4, id 2212, sk117, s. 202–203). Josefův vlastní křest NENÍ v N 4 Dříteň VIII/1810–IX/1816 (narozen asi jinde – v matčině obci?)."
+        "Křest syna Jana 21. 6. 1811 Dříteň č. 6 (M; VES-KM4, ověřeno koordinátorem): otec „Jan Koželuh, chalupník“; matka „Marya po † Jiljím Frauhowy(?) … panství Hlubockého, Matky Alžběty rozený ?(Šauk/Pauk)owy z ?(Slow)ěnic“ (Bílá Hůrka N 4, id 2212, sk117, s. 202–203). Josefův vlastní křest NENÍ v N 4 Dříteň VIII/1810–IX/1816 (narozen asi jinde – v matčině obci?).",
+        "Úmrtí 16. 5. 1839, pohřben 18. 5., Dříteň č. 6 (M; VES-KM6, ověřeno koordinátorem): „Ibidem N. 6 | Jan Kožluh Chalupnjk | 71 let | Na Dussnost | F. Dworžák Farář“ (Bílá Hůrka Z 9, id 2217, sk107, s. 210). Dcera Kateřina † 5. 7. 1832 Dříteň 6, 26 l. (*~1806, narozena mimo Dříteň → rodina přišla ~1810)."
       ],
       sources: [
         "SOA Třeboň, Bílá Hůrka O 7 (id 2215) sken 92; N 4 (id 2212) sken 171",
-        "SOA Třeboň, Bílá Hůrka N 4 (id 2212), sken 117, s. 202–203"
+        "SOA Třeboň, Bílá Hůrka N 4 (id 2212), sken 117, s. 202–203",
+        "SOA Třeboň, Bílá Hůrka Z 9 (id 2217), sken 107, s. 210; sken 104, s. 204"
       ],
       scans: [
         {"f":"img/1844_krest_marie_kozeluhova_st.jpg","t":"Křest 1844, Dříteň č. 6 – M. Anna Koželuhová, rodiče Josef Koželuh × M. Anna Maršálková (Bílá Hůrka N 4, id 2212, sken 171)"},
-        {"f":"img/1811_krest_jan_kozeluh_driten.jpg","t":"Křest Jana 21. 6. 1811 Dříteň č. 6 – syn chalupníka Jana Koželuha a Marie, dcery † Jiljího Frauha(?) (SOA Třeboň, Bílá Hůrka N 4, id 2212, sken 117)"}
+        {"f":"img/1811_krest_jan_kozeluh_driten.jpg","t":"Křest Jana 21. 6. 1811 Dříteň č. 6 – syn chalupníka Jana Koželuha a Marie, dcery † Jiljího Frauha(?) (SOA Třeboň, Bílá Hůrka N 4, id 2212, sken 117)"},
+        {"f":"img/1839_umrti_jan_kozeluh.jpg","t":"Úmrtí 16. 5. 1839 Dříteň č. 6 – Jan Kožluh (Koželuh), chalupník, 71 let, na dušnost (Bílá Hůrka Z 9, id 2217, sken 107)"}
       ]
     },
     {
@@ -6006,17 +6010,20 @@ window.RODOKMEN = {
       maiden: "Frauh (?)",
       line: "vesely",
       cert: "M",
-      b: {"date":"cca 1785","year":1785,"approx":true,"place":"? (panství Hluboká)"},
-      d: {"date":"před 4. 2. 1840","year":1839,"approx":true},
+      b: {"date":"cca 1772","year":1772,"approx":true,"place":"? (panství Hluboká)"},
+      d: {"date":"1. 7. 1832","year":1832,"place":"Dříteň č. 6"},
       notes: [
-        "Křest syna Jana 21. 6. 1811 Dříteň č. 6 (M zápis): „Marya po † Jiljím Frauhowy(?) … panství Hlubockého, Matky Alžběty rozený ?(Šauk/Pauk)owy z ?(Slow)ěnic“ (Bílá Hůrka N 4, id 2212, sk117). Sňatek syna Josefa 4. 2. 1840: „Matky † M. Anny rozené Frauhowy ze ?(Kuh/Ruh)… panst. Hlubok.“ Rodné příjmení a obec čteny nejistě (D). Otec † Jiljí Frauh(?), matka Alžběta roz. ?"
+        "Křest syna Jana 21. 6. 1811 Dříteň č. 6 (M zápis): „Marya po † Jiljím Frauhowy(?) … panství Hlubockého, Matky Alžběty rozený ?(Šauk/Pauk)owy z ?(Slow)ěnic“ (Bílá Hůrka N 4, id 2212, sk117). Sňatek syna Josefa 4. 2. 1840: „Matky † M. Anny rozené Frauhowy ze ?(Kuh/Ruh)… panst. Hlubok.“ Rodné příjmení a obec čteny nejistě (D). Otec † Jiljí Frauh(?), matka Alžběta roz. ?",
+        "Úmrtí 1. 7. 1832, pohřbena 3. 7., Dříteň č. 6 (M zápis, totožnost D): „M. Anna, Manželka Jana Kožluhy, domkaře“, 60 let (→ *~1772); 5. 7. 1832 tamtéž dcera „Katerina, dcera Jana Kožluhy, domkaře“, 26 l. (Bílá Hůrka Z 9, id 2217, sk104, s. 204; ověřeno koordinátorem). Nemoc snad cholera 1832 (K). Obec původu „Kuch… Lůky“ v místopisu panství Hluboká (Sommer 1841) nenalezena; otec snad „baštýř/bažantýř“ (K)."
       ],
       sources: [
         "SOA Třeboň, Bílá Hůrka N 4 (id 2212), sken 117",
-        "SOA Třeboň, Bílá Hůrka O 7 (id 2215), sken 92"
+        "SOA Třeboň, Bílá Hůrka O 7 (id 2215), sken 92",
+        "SOA Třeboň, Bílá Hůrka Z 9 (id 2217), sken 104, s. 204"
       ],
       scans: [
-        {"f":"img/1811_krest_jan_kozeluh_driten.jpg","t":"Křest syna Jana 21. 6. 1811 Dříteň č. 6 (Bílá Hůrka N 4, sken 117)"}
+        {"f":"img/1811_krest_jan_kozeluh_driten.jpg","t":"Křest syna Jana 21. 6. 1811 Dříteň č. 6 (Bílá Hůrka N 4, sken 117)"},
+        {"f":"img/1832_umrti_anna_kozeluhova.jpg","t":"Úmrtí 1. 7. 1832 Dříteň č. 6 – M. Anna, manželka Jana Koželuha, 60 let; 5. 7. dcera Kateřina, 26 let (Bílá Hůrka Z 9, id 2217, sken 104)"}
       ]
     },
     {
@@ -6029,7 +6036,8 @@ window.RODOKMEN = {
       notes: [
         "Otec M. Anny (sňatek 1840: „Wjt Maršálek, chalupník ze wsi Dřjteň No 3“; křest vnučky 1844: „… ze Dřjtně No 7“). Manželka Alžběta (?) roz. Mšatník (?) – čtení nejisté.",
         "Křest dcery (Františky?) 24./25. 12. 1823 Dříteň č. 7 (VES-KM2; zápis M, čtení jmen D – ověřeno koordinátorem): otec „Wjt Maršálek, chalupník z Dřjtně“; matka „Alžběta dcera Jana M(y)šatníka, sedláka z Malého Zablat No 5, matky Rozyny rozené Lenáčkowé(?) ze Sedlic(?)“ (Bílá Hůrka N 4, id 2212, sk140, s. 248). Sňatek Víta × Alžběty asi v O 7 (id 2215) oddíl Záblatíčko (kniha řazena po obci nevěsty).",
-        "Dvě manželství (D, VES-KM4): 1. Kateřina, dcera † Václava ?(Wor/Bor…) – křest dcery Marie 6. 9. 1814 Dříteň č. 7 (N 4 sk122, M zápis); 2. Alžběta, dcera Jana M(y)šatníka (křest 1823; sňatek dcery M. Anny 1840 „Alžběty rozené Mšatníkowy“, nevěsta Dříteň č. 3, 24 l.) → sňatek s Alžbětou asi 1815–18. K: 29. 1. 1812 Dříteň 7 „Matěj“, otec Vít Maršálek(?)."
+        "Dvě manželství (D, VES-KM4): 1. Kateřina, dcera † Václava ?(Wor/Bor…) – křest dcery Marie 6. 9. 1814 Dříteň č. 7 (N 4 sk122, M zápis); 2. Alžběta, dcera Jana M(y)šatníka (křest 1823; sňatek dcery M. Anny 1840 „Alžběty rozené Mšatníkowy“, nevěsta Dříteň č. 3, 24 l.) → sňatek s Alžbětou asi 1815–18. K: 29. 1. 1812 Dříteň 7 „Matěj“, otec Vít Maršálek(?).",
+        "1. žena Kateřina † 31. 8. 1816 Dříteň 7, 30 l. – „Katrzina Marssalkowa Chalupnjkowa“ (Z 9 sk91, M) → sňatek s Alžbětou IX/1816–IX/1817."
       ],
       sources: [
         "SOA Třeboň, Bílá Hůrka O 7 (id 2215) sken 92; N 4 (id 2212) sken 171",
