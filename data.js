@@ -3537,7 +3537,8 @@ window.RODOKMEN = {
       b: {"date":"?","year":1770,"approx":true},
       occ: "sedlák (Bauer) – Krzanowicko (Strandorf/Borutín?)",
       notes: [
-        "Uveden jen jako otec Rosalie v křtu vnučky 1845: „Tochter des Bauers Mathes Lassak et Susanna geb. Socha“ (Krzanowice 1845 Nr 35, M zápis). V OFB Kranowitz bez dat a bez dalších dětí. Kandidáti v OFB (K): sedlák Matthäus ze Strandorfu (nar. 1777) (∞ 1810 Catharina Hlubek – dřívější manželství se Susannou?); Mathias *~1745, výměnkář (∞ 1817 Susanna, vdova Hlubek, 60 l.) – slabé; Mathias Lasak, výměnkář † 18. 12. 1823, 65 l."
+        "Uveden jen jako otec Rosalie v křtu vnučky 1845: „Tochter des Bauers Mathes Lassak et Susanna geb. Socha“ (Krzanowice 1845 Nr 35, M zápis). V OFB Kranowitz bez dat a bez dalších dětí. Kandidáti v OFB (K): sedlák Matthäus ze Strandorfu (nar. 1777) (∞ 1810 Catharina Hlubek – dřívější manželství se Susannou?); Mathias *~1745, výměnkář (∞ 1817 Susanna, vdova Hlubek, 60 l.) – slabé; Mathias Lasak, výměnkář † 18. 12. 1823, 65 l.",
+        "STR-K4 (14. 10. 2026, M zápisy, Silius pohřby): starý pár ze Strandorfu – Susanna, manželka výměnkáře Mathese Lasaka, † 4. 12. 1830, 90 l. (sl. 462 sn 0025 Nr 167) a Mathes Lasak, výměnkář, † 11. 5. 1832, 93 l. (sl. 464 sn 0007 Nr 44) – věkem (*~1739/40) Rosaliinými rodiči být NEMOHOU; spíš rodiče sedláka Mathese ml. (narozen 1777). Mathias Lasak, výměnkář z Borutína, † 18. 12. 1823, 65 l. (sl. 455 sn 0021 Nr 148) – manželka neuvedena, borutínská linie (× Marina Czujek) – asi také ne. Susanna Lasak nezemřela v Krzanowicích 1805–1809. Hypotéza (K): otec = Mathes ml. (narozen 1777) s neznámou 1. ženou Susannou Socha, nebo rodina mimo farnost."
       ],
       sources: [
         "Silius Radicum – Krzanowice 1845 (sl. 379) sn 0005 Nr 35"
