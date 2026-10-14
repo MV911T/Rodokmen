@@ -412,23 +412,41 @@ window.RODOKMEN = {
       siblings: ["Bartoloměj (nevlastní? – asi z 1. manželství otce), ∞ 17. 6. 1777 Anna, dcera Jakuba Růžičky, sedláka z Ohrozimi; Lešany č. 32 (Mostkovice O 9271 sk36R, M)"]
     },
     {
+      id: "tomasKo",
+      name: "Tomáš Kočíř",
+      line: "plachy",
+      cert: "M",
+      b: {"date":"?","year":1665,"approx":true},
+      d: {"date":"před 16. 11. 1721","year":1720,"approx":true},
+      notes: [
+        "Zemřelý otec ženicha 16. 11. 1721: „Mladenecz Martin Syn: † Tomaſſe Ko-cžiřže z ?rakowe(?)“ (MZA opis30 Mostkovice sk218L; zápis M, příjmení M−). Bydliště „Zrakowe/z Rakowe“ (?) – mimo farnost Mostkovice (K)."
+      ],
+      sources: [
+        "MZA, Acta Publica, opis30 Mostkovice (id 10397), sken 218"
+      ]
+    },
+    {
       id: "martinKo",
       name: "Martin Kočíř (Kočí)",
       line: "plachy",
       cert: "M",
       b: {"date":"cca 1696","year":1696,"approx":true},
       d: {"date":"22. 1. 1747","year":1747,"place":"Lešany"},
+      father: "tomasKo",
+      marriage: "16. 11. 1721, Mostkovice – s Marinou (dcera † … Pilavského?)",
       notes: [
         "Zemřelý otec ženichů: 18. 7. 1747 „Joannes filius p. d. Martini Koči Leschanio“ (Mostkovice 9269 O sk216R) a 20. 1. 1753 „Franciscus Kočí p. d. Martini Kočiř … ex Pago Leschan“ (sk235L) – oba M. Vazba na Jana Kočíře, sedláka č. 33 – D. Synové Jan, Franz; Jiří Kočí (svědek 1747, 1753) asi také (K). Úmrtí 1742–47 nehledáno (9269 Z sk~290–318).",
         "Úmrtí/pohřeb 22. 1. 1747 Lešany, 51 let (PLA24, ověřeno koordinátorem): „22. Martinus Cozirz Incola Leschanensis | 51“ (Mostkovice 9269 Z sk302L, rok podle nadpisu „Anno 1747“; M). Jiný Martin Kočí v Z IX/1742–III/1747 není → týž jako otec Jana (∞ VII/1747) a Franze (D+).",
-        "PLA25 (K/D, nutno ověřit v plném rozlišení): opis30 (MZA AP 10397, výtahy Mostkovice 1689–1741), sk218L: „Dne 16 dito [XI. 1721] w chrámu Páně Mostkowském zdan gest od Pana Kaplana Poctiwý Mladenecz Martin Syn † Tomaſſe Ko-cžiřže(?) z ?akowe(?) s Poctiwau diwkau Marinau Dcer(au) † Stawzina(?) Pilawskim(?) Swědkowé Girzik Černula(?) a Waclaw Gaſtek(?) oba z Leſſan“ – možný sňatek našeho Martina (otec † Tomáš); příjmení na zlomu řádku nejisté, koordinátor na výřezu off1 nedočetl."
+        "Sňatek 16. 11. 1721 Mostkovice (PLA26, off0; ověřeno koordinátorem – zápis M, příjmení ženicha M−, totožnost s Martinem † 1747 D+): „Dne 16 dito w chramu Panie Mostkowskem zdan gest od Pana Kaplana Poctiwy Mladenecz Martin Syn: † Tomaſſe Ko-cžiřže z ?rakowe(?) s Poctiwau diwkau Marinau Dcer: † Stawzinu(?) Pilawskim(?) Swědkowe Giržik Černul(?) a Waczlaw Gaſtek oba z Leſſan“ (MZA opis30, AP id 10397, sk218L). Obec ženicha „Zrakowe/z Rakowe“ nečitelná – mimo farnost (K). Syn Martin pokř. 4. 11. 1722: „Martin | Jan Kaplan | Martin Kocžij″ / Marina z Leſſan | Girzik Žebal(?), Marina manželka geho z Leſſan“ (sk227L, M). Jan (∞ 1747) dosud nenalezen (1722 a VII–VIII/1723 není)."
       ],
       sources: [
         "MZA, Acta Publica, Mostkovice 9269 (id 5804), O sken 216, 235",
-        "MZA, Acta Publica, Mostkovice 9269 (id 5804), Z sken 302"
+        "MZA, Acta Publica, Mostkovice 9269 (id 5804), Z sken 302",
+        "MZA, Acta Publica, opis30 Mostkovice (id 10397), sken 218, 227"
       ],
       scans: [
-        {"f":"img/1747_umrti_martin_kocir.jpg","t":"Úmrtí 22. 1. 1747 – Martin Kočíř (Cozirz), obyvatel Lešan, 51 let (MZA, Mostkovice 9269 Z sken 302)"}
+        {"f":"img/1747_umrti_martin_kocir.jpg","t":"Úmrtí 22. 1. 1747 – Martin Kočíř (Cozirz), obyvatel Lešan, 51 let (MZA, Mostkovice 9269 Z sken 302)"},
+        {"f":"img/1721_snatek_martin_kocir.jpg","t":"Sňatek 16. 11. 1721 Mostkovice – Martin, syn † Tomáše Kočíře × Marina (MZA, opis30 Mostkovice sken 218)"}
       ]
     },
     {
