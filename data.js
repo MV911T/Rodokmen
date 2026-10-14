@@ -419,7 +419,8 @@ window.RODOKMEN = {
       b: {"date":"?","year":1665,"approx":true},
       d: {"date":"před 16. 11. 1721","year":1720,"approx":true},
       notes: [
-        "Zemřelý otec ženicha 16. 11. 1721: „Mladenecz Martin Syn: † Tomaſſe Ko-cžiřže z ?rakowe(?)“ (MZA opis30 Mostkovice sk218L; zápis M, příjmení M−). Bydliště „Zrakowe/z Rakowe“ (?) – mimo farnost Mostkovice (K)."
+        "Zemřelý otec ženicha 16. 11. 1721: „Mladenecz Martin Syn: † Tomaſſe Ko-cžiřže z ?rakowe(?)“ (MZA opis30 Mostkovice sk218L; zápis M, příjmení M−). Bydliště „Zrakowe/z Rakowe“ (?) – mimo farnost Mostkovice (K).",
+        "PLA30 (D): „z Rakowe“ = Raková (Velká Raková) nebo Rakůvka (Malá Raková) u Konice – obě fara Bohuslavice u Konice (MZA AP: 8737 = N/O/Z 1658–1706, 8738 = 1707–1745, 8739 = 1745–1803, index N 8758). Křest Martina (~1692–96) zatím nenalezen."
       ],
       sources: [
         "MZA, Acta Publica, opis30 Mostkovice (id 10397), sken 218"
