@@ -380,7 +380,7 @@ window.RODOKMEN = {
       name: "Jakub (Jakob) Kočíř",
       line: "plachy",
       cert: "M",
-      b: {"date":"cca 1776","year":1776,"approx":true,"place":"Drahany (?) / Hradčany (?) – „von D…[r]ahan/…schan“"},
+      b: {"date":"cca 1776","year":1776,"approx":true,"place":"Lešany (?), okr. Prostějov – „von Leſchan“"},
       d: {"date":"24. 9. 1829","year":1829,"place":"Kralice na Hané č. 65"},
       cause: "žaludeční křeče",
       father: "janKoSt",
@@ -392,7 +392,8 @@ window.RODOKMEN = {
         "Není pokřtěn v Kralicích 1761–1784 – pocházel z obce „Ar/Ur…schan“ (Určice? – HYPOTÉZA).",
         "Zemřel 24. 9. 1829 jako půlláník v Kralicích č. 65, 55 let (9181 sken 194, fol. 9).",
         "PLA8 (14. 10. 2026): sňatek Jakuba 25. 11. 1797 Kralice (MZA 9179 sk10, fol. 14) přečten v plném rozlišení: „Jakob Sohn nach dem + Johann Kočiř Bauer von D[r]ahan“ – obec nejspíš Drahany (okr. Prostějov), D; dřívější čtení „Ar…schan“ opraveno. Výřez 00_klicove_doklady/1797-11-25_snatek_Jakob_Kocir_otec_Johann_von_Drahan…",
-        "PLA12 (14. 10. 2026): čtení místa „von D[r]ahan“ ZPOCHYBNĚNO – v plném rozlišení dva sestupné tahy (spíš „-schan“): Drahan / Hradschan (Hradčany u Prostějova?) / D…schan (K). V Drahanech N VII/1773–IV/1778 a Z 1784–85, 1787–I/1798 Kočíř NENÍ."
+        "PLA12 (14. 10. 2026): čtení místa „von D[r]ahan“ ZPOCHYBNĚNO – v plném rozlišení dva sestupné tahy (spíš „-schan“): Drahan / Hradschan (Hradčany u Prostějova?) / D…schan (K). V Drahanech N VII/1773–IV/1778 a Z 1784–85, 1787–I/1798 Kočíř NENÍ.",
+        "PLA13 (14. 10. 2026, ověřeno koordinátorem na výřezu): místo čteno „von Leſchan“ = LEŠANY u Prostějova (D, silné) – iniciála L má stejný tvar jako „Lambel“ ve sloupci svědků téhož zápisu, dva sestupné tahy = ſch. Lešany do 1784 fara Mostkovice (N 9270, Z 9272), od 1785 Ohrozim (N 9389, Z 9400). Výřez 00_klicove_doklady/1797-11-25_snatek_Jakob_Kocir_von_Leschan_srovnani…"
       ],
       sources: [
         "MZA 9178 sken 26",
@@ -415,7 +416,8 @@ window.RODOKMEN = {
       occ: "sedlák v obci „Ar…schan“ (?)",
       notes: [
         "Otec Jakuba (sňatek 1797: „Sohn nach dem + Johann Kočiř Bauer von Ar…schan“) – obec nečitelná.",
-        "PLA8 (14. 10. 2026): sňatek Jakuba 25. 11. 1797 Kralice (MZA 9179 sk10, fol. 14) přečten v plném rozlišení: „Jakob Sohn nach dem + Johann Kočiř Bauer von D[r]ahan“ – obec nejspíš Drahany (okr. Prostějov), D; dřívější čtení „Ar…schan“ opraveno. Výřez 00_klicove_doklady/1797-11-25_snatek_Jakob_Kocir_otec_Johann_von_Drahan…"
+        "PLA8 (14. 10. 2026): sňatek Jakuba 25. 11. 1797 Kralice (MZA 9179 sk10, fol. 14) přečten v plném rozlišení: „Jakob Sohn nach dem + Johann Kočiř Bauer von D[r]ahan“ – obec nejspíš Drahany (okr. Prostějov), D; dřívější čtení „Ar…schan“ opraveno. Výřez 00_klicove_doklady/1797-11-25_snatek_Jakob_Kocir_otec_Johann_von_Drahan…",
+        "Původ „von Leſchan“ = Lešany u Prostějova (D, PLA13)."
       ],
       sources: [
         "MZA 9179 fol. 14, sken 10"
