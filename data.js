@@ -4757,13 +4757,16 @@ window.RODOKMEN = {
       name: "Simon Kolarzik",
       line: "jirik",
       cert: "M",
-      b: {"date":"?","year":1705,"approx":true},
+      b: {"date":"cca 1703","year":1703,"approx":true},
+      d: {"date":"26. 6. 1789 (pohřeb 28. 6.)","year":1789,"place":"Bolatice"},
       notes: [
         "Otec nevěsty 14. 10. 1754: „Barbara filia Simonis Kolarzik“ (Bolatice H III 1 sk51R, M).",
-        "JIR-B10 (K): kandidát Simon Kolarzik × Esthera ∞ 23. 1. 1729 (H III 1 sk43R); pozor 22. 1. 1731 Simon Kolarzik(?) × Magdalena (sk44R)."
+        "JIR-B10 (K): kandidát Simon Kolarzik × Esthera ∞ 23. 1. 1729 (H III 1 sk43R); pozor 22. 1. 1731 Simon Kolarzik(?) × Magdalena (sk44R).",
+        "Pohřeb 28. 6. 1789: „Simon Kollarzig Auszügler welcher am 26ten hujus vormittag um 9 Uhr gestorben … 86“ (H III 5 sk35, č. 20; zápis M, totožnost D)."
       ],
       sources: [
-        "ZA Opava, NAD 165 Sbírka matrik, Bolatice H III 1, sken 51"
+        "ZA Opava, NAD 165 Sbírka matrik, Bolatice H III 1, sken 51",
+        "ZA Opava, NAD 165 Sbírka matrik, Bolatice H III 5, sken 35"
       ]
     },
     {
@@ -4794,7 +4797,7 @@ window.RODOKMEN = {
       line: "jirik",
       cert: "M",
       b: {"date":"cca 1727","year":1727,"approx":true},
-      d: {"date":"8. 3. 1786 (pohřeb 10. 3.; viz rozpor)","year":1786,"place":"Bolatice"},
+      d: {"date":"8. 3. 1786 (pohřeb 10. 3.)","year":1786,"place":"Bolatice"},
       father: "jakubSl",
       occ: "domkář (Häusler 1785), podruh (Einlieger 1786)",
       marriage: "14. 10. 1754, Bolatice – s Barbarou Kolarzikovou",
@@ -4802,7 +4805,7 @@ window.RODOKMEN = {
         "Zemřelý otec ženicha 20. 2. 1786: „der Johannes des sel. Simon Sliwka leibl. Sohn“ (Bolatice H III 4 sk14, M).",
         "Sňatek 14. 10. 1754 (M; JIR-B9, ověřeno koordinátorem): „Simon Jacobi Sliwka filius, Barbara filia Simonis Kolarzik, sponsi honesti, ambo Bollatitio | Nicolaus Lisska, Jacobus Duda“ (H III 1 sk51R, fol. 60).",
         "JIR-B10: děti podle indexu H III 11 (D): Veronica 4. 2. 1766, Rosalia 24. 8. 1769, Josepha 15. 3. 1773 („Simon. Barbara geb. Kollarzik“); dcera Theresia † 19. 7. 1763 (H III 1 sk89L, M) → Simon žil ještě ~VI/1772, † 1772–1786 (H III 5). Úmrtí VI/1764–XII/1769 se v Bolaticích nedochovala; křty před ~1741 také ne.",
-        "Pohřeb 10. 3. 1786 (JIR-B11; ověřeno koordinátorem): „… begraben worden … welcher am 8 hujus nachmittag um 3 Uhr an Gallsucht gestorben war alt 59 Jahr begraben Simon Osmanczik Adm. | Simon Sliwka Einlieger“ (H III 5 sk26, č. 4; měsíc podle předchozího „6. Martij“ – D+). ROZPOR: při sňatku syna Johanna 20. 2. 1786 (H III 4 sk14) čteno „des sel. Simon Sliwka“ – buď chybné čtení „sel.“/data sňatku, nebo jiný Simon (méně pravděpodobné; věk 59 a manželka Barbara † 1785 sedí). K ověření."
+        "Pohřeb 10. 3. 1786 (JIR-B11; ověřeno koordinátorem): „… begraben worden … welcher am 8 hujus nachmittag um 3 Uhr an Gallsucht gestorben war alt 59 Jahr begraben Simon Osmanczik Adm. | Simon Sliwka Einlieger“ (H III 5 sk26, č. 4; měsíc podle předchozího „6. Martij“ – D+). Rozpor se sňatkem syna 20. 2. 1786 („des Sel: Simon Sliwka“, únor jistý) JIR-B12 ověřil v plném rozlišení: obě data M → oddací zápis zřejmě zapsán dodatečně po 8. 3. 1786 (K); jiný Simon Sliwka v Bolaticích doložen není."
       ],
       sources: [
         "ZA Opava, NAD 165 Sbírka matrik, Bolatice H III 4, sken 14",
@@ -4828,7 +4831,8 @@ window.RODOKMEN = {
       notes: [
         "Uveden jako otec nevěsty Mariany 14. 11. 1821: „Mariana filia Joannis Sliwka coloni“ (H III 4 sk72).",
         "Sňatek 20. 2. 1786 Bolatice, kostel sv. Stanislava (M; JIR-B8, ověřeno koordinátorem): „der Johannes des sel. Simon Sliwka leibl. Sohn, mit der Jungfer Verona Duda leibl. Tochter beyde von hier, copulirt Simon Ossmanczik, Zeugen waren Stanislaus Duda Freyhäusler und Bartek Sliwka … Er 22 Sie 20 Jahr“ (H III 4 sk14). Děti podle indexu H III 11: Valentin 8. 2. 1787, Urban ~VI/1790, Stanislaus 19. 5. 1794, Franz 5. 9. 1796, Simon 9. 6. 1799, Marianna 28. 12. 1801.",
-        "Křest 25. 6. 1764 (M; JIR-B9, ověřeno koordinátorem): „Item Junij 25 | P. Josephus | Joannes Franciscus [+ 1842] | Simon Sliwka, Barbara uxor ejus | Franciscus Nawrath, Juliana Kolarzykin“ (H III 1 sk37L). Ztotožnění s ženichem 1786 (22 l., syn † Simona) – D+. Rok úmrtí 1842 jen z pozdějšího přípisku."
+        "Křest 25. 6. 1764 (M; JIR-B9, ověřeno koordinátorem): „Item Junij 25 | P. Josephus | Joannes Franciscus [+ 1842] | Simon Sliwka, Barbara uxor ejus | Franciscus Nawrath, Juliana Kolarzykin“ (H III 1 sk37L). Ztotožnění s ženichem 1786 (22 l., syn † Simona) – D+. Rok úmrtí 1842 jen z pozdějšího přípisku.",
+        "Syn Valentin (*8. 2. 1787) † 10. 2. 1791, 4 r.: „Vallentinus Söhnlein des Johannes Sliwka Häusler“ (H III 5 sk38, M)."
       ],
       sources: [
         "ZA Opava, NAD 165 Sbírka matrik, Bolatice H III 4 (O 1770–1840), sken 72 (1821 č. 19)",
