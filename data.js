@@ -1219,7 +1219,7 @@ window.RODOKMEN = {
       scans: [
         {"f":"img/1836_krest_tomasz_dydowicz.jpg","t":"Křest Tomasze 28. 2. 1836, Wierzchosławice (U 1824–1845 s. 405)"}
       ],
-      siblings: ["Marianna *~1811 (D) – ∞ 1) Vojtěch Klimek, 2) 21. 11. 1849 Zalasowa Paweł Peca","Mikołaj (Dyda) *4. 12. 1802 Dębno (M) – ∞ 25. 9. 1826 Szczucin Tekla Kogut","Marianna *19. 6. 1804 Dębno (M)","Katarzyna *~1808 (M – ohlášky 1826) – ∞ 1826 Józef Bogdański, Sitnica","Mikołaj (Nicolaus) Dyda *4. 12. 1802 Dębno (M), ∞ IX/1826 Szczucin Tekla Rogacionka(?) (M); rodina pak Wampierzów, fara Wadowice Górne (děti Ignacy 1839 „ojciec ojca Wojciech Dydowicz“, Antoni 1841 „r. ojca Wojciech i Gertruda“) a Tuszyma-Dąbie (fara Przecław), kde † 20. 5. 1855, 58 l., manželka Tekla roz. Kogut (Geneteka 09pk, D)","Marianna *19. 6. 1804 Dębno (M), ∞ 1. Vojtěch Klimek, 2. 21. 11. 1849 Zalasowa Paweł Peca (D)","Katarzyna, ohlášky 4. 11. 1826 Rozembark – Józef Bogdański (M)"]
+      siblings: ["Marianna *~1811 (D) – ∞ 1) Vojtěch Klimek, 2) 21. 11. 1849 Zalasowa Paweł Peca","Mikołaj (Dyda) *4. 12. 1802 Dębno (M) – ∞ 25. 9. 1826 Szczucin Tekla Kogut","Marianna *19. 6. 1804 Dębno (M)","Katarzyna *~1808 (M – ohlášky 1826) – ∞ 1826 Józef Bogdański, Sitnica","Mikołaj (Nicolaus) Dyda *4. 12. 1802 Dębno (M), ∞ IX/1826 Szczucin Tekla Rogacionka(?) (M); rodina pak Wampierzów, fara Wadowice Górne (děti Ignacy 1839 „ojciec ojca Wojciech Dydowicz“, Antoni 1841 „r. ojca Wojciech i Gertruda“) a Tuszyma-Dąbie (fara Przecław), kde † 20. 5. 1855, 58 l., manželka Tekla roz. Kogut (Geneteka 09pk, D)","Marianna *19. 6. 1804 Dębno (M), ∞ 1. Vojtěch Klimek, 2. 21. 11. 1849 Zalasowa Paweł Peca (D)","Katarzyna, ohlášky 4. 11. 1826 Rozembark – Józef Bogdański (M)","Paweł (Paulus) Dyda pokř. 30. 6. 1811 Wola Dębińska č. 10 (M; id4239 sy3540 sk031)","Konstancja Dyda *17. 2. 1813 Wola č. 10 (M; sy3540 sk032)","Petr (Petrus) Dydowicz *31. 7.(?) 1816 Wola č. 16 – „Adalbertus Dydowicz | Gertrudis nata de Martino Chrapusta“ (M; sy3540 sk034L, ověřeno koordinátorem)"]
     },
     {
       id: "wojciechDy",
@@ -1267,7 +1267,8 @@ window.RODOKMEN = {
         "Ohlášky dcery Katarzyny (18 let) 21. 10. a 4. 11. 1826, Rozembark č. 160, farnost Rożnowice (M): „z Katarzyną panną córką Woyciecha y Gertrudy Dydowiczów Owczarzów, oboie z Rozenbarku“.",
         "Podle indexu Geneteka (D): křty dětí v Dębnie (okr. brzeski) – Mikołaj *4. 12. 1802 (dům 44) a Marianna *19. 6. 1804 (dům 38), rodiče „Wojciech Dyda × Gertruda Chrapusta“, kmotr mj. Antoni Chrapusta. Rod Chrapusta pochází z Dębna/Wojnicze.",
         "Rodné příjmení PRAVDĚPODOBNĚ Chrapusta (D): sňatek Józefovy pravděpodobné sestry Marianny (*~1811) 21. 11. 1849 v Zalasowé: „Marianna vidua post Adalbertum Klimek inquil., filia Adalb. Dydowicz et Gertrudis Chrapusta“, 38 let (M zápis). Stejná jména rodičů jako u Józefa – vazba přes shodu jmen, ne přímým dokladem. Rod Chrapusta: farnosti Wojnicz (Łoponie, Biadoliny, Zakrzów), Dębno.",
-        "Matka Józefa (křest vnuka 1836)."
+        "Matka Józefa (křest vnuka 1836).",
+        "Křest syna Petra 1816 Wola Dębińska č. 16 (M, GAL27; ověřeno koordinátorem): „Adalbertus Dydowicz | Gertrudis nata de Martino Chrapusta“ (Skanoteka id4239 sy3540 sk034L) → otec Martin Chrapusta POTVRZEN přímým zápisem. Rodina žila 1811–16 ve Woli (č. 10, 16), farnost Dębno; Gertruda kmotrou 1812 v Dębně. Sestra pravděpodobně Apolonia Chrapuścionka × Thomas Prosień (Dębno č. 7, 1812) – K."
       ],
       sources: [
         "Skanoteka PTG id4239 (Dębno): U 1765–1777 (sy3505) sken 044, s. 74; M 1765–1777 (sy4505) sken 011",
@@ -6261,7 +6262,8 @@ window.RODOKMEN = {
       marriage: "29. 8. 1773, Dębno – s Magdalenou Świstakównou",
       notes: [
         "Sňatek 29. 8. 1773 Dębno (M): „… inter Martinum Chrapusta juvenem et Magdalenam Świstakowna virginem. In praesentia Adalberti Świstak, Sebastiani Krawczyk, Thomae Kargol etc.“",
-        "Otec Gertrudy (křest 1774 Jastew, M zápis; vazba na naši Gertrudu D)."
+        "Otec Gertrudy (křest 1774 Jastew, M zápis; vazba na naši Gertrudu D).",
+        "Otcovství potvrzeno přímým zápisem (M): křest vnuka Petra Dydowicze 1816 Wola Dębińska – „Gertrudis nata de Martino Chrapusta“ (Skanoteka id4239 sy3540 sk034L)."
       ],
       sources: [
         "Skanoteka PTG id4239 (Dębno): U 1765–1777 (sy3505) sken 044, s. 74; M 1765–1777 (sy4505) sken 011"
