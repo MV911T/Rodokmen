@@ -1221,6 +1221,7 @@ window.RODOKMEN = {
       line: "chmielek",
       cert: "M",
       b: {"date":"cca 1778","year":1778,"approx":true},
+      d: {"date":"4. 6. 1832","year":1832,"place":"Sitnica č. 16 (farnost Rożnowice)"},
       marriage: "2. 2. 1802, Dębno č. 44 (pow. brzeski) – s Gertrudou Chrapustovou",
       notes: [
         "Sňatek 2. 2. 1802 Dębno (M): „2 | 44 | Adalbertus Dydowicz | 22 | caelebs | Gertrudis Chrapuścionka | 26 | caelebs | Gregorius Janas, Georgius Jemioło – vicini | copulavit R. Antonius Szygulinski parochus“ (rodiče neuvedeni). Podle věku *~1780 (při úmrtí 1832 uvedeno 55 → *~1777).",
@@ -1228,7 +1229,7 @@ window.RODOKMEN = {
         "Ovčák (owczarz); rodina: Dębno 1802–1804 (příjmení i „Dyda“) → Rozembark, farnost Rożnowice (1826) → Sitnica († 1832). Doloženo ohláškami dcery Katarzyny 1826 (M) a křty dětí v Dębnie (index Geneteka, D).",
         "Dcera (D) Marianna *~1811, vdova po Vojtěchu Klimkovi, 2. sňatek 21. 11. 1849 Zalasowa s Pawłem Pecou (uvádí rodiče Adalbert Dydowicz × Gertruda Chrapusta). Rod Dydowicz – ovčáci, stěhování Sitnica (Rożnowice) → Tarnowiec → Wierzchosławice → Zalasowa.",
         "Otec Józefa (křest vnuka Tomasze 1836); manželka Gertruda.",
-        "Kandidát na úmrtí (K/D): „Adalbertus Dydowicz, opilio“, Sitnica č. 16 (farnost Rożnowice), † VI/1832 (den 4.?), 55 let (*~1777) – sedí jméno, povolání ovčák i kraj; manželka v zápisu neuvedena."
+        "Úmrtí 4. 6. 1832 Sitnica č. 16 (zápis M, přečten v plném rozlišení – GAL20): „Junius | 4. | 16. | Adalbertus Dydowicz Opilio | 1 | 1 | 55 | Munitus Sacramentis Sstis, ordinaria“ (Skanoteka id5886 sy5545 sk024). Totožnost PRAVDĚPODOBNÁ (D): sedí jméno, ovčák, věk (*~1777; při sňatku 1802 22 let) a kraj (Rozembark 1826 tatáž farnost); manželka ani rodiče neuvedeni."
       ],
       sources: [
         "Skanoteka PTG id4239 (Dębno, pow. brzeski; orig. AD Tarnów): M Dębno 1784–1865 (sy4515) sken 012, s. 14; U Dębno 1784–1842 (sy3515) skeny 022 a 024",
