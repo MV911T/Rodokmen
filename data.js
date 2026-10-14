@@ -2612,7 +2612,7 @@ window.RODOKMEN = {
       notes: [
         "Pravděpodobný otec Jiřího Holby (sňatek 1706: „filius Joannis Holbík“) – v Nedašově žili i Mikuláš Holbík × Anna a Václav Holbík × Anna, proto PRAVDĚPODOBNÉ.",
         "Jiří je nejspíš z prvního manželství; se Zuzanou měl syna Ondřeje (*7. 10. 1692).",
-        "Nejstarší doložený předek této větve – matriky Brumov začínají rokem 1688; dál jen lánový rejstřík 1670 (v Nedašově „Kateřina, vdova po Matyáši Holbovi“)."
+        "Nejstarší doložený předek této větve – matriky Brumov začínají rokem 1688. OPRAVA (14. 10. 2026): zápis lánového rejstříku 1670 (MZA D 1 sign. 312, fol. 38v, img 41) dříve čtený „Kateřina, vdova po Matyáši Holbovi“ zní „Katerzina Wittib nach dem Mathiass Molků (Molbů?) vor Mikulass …“ – počáteční písmeno příjmení je stejné M jako v „Mathiass“ (ověřeno koordinátorem na výřezu); tištěný Generální rejstřík k lánové vizitaci (Kotačka – Peterka – Sperát 2015, s. 1185) má „Molková Kateřina … Nedašov … vd. p. Matyáši Molků“. S Holbíky tedy NESOUVISÍ. V celém generálním rejstříku není v Nedašově žádný Holba/Holbík; jediný Holba na panství Brumov je „Holba Mikoláš“, osedlý bez polí ve Valašských Kloboukách (1656–57, fol. 50r) – vazba K."
       ],
       sources: [
         "Brumov opis7 img 11 (sňatek 1688), 46 (křest Ondřeje 1692), 115"
