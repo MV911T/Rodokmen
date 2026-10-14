@@ -380,7 +380,7 @@ window.RODOKMEN = {
       name: "Jakub (Jakob) Kočíř",
       line: "plachy",
       cert: "M",
-      b: {"date":"cca 1776","year":1776,"approx":true,"place":"Drahany (?) – „von Drahan“"},
+      b: {"date":"cca 1776","year":1776,"approx":true,"place":"Drahany (?) / Hradčany (?) – „von D…[r]ahan/…schan“"},
       d: {"date":"24. 9. 1829","year":1829,"place":"Kralice na Hané č. 65"},
       cause: "žaludeční křeče",
       father: "janKoSt",
@@ -391,7 +391,8 @@ window.RODOKMEN = {
         "Otec Jana (*1801); děti s Theresií Schindler: Antonia 1799, Jan 1801, Franz 1806, Karolina 1808, Joseph 1810 (MZA 9178). Žil ještě 1824 (souhlas se sňatkem syna).",
         "Není pokřtěn v Kralicích 1761–1784 – pocházel z obce „Ar/Ur…schan“ (Určice? – HYPOTÉZA).",
         "Zemřel 24. 9. 1829 jako půlláník v Kralicích č. 65, 55 let (9181 sken 194, fol. 9).",
-        "PLA8 (14. 10. 2026): sňatek Jakuba 25. 11. 1797 Kralice (MZA 9179 sk10, fol. 14) přečten v plném rozlišení: „Jakob Sohn nach dem + Johann Kočiř Bauer von D[r]ahan“ – obec nejspíš Drahany (okr. Prostějov), D; dřívější čtení „Ar…schan“ opraveno. Výřez 00_klicove_doklady/1797-11-25_snatek_Jakob_Kocir_otec_Johann_von_Drahan…"
+        "PLA8 (14. 10. 2026): sňatek Jakuba 25. 11. 1797 Kralice (MZA 9179 sk10, fol. 14) přečten v plném rozlišení: „Jakob Sohn nach dem + Johann Kočiř Bauer von D[r]ahan“ – obec nejspíš Drahany (okr. Prostějov), D; dřívější čtení „Ar…schan“ opraveno. Výřez 00_klicove_doklady/1797-11-25_snatek_Jakob_Kocir_otec_Johann_von_Drahan…",
+        "PLA12 (14. 10. 2026): čtení místa „von D[r]ahan“ ZPOCHYBNĚNO – v plném rozlišení dva sestupné tahy (spíš „-schan“): Drahan / Hradschan (Hradčany u Prostějova?) / D…schan (K). V Drahanech N VII/1773–IV/1778 a Z 1784–85, 1787–I/1798 Kočíř NENÍ."
       ],
       sources: [
         "MZA 9178 sken 26",
