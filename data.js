@@ -4519,15 +4519,19 @@ window.RODOKMEN = {
       line: "jirik",
       cert: "M",
       b: {"date":"cca 1715","year":1715,"approx":true,"place":"Bolatice"},
+      d: {"date":"17. 11. 1794 (pohřeb 19. 11.)","year":1794,"place":"Bolatice"},
       notes: [
         "Sňatek 18. 11. 1739 Bolatice: „Hedvigis Fussowa virgo“ × Fabian Herudek (H III 1 sk46, M); rodiče neuvedeni (rod Fus/Fuss v Bolaticích).",
-        "Matka Martina (křest 9. 11. 1757: „Fabianus Herudeck Rust. / Hedvigis“ – H III 1 sk28, M)."
+        "Matka Martina (křest 9. 11. 1757: „Fabianus Herudeck Rust. / Hedvigis“ – H III 1 sk28, M).",
+        "Pravděpodobné úmrtí (zápis M, ztotožnění D): pohřeb 19. 11. 1794 „Hedviga Herudzin Einliegerin, welche am 17ten hujus früh um 8 Uhr gestorben | Catho | 76(?) Jahr“ (H III 5 sk48, č. 33) → *~1718. Bez „Wittwe“ – stav Fabiana st. nejasný."
       ],
       sources: [
-        "ZA Opava, NAD 165 Sbírka matrik, Bolatice H III 1, sken 46, sken 28"
+        "ZA Opava, NAD 165 Sbírka matrik, Bolatice H III 1, sken 46, sken 28",
+        "ZA Opava, NAD 165 Sbírka matrik, Bolatice H III 5, sken 48"
       ],
       scans: [
-        {"f":"img/1739_snatek_herudek_fusova.jpg","t":"Sňatek 18. 11. 1739 Bolatice (H III 1 sken 46)"}
+        {"f":"img/1739_snatek_herudek_fusova.jpg","t":"Sňatek 18. 11. 1739 Bolatice (H III 1 sken 46)"},
+        {"f":"img/1794_pohreb_hedvika_herudek.jpg","t":"Pohřeb 19. 11. 1794 Bolatice – Hedvika Herudková, podruhyně, 76 let (ZA Opava, Bolatice H III 5 sken 48)"}
       ]
     },
     {
@@ -4645,20 +4649,24 @@ window.RODOKMEN = {
       name: "Anton Herudek",
       line: "jirik",
       cert: "M",
-      b: {"date":"?","year":1720,"approx":true},
+      b: {"date":"cca 1721","year":1721,"approx":true},
+      d: {"date":"1. 8. 1801 (pohřeb 3. 8.)","year":1801,"place":"Bolatice"},
       occ: "sedlák (Bauer) v Bolaticích",
       marriage: "25. 2. 1748, Bolatice – s Annou Sniehotovou",
       notes: [
         "Otec ženicha při sňatku 6. 2. 1775: „Frantz Sohn des Bauern Anton Herudek“ (H III 4 sk5, M). Manželka Anna; děti v H III 1 (JIR-B3/B6): Fabian 1748, Franciscus 22. 3. 1751, Joannes 1753 (Fabian ≠ Fabian ∞ 1739 Hedvika Fusová).",
         "Sňatek 25. 2. 1748 (M; JIR-B9): „Antonius Herudek Adoles: Anna Sniehotowa Virg. | Andreas Duda, Jacobus Rzehanek | Bolati“ (H III 1 sk49L, fol. 57v). Otcové neuvedeni.",
-        "JIR-B10 (K): kandidáti na rodiče – Ondřej Herudek × Marina ∞ 31. 5. 1718, Wawra Herudek vdovec ∞ 25. 9. 1718 (H III 1 sk41R); jiný Herudek v sňatcích 1716–31 není. Anton žil 6. 2. 1775."
+        "JIR-B10 (K): kandidáti na rodiče – Ondřej Herudek × Marina ∞ 31. 5. 1718, Wawra Herudek vdovec ∞ 25. 9. 1718 (H III 1 sk41R); jiný Herudek v sňatcích 1716–31 není. Anton žil 6. 2. 1775.",
+        "Pohřeb 3. 8. 1801: „den 3ten August | Idem | Idem | Anton Herudek Auszügler von Bolatitz, welcher am 1ten hujus früh um 8 Uhr gestorben | Catho | 80 Jahr“ (H III 5 sk69, č. 58, M; ověřeno koordinátorem)."
       ],
       sources: [
         "ZA Opava, NAD 165 Sbírka matrik, Bolatice H III 4, sken 5; H III 1",
-        "ZA Opava, NAD 165 Sbírka matrik, Bolatice H III 1, sken 49 (fol. 57v)"
+        "ZA Opava, NAD 165 Sbírka matrik, Bolatice H III 1, sken 49 (fol. 57v)",
+        "ZA Opava, NAD 165 Sbírka matrik, Bolatice H III 5, sken 69"
       ],
       scans: [
-        {"f":"img/1748_snatek_herudek_sniehota.jpg","t":"Sňatek 25. 2. 1748 Bolatice – Antonius Herudek, mládenec × Anna Sniehotová, panna (ZA Opava, Bolatice H III 1 sken 49)"}
+        {"f":"img/1748_snatek_herudek_sniehota.jpg","t":"Sňatek 25. 2. 1748 Bolatice – Antonius Herudek, mládenec × Anna Sniehotová, panna (ZA Opava, Bolatice H III 1 sken 49)"},
+        {"f":"img/1801_pohreb_anton_herudek.jpg","t":"Pohřeb 3. 8. 1801 Bolatice – Anton Herudek, výminkář, 80 let (ZA Opava, Bolatice H III 5 sken 69)"}
       ]
     },
     {
@@ -4729,13 +4737,19 @@ window.RODOKMEN = {
       maiden: "Duda (Dudowa)",
       line: "jirik",
       cert: "M",
-      b: {"date":"?","year":1725,"approx":true},
+      b: {"date":"cca 1715","year":1715,"approx":true},
+      d: {"date":"30. 3. 1795 (pohřeb 1. 4.)","year":1795,"place":"Bolatice"},
       notes: [
         "Matka Susanny při křtu 9. 8. 1749: „Philippus Bartoniecz et Veronica“ (H III 1 sk16R, M).",
-        "Sňatek 10. 11. 1748 „Philippus Bartonicz … et Veronica Dudowa Virgo“, svědci Joannes a Mathaeus Duda (H III 1 sk49R, M). Otec neuveden."
+        "Sňatek 10. 11. 1748 „Philippus Bartonicz … et Veronica Dudowa Virgo“, svědci Joannes a Mathaeus Duda (H III 1 sk49R, M). Otec neuveden.",
+        "Pohřeb 1. 4. 1795: „Veronica Eheweib des Philipp Bartonetz Auszüglerin welche am 30ten März Abend um 11 Uhr gestorben … 80 Jahr“ (H III 5 sk49, č. 7, M). Philipp tehdy žil. Pozor: † 31. 12. 1794 „Veronica Bartonzin Einliegerin“, 72 l. – jiná."
       ],
       sources: [
-        "ZA Opava, NAD 165 Sbírka matrik, Bolatice H III 1, sken 16"
+        "ZA Opava, NAD 165 Sbírka matrik, Bolatice H III 1, sken 16",
+        "ZA Opava, NAD 165 Sbírka matrik, Bolatice H III 5, sken 49"
+      ],
+      scans: [
+        {"f":"img/1795_pohreb_veronika_bartonicz.jpg","t":"Pohřeb 1. 4. 1795 Bolatice – Veronika, manželka výminkáře Philippa Bartonetze, 80 let (ZA Opava, Bolatice H III 5 sken 49)"}
       ]
     },
     {
