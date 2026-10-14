@@ -3010,8 +3010,8 @@ window.RODOKMEN = {
       name: "Jiří Birlog",
       line: "matusu",
       cert: "M",
-      b: {"date":"?","year":1750,"approx":true},
-      d: {"date":"po 25. 1. 1802 (asi po 1824)","year":1825,"approx":true},
+      b: {"date":"cca 1738–1748","year":1740,"approx":true},
+      d: {"date":"3. 3. 1822 (pohřeb 5. 3.) – pravděpodobně","year":1822,"place":"Bylnice č. 136"},
       father: "stepanBi",
       occ: "zahradník (Gartler) v Nedašově",
       marriage: "15. 1. 1769, Brumov – s Marinou Fojtíkovou (1.); 2. 5. 1786 s vdovou Marinou Adamkovou z Bylnice (2.)",
@@ -3026,14 +3026,16 @@ window.RODOKMEN = {
         "MAT22: Jiří B v Nedašově 1787–~1820 NEZEMŘEL (rejstřík Brumov 4034 Z Nedašov img293L: „Birlog Georg“ jen str. 45 = dítě 1808 a str. 50 = † 16. 1. 1811 „Georg Birlog Witwer Gartler, 71, 76“ = Jiří A, jehož žena Anna † 24. 5. 1804 č. 71, 52 l.). Ani 2. žena Marina tam nezemřela → Jiří B s Marinou Adamkovou asi odešli (Bylnice?) a zemřel před 1818 jinde (K).",
         "MAT24 (oprava): údaj „† před 1818“ byl mylný – v křtu vnuka Václava Nováka 21. 9. 1818 „Anna Tochter des x Georg Birlog, Häusler“ (N 4473 img102, str. 97) je „x“ oddělovač, který písař dává téměř ke každému otci i k žijícím kmotrům (ověřeno koordinátorem na výřezu sloupce). Při sňatku dcery Anny 25. 1. 1802 „Anna Tochter des Georg Birlog, Gartler“ bez „verstorbenen“ (O 4023 img106) → žil 1802 (D+). Úmrtí po 1802 neznámé; v Nedašově, Bylnici a Brumově-městě 1787–1820 není → asi po 1820 (K).",
         "MAT25: křest vnučky Marianny Novákové 17. 8. 1824 „Anna Tocht[er] d[es] Georg Birlog Bauern“ bez „verstorbenen“ (N 4474 img8, M) → možná žil ještě 1824 (K). Nedašov Z 4491 rejstřík B (1821–~1835): dospělý Georg Birlog není (jen dítě † 3. 4. 1826, syn Martina, č. 71); Návojná Z 1787–1820 bez Birlogů.",
-        "MAT27 – KANDIDÁT úmrtí (K/D): Bylnice Z 4037 (AP id 3819) fol. 6 = img5L: „März 3/5 | 136 | Georg Bilrojä(?)/Birloga | Wittiber | … 84(?)/34(?)“, rejstřík B „Birloga Georg 6“; rok asi 1822 (bez hlavičky). Dům Bylnice 136 = dům Josefa Birloga (1813). Věk 84 → *~1738 sedí. Ověřit v plném rozlišení; v rejstříku i „Birlog Marina 20“ (~1825/26) – 2. žena? Marina Adamková † 25. 4. 1805 Nedašova Lhota 55 (75 l.) = jiná osoba."
+        "Pravděpodobné úmrtí (MAT28, zápis M, ztotožnění D): 3. 3. 1822 Bylnice č. 136 „März 3/5 | 136 | Georg Bilroja / Wittiber / Auszügner | … | 84 | An Lungensucht | Johann Schebela Coop.“ (MZA, Bylnice Z 4037 img5L, fol. 6; rok podle nadpisu „Anno 1822“ img4R; rejstřík „Birloga Georg 6“). Věk 84 (→ *~1738) – číslici lze číst i 34, ale „Wittiber + Auszügner“ svědčí pro 84; koordinátor ověřil na výřezu. Dům 136 = Josef Birlog (1813; syn? K). Vdovec → 2. žena Marina † před 1822 (nenalezena). Marina † 1827 Bylnice 147 = žena Franze Birloga (jiná)."
       ],
       sources: [
         "O 4023 img 106 (sňatek dcery 1802)",
-        "N 4473 img 102"
+        "N 4473 img 102",
+        "MZA, Acta Publica, Bylnice Z 4037 (id 3819), img5 (fol. 6)"
       ],
       scans: [
-        {"f":"img/1802_snatek_novak_birlog.jpg","t":"Sňatek 25. 1. 1802, Nedašov č. 45"}
+        {"f":"img/1802_snatek_novak_birlog.jpg","t":"Sňatek 25. 1. 1802, Nedašov č. 45"},
+        {"f":"img/1822_umrti_georg_birlog_bylnice.jpg","t":"Úmrtí 3. 3. 1822 Bylnice č. 136 – Georg Birlog („Bilroja“), vdovec, výměnkář (MZA, Bylnice Z 4037 fol. 6) – ztotožnění pravděpodobné"}
       ]
     },
     {
