@@ -2968,7 +2968,8 @@ window.RODOKMEN = {
         "MAT10 (14. 10. 2026): sňatek Jiří Birlog × Marina NENÍ v Brumov 4012 O XI/1770–XI/1787. Jiří Birlog z č. 71 je 1772 vdovec (∞ Veronika, dcera Jiřího Wilimka? z Brumova, img181L, D) a 17. 11. 1776 znovu vdovec (∞ Anna, dcera Ondřeje Matochy, img189R, M) → hypotéza „jiriBi = Jiří z č. 71“ slábne; Jiří z č. 74 (manžel Mariny † 1786) spíš jiný Birlog oženěný před 1770 nebo mimo faru (K). Josef, syn † Štěpána Birloga(?) ∞ I/1779 Zuzana Gričká(?) (img192L) – možný příbuzný.",
         "MAT12 (14. 10. 2026): v Nedašově současně DVA Jiří Birlogové – (A) č. 71: × Rosina (dítě † 1769), vdovec ∞ 1772 Veronika, ∞ 1776 Anna Matochová, děti 1780–85, † 16. 1. 1811 (76 l.) patří spíš JEMU; (B) č. 74 = náš jiriBi: syn † Štěpána, ∞ 15. 1. 1769 jako mládenec Marina Fojtíková; s Marinou děti Anna 12. 6. 1782 (4012 N img131L, M), Matěj I–II/1785 (img146R), Marina 28. 1. 1786 († hned); Marina † 6. 2. 1786; Jiří vdovec ∞ 2. 5. 1786 vdova Marina po † Martinu Adamkovi z Bylnice (4012 O img203L, M). Úmrtí jiriBi tedy neznámé (zápis 1811 = Jiří A).",
         "MAT13: 5. 10. 1770 dvojčata Rosina a Dorota „Georgius Birlog et Marina Nedaschov“ (4012 N img64R, M) – 21 měsíců po sňatku s Marinou Fojtíkovou → Marina 1770 téměř jistě Fojtíková (D+); totožnost s Marinou † 1786 („30 l.“) stále otevřená (děti 1772–81 nečteny). Kandidát linie A: 24. 4. 1770 Marina, „Georgius Bieleg et Rosina“ (img62L).",
-        "MAT14: 10. 7. 1773 křest syna Jiřího „Georgius Birlog et Marina rusticus Bilnicio | Martin Jangatsch Brumovio, anna Grnaussin(?) villica Bilnicio | Bilnicio 29“ (4012 N img84L, M) – stejný kmotr jako u dvojčat 1770 → týž pár (D+), ale bydliště Bylnice č. 29 (sedlák), ne Nedašov 74 (zahradník, kmotři Rožnovják/Missujová 1782–86) → spojení s rodinou č. 74 jen K; možný třetí Jiří Birlog v Bylnici."
+        "MAT14: 10. 7. 1773 křest syna Jiřího „Georgius Birlog et Marina rusticus Bilnicio | Martin Jangatsch Brumovio, anna Grnaussin(?) villica Bilnicio | Bilnicio 29“ (4012 N img84L, M) – stejný kmotr jako u dvojčat 1770 → týž pár (D+), ale bydliště Bylnice č. 29 (sedlák), ne Nedašov 74 (zahradník, kmotři Rožnovják/Missujová 1782–86) → spojení s rodinou č. 74 jen K; možný třetí Jiří Birlog v Bylnici.",
+        "MAT16: 26. II. 1778 Rosina „Georgius Birlog et Marina hortulanus | Jan Mišský(?) Nedaš., Rosina Jangatschka(?) Brumov | Nedaš. 74“ (4012 N img109L, M; č. 74 D+); 9. I–II/1780 Kateřina „Jura Birlog et Marina inquil. | … Marina Missuin(?) | Nedaš. 71“ (img118R). Kmotrovský řetěz Jangatsch (1770, 1773, 1778) → Missujová (1780–86) spojuje pár z Bylnice 29 s rodinou č. 74 → jiriBi × Marina (Fojtíková) = rodina č. 74 (D+). Proti: věk Mariny † 1786 „30“ (K – možná druhá Marina)."
       ],
       sources: [
         "O 4023 img 106 (sňatek dcery 1802)",
@@ -4551,23 +4552,25 @@ window.RODOKMEN = {
       name: "Franz Herudek",
       line: "jirik",
       cert: "M",
-      b: {"date":"22. 3. 1751 (křest?)","year":1751,"approx":true},
+      b: {"date":"22. 3. 1751 (křest)","year":1751,"place":"Bolatice"},
       father: "antonHe",
       occ: "podruh (Inlieger, 1775), později zahradník",
+      marriage: "6. 2. 1775, Bolatice – se Susannou Bartonetzovou",
       notes: [
         "Uveden jako otec Barbary (sňatek 1794, žil) a 1797 „Frantz Herudek Gärt[ner]“ (H III 2 sk117). Kandidát (K): Franz Herudek, zahradník × Susanna – dítě 1791 (H III 2 sk87) → Susanna možná matka Barbary (neověřeno). Vztah k Martinu Herudkovi (naše linie) neurčen.",
         "Manželka Susanna roz. Bartonek/Bartoňková (křest Barbary 1775, M). Děti podle indexu H III 11 (sk65–66): Barbara 1775, Ferdinand 30. 5. 1778, Franz 4. 10. 1780, Caspar 6. 1. 1786, Julianna 1. 5. 1791. Původ neurčen – syn Fabiana není (žádný Franciscus u Fabiana 1742–60); kandidát (K): Franciscus, syn Antonia Herudka × Anny, pokřtěný v březnu toho roku, kdy se narodil i Johann, syn Fabiana.",
-        "Sňatek 6. 2. 1775 Bolatice, kostel sv. Stanislava (M; JIR-B7, ověřeno koordinátorem): „der Junggesell Frantz Sohn des Bauern Anton Herudek mit der Jungfrau Susanna Tochter des Gärtners Philipp Bartonetz beyde von Bollatitz, copulirt P. Hieronimus Schallmajer Administrator, Zeugen waren Wenzel Kramartzik Bauer und Joseph Fus Gärtner“ (H III 4 sk5). Pravděpodobně Franciscus pokř. 22. 3. 1751, syn Antona Herudka × Anny (H III 1 sk18R; K–D). Franz tedy NENÍ syn Fabiana."
+        "Sňatek 6. 2. 1775 Bolatice, kostel sv. Stanislava (M; JIR-B7, ověřeno koordinátorem): „der Junggesell Frantz Sohn des Bauern Anton Herudek mit der Jungfrau Susanna Tochter des Gärtners Philipp Bartonetz beyde von Bollatitz, copulirt P. Hieronimus Schallmajer Administrator, Zeugen waren Wenzel Kramartzik Bauer und Joseph Fus Gärtner“ (H III 4 sk5). Pravděpodobně Franciscus pokř. 22. 3. 1751, syn Antona Herudka × Anny (H III 1 sk18R; K–D). Franz tedy NENÍ syn Fabiana.",
+        "Křest 22. 3. 1751: „22 Marty | P. Clarentius Franciscan. | Franciscus | Antonius Herudek, Anna | Matthaeus …, Catharina … | Bolat.“ (H III 1 sk18L, M; JIR-B8). Ztotožnění s ženichem 1775 podle otce a věku – D."
       ],
       sources: [
         "ZA Opava, NAD 165 Sbírka matrik, Bolatice H III 4, sken 28",
         "ZA Opava, NAD 165 Sbírka matrik, Bolatice H III 2, sken 117",
-        "ZA Opava, NAD 165 Sbírka matrik, Bolatice H III 4 (O 1770–1840), sken 5"
+        "ZA Opava, NAD 165 Sbírka matrik, Bolatice H III 4 (O 1770–1840), sken 5",
+        "ZA Opava, NAD 165 Sbírka matrik, Bolatice H III 1, sken 18"
       ],
       scans: [
         {"f":"img/1775_snatek_franz_herudek.jpg","t":"Sňatek 6. 2. 1775 Bolatice – Franz, syn sedláka Antona Herudka, a Susanna, dcera zahradníka Philippa Bartonetze (ZA Opava, Bolatice H III 4 sken 5)"}
-      ],
-      m: {}
+      ]
     },
     {
       id: "philippBa",
@@ -4577,10 +4580,24 @@ window.RODOKMEN = {
       b: {"date":"?","year":1725,"approx":true},
       occ: "zahradník (Gärtner) v Bolaticích",
       notes: [
-        "Otec nevěsty při sňatku 6. 2. 1775: „Susanna Tochter des Gärtners Philipp Bartonetz … von Bollatitz“ (H III 4 sk5, M)."
+        "Otec nevěsty při sňatku 6. 2. 1775: „Susanna Tochter des Gärtners Philipp Bartonetz … von Bollatitz“ (H III 4 sk5, M).",
+        "V H III 1 „Philippus Bartoniecz et Veronica“: Susanna 1749, dítě 1752, Franciscus 1760 („Hortulanus“). Souběžně „Georgius Bartonicz & Veronica“ 1748–52 – možná týž muž (K)."
       ],
       sources: [
         "ZA Opava, NAD 165 Sbírka matrik, Bolatice H III 4, sken 5"
+      ]
+    },
+    {
+      id: "veronikaBa",
+      name: "Veronika Bartoniecz",
+      line: "jirik",
+      cert: "M",
+      b: {"date":"?","year":1725,"approx":true},
+      notes: [
+        "Matka Susanny při křtu 9. 8. 1749: „Philippus Bartoniecz et Veronica“ (H III 1 sk16R, M). Rodné příjmení neznámé."
+      ],
+      sources: [
+        "ZA Opava, NAD 165 Sbírka matrik, Bolatice H III 1, sken 16"
       ]
     },
     {
@@ -4589,15 +4606,22 @@ window.RODOKMEN = {
       maiden: "Bartonek (Bartoňková)",
       line: "jirik",
       cert: "M",
-      b: {"date":"?","year":1750,"approx":true},
+      b: {"date":"9. 8. 1749 (křest)","year":1749,"place":"Bolatice"},
       father: "philippBa",
+      mother: "veronikaBa",
+      marriage: "6. 2. 1775, Bolatice – s Franzem Herudkem",
       notes: [
         "Křest dcery Barbary 29. 11. 1775 Bolatice (M): „von seinem Weibe Susanna Bartonkin“ (H III 2 sk40). Manželka Franze Herudka; další děti 1778–1791 (index H III 11).",
-        "Sňatek 6. 2. 1775 s Franzem Herudkem: „Susanna Tochter des Gärtners Philipp Bartonetz … von Bollatitz“ (H III 4 sk5, M)."
+        "Sňatek 6. 2. 1775 s Franzem Herudkem: „Susanna Tochter des Gärtners Philipp Bartonetz … von Bollatitz“ (H III 4 sk5, M).",
+        "Křest 9. 8. 1749 Bolatice (M; JIR-B8, ověřeno koordinátorem): „9 Augusti | Idem P. Alexander | Susanna | Philippus Bartoniecz et Veronica | Franciscus Fuss, Anna Wadzurowa(?) | Bolat.“ (H III 1 sk16R)."
       ],
       sources: [
         "ZA Opava, NAD 165 Sbírka matrik, Bolatice H III 2, sken 40",
-        "ZA Opava, NAD 165 Sbírka matrik, Bolatice H III 4, sken 5"
+        "ZA Opava, NAD 165 Sbírka matrik, Bolatice H III 4, sken 5",
+        "ZA Opava, NAD 165 Sbírka matrik, Bolatice H III 1, sken 16"
+      ],
+      scans: [
+        {"f":"img/1749_krest_susanna_bartoniecz.jpg","t":"Křest 9. 8. 1749 Bolatice – Susanna, dcera Philippa Bartoniecze a Veroniky (ZA Opava, Bolatice H III 1 sken 16)"}
       ]
     },
     {
@@ -4615,17 +4639,38 @@ window.RODOKMEN = {
       ]
     },
     {
+      id: "simonSl",
+      name: "Simon Sliwka",
+      line: "jirik",
+      cert: "M",
+      b: {"date":"?","year":1735,"approx":true},
+      d: {"date":"před 20. 2. 1786","year":1785,"approx":true},
+      notes: [
+        "Zemřelý otec ženicha 20. 2. 1786: „der Johannes des sel. Simon Sliwka leibl. Sohn“ (Bolatice H III 4 sk14, M)."
+      ],
+      sources: [
+        "ZA Opava, NAD 165 Sbírka matrik, Bolatice H III 4, sken 14"
+      ]
+    },
+    {
       id: "johannSl",
       name: "Johann (Jan) Sliwka",
       line: "jirik",
       cert: "D",
-      b: {"date":"?","year":1775,"approx":true},
+      b: {"date":"cca 1764","year":1764,"approx":true,"place":"Bolatice"},
+      father: "simonSl",
       occ: "domkář (Häusler, 1801), sedlák (colonus, 1821) v Bolaticích",
+      marriage: "20. 2. 1786, Bolatice – s Veronikou Dudovou",
       notes: [
-        "Uveden jako otec nevěsty Mariany 14. 11. 1821: „Mariana filia Joannis Sliwka coloni“ (H III 4 sk72)."
+        "Uveden jako otec nevěsty Mariany 14. 11. 1821: „Mariana filia Joannis Sliwka coloni“ (H III 4 sk72).",
+        "Sňatek 20. 2. 1786 Bolatice, kostel sv. Stanislava (M; JIR-B8, ověřeno koordinátorem): „der Johannes des sel. Simon Sliwka leibl. Sohn, mit der Jungfer Verona Duda leibl. Tochter beyde von hier, copulirt Simon Ossmanczik, Zeugen waren Stanislaus Duda Freyhäusler und Bartek Sliwka … Er 22 Sie 20 Jahr“ (H III 4 sk14). Děti podle indexu H III 11: Valentin 8. 2. 1787, Urban ~VI/1790, Stanislaus 19. 5. 1794, Franz 5. 9. 1796, Simon 9. 6. 1799, Marianna 28. 12. 1801."
       ],
       sources: [
-        "ZA Opava, NAD 165 Sbírka matrik, Bolatice H III 4 (O 1770–1840), sken 72 (1821 č. 19)"
+        "ZA Opava, NAD 165 Sbírka matrik, Bolatice H III 4 (O 1770–1840), sken 72 (1821 č. 19)",
+        "ZA Opava, NAD 165 Sbírka matrik, Bolatice H III 4 (O 1770–1840), sken 14"
+      ],
+      scans: [
+        {"f":"img/1786_snatek_sliwka_duda.jpg","t":"Sňatek 20. 2. 1786 Bolatice – Johann, syn † Simona Sliwky, a Verona Dudová (ZA Opava, Bolatice H III 4 sken 14)"}
       ]
     },
     {
@@ -4634,9 +4679,10 @@ window.RODOKMEN = {
       maiden: "Duda",
       line: "jirik",
       cert: "M",
-      b: {"date":"?","year":1775,"approx":true},
+      b: {"date":"cca 1766","year":1766,"approx":true,"place":"Bolatice"},
       notes: [
-        "Křest dcery Mariany 1801 Bolatice (M): „die Mutter Veronica geb: Joann Duda“ – dcera Jana Dudy (H III 2 sk149)."
+        "Křest dcery Mariany 1801 Bolatice (M): „die Mutter Veronica geb: Joann Duda“ – dcera Jana Dudy (H III 2 sk149).",
+        "Při sňatku 20. 2. 1786 „Jungfer Verona Duda … von hier“, 20 let – otec v zápisu neuveden. Pozor: 31. 1. 1786 se vdávala jiná „Veronica hinterbliebene Tochter nach dem Bauer Johann Duda“ za fusiliera → vazba na Jana Dudu jen D (z křtu dcery 1801)."
       ],
       sources: [
         "ZA Opava, NAD 165 Sbírka matrik, Bolatice H III 2, sken 149"
