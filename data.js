@@ -4229,21 +4229,165 @@ window.RODOKMEN = {
       id: "valentinHe",
       name: "Valentin Herudek",
       line: "jirik",
-      cert: "D",
-      b: {"date":"8. 2. 1791 (podle indexu)","year":1791,"place":"Bolatice"},
+      cert: "M",
+      b: {"date":"8. 2. 1791","year":1791,"place":"Bolatice"},
       d: {"date":"před 1843","year":1842,"approx":true},
+      father: "martinHe",
+      mother: "ludmillaHe",
       occ: "sedlák v Bolaticích",
       marriage: "20. 6. 1815, Bolatice – s Annou Marií Pawlowsky (oba 24)",
       notes: [
+        "Křest 8. 2. 1791 Bolatice (M): „Den 8t Febru[ar] | Idem | Vallentin | Martin Herudek Bauer die Mutter Ludmilla | Bartolomeus Sliwka Häusler und Jungfrau Barbara Tochter des Math[ias] Sniehota Häusler | Cathol | Bolatitz“ (H III 2 sk86, 1791 č. 5; číslo domu neuvedeno).",
         "Sňatek 1815: „Juvenis Valentinus filius defuncti Martini Herudek coloni cum virgine Anna Maria filia Francisci Pawlosky casarii“.",
-        "Otec Josefa (*10. 10. 1821, podle indexu H III 11 – D), Johanna 1819, Veroniky 1824.",
-        "Rodiče: † sedlák Martin Herudek × Ludmilla (index: „Halenta/Walenta?“)."
+        "Otec Josefa (*10. 10. 1821, podle indexu H III 11 – D), Johanna 1819, Veroniky 1824."
       ],
       sources: [
-        "ZA Opava, NAD 165 Sbírka matrik, Bolatice H III 4 sken 63; index H III 11"
+        "ZA Opava, NAD 165 Sbírka matrik, Bolatice H III 4 sken 63; index H III 11",
+        "ZA Opava, NAD 165 Sbírka matrik, Bolatice H III 2 (N 1765–1810), sken 86 (1791 č. 5)"
       ],
       scans: [
+        {"f":"img/1791_krest_valentin_herudek.jpg","t":"Křest 8. 2. 1791 Bolatice – Valentin, syn sedláka Martina Herudka a Ludmilly (ZA Opava, Bolatice H III 2 sken 86)"},
         {"f":"img/1815_snatek_herudek_pawlowsky.jpg","t":"Sňatek 20. 6. 1815 (H III 4 sken 63)"}
+      ]
+    },
+    {
+      id: "martinHe",
+      name: "Martin Herudek",
+      line: "jirik",
+      cert: "M",
+      b: {"date":"cca 1757","year":1757,"approx":true,"place":"Bolatice"},
+      d: {"date":"mezi III/1812 a VI/1815","year":1814,"approx":true,"place":"Bolatice (?)"},
+      father: "fabianHe",
+      occ: "sedlák (Bauer, colonus) v Bolaticích",
+      marriage: "24. 1. 1780, Bolatice – s Ludmillou Heckovou (?) (on 23, ona 25)",
+      notes: [
+        "Sňatek 24. 1. 1780 Bolatice, kostel sv. Stanislava (M): „der Junggesell Martin, Sohn des Bauers Fabian Herudek, mit der Jungfrau Ludmilla, Tochter nach seel. Georg Hecka(?) Inleiger(?), beyde von Bollatitz … der Bräutigam ist 23 Jahr und die Braut 25 Jahr alt“ (H III 4 sk8, fol. 9, 1780 č. 2).",
+        "V lednu 1810 žil (úmrtí manželky); při sňatku syna Valentina 20. 6. 1815 „defunctus“. Úmrtí NENÍ v Z H III 5 I/1810–II/1812 (sk95–101) → zemřel III/1812–VI/1815 (D).",
+        "Děti: Valentin *8. 2. 1791."
+      ],
+      sources: [
+        "ZA Opava, NAD 165 Sbírka matrik, Bolatice H III 4 (O 1770–1840), sken 8, fol. 9 (1780 č. 2)",
+        "ZA Opava, NAD 165 Sbírka matrik, Bolatice H III 5 (Z 1770–1840), sken 95"
+      ]
+    },
+    {
+      id: "ludmillaHe",
+      name: "Ludmilla Herudek",
+      maiden: "Hecka (?)",
+      line: "jirik",
+      cert: "M",
+      b: {"date":"cca 1754","year":1754,"approx":true,"place":"Bolatice"},
+      d: {"date":"10. 1. 1810","year":1810,"place":"Bolatice"},
+      cause: "souchotiny (Lungsucht)",
+      father: "georgHec",
+      notes: [
+        "Úmrtí 10. 1. 1810, pohřbena 12. 1. (M): „Ludmila Ehe Weib des Martin Herudek Bauer aus Holatitz [Bolatitz], welche am 10 hujus Abend um 7 Uhr gestorben | 56 | An Lungsucht“ (H III 5 sk95, 1810 č. 2).",
+        "Rodné příjmení ze sňatku 1780 „Tochter nach seel. Georg Hecka(?)“ – čtení Hecka/Kecka nejisté; index H III 11 uvádí u Valentina matku „Halenta/Walenta?“ (asi chybné čtení)."
+      ],
+      sources: [
+        "ZA Opava, NAD 165 Sbírka matrik, Bolatice H III 4 (O 1770–1840), sken 8, fol. 9 (1780 č. 2)",
+        "ZA Opava, NAD 165 Sbírka matrik, Bolatice H III 5 (Z 1770–1840), sken 95 (1810 č. 2)"
+      ]
+    },
+    {
+      id: "fabianHe",
+      name: "Fabian Herudek",
+      line: "jirik",
+      cert: "D",
+      b: {"date":"před 1735","year":1718,"approx":true,"place":"Bolatice (?)"},
+      occ: "sedlák (Bauer) v Bolaticích",
+      notes: [
+        "Uveden jako otec ženicha Martina 24. 1. 1780: „Sohn des Bauers Fabian Herudek“ (H III 4 sk8). Asi i otec Johanna Herudka (∞ 17. 4. 1780 Anna Navrátová) – K.",
+        "Kandidátní sňatek (K): 18. 11. 1739 Bolatice „Fabianus Herudek juvenis & Hedvigis Fusowa virgo“ (H III 1, IRZ3) – Martin *~1757 by byl dítětem tohoto manželství nebo dalšího; neověřeno."
+      ],
+      sources: [
+        "ZA Opava, NAD 165 Sbírka matrik, Bolatice H III 4 (O 1770–1840), sken 8, fol. 9 (1780 č. 2)"
+      ]
+    },
+    {
+      id: "georgHec",
+      name: "Georg Hecka (?)",
+      line: "jirik",
+      cert: "D",
+      b: {"date":"?","year":1725,"approx":true},
+      d: {"date":"před 1780","year":1779,"approx":true,"place":"Bolatice (?)"},
+      occ: "podruh (Inleiger?) v Bolaticích",
+      notes: [
+        "Uveden jen jako zemřelý otec nevěsty Ludmilly 24. 1. 1780: „Tochter nach seel. Georg Hecka(?) Inleiger(?)“ (H III 4 sk8); příjmení i povolání čtení nejisté."
+      ],
+      sources: [
+        "ZA Opava, NAD 165 Sbírka matrik, Bolatice H III 4 (O 1770–1840), sken 8, fol. 9 (1780 č. 2)"
+      ]
+    },
+    {
+      id: "wendelinTh",
+      name: "Wendelin (Vendelin) Theuer",
+      line: "jirik",
+      cert: "M",
+      b: {"date":"19. 10. 1797 (podle indexu)","year":1797,"place":"Bolatice"},
+      father: "ignatzTh",
+      occ: "sedlák (colonus) v Bolaticích",
+      marriage: "14. 11. 1821, Bolatice – s Marianou Sliwkovou (on 24, ona 19)",
+      notes: [
+        "Sňatek 14. 11. 1821 Bolatice (M): „Juv: Vendelinus filius Ignatii Theuer coloni cum virg. Mariana filia Joannis Sliwka coloni | 24 / 19 | Ambo Bolaticio | Ambo Cathol. | Stephanus Fuss, et Franciscus Theuer, ambo coloni Bolaticenses“ (H III 4 sk72, 1821 č. 19).",
+        "Index N H III 11 (sk244, D): „Wendelin | den 19ten October 1797 | Ignatz, Barbara geb. Herudek(?) | 117“ – křest H III 2 fol. 117 neověřen; matka Barbara roz. Herudek (?) – K.",
+        "Děti: Victoria *6. 6. 1824."
+      ],
+      sources: [
+        "ZA Opava, NAD 165 Sbírka matrik, Bolatice H III 4 (O 1770–1840), sken 72 (1821 č. 19)",
+        "ZA Opava, NAD 165 Sbírka matrik, Bolatice H III 11 (index N), sken 244"
+      ],
+      scans: [
+        {"f":"img/1821_snatek_theuer_sliwka.jpg","t":"Sňatek 14. 11. 1821 Bolatice – Vendelin, syn sedláka Ignáce Theuera × Mariana, dcera sedláka Jana Sliwky (ZA Opava, Bolatice H III 4 sken 72)"}
+      ]
+    },
+    {
+      id: "mariannaSl",
+      name: "Marianna Theuer",
+      maiden: "Sliwka",
+      line: "jirik",
+      cert: "M",
+      b: {"date":"cca 1802","year":1802,"approx":true,"place":"Bolatice"},
+      father: "johannSl",
+      notes: [
+        "Sňatek 14. 11. 1821 (M): „cum virg. Mariana filia Joannis Sliwka coloni“, 19 let (H III 4 sk72).",
+        "Křest dcery Victorie 6. 6. 1824: „uxor Mariana nata Sliwka“ (H III 3 sk60)."
+      ],
+      sources: [
+        "ZA Opava, NAD 165 Sbírka matrik, Bolatice H III 4 (O 1770–1840), sken 72 (1821 č. 19)",
+        "ZA Opava, NAD 165 Sbírka matrik, Bolatice H III 3, sken 60"
+      ],
+      scans: [
+        {"f":"img/1821_snatek_theuer_sliwka.jpg","t":"Sňatek 14. 11. 1821 Bolatice (ZA Opava, Bolatice H III 4 sken 72)"}
+      ]
+    },
+    {
+      id: "ignatzTh",
+      name: "Ignatz (Ignác) Theuer",
+      line: "jirik",
+      cert: "D",
+      b: {"date":"?","year":1770,"approx":true},
+      occ: "sedlák (colonus) v Bolaticích",
+      notes: [
+        "Uveden jako otec ženicha Vendelina 14. 11. 1821 (H III 4 sk72). Manželka podle indexu N Barbara roz. Herudek (?) – K. Dcera Victoria *21. 12. 1810, † 6. 12. 1811 „Victoria filiola Ignatii Theuer coloni“ (H III 5 sk101, M). Svědek 1821 Franciscus Theuer, sedlák – možná příbuzný (K)."
+      ],
+      sources: [
+        "ZA Opava, NAD 165 Sbírka matrik, Bolatice H III 4 (O 1770–1840), sken 72 (1821 č. 19)",
+        "ZA Opava, NAD 165 Sbírka matrik, Bolatice H III 5, sken 101"
+      ]
+    },
+    {
+      id: "johannSl",
+      name: "Johann (Jan) Sliwka",
+      line: "jirik",
+      cert: "D",
+      b: {"date":"?","year":1775,"approx":true},
+      occ: "sedlák (colonus) v Bolaticích",
+      notes: [
+        "Uveden jako otec nevěsty Mariany 14. 11. 1821: „Mariana filia Joannis Sliwka coloni“ (H III 4 sk72)."
+      ],
+      sources: [
+        "ZA Opava, NAD 165 Sbírka matrik, Bolatice H III 4 (O 1770–1840), sken 72 (1821 č. 19)"
       ]
     },
     {
@@ -4269,14 +4413,19 @@ window.RODOKMEN = {
       maiden: "Theuer",
       line: "jirik",
       cert: "M",
-      b: {"date":"cca 1824","year":1824,"approx":true,"place":"Bolatice"},
+      b: {"date":"6. 6. 1824","year":1824,"place":"Bolatice"},
+      father: "wendelinTh",
+      mother: "mariannaSl",
       notes: [
+        "Křest 6. 6. 1824 Bolatice, narozena v 6 h ráno (M): „Victoria | Vendelinus Theuer colonus et uxor Mariana nata Sliwka | Bolatitz | Cath | Joannes Herudek inquilinus et Francisca uxor Antonii Kollarczik inquilini. Ambo Bolaticio“ (H III 3 sk60, 1824 č. 19).",
         "Dcera sedláka Wendelina Theuera a Marianny (sňatek 1843, křest dcery 1848)."
       ],
       sources: [
-        "ZA Opava, NAD 165 Sbírka matrik, Bolatice H III 8 sken 6; H III 3 sken 171"
+        "ZA Opava, NAD 165 Sbírka matrik, Bolatice H III 8 sken 6; H III 3 sken 171",
+        "ZA Opava, NAD 165 Sbírka matrik, Bolatice H III 3 (N 1811–1870), sken 60 (1824 č. 19)"
       ],
       scans: [
+        {"f":"img/1824_krest_victoria_theuer.jpg","t":"Křest 6. 6. 1824 Bolatice – Victoria, dcera sedláka Vendelina Theuera a Mariany roz. Sliwkové (ZA Opava, Bolatice H III 3 sken 60)"},
         {"f":"img/1843_snatek_herudek_theuer.jpg","t":"Sňatek 15. 8. 1843 (H III 8 sken 6, č. 9)"},
         {"f":"img/1848_krest_maria_herudek.jpg","t":"Křest 12. 8. 1848 (H III 3 sken 171)"}
       ]
