@@ -2595,7 +2595,7 @@ window.RODOKMEN = {
         "Sňatek 1706: „Georgius filius Joannis Holbík / Anna Vidua pie defuncti Martini Ošexanů … ex Nedašow“ – syn Jana Holbíka (otec tehdy žil).",
         "Děti s Annou: Mikuláš 19. 10. 1709, Václav 6. 10. 1711, Mikuláš 1. 11. 1714 (opis7 img 123, 133, 171) – jméno zapisováno Holbík / Holbů / Holba.",
         "V Nedašově žili i Ondřej Holba × Marina a Bartoloměj Holba × Anna (děti 1722–1725) – možná bratři.",
-        "Hypotéza (K): v lánovém rejstříku 1670 je v Nedašově „Kateřina, vdova po Matyáši Holbovi“, zahradnice (MZA D 1/312, img 41)."
+        "OPRAVA (14. 10. 2026): zápis lánového rejstříku 1670 zní „Kateřina, vdova po Matyáši MOLKŮ“ (ne Holbovi) – s Holbíky nesouvisí. Jediný Holba na Brumovsku 1656–70 je Mikoláš Holba ve Valašských Kloboukách (místo pusté po 1663) – vazba K."
       ],
       sources: [
         "Brumov opis7 img 115 (sňatek 1706), 123, 133, 171 – https://www.mza.cz/actapublica/matrika/detail/10376"
