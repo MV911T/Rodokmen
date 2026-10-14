@@ -2942,7 +2942,8 @@ window.RODOKMEN = {
       notes: [
         "Syn † Štěpána Birloga; sňatek 15. 1. 1769 s Marinou Fojtíkovou (4012 img 173) – pokud jde o téhož Jiřího (D).",
         "V roce 1818 uváděn jako zemřelý („† Georg Birlog, Häusler“).",
-        "Úmrtí: v Nedašově 1787–1820 zemřel jen Jiří Birlog z č. 71 (16. 1. 1811, vdovec, 76 let) – pokud jde o téhož Jiřího (přestěhování z č. 74?), HYPOTÉZA."
+        "Úmrtí: v Nedašově 1787–1820 zemřel jen Jiří Birlog z č. 71 (16. 1. 1811, vdovec, 76 let) – pokud jde o téhož Jiřího (přestěhování z č. 74?), HYPOTÉZA.",
+        "MAT10 (14. 10. 2026): sňatek Jiří Birlog × Marina NENÍ v Brumov 4012 O XI/1770–XI/1787. Jiří Birlog z č. 71 je 1772 vdovec (∞ Veronika, dcera Jiřího Wilimka? z Brumova, img181L, D) a 17. 11. 1776 znovu vdovec (∞ Anna, dcera Ondřeje Matochy, img189R, M) → hypotéza „jiriBi = Jiří z č. 71“ slábne; Jiří z č. 74 (manžel Mariny † 1786) spíš jiný Birlog oženěný před 1770 nebo mimo faru (K). Josef, syn † Štěpána Birloga(?) ∞ I/1779 Zuzana Gričká(?) (img192L) – možný příbuzný."
       ],
       sources: [
         "O 4023 img 106 (sňatek dcery 1802)",
