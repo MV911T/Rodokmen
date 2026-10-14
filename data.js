@@ -6008,7 +6008,8 @@ window.RODOKMEN = {
         {"f":"img/1792_krest_mariana_ployharova.jpg","t":"Křest 22. 12. 1792, Olešník (Volešník) č. 21 – Mariana, dcera Vojtěcha Ployhara, sedláka, a Kateřiny Novotné (?) (SOA Třeboň, Zahájí 3, id 8695, sken 68)"},
         {"f":"img/1813_snatek_peterka_ployharova.jpg","t":"Sňatek 22. 11. 1813, Olešník (fara Zahájí) – Jan Peterka, 36 let, panský … ve dvoře olešnickém × Marie, dcera Vojtěcha Ployhara, sedláka z Olešníka č. 21, 22 let (Zahájí 8, id 8700, sken 28)"},
         {"f":"img/1851_snatek_matej_vesely_anna_peterkova.jpg","t":"Sňatek 13. 10. 1851, Hluboká – Matěj Veselý, luční hajný v Dívčicích č. 1, syn Tomáše a Marie Bočkové × Anna Peterková, dcera Jana Peterky a Mariany Ployharové (Hluboká 11 O, id 3564, sken 29)"}
-      ]
+      ],
+      siblings: ["Josef Ployhar (*~1801), ∞ 19. 5. 1829 Olešník Mariana, vdova z č. 27 (M, Zahájí 9 O sk44)","Anna Ployharová (Kocourková) *~1804/05, ∞ 20. 1. 1835 Matěj, syn Jakuba Kůže(?) z Olešníka č. 25 (M, Zahájí 9 O sk45)","František Kocourek „z Ployharů“, sedlák č. 21 po ~1838 – pravděpodobně bratr (K)","Děti zemřelé v dětství (D, náhled Z 8703): Kateřina a Bartoloměj † 1801, Alžběta † 1806, Vojtěch † 1807, Vojtěch † 1812"]
     },
     {
       id: "vojtechPl",
@@ -6016,7 +6017,8 @@ window.RODOKMEN = {
       line: "vesely",
       cert: "M",
       b: {"date":"cca 1764","year":1764,"approx":true,"place":"Olešník (?)"},
-      occ: "sedlák, Olešník (Volešník) č. 21",
+      d: {"date":"13. 5. 1840 (?)","year":1840,"approx":true,"place":"Olešník (Volešník) č. 29"},
+      occ: "sedlák, Olešník (Volešník) č. 21; později výměnkář",
       marriage: "1) před IX/1786 – s Annou († 14. 9. 1786); 2) 7. 11. 1786, Chlumec (fara Purkarec) – s Kateřinou Novotnou",
       notes: [
         "Sňatek 7. 11. 1786 Chlumec č. 19, fara Purkarec (M): „Wogtiech Ployhar | kat. | 22 | vdovec || Katerzina Nowotna | kat. | 20 | svobodná || svědci Matiey Lysyk (?), Kasspar Dworžak (?), sedláci“; rodiče neuvedeni. Chlumec je dnes část obce Olešník – „z Hlum…“ v křtu dcery 1792 = z Chlumce. Ve 22 letech už vdovec: syn Matouš (*12. 9. 1786) je z 1. manželství s Annou (8695 sk64: matka „Anna“, M).",
@@ -6025,18 +6027,26 @@ window.RODOKMEN = {
         "Křty dětí v Olešníku č. 21 (8695, D – čteno v polovičním rozlišení): Matouš 12. 9. 1786, Matěj 14. 2. 1788, Mariana 22. 12. 1792 (M). Pozor: ve Volešníku žil i jiný Vojtěch Ployhar – výměnkář v č. 18 (dcera Kateřina 1785) a podruh v č. 28 (syn Jakub 1788); výměnkář snad otec sedláka (K). Sňatek s Kateřinou Novotnou není v O Zahájí – Volešník IX/1784–1794 → před 1784 nebo jinde (Hluboká?).",
         "Odlišen od jmenovce (M): 22. 4. 1777 Olešník se oženil „viduus Ploghar Adalbertus alias Tříska, exemptarius“ (výměnkář) s Kateřinou, dcerou † Štěpána Bezpalce, pastýře v Lhotě Likařově (?) (O Zahájí 7, id 8699 sk46) – to je výměnkář z č. 18, NE náš sedlák z č. 21 (manželka Kateřina Novotná).",
         "1. manželka Anna Ployharová † 14. 9. 1786 Olešník č. 21, 21 let, „po porodu“ – dva dny po křtu syna Matouše (Z Zahájí id 8703 sk44, M). Její sňatek s Vojtěchem není v O Zahájí 1784–XI/1785 (8700 sk31).",
-        "Křest NENÍ v N Zahájí 8694 I/1762–~1766 (všechny obce, okraje) ani IV/1760–XII/1761 (VES-SP9). KANDIDÁT NA RODIČE (K): Matěj Ployhar, sedlák (rusticus) v Olešníku × Mariana – synové Bartoloměj *18. 8. 1763 (8694 sk163) a František *5. 11. 1765 (sk172) a Matouš *5. 9. 1761 (M: „infans Mattheus, Mathiae Plogher Rustici, Matris Mariae Annae filius … Ex Wolleschnik“, 8694 sk155) – jediný Ployhar-sedlák 1760–66; Vojtěch by u něj musel být starší syn *před IV/1760 (věk 22 v 1786 pak nepřesný) – K. 1. sňatek s Annou není v O Zahájí 1784–86 (všechny oddíly) → nejspíš ve farnosti nevěsty."
+        "Křest NENÍ v N Zahájí 8694 I/1762–~1766 (všechny obce, okraje) ani IV/1760–XII/1761 (VES-SP9). KANDIDÁT NA RODIČE (K): Matěj Ployhar, sedlák (rusticus) v Olešníku × Mariana – synové Bartoloměj *18. 8. 1763 (8694 sk163) a František *5. 11. 1765 (sk172) a Matouš *5. 9. 1761 (M: „infans Mattheus, Mathiae Plogher Rustici, Matris Mariae Annae filius … Ex Wolleschnik“, 8694 sk155) – jediný Ployhar-sedlák 1760–66; Vojtěch by u něj musel být starší syn *před IV/1760 (věk 22 v 1786 pak nepřesný) – K. 1. sňatek s Annou není v O Zahájí 1784–86 (všechny oddíly) → nejspíš ve farnosti nevěsty.",
+        "Přezdívka KOCOUREK (M): sňatek dcery Anny 20. 1. 1835 – „Anna, dcera Wogtěcha Kocaurka neb Ployhara, sedláka z Wolessnjka, a Matky Kateřiny Nowotny z Chlumce panstwj Hlubockého“, 30 let, č. 21 (Zahájí 9 O, id 8701 sk45); sňatek syna Josefa 19. 5. 1829 – „Josef, syn Wogtěcha Ployhara, sedláka z Wolessnjka, a Matky Kateřiny rozený Nowotny z Chlumce panstwj Hlubockého“ (8701 sk44). Obojí M; potvrzuje i manželku Kateřinu Novotnou.",
+        "Pravděpodobné úmrtí (D): 13. 5. 1840 (poh. 15. 5.) Olešník č. 29 „Wogtěch Kocaurek wymynkář pod N 21“, 77 let (*~1763) (Zahájí 12 Z, id 8704 sk85). Rozpor: zápis uvádí „manžel Mař[ian]y roz: Ployhar“ (ne Kateřiny Novotné) a nečitelný řádek „… Daněk(?) z Mitowic(?)“ – chyba zapisovatele, další sňatek, nebo jiná osoba; v 1846 již „† Wogtěch Ployhar byw. sedlák z Wolessnjka No 21“ (8704 sk93). Úmrtí Kateřiny NENÍ v 8704 Volešník 1822–1847 (orientačně).",
+        "Od ~1838 na č. 21 sedlák František Kocourek „z Ployharů“ (ž. Kateřina; děti Johanna *~1838, Anna † 1846) – patrně syn (K)."
       ],
       sources: [
         "SOA Třeboň, Purkarec 9 N/O/Z 1784–1869 (id 6809), sken 163 – https://digi.ceskearchivy.cz/DA?menu=3&id=6809&page=163",
         "SOA Třeboň, Hluboká nad Vltavou 11 O (id 3564), sken 29 – https://digi.ceskearchivy.cz/DA?menu=3&id=3564&page=29",
         "SOA Třeboň, Zahájí 8 O 1784–1822 (id 8700), sken 28 (sekce Volešník) – https://digi.ceskearchivy.cz/DA?menu=3&id=8700&page=28",
         "SOA Třeboň, Zahájí 3 N 1784–1822 (id 8695), sken 68, P. 12 – https://digi.ceskearchivy.cz/DA?menu=3&id=8695&page=68",
-        "SOA Třeboň, Sbírka matrik, Zahájí N (id 8694), sken 155 – křest Matouše Ployhara 5. 9. 1761"
+        "SOA Třeboň, Sbírka matrik, Zahájí N (id 8694), sken 155 – křest Matouše Ployhara 5. 9. 1761",
+        "SOA Třeboň, Zahájí 9 O 1822–1872 (id 8701), sken 44–45 (Volešník) – https://digi.ceskearchivy.cz/DA?menu=3&id=8701&page=45",
+        "SOA Třeboň, Zahájí 12 Z 1822–1861 (id 8704), sken 85, 93 – https://digi.ceskearchivy.cz/DA?menu=3&id=8704&page=85"
       ],
       scans: [
         {"f":"img/1786_snatek_ployhar_novotna.jpg","t":"Sňatek 7. 11. 1786, Chlumec č. 19 (fara Purkarec) – Vojtěch Ployhar, 22 let, vdovec × Kateřina Novotná, 20 let (SOA Třeboň, Purkarec 9, id 6809, sken 163 – poslední zápis)"},
-        {"f":"img/1851_snatek_matej_vesely_anna_peterkova.jpg","t":"Sňatek 13. 10. 1851, Hluboká – Matěj Veselý, luční hajný v Dívčicích č. 1, syn Tomáše a Marie Bočkové × Anna Peterková, dcera Jana Peterky a Mariany Ployharové (Hluboká 11 O, id 3564, sken 29)"}
+        {"f":"img/1851_snatek_matej_vesely_anna_peterkova.jpg","t":"Sňatek 13. 10. 1851, Hluboká – Matěj Veselý, luční hajný v Dívčicích č. 1, syn Tomáše a Marie Bočkové × Anna Peterková, dcera Jana Peterky a Mariany Ployharové (Hluboká 11 O, id 3564, sken 29)"},
+        {"f":"img/1835_snatek_anna_kocourek_ployhar.jpg","t":"Sňatek 20. 1. 1835 Olešník – Anna, dcera Vojtěcha Kocourka neb Ployhara, sedláka, a Kateřiny Novotné z Chlumce (SOA Třeboň, Zahájí 9 O, id 8701, sken 45)"},
+        {"f":"img/1829_snatek_josef_ployhar.jpg","t":"Sňatek 19. 5. 1829 Olešník – Josef, syn Vojtěcha Ployhara, sedláka, a Kateřiny roz. Novotné z Chlumce (Zahájí 9 O, id 8701, sken 44)"},
+        {"f":"img/1840_umrti_vojtech_kocourek.jpg","t":"Úmrtí 13. 5. 1840 Olešník č. 29 – Vojtěch Kocourek, výměnkář pod č. 21, 77 let (Zahájí 12 Z, id 8704, sken 85)"}
       ]
     },
     {
@@ -6635,7 +6645,8 @@ window.RODOKMEN = {
         "Sňatek 7. 11. 1786 Chlumec č. 19, fara Purkarec (M): „Wogtiech Ployhar | kat. | 22 | vdovec || Katerzina Nowotna | kat. | 20 | svobodná || svědci Matiey Lysyk (?), Kasspar Dworžak (?), sedláci“; rodiče neuvedeni. Chlumec je dnes část obce Olešník – „z Hlum…“ v křtu dcery 1792 = z Chlumce.",
         "Matka Mariany (křest 1792: „Kateřina Nowotna z Hlum…“) a Matěje (14. 2. 1788: matka „Kateřina“, 8695 sk65, M).",
         "HYPOTÉZA (K): v Chlumci č. 19 se 16. 11. 1784 ženil Pavel Novotný (37) – možná bratr; 25. 5. 1784 se v Hosíně vdávala Marie Anna, dcera † Pavla Novotného, chalupníka z „Hlumatz“ (O Hosín 3864 sk290) – možná sestra, otec pak † Pavel Novotný. Křest Kateřiny (~1766) v rejstříku Purkarec 5 není (ruční kontrola zbývá).",
-        "Křest NENÍ v Purkarci 5 (id 6805) X/1765–II/1767 (všechny vsi, ručně) ani v rejstříku 1763–1770; rejstřík má Kateřiny Novotné jen 1758 (Nová Ves), 1759 (Purkarec), 1781 (Nová Ves) – věkem nesedí (K). V Chlumci i Anna Novotná × Vojtěch Lomandl (?) (dcera Marie 1767) a Marie Magdalena Novotná 1756."
+        "Křest NENÍ v Purkarci 5 (id 6805) X/1765–II/1767 (všechny vsi, ručně) ani v rejstříku 1763–1770; rejstřík má Kateřiny Novotné jen 1758 (Nová Ves), 1759 (Purkarec), 1781 (Nová Ves) – věkem nesedí (K). V Chlumci i Anna Novotná × Vojtěch Lomandl (?) (dcera Marie 1767) a Marie Magdalena Novotná 1756.",
+        "Potvrzeno (M) sňatky dětí: 1829 „Matky Kateřiny rozený Nowotny z Chlumce panstwj Hlubockého“ (syn Josef), 1835 „Matky Kateřiny Nowotny z Chlumce“ (dcera Anna) – Zahájí 9 O, id 8701 sk44–45."
       ],
       sources: [
         "SOA Třeboň, Purkarec 9 N/O/Z 1784–1869 (id 6809), sken 163 – https://digi.ceskearchivy.cz/DA?menu=3&id=6809&page=163",
