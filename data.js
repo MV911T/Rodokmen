@@ -3829,7 +3829,8 @@ window.RODOKMEN = {
       occ: "výminkář (Auszügler)",
       notes: [
         "Otec nevěsty 18. 2. 1794: „Susanna des Joseph Hruschka Auszüglers Tochter von Virbhau(?)“ (Kobeřice H IX 4 sk42L, M). Obec neztotožněna.",
-        "Obec „Virbkau“ = Vrbka (Služovice), fara Kravaře (STR-L7, D). V Kravařích 1770 Paulus Hruschka, ovčák × Catharina (K)."
+        "Obec „Virbkau“ = Vrbka (Služovice), fara Kravaře (STR-L7, D). V Kravařích 1770 Paulus Hruschka, ovčák × Catharina (K).",
+        "STR-L8 (K/D): sňatek 6. 4. 1763 Kravaře „hon: Juv: Josephus filius Mathaei Hruschka Cum hon: Virg: Marina filia Mathiae Černy Hortula: Wirbka“, svědci Andreas Wirklas, Joannes Mazur (Kravaře H XI 2 sk226L; zápis M, ověřeno koordinátorem) – pravděpodobně tentýž Joseph (otec Susanny), nespojeno bez jejího křtu. Křest Susanny v Kravařích 1766–1775 (kromě VI–VII/1767) a IX/1776–1778 NENÍ."
       ],
       sources: [
         "ZA Opava, NAD 165 Sbírka matrik, Kobeřice H IX 4, sken 42"
