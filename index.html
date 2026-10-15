@@ -4046,24 +4046,55 @@ window.RODOKMEN = {
       ]
     },
     {
+      id: "mathiasLa",
+      name: "Mathias Lassak",
+      line: "struz",
+      cert: "M",
+      b: {"date":"?","year":1705,"approx":true},
+      notes: [
+        "Otec při křtu Bartholomaea Wenceslaa 14. 8. 1735 Kobeřice: „Mathiae Lassak, Catharinae“ (H IX 1 sk45L, M). Svědek sňatků 1741 a 1753 (sk125, 134; K). Vazba na Barthela † 1819 – D. Asi i dcera Rosina 6. 9. 1732 (sk38R, D)."
+      ],
+      sources: [
+        "ZA Opava, NAD 165 Sbírka matrik, Kobeřice H IX 1, sken 45"
+      ]
+    },
+    {
+      id: "catharinaLa",
+      name: "Catharina Lassak",
+      line: "struz",
+      cert: "M",
+      b: {"date":"?","year":1710,"approx":true},
+      notes: [
+        "Matka při křtu Bartholomaea 14. 8. 1735 Kobeřice: „Mathiae Lassak, Catharinae“ (H IX 1 sk45L, M). Rodné příjmení neznámé."
+      ],
+      sources: [
+        "ZA Opava, NAD 165 Sbírka matrik, Kobeřice H IX 1, sken 45"
+      ]
+    },
+    {
       id: "barthelLa",
       name: "Barthel (Bartoloměj) Lassack",
       line: "struz",
       cert: "M",
-      b: {"date":"cca 1731","year":1731,"approx":true},
+      b: {"date":"14. 8. 1735 (křest)","year":1735,"place":"Kobeřice"},
       d: {"date":"29. 12. 1819 (pohřeb 31. 12.)","year":1819,"place":"Kobeřice"},
+      father: "mathiasLa",
+      mother: "catharinaLa",
       occ: "sedlák v Kobeřicích",
       marriage: "před 1769 – s Agnethou (Saltzer?)",
       notes: [
         "Otec ženicha 18. 2. 1794: „der Matheus des Barthel Lassack Bauers Sohn von Koebrovitz“ (Kobeřice H IX 4 sk42L, M); svědek 1792 a 1793 „Barthel Lassack bauer … von Koebrowitz“ (sk38L, 39L); dcera Catharina ∞ 1795 Joseph Suchelka(?) (sk43L).",
-        "Úmrtí 29. 12. 1819, pohřeb 31. 12.: „26. | 29. | 31. | Hering Pfarrer | Idem | Bartel Lassak Bauer Auszügler | Do. | Do. | Do. | 88 | An Entkräftung“ (H IX 6 sk21L, M; ověřeno koordinátorem) → *~1731."
+        "Úmrtí 29. 12. 1819, pohřeb 31. 12.: „26. | 29. | 31. | Hering Pfarrer | Idem | Bartel Lassak Bauer Auszügler | Do. | Do. | Do. | 88 | An Entkräftung“ (H IX 6 sk21L, M; ověřeno koordinátorem) → *~1731.",
+        "Křest 14. 8. 1735 (STR-L4; zápis M, ověřeno koordinátorem; ztotožnění s Barthelem † 1819 D – věk 88 by dal ~1731): „Idem | 14 | 14 | Bartholomaeus Wenceslaus | Mathiae Lassak, Catharinae | Mathias Newiera, Magdalena Bartholomaei Twrdi in molendino | Köbr.“ (H IX 1 sk45L). Jiný Bartholomaeus Lassak v IX/1731–X/1732 není."
       ],
       sources: [
         "ZA Opava, NAD 165 Sbírka matrik, Kobeřice H IX 4, sken 42, 38, 39, 43",
-        "ZA Opava, NAD 165 Sbírka matrik, Kobeřice H IX 6 (Z 1812–1866), sken 21"
+        "ZA Opava, NAD 165 Sbírka matrik, Kobeřice H IX 6 (Z 1812–1866), sken 21",
+        "ZA Opava, NAD 165 Sbírka matrik, Kobeřice H IX 1 (NZO 1706–1765), sken 45"
       ],
       scans: [
-        {"f":"img/1819_umrti_barthel_lassak.jpg","t":"Úmrtí 29. 12. 1819 Kobeřice – Bartel Lassak, sedlák, výminkář, 88 let (ZA Opava, Kobeřice H IX 6 sken 21)"}
+        {"f":"img/1819_umrti_barthel_lassak.jpg","t":"Úmrtí 29. 12. 1819 Kobeřice – Bartel Lassak, sedlák, výminkář, 88 let (ZA Opava, Kobeřice H IX 6 sken 21)"},
+        {"f":"img/1735_krest_bartholomaeus_lassak.jpg","t":"Křest 14. 8. 1735 Kobeřice – Bartholomaeus Wenceslaus, syn Mathiase Lassaka a Kateřiny (ZA Opava, Kobeřice H IX 1 sken 45)"}
       ]
     },
     {
@@ -4087,6 +4118,7 @@ window.RODOKMEN = {
       line: "struz",
       cert: "D",
       b: {"date":"14. 9. 1769 (křest 15. 9.)","year":1769,"place":"Kobeřice"},
+      d: {"date":"24. 5. 1825 (pohřeb 26. 5.)","year":1825,"place":"Kobeřice"},
       father: "barthelLa",
       mother: "agnesLa",
       occ: "sedlák (Bauer) v Kobeřicích",
@@ -4096,17 +4128,20 @@ window.RODOKMEN = {
         "STR-K4 (14. 10. 2026, M zápisy, Silius pohřby): starý pár ze Strandorfu – Susanna, manželka výměnkáře Mathese Lasaka, † 4. 12. 1830, 90 l. (sl. 462 sn 0025 Nr 167) a Mathes Lasak, výměnkář, † 11. 5. 1832, 93 l. (sl. 464 sn 0007 Nr 44) – věkem (*~1739/40) Rosaliinými rodiči být NEMOHOU; spíš rodiče sedláka Mathese ml. (narozen 1777). Mathias Lasak, výměnkář z Borutína, † 18. 12. 1823, 65 l. (sl. 455 sn 0021 Nr 148) – manželka neuvedena, borutínská linie (× Marina Czujek) – asi také ne. Susanna Lasak nezemřela v Krzanowicích 1805–1809. Hypotéza (K): otec = Mathes ml. (narozen 1777) s neznámou 1. ženou Susannou Socha, nebo rodina mimo farnost.",
         "Sedlák v Kobeřicích (křest Rosalie 1804, M). Při sňatku dcery 21. 7. 1829 „Tochter nach dem Mathes Lassak Bauer v[on] hier“ – „nach dem“ snad = zemřelý (K). Kandidáti ze Strandorfu/Borutína (OFB Kranowitz) asi vyloučeni (D).",
         "Sňatek 18. 2. 1794 Kobeřice (STR-L2; M, ověřeno koordinátorem): „Ist in der Kirche Koebrovitz copulirt worden, der Matheus des Barthel Lassack Bauers Sohn von Koebrovitz, mit der Susanna des Joseph Hruschka Auszüglers Tochter von Virbhau(?). Zeugen Carl Pavlenka frey Gärtl. und Urban Homola Bauer … | der Bräutigam 24 / die Braut 23 Jahr“ (Kobeřice H IX 4 sk42L, č. 3). Syn Franz † 30. 7. (~1807–09) ve 14 dnech (H IX 5 sk125L).",
-        "Křest 15. 9. 1769 Kobeřice (STR-L3; M, ověřeno koordinátorem): „Ist aus dem Dorf Kobrowitz des Bauers Bertel Lassak von seinem Weibe Agnetha Saltzerin(?) an dem nächstvorigen Tag früh um 5 Uhr gebohrenes Knäbl zur heiligen Tauff gebracht und demselben der Nahmen Mathes gegeben worden, getauft durch den … Herrn Pfarr Joseph Jauneschek(?) | Tauffzeugen: Urban Homola Bauer und Anna Eheweib des Häusmanns Joseph Vonat(?) beede v. Kobrowitz“ (H IX 2 sk23L, č. 31). Úmrtí do X/1820 v Kobeřicích není (D). Syn Franz † 30. 7. 1809 (M)."
+        "Křest 15. 9. 1769 Kobeřice (STR-L3; M, ověřeno koordinátorem): „Ist aus dem Dorf Kobrowitz des Bauers Bertel Lassak von seinem Weibe Agnetha Saltzerin(?) an dem nächstvorigen Tag früh um 5 Uhr gebohrenes Knäbl zur heiligen Tauff gebracht und demselben der Nahmen Mathes gegeben worden, getauft durch den … Herrn Pfarr Joseph Jauneschek(?) | Tauffzeugen: Urban Homola Bauer und Anna Eheweib des Häusmanns Joseph Vonat(?) beede v. Kobrowitz“ (H IX 2 sk23L, č. 31). Úmrtí do X/1820 v Kobeřicích není (D). Syn Franz † 30. 7. 1809 (M).",
+        "Úmrtí 24. 5. 1825 (STR-L4; M, ověřeno koordinátorem): „22. | 24. | 26. | Idem | Idem | Mathes Lassak Bauer | Koebrowitz | Koebrowitz | kath. | 58 | An Brustfieber“ (H IX 6 sk33L; věk nadsazen o 2 roky). Susanna v Z 1821–1833 není (D)."
       ],
       sources: [
         "Silius Radicum – Krzanowice 1845 (sl. 379) sn 0005 Nr 35",
         "ZA Opava, NAD 165 Sbírka matrik, Kobeřice H IX 3, sken 41; H IX 10, sken 5",
         "ZA Opava, NAD 165 Sbírka matrik, Kobeřice H IX 4 (O 1766–1822), sken 42",
-        "ZA Opava, NAD 165 Sbírka matrik, Kobeřice H IX 2 (N 1766–1794), sken 23"
+        "ZA Opava, NAD 165 Sbírka matrik, Kobeřice H IX 2 (N 1766–1794), sken 23",
+        "ZA Opava, NAD 165 Sbírka matrik, Kobeřice H IX 6, sken 33"
       ],
       scans: [
         {"f":"img/1794_snatek_lassak_hruschka.jpg","t":"Sňatek 18. 2. 1794 Kobeřice – Matheus, syn sedláka Barthela Lassacka × Susanna, dcera výminkáře Josepha Hruschky (ZA Opava, Kobeřice H IX 4 sken 42)"},
-        {"f":"img/1769_krest_mathes_lassak.jpg","t":"Křest 15. 9. 1769 Kobeřice – Mathes, syn sedláka Bertela Lassaka a Agnethy (ZA Opava, Kobeřice H IX 2 sken 23)"}
+        {"f":"img/1769_krest_mathes_lassak.jpg","t":"Křest 15. 9. 1769 Kobeřice – Mathes, syn sedláka Bertela Lassaka a Agnethy (ZA Opava, Kobeřice H IX 2 sken 23)"},
+        {"f":"img/1825_umrti_mathes_lassak.jpg","t":"Úmrtí 24. 5. 1825 Kobeřice – Mathes Lassak, sedlák (ZA Opava, Kobeřice H IX 6 sken 33)"}
       ]
     },
     {
@@ -8745,7 +8780,7 @@ window.RODOKMEN.collateral = [
   {"father":"pavelVes","mother":"annaVesP","cert":"D","id":"c_vesAnna1779","name":"Anna Veselá","b":{"date":"cca 1779","year":1779,"approx":true,"place":"Knín (?)"},"note":"Soupis poddaných 1780 (52578 fol. 255): dcera Pavla, 1 rok. Soupis 1783: 4 roky, 1790: 10 let (u otce). 1791: 11 let; od 1793 v domácnosti chybí (služba nebo †)."}
 ];
 
-window.RODOKMEN_BUILD='15. 10. 2026 3:17';
+window.RODOKMEN_BUILD='15. 10. 2026 3:37';
 
 </script>
 <script>
