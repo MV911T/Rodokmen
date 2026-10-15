@@ -3559,7 +3559,8 @@ window.RODOKMEN = {
       occ: "panský šafář (herrschaftlicher Schaffer), Borutín, pak Chuchelná",
       notes: [
         "Zemřel 17. 12. 1830 v Chuchelné, 72 let, na vodnatelnost: „Valentin Wolff herrschaftlicher Schaffer aus Kuchelna“.",
-        "Děti: Marianna (sňatek 1826), Barbara (kmotra v Borutíně 1813), Franz (kmotr 1834)."
+        "Děti: Marianna (sňatek 1826), Barbara (kmotra v Borutíně 1813), Franz (kmotr 1834).",
+        "OFB I11693: ✶ ~1758 † 17. 12. 1830 Chuchelná, šafář – rodiče neuvedeni."
       ],
       sources: [
         "Silius Radicum – duplikáty Krzanowice úmrtí 1830 Nr 180 (462/0027); sňatky 1826 Nr 12"
@@ -3822,22 +3823,39 @@ window.RODOKMEN = {
       ]
     },
     {
+      id: "paulKo",
+      name: "Paul Komarek",
+      line: "struz",
+      cert: "D",
+      b: {"date":"?","year":1750,"approx":true},
+      occ: "sedlák (Bauer) v Rohově",
+      notes: [
+        "OFB I13149 (D): „Bauer aus Rohow“, otec Thomase (*~1783) a Simona (*11. 10. 1781). Matrika neověřena."
+      ],
+      sources: [
+        "OFB Kranowitz (online-ofb.de, F.-D. Brumund 2023; index z konsignace ZAO POL IX 1), I13149"
+      ]
+    },
+    {
       id: "thomasKo",
       name: "Thomas Komarek",
       line: "struz",
       cert: "M",
       b: {"date":"cca 1783","year":1783,"approx":true},
       d: {"date":"1871 (podle OFB)","year":1871,"place":"Strahovice"},
+      father: "paulKo",
       occ: "zahradník / domkář ve Strahovicích",
       marriage: "9. 11. 1808, Krzanowice – jako vdovec s Magdalenou Krautwurst; svědci sedlák Philipp Kurza (?) a chalupník Georg Rimel",
       notes: [
         "Otec Josefa (křest 1813).",
         "Sňatek 1808: „Honestus Viduus Thomas Komarecz Hortulanus, cum … Magdalena Filia Joannis Krautwurst Fabri Ferarii et Casarii, ambo Strandorffenses“ – vdovec (1. žena podle OFB Agnes Uliczka †1808).",
-        "Podle OFB (D): syn Paula Komarka, sedláka v Rohově; zemřel 1871 ve Strahovicích."
+        "Podle OFB (D): syn Paula Komarka, sedláka v Rohově; zemřel 1871 ve Strahovicích.",
+        "OFB I13158 (D): „✶ um 1783 † 27.01.1871 in Strandorf, Gärtner“; ⚭1 21. 7. 1807 Agnes Uliczka, ⚭2 9. 11. 1808 Magdalena Krautwurst, ⚭3 5. 6. 1849 Catharina Kramny; otec Paul Komarek, sedlák z Rohova (I13149); bratr Simon *1781 † 1848 Rohov."
       ],
       sources: [
         "Silius Radicum – duplikáty Krzanowice křty 1813 Nr 28 (346/0011)",
-        "OFB Kranowitz"
+        "OFB Kranowitz",
+        "OFB Kranowitz (online-ofb.de, F.-D. Brumund 2023; index z konsignace ZAO POL IX 1), I13158"
       ],
       scans: [
         {"f":"img/1808_snatek_komarek_krautwurst.jpg","t":"Sňatek 9. 11. 1808 (POL IX 2 sn. 327)"},
@@ -3941,7 +3959,8 @@ window.RODOKMEN = {
       d: {"date":"před 1810 (OFB: 1808)","year":1808,"approx":true},
       occ: "podruh (inquilinus) v Krzanowicích",
       notes: [
-        "Otec Johanna (sňatek 1810)."
+        "Otec Johanna (sňatek 1810).",
+        "OFB (K/D): dva záznamy patrně jedné osoby – I28673 „✶ 27.07.1746 in Kranowitz“, ⚭1 1767 Rosina Abrahamczik (Zauditz), ⚭2 27. 1. 1778 Marina Prassek; syn Johann ✶ 19. 6. 1783; rodiče Georg Jureczka × Marianna – a I10692 „† 5.04.1808, Auszügler“. Nespojeno."
       ],
       sources: [
         "ZA Opava, NAD 165 Sbírka matrik, POL IX 2 sn. 356"
@@ -3971,21 +3990,54 @@ window.RODOKMEN = {
       ]
     },
     {
+      id: "franzRe",
+      name: "Franz Restel",
+      line: "struz",
+      cert: "D",
+      b: {"date":"?","year":1710,"approx":true},
+      marriage: "7. 2. 1736, Krzanowice – s Margarethou Jureczka (OFB)",
+      notes: [
+        "OFB I11155 (D): otec Sebastiana (*1746); ⚭ 7. 2. 1736 Krzanowice Margaretha Jureczka (NOZ str. 233); jeho otec Johann Restel (I20453, † před 1736). Matrika neověřena."
+      ],
+      sources: [
+        "OFB Kranowitz (online-ofb.de, F.-D. Brumund 2023; index z konsignace ZAO POL IX 1), I11155"
+      ]
+    },
+    {
+      id: "margarethaJuR",
+      name: "Margaretha Restel",
+      maiden: "Jureczka",
+      line: "struz",
+      cert: "D",
+      b: {"date":"cca 1704 (OFB)","year":1704,"approx":true},
+      d: {"date":"16. 5. 1766 (OFB)","year":1766,"place":"Krzanowice"},
+      notes: [
+        "OFB I11156 (D): „✶ um 1704 † 16.05.1766“; dcera † Valentina Jureczky (I23670); ⚭ 7. 2. 1736 Franz Restel. Matrika neověřena."
+      ],
+      sources: [
+        "OFB Kranowitz (online-ofb.de, F.-D. Brumund 2023; index z konsignace ZAO POL IX 1), I11156"
+      ]
+    },
+    {
       id: "sebastianRe",
       name: "Sebastian Restel",
       line: "struz",
       cert: "M",
-      b: {"date":"20. 1. 1746 (podle OFB)","year":1746},
-      d: {"date":"1818 (podle OFB)","year":1818},
+      b: {"date":"20. 1. 1746 (OFB)","year":1746,"place":"Krzanowice"},
+      d: {"date":"6. 4. 1818 (OFB)","year":1818,"place":"Krzanowice"},
+      father: "franzRe",
+      mother: "margarethaJuR",
       occ: "podruh v Krzanowicích",
       notes: [
         "Otec Cathariny (sňatek 1810: „filia Sebastiani Restel inquilini“).",
         "Podle OFB (D): manželka Magdalena Winkler (*1745, †1838).",
-        "Manželka Magdalena (D): křest dcery Mechtildy 15. 10. 1787 (Krzanowice POL IX 2 sk18), „civis Kranovicensis“."
+        "Manželka Magdalena (D): křest dcery Mechtildy 15. 10. 1787 (Krzanowice POL IX 2 sk18), „civis Kranovicensis“.",
+        "OFB I8679 (D): „✶ 20.01.1746 in Kranowitz † 6.04.1818 … Bürger“; ⚭ 26. 1. 1767 Magdalena Winkler (✶ 1745 † 1838); rodiče Franz Restel × Margaretha Jureczka (⚭ 7. 2. 1736, NOZ str. 233). Pozor: OFB uvádí křest Mechtildy 15. 11. 1787 (karta 15. 10.)."
       ],
       sources: [
         "ZA Opava, NAD 165 Sbírka matrik, POL IX 2 sn. 356",
-        "OFB Kranowitz"
+        "OFB Kranowitz",
+        "OFB Kranowitz (online-ofb.de, F.-D. Brumund 2023; index z konsignace ZAO POL IX 1), I8679"
       ],
       scans: [
         {"f":"img/1810_snatek_jureczka_restel.jpg","t":"Sňatek 17. 7. 1810 (POL IX 2 sn. 356)"}
@@ -4071,7 +4123,8 @@ window.RODOKMEN = {
       occ: "chalupník (casarius) v Chuchelné",
       notes: [
         "Otec Jacoba (sňatek 1787).",
-        "Podle OFB (D): syn Andrease, manželka Marina Klicha (sňatek 28. 6. 1761). Hypotéza: předek „Jan Zajíček“, zahradník v karolinském katastru 1721–28."
+        "Podle OFB (D): syn Andrease, manželka Marina Klicha (sňatek 28. 6. 1761). Hypotéza: předek „Jan Zajíček“, zahradník v karolinském katastru 1721–28.",
+        "OFB (sporné, K): dva Thomasové Zaiczkové se stejným úmrtím † 10. 10. 1785 Chuchelná: I37600 (*~1725, ⚭ 28. 6. 1761 Marina Klicha, dcera † Johanna; syn Jakob 2. 7. 1762; otec Andreas) a I34852 (nar. 23. 12. podle OFB, × Veronika; rodiče Johann × Marina). Nespojeno."
       ],
       sources: [
         "ZA Opava, NAD 165 Sbírka matrik, POL IX 2 sn. 21",
@@ -4111,7 +4164,8 @@ window.RODOKMEN = {
       d: {"date":"před 1787","year":1786,"approx":true},
       occ: "chalupník v Chabičově",
       notes: [
-        "Otec Veroniky (sňatek 1787: „Veronica defuncti Thomae Kyrczmarz Casarii Chabiczovio“)."
+        "Otec Veroniky (sňatek 1787: „Veronica defuncti Thomae Kyrczmarz Casarii Chabiczovio“).",
+        "OFB I13283 „Thoman KATZMARCZIK … † vor Okt. 1787 von Chabitzau“ – bez rodičů; dcera Veronika (I13282) v pozdějších zápisech pod rodnými jmény Baranek/Kulscherz/Seutta/Riepel/Schiuta."
       ],
       sources: [
         "ZA Opava, NAD 165 Sbírka matrik, POL IX 2 sn. 21"
@@ -6514,14 +6568,29 @@ window.RODOKMEN = {
       ]
     },
     {
+      id: "valentinSch",
+      name: "Valentin Schwerlak",
+      line: "struz",
+      cert: "D",
+      b: {"date":"cca 1719 (?)","year":1719,"approx":true},
+      notes: [
+        "OFB I52877 (D): otec Rosiny Krautwurstové; v OFB poznámka „Taufen 7/1803 Vorname JOHANN“ (jméno nejisté). Kandidát (K): Valentin Schwerlak, kovář/domkář ve Strahovicích, *~1719 † 27. 3. 1787 (I43089); jeho dcera Euphrosina ∞ 1783 Georg Krautwurst."
+      ],
+      sources: [
+        "OFB Kranowitz (online-ofb.de, F.-D. Brumund 2023; index z konsignace ZAO POL IX 1), I52877"
+      ]
+    },
+    {
       id: "rosinaKr",
       name: "Rosina Krautwurst",
       maiden: "Schwerlak (podle OFB)",
       line: "struz",
       cert: "M",
       b: {"date":"cca 1765","year":1765,"approx":true,"place":"?"},
+      father: "valentinSch",
       notes: [
-        "Manželka Johanna Krautwursta, kováře ve Strandorfu; matka Magdaleny *23. 5. 1787 (křest, M). Rodné příjmení v zápisu neuvedeno – od 1786 zapisuje fara Krzanowice matky jen křestním jménem."
+        "Manželka Johanna Krautwursta, kováře ve Strandorfu; matka Magdaleny *23. 5. 1787 (křest, M). Rodné příjmení v zápisu neuvedeno – od 1786 zapisuje fara Krzanowice matky jen křestním jménem.",
+        "OFB I13196 (D): otec Valentin Schwerlak (I52877; „Lt. KB-Zweitschrift Taufen 7/1803 Vorname JOHANN“ – křestní jméno otce nejisté); 15 dětí 1784–1813. Valentin Schwerlak, kovář, *~1719 † 27. 3. 1787 Strahovice (I43089) – snad týž (K)."
       ],
       sources: [
         "ZA Opava, Sbírka matrik (NAD 165), Krzanowice POL IX 2 (N/O/Z 1786–1825), sken 16, klíč 0530/ef353dc0-4a45-4e08-92f2-7f2892a3ada8"
