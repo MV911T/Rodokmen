@@ -419,7 +419,8 @@ window.RODOKMEN = {
       b: {"date":"?","year":1645,"approx":true},
       notes: [
         "Otec ženicha 10. 2. 1697: „tomass Syn waclawa Koczyho z Krakowcých“ (MZA Bohuslavice 8737 O sk168R; zápis M, příjmení D). Obec: „z Krakowcých/z Rakowcých“ – spíš Raková (K/D). Ztotožnění Tomáše s otcem Martina Kočíře – D.",
-        "PLA35: Václav Kočí × Dorota z RAKOVÉ – křest syna Matouše 4. 9. 1677 „Waczlaw Koczy, Dorota | Mataus | … | z Rakowe“ (8737 sk38R str. 77, M); asi i Rosina 1676, Jakub ~1681, Václav ~1683 (index, D). Že jde o otce Tomáše (∞ 1697) – K. V Krakovci 1668 jiný Kočí (Matěj × Kateřina)."
+        "PLA35: Václav Kočí × Dorota z RAKOVÉ – křest syna Matouše 4. 9. 1677 „Waczlaw Koczy, Dorota | Mataus | … | z Rakowe“ (8737 sk38R str. 77, M); asi i Rosina 1676, Jakub ~1681, Václav ~1683 (index, D). Že jde o otce Tomáše (∞ 1697) – K. V Krakovci 1668 jiný Kočí (Matěj × Kateřina).",
+        "PLA57 (K/D): pohřeb 9. 10. 1699 „Pohřbena gest Dorota Kočiřka z Rakowe, [při] Chramu Panie bohuslawskym stara 56 Leth“ (Bohuslavice 8737 Z sk209R, str. 419; M, ověřeno koordinátorem) → *~1643; bez „vdova“ – Václav snad žil 1699; Dorota = Václavova manželka (1676–77) a možná matka Tomáše (K). Úmrtí Václava v 8737 Z I/1697–XII/1706 NENÍ → hledat 8738 Z 1707–18."
       ],
       sources: [
         "MZA, Acta Publica, Bohuslavice u Konice 8737 (id 5477), O sken 168"
