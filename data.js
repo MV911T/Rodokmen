@@ -3721,13 +3721,35 @@ window.RODOKMEN = {
       name: "Barthel (Bartoloměj) Lassack",
       line: "struz",
       cert: "M",
-      b: {"date":"?","year":1740,"approx":true},
+      b: {"date":"cca 1731","year":1731,"approx":true},
+      d: {"date":"29. 12. 1819 (pohřeb 31. 12.)","year":1819,"place":"Kobeřice"},
       occ: "sedlák v Kobeřicích",
+      marriage: "před 1769 – s Agnethou (Saltzer?)",
       notes: [
-        "Otec ženicha 18. 2. 1794: „der Matheus des Barthel Lassack Bauers Sohn von Koebrovitz“ (Kobeřice H IX 4 sk42L, M); svědek 1792 a 1793 „Barthel Lassack bauer … von Koebrowitz“ (sk38L, 39L); dcera Catharina ∞ 1795 Joseph Suchelka(?) (sk43L)."
+        "Otec ženicha 18. 2. 1794: „der Matheus des Barthel Lassack Bauers Sohn von Koebrovitz“ (Kobeřice H IX 4 sk42L, M); svědek 1792 a 1793 „Barthel Lassack bauer … von Koebrowitz“ (sk38L, 39L); dcera Catharina ∞ 1795 Joseph Suchelka(?) (sk43L).",
+        "Úmrtí 29. 12. 1819, pohřeb 31. 12.: „26. | 29. | 31. | Hering Pfarrer | Idem | Bartel Lassak Bauer Auszügler | Do. | Do. | Do. | 88 | An Entkräftung“ (H IX 6 sk21L, M; ověřeno koordinátorem) → *~1731."
       ],
       sources: [
-        "ZA Opava, NAD 165 Sbírka matrik, Kobeřice H IX 4, sken 42, 38, 39, 43"
+        "ZA Opava, NAD 165 Sbírka matrik, Kobeřice H IX 4, sken 42, 38, 39, 43",
+        "ZA Opava, NAD 165 Sbírka matrik, Kobeřice H IX 6 (Z 1812–1866), sken 21"
+      ],
+      scans: [
+        {"f":"img/1819_umrti_barthel_lassak.jpg","t":"Úmrtí 29. 12. 1819 Kobeřice – Bartel Lassak, sedlák, výminkář, 88 let (ZA Opava, Kobeřice H IX 6 sken 21)"}
+      ]
+    },
+    {
+      id: "agnesLa",
+      name: "Agnes (Agnetha) Lassak",
+      maiden: "Saltzer (?)",
+      line: "struz",
+      cert: "M",
+      b: {"date":"cca 1738","year":1738,"approx":true},
+      d: {"date":"16. 12. 1808","year":1808,"place":"Kobeřice"},
+      notes: [
+        "Matka při křtu Mathese 15. 9. 1769: „des Bauers Bertel Lassak von seinem Weibe Agnetha Saltzerin(?)“ (Kobeřice H IX 2 sk23L, M; rodné příjmení D). Úmrtí 16. 12. 1808: „Agnes d[es] Bartel Lassacky Auszüglers Weib | Koeb. | 70“ (H IX 5 sk122L, M) → *~1738; ztotožnění D."
+      ],
+      sources: [
+        "ZA Opava, NAD 165 Sbírka matrik, Kobeřice H IX 2, sken 23; H IX 5, sken 122"
       ]
     },
     {
@@ -3735,23 +3757,27 @@ window.RODOKMEN = {
       name: "Mathes (Mathias) Lassak",
       line: "struz",
       cert: "D",
-      b: {"date":"cca 1770","year":1770,"approx":true,"place":"Kobeřice"},
+      b: {"date":"14. 9. 1769 (křest 15. 9.)","year":1769,"place":"Kobeřice"},
       father: "barthelLa",
+      mother: "agnesLa",
       occ: "sedlák (Bauer) v Kobeřicích",
       marriage: "18. 2. 1794, Kobeřice – se Susannou Hruschkovou",
       notes: [
         "Uveden jen jako otec Rosalie v křtu vnučky 1845: „Tochter des Bauers Mathes Lassak et Susanna geb. Socha“ (Krzanowice 1845 Nr 35, M zápis). V OFB Kranowitz bez dat a bez dalších dětí. Kandidáti v OFB (K): sedlák Matthäus ze Strandorfu (nar. 1777) (∞ 1810 Catharina Hlubek – dřívější manželství se Susannou?); Mathias *~1745, výměnkář (∞ 1817 Susanna, vdova Hlubek, 60 l.) – slabé; Mathias Lasak, výměnkář † 18. 12. 1823, 65 l.",
         "STR-K4 (14. 10. 2026, M zápisy, Silius pohřby): starý pár ze Strandorfu – Susanna, manželka výměnkáře Mathese Lasaka, † 4. 12. 1830, 90 l. (sl. 462 sn 0025 Nr 167) a Mathes Lasak, výměnkář, † 11. 5. 1832, 93 l. (sl. 464 sn 0007 Nr 44) – věkem (*~1739/40) Rosaliinými rodiči být NEMOHOU; spíš rodiče sedláka Mathese ml. (narozen 1777). Mathias Lasak, výměnkář z Borutína, † 18. 12. 1823, 65 l. (sl. 455 sn 0021 Nr 148) – manželka neuvedena, borutínská linie (× Marina Czujek) – asi také ne. Susanna Lasak nezemřela v Krzanowicích 1805–1809. Hypotéza (K): otec = Mathes ml. (narozen 1777) s neznámou 1. ženou Susannou Socha, nebo rodina mimo farnost.",
         "Sedlák v Kobeřicích (křest Rosalie 1804, M). Při sňatku dcery 21. 7. 1829 „Tochter nach dem Mathes Lassak Bauer v[on] hier“ – „nach dem“ snad = zemřelý (K). Kandidáti ze Strandorfu/Borutína (OFB Kranowitz) asi vyloučeni (D).",
-        "Sňatek 18. 2. 1794 Kobeřice (STR-L2; M, ověřeno koordinátorem): „Ist in der Kirche Koebrovitz copulirt worden, der Matheus des Barthel Lassack Bauers Sohn von Koebrovitz, mit der Susanna des Joseph Hruschka Auszüglers Tochter von Virbhau(?). Zeugen Carl Pavlenka frey Gärtl. und Urban Homola Bauer … | der Bräutigam 24 / die Braut 23 Jahr“ (Kobeřice H IX 4 sk42L, č. 3). Syn Franz † 30. 7. (~1807–09) ve 14 dnech (H IX 5 sk125L)."
+        "Sňatek 18. 2. 1794 Kobeřice (STR-L2; M, ověřeno koordinátorem): „Ist in der Kirche Koebrovitz copulirt worden, der Matheus des Barthel Lassack Bauers Sohn von Koebrovitz, mit der Susanna des Joseph Hruschka Auszüglers Tochter von Virbhau(?). Zeugen Carl Pavlenka frey Gärtl. und Urban Homola Bauer … | der Bräutigam 24 / die Braut 23 Jahr“ (Kobeřice H IX 4 sk42L, č. 3). Syn Franz † 30. 7. (~1807–09) ve 14 dnech (H IX 5 sk125L).",
+        "Křest 15. 9. 1769 Kobeřice (STR-L3; M, ověřeno koordinátorem): „Ist aus dem Dorf Kobrowitz des Bauers Bertel Lassak von seinem Weibe Agnetha Saltzerin(?) an dem nächstvorigen Tag früh um 5 Uhr gebohrenes Knäbl zur heiligen Tauff gebracht und demselben der Nahmen Mathes gegeben worden, getauft durch den … Herrn Pfarr Joseph Jauneschek(?) | Tauffzeugen: Urban Homola Bauer und Anna Eheweib des Häusmanns Joseph Vonat(?) beede v. Kobrowitz“ (H IX 2 sk23L, č. 31). Úmrtí do X/1820 v Kobeřicích není (D). Syn Franz † 30. 7. 1809 (M)."
       ],
       sources: [
         "Silius Radicum – Krzanowice 1845 (sl. 379) sn 0005 Nr 35",
         "ZA Opava, NAD 165 Sbírka matrik, Kobeřice H IX 3, sken 41; H IX 10, sken 5",
-        "ZA Opava, NAD 165 Sbírka matrik, Kobeřice H IX 4 (O 1766–1822), sken 42"
+        "ZA Opava, NAD 165 Sbírka matrik, Kobeřice H IX 4 (O 1766–1822), sken 42",
+        "ZA Opava, NAD 165 Sbírka matrik, Kobeřice H IX 2 (N 1766–1794), sken 23"
       ],
       scans: [
-        {"f":"img/1794_snatek_lassak_hruschka.jpg","t":"Sňatek 18. 2. 1794 Kobeřice – Matheus, syn sedláka Barthela Lassacka × Susanna, dcera výminkáře Josepha Hruschky (ZA Opava, Kobeřice H IX 4 sken 42)"}
+        {"f":"img/1794_snatek_lassak_hruschka.jpg","t":"Sňatek 18. 2. 1794 Kobeřice – Matheus, syn sedláka Barthela Lassacka × Susanna, dcera výminkáře Josepha Hruschky (ZA Opava, Kobeřice H IX 4 sken 42)"},
+        {"f":"img/1769_krest_mathes_lassak.jpg","t":"Křest 15. 9. 1769 Kobeřice – Mathes, syn sedláka Bertela Lassaka a Agnethy (ZA Opava, Kobeřice H IX 2 sken 23)"}
       ]
     },
     {
