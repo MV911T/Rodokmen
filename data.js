@@ -854,6 +854,7 @@ window.RODOKMEN = {
       line: "woron",
       cert: "M",
       b: {"date":"19. 10. 1849","year":1849,"place":"Lednica Dolna, okr. Wieliczka (Halič)"},
+      d: {"date":"22. 12. 1925","year":1925,"place":"Moravská Ostrava č. 742"},
       father: "kasperW",
       mother: "katarzynaSz",
       occ: "horník",
@@ -867,12 +868,14 @@ window.RODOKMEN = {
         "Rod Woroń je v Lednici Dolní doložen už kolem roku 1780 (strom FamilySearch).",
         "WOR-O1 (15. 10.): dcera Helena zemřela 22. 11. 1901 v Polské Ostravě, Kamenec (Steinplatz) č. 96, ve věku 2 let: „Woroń Helena, Tochter des Andreas, Bergmann“ (ZAO SO VII 29, fol. 221, sk111; M, ověřeno koordinátorem) – dům č. 96 jako při sňatku 1896 → dcera z 2. manželství (D). Úmrtí Ondřeje ani Markéty NENÍ v rejstřících Z Polská Ostrava 1894–96, VII/1899–1907 a 1916–17 (1908–15 neprověřeno).",
         "WOR-O2 (15. 10.): dcera Anežka Julie (Agnes Julie) pokřtěna 10. 2. 1901 v Polské Ostravě, Steinplatz (Kamenec) č. 69 (narozena 4. 2.): otec „Woroń Andreas, Bergmann aus Lednica dólna“, 49, matka „Margaretha, T. Franz Wludyka, Bauer in Rajbrot“, nar. 1/7 58 (sic), sňatek 24/8 96; kmotr „Woroń Stanisl., Bergmann in P. Ostrau, Sofie, dessen Gattin“; na okraji „cop. 9./10. 1923“ (ZAO SO VII 35, fol. 237 č. 136, sk122; M, ověřeno). Ondřej žil 6. 5. 1918 (manželka zemřela jako „Gattin“). Úmrtí Ondřeje NENÍ v rejstřících Z Polská Ostrava 1918–29 (SO VII 34) ani 1930–44 (SO VII 49) → zemřel jinde (nemocnice M. Ostrava? návrat do Haliče?).",
-        "WOR15 (15. 10.) – sourozenci (Geneteka D, Jan M): Franciszek *14. 9. 1847 († 8. 12. 1928 Wieliczka, 81; ∞ 1873 Karolina Krupa vd. Szewczyk, ∞ 1892 Marianna Borowiec roz. Cieślik); Anna (∞ 1870 Jan Leśniak, ∞ 1878 Józef Leśniak, † 24. 4. 1915 Mietniów – K); Zofia *2. 4. 1857 (∞ 1875 Franciszek Mastela, † 25. 11. 1915 L. Górna); Wojciech (*~1860, † 2. 4. 1935 Wieliczka; ž. Aniela Krzyszkowska, 12 dětí 1890–1908); Jan *5. 5. 1863, solivarník, L. Dolna 107 (∞1 Zofia Leśniak † 1890, ∞2 3. 6. 1890 Marianna Kania – ANK 29/1713 UMZ-1890 akt 5, M; † 13. 5. 1909). Ostatní Woroniové v Lednici/Sierczy (Jakub × Dębowska/Gabryś) = linie Franciszka Woronia × Wiktorie Witkowské (∞ 1807), ne Kasprova."
+        "WOR15 (15. 10.) – sourozenci (Geneteka D, Jan M): Franciszek *14. 9. 1847 († 8. 12. 1928 Wieliczka, 81; ∞ 1873 Karolina Krupa vd. Szewczyk, ∞ 1892 Marianna Borowiec roz. Cieślik); Anna (∞ 1870 Jan Leśniak, ∞ 1878 Józef Leśniak, † 24. 4. 1915 Mietniów – K); Zofia *2. 4. 1857 (∞ 1875 Franciszek Mastela, † 25. 11. 1915 L. Górna); Wojciech (*~1860, † 2. 4. 1935 Wieliczka; ž. Aniela Krzyszkowska, 12 dětí 1890–1908); Jan *5. 5. 1863, solivarník, L. Dolna 107 (∞1 Zofia Leśniak † 1890, ∞2 3. 6. 1890 Marianna Kania – ANK 29/1713 UMZ-1890 akt 5, M; † 13. 5. 1909). Ostatní Woroniové v Lednici/Sierczy (Jakub × Dębowska/Gabryś) = linie Franciszka Woronia × Wiktorie Witkowské (∞ 1807), ne Kasprova.",
+        "Zemřel 22. 12. 1925 v Moravské Ostravě č. 742 (pohřben 24. 12.), 76 let 2 m. 3 d., myodegenerace a marasmus: „Voroň Ondřej, vdovec, horník-pensista v Mor. Ostravě, syn Kašpara Voroně, půlníka v Dolní Lednici a Kateřiny Szarek“; nar. 19/10 1849 v Dol. Lednici, okr. Velička; odd. 24/8 1896 ve Slez. Ostravě (ZAO, MO I 60, Z Mor. Ostrava 1924–30, sv. XIII s. 110 č. 433, sk64; M, ověřeno koordinátorem). Rejstřík MO I 84: „Voroň Ondřej | 110“ (1925)."
       ],
       sources: [
         "ZA Opava, ř.-k. fara Slezská Ostrava, SO VII 18 (O 1859–1884), s. 563, sken 284, č. 92; SO VII 29 (Z 1894–1907), fol. 82, sken 42",
         "ZA Opava, NAD 165 Sbírka matrik, ř.-k. fara Slezská Ostrava, O 1892–1900 (SO VII 26), sken 127, fol. 250, č. 169",
-        "SO VII 36, fol. 171"
+        "SO VII 36, fol. 171",
+        "ZA Opava, ŘK fara Moravská Ostrava, MO I 60 (Z 1924–1930), sv. XIII, s. 110, č. 433"
       ],
       scans: [
         {"f":"img/1884_snatek_andreas_woron_galasowska.jpg","t":"1. sňatek 21. 9. 1884, Polská Ostrava – Andreas Woroń (34) × Emilia Galasowsky (18) (ZAO, Slezská Ostrava SO VII 18, s. 563, sken 284)"},
@@ -881,7 +884,8 @@ window.RODOKMEN = {
         {"f":"img/1903_krest_ludvik_woron.jpg","t":"Křest syna Ludvíka 1903"},
         {"f":"img/1892_snatek_franciszek_woron_kasper.jpg","t":"Sňatek Franciszka Woronia 1892 – „f. Gaspari Woron et Catharinae Szarek“ (kandidátská rodina)"},
         {"f":"img/1901_umrti_helena_woron.jpg","t":"Úmrtí dcery Heleny 22. 11. 1901, Polská Ostrava – Steinplatz 96 (SO VII 29, fol. 221)"},
-        {"f":"img/1901_krest_agnes_woron.jpg","t":"Křest dcery Anežky Julie 10. 2. 1901, Polská Ostrava – Steinplatz 69 (SO VII 35, fol. 237)"}
+        {"f":"img/1901_krest_agnes_woron.jpg","t":"Křest dcery Anežky Julie 10. 2. 1901, Polská Ostrava – Steinplatz 69 (SO VII 35, fol. 237)"},
+        {"f":"img/1925_umrti_ondrej_woron.jpg","t":"Úmrtí 22. 12. 1925, Moravská Ostrava 742 – syn Kašpara Voroně, půlníka v Dolní Lednici, a Kateřiny Szarek (MO I 60, s. 110)"}
       ],
       siblings: []
     },
