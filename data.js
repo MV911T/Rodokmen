@@ -422,14 +422,17 @@ window.RODOKMEN = {
         "PLA35: Václav Kočí × Dorota z RAKOVÉ – křest syna Matouše 4. 9. 1677 „Waczlaw Koczy, Dorota | Mataus | … | z Rakowe“ (8737 sk38R str. 77, M); asi i Rosina 1676, Jakub ~1681, Václav ~1683 (index, D). Že jde o otce Tomáše (∞ 1697) – K. V Krakovci 1668 jiný Kočí (Matěj × Kateřina).",
         "PLA57 (K/D): pohřeb 9. 10. 1699 „Pohřbena gest Dorota Kočiřka z Rakowe, [při] Chramu Panie bohuslawskym stara 56 Leth“ (Bohuslavice 8737 Z sk209R, str. 419; M, ověřeno koordinátorem) → *~1643; bez „vdova“ – Václav snad žil 1699; Dorota = Václavova manželka (1676–77) a možná matka Tomáše (K). Úmrtí Václava v 8737 Z I/1697–XII/1706 NENÍ → hledat 8738 Z 1707–18.",
         "PLA63 (15. 10.): pár Václav Kočíř × ANNA – křty Jakuba 13. 7. 1681 a Václava 7. 9. 1682 „Waczlaw Koczyrz, Anna | Waczlaw | Jakub Nawratil, Anna Zahradnice | Ʒrakowcych“ (8737 N sk50R, str. 101; M, ověřeno koordinátorem; sken img/1682_krest_vaclav_kocir.jpg). Index „Václav ~1683/84“ = 1682; „Marianna Kočí 1681“ = omyl (Kolářů). Obec u Anny „Ʒrakowcy/ch“ (jako u Tomáše 1697), u Doroty „z Rakowe“; Dorota žila do 1699 → mohou to být DVA Václavové (Raková × Krakovec) – K. Sňatek Václava v 8737 O 2. 5. 1658–10. 2. 1681 není (mezery VII/1676–I/1677, 1681).",
-        "PLA66 (15. 10.): pohřeb Doroty Kočí v VII/1677–III/1681 není a Dorota Kočířka žila do 1699 → spíš DVA Václavové (D): Václav I. × Dorota „z Rakowe“ (Rosina 1676, Matouš 1677; podle věku pravděpodobně i Tomáš *~1665 – K/D) a Václav II. Kočíř × Anna „Ʒrakowcých“ (Jakub 1681, Václav 1682), snad syn Václava I. (K). Tato karta = otec Tomáše, tj. nejspíš Václav I. Pohřeb Václava v Bohuslavicích 1697–1727 nenalezen."
+        "PLA66 (15. 10.): pohřeb Doroty Kočí v VII/1677–III/1681 není a Dorota Kočířka žila do 1699 → spíš DVA Václavové (D): Václav I. × Dorota „z Rakowe“ (Rosina 1676, Matouš 1677; podle věku pravděpodobně i Tomáš *~1665 – K/D) a Václav II. Kočíř × Anna „Ʒrakowcých“ (Jakub 1681, Václav 1682), snad syn Václava I. (K). Tato karta = otec Tomáše, tj. nejspíš Václav I. Pohřeb Václava v Bohuslavicích 1697–1727 nenalezen.",
+        "PLA69 (15. 10.): třetí dítě páru Václav Kočíř × Anna – Petr, křest 29. 6. 1687 „Waczlaw Koczyrz, Anna | Petr | Jakub Sýkora, Albieta Mogan(?) | Ʒrakowcých“ (8737 N sk63L, str. 126; M, ověřeno koordinátorem). Václav × Dorota v X/1682–VIII/1688 žádné dítě nekřtil."
       ],
       sources: [
         "MZA, Acta Publica, Bohuslavice u Konice 8737 (id 5477), O sken 168",
-        "MZA, Acta Publica, Bohuslavice u Konice 8737 (id 5477), N sken 50R (str. 101), 7. 9. 1682"
+        "MZA, Acta Publica, Bohuslavice u Konice 8737 (id 5477), N sken 50R (str. 101), 7. 9. 1682",
+        "MZA, Acta Publica, Bohuslavice u Konice 8737 (id 5477), N sken 63L (str. 126), 29. 6. 1687"
       ],
       scans: [
-        {"f":"img/1682_krest_vaclav_kocir.jpg","t":"Křest Václava, syna Václava Kočíře a Anny, 7. 9. 1682 (Bohuslavice 8737 N str. 101)"}
+        {"f":"img/1682_krest_vaclav_kocir.jpg","t":"Křest Václava, syna Václava Kočíře a Anny, 7. 9. 1682 (Bohuslavice 8737 N str. 101)"},
+        {"f":"img/1687_krest_petr_kocir.jpg","t":"Křest Petra, syna Václava Kočíře a Anny, 29. 6. 1687 (Bohuslavice 8737 N str. 126)"}
       ]
     },
     {
