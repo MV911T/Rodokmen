@@ -3828,7 +3828,8 @@ window.RODOKMEN = {
       b: {"date":"?","year":1740,"approx":true},
       occ: "výminkář (Auszügler)",
       notes: [
-        "Otec nevěsty 18. 2. 1794: „Susanna des Joseph Hruschka Auszüglers Tochter von Virbhau(?)“ (Kobeřice H IX 4 sk42L, M). Obec neztotožněna."
+        "Otec nevěsty 18. 2. 1794: „Susanna des Joseph Hruschka Auszüglers Tochter von Virbhau(?)“ (Kobeřice H IX 4 sk42L, M). Obec neztotožněna.",
+        "Obec „Virbkau“ = Vrbka (Služovice), fara Kravaře (STR-L7, D). V Kravařích 1770 Paulus Hruschka, ovčák × Catharina (K)."
       ],
       sources: [
         "ZA Opava, NAD 165 Sbírka matrik, Kobeřice H IX 4, sken 42"
@@ -3840,7 +3841,7 @@ window.RODOKMEN = {
       maiden: "Hruschka (Hrušková)",
       line: "struz",
       cert: "D",
-      b: {"date":"cca 1771","year":1771,"approx":true,"place":"„Wrbnau“ (rodiště dle úmrtí 1847)"},
+      b: {"date":"cca 1771","year":1771,"approx":true,"place":"Vrbka (Wrbkau), fara Kravaře (?)"},
       d: {"date":"7. 2. 1847 (pohřeb 10. 2.)","year":1847,"place":"Kobeřice"},
       father: "josephHr",
       marriage: "18. 2. 1794, Kobeřice – s Mathesem Lassakem",
@@ -3848,7 +3849,8 @@ window.RODOKMEN = {
         "Uvedena jen jako matka Rosalie v křtu vnučky 1845: „Susanna geb. Socha“ (Krzanowice 1845 Nr 35, M zápis). OFB uvádí u vnuka Alberta 1846 jméno „Gruschka (Hruschka)“ – v duplikátu 1846 matčina matka neuvedena; rozpor nevyjasněn.",
         "Rodné příjmení podle křtu dcery Rosalie 14. 2. 1804: „sein Weib Susanna Hruschkin von Koeberwitz“ (Kobeřice H IX 3 sk41L, M; souhlasí s OFB „Gruschka (Hruschka)“). Tvar „Socha“ v křtu vnučky 1845 je nejspíš chyba zápisu (D).",
         "Sňatek 18. 2. 1794: „Susanna des Joseph Hruschka Auszüglers Tochter von Virbhau(?)“, 23 let (H IX 4 sk42L, M) – obec neztotožněna.",
-        "Úmrtí 7. 2. 1847 v 8 h ráno, pohřeb 10. 2. (STR-L6; M, ověřeno koordinátorem): „Susanna verwittib. Mathes Lassak geb: Stoczek(?) Bauer Auszügl. | Koebrowitz | Wrbnau | katol. | 74 | Altershalben“ (Kobeřice H IX 6 sk79) → *~1772/73, rodiště Wrbnau (= „Virbhau“ 1794). ROZPOR rodného jména: 1794 „des Joseph Hruschka … Tochter“, 1847 „geb. Stoczek“ (nevlastní otec / jméno usedlosti? K)."
+        "Úmrtí 7. 2. 1847 v 8 h ráno, pohřeb 10. 2. (STR-L6; M, ověřeno koordinátorem): „Susanna verwittib. Mathes Lassak geb: Stoczek(?) Bauer Auszügl. | Koebrowitz | Wrbnau | katol. | 74 | Altershalben“ (Kobeřice H IX 6 sk79) → *~1772/73, rodiště Wrbkau = Vrbka (= „Virbkau“ 1794). ROZPOR rodného jména: 1794 „des Joseph Hruschka … Tochter“, 1847 „geb. Stoczek“ (nevlastní otec / jméno usedlosti? K).",
+        "STR-L7: rodiště čteno „Wrbkau“ (1847) / „Virbkau“ (1794) = Vrbka (Weidental, dnes část Služovic, Hlučínsko), fara Kravaře (D/M obec, D fara). Křest v Kravaře H XI 2 (XII/1766–V/1767, 1770–X/1774, IX/1776–XI/1778) zatím NENÍ; chybí úsek VI/1767–XII/1769."
       ],
       sources: [
         "Silius Radicum – Krzanowice 1845 (sl. 379) sn 0005 Nr 35",
