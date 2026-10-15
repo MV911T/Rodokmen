@@ -3726,7 +3726,8 @@ window.RODOKMEN = {
       marriage: "9. 11. 1731, Kobeřice – s Catharinou, vdovou po Kubínovi (D)",
       notes: [
         "Otec při křtu Bartholomaea Wenceslaa 14. 8. 1735 Kobeřice: „Mathiae Lassak, Catharinae“ (H IX 1 sk45L, M). Svědek sňatků 1741 a 1753 (sk125, 134; K). Vazba na Barthela † 1819 – D. Asi i dcera Rosina 6. 9. 1732 (sk38R, D).",
-        "STR-L5: pravděpodobný sňatek 9. 11. 1731 Kobeřice „Copulatus est Juvenis Mathias Laschok cum Vidua Catharina defuncti Harla(?) Kubin uxore. Testes Georgius Hablik judex pagi, et Laurentius Baranek e Köbrövich“ (H IX 1 sk119L; zápis M, příjmení „Laschok“ = Lassak D – ověřeno koordinátorem) → Catharina = vdova po Kubínovi (rodné příjmení neznámé). Dcera Rosina (*IX/1732) ∞ 4. 7. 1756 Andreas Wehowsky: „Rosina filia Mathiae Lasak rustici“ (sk136L, M)."
+        "STR-L5: pravděpodobný sňatek 9. 11. 1731 Kobeřice „Copulatus est Juvenis Mathias Laschok cum Vidua Catharina defuncti Harla(?) Kubin uxore. Testes Georgius Hablik judex pagi, et Laurentius Baranek e Köbrövich“ (H IX 1 sk119L; zápis M, příjmení „Laschok“ = Lassak D – ověřeno koordinátorem) → Catharina = vdova po Kubínovi (rodné příjmení neznámé). Dcera Rosina (*IX/1732) ∞ 4. 7. 1756 Andreas Wehowsky: „Rosina filia Mathiae Lasak rustici“ (sk136L, M).",
+        "Syn Georgius pokř. [11. 4.?] 1734 z nouze porodní bábou (H IX 1 sk42L, M)."
       ],
       sources: [
         "ZA Opava, NAD 165 Sbírka matrik, Kobeřice H IX 1, sken 45"
@@ -3838,18 +3839,24 @@ window.RODOKMEN = {
       maiden: "Hruschka (Hrušková)",
       line: "struz",
       cert: "D",
-      b: {"date":"cca 1771","year":1771,"approx":true,"place":"„Virbhau“ (?)"},
+      b: {"date":"cca 1771","year":1771,"approx":true,"place":"„Wrbnau“ (rodiště dle úmrtí 1847)"},
+      d: {"date":"7. 2. 1847 (pohřeb 10. 2.)","year":1847,"place":"Kobeřice"},
       father: "josephHr",
       marriage: "18. 2. 1794, Kobeřice – s Mathesem Lassakem",
       notes: [
         "Uvedena jen jako matka Rosalie v křtu vnučky 1845: „Susanna geb. Socha“ (Krzanowice 1845 Nr 35, M zápis). OFB uvádí u vnuka Alberta 1846 jméno „Gruschka (Hruschka)“ – v duplikátu 1846 matčina matka neuvedena; rozpor nevyjasněn.",
         "Rodné příjmení podle křtu dcery Rosalie 14. 2. 1804: „sein Weib Susanna Hruschkin von Koeberwitz“ (Kobeřice H IX 3 sk41L, M; souhlasí s OFB „Gruschka (Hruschka)“). Tvar „Socha“ v křtu vnučky 1845 je nejspíš chyba zápisu (D).",
-        "Sňatek 18. 2. 1794: „Susanna des Joseph Hruschka Auszüglers Tochter von Virbhau(?)“, 23 let (H IX 4 sk42L, M) – obec neztotožněna."
+        "Sňatek 18. 2. 1794: „Susanna des Joseph Hruschka Auszüglers Tochter von Virbhau(?)“, 23 let (H IX 4 sk42L, M) – obec neztotožněna.",
+        "Úmrtí 7. 2. 1847 v 8 h ráno, pohřeb 10. 2. (STR-L6; M, ověřeno koordinátorem): „Susanna verwittib. Mathes Lassak geb: Stoczek(?) Bauer Auszügl. | Koebrowitz | Wrbnau | katol. | 74 | Altershalben“ (Kobeřice H IX 6 sk79) → *~1772/73, rodiště Wrbnau (= „Virbhau“ 1794). ROZPOR rodného jména: 1794 „des Joseph Hruschka … Tochter“, 1847 „geb. Stoczek“ (nevlastní otec / jméno usedlosti? K)."
       ],
       sources: [
         "Silius Radicum – Krzanowice 1845 (sl. 379) sn 0005 Nr 35",
         "ZA Opava, NAD 165 Sbírka matrik, Kobeřice H IX 3, sken 41",
-        "ZA Opava, NAD 165 Sbírka matrik, Kobeřice H IX 4, sken 42"
+        "ZA Opava, NAD 165 Sbírka matrik, Kobeřice H IX 4, sken 42",
+        "ZA Opava, NAD 165 Sbírka matrik, Kobeřice H IX 6, sken 79"
+      ],
+      scans: [
+        {"f":"img/1847_umrti_susanna_lassak.jpg","t":"Úmrtí 7. 2. 1847 Kobeřice – Susanna, vdova po Mathesu Lassakovi, roz. Stoczek(?), z Wrbnau, 74 let (ZA Opava, Kobeřice H IX 6 sken 79)"}
       ]
     },
     {
