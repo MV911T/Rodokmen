@@ -3722,8 +3722,10 @@ window.RODOKMEN = {
       line: "struz",
       cert: "M",
       b: {"date":"?","year":1705,"approx":true},
+      marriage: "9. 11. 1731, Kobeřice – s Catharinou, vdovou po Kubínovi (D)",
       notes: [
-        "Otec při křtu Bartholomaea Wenceslaa 14. 8. 1735 Kobeřice: „Mathiae Lassak, Catharinae“ (H IX 1 sk45L, M). Svědek sňatků 1741 a 1753 (sk125, 134; K). Vazba na Barthela † 1819 – D. Asi i dcera Rosina 6. 9. 1732 (sk38R, D)."
+        "Otec při křtu Bartholomaea Wenceslaa 14. 8. 1735 Kobeřice: „Mathiae Lassak, Catharinae“ (H IX 1 sk45L, M). Svědek sňatků 1741 a 1753 (sk125, 134; K). Vazba na Barthela † 1819 – D. Asi i dcera Rosina 6. 9. 1732 (sk38R, D).",
+        "STR-L5: pravděpodobný sňatek 9. 11. 1731 Kobeřice „Copulatus est Juvenis Mathias Laschok cum Vidua Catharina defuncti Harla(?) Kubin uxore. Testes Georgius Hablik judex pagi, et Laurentius Baranek e Köbrövich“ (H IX 1 sk119L; zápis M, příjmení „Laschok“ = Lassak D – ověřeno koordinátorem) → Catharina = vdova po Kubínovi (rodné příjmení neznámé). Dcera Rosina (*IX/1732) ∞ 4. 7. 1756 Andreas Wehowsky: „Rosina filia Mathiae Lasak rustici“ (sk136L, M)."
       ],
       sources: [
         "ZA Opava, NAD 165 Sbírka matrik, Kobeřice H IX 1, sken 45"
