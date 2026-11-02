@@ -6504,7 +6504,8 @@ window.RODOKMEN = {
       b: {"date":"cca 1755","year":1755,"approx":true,"place":"Rudno"},
       occ: "domkář/podruh v Rudně č. 13",
       notes: [
-        "Otec Jacka (1789) a dalších dětí v Rudně č. 13 (M): Michael 29. 9. 1785 (matka Catharina), dvojčata Paulus a Gedeon 25. 2. 1788 (matka „Cath. Kuśnierzonka“), Hiacynthus 15. 8. 1789 (matka „Cath. Pietatka (?)“) – rodné příjmení matky se v zápisech liší, buď chyby čtení, nebo dvě manželky."
+        "Otec Jacka (1789) a dalších dětí v Rudně č. 13 (M): Michael 29. 9. 1785 (matka Catharina), dvojčata Paulus a Gedeon 25. 2. 1788 (matka „Cath. Kuśnierzonka“), Hiacynthus 15. 8. 1789 (matka „Cath. Pietatka (?)“) – rodné příjmení matky se v zápisech liší, buď chyby čtení, nebo dvě manželky.",
+        "GAL11 (2. 11., D silné): † 18. 8. 1815 Rudno dům 10 „Michael Pikul“, 80 let (Z 5565 sk004R, s. 122; zápis M) – v domě Kazimíra Pikula (syn? K); věk asi nadsazený. Děti s Kateřinou: Marianna pokř. 28. 8. ~1780 (dům 15; kt1 sk012L – rok D; ∞ 1801 Dominik Panek? K), Kateřina pokř. 14. 6. 1783 (dům 13; „Michaël Pikul et Catharina Uxor Ejus de Rudno“, jednotka 1777 kt1 sk020R, M). Sňatek nejspíš před 1777 (sňatky Łęg I/1777–X/1784 bez něj)."
       ],
       sources: [
         "Skanoteka PTG – AD Tarnów, parafia Łęg Tarnowski (id4305): U Rudno (jedn. 3605) sken 001–002"
@@ -6522,7 +6523,8 @@ window.RODOKMEN = {
       b: {"date":"cca 1760","year":1760,"approx":true},
       notes: [
         "Matka Jacka (1789): „Cath. Pietatka (?)“; v křtu dvojčat 1788 „Cath. Kuśnierzonka (?)“ – rodné příjmení nejisté.",
-        "GAL10 (2. 11.): matka Kateřina rozená PIŁAT (D, silné): křest syna Michała 30. 4. 1792 Rudno 13 „Michael Pikul Pater / Cath: Pilatowna mat.“ (U 3605 sk003R, s. 232; M, ověřeno koordinátorem); 1789 „Cath. Pilatka“; v domě č. 13 zemřeli Jan Piłat (19. 9. 1792, 56) a Marianna Piłatowa (16. 8. 1793, 70) – otec/bratr a matka/babička Kateřiny? (K). Děti Michała × Kateřiny: Kateřina (~1783 † 1789), Michał (*29. 9. 1785 † 1789), Paweł a Gedeon (dvojčata 1788), Jacek 1789, Michał 1792. Michał st. žil XI/1800. Kateřina v Rudně XII/1788–II/1806 nezemřela."
+        "GAL10 (2. 11.): matka Kateřina rozená PIŁAT (D, silné): křest syna Michała 30. 4. 1792 Rudno 13 „Michael Pikul Pater / Cath: Pilatowna mat.“ (U 3605 sk003R, s. 232; M, ověřeno koordinátorem); 1789 „Cath. Pilatka“; v domě č. 13 zemřeli Jan Piłat (19. 9. 1792, 56) a Marianna Piłatowa (16. 8. 1793, 70) – otec/bratr a matka/babička Kateřiny? (K). Děti Michała × Kateřiny: Kateřina (~1783 † 1789), Michał (*29. 9. 1785 † 1789), Paweł a Gedeon (dvojčata 1788), Jacek 1789, Michał 1792. Michał st. žil XI/1800. Kateřina v Rudně XII/1788–II/1806 nezemřela.",
+        "GAL11 (D silné): † 20. 4. 1815 Rudno dům 10 „Catharina Pikulka“, 70 let (Z 5565 sk004R, s. 122; zápis M) – 4 měsíce před Michałem."
       ],
       sources: [
         "Skanoteka PTG – AD Tarnów, parafia Łęg Tarnowski (id4305): U Rudno (jedn. 3605) sken 002"
