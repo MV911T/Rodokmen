@@ -1566,6 +1566,7 @@ window.RODOKMEN = {
       line: "chmielek",
       cert: "M",
       b: {"date":"26. 2. 1817","year":1817,"place":"Rudno č. 10 (farnost Łęg Tarnowski)"},
+      d: {"date":"29. 3. 1876","year":1876,"place":"Rudno č. 17"},
       father: "jacekPik",
       mother: "annaGrab",
       occ: "sedlák (cmeto) v Rudně",
@@ -1574,7 +1575,8 @@ window.RODOKMEN = {
         "Sňatek 23. 11. 1840 (M): „Josephus Pikul l. f. Hyacinthi & Annae Grabczyńska“, 23 let, svobodný, Rudno č. 18; nevěsta „Marianna Drążka l. f. Benedicti Drąg & Katharina de Schab“, 19 let; svědci Nicolaus Klich a Martinus Biedak; oba otcové (Jacek Pikul, Benedikt Drąg) podepsali křížkem souhlas s nezletilým sňatkem.",
         "Křest 26. 2. 1817, Rudno č. 10: „Casimirus Josephus bini nominis“, otec „Hyacinthus Pikul Cmeto in Rudno“, matka „Anna Patre Adalberto Grabczyński“; kmotři Casimirus Pikul, sedlák v Rudně, a Sophia, žena Antonína Myśliwce. Jediný Józef, syn Jacka, v indexu 1804–1834 → totožnost PRAVDĚPODOBNÁ (D), věk při sňatku sedí.",
         "Otec Ludwiky (sňatek 1862, křest vnučky 1884).",
-        "GAL8 (2. 11.): 2. sňatek 15. 7. 1851 Rudno č. 18: „Casimirus Josephus Pikul hortulanus Hyacinthi et Annae natae Grabczyński hortulanorum filius viduus post Mariam natam Drąg e Dominio Ilkowice et ex Rudno natus“, 34 × „Catharina Joannis Fabian et Mariae natae Rzepka hortulanorum filia e Dominio Siedlec et ex Łęg nata“, 17; svědci Nicolaus Panek, Valentinus Pikul (Łęg M 4540 sk013, s. 25 č. 15; M, ověřeno koordinátorem) – potvrzuje rodiče Jacek × Anna Grabczyńska i 1. manželku Marii Drąg. Bratr Mathias † 16. 3. 1857, 35 l.; syn z 2. manželství Valentin † 26. 2. 1857, 1½ r."
+        "GAL8 (2. 11.): 2. sňatek 15. 7. 1851 Rudno č. 18: „Casimirus Josephus Pikul hortulanus Hyacinthi et Annae natae Grabczyński hortulanorum filius viduus post Mariam natam Drąg e Dominio Ilkowice et ex Rudno natus“, 34 × „Catharina Joannis Fabian et Mariae natae Rzepka hortulanorum filia e Dominio Siedlec et ex Łęg nata“, 17; svědci Nicolaus Panek, Valentinus Pikul (Łęg M 4540 sk013, s. 25 č. 15; M, ověřeno koordinátorem) – potvrzuje rodiče Jacek × Anna Grabczyńska i 1. manželku Marii Drąg. Bratr Mathias † 16. 3. 1857, 35 l.; syn z 2. manželství Valentin † 26. 2. 1857, 1½ r.",
+        "GAL9 (2. 11.): zemřel 29. 3. 1876 (pohř. 31. 3.) v Rudně č. 17, 59 let, na zápal plic: „Josephus Pikul cmetho maritus derelictae Catharinae Pabijan“ (AD Tarnów, Łęg Tarnowski Z 5535 sk044L, s. 80 č. 7; M, ověřeno koordinátorem)."
       ],
       sources: [
         "Skanoteka PTG – AD Tarnów, Łęg Tarnowski (id4305): M 1855–1901 sken 008",
@@ -1584,7 +1586,8 @@ window.RODOKMEN = {
         {"f":"img/1840_snatek_pikul_drag.jpg","t":"Sňatek 23. 11. 1840, Rudno č. 18 – Józef Pikul × Marianna Drąg (M 1828–1854, s. 12)"},
         {"f":"img/1817_krest_jozef_pikul.jpg","t":"Křest 26. 2. 1817, Rudno č. 10 – „Casimirus Josephus“ Pikul (U Rudno, s. 242)"},
         {"f":"img/1862_snatek_dydowicz_pikul.jpg","t":"Sňatek 20. 10. 1862 (Łęg Tarnowski M 1855–1901 s. 14)"},
-        {"f":"img/1851_snatek_jozef_pikul_fabian.jpg","t":"2. sňatek 15. 7. 1851, Rudno 18 – „Casimirus Josephus Pikul … viduus post Mariam natam Drąg“ (Łęg M 4540, s. 25)"}
+        {"f":"img/1851_snatek_jozef_pikul_fabian.jpg","t":"2. sňatek 15. 7. 1851, Rudno 18 – „Casimirus Josephus Pikul … viduus post Mariam natam Drąg“ (Łęg M 4540, s. 25)"},
+        {"f":"img/1876_umrti_jozef_pikul.jpg","t":"Úmrtí 29. 3. 1876, Rudno 17 (Łęg Z 5535, s. 80)"}
       ]
     },
     {
@@ -5782,7 +5785,8 @@ window.RODOKMEN = {
         "Otec Józefa (*1817); 1840 podepsal křížkem souhlas se sňatkem syna („X Jacek Pikul“).",
         "Úmrtí podle indexu zemřelých (SkZ 7010 sken 057): „Pikul Hyacinthus viduus 13. 3. 1857, p. 44“ – vdovec (D, zápis nečten).",
         "Další děti podle indexu křtů Rudno: Thecla 10. 10. 1815 (matka „Anna np. Grabczyńska“), Mathias (?).",
-        "GAL8: úmrtí 13. 3. 1857 přečteno ze skenu (M): „Hyacinthus Pikul viduus post Annam natam Grabczyński hortulanus“, 70 let, Rudno 18, febris nervosa (Z 5535 sk024, s. 44 č. 14)."
+        "GAL8: úmrtí 13. 3. 1857 přečteno ze skenu (M): „Hyacinthus Pikul viduus post Annam natam Grabczyński hortulanus“, 70 let, Rudno 18, febris nervosa (Z 5535 sk024, s. 44 č. 14).",
+        "GAL9 (K): matka Kateřina – v křtech dětí Michała Pikula, Rudno 13: 1788 „Cath. Kuśn[ierz]onka“, 1789 „Cath. Pietatka/Pilatka“, 1791 „Cath: Bilakowna“ (U 3605 sk002–003) → snad Piłat/Bilak; sňatek rodičů před IX/1785 (mimo Skanoteku)."
       ],
       sources: [
         "Skanoteka PTG – AD Tarnów, parafia Łęg Tarnowski (id4305): U Rudno 1785–1828 (jedn. 3605) sken 002; M Rudno 1785–1828 (jedn. 4580) sken 003",
@@ -5809,7 +5813,8 @@ window.RODOKMEN = {
         "Sňatek 7. 2. 1814 (M): „Anna np. Grabczyńska“, 20 let (*~1793/94). Křest není v Rudně I/1793–X/1800 – rodina Wojciecha Grabczyńského přišla do Rudna kolem 1796.",
         "Křest syna 1817: „Anna Patre Adalberto Grabczyński“ – otec Wojciech (Adalbert) Grabczyński.",
         "Úmrtí podle indexu zemřelých (SkZ 7010 sken 057): „Pikul Anna uxor Hyacinthi 12. 12. 1855, p. 41“ (D, zápis nečten).",
-        "GAL8: úmrtí 12. 12. 1855 přečteno ze skenu (M): „Anna Pikul uxor derelicti Hyacinthi hortulani nata Grabczyński“, 63 let (*~1792), mrtvice (Z 5535 sk022, s. 41 č. 22)."
+        "GAL8: úmrtí 12. 12. 1855 přečteno ze skenu (M): „Anna Pikul uxor derelicti Hyacinthi hortulani nata Grabczyński“, 63 let (*~1792), mrtvice (Z 5535 sk022, s. 41 č. 22).",
+        "GAL9 (D/K): matka pravděpodobně Marianna Arabska – sestra Alžběta, pokř. 23. 6. 1795 Rudno, rodiče „Adalbertus Grabczyński“ × „Marianna Arabska“, kmotři hrabě Dominik Potocki (U 3605 sk004R); 1820 „Adalberti Grabczyński propinatoris et Mariannae de Michaele Arabski“. Rozpor s „Cath. Kanina(?)“ (1817) trvá."
       ],
       sources: [
         "Skanoteka PTG – AD Tarnów, parafia Łęg Tarnowski (id4305): M 1828–1854 (jedn. 4540) sken 007, s. 12",
