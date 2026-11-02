@@ -5814,7 +5814,8 @@ window.RODOKMEN = {
         "Křest syna 1817: „Anna Patre Adalberto Grabczyński“ – otec Wojciech (Adalbert) Grabczyński.",
         "Úmrtí podle indexu zemřelých (SkZ 7010 sken 057): „Pikul Anna uxor Hyacinthi 12. 12. 1855, p. 41“ (D, zápis nečten).",
         "GAL8: úmrtí 12. 12. 1855 přečteno ze skenu (M): „Anna Pikul uxor derelicti Hyacinthi hortulani nata Grabczyński“, 63 let (*~1792), mrtvice (Z 5535 sk022, s. 41 č. 22).",
-        "GAL9 (D/K): matka pravděpodobně Marianna Arabska – sestra Alžběta, pokř. 23. 6. 1795 Rudno, rodiče „Adalbertus Grabczyński“ × „Marianna Arabska“, kmotři hrabě Dominik Potocki (U 3605 sk004R); 1820 „Adalberti Grabczyński propinatoris et Mariannae de Michaele Arabski“. Rozpor s „Cath. Kanina(?)“ (1817) trvá."
+        "GAL9 (D/K): matka pravděpodobně Marianna Arabska – sestra Alžběta, pokř. 23. 6. 1795 Rudno, rodiče „Adalbertus Grabczyński“ × „Marianna Arabska“, kmotři hrabě Dominik Potocki (U 3605 sk004R); 1820 „Adalberti Grabczyński propinatoris et Mariannae de Michaele Arabski“. Rozpor s „Cath. Kanina(?)“ (1817) trvá.",
+        "GAL10: sourozenci (D): Tekla (*~1780, ∞ 23. 11. 1802 Stanislaus Sukiennik, Rudno 22), Marianna (*~1788 † 3. 8. 1804, 16), Alžběta (1795), Kateřina (pokř. 8. 9. 1798 Rudno 14 – „Adalbertus Grabczyński / Maria Arabska“, kmotři Andreas Szczepański, dědic Bobrownik, a hraběnka Kateřina Potocká; U 3605 sk005L, M). Křest Anny v Rudně 1791–1800 NENÍ → jiná ves farnosti (Łęg/Ilkowice)."
       ],
       sources: [
         "Skanoteka PTG – AD Tarnów, parafia Łęg Tarnowski (id4305): M 1828–1854 (jedn. 4540) sken 007, s. 12",
@@ -6511,17 +6512,20 @@ window.RODOKMEN = {
     {
       id: "katarzynaPik",
       name: "Kateřina (Catharina) Pikul",
+      maiden: "Piłat (?)",
       line: "chmielek",
       cert: "M",
       b: {"date":"cca 1760","year":1760,"approx":true},
       notes: [
-        "Matka Jacka (1789): „Cath. Pietatka (?)“; v křtu dvojčat 1788 „Cath. Kuśnierzonka (?)“ – rodné příjmení nejisté."
+        "Matka Jacka (1789): „Cath. Pietatka (?)“; v křtu dvojčat 1788 „Cath. Kuśnierzonka (?)“ – rodné příjmení nejisté.",
+        "GAL10 (2. 11.): matka Kateřina rozená PIŁAT (D, silné): křest syna Michała 30. 4. 1792 Rudno 13 „Michael Pikul Pater / Cath: Pilatowna mat.“ (U 3605 sk003R, s. 232; M, ověřeno koordinátorem); 1789 „Cath. Pilatka“; v domě č. 13 zemřeli Jan Piłat (19. 9. 1792, 56) a Marianna Piłatowa (16. 8. 1793, 70) – otec/bratr a matka/babička Kateřiny? (K). Děti Michała × Kateřiny: Kateřina (~1783 † 1789), Michał (*29. 9. 1785 † 1789), Paweł a Gedeon (dvojčata 1788), Jacek 1789, Michał 1792. Michał st. žil XI/1800. Kateřina v Rudně XII/1788–II/1806 nezemřela."
       ],
       sources: [
         "Skanoteka PTG – AD Tarnów, parafia Łęg Tarnowski (id4305): U Rudno (jedn. 3605) sken 002"
       ],
       scans: [
-        {"f":"img/1789_krest_jacek_pikul.jpg","t":"Křest 15. 8. 1789, Rudno č. 13 – „Hiacynthus“, rodiče Mich. Pikul × Cath. Pietatka (?) (U Rudno 3605, sken 002, s. 230)"}
+        {"f":"img/1789_krest_jacek_pikul.jpg","t":"Křest 15. 8. 1789, Rudno č. 13 – „Hiacynthus“, rodiče Mich. Pikul × Cath. Pietatka (?) (U Rudno 3605, sken 002, s. 230)"},
+        {"f":"img/1792_krest_michal_pikul_pilatowna.jpg","t":"Křest syna Michała 30. 4. 1792, Rudno 13 – „Michael Pikul Pater / Cath: Pilatowna mat.“"}
       ]
     },
     {
