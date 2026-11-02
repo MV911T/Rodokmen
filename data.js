@@ -66,7 +66,7 @@ window.RODOKMEN = {
       occ: "úředník (1957)",
       marriage: "28. 9. 1957, Slezská Ostrava (občanský sňatek před Obvodním národním výborem Slezská Ostrava; podle rodiny i obřad v kostele sv. Josefa) – s Martou Woroňovou",
       notes: [
-        "Oddací zápis 1957 (M): ženich Svatoň Veselý, nar. 17. srpna 1933 v Kežmarku, svobodný, úředník, čs. státní občan, bydliště Uherský Brod, Horní valy 993. Snoubenci se dohodli na společném příjmení Veselý. Svědci: Oldřich (?) Čabicar (?), důchodce, Slezská Ostrava, Vítkova (?) 18/415, a Alois Fiaško (?), dělník, Ostrava I, Lingrova (?) 26 – jména svědků čtena nejistě.",
+        "Oddací zápis 1957 (M): ženich Svatoň Veselý, nar. 17. srpna 1933 v Kežmarku, svobodný, úředník, čs. státní občan, bydliště Uherský Brod, Horní valy 993. Snoubenci se dohodli na společném příjmení Veselý. Svědci: Oldřich (?) Čabicar (?), důchodce, Slezská Ostrava, Vítkova (?) 18/415, a Alois Heske, dělník, Ostrava I, Bingrova 26 (oprava 2. 11. 2026 – dříve čteno „Fiaško“) – manžel Anežky Julie roz. Woroňové (∞ 1923), tedy strýc nevěsty Marty (sestra jejího otce Ludvíka); první svědek čten nejistě.",
         "ROZPOR v datu narození: oddací zápis uvádí 17. 8. 1933, rodina 17. 9. 1933 – rozhodne rodný zápis z Kežmarku (vyžádán).",
         "Kolem roku 1940 se s rodiči přestěhoval z Kežmarku do Uherského Brodu (vyprávění babičky Marty, opakovaně).",
         "Rodinný hrob v Hodoňovicích.",
