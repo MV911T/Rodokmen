@@ -7325,16 +7325,20 @@ window.RODOKMEN = {
       name: "Catharina Strusch",
       line: "struz",
       cert: "M",
-      b: {"date":"cca 1680","year":1680,"approx":true,"place":"?"},
+      b: {"date":"cca 1674","year":1674,"approx":true,"place":"?"},
+      d: {"date":"2. 4. 1744 (pohřeb 4. 4.)","year":1744,"place":"Rohov"},
       notes: [
         "Manželka Georga Strusche (Straze), Rohov; matka Andrease (*1703), Václava (*1705) a Martina (*1707) – křty H XVI 1 (M). Rodné příjmení neznámé.",
-        "Děti s Georgem (křty H XVI 1, M): Andreas 1703, Václav 1705, Martin 1707, Rosina 1710, Simon 1711, Jakub 1714 († 1718), Vavřinec 1719, Valentin 1721 († 1724). Úmrtí Cathariny NENÍ v Sudicích 1715–VII/1731."
+        "Zemřela 2. 4. 1744 v Rohově jako vdova, „téměř 70 let“ → *~1674 (M): „Rohovio | 2. | Aprilis | Sacram. oibus provisa obiit | Catharina Georgii Strusch uxor | vidua | 4. Sep. | 70 prope annorum“ (ZAO, Sudice Z H XVI 7, sken 17, str. 31, ročník „Incipit Annus 1744“; STR-B10).",
+        "Děti s Georgem (křty H XVI 1, M): Andreas 1703, Václav 1705, Martin 1707, Rosina 1710, Simon 1711, Jakub 1714 († 1718), Vavřinec 1719, Valentin 1721 († 1724)."
       ],
       sources: [
-        "ZA Opava, Sbírka matrik (NAD 165), Sudice H XVI 1 (1702–1736), skeny 2, 9, 18"
+        "ZA Opava, Sbírka matrik (NAD 165), Sudice H XVI 1 (1702–1736), skeny 2, 9, 18",
+        "ZA Opava, Sudice Z H XVI 7 (zemřelí 1737–), sken 17, str. 31"
       ],
       scans: [
-        {"f":"img/1703_krest_andreas_strusch.jpg","t":"Křest 29. 11. 1703, Rohov (farnost Sudice) – Andreas, syn Georga Straze (Strusche) a Cathariny (ZAO, Sudice H XVI 1, sken 2)"}
+        {"f":"img/1703_krest_andreas_strusch.jpg","t":"Křest 29. 11. 1703, Rohov (farnost Sudice) – Andreas, syn Georga Straze (Strusche) a Cathariny (ZAO, Sudice H XVI 1, sken 2)"},
+        {"f":"img/1744_umrti_catharina_strusch.jpg","t":"Úmrtí 2. 4. 1744, Rohov – Catharina, vdova po Georgovi Struschovi, téměř 70 let (ZAO, Sudice Z H XVI 7, sken 17)"}
       ]
     },
     {
@@ -8602,7 +8606,7 @@ window.RODOKMEN.collateral = [
   {"id":"c_strCae1801","name":"Cäcilia Strusch","b":{"date":"20. 9. 1801","year":1801,"place":"Chuchelná"},"father":"valentinS","mother":"catharinaKr","spouse":"Mathes Morawetz, zahradnický syn (∞ 21. 1. 1823)","note":"Sestra Heinricha; křest 1801 („Catharina geborene Joseph Holeczek“) (data.js).","cert":"M"},
   {"id":"c_strMarina1732","name":"Marina Strusch","b":{"date":"1. 1. 1732","year":1732,"place":"Rohov"},"father":"andreasS","mother":"annaPro","spouse":"Lorenz Janosch (∞ 1765)","note":"Sestra Mathiase. Křest H XVI 1 sken 127 (M): „Marina | Andreas Struz et Anna uxor“. Sňatek 1765 jen PRAVDĚPODOBNĚ táž Marina.","cert":"M"},
   {"id":"c_strEva","name":"Eva Strusch","father":"andreasS","spouse":"∞ 1762","note":"Pravděpodobná sestra Mathiase (data.js mathiasS, andreasS: „Otec … Evy (1762)“); matka neověřena.","cert":"D"},
-  {"id":"c_strVac1705","name":"Václav (Wenceslaus) Strusch","b":{"date":"29. 9. 1705","year":1705,"place":"Rohov"},"d":{"date":"28. 10. 1782","year":1782},"father":"georgSt","mother":"catharinaSt","note":"Bratr Andrease. Křest H XVI 1 sn9 (M): „Wenceslaum | Georgio Straz, & Catharina Rohowio“.","cert":"M"},
+  {"id":"c_strVac1705","name":"Václav (Wenceslaus) Strusch","b":{"date":"29. 9. 1705","year":1705,"place":"Rohov"},"d":{"date":"28. 10. 1782","year":1782},"father":"georgSt","mother":"catharinaSt","note":"Bratr Andrease. Křest H XVI 1 sn9 (M): „Wenceslaum | Georgio Straz, & Catharina Rohowio“. Manželka Hedvika; děti v Rohově: Anna pokř. 28. 3. 1735 (H XVI 1 sk134, M), † 14. 11. 1736; Marina pokř. 15. 10. 1739 (N H XVI 2 sk11, M), † 4. 5. 1741, 1½ r. (Z H XVI 7 sk12, M).","cert":"M"},
   {"id":"c_strMar1707","name":"Martin Strusch","b":{"date":"5. 11. 1707","year":1707,"place":"Rohov"},"father":"georgSt","mother":"catharinaSt","spouse":"∞ 8. 1. 1739","note":"Bratr Andrease. Křest sn18 (M); ženich 1739 „post def. Georgium Strusch filius“.","cert":"M"},
   {"id":"c_strRos1710","name":"Rosina Strusch","b":{"date":"3. 4. 1710","year":1710,"place":"Rohov"},"father":"georgSt","mother":"catharinaSt","note":"Sestra Andrease. Křest sn31 (M).","cert":"M"},
   {"id":"c_strSim1711","name":"Simon Strusch","b":{"date":"4. 10. 1711","year":1711,"place":"Rohov"},"father":"georgSt","mother":"catharinaSt","note":"Bratr Andrease. Křest sn37 (M; měsíc z nadpisu).","cert":"M"},
