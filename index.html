@@ -281,12 +281,16 @@ window.RODOKMEN_GAZ = [
   { n: 'Lutín', a: ['Lutín'], lat: 49.56, lon: 17.14 },
   { n: 'Řepčín', a: ['Řepčín'], lat: 49.605, lon: 17.245 },
   { n: 'Neředín', a: ['Neředín'], lat: 49.59, lon: 17.225 },
+  { n: 'Lešany', a: ['Lešany'], lat: 49.505, lon: 17.02 },
+  { n: 'Raková / Krakovec u Konice', a: ['Raková', 'Krakovec'], lat: 49.585, lon: 16.92 },
+  { n: 'Bohuslavice u Konice', a: ['Bohuslavice u Konice'], lat: 49.61, lon: 16.935 },
   // Valašsko – panství Brumov
   { n: 'Nedašova Lhota', a: ['Nedašova Lhota'], lat: 49.135, lon: 18.09 },
   { n: 'Nedašov', a: ['Nedašov'], lat: 49.105, lon: 18.06 },
   { n: 'Návojná', a: ['Návojná'], lat: 49.10, lon: 18.04 },
   { n: 'Bylnice', a: ['Bylnice'], lat: 49.07, lon: 18.03 },
   { n: 'Brumov', a: ['Brumov'], lat: 49.09, lon: 17.99 },
+  { n: 'Popov', a: ['Popov'], lat: 49.105, lon: 17.975 },
   // Hlučínsko a Ratibořsko
   { n: 'Chuchelná', a: ['Chuchelná', 'Kuchelna'], lat: 49.989, lon: 18.119 },
   { n: 'Krzanowice', a: ['Krzanowice'], lat: 50.01, lon: 18.12 },
@@ -714,7 +718,7 @@ window.RODOKMEN = {
       name: "Jakub (Jakob) Kočíř",
       line: "plachy",
       cert: "M",
-      b: {"date":"17. 7. 1773 (křest)","year":1773,"place":"Lešany č. 33 (fara Mostkovice)"},
+      b: {"date":"17. 7. 1773 (křest; PRAVDĚPODOBNĚ)","year":1773,"place":"Lešany č. 33 (fara Mostkovice)"},
       d: {"date":"24. 9. 1829","year":1829,"place":"Kralice na Hané č. 65"},
       cause: "žaludeční křeče",
       father: "janKoSt",
@@ -722,14 +726,12 @@ window.RODOKMEN = {
       occ: "sedlák (1806 půlláník) v Kralicích č. 65",
       marriage: "25. 11. 1797, Kralice – s Theresií, vdovou po sedlákovi Dominiku Chromečkovi (on 21, ona 26); svědci Joseph Lambel a Johann Stibl (?)",
       notes: [
-        "Sňatek 1797: „Jakob Sohn nach dem + Johann Kočiř Bauer von Ar…schan(?) | 21 J. ledig | Theresia Weib nach dem + Dominik Chromeček Bauer allda | 26“ – přiženil se na Chromečkův grunt (č. 60, později 65).",
+        "Sňatek 1797: „Jakob Sohn nach dem + Johann Kočiř Bauer von Leſchan (= Lešany, PLA13) | 21 J. ledig | Theresia Weib nach dem + Dominik Chromeček Bauer allda | 26“ – přiženil se na Chromečkův grunt (č. 60, později 65).",
         "Otec Jana (*1801); děti s Theresií Schindler: Antonia 1799, Jan 1801, Franz 1806, Karolina 1808, Joseph 1810 (MZA 9178). Žil ještě 1824 (souhlas se sňatkem syna).",
-        "Není pokřtěn v Kralicích 1761–1784 – pocházel z obce „Ar/Ur…schan“ (Určice? – HYPOTÉZA).",
         "Zemřel 24. 9. 1829 jako půlláník v Kralicích č. 65, 55 let (9181 sken 194, fol. 9).",
-        "PLA8 (14. 10. 2026): sňatek Jakuba 25. 11. 1797 Kralice (MZA 9179 sk10, fol. 14) přečten v plném rozlišení: „Jakob Sohn nach dem + Johann Kočiř Bauer von D[r]ahan“ – obec nejspíš Drahany (okr. Prostějov), D; dřívější čtení „Ar…schan“ opraveno. Výřez 00_klicove_doklady/1797-11-25_snatek_Jakob_Kocir_otec_Johann_von_Drahan…",
-        "PLA12 (14. 10. 2026): čtení místa „von D[r]ahan“ ZPOCHYBNĚNO – v plném rozlišení dva sestupné tahy (spíš „-schan“): Drahan / Hradschan (Hradčany u Prostějova?) / D…schan (K). V Drahanech N VII/1773–IV/1778 a Z 1784–85, 1787–I/1798 Kočíř NENÍ.",
         "PLA13 (14. 10. 2026, ověřeno koordinátorem na výřezu): místo čteno „von Leſchan“ = LEŠANY u Prostějova (D, silné) – iniciála L má stejný tvar jako „Lambel“ ve sloupci svědků téhož zápisu, dva sestupné tahy = ſch. Lešany do 1784 fara Mostkovice (N 9270, Z 9272), od 1785 Ohrozim (N 9389, Z 9400). Výřez 00_klicove_doklady/1797-11-25_snatek_Jakob_Kocir_von_Leschan_srovnani…",
-        "Křest 17. 7. 1773 Lešany č. 33 (PLA15; zápis M, ověřeno koordinátorem; totožnost D – sedí obec, otec, věk): „17. Idem [D. Reich] | Jacobus | Joannes Kočiř Rusticus et Teresia | Jacobus Jankal Rust. et Veronica Uxor … Georgij Mlčoch Rus. Leschanio | Cath. | Lescha 33“ (MZA, Mostkovice N 9270, id 5805, sk217 vpravo; rok podle záhlaví „Anno 1773“ sk212)."
+        "Křest 17. 7. 1773 Lešany č. 33 (PLA15; zápis M, ověřeno koordinátorem; totožnost D – sedí obec, otec, věk): „17. Idem [D. Reich] | Jacobus | Joannes Kočiř Rusticus et Teresia | Jacobus Jankal Rust. et Veronica Uxor … Georgij Mlčoch Rus. Leschanio | Cath. | Lescha 33“ (MZA, Mostkovice N 9270, id 5805, sk217 vpravo; rok podle záhlaví „Anno 1773“ sk212).",
+        "Není pokřtěn v Kralicích 1761–1784 – pochází z Lešan (viz křest 1773). Dřívější čtení „Ar…schan“, „Drahan“, „Hradschan“ (PLA8, PLA12) jsou překonána."
       ],
       sources: [
         "MZA 9178 sken 26",
@@ -820,13 +822,13 @@ window.RODOKMEN = {
       name: "Martin Kočíř (Kočí)",
       line: "plachy",
       cert: "M",
-      b: {"date":"16. 10. 1697 (křest)","year":1697,"place":"Krakovec nebo Raková (fara Bohuslavice u Konice)"},
+      b: {"date":"16. 10. 1697 (křest; PRAVDĚPODOBNĚ)","year":1697,"place":"Krakovec nebo Raková (fara Bohuslavice u Konice)"},
       d: {"date":"22. 1. 1747","year":1747,"place":"Lešany"},
       father: "tomasKo",
       mother: "marijanaKo",
       marriage: "16. 11. 1721, Mostkovice – s Marinou (dcera † … Pilavského?)",
       notes: [
-        "Zemřelý otec ženichů: 18. 7. 1747 „Joannes filius p. d. Martini Koči Leschanio“ (Mostkovice 9269 O sk216R) a 20. 1. 1753 „Franciscus Kočí p. d. Martini Kočiř … ex Pago Leschan“ (sk235L) – oba M. Vazba na Jana Kočíře, sedláka č. 33 – D. Synové Jan, Franz; Jiří Kočí (svědek 1747, 1753) asi také (K). Úmrtí 1742–47 nehledáno (9269 Z sk~290–318).",
+        "Zemřelý otec ženichů: 18. 7. 1747 „Joannes filius p. d. Martini Koči Leschanio“ (Mostkovice 9269 O sk216R) a 20. 1. 1753 „Franciscus Kočí p. d. Martini Kočiř … ex Pago Leschan“ (sk235L) – oba M. Vazba na Jana Kočíře, sedláka č. 33 – D. Synové Jan, Franz; Jiří Kočí (svědek 1747, 1753) asi také (K). Úmrtí nalezeno: 22. 1. 1747 (PLA24, níže).",
         "Úmrtí/pohřeb 22. 1. 1747 Lešany, 51 let (PLA24, ověřeno koordinátorem): „22. Martinus Cozirz Incola Leschanensis | 51“ (Mostkovice 9269 Z sk302L, rok podle nadpisu „Anno 1747“; M). Jiný Martin Kočí v Z IX/1742–III/1747 není → týž jako otec Jana (∞ VII/1747) a Franze (D+).",
         "Sňatek 16. 11. 1721 Mostkovice (PLA26, off0; ověřeno koordinátorem – zápis M, příjmení ženicha M−, totožnost s Martinem † 1747 D+): „Dne 16 dito w chramu Panie Mostkowskem zdan gest od Pana Kaplana Poctiwy Mladenecz Martin Syn: † Tomaſſe Ko-cžiřže z ?rakowe(?) s Poctiwau diwkau Marinau Dcer: † Stawzinu(?) Pilawskim(?) Swědkowe Giržik Černul(?) a Waczlaw Gaſtek oba z Leſſan“ (MZA opis30, AP id 10397, sk218L). Obec ženicha „Zrakowe/z Rakowe“ nečitelná – mimo farnost (K). Syn Martin pokř. 4. 11. 1722: „Martin | Jan Kaplan | Martin Kocžij″ / Marina z Leſſan | Girzik Žebal(?), Marina manželka geho z Leſſan“ (sk227L, M). Jan (∞ 1747) dosud nenalezen (1722 a VII–VIII/1723 není).",
         "PLA27: dcera Mariana pokř. 16. 1. 1724 „Mariana | Parochus loci | Martinus Koczyj″(?) Mariana ex Pago Leſſan | Georgius Žebal(?), Mariana Uxor ejus ex Leſſan“ (opis30 sk246R, M; stejní kmotři jako 1722 → D+). Jan v N IX/1723–V/1724, 1725 (sk258R–262L), I–IV/1726 není (D).",
@@ -853,16 +855,15 @@ window.RODOKMEN = {
       b: {"date":"cca 1720–1727","year":1724,"approx":true,"place":"Lešany (?)"},
       d: {"date":"před 1797","year":1796,"approx":true},
       father: "martinKo",
-      occ: "sedlák v obci „Ar…schan“ (?)",
+      occ: "sedlák v Lešanech č. 33 (fara Mostkovice)",
       marriage: "1. 18. 7. 1747, Mostkovice – s Marinou Mlčochovou; 2. před 1773 s Terezií",
       notes: [
-        "Otec Jakuba (sňatek 1797: „Sohn nach dem + Johann Kočiř Bauer von Ar…schan“) – obec nečitelná.",
-        "PLA8 (14. 10. 2026): sňatek Jakuba 25. 11. 1797 Kralice (MZA 9179 sk10, fol. 14) přečten v plném rozlišení: „Jakob Sohn nach dem + Johann Kočiř Bauer von D[r]ahan“ – obec nejspíš Drahany (okr. Prostějov), D; dřívější čtení „Ar…schan“ opraveno. Výřez 00_klicove_doklady/1797-11-25_snatek_Jakob_Kocir_otec_Johann_von_Drahan…",
+        "Otec Jakuba (sňatek 1797: „Sohn nach dem + Johann Kočiř Bauer von Leſchan“ = Lešany u Prostějova, PLA13; dřívější čtení „Ar…schan“ a „Drahan“ překonána).",
         "Původ „von Leſchan“ = Lešany u Prostějova (D, PLA13).",
         "Sedlák v Lešanech č. 33 (fara Mostkovice); manželka Terezie; 18. 6. 1773 kmotři „Joannes Kocirz Rust: et Teresia uxor ejus Leschanio“ (9270 sk216, M).",
         "PLA20: syn Bartoloměj se ženil 17. 6. 1777 (rok podle nadpisu sk35R, PLA21): „Bartholomaeus filius Joannis Kočiř rustici Leschanio, et Anna filia Jacobi Rusiczka rustici Ohrozimio“ (Mostkovice O 9271 sk36R, ověřeno koordinátorem) → Jan narozen nejspíš do ~1730, Terezie možná 2. žena (K). Úmrtí Jana: v Mostkovice Z 1773–84 (rejstřík) ani Ohrozim Z 1785–97 není (D); na č. 33 v letech 1795–97 sedlák jiného příjmení (Paul ?ubiger?).",
         "PLA21: v rejstříku sňatků Mostkovice 1750–1763 (9271 sk60L, k 9269) Jan Kočíř není (D); jen „Kočij Franz“ a „Kočiř Franz“ str. 460 (~1752/53) – možný otec/bratr (K).",
-        "PLA22 (K): 20. 1. 1753 „Sponsus Franciscus Kočí p. d. Martini Kočiř et Sponsa Marina filia p. d. Floriani Spaček uterque ex Pago Leschan | Georgius Kočí et Martinus Ostrčil“ (Mostkovice 9269 O sk235L = str. 460, M; ověřeno) → Martin Kočíř († před 1753, Lešany) je kandidát na otce Jana; Franz a Jiří Kočí možní bratři. Nespojeno bez dokladu.",
+        "PLA22 (K): 20. 1. 1753 „Sponsus Franciscus Kočí p. d. Martini Kočiř et Sponsa Marina filia p. d. Floriani Spaček uterque ex Pago Leschan | Georgius Kočí et Martinus Ostrčil“ (Mostkovice 9269 O sk235L = str. 460, M; ověřeno) → Martin Kočíř († před 1753, Lešany) – Franz a Jiří Kočí jsou nejspíš Janovi bratři; Martin je Janovým otcem podle jeho sňatku 1747 (PLA23, níže).",
         "Sňatek 18. 7. 1747 (PLA23; zápis M, ověřeno koordinátorem; totožnost s sedlákem č. 33 D – jediný Jan Kočí v rejstříku O 1744–63): „18. | Honestus Juvenis Joannes filius p. d. Martini Koči Leschanio et honesta Virgo Marina filia Francisci Mlčoch, Leschanio | Georgius Prchal(?), Georgius Koči Leschanio“ (Mostkovice 9269 O sk216R = str. 423). Marina = 1. žena (matka Bartoloměje? K), † 1747–~1772; Terezie = 2. žena. Bratr Franz (∞ 1753, rovněž „p. d. Martini Kočiř“), svědek Jiří Kočí (bratr/strýc? K)."
       ],
       sources: [
@@ -942,11 +943,11 @@ window.RODOKMEN = {
       father: "sarkanderNa",
       mother: "mariannaNa0",
       occ: "sedlák, čtvrtláník (Viertler) v Kralicích č. 27, později výměnkář",
-      marriage: "svatební smlouva 29. 9. 1797, Kralice – s Kateřinou, dcerou † Josefa W… (?) z Bud… (?); sňatek nejspíš ve farnosti nevěsty",
+      marriage: "svatební smlouva 29. 9. 1797, Kralice – s Kateřinou, dcerou † Josefa Machryška (?) z „Giſſowic“ (Lysovice? – K); sňatek nejspíš ve farnosti nevěsty",
       notes: [
         "Svatební smlouva 29. 9. 1797, Kralice (M): „Swadebnj Smlauwa Fabiana Nawratila z Městečka Kralic … mezi poctiwým Mladenczem Fabianem wlastnjm Synem … Sarkandra Nawratila, Sauseda a Polu obywatele Městečka Kralic …“; otec mu předává grunt č. 27; podpisy „Fabian Nawratil ženich“, „Sarkander Nawratil Otec“, svědek Jiří Radlický.",
         "Pokřtěn v lednu 1776 v Kralicích č. 27: „Fabianus | Nawratil Sarkander Rust. Kralitzio, Mariana“; kmotři sedlák Jan Studený a Barbora.",
-        "Svatební smlouva 29. 9. 1797: „mezi poctiwým mládenczem Fabianem wlastnjm Synem … Sarkandra Nawratila … obywatele Městečka Kralic, a mezi poctiwau … Katerzinau … po Nebožtíku Josefu W…“ – zároveň převod gruntu č. 27 (MZA, Pozemkové knihy Kralice, kniha svatebních smluv 17907, fol. 21 – https://www.mza.cz/aron/apu/db59cfad-89a8-4170-bf4b-2b1acbec437f).",
+        "Svatební smlouva 29. 9. 1797: „mezi poctiwým mládenczem Fabianem wlastnjm Synem … Sarkandra Nawratila … obywatele Městečka Kralic, a mezi poctiwau … Katerzinau … po Nebožtíku Josefu Machryſku z dědiny Giſſowic“ (čtení PLA38, ověřeno na výřezu) – zároveň převod gruntu č. 27 (MZA, Pozemkové knihy Kralice, kniha svatebních smluv 17907, fol. 21 – https://www.mza.cz/aron/apu/db59cfad-89a8-4170-bf4b-2b1acbec437f).",
         "Děti s Kateřinou (Kralice č. 27, MZA 9178): Anna 1800, Joseph 1803, Mariana *17. 12. 1805, Valentin 1808, Franziska 1813.",
         "Otec Mariany (*1805), manželka Kateřina; v roce 1861 uváděn jako „Fabian Navratil, Viertler aus Kralic“ (sňatek vnučky Mariany Kočířové, MZA 9181 sken 28).",
         "Sňatek není v Kralicích 1761–1824 – nejspíš ve farnosti nevěsty. Fabián Navrátil, vdovec 53 let (sňatek 1858 ve Věrovanech), je jiná osoba.",
@@ -969,7 +970,7 @@ window.RODOKMEN = {
       name: "Sarkander Navrátil",
       line: "plachy",
       cert: "M",
-      b: {"date":"7. 12. 1749","year":1749,"place":"Kralice na Hané"},
+      b: {"date":"7. 12. 1749 (PRAVDĚPODOBNĚ)","year":1749,"place":"Kralice na Hané"},
       d: {"date":"březen 1811 (2. 3.?)","year":1811,"place":"Kralice na Hané č. 27"},
       cause: "souchotiny (Lungensucht)",
       father: "matousNa",
@@ -1024,11 +1025,12 @@ window.RODOKMEN = {
       notes: [
         "Matka Mariany (*1805); rodné příjmení v křtech dětí „Hrzin“ (1800), „Hrschin“ (1803, 1805), „Hrsch“ (1808, 1813) – česky snad Hršová / Hrušová (nejisté).",
         "Zemřela 15. 3. 1866 jako vdova po výměnkáři Fabiánu Navrátilovi, 96 let (9181 sken 236) – rodné příjmení neuvedeno.",
-        "Svatební smlouva 29. 9. 1797 (ARON 17907, sken 24, fol. 21): „…mezi poctiwau Pannau Katerzinau pozůstalau Dcerau, po Nebožtíku Josefu Wachmistru (?) z Dudiny (?), Hryšowau“ – tedy Kateřina Hryšová, dcera † Josefa Hryše, snad strážmistra (Wachtmeister); „z Dudiny/Budiny“ nevyřešeno (D). Odpovídá „Hrsch/Hrschin“ v křtech dětí. Opakované čtení v plném rozlišení (10. 10.): „… pozůstalau Dcerau po Nebožtíku Josefu Wach/Mach-…-u (Wachmistru?) z Dědiny Hiſſowic / Hryšowic (?)“ – slovo za „Josefu“ je spíš povolání (Wachtmeister) než příjmení; obec nejistá. Nevěsta bez věna („dobré jméno a svou osobu“), poručník Jakob Al(?)t.",
+        "Starší čtení (PŘEKONÁNO čtením PLA38 níže): Svatební smlouva 29. 9. 1797 (ARON 17907, sken 24, fol. 21): „…mezi poctiwau Pannau Katerzinau pozůstalau Dcerau, po Nebožtíku Josefu Wachmistru (?) z Dudiny (?), Hryšowau“ – tedy Kateřina Hryšová, dcera † Josefa Hryše, snad strážmistra (Wachtmeister); „z Dudiny/Budiny“ nevyřešeno (D). Odpovídá „Hrsch/Hrschin“ v křtech dětí. Opakované čtení v plném rozlišení (10. 10.): „… pozůstalau Dcerau po Nebožtíku Josefu Wach/Mach-…-u (Wachmistru?) z Dědiny Hiſſowic / Hryšowic (?)“ – slovo za „Josefu“ je spíš povolání (Wachtmeister) než příjmení; obec nejistá. Nevěsta bez věna („dobré jméno a svou osobu“), poručník Jakob Al(?)t.",
         "PLA38 (15. 10. 2026, úroveň 13; ověřeno koordinátorem na výřezu): „…Katerzinau pozůstalau Dcerau, po Nebožtíku Josefu Machryſku z dědiny Giſſowic“ – první písmeno je majuskule M (srovnání s „Mestečka“, „Manželſtwj“ téhož písaře) → otec † Josef Machryšek (= Hryš z křtů dětí? D); výklad „Wachmistru“ (povolání) neplatí. Obec „Giſſowic“ (G = J → *Jišovice?) neidentifikována; kandidát Lysovice (L?, fara Kučerov) – K; Kučerov O 1796–98 Fabián není.",
-        "PLA40: úmrtní zápis 15. 3. 1866 (pohřeb 17. 3.) „Katharina Navrátil, Witwe nach dem Fabian Navrátil, Ausgedingerin in Kralic | 96 | Altersschwäche“ (Kralice Z 9181 sk236L) rodiště ani rodiče neuvádí. V Lysovicích 1787–94 rodina Maryšek/Ma(ch)ryšek (Anton † 1787, 87 l., č. 8; Mathias dítě 1788, č. 10; Kaspar, domkář, č. 49) – opora pro Lysovice „Liſſowic“ (D/K); Josef v Lysovicích Z 1785–97 není.",
+        "PLA40: úmrtní zápis 15. 3. 1866 (pohřeb 17. 3.) „Katharina Navrátil, Witwe nach dem Fabian Navrátil, Ausgedingerin in Kralic | 96 | Altersschwäche“ (Kralice Z 9181 sk236L) rodiště ani rodiče neuvádí. V Lysovicích 1787–94 rodina Maryšek/Ma(ch)ryšek (Anton † 22. 11. 1787, 27 l. (ne 87 – PLA49), č. 8; Mathias dítě 1788, č. 10; Kaspar, domkář, č. 49) – opora pro Lysovice „Liſſowic“ (D/K); Josef v Lysovicích Z 1785–97 není.",
         "PLA48 (K): jediná Kateřina rodu Marschler v Lysovicích VII/1767–II/1775: křest 8. 10. 1774 „Catharina | Georgius Marschler Semimans. et Marina | … omnes Lißovicio | Lißovitz 10“ (Kučerov N 12771 sk130R, M) – otec Jiří, ne Josef; věk 96 (1866) by byl nadsazen o ~5 let. Hypotéza, nespojeno.",
-        "PLA49 (K): „Maryšek“ v Lysovicích = ve skutečnosti MARSCHLER. Lysovice Z: † 27. 2. 1786 Georg Marschler, 65 l., č. 7; † 22. 3. 1790 Marina Marschlerová, 50 l., č. 10 (= matka Kateřiny pokř. 1774 č. 10? K/D). Josef Marschler v Lysovicích 1785–97 nezemřel. „Machryšek“ ve smlouvě 1797 = Marschler? (K)."
+        "PLA49 (K): „Maryšek“ v Lysovicích = ve skutečnosti MARSCHLER. Lysovice Z: † 27. 2. 1786 Georg Marschler, 65 l., č. 7; † 22. 3. 1790 Marina Marschlerová, 50 l., č. 10 (= matka Kateřiny pokř. 1774 č. 10? K/D). Josef Marschler v Lysovicích 1785–97 nezemřel. „Machryšek“ ve smlouvě 1797 = Marschler? (K).",
+        "PLA50–55 (15. 10. 2026): v indexu křtů Kučerov 1757–1782 (N 12787) je jediná Kateřina Marschler – 8. 10. 1774 Lysovice č. 10, rodiče Jiří × Marina; Josef Marschler jako otec nedoložen („Josef“ ve smlouvě 1797 snad omyl za Jiřího – K). Stopa „Kosternitz“ = Rostěnice vede k Janu (ne Josefu) Mareschlerovi – oslabena. Linie Kateřiny na dnešek uzavřena."
       ],
       sources: [
         "MZA, Pozemkové knihy, panství Kralice na Hané, kniha svatebních smluv 17907 (sv. II, 1792–), fol. 21–21v (ARON db59cfad-89a8-4170-bf4b-2b1acbec437f, skeny 24–25)",
@@ -2331,7 +2333,7 @@ window.RODOKMEN = {
       name: "Václav Bartošák",
       line: "pacik",
       cert: "M",
-      b: {"date":"1. 8. 1802","year":1802,"place":"Nedašova Lhota č. 50"},
+      b: {"date":"1. 8. 1802 (PRAVDĚPODOBNĚ)","year":1802,"place":"Nedašova Lhota č. 50"},
       mother: "annaBar",
       occ: "podsedník",
       marriage: "5. 2. 1822 – s Mariannou Vaňkovou",
@@ -2678,10 +2680,12 @@ window.RODOKMEN = {
         "Hypotéza (K): v lánovém rejstříku panství Brumov 1670 je v Lhotě čtvrtláník Jan Fojtík (dříve Václav Machač) – možný předek (MZA D 1/312, img 33–35).",
         "Urbářový odhad 1681/84 (opis Novotný, MZA G 371 inv. 61, str. 19–20): v Nedašově Lhotě 9 sedláků – mj. Vašek Fojtů, Jan Fojtík, Bartoš Fojtů, Martin Vaňků, Martin Machačů (vše ¼ lánu).",
         "Pozemková kniha Nedašova Lhota 1782–1850 (MZA C 17/11934, img 17, fol. 14): dům č. 5 nadepsán „Tobias Pacsik, Häusler“, bez zápisů; v knize mlýnů panství (11871) lhotský mlýn není – mlýn byl nejspíš vrchnostenský nebo zanikl.",
-        "KANDIDÁT na křest (K/D): 27. 1. 1714 Lipina (fara Valašské Klobouky) – dvojčata „Thobias, Georgius | Nicolaus Fogtiku, Mater Rozina | Thobias Bureš et Dorothea con. Martini Markitanek | ex Lipina“ (MZA, opis matrik Val. Klobouky – Acta Publica opis61, detail/10428, snímek 93). Sedí jméno Tobiáš i příjmení Fojtík; věk při úmrtí 1779 (67) by dal *~1712. V Lipině žili i Pacíkové (1753 křest Kateřiny, dcery sedláka Martina Pacíka a Mariny) – vysvětlovalo by dvojí příjmení „Fojtík seu Pacík“. NEOVĚŘENO – nutno vyloučit, že Tobiáš 1714 zemřel jako dítě, a najít Tobiášův sňatek. V Nedašově/Lhotě v katastru 1749 Pacík není → přišel zvenčí ~1750. Ověření (PAC3): rodiče Mikuláš Fojtík (Fogtu), mládenec, × Rozina se vzali 29. 1. 1713 v Lipině (opis61 sk66, M) – dvojčata narozena přesně o rok později; úmrtí Tobiáše ani Jiřího v Klobukách 1714–1725 není (1726 I–VI nezjištěno) → kandidát SÍLÍ (D). Možná souvislost: Mikuláš, syn Jana Fojtíka a Kateřiny, pokř. 10. 1. 1689 (Nedašova) Lhota – jen shoda jména (K)."
+        "KANDIDÁT na křest (K/D): 27. 1. 1714 Lipina (fara Valašské Klobouky) – dvojčata „Thobias, Georgius | Nicolaus Fogtiku, Mater Rozina | Thobias Bureš et Dorothea con. Martini Markitanek | ex Lipina“ (MZA, opis matrik Val. Klobouky – Acta Publica opis61, detail/10428, snímek 93). Sedí jméno Tobiáš i příjmení Fojtík; věk při úmrtí 1779 (67) by dal *~1712. V Lipině žili i Pacíkové (1753 křest Kateřiny, dcery sedláka Martina Pacíka a Mariny) – vysvětlovalo by dvojí příjmení „Fojtík seu Pacík“. NEOVĚŘENO – nutno vyloučit, že Tobiáš 1714 zemřel jako dítě, a najít Tobiášův sňatek. V Nedašově/Lhotě v katastru 1749 Pacík není → přišel zvenčí ~1750. Ověření (PAC3): rodiče Mikuláš Fojtík (Fogtu), mládenec, × Rozina se vzali 29. 1. 1713 v Lipině (opis61 sk66, M) – dvojčata narozena přesně o rok později; úmrtí Tobiáše ani Jiřího v Klobukách 1714–1725 není (1726 I–VI nezjištěno) → kandidát SÍLÍ (D). Možná souvislost: Mikuláš, syn Jana Fojtíka a Kateřiny, pokř. 10. 1. 1689 (Nedašova) Lhota – jen shoda jména (K).",
+        "Negativní výsledky (D): sňatek NENÍ v opis61 Val. Klobouky 1740, 1742–47, 1757–59 (PAC4); křty jeho dětí tam 1748–60 nejsou (PAC5); Tobiáš NENÍ v opis7 Brumov 1711–1713 (MAT38) → kandidát z Lipiny 1714 sílí. Vedlejší (D): Mikuláš Fojtík byl 1760 mlynářem ve Študlově. SOkA Zlín (16. 10. 2026): k mlynářům Nedašova a Nedašovy Lhoty se ve fondech obcí nic nedochovalo."
       ],
       sources: [
-        "MZA Brumov sign. 4012, img 262"
+        "MZA Brumov sign. 4012, img 262",
+        "MZA, opis matrik Val. Klobouky (Acta Publica opis61), sk66 (sňatek Mikuláše Fojtíka 1713), sk93 (křest dvojčat 1714)"
       ],
       scans: [
         {"f":"img/1782_pozemkova_kniha_c5.jpg","t":"Pozemková kniha 1782–1850: dům č. 5 „Tobias Pacžik, Häusler“"},
@@ -2809,7 +2813,7 @@ window.RODOKMEN = {
       father: "josefVa",
       mother: "marinaMik",
       notes: [
-        "Dcera Josefa Vaculíka, sedláka v Nedašově č. 88 (č. 78 v roce 1821), a Mariny roz. Mikuškové (PRAVDĚPODOBNĚ – sňatek 6. 2. 1821, Nedašov č. 88); dřívější čtení „Ludmila Kopečná“ patří babičce Barboře Kopečné.",
+        "Dcera Josefa Vaculíka, sedláka v Nedašově č. 88 (č. 78 v roce 1821), a Mariny roz. Mikuškové (PRAVDĚPODOBNĚ – sňatek 6. 2. 1821, Nedašov č. 88); dřívější čtení „Ludmila Kopečná“ vzniklo z chybně čteného jména babičky Barbory roz. Koštrnové („Kopčn“ v sňatku 1821).",
         "Křest není v Nedašově 1819–1825 (4473, 4474) – nejspíš jinde (Návojná?)."
       ],
       scans: [
@@ -2828,7 +2832,7 @@ window.RODOKMEN = {
       marriage: "6. 2. 1821, Nedašov – s Marinou Mikuškovou (on 24, ona 25); svědci Jan Macek (?) z Návojné a Jan Fendrich (?) z Nedašova",
       notes: [
         "Křest 23. 2. 1798 Návojná č. 39 (M): „Josephus | Joseph Wazulik, Bauer | Barbara Kostrnin (?)“; kmotři Martin Jurg (?) a Anna Pramažikin (?) (4473 img 16). Starší bratr Josef (pokř. 10. 2. 1797, č. 16) zemřel 16. 2. 1797 ve věku 6 dní (Z 4034 img 222) → ženich 1821 je tento Josef (D+; věk 24 při sňatku nadsazen).",
-        "Sňatek 1821: „Joseph Sohn des Joseph Wazulik und Barbara gebohrne Kopčn(?)“ – syn Josefa Vaculíka a Barbory roz. Kopečné (?)."
+        "Sňatek 1821: „Joseph Sohn des Joseph Wazulik und Barbara gebohrne Kopčn(?)“ – zkomolený zápis; matka je Barbora roz. Koštrnová (PAC16, D), ne „Kopečná“."
       ],
       sources: [
         "MZA, N 4473, img 16 (Návojná fol. 28)",
@@ -3021,7 +3025,7 @@ window.RODOKMEN = {
       maiden: "Fojtíková",
       line: "matusu",
       cert: "M",
-      b: {"date":"15. 9. 1773 (křest)","year":1773,"place":"Nedašov"},
+      b: {"date":"15. 9. 1773 (křest; PRAVDĚPODOBNĚ)","year":1773,"place":"Nedašov"},
       father: "jiriFo",
       mother: "veronikaPa",
       notes: [
@@ -3112,7 +3116,7 @@ window.RODOKMEN = {
       name: "Mikuláš Holba",
       line: "matusu",
       cert: "M",
-      b: {"date":"1. 11. 1714 (křest)","year":1714,"place":"Nedašov"},
+      b: {"date":"1. 11. 1714 (křest; PRAVDĚPODOBNĚ)","year":1714,"place":"Nedašov"},
       d: {"date":"22. 9. 1777","year":1777,"place":"Nedašov č. 39"},
       father: "jiriHo",
       mother: "annaHo1",
@@ -3168,7 +3172,7 @@ window.RODOKMEN = {
       notes: [
         "Pravděpodobný otec Jiřího Holby (sňatek 1706: „filius Joannis Holbík“) – v Nedašově žili i Mikuláš Holbík × Anna a Václav Holbík × Anna, proto PRAVDĚPODOBNÉ.",
         "Jiří je nejspíš z prvního manželství; se Zuzanou měl syna Ondřeje (*7. 10. 1692).",
-        "Nejstarší doložený předek této větve – matriky Brumov začínají rokem 1688. OPRAVA (14. 10. 2026): zápis lánového rejstříku 1670 (MZA D 1 sign. 312, fol. 38v, img 41) dříve čtený „Kateřina, vdova po Matyáši Holbovi“ zní „Katerzina Wittib nach dem Mathiass Molků (Molbů?) vor Mikulass …“ – počáteční písmeno příjmení je stejné M jako v „Mathiass“ (ověřeno koordinátorem na výřezu); tištěný Generální rejstřík k lánové vizitaci (Kotačka – Peterka – Sperát 2015, s. 1185) má „Molková Kateřina … Nedašov … vd. p. Matyáši Molků“. S Holbíky tedy NESOUVISÍ. V celém generálním rejstříku není v Nedašově žádný Holba/Holbík; jediný Holba na panství Brumov je „Holba Mikoláš“, osedlý bez polí ve Valašských Kloboukách (1656–57, fol. 50r) – vazba K.",
+        "Nejstarší doložený předek této větve – souvislé matriky Brumov začínají rokem 1688 (starší útržkovitá kniha 4011 z let 1634–1681 zatím neprohledána). OPRAVA (14. 10. 2026): zápis lánového rejstříku 1670 (MZA D 1 sign. 312, fol. 38v, img 41) dříve čtený „Kateřina, vdova po Matyáši Holbovi“ zní „Katerzina Wittib nach dem Mathiass Molků (Molbů?) vor Mikulass …“ – počáteční písmeno příjmení je stejné M jako v „Mathiass“ (ověřeno koordinátorem na výřezu); tištěný Generální rejstřík k lánové vizitaci (Kotačka – Peterka – Sperát 2015, s. 1185) má „Molková Kateřina … Nedašov … vd. p. Matyáši Molků“. S Holbíky tedy NESOUVISÍ. V celém generálním rejstříku není v Nedašově žádný Holba/Holbík; jediný Holba na panství Brumov je „Holba Mikoláš“, osedlý bez polí ve Valašských Kloboukách (1656–57, fol. 50r) – vazba K.",
         "HOL2–3 (14. 10. 2026, MZA): v Nedašově 1656–1681 Holba/Holbík jako držitel ani podruh NENÍ (lánový rejstřík 1670 fol. 37–40, specifikace ~1678, odhad 1681). Jediný Holba na panství Brumov: Mikoláš Holba, osedlý bez polí ve Valašských Kloboukách (1656–57); jeho místo 1670 pusté – „seindt in 1663 als die Tartarn die Stadt völlig in Aschen gelegt … abgebrandt“ (D 1/312 fol. 50r, M). Hypotéza (K): Jan pochází z vyhořelé kloboucké rodiny a do Nedašova přišel po 1681."
       ],
       sources: [
@@ -3239,7 +3243,7 @@ window.RODOKMEN = {
       name: "Mikuláš Miřička",
       line: "matusu",
       cert: "M",
-      b: {"date":"13. 9. 1715 (křest)","year":1715,"place":"Nedašova Lhota"},
+      b: {"date":"13. 9. 1715 (křest; PRAVDĚPODOBNĚ)","year":1715,"place":"Nedašova Lhota"},
       d: {"date":"24. 3. 1781","year":1781,"place":"Nedašov č. 62"},
       father: "mikulasMi0",
       mother: "zuzanaMi",
@@ -3303,7 +3307,7 @@ window.RODOKMEN = {
       father: "janFoN",
       mother: undefined,
       occ: "sedlák v Nedašově č. 17",
-      marriage: "15. 1. 1769 – s Veronikou Paculovou (?) z Popova; svědci Martin Novák a Josef Václavík (?)",
+      marriage: "15. 1. 1769 – s Veronikou Pavlušíkovou z Popova; svědci Martin Novák a Josef Václavík (?)",
       notes: [
         "Sňatek 15. 1. 1769: „Georgius filius Joannis Fogtik Nedaschovio cum … Veronica filia Thomae Pawlušík popovio“ – syn Jana Fojtíka z Nedašova.",
         "Bydlel v č. 17 (děti Jan † 1774, Jan † 1779); bratr Matouš (sňatek 1775, č. 17), sestra Marina (sňatek s Jiřím Birlogem týž den 15. 1. 1769).",
@@ -3331,8 +3335,8 @@ window.RODOKMEN = {
       notes: [
         "Zemřel 21. 3. 1771, 86 let: „Joannes Fogtik maritus Marinae rusticus SS. provisus Nedaschovo – 86 Anno“.",
         "Pravděpodobně otec Jiřího (D): mladší Jan Fojtík (syn † Josefa, sňatek 1761) nepřichází v úvahu; v č. 17 žili Jiří, jeho bratr Matouš i vdova Marina († 1778, 50 let).",
-        "Marina byla jeho druhá žena (sňatek 7. 2. 1763, vdova po Ondřeji Adamkovi) – matka Jiřího tedy zemřela před 1763.",
-        "Nejstarší doložený Fojtík v této větvi; křest v matrikách není (Brumov začíná 1688) – další krok: gruntovní knihy, usedlost č. 17.",
+        "Kdo je Marina († 1778, 50 let, č. 17), je nerozhodnuto (K): buď 2. žena našeho Jana (sňatek 7. 2. 1763, vdova po Ondřeji Adamkovi), nebo nevěsta mladšího Jana Fojtíka (syn † Josefa) ze sňatku 25. 1. 1761 (MAT31). Matka Jiřího zemřela nejspíš před 1761/63.",
+        "Nejstarší doložený Fojtík v této větvi; křest v matrikách není (souvislé brumovské matriky začínají 1688, opisy 1706–54 mají mezery) – další krok: gruntovní knihy, usedlost č. 17.",
         "Kandidáti na rodiče (HYPOTÉZA): Jan Fojtík × Kateřina z Lhoty (děti 1689–1694; Kateřina se 1706 znovu vdala jako vdova). Kandidátní sňatek 5. 2. 1708 v Lhotě: Jan, syn † Jana Fojtíka, × Marina (opis7 img 119); s Marianou měl Jan dceru Marianu (*5. 4. 1713 Lhota) a Barboru (*1716 Nedašov).",
         "Hypotéza (K): v Nedašově Lhotě drží ¼ lánu Jan Fojtík v lánovém rejstříku 1670 i v urbářovém odhadu 1681/84 (opis Novotný, MZA G 371 inv. 61 str. 19) – generace jeho děda?",
         "Rektifikace 1749 (RA 312 I, img 352): čtvrtlán č. 3 v Lhotě drží „Mikula Foitků“, předtím (vizitace cca 1678) „Jann Foitků“ – rodový grunt Fojtíků v Lhotě (PRAVDĚPODOBNĚ). Nedašovský grunt č. 7 (dům 17) přešel mezi 1678 a 1749 od Šrámků na „Jůru Fogtů“."
@@ -3480,7 +3484,7 @@ window.RODOKMEN = {
         "Otec Josefa (sňatek 1779: „Josephus filius Martini Nowak“).",
         "3. 12. 1782 mu vrchnost (hrabě Jan Křtitel Illésházy) zapsala čtvrtlánický grunt č. 45 do dědičného vlastnictví; po něm grunt držel Jan Novák († před 1821) a pak Bartoloměj Novák – 28. 10. 1821 „Nachlass seines verstorbenen Vaters Johann Nowak“ (gruntovní kniha Nedašov I, fol. 129, img 132–133).",
         "Manželka nejspíš Alžběta († 16. 11. 1771, 60 let, Nedašov č. 45, 4012 img 245) – K.",
-        "Úmrtí 17. 9. 1793 Nedašov 45 (MAT35, M): „17. | Pögrator | Administrator | 45 | Martin Nowak Wittiber Bauer | 82 | Altershalber“ (Brumov 4034 Z, oddíl Nedašov str. 18 = img264L; rejstřík img302R) → *~1711; vdovec. Křest (~1711) nehledán (opis7 1709–12)."
+        "Úmrtí 17. 9. 1793 Nedašov 45 (MAT35, M): „17. | Pögrator | Administrator | 45 | Martin Nowak Wittiber Bauer | 82 | Altershalber“ (Brumov 4034 Z, oddíl Nedašov str. 18 = img264L; rejstřík img302R) → *~1711; vdovec. Křest NENÍ v opis7 I/1709–IV/1712 (MAT36, D−)."
       ],
       sources: [
         "Brumov 4012 img 192 (sňatek syna 1779)",
@@ -3498,19 +3502,19 @@ window.RODOKMEN = {
       line: "matusu",
       cert: "M",
       b: {"date":"cca 1738–1748","year":1740,"approx":true},
-      d: {"date":"3. 3. 1822 (pohřeb 5. 3.)","year":1822,"place":"Bylnice č. 136"},
+      d: {"date":"3. 3. 1822 (pohřeb 5. 3.; PRAVDĚPODOBNĚ)","year":1822,"place":"Bylnice č. 136"},
       father: "stepanBi",
       occ: "zahradník (Gartler) v Nedašově",
       marriage: "15. 1. 1769, Brumov – s Marinou Fojtíkovou (1.); 2. 5. 1786 s vdovou Marinou Adamkovou z Bylnice (2.)",
       notes: [
-        "Syn † Štěpána Birloga; sňatek 15. 1. 1769 s Marinou Fojtíkovou (4012 img 173) – pokud jde o téhož Jiřího (D).",
-        "MAT10 (14. 10. 2026): sňatek Jiří Birlog × Marina NENÍ v Brumov 4012 O XI/1770–XI/1787. Jiří Birlog z č. 71 je 1772 vdovec (∞ Veronika, dcera Jiřího Wilimka? z Brumova, img181L, D) a 17. 11. 1776 znovu vdovec (∞ Anna, dcera Ondřeje Matochy, img189R, M) → hypotéza „jiriBi = Jiří z č. 71“ slábne; Jiří z č. 74 (manžel Mariny † 1786) spíš jiný Birlog oženěný před 1770 nebo mimo faru (K). Josef, syn † Štěpána Birloga(?) ∞ I/1779 Zuzana Gričká(?) (img192L) – možný příbuzný.",
-        "MAT12 (14. 10. 2026): v Nedašově současně DVA Jiří Birlogové – (A) č. 71: × Rosina (dítě † 1769), vdovec ∞ 1772 Veronika, ∞ 1776 Anna Matochová, děti 1780–85, † 16. 1. 1811 (76 l.) patří spíš JEMU; (B) č. 74 = náš jiriBi: syn † Štěpána, ∞ 15. 1. 1769 jako mládenec Marina Fojtíková; s Marinou děti Anna 12. 6. 1782 (4012 N img131L, M), Matěj I–II/1785 (img146R), Marina 28. 1. 1786 († hned); Marina † 6. 2. 1786; Jiří vdovec ∞ 2. 5. 1786 vdova Marina po † Martinu Adamkovi z Bylnice (4012 O img203L, M). Úmrtí jiriBi tedy neznámé (zápis 1811 = Jiří A).",
+        "Syn † Štěpána Birloga; sňatek 15. 1. 1769 s Marinou Fojtíkovou (4012 img 173) – totožnost potvrzena (MAT32, D+).",
+        "MAT10 (14. 10. 2026): sňatek Jiří Birlog × Marina NENÍ v Brumov 4012 O XI/1770–XI/1787. Jiří Birlog z č. 71 je 1772 vdovec (∞ Veronika, dcera Jiřího Wilimka? z Brumova, img181L, D) a 17. 11. 1776 znovu vdovec (∞ Anna, dcera Ondřeje Matochy, img189R, M) → Jiří z č. 71 je jiný Birlog (Jiří A, viz MAT12, MAT32). Josef, syn † Štěpána Birloga(?) ∞ I/1779 Zuzana Gričká(?) (img192L) – možný příbuzný.",
+        "MAT12 (14. 10. 2026): v Nedašově současně DVA Jiří Birlogové – (A) č. 71: × Rosina (dítě † 1769), vdovec ∞ 1772 Veronika, ∞ 1776 Anna Matochová, děti 1780–85, † 16. 1. 1811 (76 l.) patří spíš JEMU; (B) č. 74 = náš jiriBi: syn † Štěpána, ∞ 15. 1. 1769 jako mládenec Marina Fojtíková; s Marinou děti Anna 12. 6. 1782 (4012 N img131L, M), Matěj I–II/1785 (img146R), Marina 28. 1. 1786 († hned); Marina † 6. 2. 1786; Jiří vdovec ∞ 2. 5. 1786 vdova Marina po † Martinu Adamkovi z Bylnice (4012 O img203L, M). Zápis † 1811 patří Jiřímu A; úmrtí jiriBi viz MAT28 níže (1822 Bylnice).",
         "MAT13: 5. 10. 1770 dvojčata Rosina a Dorota „Georgius Birlog et Marina Nedaschov“ (4012 N img64R, M) – 21 měsíců po sňatku s Marinou Fojtíkovou → Marina 1770 téměř jistě Fojtíková (D+); totožnost s Marinou † 1786 („30 l.“) stále otevřená (děti 1772–81 nečteny). Kandidát linie A: 24. 4. 1770 Marina, „Georgius Bieleg et Rosina“ (img62L).",
         "MAT14: 10. 7. 1773 křest syna Jiřího „Georgius Birlog et Marina rusticus Bilnicio | Martin Jangatsch Brumovio, anna Grnaussin(?) villica Bilnicio | Bilnicio 29“ (4012 N img84L, M) – stejný kmotr jako u dvojčat 1770 → týž pár (D+), ale bydliště Bylnice č. 29 (sedlák), ne Nedašov 74 (zahradník, kmotři Rožnovják/Missujová 1782–86) → spojení s rodinou č. 74 jen K; možný třetí Jiří Birlog v Bylnici.",
         "MAT16: 26. II. 1778 Rosina „Georgius Birlog et Marina hortulanus | Jan Mišský(?) Nedaš., Rosina Jangatschka(?) Brumov | Nedaš. 74“ (4012 N img109L, M; č. 74 D+); 9. I–II/1780 Kateřina „Jura Birlog et Marina inquil. | … Marina Missuin(?) | Nedaš. 71“ (img118R). Kmotrovský řetěz Jangatsch (1770, 1773, 1778) → Missujová (1780–86) spojuje pár z Bylnice 29 s rodinou č. 74 → jiriBi × Marina (Fojtíková) = rodina č. 74 (D+). Proti: věk Mariny † 1786 „30“ (K – možná druhá Marina).",
         "MAT20 (gruntovní kniha GK II 11952): č. 74 (1/8 gruntu) zapsán na „Georg Bieleg“ ingrossací 3. 12. 1782 (img93R, M); č. 74 předtím nebirlogovský (1736 Martin Jakubů, 1766 Jan K…, 1771 ?). Rodový grunt Birlogů č. 71 (Cat. 23; 1752 na „Andr[ea] Birloga“ – D/K) prodán 10. 3. 1785 „Jurowi Bielegowi“ od vdovy Kateřiny Bielegové = Jiří A. Rozhodující pro vazbu na Štěpána zůstává oddací zápis 1769 (Jiří A byl tehdy ženatý) – D+.",
-        "MAT22: Jiří B v Nedašově 1787–~1820 NEZEMŘEL (rejstřík Brumov 4034 Z Nedašov img293L: „Birlog Georg“ jen str. 45 = dítě 1808 a str. 50 = † 16. 1. 1811 „Georg Birlog Witwer Gartler, 71, 76“ = Jiří A, jehož žena Anna † 24. 5. 1804 č. 71, 52 l.). Ani 2. žena Marina tam nezemřela → Jiří B s Marinou Adamkovou asi odešli (Bylnice?) a zemřel před 1818 jinde (K).",
+        "MAT22 (platí jen pro Nedašov; zemřel v Bylnici, MAT28): Jiří B v Nedašově 1787–~1820 NEZEMŘEL (rejstřík Brumov 4034 Z Nedašov img293L: „Birlog Georg“ jen str. 45 = dítě 1808 a str. 50 = † 16. 1. 1811 „Georg Birlog Witwer Gartler, 71, 76“ = Jiří A, jehož žena Anna † 24. 5. 1804 č. 71, 52 l.). Ani 2. žena Marina tam nezemřela → Jiří B s Marinou Adamkovou asi odešli (Bylnice?) a zemřel před 1818 jinde (K).",
         "MAT24 (oprava): údaj „† před 1818“ byl mylný – v křtu vnuka Václava Nováka 21. 9. 1818 „Anna Tochter des x Georg Birlog, Häusler“ (N 4473 img102, str. 97) je „x“ oddělovač, který písař dává téměř ke každému otci i k žijícím kmotrům (ověřeno koordinátorem na výřezu sloupce). Při sňatku dcery Anny 25. 1. 1802 „Anna Tochter des Georg Birlog, Gartler“ bez „verstorbenen“ (O 4023 img106) → žil 1802 (D+). Úmrtí po 1802 neznámé; v Nedašově, Bylnici a Brumově-městě 1787–1820 není → asi po 1820 (K).",
         "MAT25: křest vnučky Marianny Novákové 17. 8. 1824 „Anna Tocht[er] d[es] Georg Birlog Bauern“ bez „verstorbenen“ (N 4474 img8, M) → možná žil ještě 1824 (K). Nedašov Z 4491 rejstřík B (1821–~1835): dospělý Georg Birlog není (jen dítě † 3. 4. 1826, syn Martina, č. 71); Návojná Z 1787–1820 bez Birlogů.",
         "Pravděpodobné úmrtí (MAT28, zápis M, ztotožnění D): 3. 3. 1822 Bylnice č. 136 „März 3/5 | 136 | Georg Bilroja / Wittiber / Auszügner | … | 84 | An Lungensucht | Johann Schebela Coop.“ (MZA, Bylnice Z 4037 img5L, fol. 6; rok podle nadpisu „Anno 1822“ img4R; rejstřík „Birloga Georg 6“). Věk 84 (→ *~1738) – číslici lze číst i 34, ale „Wittiber + Auszügner“ svědčí pro 84; koordinátor ověřil na výřezu. Dům 136 = Josef Birlog (1813; syn? K). Vdovec → 2. žena Marina † před 1822 (nenalezena). Marina † 1827 Bylnice 147 = žena Franze Birloga (jiná).",
@@ -6558,7 +6562,7 @@ window.RODOKMEN = {
       maiden: "Přidalová",
       line: "plachy",
       cert: "M",
-      b: {"date":"3. 9. 1716","year":1716,"place":"Kralice na Hané"},
+      b: {"date":"3. 9. 1716 (PRAVDĚPODOBNĚ)","year":1716,"place":"Kralice na Hané"},
       father: "pavelPr",
       mother: "marianaPr",
       notes: [
@@ -6624,7 +6628,7 @@ window.RODOKMEN = {
       line: "plachy",
       cert: "M",
       b: {"date":"cca 1676","year":1676,"approx":true,"place":"Kralice na Hané (?)"},
-      d: {"date":"30. 1. 1726","year":1726,"place":"Kralice na Hané"},
+      d: {"date":"30. 1. 1726 (PRAVDĚPODOBNĚ)","year":1726,"place":"Kralice na Hané"},
       marriage: "s Marianou",
       notes: [
         "Úmrtí 30. 1. 1726 (M): „30 | Kralitz | 50 | Paulus Přzidal incola ibid[em]“ (Kralice 9176a Z, sken 417, s. 87). Totožnost s otcem Rosiny PRAVDĚPODOBNÁ (D) – jiný Pavel Přidal v Kralicích 1716–1730 nezemřel; sňatek dcery 1736 ho uvádí jako zemřelého.",
@@ -6648,7 +6652,7 @@ window.RODOKMEN = {
       line: "plachy",
       cert: "M",
       b: {"date":"cca 1686","year":1686,"approx":true,"place":"Kralice na Hané (?)"},
-      d: {"date":"22. 5. 1771","year":1771,"place":"Kralice na Hané"},
+      d: {"date":"22. 5. 1771 (PRAVDĚPODOBNĚ)","year":1771,"place":"Kralice na Hané"},
       notes: [
         "Úmrtí 22. 5. 1771 Kralice (M): „Mariana Navratilin Vidua Kralitzio | 85 annorum“ (Kralice 9177 Z, sken 234; *~1686). Totožnost s vdovou po Jakubovi PRAVDĚPODOBNÁ (D) – manžel v zápisu nejmenován, jiná vdova Navrátilová z Kralic tohoto věku není; v Z III/1742–IV/1771 jiný zápis není.",
         "Sňatek 21. 9. 1711 s vdovcem Jakubem Navrátilem (M): „Marina filia Jacobi Kelčžak“ – příjmení otce čteno nejistě (v knize i Václav Kelčák/Kelčžak 1709/1710).",
@@ -8275,7 +8279,7 @@ window.RODOKMEN = {
       b: {"date":"cca 1775","year":1775,"approx":true,"place":"Návojná"},
       father: "josefVaSS",
       occ: "sedlák v Návojné (č. 16 / 39)",
-      marriage: "II/1797, Návojná – s Barborou, dcerou † Martina Kostrny (?)",
+      marriage: "II/1797, Návojná – s Barborou, dcerou † Martina Koštrny",
       notes: [
         "Sňatek II/1797 Návojná č. 16 (M; den neuveden): „Joseph Sohn des Joseph Wazulik, Bauer | 22 || Barbara Tochter des verstorbenen Martin Kop(s)trna (?), Bauer in Nedaschow | 20“; svědci Franz Wažo (?) a Martin Walka (?), sedláci z Návojné (O 4023 img 86).",
         "Otec Josefa (*1797/1798).",
@@ -8294,7 +8298,7 @@ window.RODOKMEN = {
     {
       id: "barboraKop",
       name: "Barbora Vaculíková",
-      maiden: "Kostrna / Koptrna (?)",
+      maiden: "Koštrnová",
       line: "matusu",
       cert: "M",
       b: {"date":"cca 1777","year":1777,"approx":true,"place":"Nedašov"},
@@ -8391,7 +8395,7 @@ window.RODOKMEN = {
       maiden: "Holbová",
       line: "matusu",
       cert: "M",
-      b: {"date":"13. 4. 1774","year":1774,"place":"Nedašov č. 40"},
+      b: {"date":"13. 4. 1774 (PRAVDĚPODOBNĚ)","year":1774,"place":"Nedašov č. 40"},
       father: "bartosHol",
       mother: "annaHolM",
       notes: [
@@ -8651,16 +8655,21 @@ window.RODOKMEN.places = [
   {"name":"Chvalešovice","lat":49.164,"lon":14.307,"line":"vesely","anchor":"end","dy":-10,"small":true,"note":"Šimon na Chvalovském ovčíně 1730–38"},
   {"name":"Plzeň","lat":49.748,"lon":13.378,"line":"vesely","anchor":"start","small":true,"note":"Karel Veselý 1920 (u tety Roušalové)"},
   {"name":"Rohov","lat":50.016,"lon":18.071,"line":"struz","note":"Rod Struž – Georg Struz *cca 1666 († 1734); Valentin odtud 1795 do Chuchelné","small":true,"anchor":"end","dy":-10},
-  {"name":"Sitnica","lat":49.757,"lon":21.125,"line":"chmielek","note":"Ovčák Wojciech Dydowicz † 1832 (D)","small":true,"anchor":"end","dy":8}
+  {"name":"Sitnica","lat":49.757,"lon":21.125,"line":"chmielek","note":"Ovčák Wojciech Dydowicz † 1832 (D)","small":true,"anchor":"end","dy":8},
+  {"name":"Kralice na Hané","anchor":"end","dy":4,"lat":49.462,"lon":17.18,"line":"plachy","note":"Rody Navrátil a Kočíř"},
+  {"name":"Řepčín","anchor":"end","dy":-4,"lat":49.605,"lon":17.245,"line":"plachy","note":"Rody Vincour a Dosoudil"}
 ];
 window.RODOKMEN.story = [
-  {"line":"pacik","title":"Valašsko pod Bílými Karpaty – Pacíci a Matůšů","text":["Nedašov a Nedašova Lhota leží na moravsko-slovenském pomezí pod Bílými Karpaty a patřily k panství Brumov. Mlynář Tobiáš Pacík (*cca 1712, †1779) žil v Nedašově Lhotě v domě č. 5, kde rod přebýval přes 150 let. Matriky farnosti Brumov začínají rokem 1688 – pro starší dobu zbývají gruntovní knihy a urbáře brumovského panství.","V matrikách 18. století se stejná rodina psala jednou „Pacík“, jindy „Fojtík“ – příjmení se v té době teprve ustalovala. Zápisy jsou latinsky, v 19. století německy a od 70. let česky.","Předkové byli domkáři, podsedníci a tkalci – drobní venkované bez větší půdy. Dědeček Rudolf (*1936) odešel jako mnoho Valachů za prací do průmyslové Ostravy."],"lines":["pacik","matusu"]},
+  {"line":"pacik","title":"Valašsko pod Bílými Karpaty – Pacíci a Matůšů","text":["Nedašov a Nedašova Lhota leží na moravsko-slovenském pomezí pod Bílými Karpaty a patřily k panství Brumov. Mlynář Tobiáš Pacík (*cca 1712, †1779) – v matrikách i „Fojtík seu Pacík“ – měl nejspíš v nájmu vrchnostenský mlýn; v letech 1755–57 žila rodina v Nedašově, později v Nedašově Lhotě v domě č. 5, kde rod přebýval přes 150 let. Pravděpodobně pocházel z Lipiny u Valašských Klobouk. Nejstarší brumovská matrika (1634–1681) je jen útržkovitá, souvisle se matriky vedou od roku 1688 – pro starší dobu zbývají gruntovní knihy a urbáře brumovského panství.","V matrikách 18. století se stejná rodina psala jednou „Pacík“, jindy „Fojtík“ – příjmení se v té době teprve ustalovala. Zápisy jsou latinsky, v 19. století německy a od 70. let česky.","Předkové byli domkáři, podsedníci a tkalci – drobní venkované bez větší půdy. Dědeček Rudolf (*1936) odešel jako mnoho Valachů za prací do průmyslové Ostravy."],"lines":["pacik","matusu"]},
   {"line":"struz","title":"Hlučínsko – Struž, Jiřík a Opoloný","text":["Chuchelná a Bolatice leží na Hlučínsku. Po slezských válkách v roce 1742 připadlo Prusku, takže zdejší lidé byli 178 let pruskými (později německými) občany, i když mluvili moravským nářečím „po našymu“.","Rod Struž (Struz, Strusch) je doložen v Rohově od konce 17. století – Georg Struz (*cca 1666) tam zemřel roku 1734. Jeho potomek Valentin (*1770 v Rohově) se roku 1795 oženil s Catharinou Holeczek a usadil se jako zahradník v Chuchelné. Další předkové žili v Kobeřicích, Strahovicích a Krzanowicích. Jiříkové (Jirzik, Irzik) byli domkáři a řezníci v Bolaticích, kde je Simon Jirzik doložen ve 30. letech 18. století.","Nová hranice mezi pruským a rakouským Slezskem lidi nezastavila: čeledín Johann Tomanek (1800), Sebastian Kussin z Dobroslavic (1805) a Johann Mitrenga (1828) přišli z rakouské strany a přiženili se do Dolního Benešova a Chuchelné. Kovář Anton Opolony (*1841 v Ehrenfeldu na Ratibořsku) se oženil roku 1867 a stal se kovářským mistrem v Chuchelné.","Proto jsou jejich matriky od roku 1874 německé civilní (Standesamt Kuchelna) a jména se psala německy: Ernst Strusch, Rudolf Irzik, Marie Opolony.","V roce 1920 bylo Hlučínsko připojeno k Československu, v roce 1938 k Německu a v roce 1945 znovu k ČSR. Arnošt Struž byl za okupace členem Freikorpsu a SA, v letech 1940–1941 krátce sloužil ve wehrmachtu a pak pracoval v rafinérii v Heydebrecku; po válce ho Mimořádný lidový soud v Opavě odsoudil k roku vězení. S Marií Jiříkovou se oženil 25. 1. 1937 a 20. 12. 1937 se jim v Chuchelné narodila Margareta – maminka Jany Pacíkové."],"lines":["struz","jirik"]},
   {"line":"woron","title":"Halič – Woroň, Włudyka, Chmielek a Dydowicz","text":["Halič (polsky Galicja) byla v letech 1772–1918 korunní zemí Rakouska-Uherska – zhruba dnešní jižní Polsko a západní Ukrajina. Na přelomu 19. a 20. století patřila k nejchudším oblastem Evropy („galicyjska bieda“).","Tisíce lidí proto odcházely za prací do ostravských dolů – byly ve stejné monarchii, takže se dalo volně stěhovat. Ondřej Woroń (*1849) z Lednice Dolní u Wieliczky, syn solivarského dělníka Kaspra, a jeho bratr Stanislav fárali v Polské Ostravě a na Hranečníku už v 80. letech 19. století. Ondřej se tu roku 1884 oženil s Emilií Galasowskou a po její smrti si 24. 8. 1896 vzal Markétu Włudyka (*1858) z Rajbrotu u Bochně.","Włudykové (Włodykové) žili v Rajbrotu nejméně od konce 17. století – Jan Włodyka st. se tam oženil v roce 1723. Woroniové pracovali v solných dolech ve Wieliczce, jejich předkové Szarkové a Witarowští žili v sousední Lednici Górné.","Stanislav Chmielek (*1876) pocházel ze Zagórzan u Gdowa, Helena Dydowicz (*1884) z Rudna u Tarnova. Dydowiczové byli ovčáci a stěhovali se za prací – Dębno (1802), Sitnica (1832), Wierzchosławice (1836) – než se Helenin otec Tomáš roku 1862 přiženil do Rudna k rodu Pikulů. Do Polské Ostravy odešel i Helenin bratr Jan, závodní kovář.","Usadili se v hornické Polské Ostravě (od roku 1919 Slezská Ostrava), kde se jim v roce 1903 narodili Ludvík Woroň a Honorata Chmielková – rodiče babičky Marty. Ludvík a Honorata v únoru 1925 vystoupili z církve a 9. 8. 1925 se vzali; Marta se narodila 4. 12. 1939 ve Slezské Ostravě."],"lines":["woron","chmielek"]},
   {"line":"vesely","title":"Hlubocké panství – ovčáci Veselí (asi 1700–1920)","lines":["vesely"],"text":["Otcovská linie vede do jižních Čech, na panství Hluboká nad Vltavou severně od Českých Budějovic, které od roku 1661 patřilo Schwarzenberkům. Panství mělo desítky panských dvorů a ovčínů a každý rok sepisovalo své poddané, včetně ovčáků, jejich žen a dětí. Z těchto soupisů a z matrik je otcovská linie doložena bez přerušení od začátku 18. století.","Nejstarší známý předek, Jiří Veselý, byl ovčácký pacholek („Hamelknecht“) a zemřel už před rokem 1720 – soupisy od té doby vedou jeho dceru Marianu (*asi 1690) mezi sirotky. Jeho syn Šimon (*asi 1692) se 5. 2. 1730 v Bílé Hůrce oženil s Dorotou, dcerou zemřelého ovčáka. Soupisy ho ukazují na Chvalovském ovčíně u Chvalešovic (1730–1738) a potom na Křenovském ovčíně u Dubného, kde se mu 22. 6. 1738 narodil syn Pavel. Šimon zemřel asi 1746/47 a jeho druhá žena Uršula zůstala se šesti dětmi.","Pavel sloužil jako pacholek a pastýř skopců u knínského ovčína a zemřel v Kníně v roce 1794. Jeho syn Tomáš byl šafářem na knížecím dvoře v Býšově, vnuk Matěj (*1816) lučním hajným v Dívčicích a pravnuk Jan (*1860) opět ovčákem – ve Dřítni a v Plavnici. Teprve Karel (*1904 ve Volešníku) panství opustil.","Ovčáci nebyli usedlí sedláci, ale placení služebníci panství. Podle potřeby se stěhovali z ovčína na ovčín, a proto se rodina během dvou století objevuje v matrikách nejméně šesti farností (Bílá Hůrka, Dubné, Křtěnov, Nákří, Zahájí, Hluboká). Na panství tehdy žily i další rodiny Veselých – například Jiří z Břehova († 1731) nebo Josef s Magdalenou, kteří přišli z jiného panství. Jejich příbuzenství s naší linií zatím doloženo není. (Olešničtí ovčáci, dříve čtení jako „Weſſeley“, jsou ve skutečnosti rod Bezzalecký.)"]},
+  {"line":"plachy","title":"Haná – Plaší, Navrátilové a Kočířové","lines":["plachy"],"text":["Babička Anna Plachá (*1907) pocházela z Věrovan u Tovačova, z úrodné roviny střední Hané. Její předkové žili v okruhu několika vsí mezi Prostějovem a Olomoucí: Plaší ve Věrovanech, Opluštilové v Dubu nad Moravou, Vincourové a Dosoudilové v Řepčíně a Neředíně u Olomouce, Navrátilové a Kočířové v Kralicích na Hané.","Nejhlouběji sahají dvě linie. Jakub Navrátil (*cca 1670) se v roce 1704 oženil v Kralicích s vdovou Juditou a jeho potomci tu hospodařili na čtvrtlánu č. 27 – Fabián Navrátil ho převzal od otce Sarkandra svatební smlouvou z roku 1797. Kočířové přišli z Rakové či Krakovce u Konice: Martin (*1697) se usadil v Lešanech u Prostějova a jeho vnuk Jakub se v roce 1797 přiženil do Kralic na grunt vdovy po sedlákovi Chromečkovi.","V Kralicích se obě rodiny spojily sňatkem Jana Kočíře s Marianou Navrátilovou (1824); jejich dcera Františka se provdala do Věrovan za Josefa Plachého. Jejich syn Jan si v roce 1887 vzal Mariannu Vincourovou z Řepčína – to byli rodiče babičky Anny."]},
   {"line":"vesely","title":"Spiš – Veselí a Plaší","text":["Po vzniku Československa v roce 1918 odcházely na Slovensko tisíce Čechů – úředníci, železničáři, četníci, učitelé i řemeslníci. Mezi nimi Karel Veselý (*1904 ve Volešníku u Hluboké, domovem ze Zbudova), který v Plzni bydlel u tety Kateřiny Roušalové a v listopadu 1922 přišel do Kežmarku a pracoval jako úředník tamní nemocenské pojišťovny.","Kežmarok byl tehdy převážně německé a maďarské město – sčítací arch z roku 1930 je vyplněný německy. Karel bydlel v podnájmu na Hlavní ulici, v letech 1935–1937 seděl v městském zastupitelstvu za sociální demokraty a dělal jednatele Klubu československých turistů.","Anna Plachá (*1907) pocházela z Věrovan na Hané. Do Kežmarku ji přivedla starší sestra Terezie, provdaná za řezníka Methoda Krejsu, kterému Anna dělala pokladní. S Karlem se vzali mezi prosincem 1930 a zářím 1933 a v roce 1933 (17. 8. nebo 17. 9.) se jim narodil Svatoň.","Po vzniku Slovenského státu v roce 1939 museli Češi ve státní službě většinou odejít do českých zemí – rodina Veselých se tak přestěhovala do Uherského Brodu, jak babička Marta mnohokrát vyprávěla."],"lines":["plachy"]}
 ];
 window.RODOKMEN.timeline = [
+  {"y":1704,"t":"Jakub Navrátil se v Kralicích na Hané žení s vdovou Juditou – počátek kralické větve Navrátilů"},
+  {"y":1721,"t":"Martin Kočíř z Rakové u Konice se v Mostkovicích žení a usazuje se v Lešanech"},
   {"y":1723,"t":"Jan Włodyka st. se v Rajbrotu žení s Barbarou Kokoszonkou"},
   {"y":1730,"t":"Šimon Veselý, syn zemřelého ovčáckého pacholka Jiřího, se v Bílé Hůrce žení s Dorotou"},
   {"y":1734,"t":"V Rohově umírá Georg Struz (*cca 1666) – nejstarší známý Struž"},
@@ -8668,15 +8677,18 @@ window.RODOKMEN.timeline = [
   {"y":1759,"t":"V Rajbrotu se berou Jan Włodyka a Konstancie Kanownik"},
   {"y":1794,"t":"V Kníně umírá ovčák Pavel Veselý"},
   {"y":1795,"t":"Valentin Strusch z Rohova se žení s Catharinou Holeczek, Stružové se usazují v Chuchelné"},
+  {"y":1797,"t":"Jakub Kočíř z Lešan se přiženil do Kralic; Fabián Navrátil přebírá kralický grunt č. 27"},
   {"y":1805,"t":"V Rajbrotu pokřtěn František Włudyka, praděd babičky Marty"},
   {"y":1805,"t":"Sebastian Kussin přichází z rakouských Dobroslavic do pruské Chuchelné"},
   {"y":1816,"t":"Na knížecím dvoře v Býšově u Knína se rodí Matěj Veselý, syn šafáře Tomáše"},
+  {"y":1829,"t":"Jan Plachý z Věrovan se v Dubu nad Moravou žení s Josefou Opluštilovou"},
   {"y":1844,"t":"Kasper Woroń a Katarzyna Szarek se berou v Lednici Górné"},
   {"y":1849,"t":"V Lednici Dolní u Wieliczky se rodí Ondřej Woroń"},
   {"y":1860,"t":"V hájovně v Dívčicích se rodí Jan Veselý, syn lučního hajného Matěje"},
   {"y":1862,"t":"Tomáš Dydowicz a Ludwika Pikul se berou v Łęgu Tarnowském"},
   {"y":1867,"t":"Anton Opolony a Rosalie Czienskowski se berou ve Schonowitz u Ratiboře"},
   {"y":1884,"t":"Ondřej Woroń z Haliče už v Polské Ostravě (1. sňatek 21. 9. 1884); jeho bratr Stanislav horníkem na Hranečníku"},
+  {"y":1887,"t":"Jan Plachý z Věrovan se v Řepčíně žení s Mariannou Vincourovou"},
   {"y":1896,"t":"Ondřej Woroń si v Polské Ostravě bere Markétu Włudyka z Rajbrotu"},
   {"y":1903,"t":"V Polské Ostravě se rodí Ludvík Woroň a Honorata Chmielková"},
   {"y":1903,"t":"Helenin bratr Jan Dydowicz, závodní kovář v Polské Ostravě, se žení v Moravské Ostravě"},
@@ -8721,7 +8733,14 @@ window.RODOKMEN.moves = [
   {"line":"struz","kind":"doc","who":"Sebastian Kussin","when":"1805","note":"z Dobroslavic v rakouském Slezsku přes hranici do pruské Chuchelné – „oriundus Dobroslavic ex Ditione Austriaca“, sňatek 29. 1. 1805","path":[[49.88,18.141],[49.921,18.108],[49.989,18.119]]},
   {"line":"jirik","kind":"doc","who":"Johanna Tomanek","when":"1826","note":"sňatkem z Dolního Benešova do Bolatic – 14. 11. 1826 s Cyrilem Irzikem","path":[[49.921,18.108],[49.952,18.083]]},
   {"line":"chmielek","kind":"doc","who":"Dydowiczové (ovčáci)","when":"1802–1836","note":"ovčák Wojciech Dydowicz: sňatek Dębno 1802 → Sitnica, † 1832 (D) → syn Józef ovčákem ve Wierzchosławicích (vnuk Tomáš *1836)","path":[[49.961,20.678],[49.757,21.125],[50.027,20.859]]},
-  {"line":"chmielek","kind":"doc","who":"Tomáš Dydowicz","when":"1862","note":"z Wierzchosławic do Rudna – sňatek 20. 10. 1862 (Łęg Tarnowski) s Ludwikou Pikul","path":[[50.027,20.859],[50.13,20.85]]}
+  {"line":"chmielek","kind":"doc","who":"Tomáš Dydowicz","when":"1862","note":"z Wierzchosławic do Rudna – sňatek 20. 10. 1862 (Łęg Tarnowski) s Ludwikou Pikul","path":[[50.027,20.859],[50.13,20.85]]},
+  {"line":"plachy","kind":"hyp","who":"Jakub Navrátil","when":"1704","note":"snad z Lutína do Kralic – 30. 6. 1704 sňatek s vdovou Juditou","path":[[49.56,17.14],[49.462,17.18]]},
+  {"line":"plachy","kind":"doc","who":"Martin Kočíř","when":"1721","note":"z Rakové / Krakovce u Konice do Lešan – sňatek 16. 11. 1721 v Mostkovicích, † 1747 Lešany","path":[[49.585,16.92],[49.505,17.02]]},
+  {"line":"plachy","kind":"doc","who":"Jakub Kočíř","when":"1797","note":"z Lešan do Kralic – 25. 11. 1797 se přiženil na grunt vdovy Theresie Chromečkové","path":[[49.505,17.02],[49.462,17.18]]},
+  {"line":"plachy","kind":"doc","who":"Josefa Opluštilová","when":"1829","note":"z Dubu do Věrovan – 7. 7. 1829 sňatek s Janem Plachým","path":[[49.48,17.28],[49.46,17.29]]},
+  {"line":"plachy","kind":"doc","who":"Františka Kočířová","when":"před 1864","note":"z Kralic do Věrovan – manželka Josefa Plachého","path":[[49.462,17.18],[49.46,17.29]]},
+  {"line":"plachy","kind":"doc","who":"Marianna Vincourová","when":"1887","note":"z Řepčína do Věrovan – 14. 11. 1887 sňatek s Janem Plachým","path":[[49.605,17.245],[49.46,17.29]]},
+  {"line":"matusu","kind":"doc","who":"Jiří Birlog","when":"1786–1797","note":"z Nedašova do Bylnice (u skelné huti) – po 2. sňatku 1786; † 1822 Bylnice (D)","path":[[49.105,18.06],[49.07,18.03]]}
 ];
 
 // Historical events for the context column right of the year ruler; y2 = end year of a period (drawn as a band), major = shown even when zoomed out
@@ -8731,7 +8750,7 @@ window.RODOKMEN.events = [
   {"y":1663,"t":"Turecko-tatarský vpád na Moravu","s":"Tataři na Moravě"},
   {"y":1680,"t":"Selské povstání a robotní patent","s":"Robotní patent"},
   {"y":1683,"t":"Turci u Vídně","s":"Obléhání Vídně"},
-  {"y":1688,"t":"Začínají matriky farnosti Brumov","s":"Matriky Brumov"},
+  {"y":1688,"t":"Začínají souvislé matriky farnosti Brumov (starší kniha 1634–1681 je útržkovitá)","s":"Matriky Brumov"},
   {"y":1704,"y2":1709,"t":"Kurucké vpády na východní Moravu (i Brumovsko)","s":"Kuruci","major":true},
   {"y":1713,"y2":1715,"t":"Morová epidemie","s":"Mor"},
   {"y":1740,"y2":1748,"t":"Válka o rakouské dědictví (slezské války)","s":"Slezské války"},
@@ -9072,7 +9091,7 @@ window.RODOKMEN.collateral = [
   {"id":"c_vesMariana1690","name":"Mariana Veselá","b":{"date":"cca 1690","year":1690,"approx":true},"father":"jiriVesSt","cert":"D","note":"Sirotek po † Jiříkovi Veselém v soupisech Hluboká (Appendix): 1720 „Mariana 30 – w …(?) u Mistra“ (52283 sk426R, fol. 433), 1724 „Mariana 34 – u Dřítenského(?) mistra“ (52338 sk338R, fol. 335), 1729 „Mariana 39“ (52344 sk383R). *~1690; pravděpodobně starší sestra Šimona (D)."}
 ];
 
-window.RODOKMEN_BUILD='5. 11. 2026 9:14';
+window.RODOKMEN_BUILD='5. 11. 2026 10:26';
 
 </script>
 <script>

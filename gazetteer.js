@@ -15,12 +15,16 @@ window.RODOKMEN_GAZ = [
   { n: 'Lutín', a: ['Lutín'], lat: 49.56, lon: 17.14 },
   { n: 'Řepčín', a: ['Řepčín'], lat: 49.605, lon: 17.245 },
   { n: 'Neředín', a: ['Neředín'], lat: 49.59, lon: 17.225 },
+  { n: 'Lešany', a: ['Lešany'], lat: 49.505, lon: 17.02 },
+  { n: 'Raková / Krakovec u Konice', a: ['Raková', 'Krakovec'], lat: 49.585, lon: 16.92 },
+  { n: 'Bohuslavice u Konice', a: ['Bohuslavice u Konice'], lat: 49.61, lon: 16.935 },
   // Valašsko – panství Brumov
   { n: 'Nedašova Lhota', a: ['Nedašova Lhota'], lat: 49.135, lon: 18.09 },
   { n: 'Nedašov', a: ['Nedašov'], lat: 49.105, lon: 18.06 },
   { n: 'Návojná', a: ['Návojná'], lat: 49.10, lon: 18.04 },
   { n: 'Bylnice', a: ['Bylnice'], lat: 49.07, lon: 18.03 },
   { n: 'Brumov', a: ['Brumov'], lat: 49.09, lon: 17.99 },
+  { n: 'Popov', a: ['Popov'], lat: 49.105, lon: 17.975 },
   // Hlučínsko a Ratibořsko
   { n: 'Chuchelná', a: ['Chuchelná', 'Kuchelna'], lat: 49.989, lon: 18.119 },
   { n: 'Krzanowice', a: ['Krzanowice'], lat: 50.01, lon: 18.12 },
