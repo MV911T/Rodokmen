@@ -105,7 +105,7 @@ window.RODOKMEN = {
         "Prověřeno 9. 10. (VES-ZB9): Kamenný Újezd / Plavnice celý rok 1904 (X/1903–XII/1904) – Karel NENÍ."
       ],
       sources: [
-        "Doslovný výpis z matriky narození Farního úřadu Zahájí, sv. VII, 1904, str. 7, č. 12 – vydal MÚ Zliv (B. Plecerová) 10. 11. 2026, čj. MUZ/2810/2026/BP; doručeno datovou schránkou (ID zprávy 1795323751)",
+        "Doslovný výpis z matriky narození Farního úřadu Zahájí, sv. VII, 1904, str. 7, č. 12 – vydal MÚ Zliv (B. Plecerová) 10. 11. 2026, čj. MUZ/2810/2026/BP; doručeno datovou schránkou (ID zprávy 1795323751); PDF 00_klicove_doklady/1904_krest_Karel_Vesely_doslovny_vypis_MU_Zliv.pdf (+ průvodní dopis …_pruvodni_dopis_MU_Zliv.pdf)",
         "Archiv města Plzně, Popisný úřad města Plzně – přihlášky k pobytu: Veselý Karel (1920), Veselá Kateřina (1911), Veselá Růžena (1915); domovský arch Roušal Josef; rešerše PhDr. Štěpánky Pflegerové, e-mail 7. 10. 2026",
         "Bratr Jan Veselý (*1889) – padlí v 1. světové válce, VÚA: https://www.vuapraha.cz/padli-1-svetova/170921",
         "Sňatek Josef Roušal × Kateřina Veselá 13. 1. 1891, České Budějovice: https://digi.ceskearchivy.cz/2778/236/1813/916/68/0",
@@ -121,6 +121,7 @@ window.RODOKMEN = {
         "MZA Brno, ARON – Okresní národní výbor Uherský Brod, dějiny původce: https://www.mza.cz/aron/apu/42c4054b-5e35-4c17-8641-03dcd95ee454"
       ],
       scans: [
+        {"f":"img/1904_krest_karel_vesely_zahaji.jpg","t":"Křest Karla Veselého 4./5. 10. 1904, Ovčín u Volešníka – matrika narození fary Zahájí, sv. VII, str. 7, č. 12 (doslovný výpis MÚ Zliv, 10. 11. 2026); rodiče Jan Veselý, ovčinský ve Volešníku, a Marie roz. Koželuhová; přípis o vystoupení z církve (Kežmarok 1930)"},
         {"f":"img/1957_snatek_svaton_vesely_marta_woronova_1.jpg","t":"Sňatek 28. 9. 1957, Slezská Ostrava – snoubenci a jejich rodiče (poř. č. 40)"},
         {"f":"img/1908_krest_jaroslav_vesely.jpg","t":"Křest bratra Jaroslava 21. 7. 1908, Plavnice č. 86 (Ovčín) – otec Jan Veselý, ovčák, nar. 21. 12. 1860 Dívčice (Kamenný Újezd N, id 10271, sken 85)"},
         {"f":"img/1894_snatek_vesely_kozeluhova.jpg","t":"Sňatek 8. 1. 1894, Dříteň č. 28 (ovčín) – Jan Veselý × Marie Koželuhová (Bílá Hůrka 7B, sken 15)"},
@@ -5742,6 +5743,7 @@ window.RODOKMEN = {
         "SOA Třeboň – přepis zápisu Nákří 6 N sk3 (Mgr. M. Ulrychová, e-mail 12. 10. 2026)"
       ],
       scans: [
+        {"f":"img/1904_krest_karel_vesely_zahaji.jpg","t":"Křest Karla Veselého 4./5. 10. 1904, Ovčín u Volešníka – matrika narození fary Zahájí, sv. VII, str. 7, č. 12 (doslovný výpis MÚ Zliv, 10. 11. 2026); rodiče Jan Veselý, ovčinský ve Volešníku, a Marie roz. Koželuhová; přípis o vystoupení z církve (Kežmarok 1930)"},
         {"f":"img/1860_krest_jan_vesely_divcice.jpg","t":"Křest 21. 12. 1860, Dívčice č. 1 – dvojčata Jan a Magdalena, otec Matěj Veselý, hajný (Nákří 6 N, sken 3)"},
         {"f":"img/1908_krest_jaroslav_vesely.jpg","t":"Křest bratra Jaroslava 21. 7. 1908, Plavnice č. 86 (Ovčín) – otec Jan Veselý, ovčák, nar. 21. 12. 1860 Dívčice (Kamenný Újezd N, id 10271, sken 85)"},
         {"f":"img/1894_snatek_vesely_kozeluhova.jpg","t":"Sňatek 8. 1. 1894, Dříteň č. 28 (ovčín) – Jan Veselý × Marie Koželuhová (Bílá Hůrka 7B, sken 15)"},
@@ -5772,6 +5774,7 @@ window.RODOKMEN = {
         "SOA Třeboň, Bílá Hůrka 5A, id 9211, sken 69 – https://digi.ceskearchivy.cz/DA?menu=3&id=9211&page=69"
       ],
       scans: [
+        {"f":"img/1904_krest_karel_vesely_zahaji.jpg","t":"Křest Karla Veselého 4./5. 10. 1904, Ovčín u Volešníka – matrika narození fary Zahájí, sv. VII, str. 7, č. 12 (doslovný výpis MÚ Zliv, 10. 11. 2026); rodiče Jan Veselý, ovčinský ve Volešníku, a Marie roz. Koželuhová; přípis o vystoupení z církve (Kežmarok 1930)"},
         {"f":"img/1866_krest_marie_kozeluhova.jpg","t":"Křest 17. 8. 1866, Dříteň č. 6 – Marie Koželuhová (Bílá Hůrka 5 N, id 2213, sken 160)"},
         {"f":"img/1894_snatek_vesely_kozeluhova.jpg","t":"Sňatek 8. 1. 1894, Dříteň č. 28 (ovčín) – Jan Veselý × Marie Koželuhová (Bílá Hůrka 7B, sken 15)"},
         {"f":"img/1889_krest_jan_vesely_driten.jpg","t":"Křest bratra Jana 20. 8. 1889, Dříteň č. 6 (Bílá Hůrka 5A, sken 54) – rodiče Jan Veselý × Marie Koželuhová, legitimace"},
