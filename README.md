@@ -12,6 +12,7 @@ Interaktivní rodokmen Matěje Veselého na časové ose – větve Veselý, Pla
 - **Mateřská linie** (matka matky …) červeně, **otcovská linie** (otec otce …) modře.
 - **Zoom:** lišta dole (−, posuvník, +, „Celý strom“, 100 %), Ctrl/⌘ + kolečko, sevření prstů na touchpadu i mobilu.
 - **Odkud jsme:** mapa původu větví s doloženými přesuny, historické souvislosti a časová osa.
+- **Tisková verze:** plakát 2,5 × 1 m (PDF vektor, TIFF LZW a JPEG 400 dpi) v `print/`. Generátor je v `05_nastroje/tisk/` výzkumného repa; po změně dat: `python3 05_nastroje/tisk/render.py 07_tisk --full --dpi=400`, `audit.py`, zkopírovat do `web/print/`, upravit datum v `template.html` (`printStamp`).
 
 ## Úpravy dat
 
