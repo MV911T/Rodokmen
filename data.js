@@ -928,20 +928,23 @@ window.RODOKMEN = {
         "Geneteka (D, WOR13): vdova Katarzyna Woroń roz. Szarek † 26. 9. 1898 Lednica Dolna, 73 l. (1898 č. 30); syn Wojciech Woroń † 2. 4. 1935 Wieliczka, 75 l. (*~1860), ž. Aniela Krzyszkowska (1935 č. 19).",
         "WOR14 (15. 10.): 22. 11. 1875 souhlas se sňatkem dcery Zofie s Franciszkem Mastelou podepsán křížkem „Kasper Woroń ojciec“ (CAAK KM-10-84 #0089_r – sňatky Lednica Dolna 1785–1878, dosud neznámá kniha; M, ověřeno koordinátorem) → žil 22. 11. 1875, negramotný, Lednica Dolna č. 107; 12. 10. 1873 svědek na sňatku syna Franciszka (KM-10-76 #0222_r). † tedy po 22. 11. 1875 a před 24. 8. 1896. Křty Lednice 1786–1900 a úmrtí 1835–1890 online nejsou; AKMK má kopie Lednice Dolné: křty 1821–47, 1863–73, sňatky a úmrtí 1821–47.",
         "WOR16: další dcera Anna Woroń, nar. 20. 5. 1852, ∞ 10. 2. 1870 Jan Leśniak (Mietniów), vdova ∞ 22. 10. 1878 Józef Leśniak – rodiče Kasper × Katarzyna Szarek „e Lednica inferior“ (index windaki Mietniów, D).",
-        "WOR19 (2. 11.): syn Stanisław (*~1855) – sňatek 1880 Korzkiew uvádí „сынъ Каспра Воронъ и жены его Екатерины урожденной Шарекъ, выробниковъ … въ селеніи Ледница дольны“ (M) – Kasper žil X/1880 (bez „покойнаго“). → † mezi XI/1880 a ~1890."
+        "WOR19 (2. 11.): syn Stanisław (*~1855) – sňatek 1880 Korzkiew uvádí „сынъ Каспра Воронъ и жены его Екатерины урожденной Шарекъ, выробниковъ … въ селеніи Ледница дольны“ (M) – Kasper žil X/1880 (bez „покойнаго“). → † mezi XI/1880 a ~1890.",
+        "Rejstřík jmen ke knihám dělníků solného dolu (Archiwum Historyczne Muzeum Żup Krakowskich Wieliczka, sign. Kw-8, k. 252a; fotografie zaslala Monika Kempa 12. 11. 2026): „Woroń | Caspar | 324 | 1 | provisioniert“ – tedy zápis č. 324 v nejstarší knize dělníků (Heft 1) a poznámka, že odešel do penze (provisioniert); datum úmrtí u něj v rejstříku není (M). Kniha Heft 1 se podle muzea nedochovala. V rejstříku dále Woroń Jakob (648/2, † 1901), Mathias (1188/3, † 13. 8. 1891) a Franz (2228/5; 2574/5, † 18. 4. 1896) – možní příbuzní (K). Pawła rejstřík nezná; „Baron“ jsou samostatné rodiny (žádný Caspar ani Paul) – hypotéza Baron→Woroń rejstříkem nepodpořena."
       ],
       sources: [
         "CAAK KM-10-78 (sňatky Wieliczka – Lednica Górna 1785–1846), snímek 0045_r",
         "Skanoteka id1894 jedn. 4500 sk. 01 (sňatek syna Franciszka 1892)",
         "CAAK KM-10-84 sn. 185 (sňatek dcery Zofie 1875)",
-        "ZA Opava, NAD 165 Sbírka matrik, ř.-k. fara Slezská Ostrava, O 1892–1900 (SO VII 26), sken 127, fol. 250, č. 169"
+        "ZA Opava, NAD 165 Sbírka matrik, ř.-k. fara Slezská Ostrava, O 1892–1900 (SO VII 26), sken 127, fol. 250, č. 169",
+        "Archiwum Historyczne Muzeum Żup Krakowskich Wieliczka, Kw-8 – index nazwisk do ksiąg robotników, k. 252a (Woroń Caspar, 324/Heft 1, provisioniert); foto M. Kempa 12. 11. 2026, 02_matriky_skeny/Wieliczka_indeks_Woron/"
       ],
       scans: [
         {"f":"img/1896_snatek_woron_wludyka.jpg","t":"Sňatek 24. 8. 1896, Polská (Slezská) Ostrava – Ondřej Woroń (vdovec, *19. 10. 1849, syn † Kaspra Woronia × Kateřiny Szarek) × Markéta Włudyka (SO VII 26, fol. 250, č. 169)"},
         {"f":"img/1844_snatek_kasper_woron_szarek.jpg","t":"Sňatek 6. 2. 1844, Lednica Górna (CAAK KM-10-78)"},
         {"f":"img/1892_snatek_franciszek_woron_kasper.jpg","t":"Sňatek syna Franciszka 1892"},
         {"f":"img/1875_snatek_zofia_woron_mastela.jpg","t":"Sňatek dcery Zofie 22. 11. 1875, Lednica Dolna – souhlas „Kasper Woroń ojciec“ (CAAK KM-10-84)"},
-        {"f":"img/1880_snatek_stanislaw_woron.jpg","t":"Sňatek syna Stanisława 10. 11. 1880, Korzkiew (rusky) – „syn Kaspra Woronia a Kateřiny roz. Szarek z Lednice Dolné“"}
+        {"f":"img/1880_snatek_stanislaw_woron.jpg","t":"Sňatek syna Stanisława 10. 11. 1880, Korzkiew (rusky) – „syn Kaspra Woronia a Kateřiny roz. Szarek z Lednice Dolné“"},
+        {"f":"img/wieliczka_indeks_delniku_woron_caspar.jpg","t":"Rejstřík dělníků solného dolu Wieliczka (Kw-8, k. 252a): Woroń Caspar, č. 324, kniha 1, provisioniert"}
       ]
     },
     {
