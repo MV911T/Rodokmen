@@ -2656,7 +2656,7 @@ window.RODOKMEN = {
         "Její otec Josef Šuran držel grunt č. 67 (lánský katastr č. 18) v Nedašově; 10. 3. 1785 ho vrchnost prodala Josefovi a Jiřímu Matůšů (Jiří = její manžel). Josef Šuran tedy do 3/1785 zemřel nebo grunt předal (D) – úmrtí 1760–1820 ve farnosti Brumov nenalezeno, zemřelí 1783 (4012 img 272) jsou vybledlí.",
         "Pozor na jmenovce: Josef Šuran ml., oddaný 22. 9. 1765 s Marinou Mišů, byl syn JIŘÍHO Šurana („Josephum filium Georgij Šuran“, Brumov 4012 img 167R) – není to syn ani totožný s jejím otcem Josefem. Úmrtí jejího otce není v Brumově 1760–1787 (zemřelí přečteni celí).",
         "Sňatek 22. 9. 1765 Nedašov (4012 img 167R, M) – „Josephum filium Georgij Šuran cum … Marina filia Andreae Missij“ – tento Josef je syn JIŘÍHO Šurana, tedy ne Josef st. z gruntu č. 67; s Marininým původem nesouvisí.",
-        "12. 11. 2026 (Chrome, Acta Publica): křest Mariny v opisu Brumov (opis7) 1755 (img 278R–282L) ani 1757 (img 289R–293L) NENÍ a rok 1756 v opisu chybí → nejspíš narozena 1756 (ztracený ročník). V originálu 4012 křty I/1760–VII/1762 (img 2–14) žádné dítě Josefa Šurana z Nedašova; jediný nedašovský Šuran v těchto letech je Stephan Šuran × Anna (děti Mathias 20. 2. 1757, Josef 18. 2. 1760) – jiná rodina (M, negativní)."
+        "12. 11. 2026 (Chrome, Acta Publica): křest Mariny v opisu Brumov (opis7) 1755 (img 278R–282L) ani 1757 (img 289R–293L) NENÍ a rok 1756 v opisu chybí → nejspíš narozena 1756 (ztracený ročník). V originálu 4012 křty I/1760–II/1764 (img 2–23) žádné dítě Josefa Šurana z Nedašova; jediný nedašovský Šuran v těchto letech je Stephan Šuran × Anna (děti Mathias 20. 2. 1757, Josef 18. 2. 1760) – jiná rodina (M, negativní)."
       ],
       sources: [
         "Brumov 4012 img 183",
