@@ -4626,14 +4626,18 @@ window.RODOKMEN = {
       line: "jirik",
       cert: "M",
       b: {"date":"cca 1738","year":1738,"approx":true,"place":"Bolatice"},
+      d: {"date":"28. 2. 1800","year":1800,"place":"Bolatice"},
       notes: [
-        "Dcera Simona Solicha (sňatek 1759); jako vdova prodala 1797 domek synovi Josefovi."
+        "Dcera Simona Solicha (sňatek 1759); jako vdova prodala 1797 domek synovi Josefovi.",
+        "Úmrtí (12. 11. 2026, Chrome – digi.archives.cz): Bolatice H III 5, sk62, „Im Jahre 1800“ č. 5 – pohřbena „den 2ten Märtz“ 1800: „Barbara Irzikin Auszüglerin von Bolatitz, welche am 28 Februari Abend um 9 Uhr gestorben“, katolička, 60 let (*~1740) (M zápis). Manžel ani rodiče v zápisu nejsou; ztotožnění s Barbarou roz. Solichovou se opírá o to, že jako vdova 1797 předala domek synovi (výměnkářka) a věk sedí na sňatek 1759 (D)."
       ],
       sources: [
-        "ZA Opava, NAD 165 Sbírka matrik, Bolatice H III 1 sken 53"
+        "ZA Opava, NAD 165 Sbírka matrik, Bolatice H III 1 sken 53",
+        "ZA Opava, Sbírka matrik, Bolatice H III 5 (Z 1770–1840), sk62 – úmrtí 28. 2. 1800"
       ],
       scans: [
-        {"f":"img/1759_snatek_jirzik_solich.jpg","t":"Sňatek 9. 7. 1759 (H III 1 sken 53)"}
+        {"f":"img/1759_snatek_jirzik_solich.jpg","t":"Sňatek 9. 7. 1759 (H III 1 sken 53)"},
+        {"f":"img/1800_umrti_barbara_irzik.jpg","t":"Úmrtí 28. 2. 1800, Bolatice – „Barbara Irzikin Auszüglerin“, 60 let (H III 5, sk62)"}
       ]
     },
     {
