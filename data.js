@@ -4609,7 +4609,8 @@ window.RODOKMEN = {
       notes: [
         "Otec Franze (sňatek 1759) a Jana (sňatek 1760); 1759–60 žil. Podle V. Štěpána člen růžencového bratrstva 1734, svědek 1737.",
         "Nejstarší doložený Jiřík; dcera Theresia (*cca 1742, H III 1 sken 10).",
-        "Pohřeb (IRZ3, M): Bolatice H III 1, sk87, fol. 101 (zemřelí 26. 2. 1762 – 17. 3. 1763) – „Octobris 24 | Simon Jirzik | Bolaticz | 60 | P. Josephus Kraus“ → pohřben 24. 10. 1762, 60 let, tedy *~1702. Sňatek v Bolaticích 1714–1758 nenalezen – patrně jinde."
+        "Pohřeb (IRZ3, M): Bolatice H III 1, sk87, fol. 101 (zemřelí 26. 2. 1762 – 17. 3. 1763) – „Octobris 24 | Simon Jirzik | Bolaticz | 60 | P. Josephus Kraus“ → pohřben 24. 10. 1762, 60 let, tedy *~1702. Sňatek v Bolaticích 1714–1758 nenalezen – patrně jinde.",
+        "12. 11. 2026: pohřby Bolatice H III 1 1714 – II/1762 (sk56–86) přečteny celé – žádný starší Jirzik/Jiřík, ani Simonova žena či děti; jen děti Josepha Jirzika (1756, 1761). Simonův otec tedy v Bolaticích 1714–62 nezemřel a Simon se tu neženil (sňatky 1714–58 bez něj) → rod Jirziků zřejmě přišel do Bolatic odjinud; hledat v okolních farnostech (D)."
       ],
       sources: [
         "ZA Opava, NAD 165 Sbírka matrik, Bolatice H III 1 sken 53",
