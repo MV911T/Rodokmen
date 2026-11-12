@@ -4599,14 +4599,17 @@ window.RODOKMEN = {
       name: "Simon Jirzik",
       line: "jirik",
       cert: "M",
-      b: {"date":"cca 1705","year":1705,"approx":true},
+      b: {"date":"cca 1702","year":1702,"approx":true},
+      d: {"date":"pohřben 24. 10. 1762","year":1762,"place":"Bolatice"},
       occ: "Bolatice",
       notes: [
         "Otec Franze (sňatek 1759) a Jana (sňatek 1760); 1759–60 žil. Podle V. Štěpána člen růžencového bratrstva 1734, svědek 1737.",
-        "Nejstarší doložený Jiřík; dcera Theresia (*cca 1742, H III 1 sken 10)."
+        "Nejstarší doložený Jiřík; dcera Theresia (*cca 1742, H III 1 sken 10).",
+        "Pohřeb (IRZ3, M): Bolatice H III 1, sk87, fol. 101 (zemřelí 26. 2. 1762 – 17. 3. 1763) – „Octobris 24 | Simon Jirzik | Bolaticz | 60 | P. Josephus Kraus“ → pohřben 24. 10. 1762, 60 let, tedy *~1702. Sňatek v Bolaticích 1714–1758 nenalezen – patrně jinde."
       ],
       sources: [
-        "ZA Opava, NAD 165 Sbírka matrik, Bolatice H III 1 sken 53"
+        "ZA Opava, NAD 165 Sbírka matrik, Bolatice H III 1 sken 53",
+        "ZA Opava, Sbírka matrik, ŘK fara Bolatice, H III 1 (Z), sk87, fol. 101 – pohřeb 24. 10. 1762"
       ],
       scans: [
         {"f":"img/1759_snatek_jirzik_solich.jpg","t":"Sňatek 9. 7. 1759 (H III 1 sken 53)"}
@@ -4634,8 +4637,8 @@ window.RODOKMEN = {
       name: "Joseph Irzik (Jiřík)",
       line: "jirik",
       cert: "M",
-      b: {"date":"cca 1765","year":1765,"approx":true,"place":"Bolatice"},
-      d: {"date":"před 1848","year":1840,"approx":true},
+      b: {"date":"27. 3. 1767","year":1767,"place":"Bolatice"},
+      d: {"date":"10. 9. 1832","year":1832,"place":"Bolatice"},
       father: "franzIr",
       mother: "barbaraSo",
       occ: "domkář v Bolaticích",
@@ -4643,11 +4646,14 @@ window.RODOKMEN = {
       notes: [
         "Sňatek 1793: „Junggesell Joseph hinterlassener Sohn des verst. Franz Jrzik, mit der Jungfer Johanna ehel. Tochter des Stanislaus Duda“ – syn † Franze Jirzika.",
         "30. 3. 1797 koupil od matky Barbory, vdovy po Františkovi, svobodný domek Jiříků (V. Štěpán, Bolatice od pravěku…) – řetězec Simon → Franz → Joseph → Cyrill doložen.",
-        "Hypotéza (K): po smrti Johanny se oženil s Marinou Krajan (děti 1816–1823) a zemřel s ní na choleru 13. 9. 1832."
+        "Hypotéza (K): po smrti Johanny se oženil s Marinou Krajan (děti 1816–1823) a zemřel s ní na choleru 13. 9. 1832.",
+        "Křest (IRZ3, M): Bolatice H III 2, sk12, fol. 12, 1767 č. 14 – „den 27ten hujus [Martii] 1767 … des Haussmans Frantz Jrzik von seinem Weibe Barbara am 27ten Martii früh um 7 Uhr gebohrnes Knäblein … Nahmen Joseph“; kmotři Fabian Sniehota(?) Haussmann a Anna, žena Thomase Scholtise, oba z Bolatic. (Index H III 11 tento křest vynechává.)",
+        "Úmrtí (IRZ3, M): Bolatice H III 5, sk145, fol. 146, 1832 č. 12 – zemřel 10. 9. 1832 v 11 h večer, pohřben 13. 9.; „Josephus Irzik inquilinus (Häusler und Ziegler)“, 65 let 3 měs., příčina „Chollera“. Hned další zápis č. 13: „Marina uxor Defuncti Josephi Irzik … geb. Krajan“, zemřela 13. 9. 1832 → potvrzuje jeho druhé manželství s Marinou roz. Krajan (D)."
       ],
       sources: [
         "ZA Opava, NAD 165 Sbírka matrik, Bolatice H III 4 (O 1770–1840) sken 25",
-        "ZA Opava, NAD 165 Sbírka matrik, Bolatice H III 2 fol. 107"
+        "ZA Opava, NAD 165 Sbírka matrik, Bolatice H III 2 fol. 107",
+        "ZA Opava, Sbírka matrik, ŘK fara Bolatice, H III 2 (N 1765–), sk12 – křest 27. 3. 1767; H III 5 (Z), sk145 – úmrtí 10. 9. 1832 (agent IRZ3, 7. 10. 2026)"
       ],
       scans: [
         {"f":"img/1793_snatek_irzik_duda.jpg","t":"Sňatek 12. 11. 1793 (H III 4 sken 25, č. 6)"},
@@ -4661,16 +4667,18 @@ window.RODOKMEN = {
       line: "jirik",
       cert: "M",
       b: {"date":"cca 1772","year":1772,"approx":true,"place":"Bolatice"},
-      d: {"date":"1810","year":1810,"approx":true,"place":"Bolatice"},
+      d: {"date":"15. 1. 1810","year":1810,"place":"Bolatice"},
       father: "stanislausDu",
       notes: [
         "Matka Cyrilla (*1796): „Johanna gebohrne Dudin“.",
         "Sňatek 1793 (21 let): „Johanna ehel. Tochter des Stanislaus Duda“; matka nejspíš Catharina Hrziwnatzky (sňatek 1762) – PRAVDĚPODOBNÉ.",
         "KANDIDÁTNÍ křest 29. 9. 1771 Bolatice (D): dcera „des Kretschmers Stanislaus Duda von seiner Ehefrau Catharina“, jména „Theresia (?) Johanna“; kmotři Simon (?) Duda a Barbara, žena zahradníka Josepha Fusze. Jediná Johanna Stanislausova v letech 1771–73; věk při sňatku 1793 (21) sedí, věk při úmrtí 1810 (36) je o ~2 roky nižší. ZA Opava, Bolatice H III 2 sken 30.",
-        "Poslední dítě Anton *17. 1. 1807 (index)."
+        "Poslední dítě Anton *17. 1. 1807 (index).",
+        "Úmrtí (IRZ3, M): Bolatice H III 5, sk95, fol. 96, 1810 č. 4 – „den 17 Januar … Johanna Ehe Weib des Joseph Irzik Häußler von Bolatitz, welche am 15ten hujus Abend um 11 Uhr gestorben | Catho | 36“ → zemřela 15. 1. 1810, pohřbena 17. 1., 36 let (*~1773/74)."
       ],
       sources: [
-        "ZA Opava, NAD 165 Sbírka matrik, Bolatice H III 2 fol. 107"
+        "ZA Opava, NAD 165 Sbírka matrik, Bolatice H III 2 fol. 107",
+        "ZA Opava, Sbírka matrik, ŘK fara Bolatice, H III 5 (Z), sk95, fol. 96 – úmrtí 15. 1. 1810"
       ],
       scans: [
         {"f":"img/1793_snatek_irzik_duda.jpg","t":"Sňatek 12. 11. 1793 (H III 4 sken 25, č. 6)"},
