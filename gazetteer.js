@@ -8,6 +8,7 @@ window.RODOKMEN_GAZ = [
   { n: 'Opava', a: ['Opava'], lat: 49.94, lon: 17.9 },
   { n: 'Kežmarok', a: ['Kežmarok'], lat: 49.135, lon: 20.43 },
   { n: 'Uherský Brod', a: ['Uherský Brod'], lat: 49.025, lon: 17.65 },
+  { n: 'Uherské Hradiště', a: ['Uherské Hradiště'], lat: 49.07, lon: 17.46 },
   // Haná
   { n: 'Věrovany', a: ['Věrovany'], lat: 49.46, lon: 17.29 },
   { n: 'Dub nad Moravou', a: ['Dub (nad Moravou)', 'Dub nad Moravou'], lat: 49.48, lon: 17.28 },
