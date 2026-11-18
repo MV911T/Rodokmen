@@ -736,6 +736,6 @@ requestAnimationFrame(()=>{ const c=document.querySelector(`.card[data-id="${D.r
   WV.addEventListener('click',e=>{ const b=e.target.closest('[data-go]'); if(!b) return; show('tree'); window.RV_focus&&window.RV_focus(b.dataset.go); });
   try{ const t=localStorage.getItem('rv-tab'); if(t==='map'||t==='wide'||t==='print') show(t); }catch(e){}
   if(location.hash==='#mapa') show('map'); if(location.hash==='#okruh') show('wide'); if(location.hash==='#tisk') show('print');
-  document.getElementById('printStamp').textContent='Vygenerováno 10. 11. 2026 ze stejných dat jako tento web ('+D.people.length+' osob).';
+  document.getElementById('printStamp').textContent='Vygenerováno 18. 11. 2026 ze stejných dat jako tento web ('+D.people.length+' osob).';
 })();
 </script>
