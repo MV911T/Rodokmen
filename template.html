@@ -305,7 +305,7 @@ input[type=checkbox]{accent-color:var(--accent);width:16px;height:16px;vertical-
 .evband{background:rgba(217,182,115,.07);border-color:rgba(217,182,115,.25)}
 .gridline{background:repeating-linear-gradient(90deg,rgba(255,240,210,.05) 0 6px,transparent 6px 12px)}
 .gridline.century{background:repeating-linear-gradient(90deg,rgba(217,182,115,.22) 0 8px,transparent 8px 14px)}
-svg.links path{stroke:rgba(236,228,210,.2);stroke-width:1.8}
+svg.links path{stroke:rgba(217,182,115,.55);stroke-width:2;stroke-linecap:round}
 svg.links path.mat{stroke:var(--mat);stroke-width:2.6;filter:drop-shadow(0 0 4px rgba(240,112,95,.55))}
 svg.links path.pat{stroke:var(--pat);stroke-width:2.6;filter:drop-shadow(0 0 4px rgba(106,166,240,.55))}
 .card{background:linear-gradient(180deg,#171d23,#0f1317);border:1px solid rgba(255,240,210,.09);border-radius:10px;padding:7px 9px;box-shadow:0 1px 0 rgba(255,255,255,.04) inset,0 6px 18px rgba(0,0,0,.45);transition:opacity .3s,border-color .25s,box-shadow .3s,transform .25s var(--ease)}
@@ -551,9 +551,10 @@ function render(){
     ps.forEach(pid=>{
       const pp = pos[pid], px = pp.x+cw/2;
       const py = pp.y-14;
-      const my = cy + Math.max(12,(py-cy)/2);
       const path=document.createElementNS('http://www.w3.org/2000/svg','path');
-      path.setAttribute('d',`M${cx},${cy} V${my} H${px} V${py}`); path.dataset.c=p.id; path.dataset.p=pid;
+      // soft S-curve with vertical tangents (same shape as the threads in the Animace tab)
+      const k=Math.max(18,Math.abs(py-cy)*.55)*(py>=cy?1:-1);
+      path.setAttribute('d',`M${cx},${cy} C${cx},${cy+k} ${px},${py-k} ${px},${py}`); path.dataset.c=p.id; path.dataset.p=pid;
       // direct maternal line (mother of mother of …) and paternal line (father of father of …) from the root
       if(MAT.has(p.id) && pid===p.mother) path.classList.add('mat');
       if(PAT.has(p.id) && pid===p.father) path.classList.add('pat');
