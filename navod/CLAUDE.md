@@ -17,7 +17,7 @@
 3. Míra jistoty (`cert`)
 4. Start: co udělat po slově „začni“
 5. Struktura projektu a šablony
-6. Web (startovní sada, data, funkce, odvozené údaje, nástroje, nasazení, test, tisková verze, animace)
+6. Web (startovní sada, data, funkce, odvozené údaje, nástroje, nasazení, test, tisková verze, animace, design)
 7. Cyklus po každém nálezu
 8. Prameny – kde hledat
 9. Archivy v praxi (přístupy, formáty, blokace, triky)
@@ -172,12 +172,13 @@ Hotové, odladěné nástroje z původního projektu s **vymyšlenou ukázkovou 
 | `web/gazetteer.js` | souřadnice obcí pro mapu (ukázka: Brno, Třebíč, Jihlava) |
 | `web/geo.js` | hranice států a orientační města pro mapu – **výřez střední Evropy** (lat 48,6–50,45, lon 13,2–21,6) |
 | `05_nastroje/tisk/` | generátor plakátu: `poster.html`, `render.py`, `audit.py`, `crop.py` (6.11) |
+| `05_nastroje/design/shots.py` | kontrola designu: screenshoty všech záložek (počítač i mobil) + automatické kontroly (6.13) |
 
 **Postup převzetí (udělej hned v kroku 4):**
 1. Zkopíruj `web/` a `05_nastroje/` do projektu, ve `web/` spusť `./build.sh` a otevři `index.html` – ověř, že ukázka funguje (Playwright, všechny záložky).
 2. Nahraď ukázková data skutečnými přes `datatool.js` (`root`, `lines`, `people`, `places`, `story`, `timeline`, `moves`, `events`, `collateral`). Nastav `publicLiving` podle odpovědi uživatele (kap. 4).
 3. Přepiš texty vázané na ukázkovou osobu: `<title>` a `<h1>` („Rodokmen Tomáše Pospíšila“), tlačítko „Na Tomáše“, „počítáno od Tomáše“, „Generace se počítají od Tomáše“, „Nahoře je Tomáš“ v popisu plakátu, hlavičku v `datatool.js` („Family tree of …“). Hledej `Tomáš`/`Tomáše` – po převzetí nesmí v nástrojích zůstat.
-4. Barvy větví: v `template.html` jsou tři bloky `--l-<rod>:` (světlý režim, tmavý režim dvakrát) s ukázkovými rody `pospisil, hromadka, …`. Přejmenuj je na klíče z `D.lines` (validátor hlásí chybějící barvu jako chybu).
+4. Barvy větví: v `template.html` je jeden blok `--l-<rod>:` (v `:root`, tmavý vzhled) s ukázkovými rody `pospisil, hromadka, …`. Přejmenuj je na klíče z `D.lines` (validátor hlásí chybějící barvu jako chybu).
 5. Adresy: v `publish.sh` a v `05_nastroje/tisk/poster.html` nahraď `UZIVATEL.github.io/REPO` skutečnou adresou GitHub Pages (QR kód na plakátu!). Větu „Prameny: …“ v patičce plakátu uprav podle skutečných archivů.
 6. Mapa: leží-li předci mimo výřez `geo.js`, vygeneruj nový `geo.js` ve stejném formátu (`lat0, lat1, lon0, lon1, W, H, countries[{id,name,d}], labels, cities[{n,lat,lon,r,anchor}]`) z Natural Earth 1:50m (balík `world-atlas`, TopoJSON → SVG cesty v rovnoběžkové projekci výřezu).
 7. Animace (6.12) a odvozené údaje (6.3) se přizpůsobí datům samy – nic v nich neměň.
@@ -220,7 +221,7 @@ window.RODOKMEN = {
 - **Záložka „Animace“:** 3D kužel předků „Kolik lidí bylo potřeba, aby se narodil…?“ – počet míst se každou generací zdvojnásobí, doložení předci svítí (viz 6.12).
 - **Zoom:** lišta dole (−, posuvník, +, „Celý strom“, 100 %), Ctrl/⌘ + kolečko, sevření prstů. Chrome posílá ctrl+wheel, **Safari `gesturestart/gesturechange`**, obsluž obojí a zabraň zvětšení celé stránky. Dotykové sevření, posun tažením. Měřítko si pamatuj v localStorage (vždy v try/catch).
 - **Hledání** osoby podle jména (bez diakritiky). Filtry rodů jen pro rody s 5 a více osobami.
-- Světlý i tmavý režim, čitelné na mobilu.
+- Jednotný tmavý „kino“ vzhled s animacemi (6.13), čitelné na mobilu.
 
 ### 6.3 Automaticky odvozené údaje (nikdy nepiš ručně do textů)
 Všechno se počítá z dat při načtení stránky. Definice, které se v praxi osvědčily:
@@ -474,7 +475,7 @@ web/print/        ← náhled, PDF, TIFF LZW, JPEG (commitují se s webem, publi
   - mřížku tří odkazů `download` (u každého formát, rozměr v px, komprese, velikost);
   - `<dl>` s parametry.
 - V přepínači záložek: `PV.hidden = m!=='print'`, `aria-selected`, uložení do `localStorage` (v try/catch) a hash `#tisk`.
-- Styly přes stávající tokeny (`--surface`, `--rule`, `--link`, `--muted`), takže funguje i tmavý režim.
+- Styly přes stávající tokeny (`--surface`, `--rule`, `--link`, `--muted`), takže sedí do jednotného vzhledu (6.13).
 - `publish.sh` musí v `git add` obsahovat `print`.
 
 ### 6.12 Animace (3D kužel předků)
@@ -557,6 +558,21 @@ Playwright (Chromium s `--use-angle=swiftshader --enable-unsafe-swiftshader`):
 Screenshoty si prohlédni (jas, překryvy textu). Po publikaci ověř, že živá stránka obsahuje `id="tabAnim"`.
 
 ---
+
+### 6.13 Vzhled („kino“) a kontrola designu
+Celý web má jeden tmavý vzhled ve stylu záložky Animace (téměř černé pozadí, teplá zlatá, písmo Spectral pro jména a nadpisy, IBM Plex Sans Condensed pro data). Světlý režim není – vzhled je záměrně jednotný.
+- **Barvy jen přes proměnné v `:root`** (`--bg`, `--surface`, `--ink`, `--muted`, `--accent` = zlatá, `--hair` = jemná zlatá linka, `--glass*`, `--l-<rod>`, `--mat`, `--pat`, `--land*`). Nové prvky nikdy nestyluj natvrdo bílou nebo světle šedou.
+- **Vrstva „Cinema layer“** na konci `<style>`: hlavička (sticky, sklo s rozmazáním, zlatý nadpis s pomalým leskem, kicker „Předkové doložení od roku …“ počítaný z dat), segmentové záložky s posuvným zlatým indikátorem, skleněná tlačítka a čipy, karty stromu s jemnou září (kořen pulzuje), záře přímé mateřské/otcovské linie, skleněný dialog s animací otevření, karty v Širším okruhu, mapě, časové ose a tiskové verzi.
+- **Pohybová vrstva** (samostatný `<script>` před Animací):
+  - posuvný indikátor záložek (na mobilu se lišta záložek posouvá a vybraná se vystředí);
+  - úvod stromu: karty se rozsvítí shora dolů po generacích a spojnice se „dokreslí“ (`pathLength=1` + `stroke-dashoffset`), po ~3,5 s se třídy odstraní;
+  - přechod mezi záložkami (fade-up při zobrazení sekce);
+  - postupné odkrývání obsahu při posouvání (`IntersectionObserver`, třídy `.rv`/`.in`; `MutationObserver` přidá i nově vykreslené rodiny).
+  - Vše respektuje `prefers-reduced-motion` (bez animací, obsah hned viditelný).
+- **Kontrola designu po každé změně vzhledu:** `python3 05_nastroje/design/shots.py web/index.html <výstup>`.
+  - Vyfotí každou záložku i detail osoby na 1440×900 a 390×844 a složí přehled `_sheet.png`. Ten si vždy prohlédni.
+  - Automaticky hlásí JS chyby, vodorovné přetečení stránky, kontrast textu pod WCAG AA (počítá skutečně vykreslené barvy), oříznutý text a na mobilu dotykové cíle menší než 32 px.
+  - Cíl je výstup „OK – no issues“. Odchylku nech jen s důvodem (např. zaškrtávátko uvnitř popisku, kde je cílem celý popisek).
 
 ## 7. Cyklus po každém nálezu
 
@@ -943,7 +959,7 @@ Než rodokmen předáš (dárek), projdi:
 Když uživatel výzkum ukončí, práce se přesouvá na to, co rodina skutečně uvidí. Agenty už nespouštěj; pracuj přímo a po každé ucelené změně publikuj.
 
 ### 17.1 Web
-1. **Nejdřív se zeptej, co uživatele ruší** (jedna otázka). Pak projdi web sám v Chromiu, WebKitu a na mobilu (390 px) a sepiš nálezy: rozbité odkazy, chybějící skeny (HTTP 404), přetékající texty, nečitelný tmavý režim, pomalé načítání velkých obrázků.
+1. **Nejdřív se zeptej, co uživatele ruší** (jedna otázka). Pak projdi web sám v Chromiu, WebKitu a na mobilu (390 px) a sepiš nálezy: rozbité odkazy, chybějící skeny (HTTP 404), přetékající texty, nízký kontrast (`shots.py`, 6.13), pomalé načítání velkých obrázků.
 2. **Audit karet** (kap. 15): zastaralé odhady, poznámky s vyvrácenými hypotézami, poznámky typu „další krok: …“ (na veřejném webu nepatří – přesuň je do TODO), pořadí fakta → kandidáti, jednotný styl dat („4. 10. 1904“).
 3. **Příběhy větví** přepiš podle konečného stavu: co se ví, co zůstalo otevřené a proč (např. „matriky před rokem 1703 se nedochovaly“). Žádná čísla natvrdo.
 4. **Animace** (6.12) se aktualizuje sama, ale po každé větší změně dat ji přehraj a zkontroluj podle 6.12.3.

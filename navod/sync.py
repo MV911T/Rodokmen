@@ -67,6 +67,7 @@ files = {
     '05_nastroje/tisk/poster.html': po,
 }
 for f in ['render.py', 'audit.py', 'crop.py']: files['05_nastroje/tisk/' + f] = read(os.path.join(TISK, f))
+files['05_nastroje/design/shots.py'] = read(os.path.join(WEB, '..', '05_nastroje', 'design', 'shots.py'))
 
 # ---------- leak check (everything except the example data)
 env = {}
