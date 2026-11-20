@@ -1,0 +1,932 @@
+<title>Rodokmen Tomáše Pospíšila</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,400;0,600;1,400&family=IBM+Plex+Sans+Condensed:wght@400;500;600&display=swap">
+<style>
+/* Layout: root person at the top, ancestors descend by birth year (newest top, oldest bottom); year ruler pinned right; details in a dialog */
+:root{
+  --bg:#e9eef0; --surface:#ffffff; --ink:#18262e; --muted:#5b6b73; --rule:#c9d3d8; --grid:#dbe3e6;
+  --accent:#a3362b;           /* red register ink */
+  --link:#24506b;
+  --l-pospisil:#3f6e8c; --l-hromadka:#7a5c99; --l-bartos:#a0577a; --l-kolar:#3d7d5c;
+  --l-simek:#8a7a2e; --l-lukes:#a3612d; --l-zak:#2f7a80; --l-malec:#6b6f2f; --l-urban:#7a5f48;
+  --shadow:0 1px 2px rgba(24,38,46,.08),0 4px 14px rgba(24,38,46,.06);
+  --mat:#c93a2e; --pat:#2563b8; --land:#eceae4; --land-cz:#fbfaf6; --land-pl:#f6f0ee; --land-sk:#eef3f1; --border:#9aa8af;
+  --f-name:"Spectral",Georgia,"Times New Roman",serif;
+  --f-data:"IBM Plex Sans Condensed","Arial Narrow",system-ui,sans-serif;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --bg:#11171b; --surface:#1a232a; --ink:#e3eaed; --muted:#93a3ab; --rule:#2f3c44; --grid:#1f2a31;
+  --accent:#e2735f; --link:#8cc0dd;
+  --l-pospisil:#7fb0d0; --l-hromadka:#b49ad4; --l-bartos:#d68fb0; --l-kolar:#7fc29d;
+  --l-simek:#cdbb66; --l-lukes:#e0a06a; --l-zak:#6fc0c6; --l-malec:#b3b86a; --l-urban:#c9a98a;
+  --shadow:0 1px 2px rgba(0,0,0,.4),0 4px 14px rgba(0,0,0,.3); --mat:#f0705f; --pat:#6aa6f0; --land:#1a2228; --land-cz:#25313a; --land-pl:#2a2c33; --land-sk:#22302d; --border:#566770; color-scheme:dark }}
+:root[data-theme="dark"]{
+  --bg:#11171b; --surface:#1a232a; --ink:#e3eaed; --muted:#93a3ab; --rule:#2f3c44; --grid:#1f2a31;
+  --accent:#e2735f; --link:#8cc0dd;
+  --l-pospisil:#7fb0d0; --l-hromadka:#b49ad4; --l-bartos:#d68fb0; --l-kolar:#7fc29d;
+  --l-simek:#cdbb66; --l-lukes:#e0a06a; --l-zak:#6fc0c6; --l-malec:#b3b86a; --l-urban:#c9a98a;
+  --shadow:0 1px 2px rgba(0,0,0,.4),0 4px 14px rgba(0,0,0,.3); --mat:#f0705f; --pat:#6aa6f0; --land:#1a2228; --land-cz:#25313a; --land-pl:#2a2c33; --land-sk:#22302d; --border:#566770; color-scheme:dark }
+
+html,body{height:100%}
+body{background:var(--bg);color:var(--ink);font-family:var(--f-data);margin:0;display:flex;flex-direction:column}
+header{display:flex;flex-wrap:wrap;align-items:flex-end;gap:12px 24px;padding:14px 16px 10px;border-bottom:1px solid var(--rule)}
+header h1{font-family:var(--f-name);font-weight:600;font-size:1.5rem;margin:0;text-wrap:balance}
+header .meta{color:var(--muted);font-size:.8rem;letter-spacing:.02em}
+.tools{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin-left:auto}
+.tools input{font:inherit;font-size:.85rem;padding:6px 10px;border:1px solid var(--rule);border-radius:6px;background:var(--surface);color:var(--ink);width:180px;max-width:46vw}
+.tools button{font:inherit;font-size:.85rem;padding:6px 10px;border:1px solid var(--rule);border-radius:6px;background:var(--surface);color:var(--ink);cursor:pointer}
+.tools button:focus-visible,.tools input:focus-visible,.card:focus-visible,.chip:focus-visible,dialog button:focus-visible,.plink:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.legend{display:flex;flex-wrap:wrap;gap:6px 14px;padding:8px 16px;font-size:.75rem;color:var(--muted);border-bottom:1px solid var(--rule)}
+.chip{display:inline-flex;align-items:center;gap:6px;border:1px solid var(--rule);border-radius:999px;padding:3px 10px;background:var(--surface);color:var(--ink);font:inherit;font-size:.75rem;cursor:pointer}
+.chip[aria-pressed="true"]{border-color:var(--ink)}
+.sw{width:10px;height:10px;border-radius:2px;display:inline-block}
+.certs{display:flex;flex-wrap:wrap;gap:6px 12px;align-items:center;margin-left:auto;min-width:0}
+.cert{display:inline-flex;align-items:center;gap:5px}
+.dot{width:9px;height:9px;border-radius:50%;display:inline-block;border:1.5px solid var(--ink)}
+.dot.M{background:var(--ink)} .dot.D{background:var(--muted);border-color:var(--muted)} .dot.R{background:transparent} .dot.K{background:transparent;border-style:dashed}
+
+#scroller{flex:1;overflow:auto;position:relative;min-height:0}
+#inner{display:flex;width:max-content;min-width:100%}
+#stage{position:relative;flex:none;overflow:hidden}
+#canvas{position:absolute;left:0;top:0;transform-origin:0 0}
+#scroller{touch-action:pan-x pan-y}
+#scroller{cursor:grab}
+#scroller.panning{cursor:grabbing;user-select:none;-webkit-user-select:none}
+#scroller.panning .card{cursor:grabbing}
+#zoombar{display:flex;align-items:center;gap:8px;padding:8px 16px calc(8px + env(safe-area-inset-bottom,0px));border-top:1px solid var(--rule);background:var(--surface);font-size:.85rem}
+#zoombar button{font:inherit;font-size:.85rem;padding:5px 10px;border:1px solid var(--rule);border-radius:6px;background:var(--bg);color:var(--ink);cursor:pointer;min-width:34px}
+#zoombar button:focus-visible,#zoombar input:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+#zoombar input[type=range]{flex:1;max-width:340px;min-width:80px;accent-color:var(--accent)}
+#zoombar output{min-width:3.6em;text-align:right;font-variant-numeric:tabular-nums;color:var(--muted)}
+#zoombar[hidden]{display:none}
+@media (max-width:520px){ #zoombar{gap:6px;padding-inline:10px} #z100{display:none} }
+#ruler{position:sticky;right:var(--evw);flex:none;width:58px;background:var(--bg);border-left:1px solid var(--rule);z-index:3}
+:root{--evw:176px}
+#events{position:sticky;right:0;flex:none;width:var(--evw);background:var(--surface);border-left:1px solid var(--rule);z-index:3;overflow:hidden}
+.evdot{position:absolute;left:5px;width:7px;height:7px;border-radius:50%;background:var(--muted);transform:translateY(-50%)}
+.evdot.major{background:var(--accent)}
+.evl{position:absolute;left:16px;right:4px;font-size:.7rem;line-height:1.2;color:var(--ink)}
+.evl.major{font-weight:600}
+.evband{position:absolute;left:0;right:0;background:color-mix(in srgb,var(--accent) 16%,transparent);border-top:1px solid color-mix(in srgb,var(--accent) 55%,transparent);border-bottom:1px solid color-mix(in srgb,var(--accent) 55%,transparent)}
+.evl .s{display:none}
+@media (max-width:520px){ :root{--evw:92px} .evl .l{display:none} .evl .s{display:inline} }
+.tick{position:absolute;right:8px;font-size:.72rem;color:var(--muted);font-variant-numeric:tabular-nums;transform:translateY(-50%)}
+.tick.century{color:var(--ink);font-weight:600}
+.gridline{position:absolute;left:0;right:0;height:1px;background:repeating-linear-gradient(90deg,var(--grid) 0 6px,transparent 6px 12px)}   /* year lines dashed, so they never look like family links */
+.gridline.century{background:repeating-linear-gradient(90deg,var(--rule) 0 8px,transparent 8px 14px)}
+svg.links{position:absolute;inset:0;pointer-events:none;overflow:visible}
+svg.links path{fill:none;stroke:color-mix(in srgb,var(--muted) 55%,var(--rule));stroke-width:2.2}
+svg.links path.mat{stroke:var(--mat);stroke-width:3.2}
+svg.links path.pat{stroke:var(--pat);stroke-width:3.2}
+.card.mat{box-shadow:inset 3px 0 0 var(--mat),var(--shadow)}
+.card.pat{box-shadow:inset 3px 0 0 var(--pat),var(--shadow)}
+.lin{display:inline-flex;align-items:center;gap:5px}
+.lin i{display:inline-block;width:18px;height:3px;border-radius:2px}
+
+.card{position:absolute;width:var(--cw);box-sizing:border-box;background:var(--surface);border:1px solid var(--rule);border-radius:6px;padding:6px 8px 6px 8px;box-shadow:var(--shadow);cursor:pointer;text-align:left;font:inherit;color:inherit;transition:opacity .15s,border-color .15s}
+.card.K,.card.R{border-style:dashed}
+.card .top{display:flex;align-items:flex-start;gap:6px}
+.card .sw{margin-top:5px;flex:none}
+.card .nm{font-family:var(--f-name);font-weight:600;font-size:.86rem;line-height:1.15;overflow:hidden;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical}
+.card .mn{font-size:.7rem;color:var(--muted);margin-top:1px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.card .yr{display:flex;justify-content:space-between;align-items:flex-end;gap:4px;margin-top:3px;font-size:.7rem;line-height:1.25;font-variant-numeric:tabular-nums}
+.card .yr .dot{width:7px;height:7px;border-width:1.3px}
+.card.root{border-color:var(--accent);border-width:2px}
+.card.dim{opacity:.22}
+.card.hit{border-color:var(--accent)}
+.card:hover{border-color:var(--ink)}
+
+dialog{border:1px solid var(--rule);border-radius:10px;background:var(--surface);color:var(--ink);padding:0;width:min(560px,calc(100vw - 32px));max-height:min(80vh,720px);box-shadow:0 20px 60px rgba(0,0,0,.25)}
+dialog::backdrop{background:rgba(10,18,22,.45)}
+.dlg{padding:18px 20px 20px;overflow:auto;max-height:inherit;box-sizing:border-box}
+.dlg h2{font-family:var(--f-name);font-weight:600;font-size:1.35rem;margin:0;padding-right:36px;text-wrap:balance}
+.dlg .sub{color:var(--muted);font-size:.85rem;margin-top:2px}
+.dlg .x{position:absolute;top:12px;right:12px;border:1px solid var(--rule);background:var(--surface);color:var(--ink);border-radius:6px;width:30px;height:30px;cursor:pointer;font-size:1rem}
+.badge{display:inline-flex;align-items:center;gap:6px;font-size:.75rem;border:1px solid var(--rule);border-radius:999px;padding:2px 9px;margin-top:8px}
+dl.facts{display:grid;grid-template-columns:max-content 1fr;gap:6px 14px;margin:16px 0 0;font-size:.9rem}
+dl.facts dt{color:var(--muted);font-size:.72rem;text-transform:uppercase;letter-spacing:.06em;padding-top:3px}
+dl.facts dd{margin:0;min-width:0}
+.plink{background:none;border:0;padding:0;font:inherit;color:var(--link);cursor:pointer;text-decoration:underline;text-underline-offset:2px}
+.dlg h3{font-size:.72rem;color:var(--muted);text-transform:uppercase;letter-spacing:.06em;margin:18px 0 6px;font-weight:600}
+.dlg ul{margin:0;padding-left:18px;font-size:.9rem;line-height:1.45}
+.dlg li+li{margin-top:4px}
+.src{font-size:.82rem;color:var(--muted)}
+.scans{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:10px}
+.scan{border:1px solid var(--rule);border-radius:6px;overflow:hidden;background:var(--bg);cursor:zoom-in;padding:0;font:inherit;color:inherit;text-align:left}
+.scan img{display:block;width:100%;height:110px;object-fit:cover;object-position:top;filter:contrast(1.05)}
+.scan span{display:block;font-size:.72rem;padding:5px 7px;color:var(--muted)}
+#viewer{position:fixed;inset:0;background:rgba(8,12,15,.92);display:flex;flex-direction:column;z-index:20}
+#viewer[hidden]{display:none}
+#viewer .bar{display:flex;justify-content:space-between;align-items:center;gap:12px;color:#e6ecef;padding:10px 16px;font-size:.85rem}
+#viewer .bar button{background:transparent;color:#e6ecef;border:1px solid #5a6b74;border-radius:6px;padding:4px 10px;cursor:pointer;font:inherit}
+#viewer .pane{flex:1;overflow:auto;cursor:zoom-in}
+#viewer .pane img{display:block;width:100%;height:auto;max-width:none}
+#viewer .pane.fit img{width:auto;max-width:100%;max-height:100%;margin:auto}
+#viewer .pane.fit{display:flex;cursor:zoom-in}
+
+.tabs{display:flex;gap:4px}
+.tabs button{font:inherit;font-size:.85rem;padding:6px 12px;border:1px solid var(--rule);border-radius:6px;background:var(--surface);color:var(--muted);cursor:pointer}
+.tabs button[aria-selected="true"]{color:var(--ink);border-color:var(--ink);font-weight:600}
+#mapView{flex:1;overflow:auto;padding:16px;box-sizing:border-box}
+#wideView{flex:1;overflow:auto;padding:16px;box-sizing:border-box}
+#printView{flex:1;overflow:auto;padding:16px;box-sizing:border-box}
+#animView{flex:1;position:relative;overflow:hidden;background:#000;color:#ece4d2;min-height:440px;font-family:var(--f-data)}
+#animCanvas{position:absolute;inset:0;width:100%;height:100%;display:block;touch-action:none;cursor:grab}
+.ahud{position:absolute;top:18px;left:50%;transform:translateX(-50%);text-align:center;pointer-events:none;width:min(92%,640px)}
+.akick{font-size:.72rem;letter-spacing:.22em;color:#b9ad95}
+.anum{font-family:var(--f-name);font-weight:600;font-size:clamp(2.4rem,7vw,4.2rem);line-height:1.05;font-variant-numeric:tabular-nums;color:#fff4dc;text-shadow:0 0 24px rgba(255,200,120,.35)}
+.aq{font-size:clamp(.9rem,2.2vw,1.1rem);letter-spacing:.04em;color:#f3ead8;margin-top:2px}
+.aknown{font-size:.78rem;color:#d9b673;margin-top:6px;letter-spacing:.06em}
+.aruler{position:absolute;left:14px;bottom:64px;margin:0;padding:0;list-style:none;font-size:.72rem;font-variant-numeric:tabular-nums;color:#8d8576;pointer-events:none}
+.aruler li{display:grid;grid-template-columns:3.2em 34px 3.8em 5em;align-items:center;gap:6px;height:1.55em;opacity:0;transition:opacity .5s}
+.aruler li.on{opacity:.75}.aruler li.cur{opacity:1;color:#ffe2a8}
+.aruler i{height:1px;background:currentColor;opacity:.5}.aruler b{font-weight:500;text-align:right}.aruler em{font-style:normal;color:#d9b673;font-size:.68rem}
+#animView.narrow .aruler{display:none}
+#animView.narrow .ahint{display:none}
+#animView.narrow .asum{bottom:56px;font-size:.8rem;padding:8px 30px 8px 12px}
+.ax{position:absolute;top:4px;right:6px;border:0;background:none;color:#b9ad95;font-size:1.2rem;line-height:1;cursor:pointer;padding:4px}
+.alabel{position:absolute;left:0;top:0;margin:14px 0 0;white-space:nowrap;font-size:.74rem;letter-spacing:.06em;color:#f6e7c8;text-shadow:0 0 6px #000,0 0 12px #000;pointer-events:none;translate:-50% 0;opacity:0}
+.alabel.root{font-size:.95rem;letter-spacing:.3em;font-weight:600;margin-top:22px}
+.atip{position:absolute;max-width:240px;background:rgba(16,20,24,.92);border:1px solid #4a4436;border-radius:8px;padding:8px 10px;font-size:.8rem;line-height:1.4;color:#efe6d4;pointer-events:none}
+.atip b span{font-weight:400;color:#b9ad95}.atip small{display:block;color:#9a917f;margin-top:4px}
+.asum{position:absolute;right:16px;bottom:62px;width:min(calc(100% - 32px),380px);background:rgba(10,13,16,.78);border:1px solid #3a3529;border-radius:10px;padding:10px 16px;font-size:.88rem;line-height:1.5;color:#efe6d4;animation:afade 1.2s ease}
+.asum p{margin:.3em 0}.asum b{color:#ffe2a8}
+@keyframes afade{from{opacity:0;transform:translateY(10px)}}
+.actl{position:absolute;left:0;right:0;bottom:0;display:flex;flex-wrap:wrap;align-items:center;gap:8px;padding:10px 14px calc(10px + env(safe-area-inset-bottom,0px));background:linear-gradient(transparent,rgba(5,7,10,.9))}
+.actl button{font:inherit;font-size:.85rem;padding:6px 12px;border:1px solid #4a4436;border-radius:6px;background:#12171b;color:#efe6d4;cursor:pointer}
+.actl button:focus-visible{outline:2px solid #d9b673;outline-offset:2px}
+.ahint{font-size:.74rem;color:#8d8576;margin-left:auto}
+.aload{position:absolute;inset:0;display:grid;place-items:center;margin:0;color:#b9ad95;font-size:.9rem}
+@media (prefers-reduced-motion:reduce){.asum{animation:none}.aruler li{transition:none}}
+.print{max-width:1300px;margin:0 auto}
+.print h2{font-family:var(--f-name);font-weight:600;font-size:1.3rem;margin:0 0 6px}
+.print p{margin:0 0 12px;max-width:75ch;line-height:1.5}
+.print .prev{display:block;text-decoration:none;width:100%;padding:0;border:1px solid var(--rule);border-radius:8px;overflow:hidden;background:var(--surface);cursor:zoom-in;box-shadow:var(--shadow)}
+.print .prev img{display:block;width:100%;height:auto}
+.print .cap{color:var(--muted);font-size:.82rem;margin:6px 0 18px}
+.print .dl{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:10px;margin:0 0 18px}
+.print .dl a{display:block;padding:12px 14px;border:1px solid var(--rule);border-left:4px solid var(--link);border-radius:8px;background:var(--surface);color:var(--ink);text-decoration:none}
+.print .dl a:hover{border-color:var(--link)}
+.print .dl b{display:block;margin-bottom:2px}
+.print .dl span{color:var(--muted);font-size:.82rem}
+.print dl.spec{display:grid;grid-template-columns:max-content 1fr;gap:4px 16px;margin:0 0 18px;font-size:.9rem}
+.print dl.spec dt{color:var(--muted)}
+.print dl.spec dd{margin:0}
+.wide{max-width:980px;margin:0 auto}
+.wintro{color:var(--muted);margin:0 0 10px;max-width:70ch}
+.wtools{display:flex;flex-wrap:wrap;gap:14px;align-items:center;margin-bottom:14px;font-size:.9rem}
+.wtools select{font:inherit}
+.wide h3{font-family:var(--f-name);font-weight:600;font-size:1.1rem;margin:22px 0 8px;border-bottom:1px solid var(--rule);padding-bottom:4px}
+.fam{background:var(--surface);border:1px solid var(--rule);border-left:4px solid var(--c,var(--rule));border-radius:8px;padding:10px 14px;margin:0 0 10px}
+.fam .fh{font-weight:600;margin-bottom:4px}
+.fam .fm{color:var(--muted);font-size:.85rem;margin-bottom:6px}
+.fam ul{margin:0;padding-left:20px}
+.fam li{margin:2px 0}
+.fam li.direct{font-weight:600}
+.fam li .tag{font-size:.75rem;font-weight:400;color:var(--muted);margin-left:6px}
+.fam li ul{margin-top:2px}
+.fam .none{color:var(--muted);font-style:italic;font-size:.88rem}
+.mapwrap{display:grid;grid-template-columns:minmax(0,1.3fr) minmax(0,1fr);gap:24px;max-width:1300px;margin:0 auto}
+@media (max-width:900px){.mapwrap{grid-template-columns:1fr}}
+.mapfig{min-width:0}
+#map{width:100%;height:auto;display:block;background:var(--surface);border:1px solid var(--rule);border-radius:8px}
+#map .sea{fill:var(--bg)}
+#map .land{fill:var(--land);stroke:var(--border);stroke-width:1.4;stroke-linejoin:round;vector-effect:non-scaling-stroke}
+.mapbox{position:relative}
+#map{touch-action:pan-y;cursor:grab;user-select:none;-webkit-user-select:none}
+#map.drag{cursor:grabbing}
+.mapzoom{position:absolute;top:8px;right:8px;display:flex;gap:4px}
+.mapzoom button{font:inherit;font-size:.85rem;min-width:30px;height:30px;padding:0 8px;border:1px solid var(--rule);border-radius:6px;background:var(--surface);color:var(--ink);cursor:pointer;box-shadow:var(--shadow)}
+.mapzoom button:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+/* text, points and lines keep (roughly) their screen size when the map is zoomed: --k = zoom^-0.7 */
+#map .lbl{font-size:calc(12px*var(--k,1));stroke-width:calc(3px*var(--k,1))}
+#map .lbl.sub{font-size:calc(10px*var(--k,1))}
+#map .lbl.auto{font-size:calc(9.5px*var(--k,1))}
+#map .cityl{font-size:calc(11px*var(--k,1))!important;stroke-width:calc(3px*var(--k,1))}
+#map .cityl.r1{font-size:calc(13px*var(--k,1))!important}
+#map .cityl.r3{font-size:calc(10px*var(--k,1))!important}
+#map .country{font-size:calc(15px*var(--k,1))!important}
+#map circle[style*="--r"]{r:calc(var(--r)*1px*var(--k,1))}
+#map .land.czechia{fill:var(--land-cz)}
+#map .land.poland{fill:var(--land-pl)}
+#map .land.slovakia{fill:var(--land-sk)}
+#map .grat{stroke:var(--border);stroke-width:.5;fill:none;opacity:.25;vector-effect:non-scaling-stroke}
+#map .city{fill:var(--muted)}
+#map .cityl{font-family:var(--f-data);fill:var(--muted);font-size:11px;paint-order:stroke;stroke:var(--land);stroke-width:3px}
+#map .cityl.r1{font-size:13px;font-weight:600}
+#map .cityl.r3{font-size:10px;font-style:italic}
+#map .glabel{fill:var(--muted);font-size:10px;font-family:var(--f-data)}
+#map .route{fill:none;stroke-width:calc(2.2px*var(--k,1));opacity:.9;stroke-linecap:round}
+#map .route.k-hyp{opacity:.75}
+#map .route:hover{stroke-width:calc(4px*var(--k,1))}
+.mlegend{display:flex;flex-wrap:wrap;gap:6px 16px;font-size:.75rem;color:var(--muted);margin:6px 2px 0}
+.mlegend svg{vertical-align:middle;margin-right:4px}
+.moves{margin:12px 2px 0;padding:0;list-style:none;display:flex;flex-direction:column;gap:5px;font-size:.82rem;line-height:1.4}
+.moves li{border-left:3px solid var(--c);padding-left:8px}
+.moves b{font-weight:600}
+.moves .k{color:var(--muted);font-size:.72rem;text-transform:uppercase;letter-spacing:.05em;margin-left:4px}
+#map .pt{stroke:var(--surface);stroke-width:2}
+#map .lbl{font-family:var(--f-data);font-size:12px;fill:var(--ink);paint-order:stroke;stroke:var(--surface);stroke-width:3px}
+#map .sub{font-size:10px;fill:var(--muted)}
+#map .country{font-family:var(--f-name);font-style:italic;font-size:15px;fill:var(--muted);opacity:.7;letter-spacing:.1em}
+#map .hub{fill:var(--accent)}
+.cap{font-size:.75rem;color:var(--muted);margin:6px 2px 0}
+.story{display:flex;flex-direction:column;gap:18px;min-width:0}
+.story article{border-left:3px solid var(--c);padding:2px 0 2px 14px}
+.story h2{font-family:var(--f-name);font-size:1.1rem;margin:0 0 6px;font-weight:600;text-wrap:balance}
+.story p{margin:0 0 8px;line-height:1.5;font-size:.92rem;max-width:65ch}
+.tl{max-width:1300px;margin:24px auto 0}
+.tl h3{font-size:.72rem;color:var(--muted);text-transform:uppercase;letter-spacing:.06em;margin:0 0 8px}
+.tl ol{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:8px}
+.tl li{background:var(--surface);border:1px solid var(--rule);border-radius:6px;padding:8px 10px;font-size:.85rem;line-height:1.35}
+.tl b{font-variant-numeric:tabular-nums;display:block;font-family:var(--f-name);font-size:1rem}
+.tl li.hist{background:transparent;color:var(--muted)}
+.tl li.anc{border-color:var(--accent)}
+.story .facts{font-size:.8rem;color:var(--muted);border-top:1px solid var(--rule);border-bottom:1px solid var(--rule);padding:4px 0}
+#map .auto{font-size:9.5px;fill:var(--muted)}
+#map circle.auto{stroke-width:1}
+.meta .plink{font:inherit;color:var(--link);background:none;border:0;padding:0;cursor:pointer;text-decoration:underline}
+@media (max-width:520px){ header h1{font-size:1.25rem} .certs{margin-left:0} dl.facts{grid-template-columns:1fr} }
+@media (prefers-reduced-motion:reduce){ *{transition:none!important;scroll-behavior:auto!important} }
+.gen-note{opacity:.75;font-size:.92em}
+</style>
+
+<header>
+  <div>
+    <h1>Rodokmen Tomáše Pospíšila</h1>
+    <div class="meta" id="meta"></div>
+  </div>
+  <nav class="tabs" role="tablist"><button type="button" role="tab" id="tabTree" aria-selected="true">Rodokmen</button><button type="button" role="tab" id="tabWide" aria-selected="false">Širší okruh</button><button type="button" role="tab" id="tabMap" aria-selected="false">Odkud jsme</button><button type="button" role="tab" id="tabPrint" aria-selected="false">Tisková verze</button><button type="button" role="tab" id="tabAnim" aria-selected="false">Animace</button></nav>
+  <div class="tools">
+    <input id="q" type="search" placeholder="Najít osobu…" aria-label="Najít osobu">
+    <button id="home" type="button">Na Tomáše</button>
+  </div>
+</header>
+<div class="legend">
+  <div id="chips" style="display:flex;flex-wrap:wrap;gap:6px"></div>
+  <div class="certs">
+    <span class="cert"><span class="dot M"></span>matrika</span>
+    <span class="cert"><span class="dot D"></span>jiný doklad</span>
+    <span class="cert"><span class="dot R"></span>rodinná tradice</span>
+    <span class="cert"><span class="dot K"></span>kandidát</span>
+    <span class="lin"><i style="background:var(--mat)"></i>mateřská linie</span>
+    <span class="lin"><i style="background:var(--pat)"></i>otcovská linie</span>
+  </div>
+</div>
+<section id="printView" hidden><div class="print">
+<h2>Tisková verze rodokmenu</h2>
+<p>Plakát ve formátu 2,5 × 1 m na šířku pro tisk. Nahoře je Tomáš, pod ním rodiče a dál všechny generace předků až k nejstarším zápisům v matrikách. Muži jsou v modrých rámečcích, ženy v růžových a barevný proužek nahoře ukazuje rodovou větev. Plnou čarou jsou orámovaní doložení předci, tečkovaně rodinná tradice a čárkovaně kandidáti. Dole jsou vysvětlivky, souhrn a QR kód na tento web.</p>
+<a class="prev" href="print/rodokmen_tisk_2500x1000mm.pdf" target="_blank" rel="noopener" aria-label="Otevřít plakát jako PDF"><img src="print/rodokmen_tisk_nahled.jpg" alt="Náhled tiskového plakátu rodokmenu" loading="lazy" width="5000" height="2000"></a>
+<p class="cap">Náhled je zmenšený. Klepnutím se otevře PDF, ve kterém jde přibližovat bez ztráty ostrosti a přečíst každý rámeček. Na prohlížení na počítači je PDF nejlepší, protože obrázky o velikosti 620 Mpx většina prohlížečů fotek při načítání zobrazí rozmazaně.</p>
+<div class="dl">
+<a href="print/rodokmen_tisk_400dpi.tif" download><b>TIFF · 400 dpi</b><span>39 370 × 15 748 px, bezeztrátový (LZW, bez ztráty kvality), 62 MB</span></a>
+<a href="print/rodokmen_tisk_400dpi.jpg" download><b>JPEG · 400 dpi</b><span>39 370 × 15 748 px, kvalita 100 bez podvzorkování, 68 MB</span></a>
+<a href="print/rodokmen_tisk_2500x1000mm.pdf" download><b>PDF · vektor</b><span>2500 × 1000 mm, písma vložena, ostré v libovolném rozlišení, 3 MB</span></a>
+</div>
+<dl class="spec">
+<dt>Formát</dt><dd>2500 × 1000 mm na šířku, bez spadávky (krémový rámeček je součástí návrhu)</dd>
+<dt>Rozlišení</dt><dd>400 dpi, tj. 39 370 × 15 748 px, barvy sRGB (pro tisk na 200 dpi ho tiskárna jen zmenší)</dd>
+<dt>Pro tiskárnu</dt><dd>Nejlépe pošlete PDF (vektor). Když tiskárna chce bitmapu, pošlete TIFF. JPEG je záloha.</dd>
+<dt>Stav dat</dt><dd id="printStamp"></dd>
+</dl>
+</div></section>
+<section id="animView" hidden><canvas id="animCanvas" role="img" aria-label="3D animace: s každou generací se počet předků zdvojnásobí; svítící body jsou doložení předci"></canvas><div class="ahud" aria-live="polite"><div class="akick" id="aKick"></div><div class="anum" id="aNum">1</div><div class="aq">Kolik lidí bylo potřeba, aby se narodil <span id="aWho"></span>?</div><div class="aknown" id="aKnown"></div></div><ol class="aruler" id="aRuler" aria-hidden="true"></ol><div id="aLabels" aria-hidden="true"></div><div class="atip" id="aTip" hidden></div><div class="asum" id="aSum" hidden></div><div class="actl"><button type="button" id="aPlay">Pauza</button><button type="button" id="aAgain">Přehrát znovu</button><span class="ahint">Tažením otáčíte, kolečkem nebo prsty přibližujete, kliknutím na světlo otevřete osobu.</span></div><p class="aload" id="aLoad">Načítám 3D…</p></section>
+<section id="wideView" hidden><div class="wide"><p class="wintro" id="wideIntro"></p><div class="wtools"><label>Větev <select id="wLine"><option value="">všechny</option></select></label> <label><input type="checkbox" id="wOnly"> jen rodiny se známými sourozenci</label></div><div id="wideBody"></div></div></section>
+<section id="mapView" hidden><div class="mapwrap"><div class="mapfig"><div class="mapbox"><svg id="map" role="img" aria-label="Mapa původu rodových větví"></svg><div class="mapzoom" role="toolbar" aria-label="Přiblížení mapy"><button type="button" id="mzin" aria-label="Přiblížit mapu">+</button><button type="button" id="mzout" aria-label="Oddálit mapu">−</button><button type="button" id="mzreset">Celá mapa</button></div></div><div class="mlegend"><span><svg width="28" height="6"><line x1="0" y1="3" x2="28" y2="3" stroke="var(--muted)" stroke-width="2.2"/></svg>doložený přesun</span><span><svg width="28" height="6"><line x1="0" y1="3" x2="28" y2="3" stroke="var(--muted)" stroke-width="2.2" stroke-dasharray="7 5"/></svg>pravděpodobná trasa (vlakem)</span><span><svg width="28" height="6"><line x1="0" y1="3" x2="28" y2="3" stroke="var(--muted)" stroke-width="2.2" stroke-dasharray="2 5" stroke-linecap="round"/></svg>domněnka</span></div><p class="cap">Hranice podle dnešních států (Natural Earth). Čáry vedou po tehdejších železničních tratích, kde přesná cesta není známa. Po najetí myší se ukáže, kdo a kdy. Přiblížení: tlačítka, dvojklik, Ctrl/⌘ + kolečko nebo sevření prstů; posun tažením.</p><ol class="moves" id="moves"></ol></div><div id="story" class="story"></div></div><div class="tl"><h3>Časová osa</h3><ol id="tl"></ol></div></section>
+<div id="scroller">
+  <div id="inner">
+    <div id="stage"><div id="canvas"><svg class="links" id="links"></svg></div></div>
+    <div id="ruler" aria-hidden="true"></div>
+    <div id="events" aria-label="Historické události"></div>
+  </div>
+</div>
+
+<div id="zoombar" role="toolbar" aria-label="Přiblížení">
+  <button id="zout" type="button" aria-label="Oddálit">−</button>
+  <input id="zr" type="range" min="3" max="250" step="5" value="100" aria-label="Přiblížení v procentech">
+  <button id="zin" type="button" aria-label="Přiblížit">+</button>
+  <output id="zp" for="zr">100 %</output>
+  <button id="zfit" type="button">Celý strom</button>
+  <button id="z100" type="button">100 %</button>
+</div>
+<div id="viewer" hidden><div class="bar"><span id="vt"></span><span><button type="button" id="vz">Přiblížit</button> <button type="button" id="vx">Zavřít</button></span></div><div class="pane fit" id="vp"><img id="vi" alt=""></div></div>
+<dialog id="dlg"><div class="dlg" id="dlgBody"></div></dialog>
+
+<script>
+/*DATA*/
+</script>
+<script>
+(function(){
+const D = window.RODOKMEN, P = {}; D.people.forEach(p=>P[p.id]=p);
+const CERT = {M:"Přečteno v matrice",D:"Jiný doklad (parte, rodný list, paměti)",R:"Rodinná tradice",K:"Kandidát – neověřeno"};
+const lineVar = l => `var(--l-${l})`;
+const zoom = 1; let active = null;
+// view scale (whole tree incl. cards and text), 0.1–2.5; layout itself is computed at scale 1
+let vs = 1; const VS_MIN = 0.03, VS_MAX = 2.5;
+try{ const z = parseFloat(localStorage.getItem('rv-scale')); if(z>=VS_MIN&&z<=VS_MAX) vs=z; }catch(e){}
+let W0 = 0, H0 = 0;
+
+// direct maternal and paternal lines from the root
+const chain = (id,k)=>{ const s=new Set(); for(let x=id; x&&P[x]; x=P[x][k]) s.add(x); return s; };
+const MAT = chain(D.root,'mother'), PAT = chain(D.root,'father');
+
+// children index
+const kids = {}; D.people.forEach(p=>[p.father,p.mother].forEach(x=>{ if(x&&P[x]) (kids[x]=kids[x]||[]).push(p.id); }));
+
+// x layout: ancestors' leaves in DFS order (father first), child = mean of parents
+const col = {}; let leaf = 0;
+(function place(id){
+  const p = P[id]; const ps = [p.father,p.mother].filter(x=>x&&P[x]);
+  if(!ps.length){ col[id]=leaf++; return col[id]; }
+  ps.forEach(place);
+  col[id] = ps.reduce((s,x)=>s+col[x],0)/ps.length; return col[id];
+})(D.root);
+D.people.forEach(p=>{ if(col[p.id]===undefined) col[p.id]=leaf++; });
+
+const years = D.people.map(p=>p.b.year);
+const y0 = Math.floor((Math.min(...years)-6)/10)*10, y1 = 2000;
+const age = (p)=>{ const a=p.b.year, b=(p.d&&p.d.year)||(p.alive?2026:null); return (a&&b&&!p.b.approx&&!(p.d&&p.d.approx))? (b-a) : null; };
+const full = (e) => { if(!e) return ''; const m=(e.date||'').match(/^\s*(\d{1,2}\.\s*\d{1,2}\.\s*\d{4})/); return m? m[1].replace(/\s+/g,' ') : (e.approx?'~':'')+(e.year||'?'); };
+const span = p => { const b=full(p.b); const d=p.d?full(p.d):(p.alive?'žije':''); return d? `${b} – ${d}` : `* ${b}`; };
+
+function render(){
+  const cw = Math.round(178*Math.min(zoom,1.25)), gap = Math.round(26*zoom), ppy = 7.2*zoom;
+  const W = leaf*(cw+gap)+gap, H = (y1-y0)*ppy + 90;
+  const cv = document.getElementById('canvas'), ru = document.getElementById('ruler');
+  W0 = W; H0 = H;
+  cv.style.width=W+'px'; cv.style.height=H+'px'; cv.style.setProperty('--cw',cw+'px');
+  cv.querySelectorAll('.card,.gridline').forEach(e=>e.remove()); ru.innerHTML='';
+  for(let y=Math.ceil(y0/10)*10;y<=y1;y+=10){
+    const g=document.createElement('div'); g.className='gridline'+(y%100===0?' century':''); g.style.top=((y1-y)*ppy)+'px'; cv.prepend(g);
+    const t=document.createElement('div'); t.className='tick'+(y%100===0?' century':''); t.dataset.y=(y1-y)*ppy; t.textContent=y; ru.appendChild(t);
+  }
+  const ev = document.getElementById('events'); ev.innerHTML=''; ev.style.height=H+'px';
+  (D.events||[]).filter(e=>e.y>=y0&&e.y<=y1).forEach(e=>{
+    // mark (dot or band) sits exactly at the year; the label is laid out separately so labels never overlap
+    const mk=document.createElement('div');
+    if(e.y2){ mk.className='evband'; mk.dataset.top=(y1-e.y2)*ppy; mk.dataset.h=(e.y2-e.y)*ppy; }
+    else { mk.className='evdot'+(e.major?' major':''); mk.dataset.top=(y1-e.y)*ppy; }
+    mk.title=`${e.y}${e.y2?'–'+e.y2:''}: ${e.t}`; ev.appendChild(mk);
+    const lb=document.createElement('div');
+    lb.className='evl'+(e.major?' major':''); lb.title=mk.title;
+    lb.dataset.anchor = e.y2 ? (y1-(e.y+e.y2)/2)*ppy : (y1-e.y)*ppy; lb.dataset.major=e.major?1:'';
+    lb.innerHTML=`<span class="l">${e.y2?e.y+'–'+e.y2:e.y} ${e.t}</span><span class="s">${e.y2?e.y+'–'+e.y2:e.y} ${e.s||e.t}</span>`;
+    ev.appendChild(lb);
+  });
+  const pos = {};
+  D.people.forEach(p=>{
+    const x = gap + col[p.id]*(cw+gap), y = (y1-p.b.year)*ppy;
+    pos[p.id] = {x,y,cw};
+    const c = document.createElement('button'); c.type='button';
+    c.className = `card ${p.cert}` + (p.id===D.root?' root':'');
+    c.style.left = x+'px'; c.style.top = (y-14)+'px'; c.dataset.id=p.id; c.dataset.line=p.line;
+    c.setAttribute('aria-label', `${p.name}, ${span(p)}`);
+    c.innerHTML = `<div class="top"><span class="sw" style="background:${lineVar(p.line)}"></span><div style="min-width:0"><div class="nm">${p.name}</div>${p.maiden?`<div class="mn">roz. ${p.maiden}</div>`:''}</div></div><div class="yr"><span>${span(p)}</span><span class="dot ${p.cert}" title="${CERT[p.cert]}"></span></div>`;
+    c.addEventListener('click',()=>open(p.id));
+    if(MAT.has(p.id) && p.id!==D.root) c.classList.add('mat');
+    if(PAT.has(p.id) && p.id!==D.root) c.classList.add('pat');
+    cv.appendChild(c);
+  });
+  // links
+  const svg = document.getElementById('links'); svg.setAttribute('width',W); svg.setAttribute('height',H); svg.innerHTML='';
+  D.people.forEach(p=>{
+    const ch = pos[p.id]; const ps=[p.father,p.mother].filter(x=>x&&P[x]); if(!ps.length) return;
+    const own = document.querySelector(`.card[data-id="${p.id}"]`);
+    const cx = ch.x+cw/2, cy = ch.y-14 + (own?own.offsetHeight:56);
+    ps.forEach(pid=>{
+      const pp = pos[pid], px = pp.x+cw/2;
+      const py = pp.y-14;
+      const my = cy + Math.max(12,(py-cy)/2);
+      const path=document.createElementNS('http://www.w3.org/2000/svg','path');
+      path.setAttribute('d',`M${cx},${cy} V${my} H${px} V${py}`); path.dataset.c=p.id; path.dataset.p=pid;
+      // direct maternal line (mother of mother of …) and paternal line (father of father of …) from the root
+      if(MAT.has(p.id) && pid===p.mother) path.classList.add('mat');
+      if(PAT.has(p.id) && pid===p.father) path.classList.add('pat');
+      if(path.classList.length) svg.appendChild(path); else svg.prepend(path);   // highlighted lines on top
+    });
+  });
+  applyFilter();
+}
+
+function applyFilter(){
+  document.querySelectorAll('.card').forEach(c=>c.classList.toggle('dim', !!active && c.dataset.line!==active));
+}
+
+// chips
+const chips = document.getElementById('chips');
+Object.entries(D.lines).forEach(([k,label])=>{
+  const n = D.people.filter(p=>p.line===k).length;
+  const b=document.createElement('button'); b.type='button'; b.className='chip'; b.setAttribute('aria-pressed','false');
+  b.innerHTML=`<span class="sw" style="background:${lineVar(k)}"></span>${label} <span style="color:var(--muted)">${n}</span>`;
+  b.addEventListener('click',()=>{ active = active===k?null:k; chips.querySelectorAll('.chip').forEach(x=>x.setAttribute('aria-pressed','false')); if(active) b.setAttribute('aria-pressed','true'); applyFilter(); });
+  chips.appendChild(b);
+});
+
+const nM = D.people.filter(p=>p.cert==='M').length;
+// everything below is derived from data.js on every load – no hand-maintained summary that could go stale
+const documented = D.people.filter(p=>p.cert==='M'||p.cert==='D');
+const oldest = documented.reduce((a,p)=>p.b.year<a.b.year?p:a);
+// generations back from the root: longest father/mother chain (root = 0)
+const genDepth = (()=>{ const byId=Object.fromEntries(D.people.map(p=>[p.id,p])), memo={};
+  const g=id=>{ if(!id||!byId[id]) return -1; if(id in memo) return memo[id]; memo[id]=0;
+    return memo[id]=1+Math.max(g(byId[id].father),g(byId[id].mother)); };
+  return g(D.root); })();
+// generation of each ancestor counted from the root (parents = 1); nearest path wins
+const genOf = (()=>{ const byId=Object.fromEntries(D.people.map(p=>[p.id,p])), g={[D.root]:0}, q=[D.root];
+  while(q.length){ const id=q.shift(); for(const x of [byId[id].father,byId[id].mother]) if(x&&byId[x]&&!(x in g)){ g[x]=g[id]+1; q.push(x); } }
+  return g; })();
+const meta = document.getElementById('meta');
+meta.innerHTML = `${D.people.length} osob · <b>${genDepth} generací zpět</b> <span class="gen-note">(počítáno od Tomáše: rodiče = 1. generace, prarodiče = 2. …)</span> · ${nM} doloženo přímo v matrikách · nejstarší doložený předek <button type="button" class="plink" id="oldest">${oldest.name}</button> (~${oldest.b.year}) · aktualizováno ${window.RODOKMEN_BUILD||D.updated}`;
+document.getElementById('oldest').addEventListener('click',()=>{ applyScale(Math.max(vs,0.6)); focusCard(oldest.id); });
+// "Širší okruh": every ancestral couple with all their known children (direct line + siblings),
+// plus collateral relatives from D.collateral (people outside the direct line, e.g. siblings' families, cousins)
+const COL = D.collateral || [], CP = Object.fromEntries(COL.map(c=>[c.id,c]));
+function renderWide(){
+  const sel=document.getElementById('wLine'), only=document.getElementById('wOnly');
+  if(!sel.dataset.ready){ Object.entries(D.lines).forEach(([k,l])=>sel.insertAdjacentHTML('beforeend',`<option value="${k}">${l}</option>`)); sel.addEventListener('change',renderWide); only.addEventListener('change',renderWide); sel.dataset.ready=1; }
+  const line=sel.value, onlySib=only.checked;
+  const nm=x=>x?(P[x]?`<button type="button" class="plink" data-go="${x}">${P[x].name}</button>`:(CP[x]?CP[x].name:'')):'?';
+  const dates=x=>{ const p=P[x]||CP[x]; return p&&p.b?` <span class="src">${span(p)}</span>`:''; };
+  // collateral subtree: children of a collateral person (cousins, their children …)
+  const colKids=id=>COL.filter(c=>c.father===id||c.mother===id);
+  const cdates=c=>c.b?` <span class="src">${span(c)}</span>`:c.d?` <span class="src">† ${c.d.date||''}</span>`:'';
+  const colItem=c=>{ const k=colKids(c.id); return `<li${c.note?` title="${c.note.replace(/"/g,'&quot;')}"`:''}><button type="button" class="plink" data-col="${c.id}">${c.name}</button>${c.maiden?` <span class="tag">roz. ${c.maiden}</span>`:''}${cdates(c)}${c.spouse?` <span class="tag">∞ ${c.spouse}</span>`:''}${k.length?`<ul>${k.map(colItem).join('')}</ul>`:''}</li>`; };
+  // families: one per direct-line child X (gen g) whose parents are known
+  const fams=D.people.filter(x=>(x.father&&P[x.father])||(x.mother&&P[x.mother])).filter(x=>genOf[x.id]!==undefined||x.id===D.root);
+  const groups={}; let nFam=0, nSib=0;
+  for(const x of fams){ const F=x.father, M=x.mother, g=(genOf[x.id]||0)+1;
+    const lineK=(P[F]||P[M]).line; if(line&&lineK!==line) continue;
+    const treeSibs=D.people.filter(q=>q.id!==x.id&&((F&&q.father===F)||(M&&q.mother===M)));
+    const strSibs=(x.siblings||[]).map(s=>typeof s==='string'?s:[s.name,s.b&&('*'+s.b),s.d&&('†'+s.d),s.note].filter(Boolean).join(' '));
+    const colSibs=COL.filter(c=>(F&&c.father===F)||(M&&c.mother===M));
+    const cnt=treeSibs.length+(colSibs.length||strSibs.length); if(onlySib&&!cnt) continue;
+    nFam++; nSib+=cnt;
+    const mar=(P[F]&&P[F].marriage)||(P[M]&&P[M].marriage)||'';
+    const items=[`<li class="direct">${nm(x.id)}${dates(x.id)}<span class="tag">přímá linie</span></li>`,
+      ...treeSibs.map(q=>`<li>${nm(q.id)}${dates(q.id)}</li>`), ...colSibs.map(colItem), ...(colSibs.length?[]:strSibs.map(t=>`<li>${t}</li>`))];
+    (groups[g]=groups[g]||[]).push(`<div class="fam" style="--c:var(--l-${lineK})"><div class="fh">${nm(F)} × ${nm(M)}</div>${mar?`<div class="fm">${mar}</div>`:''}<ul>${items.join('')}</ul>${cnt?'':`<div class="none">${x.onlyChild?'Bez sourozenců (údaj rodiny).':'Sourozenci zatím nejsou známi.'}</div>`}</div>`); }
+  const head=g=>g===1?'Rodiče a jejich děti (1. generace zpět)':g===2?'Prarodiče a jejich děti – strýcové a tety (2. generace)':`${g}. generace zpět – rodiny předků`;
+  document.getElementById('wideIntro').textContent=`Každá karta je jedna rodina předků: rodiče a všechny jejich známé děti – přímý předek je tučně, ostatní jsou jeho sourozenci; pod nimi jejich manželé a děti (bratranci a sestřenice), pokud jsou známi. ${nFam} rodin, ${nSib} sourozenců předků (včetně nevlastních a dětí zemřelých v útlém věku; většina z rejstříků a rodopisů, část přímo z matrik – po najetí myší je vidět původ). Generace se počítají od Tomáše (rodiče = 1).`;
+  document.getElementById('wideBody').innerHTML=Object.keys(groups).map(Number).sort((a,b)=>a-b).map(g=>`<h3>${head(g)}</h3>${groups[g].join('')}`).join('')||'<p class="none">Nic neodpovídá filtru.</p>';
+}
+window.renderWide = renderWide;
+window.RV_focus = id => { applyScale(Math.max(vs,0.6)); focusCard(id); };
+
+// dialog
+// make bare URLs in sources clickable (trailing punctuation stays outside the link)
+const linkify = t => String(t).replace(/https?:\/\/[^\s<>"“”]+/g, u => { const m=u.match(/[.,;:)\]]+$/), tail=m?m[0]:'', url=tail?u.slice(0,-tail.length):u; return `<a href="${url}" target="_blank" rel="noopener">${url}</a>${tail}`; });
+const dlg = document.getElementById('dlg'), body = document.getElementById('dlgBody');
+const link = id => P[id] ? `<button type="button" class="plink" data-go="${id}">${P[id].name}</button> <span class="src">${span(P[id])}</span>` : '';
+function open(id){
+  const p = P[id]; const a = age(p);
+  const sp = D.people.filter(q=>(kids[q.id]||[]).some(k=>(kids[p.id]||[]).includes(k)) && q.id!==p.id);
+  const rows = [];
+  rows.push(['Narození', `${p.b.date||'?'}${p.b.place?', '+p.b.place:''}`]);
+  if(p.d) rows.push(['Úmrtí', `${p.d.date}${p.d.place?', '+p.d.place:''}${a?` (${a} let)`:''}`]);
+  else if(p.alive) rows.push(['Úmrtí', `žije${a?` (${a} let)`:''}`]);
+  else rows.push(['Úmrtí', '<span class="src">neznámé – zatím nedohledáno</span>']);
+  if(p.cause) rows.push(['Příčina úmrtí', p.cause]);
+  if(p.occ) rows.push(['Povolání', p.occ]);
+  if(p.marriage) rows.push(['Sňatek', p.marriage]);
+  if(sp.length) rows.push(['Partner', sp.map(q=>link(q.id)).join('<br>')]);
+  const par = [p.father,p.mother].filter(x=>x&&P[x]);
+  if(par.length) rows.push(['Rodiče', par.map(link).join('<br>')]);
+  // siblings: people in the tree sharing a parent, plus recorded siblings outside the tree
+  const sib = D.people.filter(q=>q.id!==p.id && ((p.father&&q.father===p.father)||(p.mother&&q.mother===p.mother)));
+  const colSib = (window.RODOKMEN.collateral||[]).filter(c=>(p.father&&c.father===p.father)||(p.mother&&c.mother===p.mother)).map(c=>colbtn(c)+(c.b?' <span class="src">*'+c.b.date+'</span>':'')+(c.d?' <span class="src">†'+(c.d.date||'')+'</span>':''));
+  const sibText = colSib.length ? colSib : [...(p.siblings||[]).map(s=>typeof s==='string'?s:[s.name,s.b&&('*'+s.b),s.d&&('†'+s.d),s.note].filter(Boolean).join(' '))];
+  if(sib.length||sibText.length) rows.push(['Sourozenci', [...sib.map(q=>link(q.id)), ...sibText].join('<br>')]);
+  if(kids[p.id]) rows.push(['Děti v rodokmenu', kids[p.id].map(link).join('<br>')]);
+  body.innerHTML = `<button type="button" class="x" aria-label="Zavřít">×</button>
+    <h2>${p.name}</h2>
+    <div class="sub">${p.maiden?'roz. '+p.maiden+' · ':''}rod ${D.lines[p.line]}${genOf[p.id]?` · ${genOf[p.id]}. generace zpět`:''}</div>
+    <span class="badge"><span class="dot ${p.cert}"></span>${CERT[p.cert]}</span>
+    <dl class="facts">${rows.map(([k,v])=>`<dt>${k}</dt><dd>${v}</dd>`).join('')}</dl>
+    ${p.notes&&p.notes.length?`<h3>Poznámky</h3><ul>${p.notes.map(n=>`<li>${n}</li>`).join('')}</ul>`:''}
+    ${p.scans&&p.scans.length?`<h3>Zápisy v matrice</h3><div class="scans">${p.scans.map(s=>`<button type="button" class="scan" data-src="${s.f}" data-t="${s.t}"><img src="${s.f}" alt="${s.t}" loading="lazy"><span>${s.t}</span></button>`).join('')}</div>`:''}
+    ${p.sources&&p.sources.length?`<h3>Prameny</h3><ul class="src">${p.sources.map(n=>`<li>${linkify(n)}</li>`).join('')}</ul>`:''}`;
+  body.querySelector('.x').addEventListener('click',()=>dlg.close());
+  body.querySelectorAll('.scan').forEach(b=>b.addEventListener('click',()=>showScan(b.dataset.src,b.dataset.t)));
+  body.querySelectorAll('[data-go]').forEach(b=>b.addEventListener('click',()=>{ focusCard(b.dataset.go); open(b.dataset.go); }));
+  if(!dlg.open) dlg.showModal();
+}
+// collateral relative (Širší okruh) – own detail dialog
+const colbtn = c => `<button type="button" class="plink" data-col="${c.id}">${c.name}</button>`;
+const colDates = c => [c.b&&('* '+c.b.date+(c.b.place?', '+c.b.place:'')), c.d&&('† '+(c.d.date||'')+(c.d.place?', '+c.d.place:''))].filter(Boolean).join(' · ');
+function openCol(id){
+  const C = window.RODOKMEN.collateral||[], c = C.find(x=>x.id===id); if(!c) return;
+  const ref = x => P[x] ? link(x) : (C.find(y=>y.id===x) ? colbtn(C.find(y=>y.id===x)) : '');
+  const rows = [];
+  rows.push(['Narození', c.b ? `${c.b.date||'?'}${c.b.place?', '+c.b.place:''}` : '<span class="src">neznámé</span>']);
+  rows.push(['Úmrtí', c.d ? `${c.d.date||''}${c.d.place?', '+c.d.place:''}` : '<span class="src">neznámé – zatím nedohledáno</span>']);
+  if(c.cause) rows.push(['Příčina úmrtí', c.cause]);
+  if(c.occ) rows.push(['Povolání', c.occ]);
+  if(c.spouse) rows.push(['Manžel/ka', c.spouse]);
+  const par=[c.father,c.mother].filter(Boolean); if(par.length) rows.push(['Rodiče', par.map(ref).join('<br>')]);
+  const sibs=[...D.people.filter(q=>(c.father&&q.father===c.father)||(c.mother&&q.mother===c.mother)).map(q=>link(q.id)+' <span class="src">(přímá linie)</span>'),
+    ...C.filter(x=>x.id!==c.id&&((c.father&&x.father===c.father)||(c.mother&&x.mother===c.mother))).map(colbtn)];
+  if(sibs.length) rows.push(['Sourozenci', sibs.join('<br>')]);
+  const ch=C.filter(x=>x.father===c.id||x.mother===c.id); if(ch.length) rows.push(['Děti', ch.map(colbtn).join('<br>')]);
+  const notes=[...(c.notes||[]), ...(c.note?[c.note]:[])];
+  body.innerHTML = `<button type="button" class="x" aria-label="Zavřít">×</button>
+    <h2>${c.name}</h2>
+    <div class="sub">${c.maiden?'roz. '+c.maiden+' · ':''}širší rodina (není v přímé linii)</div>
+    ${c.cert?`<span class="badge"><span class="dot ${c.cert}"></span>${CERT[c.cert]||''}</span>`:''}
+    <dl class="facts">${rows.map(([k,v])=>`<dt>${k}</dt><dd>${v}</dd>`).join('')}</dl>
+    ${notes.length?`<h3>Poznámky a původ údaje</h3><ul>${notes.map(n=>`<li>${n}</li>`).join('')}</ul>`:''}
+    ${c.scans&&c.scans.length?`<h3>Zápisy v matrice</h3><div class="scans">${c.scans.map(s=>`<button type="button" class="scan" data-src="${s.f}" data-t="${s.t}"><img src="${s.f}" alt="${s.t}" loading="lazy"><span>${s.t}</span></button>`).join('')}</div>`:''}
+    ${c.sources&&c.sources.length?`<h3>Prameny</h3><ul class="src">${c.sources.map(n=>`<li>${linkify(n)}</li>`).join('')}</ul>`:''}`;
+  body.querySelector('.x').addEventListener('click',()=>dlg.close());
+  body.querySelectorAll('.scan').forEach(b=>b.addEventListener('click',()=>showScan(b.dataset.src,b.dataset.t)));
+  body.querySelectorAll('[data-go]').forEach(b=>b.addEventListener('click',()=>{ focusCard(b.dataset.go); open(b.dataset.go); }));
+  if(!dlg.open) dlg.showModal();
+}
+window.openCol = openCol;
+window.RV_open = open;
+document.addEventListener('click',e=>{ const b=e.target.closest('[data-col]'); if(b){ e.preventDefault(); e.stopPropagation(); openCol(b.dataset.col); } }, true);
+dlg.addEventListener('click',e=>{ if(e.target===dlg) dlg.close(); });
+const V=document.getElementById('viewer'), VP=document.getElementById('vp');
+function showScan(src,t){ document.getElementById('vi').src=src; document.getElementById('vt').textContent=t; VP.classList.add('fit'); document.getElementById('vz').textContent='Přiblížit'; if(dlg.open) dlg.close(); V.hidden=false; }
+function zoomScan(){ const f=VP.classList.toggle('fit'); document.getElementById('vz').textContent=f?'Přiblížit':'Oddálit'; }
+document.getElementById('vz').addEventListener('click',zoomScan); VP.addEventListener('click',zoomScan);
+document.getElementById('vx').addEventListener('click',()=>{ V.hidden=true; });
+document.addEventListener('keydown',e=>{ if(e.key==='Escape' && !V.hidden) V.hidden=true; });
+
+const sc = document.getElementById('scroller');
+function focusCard(id){
+  const c = document.querySelector(`.card[data-id="${id}"]`); if(!c) return;
+  document.querySelectorAll('.card.hit').forEach(x=>x.classList.remove('hit')); c.classList.add('hit');
+  sc.scrollTo({left: (c.offsetLeft + c.offsetWidth/2)*vs - sc.clientWidth/2, top: c.offsetTop*vs - sc.clientHeight/2 + 30, behavior:'smooth'});
+}
+document.getElementById('q').addEventListener('input',e=>{
+  const v = e.target.value.trim().toLowerCase(); if(v.length<2) return;
+  const norm = s=>s.normalize('NFD').replace(/[̀-ͯ]/g,'').toLowerCase();
+  const hit = D.people.find(p=>norm(p.name+' '+(p.maiden||'')).includes(norm(v))); if(hit) focusCard(hit.id);
+});
+// ── view scale: bottom bar, Ctrl/⌘ + wheel, trackpad and touch pinch ──
+const stage = document.getElementById('stage'), cvs = document.getElementById('canvas'), rul = document.getElementById('ruler');
+const zr = document.getElementById('zr'), zp = document.getElementById('zp');
+function applyScale(s, ax, ay){
+  s = Math.max(VS_MIN, Math.min(VS_MAX, s));
+  if(ax===undefined){ ax = sc.clientWidth/2; ay = sc.clientHeight/2; }
+  const cx = (sc.scrollLeft + ax)/vs, cy = (sc.scrollTop + ay)/vs;   // content point under the anchor
+  vs = s;
+  cvs.style.transform = `scale(${vs})`;
+  stage.style.width = (W0*vs)+'px'; stage.style.height = (H0*vs)+'px';
+  rul.style.height = (H0*vs)+'px';
+  rul.querySelectorAll('.tick').forEach(t=>{ t.style.top = (+t.dataset.y*vs)+'px'; t.hidden = vs < 0.35 && +t.textContent % 50 !== 0; });
+  const evc = document.getElementById('events'); evc.style.height = (H0*vs)+'px';
+  evc.querySelectorAll('.evdot,.evband').forEach(el=>{
+    el.style.top = (+el.dataset.top*vs)+'px';
+    if(el.classList.contains('evband')) el.style.height = Math.max(2,+el.dataset.h*vs)+'px';
+  });
+  // labels: keep order by year, push down to avoid overlap; minor ones hidden when zoomed far out
+  const labels=[...evc.querySelectorAll('.evl')].sort((a,b)=>a.dataset.anchor-b.dataset.anchor);
+  let bottom=-1e9;
+  labels.forEach(lb=>{
+    lb.hidden = vs < 0.3 && !lb.dataset.major;
+    if(lb.hidden) return;
+    const h=lb.offsetHeight||16, want=+lb.dataset.anchor*vs - h/2, top=Math.max(want, bottom+3);
+    lb.style.top=top+'px'; bottom=top+h;
+  });
+  sc.scrollLeft = cx*vs - ax; sc.scrollTop = cy*vs - ay;
+  const pct = Math.round(vs*100); zr.value = pct; zp.textContent = pct+' %';
+  try{ localStorage.setItem('rv-scale', vs); }catch(e){}
+}
+const fitScale = () => Math.min((sc.clientWidth - rul.offsetWidth - document.getElementById('events').offsetWidth - 8)/W0, (sc.clientHeight - 8)/H0);
+document.getElementById('zin').addEventListener('click',()=>applyScale(vs*1.25));
+document.getElementById('zout').addEventListener('click',()=>applyScale(vs/1.25));
+zr.addEventListener('input',()=>applyScale(zr.value/100));
+document.getElementById('zfit').addEventListener('click',()=>{ applyScale(fitScale()); sc.scrollTo({left:0,top:0}); });
+document.getElementById('z100').addEventListener('click',()=>{ applyScale(1); focusCard(D.root); });
+sc.addEventListener('wheel',e=>{
+  if(!(e.ctrlKey||e.metaKey)) return;            // trackpad pinch arrives as ctrl+wheel
+  e.preventDefault();
+  const r = sc.getBoundingClientRect();
+  applyScale(vs*Math.exp(-e.deltaY*0.01), e.clientX-r.left, e.clientY-r.top);
+},{passive:false});
+// Safari (macOS) delivers trackpad pinch as non-standard gesture events instead of ctrl+wheel;
+// unhandled, Safari magnifies the whole page and the left part of the tree becomes unreachable
+let gest = null;
+sc.addEventListener('gesturestart',e=>{ e.preventDefault(); gest = vs; },{passive:false});
+sc.addEventListener('gesturechange',e=>{
+  e.preventDefault(); if(gest===null) return;
+  const r = sc.getBoundingClientRect();
+  applyScale(gest*e.scale, e.clientX-r.left, e.clientY-r.top);
+},{passive:false});
+sc.addEventListener('gestureend',e=>{ e.preventDefault(); gest = null; },{passive:false});
+// never let Safari magnify the whole page (header, legend and zoom bar would be cut off)
+document.addEventListener('gesturestart',e=>e.preventDefault(),{passive:false});
+const pts = new Map(); let pinch = null;
+sc.addEventListener('pointerdown',e=>{ if(e.pointerType==='touch') pts.set(e.pointerId,{x:e.clientX,y:e.clientY}); });
+sc.addEventListener('pointermove',e=>{
+  if(!pts.has(e.pointerId)) return; pts.set(e.pointerId,{x:e.clientX,y:e.clientY});
+  if(pts.size!==2) return;
+  const [a,b] = [...pts.values()], dist = Math.hypot(a.x-b.x,a.y-b.y), r = sc.getBoundingClientRect();
+  const mx=(a.x+b.x)/2-r.left, my=(a.y+b.y)/2-r.top;
+  if(!pinch) pinch = {dist, vs}; else applyScale(pinch.vs*dist/pinch.dist, mx, my);
+});
+const endPt = e=>{ pts.delete(e.pointerId); if(pts.size<2) pinch=null; };
+['pointerup','pointercancel','pointerleave'].forEach(t=>sc.addEventListener(t,endPt));
+document.getElementById('home').addEventListener('click',()=>focusCard(D.root));
+// ── drag to pan with the mouse (grab hand); a click without movement still opens a card ──
+let drag=null, dragMoved=false;
+sc.addEventListener('pointerdown',e=>{
+  if(e.pointerType!=='mouse'||e.button!==0) return;
+  drag={x:e.clientX,y:e.clientY,l:sc.scrollLeft,t:sc.scrollTop,id:e.pointerId}; dragMoved=false;
+});
+sc.addEventListener('pointermove',e=>{
+  // fallback: start from the first move with the left button held (some environments skip pointerdown)
+  if(!drag && e.pointerType==='mouse' && (e.buttons&1)){ drag={x:e.clientX,y:e.clientY,l:sc.scrollLeft,t:sc.scrollTop,id:e.pointerId}; dragMoved=false; return; }
+  if(!drag||e.pointerId!==drag.id) return;
+  if(!(e.buttons&1)){ drag=null; sc.classList.remove('panning'); return; }
+  const dx=e.clientX-drag.x, dy=e.clientY-drag.y;
+  if(!dragMoved && Math.abs(dx)+Math.abs(dy)<5) return;
+  if(!dragMoved){ dragMoved=true; sc.classList.add('panning'); try{sc.setPointerCapture(e.pointerId)}catch(_){} }
+  sc.scrollLeft=drag.l-dx; sc.scrollTop=drag.t-dy; e.preventDefault();
+});
+const endDrag=e=>{ if(!drag) return; drag=null; sc.classList.remove('panning'); };
+['pointerup','pointercancel'].forEach(t=>sc.addEventListener(t,endDrag));
+// swallow the click that follows a drag so dragging over a card does not open it
+sc.addEventListener('click',e=>{ if(dragMoved){ e.stopPropagation(); e.preventDefault(); dragMoved=false; } },true);
+
+render();
+applyScale(vs, 0, 0);
+// label heights change once the web fonts arrive (wrapping) – lay the event labels out again
+if(document.fonts&&document.fonts.ready) document.fonts.ready.then(()=>applyScale(vs));
+addEventListener('resize',()=>applyScale(vs));
+requestAnimationFrame(()=>{ const c=document.querySelector(`.card[data-id="${D.root}"]`); if(c) sc.scrollTo({left:(c.offsetLeft+c.offsetWidth/2)*vs-sc.clientWidth/2, top:Math.max(0,c.offsetTop*vs-60)}); });
+})();
+
+// ── map & story view ──
+(function(){
+  const D=window.RODOKMEN, svg=document.getElementById('map');
+  const G=window.RODOKMEN_GEO, lat0=G.lat0, lat1=G.lat1, lon0=G.lon0, lon1=G.lon1, W=G.W, H=G.H;
+  const PAD=28; svg.setAttribute('viewBox',`${-PAD} ${-PAD} ${W+2*PAD} ${H+2*PAD}`);
+  const X=lon=>(lon-lon0)/(lon1-lon0)*W, Y=lat=>(lat1-lat)/(lat1-lat0)*H;
+  let g=`<defs><clipPath id="mapclip"><rect x="${-PAD}" y="${-PAD}" width="${W+2*PAD}" height="${H+2*PAD}" rx="8"/></clipPath></defs><rect x="${-PAD}" y="${-PAD}" width="${W+2*PAD}" height="${H+2*PAD}" class="sea"/>`;
+  G.countries.forEach(c=>{ g+=`<path class="land ${c.id}" d="${c.d}"><title>${c.name}</title></path>`; });
+  for(let a=Math.ceil(lat0*2)/2;a<=lat1;a+=.5) g+=`<line class="grat" x1="0" x2="${W}" y1="${Y(a)}" y2="${Y(a)}"/>`;
+  for(let o=Math.ceil(lon0*2)/2;o<=lon1;o+=.5) g+=`<line class="grat" y1="0" y2="${H}" x1="${X(o)}" x2="${X(o)}"/>`;
+  G.labels.forEach(l=>{ g+=`<text class="country" x="${X(l.lon)}" y="${Y(l.lat)}">${l.t}</text>`; });
+  G.cities.filter(c=>c.r>0).forEach(c=>{ const r=[0,4,3,2.5][c.r]; const e=c.anchor==='end'; g+=`<circle class="city" style="--r:${r}" cx="${X(c.lon)}" cy="${Y(c.lat)}" r="${r}"/><text class="cityl r${c.r}" text-anchor="${e?'end':'start'}" x="${X(c.lon)+(e?-(r+3):r+3)}" y="${Y(c.lat)+3.5}">${c.n}</text>`; });
+  const DASH={doc:'', rail:'7 5', hyp:'2 5'};
+  g+=`<defs>${[...new Set(D.moves.map(m=>m.line))].map(l=>`<marker id="ar-${l}" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="var(--l-${l})"/></marker>`).join('')}</defs>`;
+  D.moves.forEach(m=>{
+    const pts=m.path.map(([la,lo])=>[X(lo),Y(la)]);
+    let d=`M${pts[0][0].toFixed(1)},${pts[0][1].toFixed(1)}`;
+    for(let i=1;i<pts.length;i++){ const [x0,y0]=pts[i-1],[x1,y1]=pts[i]; d+=` Q${((x0+x1)/2+(y1-y0)*.08).toFixed(1)},${((y0+y1)/2-(x1-x0)*.08).toFixed(1)} ${x1.toFixed(1)},${y1.toFixed(1)}`; }
+    g+=`<path class="route k-${m.kind}" stroke="var(--l-${m.line})" stroke-dasharray="${DASH[m.kind]}" marker-end="url(#ar-${m.line})" d="${d}"><title>${m.who}, ${m.when}: ${m.note}</title></path>`;
+    if(m.fromOffMap) g+=`<text class="lbl sub" x="${pts[0][0]+4}" y="${pts[0][1]-6}">← ${m.fromOffMap}</text>`;
+  });
+  // people per gazetteer place (longest alias match in birth/death place)
+  const GZ=(window.RODOKMEN_GAZ||[]), gzOf=txt=>{ let best=null,bl=0; GZ.forEach(z=>z.a.forEach(a=>{ if(txt&&txt.includes(a)&&a.length>bl){best=z;bl=a.length;} })); return best; };
+  const gzUse=new Map();
+  D.people.forEach(p=>[p.b,p.d].forEach(e=>{ if(!e||!e.place) return; const z=gzOf(e.place); if(!z||z.off) return;
+    const u=gzUse.get(z.n)||{z,ids:new Set(),from:9999,lines:{}}; u.ids.add(p.id); if(e.year) u.from=Math.min(u.from,e.year); u.lines[p.line]=(u.lines[p.line]||0)+1; gzUse.set(z.n,u); }));
+  const curatedZ=new Set();
+  D.places.forEach(p=>{ const z=gzOf(p.name); if(z){ curatedZ.add(z.n); const u=gzUse.get(z.n); if(u) p._auto=`${u.ids.size} ${u.ids.size===1?'osoba':u.ids.size<5?'osoby':'osob'} · od ${u.from}`; } });
+  gzUse.forEach(u=>{ if(curatedZ.has(u.z.n)) return;
+    const line=Object.entries(u.lines).sort((a,b)=>b[1]-a[1])[0][0], x=X(u.z.lon), y=Y(u.z.lat);
+    g+=`<circle class="pt auto" style="--r:3.5" cx="${x}" cy="${y}" r="3.5" fill="var(--l-${line})"><title>${u.z.n} – ${u.ids.size} osob v rodokmenu, doloženo od ${u.from}</title></circle><text class="lbl auto" x="${x+6}" y="${y+3}">${u.z.n}</text>`; });
+  D.places.forEach(p=>{
+    const x=X(p.lon),y=Y(p.lat);
+    const anchor = p.anchor || ((p.lon<18.2 && !p.hub) ? 'end' : 'start'), dx = anchor==='end'?-10:10, dy=p.dy||0;
+    g+=`<circle class="pt ${p.hub?'hub':''}" style="--r:${p.hub?9:(p.small?4.5:6)}" cx="${x}" cy="${y}" r="${p.hub?9:(p.small?4.5:6)}" fill="${p.hub?'var(--accent)':'var(--l-'+p.line+')'}"><title>${p.name} – ${p.note}</title></circle>`;
+    g+=`<text class="lbl" x="${x+dx}" y="${y+4+dy}" text-anchor="${anchor}">${p.name}</text><text class="lbl sub" x="${x+dx}" y="${y+17+dy}" text-anchor="${anchor}">${p.note}${p._auto?' · '+p._auto:''}</text>`;
+  });
+  svg.innerHTML=g;
+  // ── zoom & pan (viewBox): buttons, double click, Ctrl/⌘ + wheel or trackpad pinch, touch pinch, drag ──
+  const base={x:-PAD,y:-PAD,w:W+2*PAD,h:H+2*PAD}, vb={...base}, ZMAX=12;
+  function setVB(){
+    vb.w=Math.min(base.w,Math.max(base.w/ZMAX,vb.w)); vb.h=vb.w*base.h/base.w;
+    vb.x=Math.min(base.x+base.w-vb.w,Math.max(base.x,vb.x)); vb.y=Math.min(base.y+base.h-vb.h,Math.max(base.y,vb.y));
+    svg.setAttribute('viewBox',`${vb.x} ${vb.y} ${vb.w} ${vb.h}`);
+    svg.style.setProperty('--k',Math.pow(base.w/vb.w,-0.7).toFixed(3));
+    declutter();
+  }
+  // hide auto-place and city labels that would overlap a label placed before them (curated labels first); recomputed on zoom
+  function declutter(){
+    const placed=[], hit=(a,b)=>a.left<b.right&&b.left<a.right&&a.top<b.bottom&&b.top<a.bottom;
+    const order=[...svg.querySelectorAll('text.lbl:not(.auto):not(.sub)'),...svg.querySelectorAll('text.lbl.sub'),...svg.querySelectorAll('text.lbl.auto'),...svg.querySelectorAll('text.cityl')];
+    order.forEach(t=>{ t.style.visibility=''; const r=t.getBoundingClientRect(); if(!r.width) return;
+      const keep=!t.classList.contains('auto')&&!t.classList.contains('sub')&&!t.classList.contains('cityl');
+      if(!keep && placed.some(q=>hit(r,q))){ t.style.visibility='hidden'; return; } placed.push(r); });
+  }
+  function zoomAt(f,cx,cy){
+    const r=svg.getBoundingClientRect(); if(cx===undefined){cx=r.left+r.width/2;cy=r.top+r.height/2;}
+    const fx=(cx-r.left)/r.width, fy=(cy-r.top)/r.height, ux=vb.x+fx*vb.w, uy=vb.y+fy*vb.h;
+    vb.w=vb.w/f; vb.w=Math.min(base.w,Math.max(base.w/ZMAX,vb.w)); vb.h=vb.w*base.h/base.w; vb.x=ux-fx*vb.w; vb.y=uy-fy*vb.h; setVB();
+  }
+  document.getElementById('mzin').addEventListener('click',()=>zoomAt(1.6));
+  document.getElementById('mzout').addEventListener('click',()=>zoomAt(1/1.6));
+  document.getElementById('mzreset').addEventListener('click',()=>{ Object.assign(vb,base); setVB(); });
+  svg.addEventListener('dblclick',e=>{ e.preventDefault(); zoomAt(e.shiftKey?1/2:2,e.clientX,e.clientY); });
+  svg.addEventListener('wheel',e=>{ if(!(e.ctrlKey||e.metaKey)) return; e.preventDefault(); zoomAt(Math.exp(-e.deltaY*0.01),e.clientX,e.clientY); },{passive:false});
+  const mp=new Map(); let mpinch=null, mdrag=null;
+  svg.addEventListener('pointerdown',e=>{ mp.set(e.pointerId,{x:e.clientX,y:e.clientY}); if(mp.size===1){ mdrag={x:e.clientX,y:e.clientY,vx:vb.x,vy:vb.y}; } });
+  svg.addEventListener('pointermove',e=>{
+    if(!mp.has(e.pointerId)) return; mp.set(e.pointerId,{x:e.clientX,y:e.clientY});
+    const r=svg.getBoundingClientRect();
+    if(mp.size===2){ const [a,b]=[...mp.values()], d=Math.hypot(a.x-b.x,a.y-b.y), mx=(a.x+b.x)/2, my=(a.y+b.y)/2;
+      if(!mpinch) mpinch=d; else { zoomAt(d/mpinch,mx,my); mpinch=d; } mdrag=null; return; }
+    if(mdrag && vb.w<base.w){ const dx=e.clientX-mdrag.x, dy=e.clientY-mdrag.y;
+      if(Math.abs(dx)+Math.abs(dy)>3){ svg.classList.add('drag'); if(e.pointerType!=='mouse'||true) svg.setPointerCapture&&svg.setPointerCapture(e.pointerId); }
+      vb.x=mdrag.vx-dx/r.width*vb.w; vb.y=mdrag.vy-dy/r.height*vb.h; setVB(); }
+  });
+  const mend=e=>{ mp.delete(e.pointerId); if(mp.size<2) mpinch=null; if(!mp.size){ mdrag=null; svg.classList.remove('drag'); } };
+  ['pointerup','pointercancel','pointerleave'].forEach(t=>svg.addEventListener(t,mend));
+  setVB(); window.RV_mapDeclutter=declutter;
+  const KIND={doc:'doloženo',rail:'trasa pravděpodobná',hyp:'domněnka'};
+  document.getElementById('moves').innerHTML=D.moves.map(m=>`<li style="--c:var(--l-${m.line})"><b>${m.when}</b> – ${m.who}: ${m.note}<span class="k">${KIND[m.kind]}</span></li>`).join('');
+  const doc=p=>p.cert==='M'||p.cert==='D', place=e=>(e&&e.place||'').replace(/\s*č\.\s*\d+.*$/,'').replace(/,.*$/,'');
+  const oldestOf=ls=>D.people.filter(p=>ls.includes(p.line)&&doc(p)).reduce((a,p)=>!a||p.b.year<a.b.year?p:a,null);
+  const go=p=>`<button type="button" class="plink" data-go="${p.id}">${p.name}</button>`;
+  document.getElementById('story').innerHTML=D.story.map(s=>{
+    const ls=s.lines||[s.line], ps=D.people.filter(p=>ls.includes(p.line)), o=oldestOf(ls);
+    const facts=o?`<p class="facts">V rodokmenu ${ps.length} osob, z toho ${ps.filter(p=>p.cert==='M').length} přímo z matrik · nejstarší doložený předek ${go(o)} (*~${o.b.year}${place(o.b)?', '+place(o.b):''})</p>`:'';
+    return `<article style="--c:var(--l-${s.line})"><h2>${s.title}</h2>${facts}${s.text.map(t=>`<p>${t}</p>`).join('')}</article>`; }).join('');
+  // timeline = family milestones (data) + oldest documented ancestor of every line (computed) + historical events
+  const auto=Object.entries(D.lines).map(([k,l])=>{ const o=oldestOf([k]); return o&&{y:o.b.year,t:`Nejstarší doložený předek rodu ${l}: ${go(o)}${place(o.b)?' ('+place(o.b)+')':''}`,k:'anc'}; }).filter(Boolean);
+  const hist=(D.events||[]).map(e=>({y:e.y,t:(e.y2?e.y+'–'+e.y2+' ':'')+e.t,k:'hist'}));
+  const TLs=[...D.timeline.map(e=>({...e,k:'fam'})),...auto,...hist].sort((a,b)=>a.y-b.y||(a.k==='hist')-(b.k==='hist'));
+  document.getElementById('tl').innerHTML=TLs.map(e=>`<li class="${e.k}"><b>${e.y}</b>${e.t}</li>`).join('');
+  document.getElementById('mapView').addEventListener('click',e=>{ const b=e.target.closest('[data-go]'); if(!b) return; show(false); window.RV_focus&&window.RV_focus(b.dataset.go); });
+  const tT=document.getElementById('tabTree'), tM=document.getElementById('tabMap'), tW=document.getElementById('tabWide'), MV=document.getElementById('mapView'), WV=document.getElementById('wideView'), SC=document.getElementById('scroller'), tP=document.getElementById('tabPrint'), PV=document.getElementById('printView'), tA=document.getElementById('tabAnim'), AV=document.getElementById('animView'), LG=document.querySelector('.legend'), TL=document.querySelector('.tools'), ZB=document.getElementById('zoombar');
+  // mode: false/'tree' = tree, true/'map' = map, 'wide' = wider family circle
+  function show(mode){ const m=mode===true?'map':mode===false?'tree':mode; const tree=m==='tree';
+    MV.hidden=m!=='map'; WV.hidden=m!=='wide'; PV.hidden=m!=='print'; AV.hidden=m!=='anim'; SC.hidden=!tree; LG.hidden=!tree; TL.hidden=!tree; ZB.hidden=!tree;
+    tT.setAttribute('aria-selected',tree); tM.setAttribute('aria-selected',m==='map'); tW.setAttribute('aria-selected',m==='wide'); tP.setAttribute('aria-selected',m==='print'); tA.setAttribute('aria-selected',m==='anim');
+    if(window.RV_anim){ if(m==='anim') window.RV_anim.start(); else window.RV_anim.stop(); }
+    if(m==='wide') window.renderWide(); if(m==='map') window.RV_mapDeclutter&&window.RV_mapDeclutter();
+    try{localStorage.setItem('rv-tab',m)}catch(e){} }
+  tT.addEventListener('click',()=>show('tree')); tM.addEventListener('click',()=>show('map')); tW.addEventListener('click',()=>show('wide')); tP.addEventListener('click',()=>show('print')); tA.addEventListener('click',()=>show('anim'));
+  WV.addEventListener('click',e=>{ const b=e.target.closest('[data-go]'); if(!b) return; show('tree'); window.RV_focus&&window.RV_focus(b.dataset.go); });
+  try{ const t=localStorage.getItem('rv-tab'); if(t==='map'||t==='wide'||t==='print'||t==='anim') show(t); }catch(e){}
+  if(location.hash==='#mapa') show('map'); if(location.hash==='#okruh') show('wide'); if(location.hash==='#tisk') show('print'); if(location.hash==='#animace') show('anim');
+  document.getElementById('printStamp').textContent='Vygenerováno 18. 11. 2026 ze stejných dat jako tento web ('+D.people.length+' osob).';
+})();
+</script>
+<script>
+// "Animace": 3D cone of ancestors – each generation doubles; documented ancestors glow, the rest is the theoretical haze.
+(function(){
+  const V=document.getElementById('animView'); if(!V) return;
+  const D=window.RODOKMEN, P=Object.fromEntries(D.people.map(p=>[p.id,p]));
+  const G0=13, SEG=12, K=0.105, SPG=1.35; // generations, curve segments, height per year, seconds per generation
+  const LC={};
+  const GN=[null,'Rodiče','Prarodiče','Praprarodiče','Prapraprarodiče'];
+  const gname=g=>g?(GN[g]||`Předkové ${g}. generace`):P[D.root].name.split(' ')[0];
+  const fmt=n=>n.toLocaleString('cs-CZ');
+  const rnd=n=>{const x=Math.sin(n*12.9898+78.233)*43758.5453;return x-Math.floor(x)};
+  const hex=h=>[1,3,5].map(i=>parseInt(h.slice(i,i+2),16)/255);
+  const rad=g=>g?2.1*Math.pow(g,.92):0;
+  const root=P[D.root], rootY=root.b.year, first=root.name.split(' ')[0], fem=/á$/.test(root.name.split(' ').pop());
+  const rootPl=((root.b&&root.b.place)||'').split(/,| č\. ?p\.| č\.p\./)[0].trim();
+  const cx=document.createElement('canvas').getContext('2d'), cssCol=k=>{const v=getComputedStyle(document.documentElement).getPropertyValue('--l-'+k).trim(); if(!v) return null; cx.fillStyle='#000'; cx.fillStyle=v; return cx.fillStyle;};
+  // ---- ahnentafel slots (n: 1 = root person, 2n father, 2n+1 mother)
+  let mg=0; (function w(id,n,g){const p=P[id]; if(!p) return; mg=Math.max(mg,g); if(g<20){w(p.father,2*n,g+1); w(p.mother,2*n+1,g+1);}})(D.root,1,0);
+  const G=Math.max(G0,mg+1);
+  const S=[]; const byN=new Map();
+  for(let g=0;g<=G;g++){const s=2**g; for(let n=s;n<2*s;n++){
+    const c=byN.get(n>>1); let id=null;
+    if(n===1) id=D.root; else if(c&&c.id){const cp=P[c.id]; id=(n&1?cp.mother:cp.father)||null; if(id&&!P[id]) id=null;}
+    const p=id&&P[id]; let year;
+    if(n===1) year=rootY; else if(p&&p.b&&p.b.year) year=p.b.year; else year=c.year-(n&1?26:31)-(p?0:Math.round((rnd(n)-.5)*8));
+    if(n>1&&year>c.year-14) year=c.year-14;
+    const th=2*Math.PI*((n-s+.5)/s)+Math.PI/2, r=rad(g);
+    const o={n,g,id,p,year,th,x:r*Math.cos(th),y:(rootY-year)*K,z:r*Math.sin(th)}; S.push(o); byN.set(n,o);
+  }}
+  const KS=S.filter(s=>s.p); // documented slots
+  const perGen=[...Array(G+1)].map((_,g)=>{const a=S.filter(s=>s.g===g), k=a.filter(s=>s.p), ys=k.map(s=>s.p.b&&s.p.b.year).filter(Boolean);
+    const est=Math.round(a.reduce((t,s)=>t+s.year,0)/a.length);
+    return {g,n:2**g,k:k.length,lo:ys.length?Math.min(...ys):null,hi:ys.length?Math.max(...ys):null,est,ymax:Math.max(...a.map(s=>s.y)),y:a.reduce((t,s)=>t+s.y,0)/a.length};});
+  // pedigree collapse: same person in more slots; arcs only for the youngest such persons
+  const dup={}; KS.forEach(s=>(dup[s.id]=dup[s.id]||[]).push(s));
+  const implex=Object.values(dup).filter(a=>a.length>1&&new Set(a.map(s=>byN.get(s.n>>1).id)).size>1);
+  const impSet=new Set(implex.map(a=>a[0].id));
+  const uniq=new Set(KS.map(s=>s.id)); uniq.delete(D.root);
+  const oldest=[...uniq].map(i=>P[i]).filter(p=>p.cert==='M'&&p.b&&p.b.year).sort((a,b)=>a.b.year-b.b.year)[0];
+  const totalSlots=2**(G+1)-2;
+
+  // ---- HUD
+  const $=id=>document.getElementById(id);
+  const kick=$('aKick'), num=$('aNum'), kn=$('aKnown'), ruler=$('aRuler'), tip=$('aTip'), sum=$('aSum'), labels=$('aLabels'), btnP=$('aPlay'), btnA=$('aAgain'), load=$('aLoad');
+  $('aWho').textContent=first; if(fem) $('aWho').parentNode.firstChild.textContent='Kolik lidí bylo potřeba, aby se narodila ';
+  ruler.innerHTML=perGen.slice().reverse().map(r=>`<li data-g="${r.g}"><span>${r.lo?r.lo:'~'+Math.round(r.est/5)*5}</span><i></i><b>${fmt(r.n)}</b><em>${r.k?r.k+' známe':''}</em></li>`).join('');
+  const rows=[...ruler.children].reverse();
+  const yrs=r=>r.lo?(r.lo===r.hi?`narozen${r.g?'i':''} ${r.lo}`:`narozeni ${r.lo}–${r.hi}`):`narozeni kolem ${Math.round(r.est/10)*10}`;
+  const who=s=>{const p=s.p,b=p.b&&p.b.year,d=p.d&&p.d.year;return `<b>${p.name}${p.maiden?' <span>roz. '+p.maiden+'</span>':''}</b><br>${b?'* '+(p.b.date||b):''}${d?' &nbsp;† '+(p.d.date||d):''}${p.b&&p.b.place?'<br>'+p.b.place:''}`;};
+  const impN=implex.map(a=>a[0].p.name), imp=!impN.length?'':impN.length<=2?impN.join(' a ')+(impN.length>1?' jsou':' je'):`${impN.length} předků (např. ${impN.slice(0,3).join(', ')})`+' je';
+  sum.innerHTML=`<button type="button" class="ax" aria-label="Zavřít shrnutí">×</button><p>Za ${G} generací (asi ${rootY-perGen[G].est} let) je v rodokmenu <b>${fmt(totalSlots)}</b> míst – a každý pár se musel potkat, aby tu ${first} ${fem?'byla':'byl'}.</p><p>Jménem známe <b>${fmt(uniq.size)}</b> z nich${oldest?`; nejstarší doložený v matrikách je ${oldest.name} (${oldest.b.approx?'~':'* '}${oldest.b.year})`:''}.${imp?` ${imp} v rodokmenu víckrát, po různých liniích (ztráta předků) – v animaci svítí modře a spojují je oblouky.`:''}</p>`;
+  const LBL=KS.filter(s=>s.g<=2).map(s=>{const e=document.createElement('span');e.className='alabel'+(s.g?'':' root');e.textContent=s.g?s.p.name:s.p.name.toUpperCase();labels.appendChild(e);return [s,e];});
+
+  let T=null, ren, scene, cam, comp, lineMat, ptMat, raf=0, running=false, paused=false, prog=0, last=0, user=0, rq=matchMedia('(prefers-reduced-motion: reduce)').matches;
+  const cs={th:0,ph:1.55,d:10,ty:1}; // camera spherical
+  async function init(){
+    T=await import('https://cdn.jsdelivr.net/npm/three@0.160.0/+esm');
+    const [{EffectComposer},{RenderPass},{UnrealBloomPass},{OutputPass}]=await Promise.all(['postprocessing/EffectComposer','postprocessing/RenderPass','postprocessing/UnrealBloomPass','postprocessing/OutputPass'].map(m=>import(`https://cdn.jsdelivr.net/npm/three@0.160.0/examples/jsm/${m}.js/+esm`)));
+    const cv=$('animCanvas');
+    ren=new T.WebGLRenderer({canvas:cv,antialias:true}); ren.setPixelRatio(Math.min(devicePixelRatio,2)); ren.setClearColor(0x000000,1);
+    scene=new T.Scene(); cam=new T.PerspectiveCamera(45,1,.1,500);
+    // lines: curves child -> parent, rings, implex arcs
+    const pos=[],tt=[],col=[],al=[];
+    const seg=(a,b,ta,tb,c,aa,ab)=>{pos.push(...a,...b);tt.push(ta,tb);col.push(...c,...c);al.push(aa,ab);};
+    const GOLD=[.96,.76,.42], WARM=[1,.9,.7], BLUE=[.35,.7,1], GREY=[.55,.55,.6];
+    for(const s of S){ if(s.n===1) continue; const c=byN.get(s.n>>1), h=s.y-c.y;
+      const amp=s.p?0:.05*s.g, ph=rnd(s.n)*6.28, fr=1.5+rnd(s.n+7)*3, tx=-Math.sin(s.th), tz=Math.cos(s.th);
+      const a0=s.p?.55:(s.g<=6?.10:s.g<=10?.045:.022), cc=s.p?WARM:GOLD; let pv=null;
+      for(let i=0;i<=SEG;i++){const t=i/SEG, e=3*t*t-2*t*t*t, w=amp*Math.sin(Math.PI*t)*Math.sin(ph+fr*t*Math.PI);
+        const q=[c.x+(s.x-c.x)*e+tx*w, c.y+h*t, c.z+(s.z-c.z)*e+tz*w];
+        if(pv) seg(pv,q,s.g-1+(i-1)/SEG,s.g-1+t,cc,a0,a0); pv=q;}
+    }
+    for(const r of perGen){ if(!r.g) continue; const R=rad(r.g)+1.4, N=128; let pv=null;
+      for(let i=0;i<=N;i++){const a=i/N*Math.PI*2, q=[R*Math.cos(a),r.y,R*Math.sin(a)]; if(pv) seg(pv,q,r.g-.15,r.g-.15,GREY,.035,.035); pv=q;}}
+    for(const a of implex) for(let j=1;j<a.length;j++){const A=a[j-1],B=a[j], gg=Math.max(A.g,B.g); let pv=null;
+      for(let i=0;i<=40;i++){const t=i/40, q=[A.x+(B.x-A.x)*t, A.y+(B.y-A.y)*t+Math.sin(Math.PI*t)*4, A.z+(B.z-A.z)*t]; if(pv){ for(const o of [0,.06,-.06]) seg([pv[0]+o,pv[1]+o,pv[2]],[q[0]+o,q[1]+o,q[2]],gg+(i-1)/40*.8,gg+t*.8,BLUE,1,1); } pv=q;}}
+    const lg=new T.BufferGeometry(); lg.setAttribute('position',new T.Float32BufferAttribute(pos,3)); lg.setAttribute('aT',new T.Float32BufferAttribute(tt,1)); lg.setAttribute('aCol',new T.Float32BufferAttribute(col,3)); lg.setAttribute('aA',new T.Float32BufferAttribute(al,1));
+    lineMat=new T.ShaderMaterial({uniforms:{uProg:{value:0}},transparent:true,depthWrite:false,blending:T.AdditiveBlending,
+      vertexShader:`attribute float aT;attribute vec3 aCol;attribute float aA;uniform float uProg;varying vec3 vC;varying float vA;
+        void main(){vC=aCol;vA=aA*clamp((uProg-aT)*8.0,0.0,1.0);gl_Position=projectionMatrix*modelViewMatrix*vec4(position,1.0);}`,
+      fragmentShader:`varying vec3 vC;varying float vA;void main(){if(vA<.002)discard;gl_FragColor=vec4(vC,vA);}`});
+    scene.add(new T.LineSegments(lg,lineMat));
+    // points: every slot; documented ones bright and tinted by family line
+    const pp=[],pt=[],ps=[],pc=[],pa=[];
+    for(const s of S){pp.push(s.x,s.y,s.z);pt.push(s.n===1?-1:s.g);
+      if(s.n===1){ps.push(1.5);pc.push(1,.92,.75);pa.push(1);}
+      else if(s.p&&impSet.has(s.id)){ps.push(1.15);pc.push(...BLUE);pa.push(1);}
+      else if(s.p){const l=hex(cssCol(s.p.line)||LC[s.p.line]||'#e8c88a');ps.push(s.g<=3?.75:.55);pc.push((l[0]+1)/2,(l[1]+.9)/2,(l[2]+.7)/2);pa.push(1);}
+      else{ps.push(.2);pc.push(...GOLD);pa.push(s.g<=9?.35:.12);}}
+    const pg=new T.BufferGeometry(); pg.setAttribute('position',new T.Float32BufferAttribute(pp,3)); pg.setAttribute('aT',new T.Float32BufferAttribute(pt,1)); pg.setAttribute('aSize',new T.Float32BufferAttribute(ps,1)); pg.setAttribute('aCol',new T.Float32BufferAttribute(pc,3)); pg.setAttribute('aA',new T.Float32BufferAttribute(pa,1));
+    ptMat=new T.ShaderMaterial({uniforms:{uProg:{value:0},uScale:{value:500},uTime:{value:0}},transparent:true,depthWrite:false,blending:T.AdditiveBlending,
+      vertexShader:`attribute float aT;attribute float aSize;attribute float aA;attribute vec3 aCol;uniform float uProg;uniform float uScale;uniform float uTime;varying vec3 vC;varying float vA;
+        void main(){float k=clamp((uProg-aT)*3.0,0.0,1.0);float pop=k*(1.0+0.9*sin(k*3.14159));vec4 mv=modelViewMatrix*vec4(position,1.0);
+        float tw=aT<0.0?1.0+0.12*sin(uTime*2.0):1.0;gl_PointSize=max(aSize*pop*tw*uScale/-mv.z,k>0.0?1.0:0.0);vC=aCol;vA=aA*k;gl_Position=projectionMatrix*mv;}`,
+      fragmentShader:`varying vec3 vC;varying float vA;void main(){float d=length(gl_PointCoord-0.5)*2.0;if(d>1.0||vA<.002)discard;
+        float core=smoothstep(.42,.0,d),glow=pow(1.0-d,2.2)*.55;gl_FragColor=vec4(vC*(core*1.1+glow)+vec3(core*.35),vA);}`});
+    scene.add(new T.Points(pg,ptMat));
+    // base disc under the root person
+    const dg=new T.RingGeometry(.9,3.2,96); dg.rotateX(-Math.PI/2);
+    scene.add(new T.Mesh(dg,new T.MeshBasicMaterial({color:0x8a7650,transparent:true,opacity:.05,blending:T.AdditiveBlending,depthWrite:false,side:T.DoubleSide})));
+    comp=new EffectComposer(ren); comp.addPass(new RenderPass(scene,cam));
+    comp.addPass(new UnrealBloomPass(new T.Vector2(512,512),.7,.5,.25)); comp.addPass(new OutputPass());
+    new ResizeObserver(size).observe(V); size(); bindInput(cv); load.hidden=true;
+  }
+  function size(){ if(!ren) return; const w=V.clientWidth,h=V.clientHeight; if(!w||!h) return; ren.setSize(w,h,false); comp.setSize(w,h); cam.aspect=w/h; cam.updateProjectionMatrix();
+    ptMat.uniforms.uScale.value=h*ren.getPixelRatio()/2/Math.tan(cam.fov*Math.PI/360); V.classList.toggle('narrow',w<640); }
+  // ---- camera choreography: keep the current generation in frame, rise and look down into the funnel
+  function choreo(dt){
+    const f=Math.min(Math.max(prog,0),G+.4), g=Math.min(Math.ceil(f),G), a=f-Math.floor(f), g0=Math.max(g-1,0);
+    const yy=perGen[g0].ymax+(perGen[g].ymax-perGen[g0].ymax)*a, rr=rad(g0)+(rad(g)-rad(g0))*a+1.5;
+    const vf=Math.tan(cam.fov*Math.PI/360), hf=vf*cam.aspect, need=Math.max((yy*.62+1.2)/vf,(rr*1.08)/hf)+rr*.6;
+    const k=1-Math.exp(-dt*2.2), e=Math.min(f/G,1);
+    cs.d+=(Math.max(need,8)-cs.d)*k; cs.ty+=(yy*.46+.8-cs.ty)*k; cs.ph+=((1.62-.25*e)-cs.ph)*k;
+  }
+  function frame(t){ raf=requestAnimationFrame(frame); const dt=Math.min((t-(last||t))/1000,.1); last=t;
+    if(!paused&&prog<G+.6) prog+=dt/SPG*(prog<3?.8:1);
+    if(prog>=G+.6&&sum.hidden&&!sum.dataset.closed){sum.hidden=false;}
+    if(t-user>2500){ if(prog<G+.6||!user) choreo(dt); cs.th+=dt*(prog<G+.6?.07:.05)*(paused?0:1); }
+    const sp=Math.sin(cs.ph); cam.position.set(cs.d*sp*Math.sin(cs.th),cs.ty+cs.d*Math.cos(cs.ph),cs.d*sp*Math.cos(cs.th)); cam.lookAt(0,cs.ty,0);
+    lineMat.uniforms.uProg.value=prog; ptMat.uniforms.uProg.value=prog; ptMat.uniforms.uTime.value=t/1000;
+    comp.render(); hud();
+  }
+  let lastG=-1, shown=0;
+  function hud(){ const g=Math.max(0,Math.min(G,Math.floor(prog+.02))), r=perGen[g];
+    if(g!==lastG){ lastG=g; kick.textContent=`${gname(g).toUpperCase()} · ${yrs(r).toUpperCase()}`;
+      kn.textContent=g?(r.k?`jménem doloženo ${r.k} z ${fmt(r.n)}`:'tady už jména nikdo nezapsal – nebo se nedochovala'):[rootPl,rootY].filter(Boolean).join(', '); rows.forEach((li,i)=>{li.classList.toggle('on',i<=g);li.classList.toggle('cur',i===g)}); }
+    shown+=(r.n-shown)*.18; if(Math.abs(r.n-shown)<.5) shown=r.n; num.textContent=fmt(Math.round(shown));
+    const w=V.clientWidth,h=V.clientHeight, v=new T.Vector3();
+    for(const [s,e] of LBL){ v.set(s.x,s.y,s.z).project(cam); const vis=Math.min(Math.max((prog-s.g)*2,0),1)*(v.z<1?1:0)*(s.g?Math.min(Math.max((34-cs.d)/10,0),1):(sum.hidden||w>=640?1:0));
+      e.style.opacity=vis; e.style.transform=`translate(${(v.x+1)/2*w}px,${(1-v.y)/2*h}px)`; }
+  }
+  // ---- input: drag to orbit, wheel / pinch to zoom, hover tooltip, click opens person in the tree
+  function bindInput(cv){ const pts=new Map(); let pinch=0, moved=0;
+    cv.addEventListener('pointerdown',e=>{cv.setPointerCapture(e.pointerId);pts.set(e.pointerId,[e.clientX,e.clientY]);moved=0;cv.style.cursor='grabbing';});
+    cv.addEventListener('pointermove',e=>{ const o=pts.get(e.pointerId);
+      if(!o){ hover(e); return; }
+      if(pts.size===2){ pts.set(e.pointerId,[e.clientX,e.clientY]); const [a,b]=[...pts.values()], d=Math.hypot(a[0]-b[0],a[1]-b[1]); if(pinch) cs.d=Math.min(Math.max(cs.d*pinch/d,4),160); pinch=d; user=performance.now(); return; }
+      const dx=e.clientX-o[0], dy=e.clientY-o[1]; moved+=Math.abs(dx)+Math.abs(dy); pts.set(e.pointerId,[e.clientX,e.clientY]);
+      cs.th-=dx*.006; cs.ph=Math.min(Math.max(cs.ph-dy*.005,.15),2.6); user=performance.now(); tip.hidden=true; });
+    const up=e=>{pts.delete(e.pointerId);pinch=0;cv.style.cursor='';if(moved<6&&e.type==='pointerup'){const s=pick(e);if(s&&s.n>1){document.getElementById('tabTree').click();window.RV_focus&&window.RV_focus(s.id);}}};
+    cv.addEventListener('pointerup',up); cv.addEventListener('pointercancel',up); cv.addEventListener('pointerleave',()=>{if(!pts.size)tip.hidden=true;});
+    cv.addEventListener('wheel',e=>{e.preventDefault();cs.d=Math.min(Math.max(cs.d*Math.exp(e.deltaY*.0012),4),160);user=performance.now();},{passive:false});
+  }
+  function pick(e){ const R=V.getBoundingClientRect(), mx=e.clientX-R.left, my=e.clientY-R.top, v=new T.Vector3(); let best=null,bd=18;
+    for(const s of KS){ if(prog<s.g) continue; v.set(s.x,s.y,s.z).project(cam); if(v.z>1) continue; const d=Math.hypot((v.x+1)/2*R.width-mx,(1-v.y)/2*R.height-my); if(d<bd){bd=d;best=s;} }
+    return best; }
+  function hover(e){ const s=pick(e); if(!s){tip.hidden=true;$('animCanvas').style.cursor='';return;}
+    const R=V.getBoundingClientRect(); tip.innerHTML=who(s)+(s.n>1?'<small>kliknutím otevřete v rodokmenu</small>':''); tip.hidden=false;
+    tip.style.left=Math.min(e.clientX-R.left+14,R.width-250)+'px'; tip.style.top=(e.clientY-R.top+14)+'px'; $('animCanvas').style.cursor='pointer'; }
+  function restart(){ prog=rq?G+.6:0; shown=1; lastG=-1; user=0; sum.hidden=!rq; delete sum.dataset.closed; paused=false; btnP.textContent='Pauza'; Object.assign(cs,{th:0,ph:1.55,d:10,ty:1}); }
+  btnP.addEventListener('click',()=>{paused=!paused;btnP.textContent=paused?'Přehrát':'Pauza';});
+  btnA.addEventListener('click',restart); sum.addEventListener('click',e=>{if(e.target.closest('.ax'))sum.hidden=true,sum.dataset.closed=1;});
+  let started=false;
+  window.RV_anim={
+    async start(){ if(running) return; running=true;
+      if(!T){ try{ await init(); }catch(err){ load.textContent='3D animaci se nepodařilo načíst (je potřeba připojení k internetu a WebGL).'; running=false; return; } }
+      if(!running) return; if(!started){started=true;restart();} last=0; size(); raf=requestAnimationFrame(frame); },
+    stop(){ running=false; cancelAnimationFrame(raf); }
+  };
+  if(!V.hidden) window.RV_anim.start();
+})();
+</script>

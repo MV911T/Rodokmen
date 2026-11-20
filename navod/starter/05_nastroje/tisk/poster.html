@@ -1,0 +1,192 @@
+<!doctype html>
+<html lang="cs"><head><meta charset="utf-8">
+<title>Rodokmen – tisková verze</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,400;0,600;1,400&family=Spectral+SC:wght@500&family=IBM+Plex+Sans+Condensed:ital,wght@0,400;0,600;1,400&display=block">
+<style>
+
+html,body{margin:0;padding:0;background:#fff}
+svg{display:block}
+</style>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/qrcode-generator/1.4.4/qrcode.min.js"></script>
+<script src="data.js"></script>
+</head><body>
+<svg id="poster" xmlns="http://www.w3.org/2000/svg"></svg>
+<script>
+// Print poster W × 1000 mm (W from ?w=, default 2500) (all coordinates in mm). Youngest generation at the top, oldest ancestors at the bottom.
+(async function(){
+await document.fonts.ready;
+await Promise.all(['600 10px "IBM Plex Sans Condensed"','400 10px "IBM Plex Sans Condensed"','italic 400 10px "IBM Plex Sans Condensed"','600 10px Spectral','500 10px "Spectral SC"','italic 400 10px Spectral'].map(f=>document.fonts.load(f)));
+const D=window.RODOKMEN, P={}; D.people.forEach(p=>P[p.id]=p);
+const W=+(new URLSearchParams(location.search).get('w')||2500), H=1000, FR=22;   // poster size in mm, frame inset
+const SANS='"IBM Plex Sans Condensed"', SERIF='Spectral';
+const C={bg:'#f7f1e1', frame:'#9c8f62', ink:'#2b2a24', muted:'#6d6650', line:'#7d7258',
+  male:'#dde8f2', maleB:'#7f9ab3', female:'#f6e0e0', femaleB:'#b98a8a', root:'#dcebd3', rootB:'#6f9a5c', tree:'#c9bf94'};
+const lineColor={vesely:'#3f6e8c',woron:'#7a5c99',chmielek:'#a0577a',pacik:'#3d7d5c',matusu:'#8a7a2e',struz:'#a3612d',jirik:'#2f7a80',opolony:'#6b6f2f',plachy:'#7a5f48'};   // same as the web (--l-*)
+const lc=k=>{ if(lineColor[k]) return lineColor[k]; let h=0; for(const ch of k) h=(h*31+ch.charCodeAt(0))%360; return `hsl(${h},38%,42%)`; };
+const svg=document.getElementById('poster'); svg.setAttribute('viewBox',`0 0 ${W} ${H}`); svg.setAttribute('width',W+'mm'); svg.setAttribute('height',H+'mm');
+{ const st=document.createElement('style'); st.textContent=`@page{size:${W}mm ${H}mm;margin:0}`; document.head.appendChild(st); } const NS='http://www.w3.org/2000/svg';
+const el=(tag,a,parent=svg,txt)=>{ const e=document.createElementNS(NS,tag); for(const k in a) e.setAttribute(k,a[k]); if(txt!=null) e.textContent=txt; parent.appendChild(e); return e; };
+const cv=document.createElement('canvas').getContext('2d');
+const tw=(s,size,weight=400,fam=SANS,style='normal')=>{ cv.font=`${style} ${weight} ${size*100}px ${fam}`; return cv.measureText(s).width/100; };
+
+// ---------- pedigree tree (first occurrence expanded, repeats shown as references) ----------
+const seen={}; let order=0;
+function build(id,gen,sex){ const p=P[id]; if(!p) return null;
+  const n={id,p,gen,sex,dup:!!seen[id],par:[]}; if(n.dup){ n.ref=seen[id]; return n; } seen[id]=n; n.no=++order;
+  const f=build(p.father,gen+1,'m'), m=build(p.mother,gen+1,'f'); if(f) n.par.push(f); if(m) n.par.push(m); return n; }
+const root=build(D.root,0,'m');
+const all=[]; (function walk(n){ all.push(n); n.par.forEach(walk); })(root);
+const G=Math.max(...all.map(n=>n.gen))+1;
+
+// Reingold–Tilford style packing of a binary pedigree: contours per generation (relative to the node)
+const SEP=1;
+function lay(n){ if(!n.par.length){ n.L=[0]; n.R=[0]; return; }
+  n.par.forEach(lay);
+  if(n.par.length===1){ const a=n.par[0]; a.off=0; n.L=[0,...a.L]; n.R=[0,...a.R]; return; }
+  const [a,b]=n.par; let s=SEP; for(let k=0;k<Math.min(a.R.length,b.L.length);k++) s=Math.max(s,a.R[k]-b.L[k]+SEP);
+  a.off=-s/2; b.off=s/2; const L=[0],R=[0];
+  for(let k=0;k<Math.max(a.L.length,b.L.length);k++){ const ls=[],rs=[]; if(k<a.L.length){ls.push(a.L[k]+a.off);rs.push(a.R[k]+a.off)} if(k<b.L.length){ls.push(b.L[k]+b.off);rs.push(b.R[k]+b.off)} L.push(Math.min(...ls)); R.push(Math.max(...rs)); }
+  n.L=L; n.R=R; }
+lay(root); (function abs(n,x){ n.u=x; n.par.forEach(c=>abs(c,x+c.off)); })(root,0);
+// root's siblings sit beside the root on the top row
+const sibs=D.people.filter(p=>p.id!==D.root&&p.father===P[D.root].father&&p.mother===P[D.root].mother).concat([P[D.root]]).sort((a,b)=>(a.b&&a.b.year||0)-(b.b&&b.b.year||0));
+const umin=Math.min(...all.map(n=>n.u)), umax=Math.max(...all.map(n=>n.u));
+
+// ---------- geometry ----------
+const X0=FR+52, X1=W-FR-30;                 // left margin carries generation labels
+const scale=(X1-X0)/(umax-umin); const xOf=u=>X0+(u-umin)*scale;
+all.forEach(n=>n.x=xOf(n.u));
+const rows=[...Array(G)].map((_,g)=>all.filter(n=>n.gen===g).sort((a,b)=>a.x-b.x));
+const GAP=1.6, MAXW=44, maxW=g=>g<=1?62:g<=3?52:MAXW;
+const rowInfo=rows.map((r,g)=>{ let dmin=Infinity; for(let i=1;i<r.length;i++) dmin=Math.min(dmin,r[i].x-r[i-1].x);
+  const single=Math.min(maxW(g),dmin-GAP); const stag=single<23&&r.length>2;
+  let w=single; if(stag){ let d2=Infinity; for(let i=2;i<r.length;i++) d2=Math.min(d2,r[i].x-r[i-2].x); w=Math.min(MAXW,d2-GAP,2*(dmin-0.9)); }
+  return {g,stag,w:Math.max(8,w),n:r.length}; });
+const TOP=FR+78, BOT=H-FR-62;                // tree area between title and footer
+const CONN=7;                                 // vertical room for connector bars between generations
+const subRows=rowInfo.reduce((s,r)=>s+(r.stag?2:1),0);
+const rowH=(BOT-TOP-(G-1)*CONN)/subRows;
+let y=TOP; rowInfo.forEach(r=>{ r.y=y; r.h=(r.stag?2:1)*rowH; y+=r.h+CONN; });
+const SUBGAP=2.2, bh=r=>r.stag?(rowH-SUBGAP/2):Math.min(rowH,r.g<2?rowH:rowH);
+rows.forEach((r,g)=>{ const ri=rowInfo[g]; r.forEach((n,i)=>{ n.w=ri.w; n.h=ri.stag?rowH-SUBGAP/2:rowH; n.y=ri.stag&&i%2?ri.y+rowH+SUBGAP/2:ri.y; }); });
+
+// ---------- background ----------
+el('rect',{x:0,y:0,width:W,height:H,fill:C.bg});
+const deco=el('g',{fill:'none',stroke:C.tree,'stroke-linecap':'round',opacity:.32});
+// faint stylised tree: trunk rising from the roots at the bottom, crown behind the younger generations
+(function tree(){ let seed=7; const rnd=()=>(seed=(seed*16807)%2147483647)/2147483647;
+  const br=(x,y,a,len,wd,d)=>{ if(d===0||len<6) { el('ellipse',{cx:x,cy:y,rx:4.2,ry:1.8,transform:`rotate(${a*57.3} ${x} ${y})`,fill:C.tree,stroke:'none',opacity:.7},deco); return; }
+    const x2=x+Math.cos(a)*len, y2=y+Math.sin(a)*len; el('path',{d:`M${x} ${y}Q${(x+x2)/2+(rnd()-.5)*len*.3} ${(y+y2)/2+(rnd()-.5)*len*.3} ${x2} ${y2}`,'stroke-width':wd},deco);
+    const k=2+(rnd()<.35); for(let i=0;i<k;i++) br(x2,y2,a+(i-(k-1)/2)*(.5+rnd()*.25),len*(.68+rnd()*.12),wd*.66,d-1); };
+  const cx=W/2; el('path',{d:`M${cx-26} ${H-FR-40} C${cx-14} ${H-260} ${cx-18} ${H-420} ${cx-4} ${H-520} L${cx+4} ${H-520} C${cx+18} ${H-420} ${cx+14} ${H-260} ${cx+26} ${H-FR-40}Z`,fill:C.tree,stroke:'none',opacity:.5},deco);
+  [-2.2,-1.9,-1.57,-1.25,-.95].forEach(a=>br(cx,H-505,a,150,9,7));
+  [.5,.9,1.3,1.8,2.25,2.65].forEach(a=>br(cx,H-FR-44,a,60,5,4)); })();
+// double frame + corner sprigs
+el('rect',{x:FR,y:FR,width:W-2*FR,height:H-2*FR,fill:'none',stroke:C.frame,'stroke-width':1.2});
+el('rect',{x:FR+4,y:FR+4,width:W-2*FR-8,height:H-2*FR-8,fill:'none',stroke:C.frame,'stroke-width':.45});
+function sprig(x,y,sx,sy){ const g=el('g',{transform:`translate(${x} ${y}) scale(${sx} ${sy})`,fill:'none',stroke:C.frame,'stroke-width':.6,opacity:.9});
+  el('path',{d:'M0 0 C 25 6 45 20 70 22'},g); el('path',{d:'M0 0 C 6 25 20 45 22 70'},g);
+  for(let i=1;i<=6;i++){ const t=i/7; const px=70*t, py=22*t*t*1.1, qx=22*t*t*1.1, qy=70*t;
+    el('ellipse',{cx:px,cy:py-3,rx:4,ry:1.5,transform:`rotate(-25 ${px} ${py-3})`,fill:C.frame,stroke:'none',opacity:.55},g);
+    el('ellipse',{cx:qx-3,cy:qy,rx:1.5,ry:4,transform:`rotate(-25 ${qx-3} ${qy})`,fill:C.frame,stroke:'none',opacity:.55},g); }
+  el('circle',{cx:0,cy:0,r:2.2,fill:C.frame,stroke:'none'},g); }
+sprig(FR+9,FR+9,1,1); sprig(W-FR-9,FR+9,-1,1); sprig(FR+9,H-FR-9,1,-1); sprig(W-FR-9,H-FR-9,-1,-1);
+
+// ---------- title ----------
+const mainLines=[...new Set([...(rows[1]||[]),...(rows[2]||[]),...(rows[3]||[])].map(n=>D.lines[n.p.line]).filter(Boolean))];
+const rootP=P[D.root];
+el('text',{x:W/2,y:FR+30,'text-anchor':'middle','font-family':'"Spectral SC"','font-weight':500,'font-size':19,'letter-spacing':5,fill:C.ink},svg,'Rodokmen');
+el('line',{x1:W/2-120,y1:FR+37,x2:W/2+120,y2:FR+37,stroke:C.frame,'stroke-width':.5});
+el('text',{x:W/2,y:FR+49,'text-anchor':'middle','font-family':SERIF,'font-style':'italic','font-size':9,fill:C.ink},svg,`${rootP.name} a jeho předkové · rody ${mainLines.slice(0,-1).join(', ')} a ${mainLines.slice(-1)}`);
+
+// ---------- generation labels ----------
+const roman=n=>['I','II','III','IV','V','VI','VII','VIII','IX','X','XI','XII','XIII','XIV','XV'][n]||String(n+1);
+rowInfo.forEach((r,g)=>{ const ys=rows[g].map(n=>n.p.b&&n.p.b.year).filter(Boolean); const cy=r.y+r.h/2;
+  el('text',{x:FR+12,y:cy-1,'font-family':'"Spectral SC"','font-size':6.5,fill:C.muted},svg,roman(g));
+  if(ys.length) el('text',{x:FR+12,y:cy+4.5,'font-family':SANS,'font-size':3.2,fill:C.muted},svg,Math.min(...ys)===Math.max(...ys)?String(ys[0]):`${Math.min(...ys)}–${Math.max(...ys)}`);
+  el('text',{x:FR+12,y:cy+9,'font-family':SANS,'font-size':3,fill:C.muted},svg,g===0?(sibs.length>1?P[D.root].name.split(' ')[0]+' a sourozenci':'výchozí osoba'):g===1?'rodiče':g===2?'prarodiče':g===3?'praprarodiče':`${g-1}. generace předků`);
+});
+
+// ---------- connectors (drawn under the boxes) ----------
+const LN=el('g',{stroke:C.line,'stroke-width':.35,fill:'none'});
+function famConn(kids,par){ if(!par.length) return; const ky=Math.max(...kids.map(k=>k.y+k.h)); const py=Math.min(...par.map(p=>p.y));
+  const R=rowInfo[kids[0].gen], bar=R.y+R.h+CONN/2;
+  const xs=[...kids,...par].map(n=>n.x); el('path',{d:`M${Math.min(...xs)} ${bar}H${Math.max(...xs)}`},LN);
+  kids.forEach(k=>el('path',{d:`M${k.x} ${k.y+k.h}V${bar}`},LN)); par.forEach(p=>el('path',{d:`M${p.x} ${bar}V${p.y}`},LN)); }
+// top row: root and siblings
+const R0=rowInfo[0]; const sw=54, sstep=sw+8; const ri=sibs.findIndex(p=>p.id===D.root);
+const topNodes=sibs.map((p,i)=>p.id===D.root?root:{id:p.id,p,gen:0,sex:/á$/.test(p.name.split(' ').pop())?'f':'m',par:[],x:root.x+(i-ri)*sstep,y:R0.y,w:sw,h:R0.h});
+root.w=sw; root.h=R0.h;
+famConn(topNodes,root.par);
+all.forEach(n=>{ if(n!==root&&n.par.length) famConn([n],n.par); });
+
+// ---------- boxes ----------
+const BX=el('g',{}), CUT=[];
+const shortPlace=s=>(s||'').replace(/,\s*okr\.[^,]*/g,'').replace(/\s*\((fara|panství|farnost)[^)]*\)/g,'').replace(/\s*\(\s*\)/g,'').trim();
+// dates on the poster: remarks in brackets dropped (they stay on the web), ranges shortened; a single date never breaks across lines
+const fmtDate=(e,sym)=>{ if(!e) return ''; let d=(e.date||'').replace(/\s*\([^)]*\)/g,'').trim();
+  if(/^mezi/i.test(d)){ const ys=d.match(/\d{4}/g)||[]; d=ys.length>1?`${ys[0]}–${ys[ys.length-1]}`:(e.year?'~'+e.year:''); }
+  else if(/^před/i.test(d)) d=d.replace(/(\d{1,2})\. (\d{1,2})\. (\d{4})/,'$1.\u00a0$2.\u00a0$3').replace(/^před /i,'před\u00a0');
+  else if(!d||/^neznám/i.test(d)||e.approx) d=e.year?'~'+e.year:'';
+  else d=d.replace(/(\d{1,2})\. (\d{1,2})\. (\d{4})/g,'$1.\u00a0$2.\u00a0$3').replace(/ /g,'\u00a0');
+  return d?`${sym}\u00a0${d}`:''; };
+// surname = last word + trailing variant in brackets + generation suffix ("Pospíšil st.", "Pospischil (Karel Pospíšil)")
+function splitName(n){ const m=n.match(/^(.*?)\s*((?:\([^)]*\))?)\s*((?:nejst|st|ml)\.)?$/); let core=m[1], par=m[2], suf=m[3]||'';
+  const t=core.split(' '); const sur=[t.pop(),par,suf].filter(Boolean).join(' '); return t.length?{given:t.join(' '),sur}:{given:'',sur}; }
+function wrap(text,maxw,size,weight,style){ const words=text.split(' '); const out=[]; let cur='';
+  for(const w of words){ const t=cur?cur+' '+w:w; if(tw(t,size,weight,SANS,style)<=maxw||!cur) cur=t; else { out.push(cur); cur=w; } } if(cur) out.push(cur);
+  out.cut=false; return Object.assign(out.map(l=>{ if(tw(l,size,weight,SANS,style)<=maxw) return l; out.cut=true; let s=l; while(s.length>1&&tw(s+'…',size,weight,SANS,style)>maxw) s=s.slice(0,-1); return s+'…'; }),{cut:out.cut}); }
+function box(n){ const p=n.p, isRoot=n===root, f=n.sex==='f';
+  const g=el('g',{},BX); const x=n.x-n.w/2, yy=n.y, w=n.w, h=n.h;
+  el('rect',{x,y:yy,width:w,height:h,rx:1.6,fill:isRoot?C.root:f?C.female:C.male,stroke:isRoot?C.rootB:f?C.femaleB:C.maleB,'stroke-width':isRoot?.7:.35,'stroke-dasharray':p.cert==='K'?'1.4 0.9':(p.cert==='R'?'0.4 0.7':'')},g);
+  el('rect',{x:x+.35,y:yy+.35,width:w-.7,height:1.3,fill:lc(p.line),opacity:.85},g);           // branch colour stripe
+  const pad=Math.min(1.6,w*.07), iw=w-2*pad; const {given,sur}=splitName(p.name);
+  const items=[];                                            // [text,size factor,weight,style,priority]
+  items.push([sur,1.12,600,'normal',0]);
+  if(p.maiden&&p.maiden!==sur) items.push(['roz. '+p.maiden,.9,400,'italic',2]);
+  items.push([given,1,400,'normal',0]);
+  if(n.dup){ items.push(['opakuje se – viz předky výše',.8,400,'italic',3]); }
+  else {
+    const bd=fmtDate(p.b,'*'), bp=shortPlace(p.b&&p.b.place);
+    if(bd) items.push([bd,.95,400,'normal',1]); if(bp) items.push([bp,.88,400,'normal',3]);
+    const dd=fmtDate(p.d,'†'), dp=shortPlace(p.d&&p.d.place);
+    if(dd) items.push([dd,.95,400,'normal',2]); if(dp&&n.gen<4) items.push([dp,.88,400,'normal',5]);
+    if(p.occ) items.push([p.occ.replace(/\s*\(\d{4}\)/g,'').split(/[;,]/)[0],.85,400,'italic',4]);
+    if(p.cert==='K') items.push(['kandidát (neověřeno)',.8,400,'italic',3]);
+  }
+  // fit: try font sizes from large to small, dropping low-priority lines when needed
+  // fit: name, maiden name and dates (priority <= 2) must always be complete – shrink the font instead; place and occupation may be dropped or shortened
+  let best=null; const fsMax=n.gen===0?5.2:n.gen<3?4.6:n.gen<5?3.8:3.4;   // older generations 3.4 (fewer people than the 564-person template, so there is room)
+  for(let fs=fsMax; fs>=1.6 && !best; fs-=0.05){ for(const lim of [9,5,4,3]){ const lines=[]; let bad=false;
+      items.filter(it=>it[4]<lim).forEach(it=>{ const wl=wrap(it[0],iw,fs*it[1],it[2],it[3]); if(it[4]<=2){ if(wl.cut) bad=true; } else if(wl.cut||wl.length>2) return; wl.forEach(t=>lines.push([t,fs*it[1],it[2],it[3]])); });
+      const th=lines.reduce((s,l)=>s+l[1]*1.18,0); if(!bad&&th<=h-2.6-pad){ best=lines; n.fs=fs; break; } } }
+  if(!best){ CUT.push(p.name); best=[[sur,1.6,600,'normal'],[given,1.6,400,'normal']]; }
+  const th=best.reduce((s,l)=>s+l[1]*1.18,0); let ty=yy+1.6+ (h-1.6-th)/2;
+  best.forEach(([t,s,wgt,st])=>{ ty+=s*1.18; el('text',{x:n.x,y:ty-s*.28,'text-anchor':'middle','font-family':SANS,'font-size':s.toFixed(2),'font-weight':wgt,'font-style':st,fill:C.ink},g,t); });
+}
+topNodes.forEach(box); all.filter(n=>n!==root).forEach(box);
+
+// ---------- footer: legend, facts, QR ----------
+const FY=H-FR-52;
+// same definitions as the web header (template.html): oldest M/D person, longest father/mother chain
+const docAnc=D.people.filter(p=>(p.cert==='M'||p.cert==='D')&&p.b&&p.b.year).reduce((a,p)=>!a||p.b.year<a.b.year?p:a,null);
+const gens=(()=>{ const memo={}; const g=id=>{ if(!id||!P[id]) return -1; if(id in memo) return memo[id]; memo[id]=0; return memo[id]=1+Math.max(g(P[id].father),g(P[id].mother)); }; return g(D.root); })();
+const LX=FR+16; const lg=el('g',{'font-family':SANS,'font-size':3.6,fill:C.ink});
+const sw2=(x,yy,fill,stroke,dash,label)=>{ el('rect',{x,y:yy-3.6,width:9,height:5,rx:1,fill,stroke,'stroke-width':.4,'stroke-dasharray':dash||''},lg); el('text',{x:x+11.5,y:yy},lg,label); };
+el('text',{x:LX,y:FY+6,'font-family':'"Spectral SC"','font-size':5,fill:C.ink},lg,'Vysvětlivky');
+sw2(LX,FY+15,C.male,C.maleB,'','muž'); sw2(LX+30,FY+15,C.female,C.femaleB,'','žena'); sw2(LX+62,FY+15,C.root,C.rootB,'',rootP.name);
+sw2(LX,FY+24,'#fff',C.line,'','doloženo matrikou nebo jiným dokladem'); sw2(LX+92,FY+24,'#fff',C.line,'0.4 0.7','rodinná tradice'); sw2(LX+140,FY+24,'#fff',C.line,'1.4 0.9','kandidát (neověřeno)');
+el('rect',{x:LX,y:FY+29.4,width:9,height:1.3,fill:lc(D.lines.vesely?'vesely':Object.keys(D.lines)[0])},lg); el('text',{x:LX+11.5,y:FY+32},lg,'barevný proužek = rodová větev; * narození, † úmrtí, ~ odhad; římská čísla vlevo = generace');
+const fx=W/2; const ft=el('g',{'font-family':SANS,'font-size':3.8,fill:C.ink,'text-anchor':'middle'});
+el('text',{x:fx,y:FY+12,'font-family':SERIF,'font-size':5.2},ft,`${D.people.length} osob · ${all.filter(n=>!n.dup).length} přímých předků · doloženo ${gens} generací zpět · ${D.people.filter(p=>p.cert==='M').length} osob přímo z matrik`);
+if(docAnc) el('text',{x:fx,y:FY+21},ft,`Nejstarší doložený předek: ${docAnc.name} (*~${docAnc.b.year}${docAnc.b.place?', '+shortPlace(docAnc.b.place):''})`);
+el('text',{x:fx,y:FY+29,fill:C.muted},ft,`Prameny: matriky, matriční úřady, sčítání lidu a rodinné doklady.`);
+el('text',{x:fx,y:FY+36,fill:C.muted},ft,`Stav výzkumu k ${window.RODOKMEN_BUILD||D.updated||''} · interaktivní verze se všemi prameny a skeny: UZIVATEL.github.io/REPO`);
+try{ const q=qrcode(0,'M'); q.addData('https://UZIVATEL.github.io/REPO/'); q.make(); const k=q.getModuleCount(), s=34/k, qx=W-FR-16-34, qy=FY+1;
+  el('rect',{x:qx-2,y:qy-2,width:38,height:38,fill:'#fff'}); const qg=el('g',{fill:C.ink});
+  let d=''; for(let r=0;r<k;r++) for(let c=0;c<k;c++) if(q.isDark(r,c)) d+=`M${(qx+c*s).toFixed(3)} ${(qy+r*s).toFixed(3)}h${s.toFixed(3)}v${s.toFixed(3)}h${(-s).toFixed(3)}z`;
+  el('path',{d},qg); el('text',{x:qx-4,y:qy+18,'text-anchor':'end','font-family':SANS,'font-size':3.4,fill:C.muted},svg,'online verze →'); }catch(e){ console.log('qr',e); }
+
+window.POSTER={ok:true,W,cut:CUT,minFs:+Math.min(...all.filter(n=>n.fs).map(n=>n.fs)).toFixed(2),smallBoxes:all.filter(n=>n.fs<2.2).map(n=>n.p.name+' '+n.fs.toFixed(2)),rows:rowInfo.map(r=>({g:r.g,n:r.n,stag:r.stag,w:+r.w.toFixed(1)})),rowH:+rowH.toFixed(1),scale:+scale.toFixed(2),people:all.length};
+})().catch(e=>{ window.POSTER={ok:false,err:String(e.stack||e)}; });
+</script></body></html>

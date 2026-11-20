@@ -3,7 +3,9 @@
 set -e
 cd "$(dirname "$0")"
 ./build.sh
-git add validate.js print datatool.js geo.js gazetteer.js data.js template.html index.html build.sh publish.sh README.md img
+# starter kit for other family trees (navod/starter) – regenerated from the live tools on every publish
+[ -f navod/sync.py ] && { python3 navod/sync.py || { echo "publish.sh: navod/sync.py failed – fix the starter kit"; exit 1; }; }
+git add validate.js print datatool.js geo.js gazetteer.js data.js template.html index.html build.sh publish.sh README.md img navod
 git commit -q -m "${1:-Aktualizace rodokmenu}
 
 Co-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>" || { echo "nothing to commit"; exit 0; }
