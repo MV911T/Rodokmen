@@ -570,6 +570,10 @@ Celý web má jeden tmavý vzhled ve stylu záložky Animace (téměř černé p
   - přechod mezi záložkami (fade-up při zobrazení sekce);
   - postupné odkrývání obsahu při posouvání (`IntersectionObserver`, třídy `.rv`/`.in`; `MutationObserver` přidá i nově vykreslené rodiny).
   - Vše respektuje `prefers-reduced-motion` (bez animací, obsah hned viditelný).
+- **Přenos do jiného rodokmenu** (ověřeno na rodokmenu B): převezmi tokeny v `:root` (barvy `--l-<rod>` vezmi z jeho tmavé varianty), celý blok „Cinema layer“, kicker v hlavičce, oba skripty (pohybová vrstva + tep) a S-křivky spojnic. Pozor:
+  - automaticky dopočítané barvy rodů musí používat jen tmavou (světlou na tmavém) variantu;
+  - tep vynech u čárkovaných spojnic partnerů (`path:not([stroke-dasharray])`);
+  - komentář `//` nevkládej doprostřed jednořádkového kódu, zakomentuje zbytek řádku (build hlásí „Unexpected end of input“).
 - **Kontrola designu po každé změně vzhledu:** `python3 05_nastroje/design/shots.py web/index.html <výstup>`.
   - Vyfotí každou záložku i detail osoby na 1440×900 a 390×844 a složí přehled `_sheet.png`. Ten si vždy prohlédni.
   - Automaticky hlásí JS chyby, vodorovné přetečení stránky, kontrast textu pod WCAG AA (počítá skutečně vykreslené barvy), oříznutý text a na mobilu dotykové cíle menší než 32 px.
