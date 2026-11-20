@@ -494,6 +494,7 @@ Inspirace: reel „How many people did it take to make you?“ (zlatá vlákna r
   - vlevo: pravítko rok / počet / „k známe“;
   - jmenovky rodičů a prarodičů;
   - na konci shrnutí s počtem míst, počtem známých předků, nejstarším předkem a větou o implexu.
+    - Počet míst (2^(G+1) − 2, všechny generace dohromady) se plete s velkým číslem v animaci (2^G = jen nejstarší generace; součet je skoro přesně dvojnásobek). Ve shrnutí proto uveď oboje: „… je v rodokmenu 16 382 míst pro předky: v té nejstarší generaci jich je samotných 8 192, dohromady se všemi mladšími generacemi 16 382.“
 - **Interakce:**
   - tažení = otáčení, kolečko nebo prsty = zoom;
   - najetí na bod ukáže jméno, data a místo;
