@@ -566,6 +566,7 @@ Celý web má jeden tmavý vzhled ve stylu záložky Animace (téměř černé p
 - **Pohybová vrstva** (samostatný `<script>` před Animací):
   - posuvný indikátor záložek (na mobilu se lišta záložek posouvá a vybraná se vystředí);
   - úvod stromu: karty se rozsvítí shora dolů po generacích a spojnice se „dokreslí“ (`pathLength=1` + `stroke-dashoffset`), po ~3,5 s se třídy odstraní;
+  - „tep srdce“ (samostatný `<script>`): po úvodu běží po všech spojnicích dvojité zlaté záblesky („tu-dum“) od předků k výchozí osobě. Čelo vlny stoupá stromem stálou rychlostí v letech (celý strom ~9 s), nový úder každých 1,6 s. Každá spojnice má kopii cesty se `stroke-dasharray` „záblesk–mezera–záblesk–zbytek periody“ a nekonečnou Web Animation `strokeDashoffset`; fáze se počítá z výšky rodičovského konce, takže vlny na sebe plynule navazují přes generace. Záře = široká průsvitná kopie + tenké jasné jádro (SVG filtr by byl na velkém stromu pomalý). Karta výchozí osoby zazáří, když vlna dorazí. Na skryté záložce nebo stránce se animace pozastaví;
   - přechod mezi záložkami (fade-up při zobrazení sekce);
   - postupné odkrývání obsahu při posouvání (`IntersectionObserver`, třídy `.rv`/`.in`; `MutationObserver` přidá i nově vykreslené rodiny).
   - Vše respektuje `prefers-reduced-motion` (bez animací, obsah hned viditelný).
