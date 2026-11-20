@@ -300,7 +300,7 @@ dl.facts dd{margin:0;min-width:0}
 <dt>Stav dat</dt><dd id="printStamp"></dd>
 </dl>
 </div></section>
-<section id="animView" hidden><canvas id="animCanvas" role="img" aria-label="3D animace: s každou generací se počet předků Matěje Veselého zdvojnásobí; svítící body jsou doložení předci"></canvas><div class="ahud" aria-live="polite"><div class="akick" id="aKick"></div><div class="anum" id="aNum">1</div><div class="aq">Kolik lidí bylo potřeba, aby se narodil Matěj?</div><div class="aknown" id="aKnown"></div></div><ol class="aruler" id="aRuler" aria-hidden="true"></ol><div id="aLabels" aria-hidden="true"></div><div class="atip" id="aTip" hidden></div><div class="asum" id="aSum" hidden></div><div class="actl"><button type="button" id="aPlay">Pauza</button><button type="button" id="aAgain">Přehrát znovu</button><span class="ahint">Tažením otáčíte, kolečkem nebo prsty přibližujete, kliknutím na světlo otevřete osobu.</span></div><p class="aload" id="aLoad">Načítám 3D…</p></section>
+<section id="animView" hidden><canvas id="animCanvas" role="img" aria-label="3D animace: s každou generací se počet předků zdvojnásobí; svítící body jsou doložení předci"></canvas><div class="ahud" aria-live="polite"><div class="akick" id="aKick"></div><div class="anum" id="aNum">1</div><div class="aq">Kolik lidí bylo potřeba, aby se narodil <span id="aWho"></span>?</div><div class="aknown" id="aKnown"></div></div><ol class="aruler" id="aRuler" aria-hidden="true"></ol><div id="aLabels" aria-hidden="true"></div><div class="atip" id="aTip" hidden></div><div class="asum" id="aSum" hidden></div><div class="actl"><button type="button" id="aPlay">Pauza</button><button type="button" id="aAgain">Přehrát znovu</button><span class="ahint">Tažením otáčíte, kolečkem nebo prsty přibližujete, kliknutím na světlo otevřete osobu.</span></div><p class="aload" id="aLoad">Načítám 3D…</p></section>
 <section id="wideView" hidden><div class="wide"><p class="wintro" id="wideIntro"></p><div class="wtools"><label>Větev <select id="wLine"><option value="">všechny</option></select></label> <label><input type="checkbox" id="wOnly"> jen rodiny se známými sourozenci</label></div><div id="wideBody"></div></div></section>
 <section id="mapView" hidden><div class="mapwrap"><div class="mapfig"><div class="mapbox"><svg id="map" role="img" aria-label="Mapa původu rodových větví"></svg><div class="mapzoom" role="toolbar" aria-label="Přiblížení mapy"><button type="button" id="mzin" aria-label="Přiblížit mapu">+</button><button type="button" id="mzout" aria-label="Oddálit mapu">−</button><button type="button" id="mzreset">Celá mapa</button></div></div><div class="mlegend"><span><svg width="28" height="6"><line x1="0" y1="3" x2="28" y2="3" stroke="var(--muted)" stroke-width="2.2"/></svg>doložený přesun</span><span><svg width="28" height="6"><line x1="0" y1="3" x2="28" y2="3" stroke="var(--muted)" stroke-width="2.2" stroke-dasharray="7 5"/></svg>pravděpodobná trasa (vlakem)</span><span><svg width="28" height="6"><line x1="0" y1="3" x2="28" y2="3" stroke="var(--muted)" stroke-width="2.2" stroke-dasharray="2 5" stroke-linecap="round"/></svg>domněnka</span></div><p class="cap">Hranice podle dnešních států (Natural Earth). Čáry vedou po tehdejších železničních tratích, kde přesná cesta není známa. Po najetí myší se ukáže, kdo a kdy. Přiblížení: tlačítka, dvojklik, Ctrl/⌘ + kolečko nebo sevření prstů; posun tažením.</p><ol class="moves" id="moves"></ol></div><div id="story" class="story"></div></div><div class="tl"><h3>Časová osa</h3><ol id="tl"></ol></div></section>
 <div id="scroller">
@@ -9265,7 +9265,7 @@ window.RODOKMEN.collateral = [
   {"id":"c_vesKat1702","name":"Kateřina (King?)","b":{"date":"cca 1702/03","year":1702,"approx":true},"mother":"alzbetaVesSt","cert":"D","note":"Soupisy Dubský ovčín: 1703 nově zapsaná (malé dítě), 1705 2½, 1710 7½, 1715 12½, 1716 13½ – narozena ~1702, tedy AŽ PO smrti Jiříka Veselého (1699/1700) a po sňatku Alžběty s Matoušem Kingem (1700/01) → nejspíš nevlastní sestra Šimona, dcera Kinga (D)."}
 ];
 
-window.RODOKMEN_BUILD='20. 11. 2026 9:13';
+window.RODOKMEN_BUILD='20. 11. 2026 9:45';
 
 </script>
 <script>
@@ -9725,16 +9725,20 @@ requestAnimationFrame(()=>{ const c=document.querySelector(`.card[data-id="${D.r
 (function(){
   const V=document.getElementById('animView'); if(!V) return;
   const D=window.RODOKMEN, P=Object.fromEntries(D.people.map(p=>[p.id,p]));
-  const G=13, SEG=12, K=0.105, SPG=1.35; // generations, curve segments, height per year, seconds per generation
+  const G0=13, SEG=12, K=0.105, SPG=1.35; // generations, curve segments, height per year, seconds per generation
   const LC={vesely:'#7fb0d0',woron:'#b49ad4',chmielek:'#d68fb0',pacik:'#7fc29d',matusu:'#cdbb66',struz:'#e0a06a',jirik:'#6fc0c6',opolony:'#b3b86a',plachy:'#c9a98a'};
-  const GN=['Matěj','Rodiče','Prarodiče','Praprarodiče','Prapraprarodiče'];
-  const gname=g=>GN[g]||`Předkové ${g}. generace`;
+  const GN=[null,'Rodiče','Prarodiče','Praprarodiče','Prapraprarodiče'];
+  const gname=g=>g?(GN[g]||`Předkové ${g}. generace`):P[D.root].name.split(' ')[0];
   const fmt=n=>n.toLocaleString('cs-CZ');
   const rnd=n=>{const x=Math.sin(n*12.9898+78.233)*43758.5453;return x-Math.floor(x)};
   const hex=h=>[1,3,5].map(i=>parseInt(h.slice(i,i+2),16)/255);
   const rad=g=>g?2.1*Math.pow(g,.92):0;
-  const root=P[D.root], rootY=root.b.year;
+  const root=P[D.root], rootY=root.b.year, first=root.name.split(' ')[0], fem=/á$/.test(root.name.split(' ').pop());
+  const rootPl=((root.b&&root.b.place)||'').split(/,| č\. ?p\.| č\.p\./)[0].trim();
+  const cx=document.createElement('canvas').getContext('2d'), cssCol=k=>{const v=getComputedStyle(document.documentElement).getPropertyValue('--l-'+k).trim(); if(!v) return null; cx.fillStyle='#000'; cx.fillStyle=v; return cx.fillStyle;};
   // ---- ahnentafel slots (n: 1 = Matěj, 2n father, 2n+1 mother)
+  let mg=0; (function w(id,n,g){const p=P[id]; if(!p) return; mg=Math.max(mg,g); if(g<20){w(p.father,2*n,g+1); w(p.mother,2*n+1,g+1);}})(D.root,1,0);
+  const G=Math.max(G0,mg+1);
   const S=[]; const byN=new Map();
   for(let g=0;g<=G;g++){const s=2**g; for(let n=s;n<2*s;n++){
     const c=byN.get(n>>1); let id=null;
@@ -9752,19 +9756,21 @@ requestAnimationFrame(()=>{ const c=document.querySelector(`.card[data-id="${D.r
   // pedigree collapse: same person in more slots; arcs only for the youngest such persons
   const dup={}; KS.forEach(s=>(dup[s.id]=dup[s.id]||[]).push(s));
   const implex=Object.values(dup).filter(a=>a.length>1&&new Set(a.map(s=>byN.get(s.n>>1).id)).size>1);
+  const impSet=new Set(implex.map(a=>a[0].id));
   const uniq=new Set(KS.map(s=>s.id)); uniq.delete(D.root);
-  const oldest=[...uniq].map(i=>P[i]).filter(p=>p.b&&p.b.year).sort((a,b)=>a.b.year-b.b.year)[0];
+  const oldest=[...uniq].map(i=>P[i]).filter(p=>p.cert==='M'&&p.b&&p.b.year).sort((a,b)=>a.b.year-b.b.year)[0];
   const totalSlots=2**(G+1)-2;
 
   // ---- HUD
   const $=id=>document.getElementById(id);
   const kick=$('aKick'), num=$('aNum'), kn=$('aKnown'), ruler=$('aRuler'), tip=$('aTip'), sum=$('aSum'), labels=$('aLabels'), btnP=$('aPlay'), btnA=$('aAgain'), load=$('aLoad');
+  $('aWho').textContent=first; if(fem) $('aWho').parentNode.firstChild.textContent='Kolik lidí bylo potřeba, aby se narodila ';
   ruler.innerHTML=perGen.slice().reverse().map(r=>`<li data-g="${r.g}"><span>${r.lo?r.lo:'~'+Math.round(r.est/5)*5}</span><i></i><b>${fmt(r.n)}</b><em>${r.k?r.k+' známe':''}</em></li>`).join('');
   const rows=[...ruler.children].reverse();
   const yrs=r=>r.lo?(r.lo===r.hi?`narozen${r.g?'i':''} ${r.lo}`:`narozeni ${r.lo}–${r.hi}`):`narozeni kolem ${Math.round(r.est/10)*10}`;
   const who=s=>{const p=s.p,b=p.b&&p.b.year,d=p.d&&p.d.year;return `<b>${p.name}${p.maiden?' <span>roz. '+p.maiden+'</span>':''}</b><br>${b?'* '+(p.b.date||b):''}${d?' &nbsp;† '+(p.d.date||d):''}${p.b&&p.b.place?'<br>'+p.b.place:''}`;};
-  const imp=implex.map(a=>a[0].p.name).join(' a ');
-  sum.innerHTML=`<button type="button" class="ax" aria-label="Zavřít shrnutí">×</button><p>Za ${G} generací (asi ${rootY-perGen[G].est} let) je v rodokmenu <b>${fmt(totalSlots)}</b> míst – a každý pár se musel potkat, aby tu Matěj byl.</p><p>Jménem známe <b>${fmt(uniq.size)}</b> z nich${oldest?`; nejstarší doložený je ${oldest.name} (* ${oldest.b.year})`:''}.${imp?` ${imp} jsou Matějovými předky dvakrát, po dvou různých liniích (ztráta předků) – v animaci svítí modře a spojuje je oblouk.`:''}</p>`;
+  const impN=implex.map(a=>a[0].p.name), imp=impN.length<=2?impN.join(' a ')+(impN.length>1?' jsou':' je'):`${impN.length} předků (např. ${impN.slice(0,3).join(', ')})`+' je';
+  sum.innerHTML=`<button type="button" class="ax" aria-label="Zavřít shrnutí">×</button><p>Za ${G} generací (asi ${rootY-perGen[G].est} let) je v rodokmenu <b>${fmt(totalSlots)}</b> míst – a každý pár se musel potkat, aby tu ${first} ${fem?'byla':'byl'}.</p><p>Jménem známe <b>${fmt(uniq.size)}</b> z nich${oldest?`; nejstarší doložený v matrikách je ${oldest.name} (${oldest.b.approx?'~':'* '}${oldest.b.year})`:''}.${imp?` ${imp} v rodokmenu víckrát, po různých liniích (ztráta předků) – v animaci svítí modře a spojují je oblouky.`:''}</p>`;
   const LBL=KS.filter(s=>s.g<=2).map(s=>{const e=document.createElement('span');e.className='alabel'+(s.g?'':' root');e.textContent=s.g?s.p.name:s.p.name.toUpperCase();labels.appendChild(e);return [s,e];});
 
   let T=null, ren, scene, cam, comp, lineMat, ptMat, raf=0, running=false, paused=false, prog=0, last=0, user=0, rq=matchMedia('(prefers-reduced-motion: reduce)').matches;
@@ -9800,8 +9806,8 @@ requestAnimationFrame(()=>{ const c=document.querySelector(`.card[data-id="${D.r
     const pp=[],pt=[],ps=[],pc=[],pa=[];
     for(const s of S){pp.push(s.x,s.y,s.z);pt.push(s.n===1?-1:s.g);
       if(s.n===1){ps.push(1.5);pc.push(1,.92,.75);pa.push(1);}
-      else if(s.p&&dup[s.id].length>1){ps.push(1.15);pc.push(...BLUE);pa.push(1);}
-      else if(s.p){const l=hex(LC[s.p.line]||'#e8c88a');ps.push(s.g<=3?.75:.55);pc.push((l[0]+1)/2,(l[1]+.9)/2,(l[2]+.7)/2);pa.push(1);}
+      else if(s.p&&impSet.has(s.id)){ps.push(1.15);pc.push(...BLUE);pa.push(1);}
+      else if(s.p){const l=hex(cssCol(s.p.line)||LC[s.p.line]||'#e8c88a');ps.push(s.g<=3?.75:.55);pc.push((l[0]+1)/2,(l[1]+.9)/2,(l[2]+.7)/2);pa.push(1);}
       else{ps.push(.2);pc.push(...GOLD);pa.push(s.g<=9?.35:.12);}}
     const pg=new T.BufferGeometry(); pg.setAttribute('position',new T.Float32BufferAttribute(pp,3)); pg.setAttribute('aT',new T.Float32BufferAttribute(pt,1)); pg.setAttribute('aSize',new T.Float32BufferAttribute(ps,1)); pg.setAttribute('aCol',new T.Float32BufferAttribute(pc,3)); pg.setAttribute('aA',new T.Float32BufferAttribute(pa,1));
     ptMat=new T.ShaderMaterial({uniforms:{uProg:{value:0},uScale:{value:500},uTime:{value:0}},transparent:true,depthWrite:false,blending:T.AdditiveBlending,
@@ -9839,7 +9845,7 @@ requestAnimationFrame(()=>{ const c=document.querySelector(`.card[data-id="${D.r
   let lastG=-1, shown=0;
   function hud(){ const g=Math.max(0,Math.min(G,Math.floor(prog+.02))), r=perGen[g];
     if(g!==lastG){ lastG=g; kick.textContent=`${gname(g).toUpperCase()} · ${yrs(r).toUpperCase()}`;
-      kn.textContent=g?(r.k?`jménem doloženo ${r.k} z ${fmt(r.n)}`:'tady už jména nikdo nezapsal – nebo se nedochovala'):'Ostrava, 1986'; rows.forEach((li,i)=>{li.classList.toggle('on',i<=g);li.classList.toggle('cur',i===g)}); }
+      kn.textContent=g?(r.k?`jménem doloženo ${r.k} z ${fmt(r.n)}`:'tady už jména nikdo nezapsal – nebo se nedochovala'):[rootPl,rootY].filter(Boolean).join(', '); rows.forEach((li,i)=>{li.classList.toggle('on',i<=g);li.classList.toggle('cur',i===g)}); }
     shown+=(r.n-shown)*.18; if(Math.abs(r.n-shown)<.5) shown=r.n; num.textContent=fmt(Math.round(shown));
     const w=V.clientWidth,h=V.clientHeight, v=new T.Vector3();
     for(const [s,e] of LBL){ v.set(s.x,s.y,s.z).project(cam); const vis=Math.min(Math.max((prog-s.g)*2,0),1)*(v.z<1?1:0)*(s.g?Math.min(Math.max((34-cs.d)/10,0),1):(sum.hidden||w>=640?1:0));
